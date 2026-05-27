@@ -3,23 +3,18 @@ import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 
-const TIMEFRAMES = [
-  { value: 'upcoming', key: 'upcoming' },
-  { value: 'all',      key: 'all' },
-  { value: 'past',     key: 'past' },
-]
+const SIZES = ['small', 'medium', 'large']
 const WEEKENDS = [
   { value: 'weekend',      key: 'thisWeekend' },
   { value: 'next-weekend', key: 'nextWeekend' },
 ]
-const SIZES = ['small', 'medium', 'large']
 
 export default function MobileSheet({
   filters, onChange, allCountries, totalCount,
   view, onViewChange,
   clusteringEnabled, onClusteringChange,
 }) {
-  const { lang, toggle: toggleLang } = useLang()
+  const { lang, setLang } = useLang()
   const [expanded, setExpanded] = useState(false)
 
   const toggleCountry = code => onChange({
@@ -41,18 +36,19 @@ export default function MobileSheet({
 
   return (
     <div className={`mobile-sheet ${expanded ? 'expanded' : ''}`}>
-      {/* Drag handle — tapping anywhere here toggles */}
+      {/* Drag handle — large touch target */}
       <div className="sheet-handle-row" onClick={() => setExpanded(v => !v)}>
         <div className="sheet-handle" />
       </div>
 
-      {/* Peek row — always visible */}
+      {/* Peek row — most-used filters without expanding */}
       <div className="sheet-peek">
-        <span className="sheet-count">
-          <strong>{totalCount}</strong> {t('events', lang)}
-        </span>
-        <div className="sheet-time-row">
-          {TIMEFRAMES.map(tf => (
+        <div className="sheet-peek-filters">
+          {/* Upcoming / All toggle */}
+          {[
+            { value: 'upcoming', key: 'upcoming' },
+            { value: 'all',      key: 'all' },
+          ].map(tf => (
             <button
               key={tf.value}
               className={`toggle-btn ${filters.timeframe === tf.value ? 'active' : ''}`}
@@ -61,7 +57,17 @@ export default function MobileSheet({
               {t(tf.key, lang)}
             </button>
           ))}
+          {/* This weekend */}
+          <button
+            className={`toggle-btn ${filters.timeframe === 'weekend' ? 'active' : ''}`}
+            onClick={e => { e.stopPropagation(); setTimeframe('weekend') }}
+          >
+            {t('thisWeekend', lang)}
+          </button>
         </div>
+        <span className="sheet-count">
+          <strong>{totalCount}</strong>
+        </span>
         <button
           className="sheet-chevron"
           onClick={() => setExpanded(v => !v)}
@@ -89,16 +95,29 @@ export default function MobileSheet({
               </button>
             ))}
           </div>
-          <button className="lang-toggle-sheet" onClick={toggleLang}>
-            {lang === 'en' ? 'DE' : 'EN'}
-          </button>
+          <div className="lang-segmented">
+            <button
+              className={`toggle-btn ${lang === 'de' ? 'active' : ''}`}
+              onClick={() => setLang('de')}
+            >DE</button>
+            <button
+              className={`toggle-btn ${lang === 'en' ? 'active' : ''}`}
+              onClick={() => setLang('en')}
+            >EN</button>
+          </div>
         </div>
 
-        {/* Weekend quick filters */}
+        {/* Extra time filters (Past + Next weekend) */}
         <div className="sheet-section">
           <div className="filter-label">{t('filterTime', lang)}</div>
           <div className="toggle-group">
-            {WEEKENDS.map(w => (
+            <button
+              className={`toggle-btn ${filters.timeframe === 'past' ? 'active' : ''}`}
+              onClick={() => onChange({ ...filters, timeframe: 'past' })}
+            >
+              {t('past', lang)}
+            </button>
+            {WEEKENDS.filter(w => w.value === 'next-weekend').map(w => (
               <button
                 key={w.value}
                 className={`toggle-btn ${filters.timeframe === w.value ? 'active' : ''}`}

@@ -3,6 +3,7 @@ import { LocateFixed } from 'lucide-react'
 import Map, { ISO_BANDS } from './components/Map.jsx'
 import FilterSidebar from './components/FilterSidebar.jsx'
 import MobileSheet from './components/MobileSheet.jsx'
+import IsoFAB from './components/IsoFAB.jsx'
 import DetailPanel from './components/DetailPanel.jsx'
 import Legend from './components/Legend.jsx'
 import paradesRaw from './data/parades.json'
@@ -59,7 +60,7 @@ const INITIAL_HASH = (() => {
 })()
 
 export default function App() {
-  const { lang, toggle: toggleLang } = useLang()
+  const { lang } = useLang()
   const isMobile = useIsMobile()
   const [view, setView] = useState(INITIAL_HASH?.view ?? 'europe')
   const [filters, setFilters] = useState({
@@ -209,13 +210,9 @@ export default function App() {
         />
       )}
 
-      {/* Desktop-only: lang toggle, isochrones, legend */}
+      {/* Desktop-only: isochrones, legend */}
       {!isMobile && (
         <>
-          <button className="lang-toggle" onClick={toggleLang}>
-            {lang === 'en' ? 'DE' : 'EN'}
-          </button>
-
           <div className="isochrone-controls">
             <div className="iso-title">{t('isoTravelTime', lang)} <span className="iso-beta">beta</span></div>
             <div className="iso-mode-row">
@@ -266,18 +263,28 @@ export default function App() {
         </>
       )}
 
-      {/* Mobile bottom sheet */}
+      {/* Mobile bottom sheet + isochrone FAB */}
       {isMobile && (
-        <MobileSheet
-          filters={filters}
-          onChange={setFilters}
-          allCountries={ALL_COUNTRIES}
-          totalCount={filteredParades.length}
-          view={view}
-          onViewChange={switchView}
-          clusteringEnabled={clusteringEnabled}
-          onClusteringChange={setClusteringEnabled}
-        />
+        <>
+          <MobileSheet
+            filters={filters}
+            onChange={setFilters}
+            allCountries={ALL_COUNTRIES}
+            totalCount={filteredParades.length}
+            view={view}
+            onViewChange={switchView}
+            clusteringEnabled={clusteringEnabled}
+            onClusteringChange={setClusteringEnabled}
+          />
+          <IsoFAB
+            isoOrigin={isoOrigin}
+            onOriginSet={setIsoOrigin}
+            isoMode={isoMode}
+            onModeChange={setIsoMode}
+            isoPinning={isoPinning}
+            onPinningChange={setIsoPinning}
+          />
+        </>
       )}
     </div>
   )

@@ -105,22 +105,15 @@ html, body, #root {
 .geo-btn:hover { background: var(--surface2); color: var(--text); }
 .geo-btn.open { left: calc(280px + 24px); }
 
-.lang-toggle {
-  position: fixed;
-  bottom: 16px;
-  left: 16px;
-  z-index: 200;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 4px 10px;
-  font-size: 11px;
-  font-family: var(--font);
-  color: var(--text-muted);
-  cursor: pointer;
-  letter-spacing: 0.05em;
+/* Title row with inline lang segmented control */
+.sidebar-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
 }
-.lang-toggle:hover { color: var(--text); border-color: var(--text-dim); }
+.sidebar-title-row .app-title { margin-bottom: 0; }
 
 .filter-badge {
   position: absolute;
@@ -288,10 +281,25 @@ html, body, #root {
 }
 .toggle-btn:hover { border-color: var(--text-dim); color: var(--text); }
 .toggle-btn.active {
-  background: var(--surface2);
-  border-color: var(--text-muted);
-  color: var(--text);
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #111111;
 }
+
+/* Segmented language control */
+.lang-segmented {
+  display: flex;
+  flex-shrink: 0;
+}
+.lang-segmented .toggle-btn {
+  border-radius: 0;
+  border-right-width: 0;
+  padding: 3px 8px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+.lang-segmented .toggle-btn:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+.lang-segmented .toggle-btn:last-child  { border-radius: 0 var(--radius) var(--radius) 0; border-right-width: 1px; }
 
 /* Country list */
 .country-list {
@@ -678,45 +686,33 @@ html, body, #root {
   text-align: center;
 }
 
-/* ── Mobile bottom sheet ──────────────────────────────── */
+/* ── Mobile layout ────────────────────────────────────── */
 @media (max-width: 767px) {
-  /* Reposition geo button — no sidebar on mobile */
   .geo-btn { top: 16px; left: 16px; }
   .geo-btn.open { left: 16px; }
 
-  /* Detail panel slides up from bottom, full width */
   .detail-panel {
     position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: auto;
+    left: 0; right: 0; bottom: 0; top: auto;
     transform: none;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
+    width: 100%; max-width: 100%; min-width: 0;
     max-height: 75vh;
     overflow-y: auto;
     border-radius: 16px 16px 0 0;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    border-left: none; border-right: none; border-bottom: none;
     z-index: 400;
     padding-bottom: 32px;
   }
 }
 
-.mobile-sheet {
-  display: none;
-}
+/* ── Mobile bottom sheet ──────────────────────────────── */
+.mobile-sheet { display: none; }
 
 @media (max-width: 767px) {
   .mobile-sheet {
     display: block;
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 0; left: 0; right: 0;
     z-index: 300;
     background: var(--surface);
     border-top: 1px solid var(--border);
@@ -724,26 +720,43 @@ html, body, #root {
     box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.5);
   }
 
+  /* Large, easy-to-tap handle area */
   .sheet-handle-row {
     display: flex;
     justify-content: center;
-    padding: 10px 0 4px;
+    align-items: center;
+    min-height: 28px;
+    padding: 10px 0 6px;
     cursor: pointer;
-    touch-action: none;
   }
 
   .sheet-handle {
-    width: 36px;
-    height: 4px;
-    background: var(--border);
-    border-radius: 2px;
+    width: 40px;
+    height: 5px;
+    background: var(--text-dim);
+    border-radius: 3px;
   }
 
+  /* Peek row */
   .sheet-peek {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 4px 12px 12px;
+    gap: 6px;
+    padding: 2px 12px 14px;
+  }
+
+  .sheet-peek-filters {
+    display: flex;
+    gap: 5px;
+    flex: 1;
+    flex-wrap: nowrap;
+  }
+
+  .sheet-peek-filters .toggle-btn {
+    font-size: 11px;
+    padding: 6px 8px;
+    flex-shrink: 0;
+    min-height: 34px;
   }
 
   .sheet-count {
@@ -753,25 +766,19 @@ html, body, #root {
     flex-shrink: 0;
   }
 
-  .sheet-time-row {
-    display: flex;
-    gap: 4px;
-    flex: 1;
-  }
-
-  .sheet-time-row .toggle-btn {
-    flex: 1;
-    font-size: 11px;
-    padding: 4px 4px;
-  }
-
+  /* Larger tap target for chevron */
   .sheet-chevron {
     background: none;
     border: none;
     color: var(--text-dim);
-    font-size: 10px;
+    font-size: 11px;
     cursor: pointer;
-    padding: 4px;
+    padding: 8px;
+    min-width: 36px;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
   }
 
@@ -783,35 +790,22 @@ html, body, #root {
   }
 
   .mobile-sheet.expanded .sheet-body {
-    max-height: 62vh;
+    max-height: 50vh;
     overflow-y: auto;
     overscroll-behavior: contain;
   }
 
-  /* Top row: view toggles + lang */
+  /* Top row: view toggles + lang segmented */
   .sheet-top-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
     padding: 10px 14px 8px;
     border-top: 1px solid var(--border);
   }
 
-  .lang-toggle-sheet {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 4px 10px;
-    font-size: 11px;
-    font-family: var(--font);
-    color: var(--text-muted);
-    cursor: pointer;
-    letter-spacing: 0.05em;
-    flex-shrink: 0;
-  }
-  .lang-toggle-sheet:hover { color: var(--text); }
-
-  /* Filter sections inside sheet */
+  /* Sections inside expanded sheet */
   .sheet-section {
     padding: 10px 14px;
     border-top: 1px solid var(--border);
@@ -822,13 +816,12 @@ html, body, #root {
     font-size: 11px;
   }
 
-  /* Country list: let the sheet body scroll, not the list itself */
+  /* Country list: whole sheet body scrolls, not the list */
   .mobile-country-list {
     max-height: none !important;
     overflow-y: visible !important;
   }
 
-  /* Footer */
   .sheet-footer {
     display: flex;
     align-items: center;
@@ -838,4 +831,69 @@ html, body, #root {
     font-size: 12px;
     color: var(--text-muted);
   }
+}
+
+/* ── Isochrone FAB (mobile only) ──────────────────────── */
+.iso-fab { display: none; }
+
+@media (max-width: 767px) {
+  .iso-fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 250;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+  }
+
+  .iso-fab:hover { color: var(--text); border-color: var(--text-dim); }
+
+  .iso-fab.active {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .iso-fab-dot {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 1.5px solid var(--surface);
+  }
+
+  .iso-fab-panel {
+    position: fixed;
+    top: 66px;
+    right: 16px;
+    z-index: 250;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    width: 170px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .iso-fab-title {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .iso-fab-panel .iso-mode-row { margin-bottom: 8px; }
+  .iso-fab-panel .iso-pin-btn  { margin-bottom: 0; }
 }

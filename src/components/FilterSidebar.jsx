@@ -3,14 +3,13 @@ import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 
 const SIZES = ['small', 'medium', 'large']
-
 const TIMEFRAMES = [
   { value: 'upcoming', key: 'upcoming' },
-  { value: 'all', key: 'all' },
-  { value: 'past', key: 'past' },
+  { value: 'all',      key: 'all' },
+  { value: 'past',     key: 'past' },
 ]
 const WEEKENDS = [
-  { value: 'weekend', key: 'thisWeekend' },
+  { value: 'weekend',      key: 'thisWeekend' },
   { value: 'next-weekend', key: 'nextWeekend' },
 ]
 
@@ -19,7 +18,7 @@ export default function FilterSidebar({
   view, onViewChange,
   clusteringEnabled, onClusteringChange,
 }) {
-  const { lang } = useLang()
+  const { lang, setLang } = useLang()
 
   const toggleCountry = (code) => {
     const next = filters.countries.includes(code)
@@ -43,7 +42,19 @@ export default function FilterSidebar({
   return (
     <div className="filter-sidebar">
       <div className="sidebar-header">
-        <h1 className="app-title">{t('appTitle', lang)}</h1>
+        <div className="sidebar-title-row">
+          <h1 className="app-title">{t('appTitle', lang)}</h1>
+          <div className="lang-segmented">
+            <button
+              className={`toggle-btn ${lang === 'de' ? 'active' : ''}`}
+              onClick={() => setLang('de')}
+            >DE</button>
+            <button
+              className={`toggle-btn ${lang === 'en' ? 'active' : ''}`}
+              onClick={() => setLang('en')}
+            >EN</button>
+          </div>
+        </div>
         <div className="view-toggle">
           {[
             { value: 'europe', img: `${import.meta.env.BASE_URL}Flag_of_Europe.svg`, labelKey: 'viewEurope' },
@@ -153,7 +164,9 @@ export default function FilterSidebar({
       <div className="sidebar-footer">
         <div className="sidebar-footer-row">
           <span>{t('missingParade', lang)}</span>
-          <a href="https://forms.gle/oo6vk3QfANXskXku8" className="suggest-link" target="_blank" rel="noopener noreferrer">{t('suggestOne', lang)}</a>
+          <a href="https://forms.gle/oo6vk3QfANXskXku8" className="suggest-link" target="_blank" rel="noopener noreferrer">
+            {t('suggestOne', lang)}
+          </a>
         </div>
         <p className="sidebar-disclaimer">
           {t('disclaimer', lang)}
