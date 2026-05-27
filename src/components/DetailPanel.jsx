@@ -1,20 +1,10 @@
-import { labelForDays, indexColor, indexLabel } from '../utils/timeColors.js'
+import { labelForDays, indexColor } from '../utils/timeColors.js'
+import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
+import { useLang } from '../contexts/LangContext.jsx'
+import { t, cityName, indexLabelL10n } from '../utils/i18n.js'
 import attendanceData from '../data/attendance.json'
 
 const attendanceLookup = Object.fromEntries(attendanceData.map(a => [a.city, a]))
-
-const COUNTRY_NAMES = {
-  AL:'Albania', AD:'Andorra', AT:'Austria', BE:'Belgium', BA:'Bosnia & Herz.',
-  BG:'Bulgaria', HR:'Croatia', CY:'Cyprus', CZ:'Czechia', DK:'Denmark',
-  EE:'Estonia', FI:'Finland', FR:'France', DE:'Germany', GR:'Greece',
-  HU:'Hungary', IS:'Iceland', IE:'Ireland', IT:'Italy', XK:'Kosovo',
-  LV:'Latvia', LI:'Liechtenstein', LT:'Lithuania', LU:'Luxembourg',
-  MT:'Malta', MD:'Moldova', MC:'Monaco', ME:'Montenegro', NL:'Netherlands',
-  MK:'North Macedonia', NO:'Norway', PL:'Poland', PT:'Portugal', RO:'Romania',
-  RU:'Russia', SM:'San Marino', RS:'Serbia', SK:'Slovakia', SI:'Slovenia',
-  ES:'Spain', SE:'Sweden', CH:'Switzerland', TR:'Turkey', UA:'Ukraine',
-  GB:'United Kingdom', GE:'Georgia', AM:'Armenia', AZ:'Azerbaijan', BY:'Belarus',
-}
 
 function formatBucket(n) {
   if (n >= 1000000) return `≥${(n / 1000000).toLocaleString('en')}M`
@@ -22,30 +12,66 @@ function formatBucket(n) {
   return `≥${n.toLocaleString('en')}`
 }
 
+function downloadICS(parade) {
+  const pad = n => String(n).padStart(2, '0')
+  const [yr, mo, da] = parade.date.split('-').map(Number)
+  const start = `${yr}${pad(mo)}${pad(da)}`
+  const endDate = new Date(yr, mo - 1, da + 1)
+  const end = `${endDate.getFullYear()}${pad(endDate.getMonth() + 1)}${pad(endDate.getDate())}`
+
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//PrideMap 2026//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    `DTSTART;VALUE=DATE:${start}`,
+    `DTEND;VALUE=DATE:${end}`,
+    `SUMMARY:${parade.name}`,
+    `LOCATION:${parade.city}`,
+    parade.website ? `URL:${parade.website}` : null,
+    'END:VEVENT',
+    'END:VCALENDAR',
+  ].filter(Boolean).join('\r\n')
+
+  const a = Object.assign(document.createElement('a'), {
+    href: URL.createObjectURL(new Blob([lines], { type: 'text/calendar;charset=utf-8' })),
+    download: `${parade.city.toLowerCase().replace(/\s+/g, '-')}-pride-2026.ics`,
+  })
+  a.click()
+  URL.revokeObjectURL(a.href)
+}
+
 export default function DetailPanel({ parade, onClose }) {
+  const { lang } = useLang()
   const { name, city, country, date, size, daysUntil, color, queerIndex, website, firstYear } = parade
   const isPast = daysUntil < 0
 
-  const formatted = new Date(date).toLocaleDateString('en-GB', {
+  const locale = lang === 'de' ? 'de-DE' : 'en-GB'
+  const formatted = new Date(date).toLocaleDateString(locale, {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
   })
 
   const countdownText = isPast
-    ? `${Math.abs(daysUntil)} days ago`
-    : daysUntil === 0 ? 'Today!'
-    : daysUntil === 1 ? 'Tomorrow!'
-    : `${labelForDays(daysUntil)} away`
+    ? `${Math.abs(daysUntil)} ${t('daysAgo', lang)}`
+    : daysUntil === 0 ? t('today', lang)
+    : daysUntil === 1 ? t('tomorrow', lang)
+    : lang === 'de'
+      ? `noch ${labelForDays(daysUntil)}`
+      : `${labelForDays(daysUntil)} ${t('away', lang)}`
 
-  const sizeLabel = { small: 'Small', medium: 'Medium', large: 'Large' }[size] ?? size
+  const sizeEventKey = { small: 'smallEvent', medium: 'mediumEvent', large: 'largeEvent' }[size]
+  const sizeLabel = sizeEventKey ? t(sizeEventKey, lang) : size
   const countryName = COUNTRY_NAMES[country] ?? country
-
+  const displayCity = cityName(city, lang)
   const att = attendanceLookup[city]
 
   return (
     <div className="detail-panel">
       <div className="detail-header">
         <div>
-          <div className="detail-city-name">{city}</div>
+          <div className="detail-city-name" style={{ color }}>{displayCity}</div>
           <div className="detail-title">{name}</div>
         </div>
         <button className="detail-close" onClick={onClose} aria-label="Close">✕</button>
@@ -55,26 +81,27 @@ export default function DetailPanel({ parade, onClose }) {
         {countdownText}
       </div>
       <div className="detail-date">{formatted}</div>
+      {!isPast && (
+        <button className="cal-btn" onClick={() => downloadICS(parade)}>{t('addToCalendar', lang)}</button>
+      )}
 
       <div className="detail-meta">
         <div className="detail-chip">
-          <div className="chip-dot" style={{ background: color }} />
+          <span className={`${flag(country)} chip-flag`} />
           {countryName}
         </div>
-        <div className="detail-chip">· {sizeLabel} event</div>
+        <div className="detail-chip">· {sizeLabel}</div>
         {firstYear && (
-          <div className="detail-chip">
-            · Est. {firstYear}
-          </div>
+          <div className="detail-chip">· {t('established', lang)} {firstYear}</div>
         )}
       </div>
 
       {att && (
         <div className="detail-attendance">
-          <div className="detail-stat-label">Attendance</div>
+          <div className="detail-stat-label">{t('attendance', lang)}</div>
           <div className="detail-stat-value">
             {formatBucket(att.bucket)}
-            <span className="detail-stat-sub"> visitors ({att.year}{att.note ? ` · ${att.note}` : ''})</span>
+            <span className="detail-stat-sub"> {t('visitors', lang)} ({att.year}{att.note ? ` · ${att.note}` : ''})</span>
           </div>
         </div>
       )}
@@ -82,9 +109,9 @@ export default function DetailPanel({ parade, onClose }) {
       {queerIndex != null && (
         <div className="detail-index">
           <div className="index-label">
-            <span>ILGA Rainbow Index</span>
+            <span>{t('ilgaIndex', lang)}</span>
             <span style={{ color: indexColor(queerIndex) }}>
-              {queerIndex}% · {indexLabel(queerIndex)}
+              {queerIndex}% · {indexLabelL10n(queerIndex, lang)}
             </span>
           </div>
           <div className="index-bar-track">

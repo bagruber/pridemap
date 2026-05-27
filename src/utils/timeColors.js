@@ -7,7 +7,7 @@ export const TIME_BUCKETS = [
   { label: '6–8 weeks',   max: 56,  color: '#00C7BE' },
   { label: '1–3 months',  max: 91,  color: '#0A84FF' },
   { label: '3–6 months',  max: 182, color: '#5856D6' },
-  { label: '>6 months',   max: Infinity, color: '#4C6EF5' },
+  { label: '>6 months',   max: Infinity, color: '#7C3AED' },
 ]
 
 export const PAST_COLOR = '#3a3a3a'

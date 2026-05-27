@@ -1,21 +1,23 @@
 import { useEffect, useRef, useState } from 'react'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
+import { decode } from '@here/flexpolyline'
 import Tooltip from './Tooltip.jsx'
 import { colorForDays } from '../utils/timeColors.js'
 import { VIEWS } from '../App.jsx'
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'
-const ORS_KEY = import.meta.env.VITE_ORS_API_KEY
+const HERE_KEY = import.meta.env.VITE_HERE_API_KEY
 
 const SIZE_RADIUS       = { small: 4, medium: 7, large: 11 }
 const SIZE_RADIUS_HOVER = { small: 6, medium: 10, large: 14 }
 
-// Isochrone time bands in seconds, outer→inner
-const ISO_BANDS = [
+// 30 / 60 / 90 / 120 / 150 min bands, outer → inner
+export const ISO_BANDS = [
+  { seconds: 9000, color: 'rgba(124,58,237,0.12)', stroke: 'rgba(124,58,237,0.5)' },
   { seconds: 7200, color: 'rgba(10,132,255,0.12)',  stroke: 'rgba(10,132,255,0.5)' },
-  { seconds: 5400, color: 'rgba(52,199,89,0.12)',   stroke: 'rgba(52,199,89,0.5)' },
-  { seconds: 3600, color: 'rgba(255,149,0,0.12)',   stroke: 'rgba(255,149,0,0.5)' },
+  { seconds: 5400, color: 'rgba(52,199,89,0.12)',   stroke: 'rgba(52,199,89,0.5)'  },
+  { seconds: 3600, color: 'rgba(255,149,0,0.12)',   stroke: 'rgba(255,149,0,0.5)'  },
   { seconds: 1800, color: 'rgba(255,45,120,0.12)',  stroke: 'rgba(255,45,120,0.5)' },
 ]
 
@@ -47,52 +49,70 @@ function paradesToGeoJSON(parades) {
   }
 }
 
-async function fetchIsochrones(lon, lat, profile) {
-  if (!ORS_KEY) {
-    console.warn('No ORS API key set (VITE_ORS_API_KEY). Isochrones disabled.')
-    return null
-  }
-  const res = await fetch(
-    `https://api.openrouteservice.org/v2/isochrones/${profile}`,
-    {
-      method: 'POST',
-      headers: {
-        'Authorization': ORS_KEY,
-        'Content-Type': 'application/json',
-        'Accept': 'application/json, application/geo+json',
-      },
-      body: JSON.stringify({
-        locations: [[lon, lat]],
-        range: [1800, 3600, 5400, 7200],
-        range_type: 'time',
-        smoothing: 0.9,
-      }),
-    }
-  )
-  if (!res.ok) throw new Error(`ORS ${res.status}: ${await res.text()}`)
+async function fetchIsochrones(lat, lon, isoMode) {
+  if (!HERE_KEY) return null
+  const mode = isoMode === 'driving-car' ? 'car' : 'bicycle'
+  const url = `https://isoline.router.hereapi.com/v8/isolines` +
+    `?origin=${lat},${lon}` +
+    `&range%5Btype%5D=time` +
+    `&range%5Bvalues%5D=1800,3600,5400,7200,9000` +
+    `&transportMode=${mode}` +
+    `&apiKey=${HERE_KEY}`
+  const res = await fetch(url)
+  if (!res.ok) throw new Error(`HERE ${res.status}: ${await res.text()}`)
   return res.json()
+}
+
+function hereToGeoJSON(data) {
+  const bandBySeconds = Object.fromEntries(ISO_BANDS.map(b => [b.seconds, b]))
+  const features = data.isolines.map(isoline => {
+    const band = bandBySeconds[isoline.range.value] ?? ISO_BANDS[0]
+    const rings = isoline.polygons.map(poly => {
+      const { polyline } = decode(poly.outer)
+      const ring = polyline.map(([lt, lg]) => [lg, lt])
+      const first = ring[0], last = ring[ring.length - 1]
+      if (first && (first[0] !== last[0] || first[1] !== last[1])) ring.push(first)
+      return ring
+    })
+    return {
+      type: 'Feature',
+      properties: { value: isoline.range.value, fillColor: band.color, strokeColor: band.stroke },
+      geometry: rings.length === 1
+        ? { type: 'Polygon', coordinates: [rings[0]] }
+        : { type: 'MultiPolygon', coordinates: rings.map(r => [r]) },
+    }
+  })
+  // largest range first so smaller rings render on top
+  features.sort((a, b) => b.properties.value - a.properties.value)
+  return { type: 'FeatureCollection', features }
 }
 
 export default function Map({
   parades, onSelect, view,
   isoOrigin, onIsoOriginSet,
   isoMode, isoPinning, onPinningDone,
+  flyTo, onFlyToDone,
+  clusteringEnabled,
+  initialPosition, onViewChange,
 }) {
   const containerRef = useRef(null)
   const mapRef = useRef(null)
   const [tooltip, setTooltip] = useState(null)
   const hoveredId = useRef(null)
+  const isoPinningRef = useRef(false)
   const [isoLoading, setIsoLoading] = useState(false)
   const [isoError, setIsoError] = useState(null)
 
+  useEffect(() => { isoPinningRef.current = isoPinning }, [isoPinning])
+
   // ── Initialize map ──────────────────────────────────────────────────────────
   useEffect(() => {
-    const { center, zoom, bounds } = VIEWS[view] ?? VIEWS.europe
+    const { center, zoom } = VIEWS[view] ?? VIEWS.europe
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: MAP_STYLE,
-      center,
-      zoom,
+      center: initialPosition?.center ?? center,
+      zoom: initialPosition?.zoom ?? zoom,
       minZoom: 3,
       maxZoom: 12,
       maxBounds: [[-35, 24], [55, 73]],
@@ -100,17 +120,25 @@ export default function Map({
     })
     mapRef.current = map
 
+    map.on('moveend', () => {
+      onViewChange?.({ center: map.getCenter().toArray(), zoom: map.getZoom() })
+    })
+
     map.on('load', () => {
-      // ── Parade source + layer ─────────────────────────────────────────────
+      // ── Parade source ─────────────────────────────────────────────────────
       map.addSource('parades', {
         type: 'geojson',
         data: paradesToGeoJSON(parades),
         generateId: false,
+        ...(clusteringEnabled ? { cluster: true, clusterMaxZoom: 7, clusterRadius: 35, clusterMinPoints: 4 } : {}),
       })
+
+      // Parade dots (filtered to unclustered only when clustering is on)
       map.addLayer({
         id: 'parades-circles',
         type: 'circle',
         source: 'parades',
+        ...(clusteringEnabled ? { filter: ['!', ['has', 'point_count']] } : {}),
         paint: {
           'circle-radius': [
             'case',
@@ -132,29 +160,49 @@ export default function Map({
         },
       })
 
+      if (clusteringEnabled) {
+        map.addLayer({
+          id: 'clusters-circle',
+          type: 'circle',
+          source: 'parades',
+          filter: ['has', 'point_count'],
+          paint: {
+            'circle-color': '#252525',
+            'circle-radius': ['step', ['get', 'point_count'], 14, 10, 18, 30, 22],
+            'circle-stroke-width': 1.5,
+            'circle-stroke-color': '#555',
+          },
+        })
+        map.addLayer({
+          id: 'clusters-count',
+          type: 'symbol',
+          source: 'parades',
+          filter: ['has', 'point_count'],
+          layout: {
+            'text-field': '{point_count_abbreviated}',
+            'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+            'text-size': 11,
+          },
+          paint: { 'text-color': '#e8e8e8' },
+        })
+      }
+
       // ── Isochrone sources + layers ────────────────────────────────────────
       map.addSource('isochrones', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } })
       map.addLayer({
         id: 'iso-fill',
         type: 'fill',
         source: 'isochrones',
-        paint: {
-          'fill-color': ['get', 'fillColor'],
-          'fill-opacity': 1,
-        },
+        paint: { 'fill-color': ['get', 'fillColor'], 'fill-opacity': 1 },
       }, 'parades-circles')
       map.addLayer({
         id: 'iso-line',
         type: 'line',
         source: 'isochrones',
-        paint: {
-          'line-color': ['get', 'strokeColor'],
-          'line-width': 1.5,
-          'line-opacity': 0.9,
-        },
+        paint: { 'line-color': ['get', 'strokeColor'], 'line-width': 1.5, 'line-opacity': 0.9 },
       }, 'parades-circles')
 
-      // ── Origin pin source + layer ─────────────────────────────────────────
+      // ── Origin pin source + layers ────────────────────────────────────────
       map.addSource('origin', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } })
       map.addLayer({
         id: 'origin-ring',
@@ -171,11 +219,20 @@ export default function Map({
         id: 'origin-dot',
         type: 'circle',
         source: 'origin',
-        paint: {
-          'circle-radius': 4,
-          'circle-color': '#ffffff',
-        },
+        paint: { 'circle-radius': 4, 'circle-color': '#ffffff' },
       })
+
+      // ── Cluster click → zoom in ───────────────────────────────────────────
+      if (clusteringEnabled) {
+        map.on('click', 'clusters-circle', async (e) => {
+          if (isoPinningRef.current) return
+          const feature = e.features[0]; if (!feature) return
+          const zoom = await map.getSource('parades').getClusterExpansionZoom(feature.properties.cluster_id)
+          map.easeTo({ center: feature.geometry.coordinates, zoom: zoom + 0.5 })
+        })
+        map.on('mouseenter', 'clusters-circle', () => { map.getCanvas().style.cursor = 'pointer' })
+        map.on('mouseleave', 'clusters-circle', () => { map.getCanvas().style.cursor = '' })
+      }
 
       // ── Hover / click handlers ────────────────────────────────────────────
       map.on('mouseenter', 'parades-circles', (e) => {
@@ -217,8 +274,11 @@ export default function Map({
       })
 
       map.on('click', (e) => {
-        const features = map.queryRenderedFeatures(e.point, { layers: ['parades-circles'] })
-        if (!features.length) onSelect(null)
+        const queryLayers = clusteringEnabled
+          ? ['parades-circles', 'clusters-circle']
+          : ['parades-circles']
+        const hits = map.queryRenderedFeatures(e.point, { layers: queryLayers })
+        if (!hits.length) onSelect(null)
       })
     })
 
@@ -239,6 +299,13 @@ export default function Map({
     const cfg = VIEWS[view] ?? VIEWS.europe
     map.fitBounds(cfg.bounds, { padding: 60, duration: 1000 })
   }, [view])
+
+  // ── Fly to geolocated position ──────────────────────────────────────────────
+  useEffect(() => {
+    if (!flyTo || !mapRef.current) return
+    mapRef.current.flyTo({ center: flyTo, zoom: 9, duration: 1200 })
+    onFlyToDone()
+  }, [flyTo])
 
   // ── Handle isoPinning cursor ────────────────────────────────────────────────
   useEffect(() => {
@@ -274,7 +341,6 @@ export default function Map({
 
     const [lon, lat] = isoOrigin
 
-    // Update origin pin immediately
     if (map.getSource('origin')) {
       map.getSource('origin').setData({
         type: 'FeatureCollection',
@@ -282,28 +348,18 @@ export default function Map({
       })
     }
 
-    if (!ORS_KEY) {
-      setIsoError('Set VITE_ORS_API_KEY in .env to enable isochrones')
+    if (!HERE_KEY) {
+      setIsoError('Set VITE_HERE_API_KEY in .env to enable isochrones')
       return
     }
 
     setIsoLoading(true)
     setIsoError(null)
 
-    fetchIsochrones(lon, lat, isoMode)
-      .then(geojson => {
+    fetchIsochrones(lat, lon, isoMode)
+      .then(data => {
         if (!map.getSource('isochrones')) return
-
-        // Annotate each feature with colours keyed by the `value` (seconds)
-        const bandBySeconds = Object.fromEntries(ISO_BANDS.map(b => [b.seconds, b]))
-        const annotated = {
-          ...geojson,
-          features: geojson.features.map(f => {
-            const band = bandBySeconds[f.properties.value] ?? ISO_BANDS[0]
-            return { ...f, properties: { ...f.properties, fillColor: band.color, strokeColor: band.stroke } }
-          }),
-        }
-        map.getSource('isochrones').setData(annotated)
+        map.getSource('isochrones').setData(hereToGeoJSON(data))
       })
       .catch(err => setIsoError(err.message))
       .finally(() => setIsoLoading(false))
