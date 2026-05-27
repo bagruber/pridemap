@@ -1,4 +1,7 @@
 import { labelForDays, indexColor, indexLabel } from '../utils/timeColors.js'
+import attendanceData from '../data/attendance.json'
+
+const attendanceLookup = Object.fromEntries(attendanceData.map(a => [a.city, a]))
 
 const COUNTRY_NAMES = {
   AL:'Albania', AD:'Andorra', AT:'Austria', BE:'Belgium', BA:'Bosnia & Herz.',
@@ -11,6 +14,12 @@ const COUNTRY_NAMES = {
   RU:'Russia', SM:'San Marino', RS:'Serbia', SK:'Slovakia', SI:'Slovenia',
   ES:'Spain', SE:'Sweden', CH:'Switzerland', TR:'Turkey', UA:'Ukraine',
   GB:'United Kingdom', GE:'Georgia', AM:'Armenia', AZ:'Azerbaijan', BY:'Belarus',
+}
+
+function formatBucket(n) {
+  if (n >= 1000000) return `≥${(n / 1000000).toLocaleString('en')}M`
+  if (n >= 1000) return `≥${(n / 1000).toLocaleString('en')}k`
+  return `≥${n.toLocaleString('en')}`
 }
 
 export default function DetailPanel({ parade, onClose }) {
@@ -30,10 +39,15 @@ export default function DetailPanel({ parade, onClose }) {
   const sizeLabel = { small: 'Small', medium: 'Medium', large: 'Large' }[size] ?? size
   const countryName = COUNTRY_NAMES[country] ?? country
 
+  const att = attendanceLookup[city]
+
   return (
     <div className="detail-panel">
       <div className="detail-header">
-        <div className="detail-title">{name}</div>
+        <div>
+          <div className="detail-city-name">{city}</div>
+          <div className="detail-title">{name}</div>
+        </div>
         <button className="detail-close" onClick={onClose} aria-label="Close">✕</button>
       </div>
 
@@ -45,17 +59,25 @@ export default function DetailPanel({ parade, onClose }) {
       <div className="detail-meta">
         <div className="detail-chip">
           <div className="chip-dot" style={{ background: color }} />
-          {city}, {countryName}
+          {countryName}
         </div>
-        <div className="detail-chip">
-          · {sizeLabel} event
-        </div>
+        <div className="detail-chip">· {sizeLabel} event</div>
         {firstYear && (
           <div className="detail-chip">
-            · Since {firstYear} ({new Date().getFullYear() - firstYear} years)
+            · Est. {firstYear}
           </div>
         )}
       </div>
+
+      {att && (
+        <div className="detail-attendance">
+          <div className="detail-stat-label">Attendance</div>
+          <div className="detail-stat-value">
+            {formatBucket(att.bucket)}
+            <span className="detail-stat-sub"> visitors ({att.year}{att.note ? ` · ${att.note}` : ''})</span>
+          </div>
+        </div>
+      )}
 
       {queerIndex != null && (
         <div className="detail-index">
@@ -68,10 +90,7 @@ export default function DetailPanel({ parade, onClose }) {
           <div className="index-bar-track">
             <div
               className="index-bar-fill"
-              style={{
-                width: `${queerIndex}%`,
-                background: indexColor(queerIndex),
-              }}
+              style={{ width: `${queerIndex}%`, background: indexColor(queerIndex) }}
             />
           </div>
         </div>

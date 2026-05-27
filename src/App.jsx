@@ -16,14 +16,40 @@ const parades = paradesRaw.map(p => ({
 
 const ALL_COUNTRIES = [...new Set(parades.map(p => p.country))].sort()
 
+export const VIEWS = {
+  europe: {
+    label: 'Europe',
+    center: [15, 52],
+    zoom: 4,
+    bounds: [[-35, 24], [55, 73]],
+    defaultSizes: ['medium', 'large'],
+  },
+  dach: {
+    label: 'DACH',
+    center: [11, 50.5],
+    zoom: 5.8,
+    bounds: [[4.0, 45.5], [18.5, 56.0]],
+    defaultSizes: [],
+  },
+}
+
 export default function App() {
   const [selectedParade, setSelectedParade] = useState(null)
   const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [view, setView] = useState('europe')
   const [filters, setFilters] = useState({
     countries: [],
-    sizes: [],
+    sizes: VIEWS.europe.defaultSizes,
     timeframe: 'upcoming',
   })
+  const [isoOrigin, setIsoOrigin] = useState(null)
+  const [isoMode, setIsoMode] = useState('driving-car')
+  const [isoPinning, setIsoPinning] = useState(false)
+
+  function switchView(v) {
+    setView(v)
+    setFilters(f => ({ ...f, sizes: VIEWS[v].defaultSizes }))
+  }
 
   const filteredParades = useMemo(() => {
     return parades.filter(p => {
@@ -43,7 +69,12 @@ export default function App() {
       <Map
         parades={filteredParades}
         onSelect={setSelectedParade}
-        selectedId={selectedParade?.id}
+        view={view}
+        isoOrigin={isoOrigin}
+        onIsoOriginSet={setIsoOrigin}
+        isoMode={isoMode}
+        isoPinning={isoPinning}
+        onPinningDone={() => setIsoPinning(false)}
       />
 
       <button
@@ -63,6 +94,8 @@ export default function App() {
           onChange={setFilters}
           allCountries={ALL_COUNTRIES}
           totalCount={filteredParades.length}
+          view={view}
+          onViewChange={switchView}
         />
       )}
 
@@ -72,6 +105,51 @@ export default function App() {
           onClose={() => setSelectedParade(null)}
         />
       )}
+
+      <div className="isochrone-controls">
+        <div className="iso-title">Travel time</div>
+        <div className="iso-mode-row">
+          {[
+            { value: 'driving-car', label: 'Car' },
+            { value: 'cycling-regular', label: 'Cycling' },
+          ].map(m => (
+            <button
+              key={m.value}
+              className={`toggle-btn ${isoMode === m.value ? 'active' : ''}`}
+              onClick={() => setIsoMode(m.value)}
+            >
+              {m.label}
+            </button>
+          ))}
+        </div>
+        <button
+          className={`iso-pin-btn ${isoPinning ? 'pinning' : ''}`}
+          onClick={() => {
+            if (isoOrigin) {
+              setIsoOrigin(null)
+            } else {
+              setIsoPinning(v => !v)
+            }
+          }}
+        >
+          {isoOrigin ? 'Clear origin' : isoPinning ? 'Click map…' : 'Set origin'}
+        </button>
+        {isoOrigin && (
+          <div className="iso-legend">
+            {[
+              { min: 30, color: 'rgba(255,45,120,0.55)' },
+              { min: 60, color: 'rgba(255,149,0,0.55)' },
+              { min: 90, color: 'rgba(52,199,89,0.55)' },
+              { min: 120, color: 'rgba(10,132,255,0.55)' },
+            ].map(b => (
+              <div key={b.min} className="iso-legend-item">
+                <div className="iso-legend-swatch" style={{ background: b.color }} />
+                <span>{b.min} min</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
 
       <Legend />
     </div>

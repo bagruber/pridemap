@@ -29,7 +29,7 @@ const TIMEFRAMES = [
   { value: 'past', label: 'Past' },
 ]
 
-export default function FilterSidebar({ filters, onChange, allCountries, totalCount }) {
+export default function FilterSidebar({ filters, onChange, allCountries, totalCount, view, onViewChange }) {
   const toggleCountry = (code) => {
     const next = filters.countries.includes(code)
       ? filters.countries.filter(c => c !== code)
@@ -47,8 +47,18 @@ export default function FilterSidebar({ filters, onChange, allCountries, totalCo
   return (
     <div className="filter-sidebar">
       <div className="sidebar-header">
-        <h1>Pride Map<br />2026</h1>
-        <div className="subtitle">Europe</div>
+        <h1 className="app-title">Pride Map<br />2026</h1>
+        <div className="view-toggle">
+          {[{ value: 'europe', label: '🌍 Europe' }, { value: 'dach', label: '🇩🇪 DACH' }].map(v => (
+            <button
+              key={v.value}
+              className={`view-btn ${view === v.value ? 'active' : ''}`}
+              onClick={() => onViewChange(v.value)}
+            >
+              {v.label}
+            </button>
+          ))}
+        </div>
         <div className="sidebar-count">
           Showing <strong>{totalCount}</strong> events
         </div>
