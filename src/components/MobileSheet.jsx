@@ -3,6 +3,7 @@ import { ChevronUp, ChevronDown } from 'lucide-react'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
+import ColoredTitle from './ColoredTitle.jsx'
 
 const SIZES = ['small', 'medium', 'large']
 const WEEKENDS = [
@@ -55,6 +56,7 @@ export default function MobileSheet({
         onTouchEnd={onTouchEnd}
       >
         <div className="sheet-handle" />
+        <ColoredTitle className="app-title sheet-title" />
       </div>
 
       {/* Peek row — most-used filters without expanding */}

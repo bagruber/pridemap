@@ -757,11 +757,21 @@ html, body, #root {
   /* Large, easy-to-tap handle area */
   .sheet-handle-row {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 28px;
-    padding: 10px 0 6px;
+    padding: 10px 0 4px;
     cursor: pointer;
+  }
+
+  .sheet-title {
+    font-size: 15px;
+    margin: 6px 0 0;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
   }
 
   .sheet-handle {
