@@ -72,7 +72,7 @@ export default function App() {
     if (!INITIAL_HASH?.selectedId) return null
     const p = parades.find(p => p.id === INITIAL_HASH.selectedId)
     if (!p) return null
-    return { id: p.id, name: p.name, city: p.city, country: p.country, date: p.date, size: p.size, daysUntil: p.daysUntil, color: colorForDays(p.daysUntil), queerIndex: p.queerIndex, website: p.website, firstYear: p.firstYear }
+    return { id: p.id, name: p.name, city: p.city, country: p.country, date: p.date, size: p.size, daysUntil: p.daysUntil, color: colorForDays(p.daysUntil), queerIndex: p.queerIndex, website: p.website, instagram: p.instagram, firstYear: p.firstYear }
   })
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [isoOrigin, setIsoOrigin] = useState(null)
@@ -263,8 +263,8 @@ export default function App() {
         </>
       )}
 
-      {/* Mobile bottom sheet + isochrone FAB */}
-      {isMobile && (
+      {/* Mobile bottom sheet + isochrone FAB — hidden when detail panel is open */}
+      {isMobile && !selectedParade && (
         <>
           <MobileSheet
             filters={filters}

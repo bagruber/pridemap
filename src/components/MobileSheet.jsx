@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { ChevronUp, ChevronDown } from 'lucide-react'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
@@ -16,6 +17,16 @@ export default function MobileSheet({
 }) {
   const { lang, setLang } = useLang()
   const [expanded, setExpanded] = useState(false)
+  const dragStartY = useRef(null)
+
+  const onTouchStart = e => { dragStartY.current = e.touches[0].clientY }
+  const onTouchEnd  = e => {
+    if (dragStartY.current === null) return
+    const delta = dragStartY.current - e.changedTouches[0].clientY
+    if (delta > 40)  setExpanded(true)
+    if (delta < -40) setExpanded(false)
+    dragStartY.current = null
+  }
 
   const toggleCountry = code => onChange({
     ...filters,
@@ -37,7 +48,12 @@ export default function MobileSheet({
   return (
     <div className={`mobile-sheet ${expanded ? 'expanded' : ''}`}>
       {/* Drag handle — large touch target */}
-      <div className="sheet-handle-row" onClick={() => setExpanded(v => !v)}>
+      <div
+        className="sheet-handle-row"
+        onClick={() => setExpanded(v => !v)}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
+      >
         <div className="sheet-handle" />
       </div>
 
@@ -73,7 +89,7 @@ export default function MobileSheet({
           onClick={() => setExpanded(v => !v)}
           aria-label="Toggle filters"
         >
-          {expanded ? '▼' : '▲'}
+          {expanded ? <ChevronDown size={20} /> : <ChevronUp size={20} />}
         </button>
       </div>
 
@@ -204,6 +220,7 @@ export default function MobileSheet({
             {t('suggestOne', lang)}
           </a>
         </div>
+        <p className="sidebar-credit">By Benedict Arya Gruber</p>
       </div>
     </div>
   )

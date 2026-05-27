@@ -2,6 +2,18 @@ import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 
+const PRIDE_COLORS = ['#E40303', '#FF8C00', '#FFED00', '#008026', '#004DFF', '#750787']
+
+function ColoredTitle() {
+  let n = 0
+  const chars = [...'pride map 2026'].map((ch, i) => {
+    if (ch === ' ') return <span key={i}> </span>
+    const color = PRIDE_COLORS[Math.floor(n++ / 2)]
+    return <span key={i} style={{ color }}>{ch}</span>
+  })
+  return <h1 className="app-title" aria-label="pride map 2026">{chars}</h1>
+}
+
 const SIZES = ['small', 'medium', 'large']
 const TIMEFRAMES = [
   { value: 'upcoming', key: 'upcoming' },
@@ -43,7 +55,7 @@ export default function FilterSidebar({
     <div className="filter-sidebar">
       <div className="sidebar-header">
         <div className="sidebar-title-row">
-          <h1 className="app-title">{t('appTitle', lang)}</h1>
+          <ColoredTitle />
           <div className="lang-segmented">
             <button
               className={`toggle-btn ${lang === 'de' ? 'active' : ''}`}
@@ -171,6 +183,7 @@ export default function FilterSidebar({
         <p className="sidebar-disclaimer">
           {t('disclaimer', lang)}
         </p>
+        <p className="sidebar-credit">By Benedict Arya Gruber</p>
       </div>
     </div>
   )
