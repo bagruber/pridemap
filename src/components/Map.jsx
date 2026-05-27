@@ -43,6 +43,7 @@ function paradesToGeoJSON(parades) {
           radiusHover: SIZE_RADIUS_HOVER[p.size] ?? 8,
           queerIndex: p.queerIndex,
           website: p.website ?? null,
+          instagram: p.instagram ?? null,
           firstYear: p.firstYear ?? null,
         },
       })),
@@ -270,7 +271,7 @@ export default function Map({
       map.on('click', 'parades-circles', (e) => {
         const f = e.features[0]; if (!f) return
         const p = f.properties
-        onSelect({ id: p.id, name: p.name, city: p.city, country: p.country, date: p.date, size: p.size, daysUntil: p.daysUntil, color: p.color, queerIndex: p.queerIndex, website: p.website, firstYear: p.firstYear })
+        onSelect({ id: p.id, name: p.name, city: p.city, country: p.country, date: p.date, size: p.size, daysUntil: p.daysUntil, color: p.color, queerIndex: p.queerIndex, website: p.website, instagram: p.instagram, firstYear: p.firstYear })
       })
 
       map.on('click', (e) => {
