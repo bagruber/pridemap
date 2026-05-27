@@ -60,8 +60,8 @@
   },
   {
     "city": "Paris",
-    "bucket": 100000,
-    "year": 2024
+    "bucket": 500000,
+    "year": 2025
   },
   {
     "city": "London",
@@ -171,19 +171,18 @@
   },
   {
     "city": "Lyon",
-    "bucket": 15000,
+    "bucket": 14000,
     "year": 2025
   },
   {
     "city": "Toulouse",
-    "bucket": 25000,
-    "year": 2024,
-    "note": "festival total"
+    "bucket": 30000,
+    "year": 2025
   },
   {
     "city": "Straßburg",
-    "bucket": 10000,
-    "year": 2023
+    "bucket": 7000,
+    "year": 2025
   },
   {
     "city": "Barcelona",
@@ -279,8 +278,8 @@
   },
   {
     "city": "Lille",
-    "bucket": 5000,
-    "year": 2024
+    "bucket": 20000,
+    "year": 2025
   },
   {
     "city": "Angermünde",
@@ -482,8 +481,8 @@
   },
   {
     "city": "Rennes",
-    "bucket": 10000,
-    "year": 2024
+    "bucket": 8000,
+    "year": 2025
   },
   {
     "city": "Ljubljana",
@@ -628,6 +627,61 @@
   {
     "city": "Udine",
     "bucket": 2500,
+    "year": 2024
+  },
+  {
+    "city": "Reims",
+    "bucket": 2000,
+    "year": 2025
+  },
+  {
+    "city": "Bordeaux",
+    "bucket": 10000,
+    "year": 2024
+  },
+  {
+    "city": "Dijon",
+    "bucket": 1500,
+    "year": 2025
+  },
+  {
+    "city": "Metz",
+    "bucket": 5000,
+    "year": 2025
+  },
+  {
+    "city": "Nantes",
+    "bucket": 12000,
+    "year": 2025
+  },
+  {
+    "city": "Grenoble",
+    "bucket": 4000,
+    "year": 2025
+  },
+  {
+    "city": "Montpellier",
+    "bucket": 20000,
+    "year": 2025
+  },
+  {
+    "city": "Rouen",
+    "bucket": 5000,
+    "year": 2025
+  },
+  {
+    "city": "Marseille",
+    "bucket": 40000,
+    "year": 2025
+  },
+  {
+    "city": "Annecy",
+    "bucket": 1300,
+    "year": 2025
+  },
+  {
+    "city": "Chambéry",
+    "bucket": 1000,
     "year": 2024
   }
 ]

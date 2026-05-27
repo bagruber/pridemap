@@ -1,5 +1,37 @@
 [
   {
+    "id": "molines-en-queyras-pride-2026-01-31",
+    "name": "Molines-en-Queyras Pride",
+    "city": "Molines-en-Queyras",
+    "country": "FR",
+    "lat": 44.74,
+    "lon": 6.893,
+    "date": "2026-01-31",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "bourg-en-bresse-pride-2026-03-28",
+    "name": "Bourg-en-Bresse Pride",
+    "city": "Bourg-en-Bresse",
+    "country": "FR",
+    "lat": 46.205,
+    "lon": 5.228,
+    "date": "2026-03-28",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
     "id": "csd-angermuende-2026-2026-04-11",
     "name": "CSD Angermünde 2026",
     "city": "Angermünde",
@@ -12,7 +44,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://aktionsbuendnis-brandenburg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/pride.angermuende.official/"
   },
   {
     "id": "sanremo-pride-2026-04-11",
@@ -58,7 +91,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-schoenebeck.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdschoenebeck/"
   },
   {
     "id": "csd-schwedt-oder-2026-2026-04-25",
@@ -73,7 +107,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdangermuende_csdschwedt_oder/"
   },
   {
     "id": "csd-dessau-rosslau-2026-2026-05-02",
@@ -88,7 +123,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-dessau-rosslau.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csddessaurosslau/"
   },
   {
     "id": "gran-canaria-pride-csd-gran-canaria-2026-2026-05-09",
@@ -163,7 +199,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-deutschland.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdpotsdam/"
   },
   {
     "id": "csd-limburg-2026-2026-05-09",
@@ -178,6 +215,39 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdlimburg/"
+  },
+  {
+    "id": "agen-pride-2026-05-09",
+    "name": "Agen Pride",
+    "city": "Agen",
+    "country": "FR",
+    "lat": 44.204,
+    "lon": 0.621,
+    "date": "2026-05-09",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.agen.fr/en-ce-moment/agenda/evenement/4-eme-marche-des-fiertes-du-lot-et-garonne",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "libourne-pride-2026-05-09",
+    "name": "Libourne Pride",
+    "city": "Libourne",
+    "country": "FR",
+    "lat": 44.92,
+    "lon": -0.24,
+    "date": "2026-05-09",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
     "venues": null
   },
   {
@@ -284,7 +354,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/queer.eu/"
   },
   {
     "id": "csd-parchim-2026-2026-05-16",
@@ -330,6 +401,118 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/parmapride/",
+    "venues": null
+  },
+  {
+    "id": "besancon-pride-2026-05-16",
+    "name": "Besançon Pride",
+    "city": "Besançon",
+    "country": "FR",
+    "lat": 47.238,
+    "lon": 6.024,
+    "date": "2026-05-16",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.lechni.info/20260414/en-franche-comte-plusieurs-marches-des-fiertes-prevues-pour-2026/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "blois-pride-2026-05-16",
+    "name": "Blois Pride",
+    "city": "Blois",
+    "country": "FR",
+    "lat": 47.594,
+    "lon": 1.332,
+    "date": "2026-05-16",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.blois.fr/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "la-roche-sur-yon-pride-2026-05-16",
+    "name": "La Roche-sur-Yon Pride",
+    "city": "La Roche-sur-Yon",
+    "country": "FR",
+    "lat": 46.67,
+    "lon": -1.426,
+    "date": "2026-05-16",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://centre-lgbt-de-vendee.org/pride-2026/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "saint-jean-de-maurienne-pride-2026-05-16",
+    "name": "Saint-Jean-de-Maurienne Pride",
+    "city": "Saint-Jean-de-Maurienne",
+    "country": "FR",
+    "lat": 45.275,
+    "lon": 6.344,
+    "date": "2026-05-16",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "saint-paul-les-dax-pride-2026-05-16",
+    "name": "Saint-Paul-lès-Dax Pride",
+    "city": "Saint-Paul-lès-Dax",
+    "country": "FR",
+    "lat": 43.731,
+    "lon": -1.055,
+    "date": "2026-05-16",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.pride40.org/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "valence-pride-2026-05-16",
+    "name": "Valence Pride",
+    "city": "Valence",
+    "country": "FR",
+    "lat": 44.933,
+    "lon": 4.892,
+    "date": "2026-05-16",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.valencediversite.fr/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "vannes-pride-2026-05-16",
+    "name": "Vannes Pride",
+    "city": "Vannes",
+    "country": "FR",
+    "lat": 47.658,
+    "lon": -2.76,
+    "date": "2026-05-16",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.helloasso.com/associations/liberty-max-vannes/collectes/pride-lgbtqia-de-vannes-2026-1",
+    "instagram": null,
     "venues": null
   },
   {
@@ -510,7 +693,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.hannovercsd.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_hannover/"
   },
   {
     "id": "csd-norderstedt-2026-2026-05-23",
@@ -525,7 +709,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-norderstedt.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_norderstedt/"
   },
   {
     "id": "csd-eisenhuettenstadt-2026-2026-05-23",
@@ -573,6 +758,38 @@
     "venues": null
   },
   {
+    "id": "bourgoin-jallieu-pride-2026-05-23",
+    "name": "Bourgoin-Jallieu Pride",
+    "city": "Bourgoin-Jallieu",
+    "country": "FR",
+    "lat": 45.589,
+    "lon": 5.271,
+    "date": "2026-05-23",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "reims-pride-2026-05-23",
+    "name": "Reims Pride",
+    "city": "Reims",
+    "country": "FR",
+    "lat": 49.258,
+    "lon": 4.032,
+    "date": "2026-05-23",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.reims.fr/a-la-une/une/la-marche-des-fiertes-de-reims",
+    "instagram": null,
+    "venues": null
+  },
+  {
     "id": "norrkoeping-pride-east-pride-2026-2026-05-24",
     "name": "Norrköping Pride / East Pride 2026",
     "city": "Norrköping",
@@ -600,6 +817,22 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.bradfordpride.org.uk",
+    "venues": null
+  },
+  {
+    "id": "lens-pride-2026-05-24",
+    "name": "Lens Pride",
+    "city": "Lens",
+    "country": "FR",
+    "lat": 50.432,
+    "lon": 2.83,
+    "date": "2026-05-24",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
     "venues": null
   },
   {
@@ -886,7 +1119,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-osnabrueck.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_osnabrueck/"
   },
   {
     "id": "csd-hof-2026-2026-05-30",
@@ -946,7 +1180,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-frankfurt.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/slubice.frankfurt.pride/"
   },
   {
     "id": "csd-wernigerode-2026-2026-05-30",
@@ -1027,6 +1262,214 @@
     "venues": null
   },
   {
+    "id": "alencon-pride-2026-05-30",
+    "name": "Alençon Pride",
+    "city": "Alençon",
+    "country": "FR",
+    "lat": 48.43,
+    "lon": 0.094,
+    "date": "2026-05-30",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "avignon-pride-2026-05-30",
+    "name": "Avignon Pride",
+    "city": "Avignon",
+    "country": "FR",
+    "lat": 43.949,
+    "lon": 4.806,
+    "date": "2026-05-30",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "belfort-pride-2026-05-30",
+    "name": "Belfort Pride",
+    "city": "Belfort",
+    "country": "FR",
+    "lat": 47.637,
+    "lon": 6.863,
+    "date": "2026-05-30",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "bordeaux-pride-2026-05-30",
+    "name": "Bordeaux Pride",
+    "city": "Bordeaux",
+    "country": "FR",
+    "lat": 44.837,
+    "lon": -0.579,
+    "date": "2026-05-30",
+    "size": "large",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.bordeaux-tourisme.com/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "clermont-ferrand-pride-2026-05-30",
+    "name": "Clermont-Ferrand Pride",
+    "city": "Clermont-Ferrand",
+    "country": "FR",
+    "lat": 45.776,
+    "lon": 3.087,
+    "date": "2026-05-30",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://pommesdelune.fr/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "l-arbresle-pride-2026-05-30",
+    "name": "L'Arbresle Pride",
+    "city": "L'Arbresle",
+    "country": "FR",
+    "lat": 45.836,
+    "lon": 4.607,
+    "date": "2026-05-30",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "laval-pride-2026-05-30",
+    "name": "Laval Pride",
+    "city": "Laval",
+    "country": "FR",
+    "lat": 48.073,
+    "lon": -0.771,
+    "date": "2026-05-30",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": "https://www.instagram.com/gom53/",
+    "venues": null
+  },
+  {
+    "id": "lille-pride-2026-05-30",
+    "name": "Lille Pride",
+    "city": "Lille",
+    "country": "FR",
+    "lat": 50.629,
+    "lon": 3.057,
+    "date": "2026-05-30",
+    "size": "large",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.lillepride.fr/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "narbonne-pride-2026-05-30",
+    "name": "Narbonne Pride",
+    "city": "Narbonne",
+    "country": "FR",
+    "lat": 43.184,
+    "lon": 3.003,
+    "date": "2026-05-30",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "niort-pride-2026-05-30",
+    "name": "Niort Pride",
+    "city": "Niort",
+    "country": "FR",
+    "lat": 46.323,
+    "lon": -0.462,
+    "date": "2026-05-30",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "rodez-pride-2026-05-30",
+    "name": "Rodez Pride",
+    "city": "Rodez",
+    "country": "FR",
+    "lat": 44.35,
+    "lon": 2.575,
+    "date": "2026-05-30",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "saint-nazaire-pride-2026-05-30",
+    "name": "Saint-Nazaire Pride",
+    "city": "Saint-Nazaire",
+    "country": "FR",
+    "lat": 47.273,
+    "lon": -2.213,
+    "date": "2026-05-30",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "tarbes-pride-2026-05-30",
+    "name": "Tarbes Pride",
+    "city": "Tarbes",
+    "country": "FR",
+    "lat": 43.233,
+    "lon": 0.078,
+    "date": "2026-05-30",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
     "id": "csd-saarbruecken-2026-2026-05-31",
     "name": "CSD Saarbrücken 2026",
     "city": "Saarbrücken",
@@ -1039,7 +1482,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.saarbruecken.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/lsvdsaar/"
   },
   {
     "id": "csd-warendorf-2026-2026-05-31",
@@ -1054,7 +1498,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.warendorf.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_warendorf/"
   },
   {
     "id": "wolverhampton-pride-csd-wolverhampton-2026-2026-06-06",
@@ -1264,7 +1709,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-dresden.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csddresden/"
   },
   {
     "id": "csd-duesseldorf-2026-2026-06-06",
@@ -1279,7 +1725,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-d.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdduesseldorf/"
   },
   {
     "id": "csd-paderborn-2026-2026-06-06",
@@ -1294,7 +1741,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://paderborn.aidshilfe.de/paderpride",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/paderpride/"
   },
   {
     "id": "csd-karlsruhe-2026-2026-06-06",
@@ -1309,7 +1757,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-karlsruhe.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdkarlsruhe/"
   },
   {
     "id": "csd-aschaffenburg-2026-2026-06-06",
@@ -1339,7 +1788,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://lgbtq-rosenheim.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_rosenheim/"
   },
   {
     "id": "csd-kelheim-2026-2026-06-06",
@@ -1429,7 +1879,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-termine.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_celle/"
   },
   {
     "id": "csd-hameln-2026-2026-06-06",
@@ -1444,7 +1895,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.qnwb.de/csd-hameln",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_weserbergland/"
   },
   {
     "id": "csd-storkow-mark-2026-2026-06-06",
@@ -1634,6 +2086,310 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/katundonextgen/",
+    "venues": null
+  },
+  {
+    "id": "aix-en-provence-pride-2026-06-06",
+    "name": "Aix-en-Provence Pride",
+    "city": "Aix-en-Provence",
+    "country": "FR",
+    "lat": 43.53,
+    "lon": 5.447,
+    "date": "2026-06-06",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "angouleme-pride-2026-06-06",
+    "name": "Angoulême Pride",
+    "city": "Angoulême",
+    "country": "FR",
+    "lat": 45.649,
+    "lon": 0.157,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "arles-pride-2026-06-06",
+    "name": "Arles Pride",
+    "city": "Arles",
+    "country": "FR",
+    "lat": 43.677,
+    "lon": 4.63,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "avallon-pride-2026-06-06",
+    "name": "Avallon Pride",
+    "city": "Avallon",
+    "country": "FR",
+    "lat": 47.486,
+    "lon": 3.908,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "bourges-pride-2026-06-06",
+    "name": "Bourges Pride",
+    "city": "Bourges",
+    "country": "FR",
+    "lat": 47.081,
+    "lon": 2.398,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "calais-pride-2026-06-06",
+    "name": "Calais Pride",
+    "city": "Calais",
+    "country": "FR",
+    "lat": 50.951,
+    "lon": 1.858,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "chartres-pride-2026-06-06",
+    "name": "Chartres Pride",
+    "city": "Chartres",
+    "country": "FR",
+    "lat": 48.448,
+    "lon": 1.488,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "douai-pride-2026-06-06",
+    "name": "Douai Pride",
+    "city": "Douai",
+    "country": "FR",
+    "lat": 50.371,
+    "lon": 3.08,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "douarnenez-pride-2026-06-06",
+    "name": "Douarnenez Pride",
+    "city": "Douarnenez",
+    "country": "FR",
+    "lat": 48.097,
+    "lon": -4.327,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "fougeres-pride-2026-06-06",
+    "name": "Fougères Pride",
+    "city": "Fougères",
+    "country": "FR",
+    "lat": 48.352,
+    "lon": -1.199,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "la-ciotat-pride-2026-06-06",
+    "name": "La Ciotat Pride",
+    "city": "La Ciotat",
+    "country": "FR",
+    "lat": 43.174,
+    "lon": 5.606,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "la-rochelle-pride-2026-06-06",
+    "name": "La Rochelle Pride",
+    "city": "La Rochelle",
+    "country": "FR",
+    "lat": 46.16,
+    "lon": -1.152,
+    "date": "2026-06-06",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "mulhouse-pride-2026-06-06",
+    "name": "Mulhouse Pride",
+    "city": "Mulhouse",
+    "country": "FR",
+    "lat": 47.75,
+    "lon": 7.336,
+    "date": "2026-06-06",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "nancy-pride-2026-06-06",
+    "name": "Nancy Pride",
+    "city": "Nancy",
+    "country": "FR",
+    "lat": 48.692,
+    "lon": 6.184,
+    "date": "2026-06-06",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "roubaix-pride-2026-06-06",
+    "name": "Roubaix Pride",
+    "city": "Roubaix",
+    "country": "FR",
+    "lat": 50.694,
+    "lon": 3.181,
+    "date": "2026-06-06",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "saint-gaudens-pride-2026-06-06",
+    "name": "Saint-Gaudens Pride",
+    "city": "Saint-Gaudens",
+    "country": "FR",
+    "lat": 43.107,
+    "lon": 0.724,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "saint-quentin-pride-2026-06-06",
+    "name": "Saint-Quentin Pride",
+    "city": "Saint-Quentin",
+    "country": "FR",
+    "lat": 49.847,
+    "lon": 3.288,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "thionville-pride-2026-06-06",
+    "name": "Thionville Pride",
+    "city": "Thionville",
+    "country": "FR",
+    "lat": 49.358,
+    "lon": 6.167,
+    "date": "2026-06-06",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "tours-pride-2026-06-06",
+    "name": "Tours Pride",
+    "city": "Tours",
+    "country": "FR",
+    "lat": 47.394,
+    "lon": 0.688,
+    "date": "2026-06-06",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
     "venues": null
   },
   {
@@ -2072,7 +2828,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bielefeld.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdbielefeld/"
   },
   {
     "id": "csd-kassel-2026-2026-06-13",
@@ -2087,7 +2844,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-kassel.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdkassel/"
   },
   {
     "id": "csd-recklinghausen-2026-2026-06-13",
@@ -2117,7 +2875,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csdaugsburg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdaugsburg/"
   },
   {
     "id": "csd-friedrichshafen-2026-2026-06-13",
@@ -2147,7 +2906,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-emden.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdemden/"
   },
   {
     "id": "csd-pforzheim-2026-2026-06-13",
@@ -2162,7 +2922,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-pforzheim.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/queer.space.pf/"
   },
   {
     "id": "csd-reutlingen-2026-2026-06-13",
@@ -2427,6 +3188,246 @@
     "venues": null
   },
   {
+    "id": "ales-pride-2026-06-13",
+    "name": "Alès Pride",
+    "city": "Alès",
+    "country": "FR",
+    "lat": 44.127,
+    "lon": 4.082,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "auxerre-pride-2026-06-13",
+    "name": "Auxerre Pride",
+    "city": "Auxerre",
+    "country": "FR",
+    "lat": 47.798,
+    "lon": 3.569,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "beziers-pride-2026-06-13",
+    "name": "Béziers Pride",
+    "city": "Béziers",
+    "country": "FR",
+    "lat": 43.344,
+    "lon": 3.216,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "caen-pride-2026-06-13",
+    "name": "Caen Pride",
+    "city": "Caen",
+    "country": "FR",
+    "lat": 49.182,
+    "lon": -0.371,
+    "date": "2026-06-13",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "compiegne-pride-2026-06-13",
+    "name": "Compiègne Pride",
+    "city": "Compiègne",
+    "country": "FR",
+    "lat": 49.418,
+    "lon": 2.823,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "dijon-pride-2026-06-13",
+    "name": "Dijon Pride",
+    "city": "Dijon",
+    "country": "FR",
+    "lat": 47.322,
+    "lon": 5.041,
+    "date": "2026-06-13",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "lons-le-saunier-pride-2026-06-13",
+    "name": "Lons-le-Saunier Pride",
+    "city": "Lons-le-Saunier",
+    "country": "FR",
+    "lat": 46.674,
+    "lon": 5.554,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "metz-pride-2026-06-13",
+    "name": "Metz Pride",
+    "city": "Metz",
+    "country": "FR",
+    "lat": 49.12,
+    "lon": 6.177,
+    "date": "2026-06-13",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.couleursgaies.fr/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "montauban-pride-2026-06-13",
+    "name": "Montauban Pride",
+    "city": "Montauban",
+    "country": "FR",
+    "lat": 44.017,
+    "lon": 1.353,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "nevers-pride-2026-06-13",
+    "name": "Nevers Pride",
+    "city": "Nevers",
+    "country": "FR",
+    "lat": 46.989,
+    "lon": 3.159,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "perigueux-pride-2026-06-13",
+    "name": "Périgueux Pride",
+    "city": "Périgueux",
+    "country": "FR",
+    "lat": 45.185,
+    "lon": 0.721,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "perpignan-pride-2026-06-13",
+    "name": "Perpignan Pride",
+    "city": "Perpignan",
+    "country": "FR",
+    "lat": 42.699,
+    "lon": 2.895,
+    "date": "2026-06-13",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "saint-brieuc-pride-2026-06-13",
+    "name": "Saint-Brieuc Pride",
+    "city": "Saint-Brieuc",
+    "country": "FR",
+    "lat": 48.514,
+    "lon": -2.765,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "saintes-pride-2026-06-13",
+    "name": "Saintes Pride",
+    "city": "Saintes",
+    "country": "FR",
+    "lat": 45.747,
+    "lon": -0.64,
+    "date": "2026-06-13",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "toulon-pride-2026-06-13",
+    "name": "Toulon Pride",
+    "city": "Toulon",
+    "country": "FR",
+    "lat": 43.124,
+    "lon": 5.928,
+    "date": "2026-06-13",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
     "id": "chi-in-u-pride-csd-chi-in-u-2026-2026-06-14",
     "name": "Chişinău Pride / CSD Chişinău 2026",
     "city": "Chişinău",
@@ -2561,7 +3562,8 @@
     "queerIndex": 50,
     "languages": null,
     "website": "https://www.zurichpridefestival.ch",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_zureich/"
   },
   {
     "id": "murcia-pride-csd-murcia-2026-2026-06-20",
@@ -2863,7 +3865,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-oldenburg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdnordwest/"
   },
   {
     "id": "csd-freiburg-2026-2026-06-20",
@@ -2878,7 +3881,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-freiburg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdfreiburg/"
   },
   {
     "id": "csd-ulm-csd-neu-ulm-2026-2026-06-20",
@@ -3043,7 +4047,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-herrenberg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_herrenberg/"
   },
   {
     "id": "csd-lutherstadt-wittenberg-2026-2026-06-20",
@@ -3185,6 +4190,86 @@
     "venues": null
   },
   {
+    "id": "brest-pride-2026-06-20",
+    "name": "Brest Pride",
+    "city": "Brest",
+    "country": "FR",
+    "lat": 48.39,
+    "lon": -4.486,
+    "date": "2026-06-20",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "gueret-pride-2026-06-20",
+    "name": "Guéret Pride",
+    "city": "Guéret",
+    "country": "FR",
+    "lat": 46.17,
+    "lon": 1.873,
+    "date": "2026-06-20",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "rennes-pride-2026-06-20",
+    "name": "Rennes Pride",
+    "city": "Rennes",
+    "country": "FR",
+    "lat": 48.117,
+    "lon": -1.678,
+    "date": "2026-06-20",
+    "size": "large",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.iskis-rbx.fr/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "saint-martin-en-haut-pride-2026-06-20",
+    "name": "Saint-Martin-en-Haut Pride",
+    "city": "Saint-Martin-en-Haut",
+    "country": "FR",
+    "lat": 45.662,
+    "lon": 4.523,
+    "date": "2026-06-20",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "vesoul-pride-2026-06-20",
+    "name": "Vesoul Pride",
+    "city": "Vesoul",
+    "country": "FR",
+    "lat": 47.622,
+    "lon": 6.157,
+    "date": "2026-06-20",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
     "id": "kiev-pride-csd-kiev-2026-2026-06-21",
     "name": "Kiev Pride / CSD Kiev 2026",
     "city": "Kiew",
@@ -3288,7 +4373,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://www.bregenzpride.at",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdvorarlberg/"
   },
   {
     "id": "paris-pride-csd-paris-2026-2026-06-27",
@@ -3635,7 +4721,8 @@
     "queerIndex": 50,
     "languages": null,
     "website": "https://lausannepride.ch",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/lausannepride/"
   },
   {
     "id": "csd-muenchen-2026-2026-06-27",
@@ -3650,7 +4737,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-muenchen.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdmuenchen/"
   },
   {
     "id": "csd-greifswald-2026-2026-06-27",
@@ -3710,7 +4798,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-wuerzburg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/queerpridewue/"
   },
   {
     "id": "csd-hanau-2026-2026-06-27",
@@ -3830,7 +4919,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-torgau.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_torgau/"
   },
   {
     "id": "csd-winsen-luhe-2026-2026-06-27",
@@ -4119,6 +5209,134 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/humanpridetaranto/",
+    "venues": null
+  },
+  {
+    "id": "amiens-pride-2026-06-27",
+    "name": "Amiens Pride",
+    "city": "Amiens",
+    "country": "FR",
+    "lat": 49.895,
+    "lon": 2.302,
+    "date": "2026-06-27",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "carcassonne-pride-2026-06-27",
+    "name": "Carcassonne Pride",
+    "city": "Carcassonne",
+    "country": "FR",
+    "lat": 43.213,
+    "lon": 2.354,
+    "date": "2026-06-27",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "lisieux-pride-2026-06-27",
+    "name": "Lisieux Pride",
+    "city": "Lisieux",
+    "country": "FR",
+    "lat": 49.144,
+    "lon": 0.228,
+    "date": "2026-06-27",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "lorient-pride-2026-06-27",
+    "name": "Lorient Pride",
+    "city": "Lorient",
+    "country": "FR",
+    "lat": 47.749,
+    "lon": -3.368,
+    "date": "2026-06-27",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "lyon-pride-2026-06-27",
+    "name": "Lyon Pride",
+    "city": "Lyon",
+    "country": "FR",
+    "lat": 45.75,
+    "lon": 4.845,
+    "date": "2026-06-27",
+    "size": "large",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": "https://www.instagram.com/cfl.lyon/",
+    "venues": null
+  },
+  {
+    "id": "nimes-pride-2026-06-27",
+    "name": "Nîmes Pride",
+    "city": "Nîmes",
+    "country": "FR",
+    "lat": 43.837,
+    "lon": 4.361,
+    "date": "2026-06-27",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "sallanches-pride-2026-06-27",
+    "name": "Sallanches Pride",
+    "city": "Sallanches",
+    "country": "FR",
+    "lat": 45.936,
+    "lon": 6.632,
+    "date": "2026-06-27",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "tourcoing-pride-2026-06-27",
+    "name": "Tourcoing Pride",
+    "city": "Tourcoing",
+    "country": "FR",
+    "lat": 50.724,
+    "lon": 3.161,
+    "date": "2026-06-27",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
     "venues": null
   },
   {
@@ -4436,7 +5654,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-schwerin.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_schwerin/"
   },
   {
     "id": "csd-regensburg-2026-2026-07-04",
@@ -4451,7 +5670,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-regensburg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_regensburg/"
   },
   {
     "id": "csd-chemnitz-2026-2026-07-04",
@@ -4577,6 +5797,54 @@
     "venues": null
   },
   {
+    "id": "cluny-pride-2026-07-04",
+    "name": "Cluny Pride",
+    "city": "Cluny",
+    "country": "FR",
+    "lat": 46.434,
+    "lon": 4.658,
+    "date": "2026-07-04",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "quimper-pride-2026-07-04",
+    "name": "Quimper Pride",
+    "city": "Quimper",
+    "country": "FR",
+    "lat": 47.996,
+    "lon": -4.098,
+    "date": "2026-07-04",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "roanne-pride-2026-07-04",
+    "name": "Roanne Pride",
+    "city": "Roanne",
+    "country": "FR",
+    "lat": 46.037,
+    "lon": 4.07,
+    "date": "2026-07-04",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
     "id": "sundsvall-pride-csd-sundsvall-2026-2026-07-05",
     "name": "Sundsvall Pride / CSD Sundsvall 2026",
     "city": "Sundsvall",
@@ -4604,7 +5872,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-koeln.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/cologneprideofficial/"
   },
   {
     "id": "bristol-pride-csd-bristol-2026-2026-07-11",
@@ -4739,7 +6008,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-pirna.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdpirna/"
   },
   {
     "id": "csd-mannheim-2026-2026-07-11",
@@ -4754,7 +6024,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-mannheim.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/monnempride/"
   },
   {
     "id": "csd-kiel-2026-2026-07-11",
@@ -4769,7 +6040,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-kiel.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdkiel/"
   },
   {
     "id": "csd-cottbus-2026-2026-07-11",
@@ -4829,7 +6101,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bamberg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_bamberg/"
   },
   {
     "id": "csd-ueberlingen-2026-2026-07-11",
@@ -4859,7 +6132,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-schwabach.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdschwabach/"
   },
   {
     "id": "csd-schongau-2026-2026-07-11",
@@ -4904,7 +6178,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-heilbronn.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_heilbronn/"
   },
   {
     "id": "csd-detmold-2026-2026-07-11",
@@ -4934,7 +6209,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-memmingen.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/pridememmingen/"
   },
   {
     "id": "csd-gifhorn-2026-2026-07-11",
@@ -4964,7 +6240,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-esslingen.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd.esslingen/"
   },
   {
     "id": "csd-bernau-bei-berlin-2026-2026-07-11",
@@ -4994,7 +6271,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-koethen.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_koethen/"
   },
   {
     "id": "csd-freiberg-2026-2026-07-11",
@@ -5009,7 +6287,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-freiberg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/junges_netzwerk_fg/"
   },
   {
     "id": "csd-viersen-2026-2026-07-11",
@@ -5166,6 +6445,38 @@
     "venues": null
   },
   {
+    "id": "lyon-pride-centre-lgbti-2026-07-11",
+    "name": "Lyon Pride (Centre LGBTI+)",
+    "city": "Lyon",
+    "country": "FR",
+    "lat": 45.75,
+    "lon": 4.845,
+    "date": "2026-07-11",
+    "size": "large",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.centrelgbti-lyon.org/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "nice-pride-2026-07-11",
+    "name": "Nice Pride",
+    "city": "Nizza",
+    "country": "FR",
+    "lat": 43.711,
+    "lon": 7.262,
+    "date": "2026-07-11",
+    "size": "large",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": "https://www.instagram.com/pinkparadnice/",
+    "venues": null
+  },
+  {
     "id": "csd-olpe-2026-2026-07-12",
     "name": "CSD Olpe 2026",
     "city": "Olpe",
@@ -5223,7 +6534,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/unkenpride/"
   },
   {
     "id": "alicante-pride-csd-alicante-2026-2026-07-18",
@@ -5420,7 +6732,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-frankfurt.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdfrankfurt/"
   },
   {
     "id": "csd-rostock-2026-2026-07-18",
@@ -5435,7 +6748,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-rostock.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_rostock/"
   },
   {
     "id": "csd-moenchengladbach-2026-2026-07-18",
@@ -5465,7 +6779,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-trier.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/pride_trier_/"
   },
   {
     "id": "csd-bonn-2026-2026-07-18",
@@ -5480,7 +6795,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bonn.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/rheinqueer/"
   },
   {
     "id": "csd-weiden-2026-2026-07-18",
@@ -5510,7 +6826,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-landsberg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd.landsberg/"
   },
   {
     "id": "csd-haltern-am-see-2026-2026-07-18",
@@ -5620,6 +6937,22 @@
     "venues": null
   },
   {
+    "id": "annecy-pride-2026-07-18",
+    "name": "Annecy Pride",
+    "city": "Annecy",
+    "country": "FR",
+    "lat": 45.899,
+    "lon": 6.13,
+    "date": "2026-07-18",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.helloasso.com/associations/annecypride",
+    "instagram": null,
+    "venues": null
+  },
+  {
     "id": "csd-waldshut-2026-2026-07-19",
     "name": "CSD Waldshut 2026",
     "city": "Waldshut-Tiengen",
@@ -5676,8 +7009,9 @@
     "firstYear": null,
     "queerIndex": 50,
     "languages": null,
-    "website": null,
-    "venues": null
+    "website": "https://csd-bern.ch/",
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd_bern/"
   },
   {
     "id": "teneriffa-pride-csd-teneriffa-2026-2026-07-25",
@@ -5859,7 +7193,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://stpoeltenpride.at",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/stp.pride/"
   },
   {
     "id": "folkestone-pride-csd-folkestone-2026-2026-07-25",
@@ -5889,7 +7224,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-berlin.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csd.berlin.pride/"
   },
   {
     "id": "csd-stuttgart-2026-2026-07-25",
@@ -5919,7 +7255,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-duisburg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdduisburg/"
   },
   {
     "id": "csd-siegen-2026-2026-07-25",
@@ -5949,7 +7286,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-mainz.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdmainz/"
   },
   {
     "id": "csd-traunstein-2026-2026-07-25",
@@ -6012,6 +7350,22 @@
     "venues": null
   },
   {
+    "id": "chenevelles-pride-2026-07-25",
+    "name": "Chenevelles Pride",
+    "city": "Chenevelles",
+    "country": "FR",
+    "lat": 46.558,
+    "lon": 0.559,
+    "date": "2026-07-25",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null
+  },
+  {
     "id": "stockport-pride-csd-stockport-2026-2026-07-26",
     "name": "Stockport Pride / CSD Stockport 2026",
     "city": "Stockport",
@@ -6039,6 +7393,22 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-muehldorf.de",
+    "venues": null
+  },
+  {
+    "id": "pontrieux-pride-2026-07-26",
+    "name": "Pontrieux Pride",
+    "city": "Pontrieux",
+    "country": "FR",
+    "lat": 48.702,
+    "lon": -3.148,
+    "date": "2026-07-26",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
     "venues": null
   },
   {
@@ -6144,7 +7514,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.hamburg-pride.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/hamburgpride/"
   },
   {
     "id": "csd-amberg-2026-2026-08-01",
@@ -6369,7 +7740,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-nuernberg.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/csdnuernberg/"
   },
   {
     "id": "csd-bingen-am-rhein-2026-2026-08-08",
@@ -7797,7 +9169,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-frankfurt.de",
-    "venues": null
+    "venues": null,
+    "instagram": "https://www.instagram.com/slubice.frankfurt.pride/"
   },
   {
     "id": "csd-zittau-2026-2026-09-12",
@@ -7935,6 +9308,22 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/villa_castelli_pride/",
+    "venues": null
+  },
+  {
+    "id": "clisson-pride-2026-09-12",
+    "name": "Clisson Pride",
+    "city": "Clisson",
+    "country": "FR",
+    "lat": 47.087,
+    "lon": -1.279,
+    "date": "2026-09-12",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": null,
+    "instagram": null,
     "venues": null
   },
   {
@@ -8373,6 +9762,22 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-prenzlau.de",
+    "venues": null
+  },
+  {
+    "id": "chambery-pride-2026-10-10",
+    "name": "Chambéry Pride",
+    "city": "Chambéry",
+    "country": "FR",
+    "lat": 45.564,
+    "lon": 5.917,
+    "date": "2026-10-10",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 59,
+    "languages": null,
+    "website": "https://www.chambery.fr/",
+    "instagram": null,
     "venues": null
   },
   {
