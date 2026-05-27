@@ -2365,6 +2365,22 @@
     "venues": null
   },
   {
+    "id": "brno-pride-2026-06-06",
+    "name": "Brno Pride",
+    "city": "Brno",
+    "country": "CZ",
+    "lat": 49.195,
+    "lon": 16.608,
+    "date": "2026-06-06",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 42,
+    "languages": null,
+    "website": "https://www.brnopride.cz/en/",
+    "instagram": "https://www.instagram.com/brnoprideweek/",
+    "venues": null
+  },
+  {
     "id": "blackpool-pride-winter-pride-blackpool-2026-2026-06-07",
     "name": "Blackpool Pride / Winter Pride Blackpool 2026",
     "city": "Blackpool",
@@ -3323,6 +3339,22 @@
     "languages": null,
     "website": "https://fiertes-toulon.fr/",
     "instagram": "https://www.instagram.com/collectif.fiertes.toulon/",
+    "venues": null
+  },
+  {
+    "id": "tarragona-pride-2026-06-13",
+    "name": "Tarragona Pride",
+    "city": "Tarragona",
+    "country": "ES",
+    "lat": 41.119,
+    "lon": 1.245,
+    "date": "2026-06-13",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 89,
+    "languages": null,
+    "website": "https://pridetarragona.com/",
+    "instagram": "https://www.instagram.com/pridetarragona/",
     "venues": null
   },
   {
@@ -5204,6 +5236,38 @@
     "languages": null,
     "website": null,
     "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "cartagena-pride-2026-06-27",
+    "name": "Cartagena Pride",
+    "city": "Cartagena",
+    "country": "ES",
+    "lat": 37.604,
+    "lon": -0.986,
+    "date": "2026-06-27",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 89,
+    "languages": null,
+    "website": "https://www.enorgullect.es/",
+    "instagram": null,
+    "venues": null
+  },
+  {
+    "id": "split-pride-2026-06-27",
+    "name": "Split Pride",
+    "city": "Split",
+    "country": "HR",
+    "lat": 43.508,
+    "lon": 16.44,
+    "date": "2026-06-27",
+    "size": "medium",
+    "firstYear": null,
+    "queerIndex": 51,
+    "languages": null,
+    "website": "https://lgbtcentarsplit.org/",
+    "instagram": "https://www.instagram.com/splitpride/",
     "venues": null
   },
   {

@@ -187,6 +187,10 @@ html, body, #root {
 }
 .view-btn:hover { border-color: var(--text-dim); color: var(--text); }
 .view-flag { width: 14px; height: 9px; object-fit: contain; vertical-align: middle; }
+.view-btn-label { display: none; }
+.mobile-sheet .view-btn { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 8px; }
+.mobile-sheet .view-flag { width: 22px; height: 14px; }
+.mobile-sheet .view-btn-label { display: block; font-size: 10px; }
 .view-btn.active {
   background: var(--surface2);
   border-color: var(--text-muted);

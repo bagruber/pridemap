@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Clock } from 'lucide-react'
+import { Route } from 'lucide-react'
 import { ISO_BANDS } from './Map.jsx'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
@@ -29,7 +29,7 @@ export default function IsoFAB({
         onClick={() => setOpen(v => !v)}
         aria-label="Travel time"
       >
-        <Clock size={18} />
+        <Route size={18} />
         {isActive && <span className="iso-fab-dot" />}
       </button>
 

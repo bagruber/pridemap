@@ -91,7 +91,8 @@ export default function MobileSheet({
                 className={`view-btn ${view === v.value ? 'active' : ''}`}
                 onClick={() => onViewChange(v.value)}
               >
-                <img src={v.img} className="view-flag" alt={t(v.labelKey, lang)} /> {t(v.labelKey, lang)}
+                <img src={v.img} className="view-flag" alt="" />
+                <span className="view-btn-label">{t(v.labelKey, lang)}</span>
               </button>
             ))}
           </div>
