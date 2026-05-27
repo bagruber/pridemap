@@ -141,7 +141,7 @@ export default function App() {
         if (d < nextWeekendSat || d > nextWeekendSun) return false
       }
       return true
-    })
+    }).sort((a, b) => a.city.localeCompare(b.city))
   }, [filters])
 
   const activeFilterCount = filters.countries.length + filters.sizes.length +

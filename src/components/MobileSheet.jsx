@@ -4,12 +4,8 @@ import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 import ColoredTitle from './ColoredTitle.jsx'
-
-const SIZES = ['small', 'medium', 'large']
-const WEEKENDS = [
-  { value: 'weekend',      key: 'thisWeekend' },
-  { value: 'next-weekend', key: 'nextWeekend' },
-]
+import { SIZES, WEEKENDS, VIEW_OPTIONS } from '../utils/filterConstants.js'
+import { useFilterHandlers } from '../hooks/useFilterHandlers.js'
 
 export default function MobileSheet({
   filters, onChange, allCountries, totalCount,
@@ -19,6 +15,7 @@ export default function MobileSheet({
   const { lang, setLang } = useLang()
   const [expanded, setExpanded] = useState(false)
   const dragStartY = useRef(null)
+  const { toggleCountry, toggleSize, setTimeframe } = useFilterHandlers(filters, onChange)
 
   const onTouchStart = e => { dragStartY.current = e.touches[0].clientY }
   const onTouchEnd  = e => {
@@ -28,23 +25,6 @@ export default function MobileSheet({
     if (delta < -40) setExpanded(false)
     dragStartY.current = null
   }
-
-  const toggleCountry = code => onChange({
-    ...filters,
-    countries: filters.countries.includes(code)
-      ? filters.countries.filter(c => c !== code)
-      : [...filters.countries, code],
-  })
-
-  const toggleSize = size => onChange({
-    ...filters,
-    sizes: filters.sizes.includes(size)
-      ? filters.sizes.filter(s => s !== size)
-      : [...filters.sizes, size],
-  })
-
-  const setTimeframe = value =>
-    onChange({ ...filters, timeframe: filters.timeframe === value ? 'upcoming' : value })
 
   return (
     <div className={`mobile-sheet ${expanded ? 'expanded' : ''}`}>
@@ -62,7 +42,6 @@ export default function MobileSheet({
       {/* Peek row — most-used filters without expanding */}
       <div className="sheet-peek">
         <div className="sheet-peek-filters">
-          {/* Upcoming / All toggle */}
           {[
             { value: 'upcoming', key: 'upcoming' },
             { value: 'all',      key: 'all' },
@@ -75,7 +54,6 @@ export default function MobileSheet({
               {t(tf.key, lang)}
             </button>
           ))}
-          {/* This weekend */}
           <button
             className={`toggle-btn ${filters.timeframe === 'weekend' ? 'active' : ''}`}
             onClick={e => { e.stopPropagation(); setTimeframe('weekend') }}
@@ -100,16 +78,13 @@ export default function MobileSheet({
         {/* View + lang row */}
         <div className="sheet-top-row">
           <div className="view-toggle">
-            {[
-              { value: 'europe', img: `${import.meta.env.BASE_URL}Flag_of_Europe.svg`, labelKey: 'viewEurope' },
-              { value: 'dach',   img: `${import.meta.env.BASE_URL}D-A-CH_Flag.svg`,    labelKey: 'viewDACH'   },
-            ].map(v => (
+            {VIEW_OPTIONS.map(v => (
               <button
                 key={v.value}
                 className={`view-btn ${view === v.value ? 'active' : ''}`}
                 onClick={() => onViewChange(v.value)}
               >
-                <img src={v.img} className="view-flag" alt="" />
+                <img src={`${import.meta.env.BASE_URL}${v.img}`} className="view-flag" alt="" />
                 <span className="view-btn-label">{t(v.labelKey, lang)}</span>
               </button>
             ))}
@@ -136,15 +111,12 @@ export default function MobileSheet({
             >
               {t('past', lang)}
             </button>
-            {WEEKENDS.filter(w => w.value === 'next-weekend').map(w => (
-              <button
-                key={w.value}
-                className={`toggle-btn ${filters.timeframe === w.value ? 'active' : ''}`}
-                onClick={() => setTimeframe(w.value)}
-              >
-                {t(w.key, lang)}
-              </button>
-            ))}
+            <button
+              className={`toggle-btn ${filters.timeframe === 'next-weekend' ? 'active' : ''}`}
+              onClick={() => setTimeframe('next-weekend')}
+            >
+              {t(WEEKENDS.find(w => w.value === 'next-weekend').key, lang)}
+            </button>
           </div>
         </div>
 

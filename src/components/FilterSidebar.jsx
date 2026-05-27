@@ -2,17 +2,8 @@ import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 import ColoredTitle from './ColoredTitle.jsx'
-
-const SIZES = ['small', 'medium', 'large']
-const TIMEFRAMES = [
-  { value: 'upcoming', key: 'upcoming' },
-  { value: 'all',      key: 'all' },
-  { value: 'past',     key: 'past' },
-]
-const WEEKENDS = [
-  { value: 'weekend',      key: 'thisWeekend' },
-  { value: 'next-weekend', key: 'nextWeekend' },
-]
+import { SIZES, TIMEFRAMES, WEEKENDS, VIEW_OPTIONS } from '../utils/filterConstants.js'
+import { useFilterHandlers } from '../hooks/useFilterHandlers.js'
 
 export default function FilterSidebar({
   filters, onChange, allCountries, totalCount,
@@ -20,25 +11,7 @@ export default function FilterSidebar({
   clusteringEnabled, onClusteringChange,
 }) {
   const { lang, setLang } = useLang()
-
-  const toggleCountry = (code) => {
-    const next = filters.countries.includes(code)
-      ? filters.countries.filter(c => c !== code)
-      : [...filters.countries, code]
-    onChange({ ...filters, countries: next })
-  }
-
-  const toggleSize = (size) => {
-    const next = filters.sizes.includes(size)
-      ? filters.sizes.filter(s => s !== size)
-      : [...filters.sizes, size]
-    onChange({ ...filters, sizes: next })
-  }
-
-  const setTimeframe = (value) => {
-    const next = filters.timeframe === value ? 'upcoming' : value
-    onChange({ ...filters, timeframe: next })
-  }
+  const { toggleCountry, toggleSize, setTimeframe } = useFilterHandlers(filters, onChange)
 
   return (
     <div className="filter-sidebar">
@@ -57,16 +30,13 @@ export default function FilterSidebar({
           </div>
         </div>
         <div className="view-toggle">
-          {[
-            { value: 'europe', img: `${import.meta.env.BASE_URL}Flag_of_Europe.svg`, labelKey: 'viewEurope' },
-            { value: 'dach',   img: `${import.meta.env.BASE_URL}D-A-CH_Flag.svg`,    labelKey: 'viewDACH'   },
-          ].map(v => (
+          {VIEW_OPTIONS.map(v => (
             <button
               key={v.value}
               className={`view-btn ${view === v.value ? 'active' : ''}`}
               onClick={() => onViewChange(v.value)}
             >
-              <img src={v.img} className="view-flag" alt={t(v.labelKey, lang)} /> {t(v.labelKey, lang)}
+              <img src={`${import.meta.env.BASE_URL}${v.img}`} className="view-flag" alt={t(v.labelKey, lang)} /> {t(v.labelKey, lang)}
             </button>
           ))}
         </div>
