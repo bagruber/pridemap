@@ -1,0 +1,3549 @@
+[
+  {
+    "name": "CSD Angermünde 2026",
+    "ort": "Angermünde",
+    "land": "Deutschland",
+    "datum": "2026-04-11",
+    "größe": "klein"
+  },
+  {
+    "name": "Boden Pride / CSD Boden 2026",
+    "ort": "Boden",
+    "land": "Schweden",
+    "datum": "2026-04-25",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Schönebeck 2026",
+    "ort": "Schönebeck",
+    "land": "Deutschland",
+    "datum": "2026-04-25",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Schwedt/Oder 2026",
+    "ort": "Schwedt/Oder",
+    "land": "Deutschland",
+    "datum": "2026-04-25",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Dessau-Rosslau 2026",
+    "ort": "Dessau-Rosslau",
+    "land": "Deutschland",
+    "datum": "2026-05-02",
+    "größe": "klein"
+  },
+  {
+    "name": "Gran Canaria Pride / CSD Gran Canaria 2026",
+    "ort": "Las Palmas de Gran Canaria",
+    "land": "Spanien",
+    "datum": "2026-05-09",
+    "größe": "mittel"
+  },
+  {
+    "name": "Exeter Pride 2026",
+    "ort": "Exeter",
+    "land": "England",
+    "datum": "2026-05-09",
+    "größe": "mittel"
+  },
+  {
+    "name": "Växjö Pride / CSD Växjö 2026",
+    "ort": "Växjö",
+    "land": "Schweden",
+    "datum": "2026-05-09",
+    "größe": "klein"
+  },
+  {
+    "name": "Maspalomas Pride / CSD Maspalomas 2026",
+    "ort": "Maspalomas",
+    "land": "Spanien",
+    "datum": "2026-05-09",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Potsdam 2026",
+    "ort": "Potsdam",
+    "land": "Deutschland",
+    "datum": "2026-05-09",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Limburg 2026",
+    "ort": "Limburg an der Lahn",
+    "land": "Deutschland",
+    "datum": "2026-05-09",
+    "größe": "klein"
+  },
+  {
+    "name": "Brüssel Pride / CSD Brüssel 2026",
+    "ort": "Brüssel",
+    "land": "Belgien",
+    "datum": "2026-05-16",
+    "größe": "groß"
+  },
+  {
+    "name": "Swansea Pride / Swansea Pride Wales 2026",
+    "ort": "Swansea",
+    "land": "Wales",
+    "datum": "2026-05-16",
+    "größe": "mittel"
+  },
+  {
+    "name": "Eskilstuna Pride / Eskilstuna Spring Pride 2026",
+    "ort": "Eskilstuna",
+    "land": "Schweden",
+    "datum": "2026-05-16",
+    "größe": "klein"
+  },
+  {
+    "name": "Bergamo Pride / CSD Bergamo 2026",
+    "ort": "Bergamo",
+    "land": "Italien",
+    "datum": "2026-05-16",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Stollberg 2026",
+    "ort": "Stollberg",
+    "land": "Deutschland",
+    "datum": "2026-05-16",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Gelsenkirchen 2026",
+    "ort": "Gelsenkirchen",
+    "land": "Deutschland",
+    "datum": "2026-05-16",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Euskirchen 2026",
+    "ort": "Euskirchen",
+    "land": "Deutschland",
+    "datum": "2026-05-16",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Parchim 2026",
+    "ort": "Parchim",
+    "land": "Deutschland",
+    "datum": "2026-05-16",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Eppelheim 2026 / Dorfpride 2026",
+    "ort": "Eppelheim",
+    "land": "Deutschland",
+    "datum": "2026-05-16",
+    "größe": "klein"
+  },
+  {
+    "name": "Joensuu Pride / North Karelia Pride 2026",
+    "ort": "Joensuu",
+    "land": "Finnland",
+    "datum": "2026-05-17",
+    "größe": "klein"
+  },
+  {
+    "name": "Coimbra Pride / Marcha de Coimbra 2026",
+    "ort": "Coimbra",
+    "land": "Portugal",
+    "datum": "2026-05-17",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Flensburg 2026",
+    "ort": "Flensburg",
+    "land": "Deutschland",
+    "datum": "2026-05-17",
+    "größe": "klein"
+  },
+  {
+    "name": "Lahti Pride 2026",
+    "ort": "Lahti",
+    "land": "Finnland",
+    "datum": "2026-05-18",
+    "größe": "mittel"
+  },
+  {
+    "name": "Birmingham Pride / CSD Birmingham 2026",
+    "ort": "Birmingham",
+    "land": "England",
+    "datum": "2026-05-23",
+    "größe": "groß"
+  },
+  {
+    "name": "Tirana Pride / CSD Tirana 2026",
+    "ort": "Tirana",
+    "land": "Albanien",
+    "datum": "2026-05-23",
+    "größe": "groß"
+  },
+  {
+    "name": "Alkmaar Pride 2026",
+    "ort": "Alkmaar",
+    "land": "Niederlande",
+    "datum": "2026-05-23",
+    "größe": "mittel"
+  },
+  {
+    "name": "Poitiers Pride / CSD Poitiers 2026",
+    "ort": "Poitiers",
+    "land": "Frankreich",
+    "datum": "2026-05-23",
+    "größe": "klein"
+  },
+  {
+    "name": "Lille Pride / Fiertés Lille Pride 2026",
+    "ort": "Lille",
+    "land": "Frankreich",
+    "datum": "2026-05-23",
+    "größe": "mittel"
+  },
+  {
+    "name": "Witney Pride 2026",
+    "ort": "Witney",
+    "land": "England",
+    "datum": "2026-05-23",
+    "größe": "klein"
+  },
+  {
+    "name": "Krakau Pride / CSD Krakau 2026",
+    "ort": "Krakau",
+    "land": "Polen",
+    "datum": "2026-05-23",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Hannover 2026",
+    "ort": "Hannover",
+    "land": "Deutschland",
+    "datum": "2026-05-23",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Norderstedt 2026",
+    "ort": "Norderstedt",
+    "land": "Deutschland",
+    "datum": "2026-05-23",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Eisenhüttenstadt 2026",
+    "ort": "Eisenhüttenstadt",
+    "land": "Deutschland",
+    "datum": "2026-05-23",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Neustadt an der Orla 2026",
+    "ort": "Neustadt an der Orla",
+    "land": "Deutschland",
+    "datum": "2026-05-23",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Gütersloh 2026",
+    "ort": "Gütersloh",
+    "land": "Deutschland",
+    "datum": "2026-05-23",
+    "größe": "mittel"
+  },
+  {
+    "name": "Norrköping Pride / East Pride 2026",
+    "ort": "Norrköping",
+    "land": "Schweden",
+    "datum": "2026-05-24",
+    "größe": "mittel"
+  },
+  {
+    "name": "Bradford Pride / CSD Bradford 2026",
+    "ort": "Bradford",
+    "land": "England",
+    "datum": "2026-05-24",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Deutschlandsberg / Landsberg Pride 2026",
+    "ort": "Deutschlandsberg",
+    "land": "Österreich",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "Wrocław Pride / Wrocławski Marsz Równości 2026",
+    "ort": "Wrocław",
+    "land": "Polen",
+    "datum": "2026-05-30",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Klagenfurt 2026",
+    "ort": "Klagenfurt",
+    "land": "Österreich",
+    "datum": "2026-05-30",
+    "größe": "mittel"
+  },
+  {
+    "name": "Aarhus Pride / CSD Aarhus 2026",
+    "ort": "Aarhus",
+    "land": "Dänemark",
+    "datum": "2026-05-30",
+    "größe": "mittel"
+  },
+  {
+    "name": "Castlebar Pride / Castlebar Mayo Pride 2026",
+    "ort": "Castlebar",
+    "land": "Irland",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "Durham Pride 2026",
+    "ort": "Durham",
+    "land": "England",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "Cremona Pride 2026",
+    "ort": "Cremona",
+    "land": "Italien",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "Söderhamn Pride / CSD Söderhamn 2026",
+    "ort": "Söderhamn",
+    "land": "Schweden",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Mistelbach 2026",
+    "ort": "Mistelbach",
+    "land": "Österreich",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "Bury Pride 2026",
+    "ort": "Bury",
+    "land": "England",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "Angers Pride / Pride d'Angers 2026",
+    "ort": "Angers",
+    "land": "Frankreich",
+    "datum": "2026-05-30",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Lugano 2026",
+    "ort": "Lugano",
+    "land": "Schweiz",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "York Pride 2026",
+    "ort": "York",
+    "land": "England",
+    "datum": "2026-05-30",
+    "größe": "mittel"
+  },
+  {
+    "name": "Kristianstad Pride / CSD Kristianstad 2026",
+    "ort": "Kristianstad",
+    "land": "Schweden",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "Namur Pride / Fiertés Namuroises 2026",
+    "ort": "Namur",
+    "land": "Belgien",
+    "datum": "2026-05-30",
+    "größe": "mittel"
+  },
+  {
+    "name": "Orléans Pride / CSD Orléans 2026",
+    "ort": "Orléans",
+    "land": "Frankreich",
+    "datum": "2026-05-30",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Wiesbaden 2026",
+    "ort": "Wiesbaden",
+    "land": "Deutschland",
+    "datum": "2026-05-30",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Gießen 2026",
+    "ort": "Gießen",
+    "land": "Deutschland",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Osnabrück 2026",
+    "ort": "Osnabrück",
+    "land": "Deutschland",
+    "datum": "2026-05-30",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Hof 2026",
+    "ort": "Hof (Saale)",
+    "land": "Deutschland",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Witzenhausen 2026",
+    "ort": "Witzenhausen",
+    "land": "Deutschland",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Lüneburg 2026",
+    "ort": "Lüneburg",
+    "land": "Deutschland",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Frankfurt (Oder) 2026",
+    "ort": "Frankfurt (Oder)",
+    "land": "Deutschland",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Wernigerode 2026",
+    "ort": "Wernigerode",
+    "land": "Deutschland",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Rheinsberg 2026",
+    "ort": "Rheinsberg",
+    "land": "Deutschland",
+    "datum": "2026-05-30",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Saarbrücken 2026",
+    "ort": "Saarbrücken",
+    "land": "Deutschland",
+    "datum": "2026-05-31",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Warendorf 2026",
+    "ort": "Warendorf",
+    "land": "Deutschland",
+    "datum": "2026-05-31",
+    "größe": "klein"
+  },
+  {
+    "name": "Wolverhampton Pride / CSD Wolverhampton 2026",
+    "ort": "Wolverhampton",
+    "land": "England",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "Vilnius Pride / CSD Vilnius 2026",
+    "ort": "Vilnius",
+    "land": "Litauen",
+    "datum": "2026-06-06",
+    "größe": "groß"
+  },
+  {
+    "name": "Nicosia Pride / CSD Nicosia 2026",
+    "ort": "Nikosia",
+    "land": "Zypern",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "Portsmouth Pride 2026",
+    "ort": "Portsmouth",
+    "land": "England",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "Zypern Pride / CSD Zypern 2026",
+    "ort": "Nikosia",
+    "land": "Zypern",
+    "datum": "2026-06-06",
+    "größe": "mittel",
+    "anmerkung": "Landesweite Pride, vermutlich in Nikosia"
+  },
+  {
+    "name": "Torremolinos Pride / CSD Torremolinos 2026",
+    "ort": "Torremolinos",
+    "land": "Spanien",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "Danzig Pride / CSD Danzig 2026",
+    "ort": "Danzig",
+    "land": "Polen",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "Turin Pride / Torino Pride 2026",
+    "ort": "Turin",
+    "land": "Italien",
+    "datum": "2026-06-06",
+    "größe": "groß"
+  },
+  {
+    "name": "Canterbury Pride / Pride Canterbury 2026",
+    "ort": "Canterbury",
+    "land": "England",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "Toulouse Pride / CSD Toulouse 2026",
+    "ort": "Toulouse",
+    "land": "Frankreich",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "Utrecht Pride / Utrecht Canal Pride 2026",
+    "ort": "Utrecht",
+    "land": "Niederlande",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "Bergen Pride / Regnbuedagene Bergen Pride 2026",
+    "ort": "Bergen",
+    "land": "Norwegen",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "Oxford Pride 2026",
+    "ort": "Oxford",
+    "land": "England",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Dresden 2026",
+    "ort": "Dresden",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Düsseldorf 2026",
+    "ort": "Düsseldorf",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Paderborn 2026",
+    "ort": "Paderborn",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Karlsruhe 2026",
+    "ort": "Karlsruhe",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Aschaffenburg 2026",
+    "ort": "Aschaffenburg",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Rosenheim 2026",
+    "ort": "Rosenheim",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Kelheim 2026",
+    "ort": "Kelheim",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Ravensburg 2026",
+    "ort": "Ravensburg",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Geilenkirchen 2026",
+    "ort": "Geilenkirchen",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Fritzlar 2026",
+    "ort": "Fritzlar",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Wegberg / CSD Kreis Heinsberg 2026",
+    "ort": "Wegberg",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Celle 2026",
+    "ort": "Celle",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Hameln 2026",
+    "ort": "Hameln",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Storkow (Mark) 2026",
+    "ort": "Storkow (Mark)",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bad Segeberg 2026",
+    "ort": "Bad Segeberg",
+    "land": "Deutschland",
+    "datum": "2026-06-06",
+    "größe": "klein"
+  },
+  {
+    "name": "Rennes Pride / CSD Rennes 2026",
+    "ort": "Rennes",
+    "land": "Frankreich",
+    "datum": "2026-06-07",
+    "größe": "mittel"
+  },
+  {
+    "name": "Blackpool Pride / Winter Pride Blackpool 2026",
+    "ort": "Blackpool",
+    "land": "England",
+    "datum": "2026-06-07",
+    "größe": "mittel"
+  },
+  {
+    "name": "Nancy Pride / CSD Nancy 2026",
+    "ort": "Nancy",
+    "land": "Frankreich",
+    "datum": "2026-06-07",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Wien 2026",
+    "ort": "Wien",
+    "land": "Österreich",
+    "datum": "2026-06-13",
+    "größe": "groß"
+  },
+  {
+    "name": "Rom Pride / CSD Rom 2026",
+    "ort": "Rom",
+    "land": "Italien",
+    "datum": "2026-06-13",
+    "größe": "groß"
+  },
+  {
+    "name": "Warschau Pride / CSD Warschau 2026",
+    "ort": "Warschau",
+    "land": "Polen",
+    "datum": "2026-06-13",
+    "größe": "groß"
+  },
+  {
+    "name": "Athen Pride / CSD Athen 2026",
+    "ort": "Athen",
+    "land": "Griechenland",
+    "datum": "2026-06-13",
+    "größe": "groß"
+  },
+  {
+    "name": "Sofia Pride / CSD Sofia 2026",
+    "ort": "Sofia",
+    "land": "Bulgarien",
+    "datum": "2026-06-13",
+    "größe": "groß"
+  },
+  {
+    "name": "Zagreb Pride / CSD Zagreb 2026",
+    "ort": "Zagreb",
+    "land": "Kroatien",
+    "datum": "2026-06-13",
+    "größe": "groß"
+  },
+  {
+    "name": "Tallinn Pride / CSD Tallinn 2026",
+    "ort": "Tallinn",
+    "land": "Estland",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "Riga Pride / CSD Riga 2026",
+    "ort": "Riga",
+    "land": "Lettland",
+    "datum": "2026-06-13",
+    "größe": "groß"
+  },
+  {
+    "name": "Ljubljana Pride / CSD Ljubljana 2026",
+    "ort": "Ljubljana",
+    "land": "Slowenien",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "Cardiff Pride / Pride Cymru 2026",
+    "ort": "Cardiff",
+    "land": "Wales",
+    "datum": "2026-06-13",
+    "größe": "mittel",
+    "anmerkung": "Zuvor als Caerdydd und England gelistet, korrigiert"
+  },
+  {
+    "name": "Genoa Pride / CSD Genoa 2026",
+    "ort": "Genua",
+    "land": "Italien",
+    "datum": "2026-06-13",
+    "größe": "groß"
+  },
+  {
+    "name": "Salford Pride / Pink Picnic Salford Pride 2026",
+    "ort": "Salford",
+    "land": "England",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "Eastbourne Pride / CSD Eastbourne 2026",
+    "ort": "Eastbourne",
+    "land": "England",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "Biarritz Pride / CSD Biarritz 2026",
+    "ort": "Biarritz",
+    "land": "Frankreich",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "Chesterfield Pride 2026",
+    "ort": "Chesterfield",
+    "land": "England",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "Shetland Islands Pride / Shetland Pride 2026",
+    "ort": "Shetland-Inseln",
+    "land": "Schottland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "Torquay Pride / Torbay Pride 2026",
+    "ort": "Torquay",
+    "land": "England",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "Nantes Pride / CSD Nantes 2026",
+    "ort": "Nantes",
+    "land": "Frankreich",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "West Pride - Gothenburg 2026",
+    "ort": "Göteborg",
+    "land": "Schweden",
+    "datum": "2026-06-13",
+    "größe": "groß",
+    "anmerkung": "Ursprünglich als Gothenburg-Landvetter gelistet"
+  },
+  {
+    "name": "Lyon Pride / CSD Lyon 2026",
+    "ort": "Lyon",
+    "land": "Frankreich",
+    "datum": "2026-06-13",
+    "größe": "groß"
+  },
+  {
+    "name": "Ibiza Pride / Ibiza Gay Pride 2026",
+    "ort": "Ibiza-Stadt",
+    "land": "Spanien",
+    "datum": "2026-06-13",
+    "größe": "klein",
+    "anmerkung": "Zusammengeführt aus Illa d'Eivissa und Ibiza Pride"
+  },
+  {
+    "name": "Pavia Pride 2026",
+    "ort": "Pavia",
+    "land": "Italien",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "Arras Pride / CSD Arras 2026",
+    "ort": "Arras",
+    "land": "Frankreich",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "Bologna Pride / CSD Bologna 2026",
+    "ort": "Bologna",
+    "land": "Italien",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Spittal an der Drau 2026",
+    "ort": "Spittal an der Drau",
+    "land": "Österreich",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bielefeld 2026",
+    "ort": "Bielefeld",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Kassel 2026",
+    "ort": "Kassel",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Recklinghausen 2026",
+    "ort": "Recklinghausen",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Augsburg 2026",
+    "ort": "Augsburg",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Friedrichshafen 2026",
+    "ort": "Friedrichshafen",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Emden 2026",
+    "ort": "Emden",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Pforzheim 2026",
+    "ort": "Pforzheim",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Reutlingen 2026",
+    "ort": "Reutlingen",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Pinneberg 2026",
+    "ort": "Pinneberg",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Hofheim 2026",
+    "ort": "Hofheim am Taunus",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Eberswalde 2026",
+    "ort": "Eberswalde",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Miltenberg 2026",
+    "ort": "Miltenberg",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Merseburg 2026",
+    "ort": "Merseburg",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Herzberg am Harz 2026",
+    "ort": "Herzberg am Harz",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Murnau am Staffelsee 2026",
+    "ort": "Murnau am Staffelsee",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Eggenfelden 2026",
+    "ort": "Eggenfelden",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Waren (Müritz) 2026",
+    "ort": "Waren (Müritz)",
+    "land": "Deutschland",
+    "datum": "2026-06-13",
+    "größe": "klein"
+  },
+  {
+    "name": "Chişinău Pride / CSD Chişinău 2026",
+    "ort": "Chişinău",
+    "land": "Moldawien",
+    "datum": "2026-06-14",
+    "größe": "groß"
+  },
+  {
+    "name": "Sitges Pride / CSD Sitges 2026",
+    "ort": "Sitges",
+    "land": "Spanien",
+    "datum": "2026-06-14",
+    "größe": "klein"
+  },
+  {
+    "name": "Lancaster Pride 2026",
+    "ort": "Lancaster",
+    "land": "England",
+    "datum": "2026-06-14",
+    "größe": "klein"
+  },
+  {
+    "name": "Tampere Pride / Tampere Pirkanmaan Pride 2026",
+    "ort": "Tampere",
+    "land": "Finnland",
+    "datum": "2026-06-14",
+    "größe": "mittel"
+  },
+  {
+    "name": "Lissabon Pride / CSD Lissabon 2026",
+    "ort": "Lissabon",
+    "land": "Portugal",
+    "datum": "2026-06-20",
+    "größe": "groß"
+  },
+  {
+    "name": "Edinburgh Pride / CSD Edinburgh 2026",
+    "ort": "Edinburgh",
+    "land": "Schottland",
+    "datum": "2026-06-20",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Zürich 2026",
+    "ort": "Zürich",
+    "land": "Schweiz",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "Murcia Pride / CSD Murcia 2026",
+    "ort": "Murcia",
+    "land": "Spanien",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "Bilbao Pride / CSD Bilbao 2026",
+    "ort": "Bilbao",
+    "land": "Spanien",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "Sheffield Pride / CSD Sheffield 2026",
+    "ort": "Sheffield",
+    "land": "England",
+    "datum": "2026-06-20",
+    "größe": "groß"
+  },
+  {
+    "name": "Skopje Pride / CSD Skopje 2026",
+    "ort": "Skopje",
+    "land": "Nordmazedonien",
+    "datum": "2026-06-20",
+    "größe": "groß"
+  },
+  {
+    "name": "Rouen Pride / CSD Rouen 2026",
+    "ort": "Rouen",
+    "land": "Frankreich",
+    "datum": "2026-06-20",
+    "größe": "mittel",
+    "anmerkung": "Ursprünglich als Roün gelistet"
+  },
+  {
+    "name": "Drogheda Pride / CSD Drogheda 2026",
+    "ort": "Drogheda",
+    "land": "Irland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "Poznan Pride / CSD Poznan 2026",
+    "ort": "Poznań",
+    "land": "Polen",
+    "datum": "2026-06-20",
+    "größe": "groß"
+  },
+  {
+    "name": "Exmouth Pride 2026",
+    "ort": "Exmouth",
+    "land": "England",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "Strasbourg Pride / CSD Strasbourg 2026",
+    "ort": "Straßburg",
+    "land": "Frankreich",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "Montpellier Pride / CSD Montpellier 2026",
+    "ort": "Montpellier",
+    "land": "Frankreich",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "Stoke-on-Trent Pride 2026",
+    "ort": "Stoke-on-Trent",
+    "land": "England",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "Rome Pride / Roma Pride 2026",
+    "ort": "Rom",
+    "land": "Italien",
+    "datum": "2026-06-20",
+    "größe": "groß"
+  },
+  {
+    "name": "Grenoble Pride / CSD Grenoble 2026",
+    "ort": "Grenoble",
+    "land": "Frankreich",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "Chelmsford Pride / Essex Pride in Chelmsford 2026",
+    "ort": "Chelmsford",
+    "land": "England",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "Palermo Pride / CSD Palermo 2026",
+    "ort": "Palermo",
+    "land": "Italien",
+    "datum": "2026-06-20",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Stubai 2026",
+    "ort": "Neustift im Stubaital",
+    "land": "Österreich",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "Varese Pride / CSD Varese 2026",
+    "ort": "Varese",
+    "land": "Italien",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "Gouda Pride / Roze Zaterdag Gouda 2026",
+    "ort": "Gouda",
+    "land": "Niederlande",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "Thessaloniki Pride / EuroPride 2026",
+    "ort": "Thessaloniki",
+    "land": "Griechenland",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Oldenburg 2026",
+    "ort": "Oldenburg",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Freiburg 2026",
+    "ort": "Freiburg im Breisgau",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Ulm / CSD Neu-Ulm 2026",
+    "ort": "Ulm",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Wetzlar / CSD Mittelhessen 2026",
+    "ort": "Wetzlar",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Jena 2026",
+    "ort": "Jena",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Göttingen 2026",
+    "ort": "Göttingen",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Bochum 2026",
+    "ort": "Bochum",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Berlin-Marzahn 2026",
+    "ort": "Berlin (Marzahn)",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Coburg 2026",
+    "ort": "Coburg",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Schwandorf 2026",
+    "ort": "Schwandorf",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Heidelberg 2026",
+    "ort": "Heidelberg",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Rendsburg 2026",
+    "ort": "Rendsburg",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Herrenberg 2026",
+    "ort": "Herrenberg",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Lutherstadt Wittenberg 2026",
+    "ort": "Lutherstadt Wittenberg",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Karlsfeld 2026",
+    "ort": "Karlsfeld",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Hohenlockstedt 2026",
+    "ort": "Hohenlockstedt",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Golßen 2026",
+    "ort": "Golßen",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Jülich 2026",
+    "ort": "Jülich",
+    "land": "Deutschland",
+    "datum": "2026-06-20",
+    "größe": "klein"
+  },
+  {
+    "name": "Kiev Pride / CSD Kiev 2026",
+    "ort": "Kiew",
+    "land": "Ukraine",
+    "datum": "2026-06-21",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Tübingen 2026",
+    "ort": "Tübingen",
+    "land": "Deutschland",
+    "datum": "2026-06-21",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Leverkusen 2026",
+    "ort": "Leverkusen",
+    "land": "Deutschland",
+    "datum": "2026-06-21",
+    "größe": "mittel"
+  },
+  {
+    "name": "Borås Pride 2026",
+    "ort": "Borås",
+    "land": "Schweden",
+    "datum": "2026-06-22",
+    "größe": "klein"
+  },
+  {
+    "name": "Västerås Pride / CSD Västerås 2026",
+    "ort": "Västerås",
+    "land": "Schweden",
+    "datum": "2026-06-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Bregenz / CSD Vorarlberg 2026",
+    "ort": "Bregenz",
+    "land": "Österreich",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "Paris Pride / CSD Paris 2026",
+    "ort": "Paris",
+    "land": "Frankreich",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Dublin Pride / CSD Dublin 2026",
+    "ort": "Dublin",
+    "land": "Irland",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Milan Pride / CSD Milan 2026",
+    "ort": "Mailand",
+    "land": "Italien",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Helsinki Pride / CSD Helsinki 2026",
+    "ort": "Helsinki",
+    "land": "Finnland",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Oslo Pride / CSD Oslo 2026",
+    "ort": "Oslo",
+    "land": "Norwegen",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Sevilla Pride / Orgullo LGTB de Andalucía 2026",
+    "ort": "Sevilla",
+    "land": "Spanien",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Valencia Pride / CSD Valencia 2026",
+    "ort": "Valencia",
+    "land": "Spanien",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Malaga Pride / CSD Malaga 2026",
+    "ort": "Málaga",
+    "land": "Spanien",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Palma de Mallorca Pride / CSD Palma de Mallorca 2026",
+    "ort": "Palma de Mallorca",
+    "land": "Spanien",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "Córdoba Pride / CSD Córdoba 2026",
+    "ort": "Córdoba",
+    "land": "Spanien",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "Coventry Pride / CSD Coventry 2026",
+    "ort": "Coventry",
+    "land": "England",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "Budapest Pride / CSD Budapest 2026",
+    "ort": "Budapest",
+    "land": "Ungarn",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Bucharest Pride / CSD Bucharest 2026",
+    "ort": "Bukarest",
+    "land": "Rumänien",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "Sarajevo Pride / CSD Sarajevo 2026",
+    "ort": "Sarajevo",
+    "land": "Bosnien und Herzegowina",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Basel 2026",
+    "ort": "Basel",
+    "land": "Schweiz",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "Neapel Pride / Napoli Pride 2026",
+    "ort": "Neapel",
+    "land": "Italien",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Graz 2026",
+    "ort": "Graz",
+    "land": "Österreich",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "Trollhättan Pride / CSD Trollhättan 2026",
+    "ort": "Trollhättan",
+    "land": "Schweden",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Linz 2026",
+    "ort": "Linz",
+    "land": "Österreich",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "Catania Pride / CSD Catania 2026",
+    "ort": "Catania",
+    "land": "Italien",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "Silloth Pride 2026",
+    "ort": "Silloth",
+    "land": "England",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "Maastricht Pride / CSD Maastricht 2026",
+    "ort": "Maastricht",
+    "land": "Niederlande",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Lausanne 2026",
+    "ort": "Lausanne",
+    "land": "Schweiz",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD München 2026",
+    "ort": "München",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Greifswald 2026",
+    "ort": "Greifswald",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Wendland / CSD Lüchow 2026",
+    "ort": "Lüchow",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Weimar 2026",
+    "ort": "Weimar",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Würzburg 2026",
+    "ort": "Würzburg",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Hanau 2026",
+    "ort": "Hanau",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Heide / CSD Westküste 2026",
+    "ort": "Heide",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Stade 2026",
+    "ort": "Stade",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Marburg 2026",
+    "ort": "Marburg",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Nordenham 2026",
+    "ort": "Nordenham",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Hildesheim 2026",
+    "ort": "Hildesheim",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Bernau bei Berlin 2026",
+    "ort": "Bernau bei Berlin",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Torgau 2026",
+    "ort": "Torgau",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Winsen (Luhe) 2026",
+    "ort": "Winsen (Luhe)",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Offenburg 2026",
+    "ort": "Offenburg",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Nürtingen 2026",
+    "ort": "Nürtingen",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Soest 2026",
+    "ort": "Soest",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Erkrath 2026",
+    "ort": "Erkrath",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bramsche 2026",
+    "ort": "Bramsche",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Siegburg 2026",
+    "ort": "Siegburg",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Schleswig 2026",
+    "ort": "Schleswig",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Düren 2026",
+    "ort": "Düren",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Ahrensburg 2026",
+    "ort": "Ahrensburg",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Sangerhausen 2026",
+    "ort": "Sangerhausen",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Gummersbach 2026",
+    "ort": "Gummersbach",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Quickborn 2026",
+    "ort": "Quickborn",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Meldorf 2026",
+    "ort": "Meldorf",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Rastatt 2026",
+    "ort": "Rastatt",
+    "land": "Deutschland",
+    "datum": "2026-06-27",
+    "größe": "klein"
+  },
+  {
+    "name": "Barcelona Pride / CSD Barcelona 2026",
+    "ort": "Barcelona",
+    "land": "Spanien",
+    "datum": "2026-06-28",
+    "größe": "groß"
+  },
+  {
+    "name": "Zaragoza Pride / CSD Zaragoza 2026",
+    "ort": "Zaragoza",
+    "land": "Spanien",
+    "datum": "2026-06-28",
+    "größe": "groß"
+  },
+  {
+    "name": "Gijon Pride / CSD Gijon 2026",
+    "ort": "Gijón",
+    "land": "Spanien",
+    "datum": "2026-06-28",
+    "größe": "mittel"
+  },
+  {
+    "name": "Kiew Pride / CSD Kiew 2026",
+    "ort": "Kiew",
+    "land": "Ukraine",
+    "datum": "2026-06-28",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Mülheim an der Ruhr 2026",
+    "ort": "Mülheim an der Ruhr",
+    "land": "Deutschland",
+    "datum": "2026-06-28",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Ilmenau 2026",
+    "ort": "Ilmenau",
+    "land": "Deutschland",
+    "datum": "2026-06-28",
+    "größe": "klein"
+  },
+  {
+    "name": "Wrocław Pride / Wrocławski Marsz Równości 2026",
+    "ort": "Wrocław",
+    "land": "Polen",
+    "datum": "2026-06-30",
+    "größe": "groß",
+    "anmerkung": "Zweiter Termin in Wrocław"
+  },
+  {
+    "name": "CSD Müncheberg 2026",
+    "ort": "Müncheberg",
+    "land": "Deutschland",
+    "datum": "2026-07-03",
+    "größe": "klein"
+  },
+  {
+    "name": "London Pride / CSD London 2026",
+    "ort": "London",
+    "land": "England",
+    "datum": "2026-07-04",
+    "größe": "groß"
+  },
+  {
+    "name": "Madrid Pride / CSD Madrid 2026",
+    "ort": "Madrid",
+    "land": "Spanien",
+    "datum": "2026-07-04",
+    "größe": "groß"
+  },
+  {
+    "name": "Macclesfield Pride 2026",
+    "ort": "Macclesfield",
+    "land": "England",
+    "datum": "2026-07-04",
+    "größe": "klein"
+  },
+  {
+    "name": "Marseille Pride / Pride Marseille 2026",
+    "ort": "Marseille",
+    "land": "Frankreich",
+    "datum": "2026-07-04",
+    "größe": "groß"
+  },
+  {
+    "name": "Malmö Pride / CSD Malmö 2026",
+    "ort": "Malmö",
+    "land": "Schweden",
+    "datum": "2026-07-04",
+    "größe": "mittel"
+  },
+  {
+    "name": "Salerno Pride / CSD Salerno 2026",
+    "ort": "Salerno",
+    "land": "Italien",
+    "datum": "2026-07-04",
+    "größe": "mittel"
+  },
+  {
+    "name": "Le Mans Pride / CSD Le Mans 2026",
+    "ort": "Le Mans",
+    "land": "Frankreich",
+    "datum": "2026-07-04",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Steyr 2026",
+    "ort": "Steyr",
+    "land": "Österreich",
+    "datum": "2026-07-04",
+    "größe": "klein"
+  },
+  {
+    "name": "Worthing Pride 2026",
+    "ort": "Worthing",
+    "land": "England",
+    "datum": "2026-07-04",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Villach 2026",
+    "ort": "Villach",
+    "land": "Österreich",
+    "datum": "2026-07-04",
+    "größe": "klein"
+  },
+  {
+    "name": "Kirkcaldy Pride / Kirkcaldy Fife Pride 2026",
+    "ort": "Kirkcaldy",
+    "land": "Schottland",
+    "datum": "2026-07-04",
+    "größe": "klein",
+    "anmerkung": "Ursprünglich als England gelistet, korrigiert"
+  },
+  {
+    "name": "CSD Schwerin 2026",
+    "ort": "Schwerin",
+    "land": "Deutschland",
+    "datum": "2026-07-04",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Regensburg 2026",
+    "ort": "Regensburg",
+    "land": "Deutschland",
+    "datum": "2026-07-04",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Chemnitz 2026",
+    "ort": "Chemnitz",
+    "land": "Deutschland",
+    "datum": "2026-07-04",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Schwäbisch Hall 2026",
+    "ort": "Schwäbisch Hall",
+    "land": "Deutschland",
+    "datum": "2026-07-04",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Wasserburg 2026",
+    "ort": "Wasserburg am Inn",
+    "land": "Deutschland",
+    "datum": "2026-07-04",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Neuruppin 2026",
+    "ort": "Neuruppin",
+    "land": "Deutschland",
+    "datum": "2026-07-04",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Neumünster 2026",
+    "ort": "Neumünster",
+    "land": "Deutschland",
+    "datum": "2026-07-04",
+    "größe": "klein"
+  },
+  {
+    "name": "Sundsvall Pride / CSD Sundsvall 2026",
+    "ort": "Sundsvall",
+    "land": "Schweden",
+    "datum": "2026-07-05",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Köln 2026",
+    "ort": "Köln",
+    "land": "Deutschland",
+    "datum": "2026-07-05",
+    "größe": "groß"
+  },
+  {
+    "name": "Bristol Pride / CSD Bristol 2026",
+    "ort": "Bristol",
+    "land": "England",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "Plymouth Pride / CSD Plymouth 2026",
+    "ort": "Plymouth",
+    "land": "England",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "Northampton Pride / CSD Northampton 2026",
+    "ort": "Northampton",
+    "land": "England",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "Limerick Pride / CSD Limerick 2026",
+    "ort": "Limerick",
+    "land": "Irland",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "Aalborg Pride / CSD Aalborg 2026",
+    "ort": "Aalborg",
+    "land": "Dänemark",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "Esch-sur-Alzette Pride / CSD Esch-sur-Alzette 2026",
+    "ort": "Esch-sur-Alzette",
+    "land": "Luxemburg",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "Bourne Pride 2026",
+    "ort": "Bourne",
+    "land": "England",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "Luxemburg Pride / CSD Luxemburg 2026",
+    "ort": "Luxemburg-Stadt",
+    "land": "Luxemburg",
+    "datum": "2026-07-11",
+    "größe": "mittel",
+    "anmerkung": "Ursprünglich als Belgien gelistet, korrigiert"
+  },
+  {
+    "name": "CSD Pirna 2026",
+    "ort": "Pirna",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Mannheim 2026",
+    "ort": "Mannheim",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Kiel 2026",
+    "ort": "Kiel",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Cottbus 2026",
+    "ort": "Cottbus",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Herne 2026",
+    "ort": "Herne",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Bremerhaven 2026",
+    "ort": "Bremerhaven",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Bamberg 2026",
+    "ort": "Bamberg",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Überlingen 2026",
+    "ort": "Überlingen",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Schwabach 2026",
+    "ort": "Schwabach",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Schongau 2026",
+    "ort": "Schongau",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Oberhausen 2026",
+    "ort": "Oberhausen",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Heilbronn 2026",
+    "ort": "Heilbronn",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Detmold 2026",
+    "ort": "Detmold",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Memmingen 2026",
+    "ort": "Memmingen",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Gifhorn 2026",
+    "ort": "Gifhorn",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Esslingen 2026",
+    "ort": "Esslingen am Neckar",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bernau bei Berlin 2026",
+    "ort": "Bernau bei Berlin",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein",
+    "anmerkung": "Zweiter Termin in Bernau"
+  },
+  {
+    "name": "CSD Köthen 2026",
+    "ort": "Köthen",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Freiberg 2026",
+    "ort": "Freiberg",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Viersen 2026",
+    "ort": "Viersen",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Ronnenberg 2026",
+    "ort": "Ronnenberg",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Würmtal 2026",
+    "ort": "Würmtal",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Nettetal 2026",
+    "ort": "Nettetal",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Hattingen (Ruhr) 2026",
+    "ort": "Hattingen",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Wesel 2026",
+    "ort": "Wesel",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Freising 2026",
+    "ort": "Freising",
+    "land": "Deutschland",
+    "datum": "2026-07-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Olpe 2026",
+    "ort": "Olpe",
+    "land": "Deutschland",
+    "datum": "2026-07-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Biberach an der Riß 2026",
+    "ort": "Biberach an der Riß",
+    "land": "Deutschland",
+    "datum": "2026-07-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Rheine 2026",
+    "ort": "Rheine",
+    "land": "Deutschland",
+    "datum": "2026-07-15",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Unken 2026",
+    "ort": "Unken",
+    "land": "Österreich",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "Alicante Pride / CSD Alicante 2026",
+    "ort": "Alicante",
+    "land": "Spanien",
+    "datum": "2026-07-18",
+    "größe": "mittel"
+  },
+  {
+    "name": "Leeds Pride / CSD Leeds 2026",
+    "ort": "Leeds",
+    "land": "England",
+    "datum": "2026-07-18",
+    "größe": "groß"
+  },
+  {
+    "name": "Bratislava Pride / CSD Bratislava 2026",
+    "ort": "Bratislava",
+    "land": "Slowakei",
+    "datum": "2026-07-18",
+    "größe": "mittel"
+  },
+  {
+    "name": "Ryde Pride 2026",
+    "ort": "Ryde",
+    "land": "England",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "Syracuse Pride / CSD Syracuse 2026",
+    "ort": "Syrakus",
+    "land": "Italien",
+    "datum": "2026-07-18",
+    "größe": "mittel"
+  },
+  {
+    "name": "Congleton Pride 2026",
+    "ort": "Congleton",
+    "land": "England",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "Glasgow Pride / Mardi Gla 2026",
+    "ort": "Glasgow",
+    "land": "Schottland",
+    "datum": "2026-07-18",
+    "größe": "groß"
+  },
+  {
+    "name": "Sankt Vith Pride / CSD Sankt Vith 2026",
+    "ort": "Sankt Vith",
+    "land": "Belgien",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "Pompei Pride / Pompei Campania Pride 2026",
+    "ort": "Pompeji",
+    "land": "Italien",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "Gallipoli Pride / Gallipoli Salento Pride 2026",
+    "ort": "Gallipoli",
+    "land": "Italien",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "Lecce Pride / Salento Pride 2026",
+    "ort": "Lecce",
+    "land": "Italien",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Leipzig 2026",
+    "ort": "Leipzig",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Frankfurt 2026",
+    "ort": "Frankfurt am Main",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Rostock 2026",
+    "ort": "Rostock",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Mönchengladbach 2026",
+    "ort": "Mönchengladbach",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Trier 2026",
+    "ort": "Trier",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Bonn 2026",
+    "ort": "Bonn",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Weiden 2026",
+    "ort": "Weiden in der Oberpfalz",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Landsberg am Lech 2026",
+    "ort": "Landsberg am Lech",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Haltern am See 2026",
+    "ort": "Haltern am See",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bad Mergentheim 2026",
+    "ort": "Bad Mergentheim",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Brandenburg an der Havel 2026",
+    "ort": "Brandenburg an der Havel",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Ronnenberg 2026",
+    "ort": "Ronnenberg",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "klein",
+    "anmerkung": "Zweiter Termin in Ronnenberg"
+  },
+  {
+    "name": "CSD Buchholz (in der Nordheide) 2026",
+    "ort": "Buchholz in der Nordheide",
+    "land": "Deutschland",
+    "datum": "2026-07-18",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Waldshut 2026",
+    "ort": "Waldshut-Tiengen",
+    "land": "Deutschland",
+    "datum": "2026-07-19",
+    "größe": "klein"
+  },
+  {
+    "name": "Tilburg Pride / Roze Maandag Tilburg 2026",
+    "ort": "Tilburg",
+    "land": "Niederlande",
+    "datum": "2026-07-20",
+    "größe": "mittel"
+  },
+  {
+    "name": "Hebden Bridge Pride / Happy Valley Pride 2026",
+    "ort": "Hebden Bridge",
+    "land": "England",
+    "datum": "2026-07-24",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bern 2026",
+    "ort": "Bern",
+    "land": "Schweiz",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "Teneriffa Pride / CSD Teneriffa 2026",
+    "ort": "Santa Cruz de Tenerife",
+    "land": "Spanien",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "Nottingham Pride / CSD Nottingham 2026",
+    "ort": "Nottingham",
+    "land": "England",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "Newcastle Pride / Northern Pride 2026",
+    "ort": "Newcastle upon Tyne",
+    "land": "England",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "Hull Pride / Pride in Hull 2026",
+    "ort": "Hull",
+    "land": "England",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Innsbruck 2026",
+    "ort": "Innsbruck",
+    "land": "Österreich",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "Great Malvern Pride / Malvern Pride 2026",
+    "ort": "Great Malvern",
+    "land": "England",
+    "datum": "2026-07-25",
+    "größe": "klein"
+  },
+  {
+    "name": "Rimini Pride / Rimini Summer Pride 2026",
+    "ort": "Rimini",
+    "land": "Italien",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "Campobasso Pride / CSD Campobasso 2026",
+    "ort": "Campobasso",
+    "land": "Italien",
+    "datum": "2026-07-25",
+    "größe": "klein"
+  },
+  {
+    "name": "Belfast Pride / CSD Belfast 2026",
+    "ort": "Belfast",
+    "land": "Nordirland",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "Livingston Pride / West Lothian Pride 2026",
+    "ort": "Livingston",
+    "land": "Schottland",
+    "datum": "2026-07-25",
+    "größe": "klein",
+    "anmerkung": "Ursprünglich als England gelistet, korrigiert"
+  },
+  {
+    "name": "Norwich Pride / CSD Norwich 2026",
+    "ort": "Norwich",
+    "land": "England",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD St. Pölten 2026",
+    "ort": "St. Pölten",
+    "land": "Österreich",
+    "datum": "2026-07-25",
+    "größe": "klein"
+  },
+  {
+    "name": "Folkestone Pride / CSD Folkestone 2026",
+    "ort": "Folkestone",
+    "land": "England",
+    "datum": "2026-07-25",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Berlin 2026",
+    "ort": "Berlin",
+    "land": "Deutschland",
+    "datum": "2026-07-25",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Stuttgart 2026",
+    "ort": "Stuttgart",
+    "land": "Deutschland",
+    "datum": "2026-07-25",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Duisburg 2026",
+    "ort": "Duisburg",
+    "land": "Deutschland",
+    "datum": "2026-07-25",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Siegen 2026",
+    "ort": "Siegen",
+    "land": "Deutschland",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Mainz 2026",
+    "ort": "Mainz",
+    "land": "Deutschland",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Traunstein 2026",
+    "ort": "Traunstein",
+    "land": "Deutschland",
+    "datum": "2026-07-25",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Solingen 2026",
+    "ort": "Solingen",
+    "land": "Deutschland",
+    "datum": "2026-07-25",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Frankenberg 2026",
+    "ort": "Frankenberg (Eder)",
+    "land": "Deutschland",
+    "datum": "2026-07-25",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Ebersberg 2026",
+    "ort": "Ebersberg",
+    "land": "Deutschland",
+    "datum": "2026-07-25",
+    "größe": "klein"
+  },
+  {
+    "name": "Stockport Pride / CSD Stockport 2026",
+    "ort": "Stockport",
+    "land": "England",
+    "datum": "2026-07-26",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Mühldorf am Inn 2026",
+    "ort": "Mühldorf am Inn",
+    "land": "Deutschland",
+    "datum": "2026-07-26",
+    "größe": "klein"
+  },
+  {
+    "name": "Tórshavn Pride / CSD Tórshavn 2026",
+    "ort": "Tórshavn",
+    "land": "Dänemark",
+    "datum": "2026-07-27",
+    "größe": "klein"
+  },
+  {
+    "name": "Amsterdam Pride / EuroPride / WorldPride 2026",
+    "ort": "Amsterdam",
+    "land": "Niederlande",
+    "datum": "2026-08-01",
+    "größe": "groß"
+  },
+  {
+    "name": "Stockholm Pride / CSD Stockholm 2026",
+    "ort": "Stockholm",
+    "land": "Schweden",
+    "datum": "2026-08-01",
+    "größe": "groß"
+  },
+  {
+    "name": "Brighton Pride / CSD Brighton 2026",
+    "ort": "Brighton",
+    "land": "England",
+    "datum": "2026-08-01",
+    "größe": "mittel"
+  },
+  {
+    "name": "Liverpool Pride / CSD Liverpool 2026",
+    "ort": "Liverpool",
+    "land": "England",
+    "datum": "2026-08-01",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Mittersill 2026",
+    "ort": "Mittersill",
+    "land": "Österreich",
+    "datum": "2026-08-01",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Hamburg 2026",
+    "ort": "Hamburg",
+    "land": "Deutschland",
+    "datum": "2026-08-01",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Amberg 2026",
+    "ort": "Amberg",
+    "land": "Deutschland",
+    "datum": "2026-08-01",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Fürth 2026",
+    "ort": "Fürth",
+    "land": "Deutschland",
+    "datum": "2026-08-01",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Moers 2026",
+    "ort": "Moers",
+    "land": "Deutschland",
+    "datum": "2026-08-01",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Naumburg (Saale) 2026",
+    "ort": "Naumburg (Saale)",
+    "land": "Deutschland",
+    "datum": "2026-08-01",
+    "größe": "klein"
+  },
+  {
+    "name": "Cork Pride / CSD Cork 2026",
+    "ort": "Cork",
+    "land": "Irland",
+    "datum": "2026-08-02",
+    "größe": "mittel"
+  },
+  {
+    "name": "Prag Pride / CSD Prag 2026",
+    "ort": "Prag",
+    "land": "Tschechien",
+    "datum": "2026-08-08",
+    "größe": "groß"
+  },
+  {
+    "name": "Antwerpen Pride / CSD Antwerpen 2026",
+    "ort": "Antwerpen",
+    "land": "Belgien",
+    "datum": "2026-08-08",
+    "größe": "groß"
+  },
+  {
+    "name": "Reykjavik Pride / CSD Reykjavik 2026",
+    "ort": "Reykjavik",
+    "land": "Island",
+    "datum": "2026-08-08",
+    "größe": "mittel"
+  },
+  {
+    "name": "Doncaster Pride 2026",
+    "ort": "Doncaster",
+    "land": "England",
+    "datum": "2026-08-08",
+    "größe": "mittel"
+  },
+  {
+    "name": "Gothenburg Pride 2026",
+    "ort": "Göteborg",
+    "land": "Schweden",
+    "datum": "2026-08-08",
+    "größe": "groß"
+  },
+  {
+    "name": "Ely Pride / CSD Ely 2026",
+    "ort": "Ely",
+    "land": "England",
+    "datum": "2026-08-08",
+    "größe": "klein"
+  },
+  {
+    "name": "Margate Pride 2026",
+    "ort": "Margate",
+    "land": "England",
+    "datum": "2026-08-08",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Braunschweig 2026",
+    "ort": "Braunschweig",
+    "land": "Deutschland",
+    "datum": "2026-08-08",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Essen 2026",
+    "ort": "Essen",
+    "land": "Deutschland",
+    "datum": "2026-08-08",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Nürnberg 2026",
+    "ort": "Nürnberg",
+    "land": "Deutschland",
+    "datum": "2026-08-08",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Bingen am Rhein 2026",
+    "ort": "Bingen am Rhein",
+    "land": "Deutschland",
+    "datum": "2026-08-08",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Mölln 2026",
+    "ort": "Mölln",
+    "land": "Deutschland",
+    "datum": "2026-08-08",
+    "größe": "klein"
+  },
+  {
+    "name": "Wakefield Pride 2026",
+    "ort": "Wakefield",
+    "land": "England",
+    "datum": "2026-08-09",
+    "größe": "mittel"
+  },
+  {
+    "name": "Kopenhagen Pride / CSD Kopenhagen 2026",
+    "ort": "Kopenhagen",
+    "land": "Dänemark",
+    "datum": "2026-08-15",
+    "größe": "groß"
+  },
+  {
+    "name": "Chester Pride / CSD Chester 2026",
+    "ort": "Chester",
+    "land": "England",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "Norrtälje Pride / Roslagen Pride 2026",
+    "ort": "Norrtälje",
+    "land": "Schweden",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "Swindon Pride / CSD Swindon 2026",
+    "ort": "Swindon",
+    "land": "England",
+    "datum": "2026-08-15",
+    "größe": "mittel"
+  },
+  {
+    "name": "Lincoln Pride 2026",
+    "ort": "Lincoln",
+    "land": "England",
+    "datum": "2026-08-15",
+    "größe": "mittel"
+  },
+  {
+    "name": "Croydon Pride / CSD Croydon 2026",
+    "ort": "Croydon",
+    "land": "England",
+    "datum": "2026-08-15",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Münster 2026",
+    "ort": "Münster",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Lübeck 2026",
+    "ort": "Lübeck",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Darmstadt 2026",
+    "ort": "Darmstadt",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Koblenz 2026",
+    "ort": "Koblenz",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Neustrelitz 2026",
+    "ort": "Neustrelitz",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Neubrandenburg 2026",
+    "ort": "Neubrandenburg",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Krefeld 2026",
+    "ort": "Krefeld",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Eschwege 2026",
+    "ort": "Eschwege",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Minden 2026",
+    "ort": "Minden",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "klein",
+    "anmerkung": "Erster Termin in Minden"
+  },
+  {
+    "name": "CSD Plauen 2026",
+    "ort": "Plauen",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Leer 2026",
+    "ort": "Leer",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bayreuth 2026",
+    "ort": "Bayreuth",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Berchtesgaden 2026",
+    "ort": "Berchtesgaden",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Peine 2026",
+    "ort": "Peine",
+    "land": "Deutschland",
+    "datum": "2026-08-15",
+    "größe": "klein"
+  },
+  {
+    "name": "Bath Pride / CSD Bath 2026",
+    "ort": "Bath",
+    "land": "England",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "Herts Pride 2026",
+    "ort": "Hertford",
+    "land": "England",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "Royal Leamington Spa Pride / Warwickshire Pride 2026",
+    "ort": "Royal Leamington Spa",
+    "land": "England",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "Newry Pride / CSD Newry 2026",
+    "ort": "Newry",
+    "land": "Nordirland",
+    "datum": "2026-08-22",
+    "größe": "klein",
+    "anmerkung": "Ursprünglich als England gelistet, korrigiert"
+  },
+  {
+    "name": "Gävle Pride / CSD Gävle 2026",
+    "ort": "Gävle",
+    "land": "Schweden",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Magdeburg 2026",
+    "ort": "Magdeburg",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Bremen 2026",
+    "ort": "Bremen",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Riesa 2026",
+    "ort": "Riesa",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Lüdenscheid 2026",
+    "ort": "Lüdenscheid",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Pfaffenhofen 2026",
+    "ort": "Pfaffenhofen an der Ilm",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bocholt 2026",
+    "ort": "Bocholt",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Burgdorf 2026",
+    "ort": "Burgdorf",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Mühlhausen 2026",
+    "ort": "Mühlhausen/Thüringen",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Friedberg (Hessen) 2026",
+    "ort": "Friedberg",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bensheim 2026",
+    "ort": "Bensheim",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Arnsberg 2026",
+    "ort": "Arnsberg",
+    "land": "Deutschland",
+    "datum": "2026-08-22",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Husum 2026",
+    "ort": "Husum",
+    "land": "Deutschland",
+    "datum": "2026-08-23",
+    "größe": "klein"
+  },
+  {
+    "name": "Östersund Pride / CSD Östersund 2026",
+    "ort": "Östersund",
+    "land": "Schweden",
+    "datum": "2026-08-24",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Aachen 2026",
+    "ort": "Aachen",
+    "land": "Deutschland",
+    "datum": "2026-08-28",
+    "größe": "mittel"
+  },
+  {
+    "name": "Manchester Pride / CSD Manchester 2026",
+    "ort": "Manchester",
+    "land": "England",
+    "datum": "2026-08-29",
+    "größe": "groß"
+  },
+  {
+    "name": "Southampton Pride / CSD Southampton 2026",
+    "ort": "Southampton",
+    "land": "England",
+    "datum": "2026-08-29",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Bad Ischl / Salzkammerpride 2026",
+    "ort": "Bad Ischl",
+    "land": "Österreich",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "Walsall Pride 2026",
+    "ort": "Walsall",
+    "land": "England",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "Newquay Pride / Newquay Cornwall Pride 2026",
+    "ort": "Newquay",
+    "land": "England",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "Kristiansand Pride / Skeive Sørlandsdager 2026",
+    "ort": "Kristiansand",
+    "land": "Norwegen",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "Derry Pride / Foyle Pride Festival 2026",
+    "ort": "Derry",
+    "land": "Nordirland",
+    "datum": "2026-08-29",
+    "größe": "mittel",
+    "anmerkung": "Ursprünglich als England gelistet, korrigiert"
+  },
+  {
+    "name": "CSD Münster 2026",
+    "ort": "Münster",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "mittel",
+    "anmerkung": "Zweiter Termin in Münster"
+  },
+  {
+    "name": "CSD Aurich 2026",
+    "ort": "Aurich",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Brühl 2026",
+    "ort": "Brühl",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Zwickau 2026",
+    "ort": "Zwickau",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Minden 2026",
+    "ort": "Minden",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein",
+    "anmerkung": "Zweiter Termin in Minden"
+  },
+  {
+    "name": "CSD Fulda 2026",
+    "ort": "Fulda",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Gotha 2026",
+    "ort": "Gotha",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Groß-Gerau 2026",
+    "ort": "Groß-Gerau",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Ludwigsfelde 2026",
+    "ort": "Ludwigsfelde",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Rotenburg (Wümme) 2026",
+    "ort": "Rotenburg (Wümme)",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Königs Wusterhausen 2026",
+    "ort": "Königs Wusterhausen",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Berlin Reinickendorf 2026",
+    "ort": "Berlin (Reinickendorf)",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Bad Oldesloe 2026",
+    "ort": "Bad Oldesloe",
+    "land": "Deutschland",
+    "datum": "2026-08-29",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Regen 2026",
+    "ort": "Regen",
+    "land": "Deutschland",
+    "datum": "2026-08-30",
+    "größe": "klein"
+  },
+  {
+    "name": "Katrineholm Pride / CSD Katrineholm 2026",
+    "ort": "Katrineholm",
+    "land": "Schweden",
+    "datum": "2026-08-31",
+    "größe": "klein"
+  },
+  {
+    "name": "Leicester Pride / CSD Leicester 2026",
+    "ort": "Leicester",
+    "land": "England",
+    "datum": "2026-09-05",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Salzburg 2026",
+    "ort": "Salzburg",
+    "land": "Österreich",
+    "datum": "2026-09-05",
+    "größe": "mittel"
+  },
+  {
+    "name": "Eastleigh Pride 2026",
+    "ort": "Eastleigh",
+    "land": "England",
+    "datum": "2026-09-05",
+    "größe": "klein"
+  },
+  {
+    "name": "Reading Pride / CSD Reading 2026",
+    "ort": "Reading",
+    "land": "England",
+    "datum": "2026-09-05",
+    "größe": "mittel"
+  },
+  {
+    "name": "Benidorm Pride / CSD Benidorm 2026",
+    "ort": "Benidorm",
+    "land": "Spanien",
+    "datum": "2026-09-05",
+    "größe": "klein"
+  },
+  {
+    "name": "Katowice Pride / CSD Katowice 2026",
+    "ort": "Katowice",
+    "land": "Polen",
+    "datum": "2026-09-05",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Dortmund 2026",
+    "ort": "Dortmund",
+    "land": "Deutschland",
+    "datum": "2026-09-05",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Erfurt 2026",
+    "ort": "Erfurt",
+    "land": "Deutschland",
+    "datum": "2026-09-05",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Bad Kreuznach 2026",
+    "ort": "Bad Kreuznach",
+    "land": "Deutschland",
+    "datum": "2026-09-05",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Ingolstadt 2026",
+    "ort": "Ingolstadt",
+    "land": "Deutschland",
+    "datum": "2026-09-05",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Goslar 2026",
+    "ort": "Goslar",
+    "land": "Deutschland",
+    "datum": "2026-09-05",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Lahr 2026",
+    "ort": "Lahr/Schwarzwald",
+    "land": "Deutschland",
+    "datum": "2026-09-05",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Michelstadt 2026",
+    "ort": "Michelstadt",
+    "land": "Deutschland",
+    "datum": "2026-09-05",
+    "größe": "klein"
+  },
+  {
+    "name": "Brașov Pride / CSD Brașov 2026",
+    "ort": "Brașov",
+    "land": "Rumänien",
+    "datum": "2026-09-06",
+    "größe": "mittel"
+  },
+  {
+    "name": "Falun Pride / Dala Pride 2026",
+    "ort": "Falun",
+    "land": "Schweden",
+    "datum": "2026-09-07",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Albstadt 2026",
+    "ort": "Albstadt",
+    "land": "Deutschland",
+    "datum": "2026-09-07",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Luckenwalde 2026",
+    "ort": "Luckenwalde",
+    "land": "Deutschland",
+    "datum": "2026-09-11",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD St. Johann im Pongau / Pongau Pride 2026",
+    "ort": "St. Johann im Pongau",
+    "land": "Österreich",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "Derby Pride / CSD Derby 2026",
+    "ort": "Derby",
+    "land": "England",
+    "datum": "2026-09-12",
+    "größe": "mittel"
+  },
+  {
+    "name": "Valletta Pride / Malta Pride 2026",
+    "ort": "Valletta",
+    "land": "Malta",
+    "datum": "2026-09-12",
+    "größe": "klein",
+    "anmerkung": "Nationale Pride, Stadt Valletta sehr klein"
+  },
+  {
+    "name": "St. Peter Port Pride / Channel Islands Pride 2026",
+    "ort": "St. Peter Port",
+    "land": "Guernsey",
+    "datum": "2026-09-12",
+    "größe": "klein",
+    "anmerkung": "Ursprünglich als England gelistet, korrigiert"
+  },
+  {
+    "name": "Gloucester Pride / CSD Gloucester 2026",
+    "ort": "Gloucester",
+    "land": "England",
+    "datum": "2026-09-12",
+    "größe": "mittel"
+  },
+  {
+    "name": "Lund Pride / LundaPride 2026",
+    "ort": "Lund",
+    "land": "Schweden",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Wuppertal 2026",
+    "ort": "Wuppertal",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Halle (Saale) 2026",
+    "ort": "Halle (Saale)",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Papenburg / Pride Papenburg Emsland 2026",
+    "ort": "Papenburg",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Kaufbeuren 2026",
+    "ort": "Kaufbeuren",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Frankfurt (Oder) 2026",
+    "ort": "Frankfurt (Oder)",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "klein",
+    "anmerkung": "Zweiter Termin in Frankfurt (Oder)"
+  },
+  {
+    "name": "CSD Zittau 2026",
+    "ort": "Zittau",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Vechta 2026",
+    "ort": "Vechta",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Elmshorn 2026",
+    "ort": "Elmshorn",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Rathenow 2026",
+    "ort": "Rathenow",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Nordhausen 2026",
+    "ort": "Nordhausen",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Ratingen 2026",
+    "ort": "Ratingen",
+    "land": "Deutschland",
+    "datum": "2026-09-12",
+    "größe": "klein"
+  },
+  {
+    "name": "Belgrad Pride / CSD Belgrad 2026",
+    "ort": "Belgrad",
+    "land": "Serbien",
+    "datum": "2026-09-19",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Erlangen 2026",
+    "ort": "Erlangen",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Walsrode 2026",
+    "ort": "Walsrode",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Remscheid 2026",
+    "ort": "Remscheid",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Oberhavel 2026",
+    "ort": "Oranienburg",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Mosbach 2026",
+    "ort": "Mosbach",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Döbeln 2026",
+    "ort": "Döbeln",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Bad Belzig 2026",
+    "ort": "Bad Belzig",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Delmenhorst 2026",
+    "ort": "Delmenhorst",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Hennigsdorf 2026",
+    "ort": "Hennigsdorf",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Jüterbog 2026",
+    "ort": "Jüterbog",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Alfter 2026",
+    "ort": "Alfter",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Wacken 2026",
+    "ort": "Wacken",
+    "land": "Deutschland",
+    "datum": "2026-09-19",
+    "größe": "klein"
+  },
+  {
+    "name": "Rotterdam Pride / CSD Rotterdam 2026",
+    "ort": "Rotterdam",
+    "land": "Niederlande",
+    "datum": "2026-09-26",
+    "größe": "groß"
+  },
+  {
+    "name": "CSD Landshut 2026",
+    "ort": "Landshut",
+    "land": "Deutschland",
+    "datum": "2026-09-26",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Stendal 2026",
+    "ort": "Stendal",
+    "land": "Deutschland",
+    "datum": "2026-09-26",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Kaiserslautern 2026",
+    "ort": "Kaiserslautern",
+    "land": "Deutschland",
+    "datum": "2026-09-26",
+    "größe": "mittel"
+  },
+  {
+    "name": "CSD Görlitz 2026",
+    "ort": "Görlitz",
+    "land": "Deutschland",
+    "datum": "2026-09-26",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Herzogenaurach 2026",
+    "ort": "Herzogenaurach",
+    "land": "Deutschland",
+    "datum": "2026-09-26",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Emmendingen 2026",
+    "ort": "Emmendingen",
+    "land": "Deutschland",
+    "datum": "2026-09-26",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Schorndorf 2026",
+    "ort": "Schorndorf",
+    "land": "Deutschland",
+    "datum": "2026-09-26",
+    "größe": "klein"
+  },
+  {
+    "name": "Saltash Pride / Cornwall Pride 2026",
+    "ort": "Saltash",
+    "land": "England",
+    "datum": "2026-09-27",
+    "größe": "klein"
+  },
+  {
+    "name": "Arco Pride / CSD Arco 2026",
+    "ort": "Arco",
+    "land": "Italien",
+    "datum": "2026-10-03",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Kufstein 2026",
+    "ort": "Kufstein",
+    "land": "Österreich",
+    "datum": "2026-10-10",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Norden 2026",
+    "ort": "Norden",
+    "land": "Deutschland",
+    "datum": "2026-10-10",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Prenzlau 2026",
+    "ort": "Prenzlau",
+    "land": "Deutschland",
+    "datum": "2026-10-10",
+    "größe": "klein"
+  },
+  {
+    "name": "CSD Northeim 2026",
+    "ort": "Northeim",
+    "land": "Deutschland",
+    "datum": "2026-11-07",
+    "größe": "klein"
+  }
+]
