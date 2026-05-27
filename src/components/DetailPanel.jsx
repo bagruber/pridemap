@@ -1,3 +1,4 @@
+import { FaInstagram, FaGlobe } from 'react-icons/fa'
 import { labelForDays, indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
@@ -45,7 +46,7 @@ function downloadICS(parade) {
 
 export default function DetailPanel({ parade, onClose }) {
   const { lang } = useLang()
-  const { name, city, country, date, size, daysUntil, color, queerIndex, website, firstYear } = parade
+  const { name, city, country, date, size, daysUntil, color, queerIndex, website, instagram, firstYear } = parade
   const isPast = daysUntil < 0
 
   const locale = lang === 'de' ? 'de-DE' : 'en-GB'
@@ -123,11 +124,30 @@ export default function DetailPanel({ parade, onClose }) {
         </div>
       )}
 
-      {website && (
-        <div className="detail-website">
-          <a href={website} target="_blank" rel="noopener noreferrer">
-            {website.replace(/^https?:\/\//, '')}
-          </a>
+      {(website || instagram) && (
+        <div className="detail-links">
+          {website && (
+            <a
+              className="detail-link-btn"
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGlobe size={12} />
+              <span>{website.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}</span>
+            </a>
+          )}
+          {instagram && (
+            <a
+              className="detail-link-btn detail-link-ig"
+              href={instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram size={13} />
+              <span>{'@' + instagram.replace(/^https?:\/\/(www\.)?instagram\.com\//, '').replace(/\/$/, '')}</span>
+            </a>
+          )}
         </div>
       )}
     </div>

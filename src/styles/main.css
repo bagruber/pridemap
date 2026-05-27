@@ -532,9 +532,34 @@ html, body, #root {
 
 .index-bar-fill { height: 100%; border-radius: 3px; transition: width 0.3s ease; }
 
-.detail-website { margin-top: 10px; }
-.detail-website a { font-size: 11px; color: var(--accent); text-decoration: none; }
-.detail-website a:hover { text-decoration: underline; }
+.detail-links {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.detail-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: var(--font);
+  text-decoration: none;
+  transition: all 0.12s;
+  max-width: 180px;
+  overflow: hidden;
+}
+.detail-link-btn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.detail-link-btn:hover { border-color: var(--text-dim); color: var(--text); }
+
+.detail-link-ig { border-color: #c13584; color: #c13584; }
+.detail-link-ig:hover { background: #c13584; color: #fff; border-color: #c13584; }
 
 /* ── Tooltip ──────────────────────────────────────── */
 .map-tooltip {
@@ -688,7 +713,7 @@ html, body, #root {
 
 /* ── Mobile layout ────────────────────────────────────── */
 @media (max-width: 767px) {
-  .geo-btn { top: 16px; left: 16px; }
+  .geo-btn { top: 16px; left: 16px; width: 40px; height: 40px; border-radius: 10px; }
   .geo-btn.open { left: 16px; }
 
   .detail-panel {
