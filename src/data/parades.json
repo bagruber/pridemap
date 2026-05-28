@@ -1875,7 +1875,7 @@
     "languages": null,
     "website": "https://lgbtq-rosenheim.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/lgbtq_rosenheim/",
+    "instagram": "https://www.instagram.com/csd_rosenheim/",
     "region": "Bayern"
   },
   {
@@ -9561,7 +9561,7 @@
   },
   {
     "id": "csd-kaufbeuren-2026-2026-09-12",
-    "name": "CSD Kaufbeuren 2026",
+    "name": "Kaufbeuren / Allgäu Pride",
     "city": "Kaufbeuren",
     "country": "DE",
     "lat": 47.881,
@@ -9571,9 +9571,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": "https://csd-kaufbeuren.de",
+    "website": "https://www.allgaeu-pride.de/",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/allgaeupride/"
   },
   {
     "id": "csd-zittau-2026-2026-09-12",
@@ -10238,5 +10239,73 @@
     "website": "https://csd-northeim.de",
     "venues": null,
     "region": "Niedersachsen"
+  },
+  {
+    "id": "csd-dachau-2026-07-05",
+    "name": "CSD Dachau",
+    "city": "Dachau",
+    "country": "DE",
+    "lat": 48.26,
+    "lon": 11.434,
+    "date": "2026-07-05",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 70,
+    "languages": null,
+    "website": "https://dachau-queer.de/index.php/event/csd-dachau-2026/",
+    "instagram": "https://www.instagram.com/csd.dachau/",
+    "venues": null,
+    "region": "Bayern"
+  },
+  {
+    "id": "allgaeu-pride-kempten-2026-08-01",
+    "name": "Kempten / Allgäu Pride",
+    "city": "Kempten",
+    "country": "DE",
+    "lat": 47.726,
+    "lon": 10.316,
+    "date": "2026-08-01",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 70,
+    "languages": null,
+    "website": "https://www.allgaeu-pride.de/",
+    "instagram": "https://www.instagram.com/allgaeupride/",
+    "venues": null,
+    "region": "Bayern"
+  },
+  {
+    "id": "csd-freilassing-2026-09-12",
+    "name": "CSD Freilassing",
+    "city": "Freilassing",
+    "country": "DE",
+    "lat": 47.837,
+    "lon": 12.972,
+    "date": "2026-09-12",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 70,
+    "languages": null,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_freilassing/",
+    "venues": null,
+    "region": "Bayern"
+  },
+  {
+    "id": "csd-cham-2026-09-05",
+    "name": "CSD Cham",
+    "city": "Cham",
+    "country": "DE",
+    "lat": 49.224,
+    "lon": 12.663,
+    "date": "2026-09-05",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 70,
+    "languages": null,
+    "website": "https://csd-cham.de/",
+    "instagram": "https://www.instagram.com/csd.cham/",
+    "venues": null,
+    "region": "Bayern"
   }
 ]

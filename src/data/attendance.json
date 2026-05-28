@@ -805,5 +805,25 @@
     "city": "Kaufbeuren",
     "bucket": 600,
     "year": 2024
+  },
+  {
+    "city": "Dachau",
+    "bucket": 200,
+    "year": 2025
+  },
+  {
+    "city": "Kempten",
+    "bucket": 1400,
+    "year": 2025
+  },
+  {
+    "city": "Freilassing",
+    "bucket": 100,
+    "year": 2025
+  },
+  {
+    "city": "Cham",
+    "bucket": 250,
+    "year": 2024
   }
 ]
