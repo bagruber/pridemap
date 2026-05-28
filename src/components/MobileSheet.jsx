@@ -1,39 +1,51 @@
 import { useState, useRef } from 'react'
 import { ChevronUp, ChevronDown } from 'lucide-react'
-import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 import ColoredTitle from './ColoredTitle.jsx'
 import ShareButton from './ShareButton.jsx'
-import { SIZES, WEEKENDS, VIEW_OPTIONS } from '../utils/filterConstants.js'
+import { WEEKENDS } from '../utils/filterConstants.js'
 import { useFilterHandlers } from '../hooks/useFilterHandlers.js'
+import CountryFilter from './filters/CountryFilter.jsx'
+import SizeFilter from './filters/SizeFilter.jsx'
+import LangToggle from './filters/LangToggle.jsx'
+import ViewModeToggle from './filters/ViewModeToggle.jsx'
+import RegionToggle from './filters/RegionToggle.jsx'
+import ClusterToggle from './filters/ClusterToggle.jsx'
 
 export default function MobileSheet({
   filters, onChange, allCountries, totalCount,
   view, onViewChange,
   clusteringEnabled, onClusteringChange,
   viewMode, onViewModeChange,
+  onAboutClick,
 }) {
-  const { lang, setLang } = useLang()
-  const [expanded, setExpanded] = useState(false)
+  const { lang } = useLang()
+  const STOPS = ['min', 'peek', 'full']
+  const [stop, setStop] = useState('peek')
   const dragStartY = useRef(null)
   const { toggleCountry, toggleSize, setTimeframe } = useFilterHandlers(filters, onChange)
+
+  const cycle = dir => {
+    const i = STOPS.indexOf(stop)
+    setStop(STOPS[Math.max(0, Math.min(STOPS.length - 1, i + dir))])
+  }
+  const expanded = stop === 'full'
 
   const onTouchStart = e => { dragStartY.current = e.touches[0].clientY }
   const onTouchEnd  = e => {
     if (dragStartY.current === null) return
     const delta = dragStartY.current - e.changedTouches[0].clientY
-    if (delta > 40)  setExpanded(true)
-    if (delta < -40) setExpanded(false)
+    if (delta > 40)  cycle(+1)
+    if (delta < -40) cycle(-1)
     dragStartY.current = null
   }
 
   return (
-    <div className={`mobile-sheet ${expanded ? 'expanded' : ''}`}>
-      {/* Drag handle — large touch target */}
+    <div className={`mobile-sheet stop-${stop} ${expanded ? 'expanded' : ''}`}>
       <div
         className="sheet-handle-row"
-        onClick={() => setExpanded(v => !v)}
+        onClick={() => cycle(+1)}
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
       >
@@ -41,7 +53,6 @@ export default function MobileSheet({
         <ColoredTitle className="app-title sheet-title" />
       </div>
 
-      {/* Peek row — most-used filters without expanding */}
       <div className="sheet-peek">
         <div className="sheet-peek-filters">
           {[
@@ -68,56 +79,23 @@ export default function MobileSheet({
         </span>
         <button
           className="sheet-chevron"
-          onClick={() => setExpanded(v => !v)}
+          onClick={() => cycle(expanded ? -1 : +1)}
           aria-label="Toggle filters"
         >
           {expanded ? <ChevronDown size={20} /> : <ChevronUp size={20} />}
         </button>
       </div>
 
-      {/* Expanded body */}
       <div className="sheet-body">
-        {/* Map / List toggle */}
         <div className="sheet-section">
-          <div className="toggle-group">
-            <button
-              className={`toggle-btn ${viewMode === 'map' ? 'active' : ''}`}
-              onClick={() => onViewModeChange('map')}
-            >{t('mapView', lang)}</button>
-            <button
-              className={`toggle-btn ${viewMode === 'list' ? 'active' : ''}`}
-              onClick={() => onViewModeChange('list')}
-            >{t('listView', lang)}</button>
-          </div>
+          <ViewModeToggle viewMode={viewMode} onViewModeChange={onViewModeChange} />
         </div>
 
-        {/* View + lang row */}
         <div className="sheet-top-row">
-          <div className="view-toggle">
-            {VIEW_OPTIONS.map(v => (
-              <button
-                key={v.value}
-                className={`view-btn ${view === v.value ? 'active' : ''}`}
-                onClick={() => onViewChange(v.value)}
-              >
-                <img src={`${import.meta.env.BASE_URL}${v.img}`} className="view-flag" alt="" />
-                <span className="view-btn-label">{t(v.labelKey, lang)}</span>
-              </button>
-            ))}
-          </div>
-          <div className="lang-segmented">
-            <button
-              className={`toggle-btn ${lang === 'de' ? 'active' : ''}`}
-              onClick={() => setLang('de')}
-            >DE</button>
-            <button
-              className={`toggle-btn ${lang === 'en' ? 'active' : ''}`}
-              onClick={() => setLang('en')}
-            >EN</button>
-          </div>
+          <RegionToggle view={view} onViewChange={onViewChange} withLabel />
+          <LangToggle />
         </div>
 
-        {/* Extra time filters (Past + Next weekend) */}
         <div className="sheet-section">
           <div className="filter-label">{t('filterTime', lang)}</div>
           <div className="toggle-group">
@@ -136,69 +114,27 @@ export default function MobileSheet({
           </div>
         </div>
 
-        {/* Size */}
         <div className="sheet-section">
-          <div className="filter-label" style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span>{t('filterSize', lang)}</span>
-            {filters.sizes.length > 0 && (
-              <button className="clear-btn" onClick={() => onChange({ ...filters, sizes: [] })}>
-                {t('clear', lang)}
-              </button>
-            )}
-          </div>
-          <div className="toggle-group">
-            {SIZES.map(s => (
-              <button
-                key={s}
-                className={`toggle-btn ${filters.sizes.includes(s) ? 'active' : ''}`}
-                onClick={() => toggleSize(s)}
-              >
-                {t(s, lang)}
-              </button>
-            ))}
-          </div>
+          <SizeFilter filters={filters} onChange={onChange} toggleSize={toggleSize} />
         </div>
 
-        {/* Country */}
         <div className="sheet-section">
-          <div className="filter-label" style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span>{t('filterCountry', lang)}</span>
-            {filters.countries.length > 0 && (
-              <button className="clear-btn" onClick={() => onChange({ ...filters, countries: [] })}>
-                {t('clear', lang)} {filters.countries.length}
-              </button>
-            )}
-          </div>
-          <div className="country-list mobile-country-list">
-            {allCountries.map(code => (
-              <div
-                key={code}
-                className={`country-item ${filters.countries.includes(code) ? 'selected' : ''}`}
-                onClick={() => toggleCountry(code)}
-              >
-                <input type="checkbox" readOnly checked={filters.countries.includes(code)} />
-                <span className={`${flag(code)} country-flag`} />
-                <span className="country-name">{COUNTRY_NAMES[code] ?? code}</span>
-                <span className="country-code">{code}</span>
-              </div>
-            ))}
-          </div>
+          <CountryFilter
+            filters={filters}
+            onChange={onChange}
+            allCountries={allCountries}
+            toggleCountry={toggleCountry}
+            listClassName="mobile-country-list"
+          />
         </div>
 
-        {/* Display */}
         <div className="sheet-section">
-          <div className="filter-label">{t('filterDisplay', lang)}</div>
-          <label className="display-toggle-row">
-            <input
-              type="checkbox"
-              checked={clusteringEnabled}
-              onChange={e => onClusteringChange(e.target.checked)}
-            />
-            <span>{t('clusterMarkers', lang)}</span>
-          </label>
+          <ClusterToggle
+            clusteringEnabled={clusteringEnabled}
+            onClusteringChange={onClusteringChange}
+          />
         </div>
 
-        {/* Footer */}
         <div className="sheet-footer">
           <span>{t('missingParade', lang)}</span>
           <a
@@ -210,8 +146,10 @@ export default function MobileSheet({
             {t('suggestOne', lang)}
           </a>
         </div>
-        <ShareButton />
-        <p className="sidebar-credit">By Benedict Arya Gruber</p>
+        <div className="sheet-footer-actions">
+          <ShareButton />
+          <button className="about-link" onClick={onAboutClick}>{t('about', lang)}</button>
+        </div>
       </div>
     </div>
   )

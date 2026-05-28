@@ -16,7 +16,7 @@ export const TRANSLATIONS = {
   filterCountry:     { en: 'Country',                 de: 'Land' },
   filterDisplay:     { en: 'Display',                 de: 'Anzeige' },
   clear:             { en: 'clear',                   de: 'löschen' },
-  clusterMarkers:    { en: 'Cluster nearby markers',  de: 'Nahe Marker bündeln' },
+  clusterMarkers:    { en: 'Group nearby pins',       de: 'Nahe Pins gruppieren' },
 
   // Timeframes
   upcoming:          { en: 'Upcoming',                de: 'Bevorstehend' },
@@ -80,6 +80,8 @@ export const TRANSLATIONS = {
   legend1to3m:       { en: '1–3 months',              de: '1–3 Monate' },
   legend3to6m:       { en: '3–6 months',              de: '3–6 Monate' },
   legendOver6m:      { en: '>6 months',               de: '>6 Monate' },
+  legendNow:         { en: 'Now',                     de: 'Jetzt' },
+  legendLater:       { en: '6mo+',                    de: '6 Mo+' },
 
   // Isochrone controls
   isoTravelTime:     { en: 'Travel time',             de: 'Reisezeit' },
@@ -89,6 +91,19 @@ export const TRANSLATIONS = {
   isoClickMap:       { en: 'Click map…',              de: 'Karte klicken…' },
   isoClearOrigin:    { en: 'Clear origin',            de: 'Startpunkt löschen' },
   isoMin:            { en: 'min',                     de: 'Min.' },
+
+  // Geolocation
+  geoUnavailable:    { en: 'Location unavailable',                  de: 'Standort nicht verfügbar' },
+  geoDenied:         { en: 'Location blocked — enable in settings', de: 'Standort blockiert — in Einstellungen erlauben' },
+
+  // Empty state
+  noEventsMatch:     { en: 'No events match your filters',          de: 'Keine Events passen zu den Filtern' },
+  clearFilters:      { en: 'Clear filters',                         de: 'Filter zurücksetzen' },
+
+  // About
+  about:             { en: 'About',                                 de: 'Über' },
+  aboutText:         { en: 'Pride Map 2026 maps European Pride parades by date and size. Marker color encodes time until the event; size encodes relative attendance.', de: 'Pride Map 2026 zeigt europäische Pride-Paraden nach Datum und Größe. Farbe codiert Zeit bis zum Event; Größe codiert relative Besucherzahl.' },
+  close:             { en: 'Close',                                 de: 'Schließen' },
 }
 
 export const CITY_NAMES = {

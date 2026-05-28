@@ -1,18 +1,24 @@
-import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 import ColoredTitle from './ColoredTitle.jsx'
 import ShareButton from './ShareButton.jsx'
-import { SIZES, TIMEFRAMES, WEEKENDS, VIEW_OPTIONS } from '../utils/filterConstants.js'
+import { TIMEFRAMES, WEEKENDS } from '../utils/filterConstants.js'
 import { useFilterHandlers } from '../hooks/useFilterHandlers.js'
+import CountryFilter from './filters/CountryFilter.jsx'
+import SizeFilter from './filters/SizeFilter.jsx'
+import LangToggle from './filters/LangToggle.jsx'
+import ViewModeToggle from './filters/ViewModeToggle.jsx'
+import RegionToggle from './filters/RegionToggle.jsx'
+import ClusterToggle from './filters/ClusterToggle.jsx'
 
 export default function FilterSidebar({
   filters, onChange, allCountries, totalCount,
   view, onViewChange,
   clusteringEnabled, onClusteringChange,
   viewMode, onViewModeChange,
+  onAboutClick,
 }) {
-  const { lang, setLang } = useLang()
+  const { lang } = useLang()
   const { toggleCountry, toggleSize, setTimeframe } = useFilterHandlers(filters, onChange)
 
   return (
@@ -20,39 +26,11 @@ export default function FilterSidebar({
       <div className="sidebar-header">
         <div className="sidebar-title-row">
           <ColoredTitle />
-          <div className="lang-segmented">
-            <button
-              className={`toggle-btn ${lang === 'de' ? 'active' : ''}`}
-              onClick={() => setLang('de')}
-            >DE</button>
-            <button
-              className={`toggle-btn ${lang === 'en' ? 'active' : ''}`}
-              onClick={() => setLang('en')}
-            >EN</button>
-          </div>
+          <LangToggle />
         </div>
-        <div className="view-toggle">
-          {VIEW_OPTIONS.map(v => (
-            <button
-              key={v.value}
-              className={`view-btn ${view === v.value ? 'active' : ''}`}
-              onClick={() => onViewChange(v.value)}
-            >
-              <img src={`${import.meta.env.BASE_URL}${v.img}`} className="view-flag" alt={t(v.labelKey, lang)} /> {t(v.labelKey, lang)}
-            </button>
-          ))}
-        </div>
+        <RegionToggle view={view} onViewChange={onViewChange} />
         <div className="sidebar-mode-row">
-          <div className="toggle-group">
-            <button
-              className={`toggle-btn ${viewMode === 'map' ? 'active' : ''}`}
-              onClick={() => onViewModeChange('map')}
-            >{t('mapView', lang)}</button>
-            <button
-              className={`toggle-btn ${viewMode === 'list' ? 'active' : ''}`}
-              onClick={() => onViewModeChange('list')}
-            >{t('listView', lang)}</button>
-          </div>
+          <ViewModeToggle viewMode={viewMode} onViewModeChange={onViewModeChange} />
           <div className="sidebar-count">
             {t('showingEvents', lang)} <strong>{totalCount}</strong> {t('events', lang)}
           </div>
@@ -87,62 +65,23 @@ export default function FilterSidebar({
         </div>
 
         <div className="filter-group">
-          <div className="filter-label" style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span>{t('filterSize', lang)}</span>
-            {filters.sizes.length > 0 && (
-              <button className="clear-btn" onClick={() => onChange({ ...filters, sizes: [] })}>
-                {t('clear', lang)}
-              </button>
-            )}
-          </div>
-          <div className="toggle-group">
-            {SIZES.map(s => (
-              <button
-                key={s}
-                className={`toggle-btn ${filters.sizes.includes(s) ? 'active' : ''}`}
-                onClick={() => toggleSize(s)}
-              >
-                {t(s, lang)}
-              </button>
-            ))}
-          </div>
+          <SizeFilter filters={filters} onChange={onChange} toggleSize={toggleSize} />
         </div>
 
         <div className="filter-group">
-          <div className="filter-label" style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span>{t('filterCountry', lang)}</span>
-            {filters.countries.length > 0 && (
-              <button className="clear-btn" onClick={() => onChange({ ...filters, countries: [] })}>
-                {t('clear', lang)} {filters.countries.length}
-              </button>
-            )}
-          </div>
-          <div className="country-list">
-            {allCountries.map(code => (
-              <div
-                key={code}
-                className={`country-item ${filters.countries.includes(code) ? 'selected' : ''}`}
-                onClick={() => toggleCountry(code)}
-              >
-                <input type="checkbox" readOnly checked={filters.countries.includes(code)} />
-                <span className={`${flag(code)} country-flag`} />
-                <span className="country-name">{COUNTRY_NAMES[code] ?? code}</span>
-                <span className="country-code">{code}</span>
-              </div>
-            ))}
-          </div>
+          <CountryFilter
+            filters={filters}
+            onChange={onChange}
+            allCountries={allCountries}
+            toggleCountry={toggleCountry}
+          />
         </div>
 
         <div className="filter-group">
-          <div className="filter-label">{t('filterDisplay', lang)}</div>
-          <label className="display-toggle-row">
-            <input
-              type="checkbox"
-              checked={clusteringEnabled}
-              onChange={e => onClusteringChange(e.target.checked)}
-            />
-            <span>{t('clusterMarkers', lang)}</span>
-          </label>
+          <ClusterToggle
+            clusteringEnabled={clusteringEnabled}
+            onClusteringChange={onClusteringChange}
+          />
         </div>
       </div>
 
@@ -153,11 +92,10 @@ export default function FilterSidebar({
             {t('suggestOne', lang)}
           </a>
         </div>
-        <ShareButton />
-        <p className="sidebar-disclaimer">
-          {t('disclaimer', lang)}
-        </p>
-        <p className="sidebar-credit">By Benedict Arya Gruber</p>
+        <div className="sidebar-footer-row">
+          <ShareButton />
+          <button className="about-link" onClick={onAboutClick}>{t('about', lang)}</button>
+        </div>
       </div>
     </div>
   )

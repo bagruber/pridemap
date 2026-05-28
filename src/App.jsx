@@ -7,11 +7,17 @@ import IsoFAB from './components/IsoFAB.jsx'
 import DetailPanel from './components/DetailPanel.jsx'
 import Legend from './components/Legend.jsx'
 import ListView from './components/ListView.jsx'
+import Toast from './components/Toast.jsx'
+import EmptyState from './components/EmptyState.jsx'
+import AboutDialog from './components/AboutDialog.jsx'
 import paradesRaw from './data/parades.json'
-import { daysUntil, colorForDays } from './utils/timeColors.js'
+import { daysUntil } from './utils/timeColors.js'
+import { toSelection } from './utils/parade.js'
 import { useLang } from './contexts/LangContext.jsx'
 import { t } from './utils/i18n.js'
 import { useIsMobile } from './hooks/useIsMobile.js'
+import { VIEWS } from './config/views.js'
+import { readHash, writeHash } from './utils/urlState.js'
 
 const TODAY = new Date()
 TODAY.setHours(0, 0, 0, 0)
@@ -23,43 +29,7 @@ const parades = paradesRaw.map(p => ({
 
 const ALL_COUNTRIES = [...new Set(parades.map(p => p.country))].sort()
 
-export const VIEWS = {
-  europe: {
-    label: 'Europe',
-    center: [15, 52],
-    zoom: 4,
-    bounds: [[-35, 24], [55, 73]],
-    defaultSizes: ['medium', 'large'],
-  },
-  dach: {
-    label: 'DACH',
-    center: [11, 50.5],
-    zoom: 5.8,
-    bounds: [[4.0, 45.5], [18.5, 56.0]],
-    defaultSizes: [],
-  },
-}
-
-const VALID_TIMEFRAMES = ['upcoming', 'past', 'all', 'weekend', 'next-weekend']
-
-const INITIAL_HASH = (() => {
-  try {
-    const params = new URLSearchParams(window.location.hash.replace(/^#/, ''))
-    const view = ['europe', 'dach'].includes(params.get('view')) ? params.get('view') : 'europe'
-    return {
-      view,
-      timeframe: VALID_TIMEFRAMES.includes(params.get('timeframe')) ? params.get('timeframe') : 'upcoming',
-      sizes: params.has('sizes')
-        ? params.get('sizes').split(',').filter(s => ['small', 'medium', 'large'].includes(s))
-        : null,
-      countries: params.has('countries')
-        ? params.get('countries').split(',').filter(c => c.length >= 2)
-        : [],
-      selectedId: params.has('selected') ? Number(params.get('selected')) : null,
-      viewMode: params.get('mode') === 'list' ? 'list' : 'map',
-    }
-  } catch { return null }
-})()
+const INITIAL_HASH = readHash()
 
 export default function App() {
   const { lang } = useLang()
@@ -75,7 +45,7 @@ export default function App() {
     if (!INITIAL_HASH?.selectedId) return null
     const p = parades.find(p => p.id === INITIAL_HASH.selectedId)
     if (!p) return null
-    return { id: p.id, name: p.name, city: p.city, country: p.country, date: p.date, size: p.size, daysUntil: p.daysUntil, color: colorForDays(p.daysUntil), queerIndex: p.queerIndex, website: p.website, instagram: p.instagram, firstYear: p.firstYear }
+    return toSelection(p)
   })
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [isoOrigin, setIsoOrigin] = useState(null)
@@ -83,22 +53,14 @@ export default function App() {
   const [isoPinning, setIsoPinning] = useState(false)
   const [flyTo, setFlyTo] = useState(null)
   const [clusteringEnabled, setClusteringEnabled] = useState(false)
+  const [toastMessage, setToastMessage] = useState(null)
+  const [aboutOpen, setAboutOpen] = useState(false)
 
   const mapPositionRef = useRef(null)
 
   // Sync URL hash
   useEffect(() => {
-    const params = new URLSearchParams()
-    if (view !== 'europe') params.set('view', view)
-    if (filters.timeframe !== 'upcoming') params.set('timeframe', filters.timeframe)
-    const def = VIEWS[view].defaultSizes
-    if (filters.sizes.length !== def.length || filters.sizes.some(s => !def.includes(s)))
-      params.set('sizes', filters.sizes.join(','))
-    if (filters.countries.length) params.set('countries', filters.countries.join(','))
-    if (selectedParade) params.set('selected', selectedParade.id)
-    if (viewMode !== 'map') params.set('mode', viewMode)
-    const qs = params.toString()
-    history.replaceState(null, '', qs ? `#${qs}` : location.pathname + location.search)
+    writeHash({ view, filters, selectedParade, viewMode })
   }, [view, filters, selectedParade, viewMode])
 
   // Escape closes detail panel
@@ -120,10 +82,24 @@ export default function App() {
   }
 
   function handleGeolocate() {
+    if (!navigator.geolocation) {
+      setToastMessage(t('geoUnavailable', lang))
+      return
+    }
     navigator.geolocation.getCurrentPosition(
       pos => setFlyTo([pos.coords.longitude, pos.coords.latitude]),
-      () => {}
+      err => {
+        setToastMessage(err.code === 1 ? t('geoDenied', lang) : t('geoUnavailable', lang))
+      },
     )
+  }
+
+  function clearFilters() {
+    setFilters({
+      countries: [],
+      sizes: viewMode === 'list' ? [] : VIEWS[view].defaultSizes,
+      timeframe: 'upcoming',
+    })
   }
 
   const filteredParades = useMemo(() => {
@@ -159,7 +135,7 @@ export default function App() {
   return (
     <div className="app">
       {/* Map — hidden in list mode but kept mounted to preserve position */}
-      <div style={{ display: viewMode === 'map' ? undefined : 'none' }}>
+      <div className="map-wrap" style={{ display: viewMode === 'map' ? undefined : 'none' }}>
         <Map
           key={clusteringEnabled ? 'clustered' : 'plain'}
           parades={filteredParades}
@@ -176,6 +152,15 @@ export default function App() {
           initialPosition={mapPositionRef.current}
           onViewChange={pos => { mapPositionRef.current = pos }}
         />
+        {viewMode === 'map' && filteredParades.length === 0 && (
+          <div className="map-empty-overlay">
+            <EmptyState
+              title={t('noEventsMatch', lang)}
+              action={clearFilters}
+              actionLabel={t('clearFilters', lang)}
+            />
+          </div>
+        )}
       </div>
 
       {/* List view */}
@@ -211,6 +196,7 @@ export default function App() {
               onClusteringChange={setClusteringEnabled}
               viewMode={viewMode}
               onViewModeChange={switchViewMode}
+              onAboutClick={() => setAboutOpen(true)}
             />
           )}
         </>
@@ -301,6 +287,7 @@ export default function App() {
             onClusteringChange={setClusteringEnabled}
             viewMode={viewMode}
             onViewModeChange={switchViewMode}
+            onAboutClick={() => setAboutOpen(true)}
           />
           {viewMode === 'map' && (
             <IsoFAB
@@ -314,6 +301,9 @@ export default function App() {
           )}
         </>
       )}
+
+      <Toast message={toastMessage} onDismiss={() => setToastMessage(null)} />
+      <AboutDialog open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </div>
   )
 }

@@ -4,7 +4,8 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 import { decode } from '@here/flexpolyline'
 import Tooltip from './Tooltip.jsx'
 import { colorForDays } from '../utils/timeColors.js'
-import { VIEWS } from '../App.jsx'
+import { toSelection } from '../utils/parade.js'
+import { VIEWS } from '../config/views.js'
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'
 const HERE_KEY = import.meta.env.VITE_HERE_API_KEY
@@ -270,8 +271,7 @@ export default function Map({
 
       map.on('click', 'parades-circles', (e) => {
         const f = e.features[0]; if (!f) return
-        const p = f.properties
-        onSelect({ id: p.id, name: p.name, city: p.city, country: p.country, date: p.date, size: p.size, daysUntil: p.daysUntil, color: p.color, queerIndex: p.queerIndex, website: p.website, instagram: p.instagram, firstYear: p.firstYear })
+        onSelect(toSelection(f.properties))
       })
 
       map.on('click', (e) => {

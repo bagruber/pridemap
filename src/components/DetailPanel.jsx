@@ -1,4 +1,5 @@
 import { FaInstagram, FaGlobe } from 'react-icons/fa'
+import { Info } from 'lucide-react'
 import { labelForDays, indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
@@ -91,12 +92,14 @@ export default function DetailPanel({ parade, onClose }) {
           <span className={`${flag(country)} chip-flag`} />
           {countryName}
         </div>
-        <div className="detail-chip">· {sizeLabel}</div>
+        <div className="detail-chip" title={t('sizeNote', lang)}>
+          · {sizeLabel}
+          <Info size={11} className="detail-chip-info" aria-hidden="true" />
+        </div>
         {firstYear && (
           <div className="detail-chip">· {t('established', lang)} {firstYear}</div>
         )}
       </div>
-      <div className="detail-size-note">{t('sizeNote', lang)}</div>
 
       {att && (
         <div className="detail-attendance">

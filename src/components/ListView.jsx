@@ -1,8 +1,11 @@
 import { useState, useMemo } from 'react'
+import { X, SearchX } from 'lucide-react'
 import { colorForDays, labelForDays } from '../utils/timeColors.js'
-import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
+import { flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t, cityName } from '../utils/i18n.js'
+import { toSelection } from '../utils/parade.js'
+import MiniLegend from './MiniLegend.jsx'
 
 function norm(s) {
   return (s ?? '').toLowerCase()
@@ -28,16 +31,22 @@ function ListRow({ parade, onSelect, lang }) {
     : parade.daysUntil === 1 ? t('tomorrow', lang)
     : labelForDays(parade.daysUntil)
 
-  const handleSelect = () => onSelect({
-    id: parade.id, name: parade.name, city: parade.city,
-    country: parade.country, date: parade.date, size: parade.size,
-    daysUntil: parade.daysUntil, color,
-    queerIndex: parade.queerIndex, website: parade.website,
-    instagram: parade.instagram, firstYear: parade.firstYear,
-  })
+  const handleSelect = () => onSelect(toSelection({ ...parade, color }))
+  const handleKey = e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      handleSelect()
+    }
+  }
 
   return (
-    <div className="list-row" onClick={handleSelect}>
+    <div
+      className="list-row"
+      onClick={handleSelect}
+      onKeyDown={handleKey}
+      role="button"
+      tabIndex={0}
+    >
       <div className="list-dot" style={{ background: color }} />
       <span className={`${flag(parade.country)} list-flag fi`} />
       <div className="list-main">
@@ -85,12 +94,24 @@ export default function ListView({ parades, onSelect }) {
   return (
     <div className="list-view">
       <div className="list-toolbar">
-        <input
-          className="list-search"
-          placeholder={t('searchParades', lang)}
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-        />
+        <div className="list-search-wrap">
+          <input
+            className="list-search"
+            placeholder={t('searchParades', lang)}
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+          />
+          {query && (
+            <button
+              className="list-search-clear"
+              onClick={() => setQuery('')}
+              aria-label="Clear search"
+              type="button"
+            >
+              <X size={14} />
+            </button>
+          )}
+        </div>
         <div className="list-sort-group">
           <span className="list-sort-label">{t('sortBy', lang)}</span>
           <div className="toggle-group">
@@ -104,11 +125,17 @@ export default function ListView({ parades, onSelect }) {
             >{t('sortName', lang)}</button>
           </div>
         </div>
+        <MiniLegend className="list-mini-legend" />
       </div>
 
       <div className="list-items">
         {displayed.length === 0
-          ? <div className="list-empty">{t('noResults', lang)}</div>
+          ? (
+            <div className="empty-state">
+              <SearchX size={32} strokeWidth={1.5} />
+              <div className="empty-state-text">{t('noResults', lang)}</div>
+            </div>
+          )
           : displayed.map(p => (
               <ListRow key={p.id} parade={p} onSelect={onSelect} lang={lang} />
             ))
