@@ -1192,9 +1192,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": "https://queerlife-hof.de/bunte-woche",
+    "website": "https://queerlife-hof.de",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/queerlifehof/"
   },
   {
     "id": "csd-witzenhausen-2026-2026-05-30",
@@ -1874,7 +1875,7 @@
     "languages": null,
     "website": "https://lgbtq-rosenheim.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_rosenheim/",
+    "instagram": "https://www.instagram.com/lgbtq_rosenheim/",
     "region": "Bayern"
   },
   {
@@ -2967,7 +2968,7 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": "https://www.csdaugsburg.de",
+    "website": "https://www.csd-augsburg.de",
     "venues": null,
     "instagram": "https://www.instagram.com/csdaugsburg/",
     "region": "Bayern"
@@ -3148,7 +3149,8 @@
     "languages": null,
     "website": "https://www.csdmurnau.de",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/queer.im.oberland/"
   },
   {
     "id": "csd-eggenfelden-2026-2026-06-13",
@@ -4091,7 +4093,8 @@
     "languages": null,
     "website": "https://www.csd-ulm.de",
     "venues": null,
-    "region": "Baden-Württemberg"
+    "region": "Baden-Württemberg",
+    "instagram": "https://www.instagram.com/pride.ulm.nu/"
   },
   {
     "id": "csd-wetzlar-csd-mittelhessen-2026-2026-06-20",
@@ -4187,7 +4190,8 @@
     "languages": null,
     "website": "https://www.csd-coburg.de",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/csd.coburg/"
   },
   {
     "id": "csd-schwandorf-2026-2026-06-20",
@@ -4284,7 +4288,8 @@
     "languages": null,
     "website": "https://www.csd-karlsfeld.de",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/csd_karlsfeld/"
   },
   {
     "id": "csd-hohenlockstedt-2026-2026-06-20",
@@ -5016,7 +5021,7 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": "https://csd-wuerzburg.de",
+    "website": "https://www.queerpridewue.de",
     "venues": null,
     "instagram": "https://www.instagram.com/queerpridewue/",
     "region": "Bayern"
@@ -9762,7 +9767,7 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": "https://csd-erlangen.de",
+    "website": "https://makeyourtownqueer.de",
     "venues": null,
     "region": "Bayern"
   },
