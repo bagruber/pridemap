@@ -183,7 +183,6 @@ export default function App() {
         <ListView
           parades={filteredParades}
           onSelect={setSelectedParade}
-          sidebarOffset={!isMobile && sidebarOpen ? 280 : 0}
         />
       )}
 

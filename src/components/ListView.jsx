@@ -55,7 +55,7 @@ function ListRow({ parade, onSelect, lang }) {
   )
 }
 
-export default function ListView({ parades, onSelect, sidebarOffset = 0 }) {
+export default function ListView({ parades, onSelect }) {
   const { lang } = useLang()
   const [query, setQuery] = useState('')
   const [sortBy, setSortBy] = useState('date')
@@ -83,7 +83,7 @@ export default function ListView({ parades, onSelect, sidebarOffset = 0 }) {
   }, [parades, query, sortBy, lang])
 
   return (
-    <div className="list-view" style={{ left: sidebarOffset }}>
+    <div className="list-view">
       <div className="list-toolbar">
         <input
           className="list-search"
