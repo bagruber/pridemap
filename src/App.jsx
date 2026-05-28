@@ -6,6 +6,7 @@ import MobileSheet from './components/MobileSheet.jsx'
 import IsoFAB from './components/IsoFAB.jsx'
 import DetailPanel from './components/DetailPanel.jsx'
 import Legend from './components/Legend.jsx'
+import ListView from './components/ListView.jsx'
 import paradesRaw from './data/parades.json'
 import { daysUntil, colorForDays } from './utils/timeColors.js'
 import { useLang } from './contexts/LangContext.jsx'
@@ -55,6 +56,7 @@ const INITIAL_HASH = (() => {
         ? params.get('countries').split(',').filter(c => c.length >= 2)
         : [],
       selectedId: params.has('selected') ? Number(params.get('selected')) : null,
+      viewMode: params.get('mode') === 'list' ? 'list' : 'map',
     }
   } catch { return null }
 })()
@@ -63,6 +65,7 @@ export default function App() {
   const { lang } = useLang()
   const isMobile = useIsMobile()
   const [view, setView] = useState(INITIAL_HASH?.view ?? 'europe')
+  const [viewMode, setViewMode] = useState(INITIAL_HASH?.viewMode ?? 'map')
   const [filters, setFilters] = useState({
     countries: INITIAL_HASH?.countries ?? [],
     sizes: INITIAL_HASH?.sizes ?? VIEWS[INITIAL_HASH?.view ?? 'europe'].defaultSizes,
@@ -81,7 +84,6 @@ export default function App() {
   const [flyTo, setFlyTo] = useState(null)
   const [clusteringEnabled, setClusteringEnabled] = useState(false)
 
-  // Preserve map position across clustering remounts
   const mapPositionRef = useRef(null)
 
   // Sync URL hash
@@ -94,9 +96,10 @@ export default function App() {
       params.set('sizes', filters.sizes.join(','))
     if (filters.countries.length) params.set('countries', filters.countries.join(','))
     if (selectedParade) params.set('selected', selectedParade.id)
+    if (viewMode !== 'map') params.set('mode', viewMode)
     const qs = params.toString()
     history.replaceState(null, '', qs ? `#${qs}` : location.pathname + location.search)
-  }, [view, filters, selectedParade])
+  }, [view, filters, selectedParade, viewMode])
 
   // Escape closes detail panel
   useEffect(() => {
@@ -149,22 +152,33 @@ export default function App() {
 
   return (
     <div className="app">
-      <Map
-        key={clusteringEnabled ? 'clustered' : 'plain'}
-        parades={filteredParades}
-        onSelect={setSelectedParade}
-        view={view}
-        isoOrigin={isoOrigin}
-        onIsoOriginSet={setIsoOrigin}
-        isoMode={isoMode}
-        isoPinning={isoPinning}
-        onPinningDone={() => setIsoPinning(false)}
-        flyTo={flyTo}
-        onFlyToDone={() => setFlyTo(null)}
-        clusteringEnabled={clusteringEnabled}
-        initialPosition={mapPositionRef.current}
-        onViewChange={pos => { mapPositionRef.current = pos }}
-      />
+      {/* Map — hidden in list mode but kept mounted to preserve position */}
+      <div style={{ display: viewMode === 'map' ? undefined : 'none' }}>
+        <Map
+          key={clusteringEnabled ? 'clustered' : 'plain'}
+          parades={filteredParades}
+          onSelect={setSelectedParade}
+          view={view}
+          isoOrigin={isoOrigin}
+          onIsoOriginSet={setIsoOrigin}
+          isoMode={isoMode}
+          isoPinning={isoPinning}
+          onPinningDone={() => setIsoPinning(false)}
+          flyTo={flyTo}
+          onFlyToDone={() => setFlyTo(null)}
+          clusteringEnabled={clusteringEnabled}
+          initialPosition={mapPositionRef.current}
+          onViewChange={pos => { mapPositionRef.current = pos }}
+        />
+      </div>
+
+      {/* List view */}
+      {viewMode === 'list' && (
+        <ListView
+          parades={filteredParades}
+          onSelect={setSelectedParade}
+        />
+      )}
 
       {/* Desktop sidebar */}
       {!isMobile && (
@@ -189,19 +203,23 @@ export default function App() {
               onViewChange={switchView}
               clusteringEnabled={clusteringEnabled}
               onClusteringChange={setClusteringEnabled}
+              viewMode={viewMode}
+              onViewModeChange={setViewMode}
             />
           )}
         </>
       )}
 
-      <button
-        className={`geo-btn ${!isMobile && sidebarOpen ? 'open' : ''}`}
-        onClick={handleGeolocate}
-        aria-label="Go to my location"
-        title="Near me"
-      >
-        <LocateFixed size={16} />
-      </button>
+      {viewMode === 'map' && (
+        <button
+          className={`geo-btn ${!isMobile && sidebarOpen ? 'open' : ''}`}
+          onClick={handleGeolocate}
+          aria-label="Go to my location"
+          title="Near me"
+        >
+          <LocateFixed size={16} />
+        </button>
+      )}
 
       {selectedParade && (
         <DetailPanel
@@ -210,8 +228,8 @@ export default function App() {
         />
       )}
 
-      {/* Desktop-only: isochrones, legend */}
-      {!isMobile && (
+      {/* Desktop-only: isochrones, legend — map mode only */}
+      {!isMobile && viewMode === 'map' && (
         <>
           <div className="isochrone-controls">
             <div className="iso-title">{t('isoTravelTime', lang)} <span className="iso-beta">beta</span></div>
@@ -263,7 +281,7 @@ export default function App() {
         </>
       )}
 
-      {/* Mobile bottom sheet + isochrone FAB — hidden when detail panel is open */}
+      {/* Mobile bottom sheet + isochrone FAB */}
       {isMobile && !selectedParade && (
         <>
           <MobileSheet
@@ -275,15 +293,19 @@ export default function App() {
             onViewChange={switchView}
             clusteringEnabled={clusteringEnabled}
             onClusteringChange={setClusteringEnabled}
+            viewMode={viewMode}
+            onViewModeChange={setViewMode}
           />
-          <IsoFAB
-            isoOrigin={isoOrigin}
-            onOriginSet={setIsoOrigin}
-            isoMode={isoMode}
-            onModeChange={setIsoMode}
-            isoPinning={isoPinning}
-            onPinningChange={setIsoPinning}
-          />
+          {viewMode === 'map' && (
+            <IsoFAB
+              isoOrigin={isoOrigin}
+              onOriginSet={setIsoOrigin}
+              isoMode={isoMode}
+              onModeChange={setIsoMode}
+              isoPinning={isoPinning}
+              onPinningChange={setIsoPinning}
+            />
+          )}
         </>
       )}
     </div>

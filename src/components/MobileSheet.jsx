@@ -4,6 +4,7 @@ import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 import ColoredTitle from './ColoredTitle.jsx'
+import ShareButton from './ShareButton.jsx'
 import { SIZES, WEEKENDS, VIEW_OPTIONS } from '../utils/filterConstants.js'
 import { useFilterHandlers } from '../hooks/useFilterHandlers.js'
 
@@ -11,6 +12,7 @@ export default function MobileSheet({
   filters, onChange, allCountries, totalCount,
   view, onViewChange,
   clusteringEnabled, onClusteringChange,
+  viewMode, onViewModeChange,
 }) {
   const { lang, setLang } = useLang()
   const [expanded, setExpanded] = useState(false)
@@ -75,6 +77,20 @@ export default function MobileSheet({
 
       {/* Expanded body */}
       <div className="sheet-body">
+        {/* Map / List toggle */}
+        <div className="sheet-section">
+          <div className="toggle-group">
+            <button
+              className={`toggle-btn ${viewMode === 'map' ? 'active' : ''}`}
+              onClick={() => onViewModeChange('map')}
+            >{t('mapView', lang)}</button>
+            <button
+              className={`toggle-btn ${viewMode === 'list' ? 'active' : ''}`}
+              onClick={() => onViewModeChange('list')}
+            >{t('listView', lang)}</button>
+          </div>
+        </div>
+
         {/* View + lang row */}
         <div className="sheet-top-row">
           <div className="view-toggle">
@@ -194,6 +210,7 @@ export default function MobileSheet({
             {t('suggestOne', lang)}
           </a>
         </div>
+        <ShareButton />
         <p className="sidebar-credit">By Benedict Arya Gruber</p>
       </div>
     </div>

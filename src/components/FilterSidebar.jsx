@@ -2,6 +2,7 @@ import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 import ColoredTitle from './ColoredTitle.jsx'
+import ShareButton from './ShareButton.jsx'
 import { SIZES, TIMEFRAMES, WEEKENDS, VIEW_OPTIONS } from '../utils/filterConstants.js'
 import { useFilterHandlers } from '../hooks/useFilterHandlers.js'
 
@@ -9,6 +10,7 @@ export default function FilterSidebar({
   filters, onChange, allCountries, totalCount,
   view, onViewChange,
   clusteringEnabled, onClusteringChange,
+  viewMode, onViewModeChange,
 }) {
   const { lang, setLang } = useLang()
   const { toggleCountry, toggleSize, setTimeframe } = useFilterHandlers(filters, onChange)
@@ -40,8 +42,20 @@ export default function FilterSidebar({
             </button>
           ))}
         </div>
-        <div className="sidebar-count">
-          {t('showingEvents', lang)} <strong>{totalCount}</strong> {t('events', lang)}
+        <div className="sidebar-mode-row">
+          <div className="toggle-group">
+            <button
+              className={`toggle-btn ${viewMode === 'map' ? 'active' : ''}`}
+              onClick={() => onViewModeChange('map')}
+            >{t('mapView', lang)}</button>
+            <button
+              className={`toggle-btn ${viewMode === 'list' ? 'active' : ''}`}
+              onClick={() => onViewModeChange('list')}
+            >{t('listView', lang)}</button>
+          </div>
+          <div className="sidebar-count">
+            {t('showingEvents', lang)} <strong>{totalCount}</strong> {t('events', lang)}
+          </div>
         </div>
       </div>
 
@@ -139,6 +153,7 @@ export default function FilterSidebar({
             {t('suggestOne', lang)}
           </a>
         </div>
+        <ShareButton />
         <p className="sidebar-disclaimer">
           {t('disclaimer', lang)}
         </p>

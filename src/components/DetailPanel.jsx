@@ -96,13 +96,18 @@ export default function DetailPanel({ parade, onClose }) {
           <div className="detail-chip">· {t('established', lang)} {firstYear}</div>
         )}
       </div>
+      <div className="detail-size-note">{t('sizeNote', lang)}</div>
 
       {att && (
         <div className="detail-attendance">
           <div className="detail-stat-label">{t('attendance', lang)}</div>
           <div className="detail-stat-value">
-            {formatBucket(att.bucket)}
-            <span className="detail-stat-sub"> {t('visitors', lang)} ({att.year}{att.note ? ` · ${att.note}` : ''})</span>
+            {formatBucket(att.bucket)} {t('visitors', lang)}
+            <span className="detail-stat-sub">
+              {' '}({att.year ?? '?'})
+              {att.source === 'authorities' && ` · ${t('sourceAuthorities', lang)}`}
+              {att.source === 'organizers' && ` · ${t('sourceOrganizers', lang)}`}
+            </span>
           </div>
         </div>
       )}

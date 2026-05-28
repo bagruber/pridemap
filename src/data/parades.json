@@ -13,7 +13,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Provence-Alpes-Côte d'Azur"
   },
   {
     "id": "bourg-en-bresse-pride-2026-03-28",
@@ -29,7 +30,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "csd-angermuende-2026-2026-04-11",
@@ -45,7 +47,8 @@
     "languages": null,
     "website": "https://aktionsbuendnis-brandenburg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/pride.angermuende.official/"
+    "instagram": "https://www.instagram.com/pride.angermuende.official/",
+    "region": "Brandenburg"
   },
   {
     "id": "sanremo-pride-2026-04-11",
@@ -61,7 +64,8 @@
     "languages": null,
     "website": "https://www.sanremopride.it/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Liguria"
   },
   {
     "id": "boden-pride-csd-boden-2026-2026-04-25",
@@ -76,7 +80,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Norrbotten"
   },
   {
     "id": "csd-schoenebeck-2026-2026-04-25",
@@ -92,7 +97,8 @@
     "languages": null,
     "website": "https://www.csd-schoenebeck.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdschoenebeck/"
+    "instagram": "https://www.instagram.com/csdschoenebeck/",
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "csd-schwedt-oder-2026-2026-04-25",
@@ -108,7 +114,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "instagram": "https://www.instagram.com/csdangermuende_csdschwedt_oder/"
+    "instagram": "https://www.instagram.com/csdangermuende_csdschwedt_oder/",
+    "region": "Brandenburg"
   },
   {
     "id": "csd-dessau-rosslau-2026-2026-05-02",
@@ -124,7 +131,8 @@
     "languages": null,
     "website": "https://www.csd-dessau-rosslau.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csddessaurosslau/"
+    "instagram": "https://www.instagram.com/csddessaurosslau/",
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "gran-canaria-pride-csd-gran-canaria-2026-2026-05-09",
@@ -139,7 +147,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://www.laspalmasgc.es",
-    "venues": null
+    "venues": null,
+    "region": "Canarias"
   },
   {
     "id": "exeter-pride-2026-2026-05-09",
@@ -154,7 +163,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.exeterpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Devon"
   },
   {
     "id": "vaexjoe-pride-csd-vaexjoe-2026-2026-05-09",
@@ -169,7 +179,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://vaxjopride.se",
-    "venues": null
+    "venues": null,
+    "region": "Kronoberg"
   },
   {
     "id": "maspalomas-pride-csd-maspalomas-2026-2026-05-09",
@@ -184,7 +195,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://www.maspalomaspride.com",
-    "venues": null
+    "venues": null,
+    "region": "Canarias"
   },
   {
     "id": "csd-potsdam-2026-2026-05-09",
@@ -200,7 +212,8 @@
     "languages": null,
     "website": "https://csd-deutschland.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdpotsdam/"
+    "instagram": "https://www.instagram.com/csdpotsdam/",
+    "region": "Brandenburg"
   },
   {
     "id": "csd-limburg-2026-2026-05-09",
@@ -216,7 +229,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "instagram": "https://www.instagram.com/csdlimburg/"
+    "instagram": "https://www.instagram.com/csdlimburg/",
+    "region": "Hessen"
   },
   {
     "id": "agen-pride-2026-05-09",
@@ -232,7 +246,8 @@
     "languages": null,
     "website": "https://www.agen.fr/en-ce-moment/agenda/evenement/4-eme-marche-des-fiertes-du-lot-et-garonne",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "libourne-pride-2026-05-09",
@@ -248,7 +263,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "bruessel-pride-csd-bruessel-2026-2026-05-16",
@@ -264,7 +280,8 @@
     "languages": null,
     "website": "https://www.brusselspride.eu/en",
     "venues": null,
-    "instagram": "https://www.instagram.com/thebrusselspride/"
+    "instagram": "https://www.instagram.com/thebrusselspride/",
+    "region": "Bruxelles-Capitale"
   },
   {
     "id": "swansea-pride-swansea-pride-wales-2026-2026-05-16",
@@ -279,7 +296,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.swanseapride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Wales"
   },
   {
     "id": "eskilstuna-pride-eskilstuna-spring-pride-2026-2026-05-16",
@@ -294,7 +312,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://eskilstuna.rfsl.se",
-    "venues": null
+    "venues": null,
+    "region": "Södermanland"
   },
   {
     "id": "bergamo-pride-csd-bergamo-2026-2026-05-16",
@@ -310,7 +329,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "instagram": "https://www.instagram.com/bergamopride/"
+    "instagram": "https://www.instagram.com/bergamopride/",
+    "region": "Lombardia"
   },
   {
     "id": "csd-stollberg-2026-2026-05-16",
@@ -325,7 +345,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Sachsen"
   },
   {
     "id": "csd-gelsenkirchen-2026-2026-05-16",
@@ -340,7 +361,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-euskirchen-2026-2026-05-16",
@@ -356,7 +378,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "instagram": "https://www.instagram.com/queer.eu/"
+    "instagram": "https://www.instagram.com/queer.eu/",
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-parchim-2026-2026-05-16",
@@ -371,7 +394,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Mecklenburg-Vorpommern"
   },
   {
     "id": "csd-eppelheim-2026-dorfpride-2026-2026-05-16",
@@ -386,7 +410,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "parma-pride-2026-05-16",
@@ -402,7 +427,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/parmapride/",
-    "venues": null
+    "venues": null,
+    "region": "Emilia-Romagna"
   },
   {
     "id": "besancon-pride-2026-05-16",
@@ -418,7 +444,8 @@
     "languages": null,
     "website": "https://www.lechni.info/20260414/en-franche-comte-plusieurs-marches-des-fiertes-prevues-pour-2026/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bourgogne-Franche-Comté"
   },
   {
     "id": "blois-pride-2026-05-16",
@@ -434,7 +461,8 @@
     "languages": null,
     "website": "https://www.blois.fr/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Centre-Val de Loire"
   },
   {
     "id": "la-roche-sur-yon-pride-2026-05-16",
@@ -450,7 +478,8 @@
     "languages": null,
     "website": "https://centre-lgbt-de-vendee.org/pride-2026/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Pays de la Loire"
   },
   {
     "id": "saint-jean-de-maurienne-pride-2026-05-16",
@@ -466,7 +495,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "saint-paul-les-dax-pride-2026-05-16",
@@ -482,7 +512,8 @@
     "languages": null,
     "website": "https://www.pride40.org/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "valence-pride-2026-05-16",
@@ -498,7 +529,8 @@
     "languages": null,
     "website": "https://www.valencediversite.fr/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "vannes-pride-2026-05-16",
@@ -514,7 +546,8 @@
     "languages": null,
     "website": "https://www.helloasso.com/associations/liberty-max-vannes/collectes/pride-lgbtqia-de-vannes-2026-1",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bretagne"
   },
   {
     "id": "joensuu-pride-north-karelia-pride-2026-2026-05-17",
@@ -529,7 +562,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://pohjoiskarjalanseta.fi/pride/ohjelma/",
-    "venues": null
+    "venues": null,
+    "region": "Pohjois-Karjala"
   },
   {
     "id": "coimbra-pride-marcha-de-coimbra-2026-2026-05-17",
@@ -544,7 +578,8 @@
     "queerIndex": 67,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Centro"
   },
   {
     "id": "csd-flensburg-2026-2026-05-17",
@@ -559,7 +594,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-flensburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "lahti-pride-2026-2026-05-18",
@@ -574,7 +610,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://lahtipride.fi",
-    "venues": null
+    "venues": null,
+    "region": "Päijät-Häme"
   },
   {
     "id": "birmingham-pride-csd-birmingham-2026-2026-05-23",
@@ -589,7 +626,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://birminghampride.com",
-    "venues": null
+    "venues": null,
+    "region": "West Midlands"
   },
   {
     "id": "tirana-pride-csd-tirana-2026-2026-05-23",
@@ -604,7 +642,8 @@
     "queerIndex": 41,
     "languages": null,
     "website": "https://www.gayout.com",
-    "venues": null
+    "venues": null,
+    "region": "Qarku i Tiranës"
   },
   {
     "id": "alkmaar-pride-2026-2026-05-23",
@@ -619,7 +658,8 @@
     "queerIndex": 64,
     "languages": null,
     "website": "https://alkmaarpride.nl",
-    "venues": null
+    "venues": null,
+    "region": "Noord-Holland"
   },
   {
     "id": "poitiers-pride-csd-poitiers-2026-2026-05-23",
@@ -634,7 +674,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.gaypride.fr",
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "witney-pride-2026-2026-05-23",
@@ -649,7 +690,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Oxfordshire"
   },
   {
     "id": "krakau-pride-csd-krakau-2026-2026-05-23",
@@ -664,7 +706,8 @@
     "queerIndex": 22,
     "languages": null,
     "website": "https://www.queerowymaj.pl",
-    "venues": null
+    "venues": null,
+    "region": "Małopolskie"
   },
   {
     "id": "csd-hannover-2026-2026-05-23",
@@ -680,7 +723,8 @@
     "languages": null,
     "website": "https://www.hannovercsd.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_hannover/"
+    "instagram": "https://www.instagram.com/csd_hannover/",
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-norderstedt-2026-2026-05-23",
@@ -696,7 +740,8 @@
     "languages": null,
     "website": "https://csd-norderstedt.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_norderstedt/"
+    "instagram": "https://www.instagram.com/csd_norderstedt/",
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-eisenhuettenstadt-2026-2026-05-23",
@@ -711,7 +756,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-eisenhuettenstadt.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-neustadt-an-der-orla-2026-2026-05-23",
@@ -726,7 +772,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-neustadt.de",
-    "venues": null
+    "venues": null,
+    "region": "Thüringen"
   },
   {
     "id": "csd-guetersloh-2026-2026-05-23",
@@ -741,7 +788,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.guetersloh.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "bourgoin-jallieu-pride-2026-05-23",
@@ -757,7 +805,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "reims-pride-2026-05-23",
@@ -773,7 +822,8 @@
     "languages": null,
     "website": "https://www.reims.fr/a-la-une/une/la-marche-des-fiertes-de-reims",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Grand Est"
   },
   {
     "id": "norrkoeping-pride-east-pride-2026-2026-05-24",
@@ -788,7 +838,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://beta.qx.se",
-    "venues": null
+    "venues": null,
+    "region": "Östergötland"
   },
   {
     "id": "bradford-pride-csd-bradford-2026-2026-05-24",
@@ -803,7 +854,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.bradfordpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "West Yorkshire"
   },
   {
     "id": "lens-pride-2026-05-24",
@@ -819,7 +871,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "csd-deutschlandsberg-landsberg-pride-2026-2026-05-30",
@@ -834,7 +887,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Steiermark"
   },
   {
     "id": "wroc-aw-pride-wroc-awski-marsz-r-wno-ci-2026-2026-05-30",
@@ -849,7 +903,8 @@
     "queerIndex": 22,
     "languages": null,
     "website": "https://www.wroclawguide.com",
-    "venues": null
+    "venues": null,
+    "region": "Dolnośląskie"
   },
   {
     "id": "csd-klagenfurt-2026-2026-05-30",
@@ -864,7 +919,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://www.klagenfurt.at",
-    "venues": null
+    "venues": null,
+    "region": "Kärnten"
   },
   {
     "id": "aarhus-pride-csd-aarhus-2026-2026-05-30",
@@ -879,7 +935,8 @@
     "queerIndex": 82,
     "languages": null,
     "website": "https://aarhuspride.dk",
-    "venues": null
+    "venues": null,
+    "region": "Midtjylland"
   },
   {
     "id": "castlebar-pride-castlebar-mayo-pride-2026-2026-05-30",
@@ -894,7 +951,8 @@
     "queerIndex": 61,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Connacht"
   },
   {
     "id": "durham-pride-2026-2026-05-30",
@@ -909,7 +967,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://durhamprideuk.org",
-    "venues": null
+    "venues": null,
+    "region": "County Durham"
   },
   {
     "id": "cremona-pride-2026-2026-05-30",
@@ -925,7 +984,8 @@
     "languages": null,
     "website": "https://cremonapride.it",
     "venues": null,
-    "instagram": "https://www.instagram.com/cremonapride/"
+    "instagram": "https://www.instagram.com/cremonapride/",
+    "region": "Lombardia"
   },
   {
     "id": "soederhamn-pride-csd-soederhamn-2026-2026-05-30",
@@ -940,7 +1000,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://www.soderhamnpride.se",
-    "venues": null
+    "venues": null,
+    "region": "Gävleborg"
   },
   {
     "id": "csd-mistelbach-2026-2026-05-30",
@@ -955,7 +1016,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://www.mistelbach-pride.at",
-    "venues": null
+    "venues": null,
+    "region": "Niederösterreich"
   },
   {
     "id": "bury-pride-2026-2026-05-30",
@@ -970,7 +1032,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.burypride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Greater Manchester"
   },
   {
     "id": "angers-pride-pride-d-angers-2026-2026-05-30",
@@ -985,7 +1048,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://quazar.fr",
-    "venues": null
+    "venues": null,
+    "region": "Pays de la Loire"
   },
   {
     "id": "csd-lugano-2026-2026-05-30",
@@ -1000,7 +1064,8 @@
     "queerIndex": 50,
     "languages": null,
     "website": "https://www.pride2018.ch",
-    "venues": null
+    "venues": null,
+    "region": "Ticino"
   },
   {
     "id": "york-pride-2026-2026-05-30",
@@ -1015,7 +1080,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.yorkpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "North Yorkshire"
   },
   {
     "id": "kristianstad-pride-csd-kristianstad-2026-2026-05-30",
@@ -1030,7 +1096,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://www.qx.se",
-    "venues": null
+    "venues": null,
+    "region": "Skåne"
   },
   {
     "id": "namur-pride-fiert-s-namuroises-2026-2026-05-30",
@@ -1045,7 +1112,8 @@
     "queerIndex": 85,
     "languages": null,
     "website": "https://www.csd-termine.de",
-    "venues": null
+    "venues": null,
+    "region": "Wallonie"
   },
   {
     "id": "orl-ans-pride-csd-orl-ans-2026-2026-05-30",
@@ -1060,7 +1128,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.gaypride.fr",
-    "venues": null
+    "venues": null,
+    "region": "Centre-Val de Loire"
   },
   {
     "id": "csd-wiesbaden-2026-2026-05-30",
@@ -1075,7 +1144,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.wiesbaden.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-giessen-2026-2026-05-30",
@@ -1090,7 +1160,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csdmittelhessen.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-osnabrueck-2026-2026-05-30",
@@ -1106,7 +1177,8 @@
     "languages": null,
     "website": "https://csd-osnabrueck.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_osnabrueck/"
+    "instagram": "https://www.instagram.com/csd_osnabrueck/",
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-hof-2026-2026-05-30",
@@ -1121,7 +1193,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://queerlife-hof.de/bunte-woche",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-witzenhausen-2026-2026-05-30",
@@ -1136,7 +1209,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-lueneburg-2026-2026-05-30",
@@ -1151,7 +1225,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.luenepedia.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-frankfurt-oder-2026-2026-05-30",
@@ -1167,7 +1242,8 @@
     "languages": null,
     "website": "https://csd-frankfurt.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/slubice.frankfurt.pride/"
+    "instagram": "https://www.instagram.com/slubice.frankfurt.pride/",
+    "region": "Brandenburg"
   },
   {
     "id": "csd-wernigerode-2026-2026-05-30",
@@ -1182,7 +1258,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-harz.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "csd-rheinsberg-2026-2026-05-30",
@@ -1197,7 +1274,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "alpride-alessandria-pride-2026-05-30",
@@ -1213,7 +1291,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/alessandria_pride/",
-    "venues": null
+    "venues": null,
+    "region": "Piemonte"
   },
   {
     "id": "padova-pride-2026-05-30",
@@ -1229,7 +1308,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/padovapride/",
-    "venues": null
+    "venues": null,
+    "region": "Veneto"
   },
   {
     "id": "enna-pride-2026-05-30",
@@ -1245,7 +1325,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/ennapride/",
-    "venues": null
+    "venues": null,
+    "region": "Sicilia"
   },
   {
     "id": "alencon-pride-2026-05-30",
@@ -1261,7 +1342,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Normandie"
   },
   {
     "id": "avignon-pride-2026-05-30",
@@ -1277,7 +1359,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/pride.avignon/",
-    "venues": null
+    "venues": null,
+    "region": "Provence-Alpes-Côte d'Azur"
   },
   {
     "id": "belfort-pride-2026-05-30",
@@ -1293,7 +1376,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bourgogne-Franche-Comté"
   },
   {
     "id": "bordeaux-pride-2026-05-30",
@@ -1309,7 +1393,8 @@
     "languages": null,
     "website": "https://www.bordeaux-tourisme.com/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "clermont-ferrand-pride-2026-05-30",
@@ -1325,7 +1410,8 @@
     "languages": null,
     "website": "https://pommesdelune.fr/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "l-arbresle-pride-2026-05-30",
@@ -1341,7 +1427,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "laval-pride-2026-05-30",
@@ -1357,7 +1444,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/gom53/",
-    "venues": null
+    "venues": null,
+    "region": "Pays de la Loire"
   },
   {
     "id": "lille-pride-2026-05-30",
@@ -1373,7 +1461,8 @@
     "languages": null,
     "website": "https://www.lillepride.fr/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "narbonne-pride-2026-05-30",
@@ -1389,7 +1478,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "niort-pride-2026-05-30",
@@ -1405,7 +1495,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "rodez-pride-2026-05-30",
@@ -1421,7 +1512,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "saint-nazaire-pride-2026-05-30",
@@ -1437,7 +1529,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Pays de la Loire"
   },
   {
     "id": "tarbes-pride-2026-05-30",
@@ -1453,7 +1546,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "csd-saarbruecken-2026-2026-05-31",
@@ -1469,7 +1563,8 @@
     "languages": null,
     "website": "https://www.saarbruecken.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/lsvdsaar/"
+    "instagram": "https://www.instagram.com/lsvdsaar/",
+    "region": "Saarland"
   },
   {
     "id": "csd-warendorf-2026-2026-05-31",
@@ -1485,7 +1580,8 @@
     "languages": null,
     "website": "https://www.warendorf.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_warendorf/"
+    "instagram": "https://www.instagram.com/csd_warendorf/",
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "wolverhampton-pride-csd-wolverhampton-2026-2026-06-06",
@@ -1500,7 +1596,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://pridewton.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "West Midlands"
   },
   {
     "id": "vilnius-pride-csd-vilnius-2026-2026-06-06",
@@ -1515,7 +1612,8 @@
     "queerIndex": 24,
     "languages": null,
     "website": "https://www.lgl.lt",
-    "venues": null
+    "venues": null,
+    "region": "Vilniaus apskritis"
   },
   {
     "id": "nicosia-pride-csd-nicosia-2026-2026-06-06",
@@ -1530,7 +1628,8 @@
     "queerIndex": 34,
     "languages": null,
     "website": "https://www.csd-termine.de",
-    "venues": null
+    "venues": null,
+    "region": ""
   },
   {
     "id": "portsmouth-pride-2026-2026-06-06",
@@ -1546,7 +1645,8 @@
     "languages": null,
     "website": "https://www.portsmouthpride.org.uk/",
     "venues": null,
-    "instagram": "https://www.instagram.com/portsmouthprideuk/"
+    "instagram": "https://www.instagram.com/portsmouthprideuk/",
+    "region": "Hampshire"
   },
   {
     "id": "torremolinos-pride-csd-torremolinos-2026-2026-06-06",
@@ -1561,7 +1661,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://pridetorremolinos.es",
-    "venues": null
+    "venues": null,
+    "region": "Andalucía"
   },
   {
     "id": "danzig-pride-csd-danzig-2026-2026-06-06",
@@ -1576,7 +1677,8 @@
     "queerIndex": 22,
     "languages": null,
     "website": "https://tolerado.org",
-    "venues": null
+    "venues": null,
+    "region": "Pomorskie"
   },
   {
     "id": "turin-pride-torino-pride-2026-2026-06-06",
@@ -1591,7 +1693,8 @@
     "queerIndex": 24,
     "languages": null,
     "website": "https://www.torinopride.it",
-    "venues": null
+    "venues": null,
+    "region": "Piemonte"
   },
   {
     "id": "canterbury-pride-pride-canterbury-2026-2026-06-06",
@@ -1606,7 +1709,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://pridecanterbury.com",
-    "venues": null
+    "venues": null,
+    "region": "Kent"
   },
   {
     "id": "toulouse-pride-csd-toulouse-2026-2026-06-06",
@@ -1621,7 +1725,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://pridetoulouse.com",
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "utrecht-pride-utrecht-canal-pride-2026-2026-06-06",
@@ -1636,7 +1741,8 @@
     "queerIndex": 64,
     "languages": null,
     "website": "https://www.utrechtcanalpride.nl",
-    "venues": null
+    "venues": null,
+    "region": "Utrecht"
   },
   {
     "id": "bergen-pride-regnbuedagene-bergen-pride-2026-2026-06-06",
@@ -1651,7 +1757,8 @@
     "queerIndex": 69,
     "languages": null,
     "website": "https://www.bergenpride.no",
-    "venues": null
+    "venues": null,
+    "region": "Vestland"
   },
   {
     "id": "oxford-pride-2026-2026-06-06",
@@ -1666,7 +1773,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.oxfordpride.uk",
-    "venues": null
+    "venues": null,
+    "region": "Oxfordshire"
   },
   {
     "id": "csd-dresden-2026-2026-06-06",
@@ -1682,7 +1790,8 @@
     "languages": null,
     "website": "https://csd-dresden.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csddresden/"
+    "instagram": "https://www.instagram.com/csddresden/",
+    "region": "Sachsen"
   },
   {
     "id": "csd-duesseldorf-2026-2026-06-06",
@@ -1698,7 +1807,8 @@
     "languages": null,
     "website": "https://www.csd-d.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdduesseldorf/"
+    "instagram": "https://www.instagram.com/csdduesseldorf/",
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-paderborn-2026-2026-06-06",
@@ -1714,7 +1824,8 @@
     "languages": null,
     "website": "https://paderborn.aidshilfe.de/paderpride",
     "venues": null,
-    "instagram": "https://www.instagram.com/paderpride/"
+    "instagram": "https://www.instagram.com/paderpride/",
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-karlsruhe-2026-2026-06-06",
@@ -1730,7 +1841,8 @@
     "languages": null,
     "website": "https://www.csd-karlsruhe.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdkarlsruhe/"
+    "instagram": "https://www.instagram.com/csdkarlsruhe/",
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-aschaffenburg-2026-2026-06-06",
@@ -1745,7 +1857,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.aschaffenburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-rosenheim-2026-2026-06-06",
@@ -1761,7 +1874,8 @@
     "languages": null,
     "website": "https://lgbtq-rosenheim.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_rosenheim/"
+    "instagram": "https://www.instagram.com/csd_rosenheim/",
+    "region": "Bayern"
   },
   {
     "id": "csd-kelheim-2026-2026-06-06",
@@ -1776,7 +1890,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-termine.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-ravensburg-2026-2026-06-06",
@@ -1791,7 +1906,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.ravensburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-geilenkirchen-2026-2026-06-06",
@@ -1806,7 +1922,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-termine.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-fritzlar-2026-2026-06-06",
@@ -1821,7 +1938,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-wegberg-csd-kreis-heinsberg-2026-2026-06-06",
@@ -1836,7 +1954,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-termine.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-celle-2026-2026-06-06",
@@ -1852,7 +1971,8 @@
     "languages": null,
     "website": "https://www.csd-termine.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_celle/"
+    "instagram": "https://www.instagram.com/csd_celle/",
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-hameln-2026-2026-06-06",
@@ -1868,7 +1988,8 @@
     "languages": null,
     "website": "https://www.qnwb.de/csd-hameln",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_weserbergland/"
+    "instagram": "https://www.instagram.com/csd_weserbergland/",
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-storkow-mark-2026-2026-06-06",
@@ -1883,7 +2004,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-termine.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-bad-segeberg-2026-2026-06-06",
@@ -1898,7 +2020,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.ln-online.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "taranto-pride-2026-06-06",
@@ -1914,7 +2037,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/tarantopride.it/",
-    "venues": null
+    "venues": null,
+    "region": "Puglia"
   },
   {
     "id": "papel-pride-monterotondo-2026-06-06",
@@ -1930,7 +2054,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/papel_caffeletterario/",
-    "venues": null
+    "venues": null,
+    "region": "Lazio"
   },
   {
     "id": "marche-pride-ancona-2026-06-06",
@@ -1946,7 +2071,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/marchepride/",
-    "venues": null
+    "venues": null,
+    "region": "Marche"
   },
   {
     "id": "la-spezia-pride-2026-06-06",
@@ -1962,7 +2088,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/laspeziapride/",
-    "venues": null
+    "venues": null,
+    "region": "Liguria"
   },
   {
     "id": "forli-pride-2026-06-06",
@@ -1978,7 +2105,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/forlipride/",
-    "venues": null
+    "venues": null,
+    "region": "Emilia-Romagna"
   },
   {
     "id": "civitavecchia-pride-2026-06-06",
@@ -1994,7 +2122,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/civitavecchiaprideofficial/",
-    "venues": null
+    "venues": null,
+    "region": "Lazio"
   },
   {
     "id": "nocera-pride-fest-2026-06-06",
@@ -2010,7 +2139,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/controcorrent_/",
-    "venues": null
+    "venues": null,
+    "region": "Campania"
   },
   {
     "id": "aeolian-pride-2026-06-06",
@@ -2026,7 +2156,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/eoliepride/",
-    "venues": null
+    "venues": null,
+    "region": "Sicilia"
   },
   {
     "id": "tuscia-pride-viterbo-2026-06-06",
@@ -2042,7 +2173,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/tuscia.pride/",
-    "venues": null
+    "venues": null,
+    "region": "Lazio"
   },
   {
     "id": "katundo-pride-2026-06-06",
@@ -2058,7 +2190,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/katundonextgen/",
-    "venues": null
+    "venues": null,
+    "region": "Puglia"
   },
   {
     "id": "aix-en-provence-pride-2026-06-06",
@@ -2074,7 +2207,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/aix_vanguard/",
-    "venues": null
+    "venues": null,
+    "region": "Provence-Alpes-Côte d'Azur"
   },
   {
     "id": "angouleme-pride-2026-06-06",
@@ -2090,7 +2224,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "arles-pride-2026-06-06",
@@ -2106,7 +2241,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Provence-Alpes-Côte d'Azur"
   },
   {
     "id": "avallon-pride-2026-06-06",
@@ -2122,7 +2258,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bourgogne-Franche-Comté"
   },
   {
     "id": "bourges-pride-2026-06-06",
@@ -2138,7 +2275,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Centre-Val de Loire"
   },
   {
     "id": "calais-pride-2026-06-06",
@@ -2154,7 +2292,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "chartres-pride-2026-06-06",
@@ -2170,7 +2309,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Centre-Val de Loire"
   },
   {
     "id": "douai-pride-2026-06-06",
@@ -2186,7 +2326,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "douarnenez-pride-2026-06-06",
@@ -2202,7 +2343,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bretagne"
   },
   {
     "id": "fougeres-pride-2026-06-06",
@@ -2218,7 +2360,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bretagne"
   },
   {
     "id": "la-ciotat-pride-2026-06-06",
@@ -2234,7 +2377,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Provence-Alpes-Côte d'Azur"
   },
   {
     "id": "la-rochelle-pride-2026-06-06",
@@ -2250,7 +2394,8 @@
     "languages": null,
     "website": "https://larochellepride.fr/",
     "instagram": "https://www.instagram.com/larochellepride/",
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "mulhouse-pride-2026-06-06",
@@ -2266,7 +2411,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/pridemulhouse/",
-    "venues": null
+    "venues": null,
+    "region": "Grand Est"
   },
   {
     "id": "nancy-pride-2026-06-06",
@@ -2282,7 +2428,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Grand Est"
   },
   {
     "id": "roubaix-pride-2026-06-06",
@@ -2298,7 +2445,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "saint-gaudens-pride-2026-06-06",
@@ -2314,7 +2462,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "saint-quentin-pride-2026-06-06",
@@ -2330,7 +2479,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "thionville-pride-2026-06-06",
@@ -2346,7 +2496,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Grand Est"
   },
   {
     "id": "tours-pride-2026-06-06",
@@ -2362,7 +2513,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/fiertes_tours/",
-    "venues": null
+    "venues": null,
+    "region": "Centre-Val de Loire"
   },
   {
     "id": "brno-pride-2026-06-06",
@@ -2378,7 +2530,8 @@
     "languages": null,
     "website": "https://www.brnopride.cz/en/",
     "instagram": "https://www.instagram.com/brnoprideweek/",
-    "venues": null
+    "venues": null,
+    "region": "Jihomoravský kraj"
   },
   {
     "id": "blackpool-pride-winter-pride-blackpool-2026-2026-06-07",
@@ -2393,7 +2546,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.prideblackpool.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Lancashire"
   },
   {
     "id": "csd-wien-2026-2026-06-13",
@@ -2408,7 +2562,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://www.viennapride.at",
-    "venues": null
+    "venues": null,
+    "region": "Wien"
   },
   {
     "id": "warschau-pride-csd-warschau-2026-2026-06-13",
@@ -2423,7 +2578,8 @@
     "queerIndex": 22,
     "languages": null,
     "website": "https://www.paradarownosci.pl",
-    "venues": null
+    "venues": null,
+    "region": "Mazowieckie"
   },
   {
     "id": "athen-pride-csd-athen-2026-2026-06-13",
@@ -2438,7 +2594,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://athenspride.eu",
-    "venues": null
+    "venues": null,
+    "region": "Attiki"
   },
   {
     "id": "sofia-pride-csd-sofia-2026-2026-06-13",
@@ -2453,7 +2610,8 @@
     "queerIndex": 20,
     "languages": null,
     "website": "https://sofiapride.org",
-    "venues": null
+    "venues": null,
+    "region": "Oblast Sofija-Grad"
   },
   {
     "id": "zagreb-pride-csd-zagreb-2026-2026-06-13",
@@ -2468,7 +2626,8 @@
     "queerIndex": 51,
     "languages": null,
     "website": "https://www.zagreb-pride.net",
-    "venues": null
+    "venues": null,
+    "region": "Zagrebačka"
   },
   {
     "id": "tallinn-pride-csd-tallinn-2026-2026-06-13",
@@ -2484,7 +2643,8 @@
     "languages": null,
     "website": "https://www.balticpride.ee/en",
     "venues": null,
-    "instagram": "https://www.instagram.com/tallinnpride/"
+    "instagram": "https://www.instagram.com/tallinnpride/",
+    "region": "Harju maakond"
   },
   {
     "id": "riga-pride-csd-riga-2026-2026-06-13",
@@ -2499,7 +2659,8 @@
     "queerIndex": 30,
     "languages": null,
     "website": "https://www.balticpride.org",
-    "venues": null
+    "venues": null,
+    "region": "Rīgas reģions"
   },
   {
     "id": "ljubljana-pride-csd-ljubljana-2026-2026-06-13",
@@ -2514,7 +2675,8 @@
     "queerIndex": 54,
     "languages": null,
     "website": "https://www.ljubljanapride.org",
-    "venues": null
+    "venues": null,
+    "region": "Osrednjeslovenska"
   },
   {
     "id": "cardiff-pride-pride-cymru-2026-2026-06-13",
@@ -2529,7 +2691,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.cardiffpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Wales"
   },
   {
     "id": "genoa-pride-csd-genoa-2026-2026-06-13",
@@ -2545,7 +2708,8 @@
     "languages": null,
     "website": "https://www.genovapride.it",
     "venues": null,
-    "instagram": "https://www.instagram.com/liguriapride/"
+    "instagram": "https://www.instagram.com/liguriapride/",
+    "region": "Liguria"
   },
   {
     "id": "salford-pride-pink-picnic-salford-pride-2026-2026-06-13",
@@ -2560,7 +2724,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://salfordpride.com",
-    "venues": null
+    "venues": null,
+    "region": "Greater Manchester"
   },
   {
     "id": "eastbourne-pride-csd-eastbourne-2026-2026-06-13",
@@ -2575,7 +2740,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.eastbournepride.com",
-    "venues": null
+    "venues": null,
+    "region": "East Sussex"
   },
   {
     "id": "biarritz-pride-csd-biarritz-2026-2026-06-13",
@@ -2590,7 +2756,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.biarritz.fr",
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "chesterfield-pride-2026-2026-06-13",
@@ -2605,7 +2772,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.chesterfieldpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Derbyshire"
   },
   {
     "id": "shetland-islands-pride-shetland-pride-2026-2026-06-13",
@@ -2620,7 +2788,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Scotland"
   },
   {
     "id": "torquay-pride-torbay-pride-2026-2026-06-13",
@@ -2635,7 +2804,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Devon"
   },
   {
     "id": "nantes-pride-csd-nantes-2026-2026-06-13",
@@ -2650,7 +2820,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.nantespride.com",
-    "venues": null
+    "venues": null,
+    "region": "Pays de la Loire"
   },
   {
     "id": "ibiza-pride-ibiza-gay-pride-2026-2026-06-13",
@@ -2665,7 +2836,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://www.ibizapride.com",
-    "venues": null
+    "venues": null,
+    "region": "Illes Balears"
   },
   {
     "id": "pavia-pride-2026-2026-06-13",
@@ -2681,7 +2853,8 @@
     "languages": null,
     "website": "https://www.paviacsd.it",
     "venues": null,
-    "instagram": "https://www.instagram.com/arcigaypavia/"
+    "instagram": "https://www.instagram.com/arcigaypavia/",
+    "region": "Lombardia"
   },
   {
     "id": "arras-pride-csd-arras-2026-2026-06-13",
@@ -2696,7 +2869,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.arraspride.fr",
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "bologna-pride-csd-bologna-2026-2026-06-13",
@@ -2712,7 +2886,8 @@
     "languages": null,
     "website": "https://www.bolognapride.it",
     "venues": null,
-    "instagram": "https://www.instagram.com/rivoltapride/"
+    "instagram": "https://www.instagram.com/rivoltapride/",
+    "region": "Emilia-Romagna"
   },
   {
     "id": "csd-spittal-an-der-drau-2026-2026-06-13",
@@ -2727,7 +2902,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://www.spittalpride.at",
-    "venues": null
+    "venues": null,
+    "region": "Kärnten"
   },
   {
     "id": "csd-bielefeld-2026-2026-06-13",
@@ -2743,7 +2919,8 @@
     "languages": null,
     "website": "https://csd-bielefeld.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdbielefeld/"
+    "instagram": "https://www.instagram.com/csdbielefeld/",
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-kassel-2026-2026-06-13",
@@ -2759,7 +2936,8 @@
     "languages": null,
     "website": "https://csd-kassel.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdkassel/"
+    "instagram": "https://www.instagram.com/csdkassel/",
+    "region": "Hessen"
   },
   {
     "id": "csd-recklinghausen-2026-2026-06-13",
@@ -2774,7 +2952,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-re.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-augsburg-2026-2026-06-13",
@@ -2790,7 +2969,8 @@
     "languages": null,
     "website": "https://www.csdaugsburg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdaugsburg/"
+    "instagram": "https://www.instagram.com/csdaugsburg/",
+    "region": "Bayern"
   },
   {
     "id": "csd-friedrichshafen-2026-2026-06-13",
@@ -2805,7 +2985,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-fn.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-emden-2026-2026-06-13",
@@ -2821,7 +3002,8 @@
     "languages": null,
     "website": "https://www.csd-emden.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdemden/"
+    "instagram": "https://www.instagram.com/csdemden/",
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-pforzheim-2026-2026-06-13",
@@ -2837,7 +3019,8 @@
     "languages": null,
     "website": "https://www.csd-pforzheim.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/queer.space.pf/"
+    "instagram": "https://www.instagram.com/queer.space.pf/",
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-reutlingen-2026-2026-06-13",
@@ -2852,7 +3035,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-reutlingen.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-pinneberg-2026-2026-06-13",
@@ -2867,7 +3051,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-pinneberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-hofheim-2026-2026-06-13",
@@ -2882,7 +3067,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-hofheim.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-eberswalde-2026-2026-06-13",
@@ -2897,7 +3083,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.eberswalde-pride.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-miltenberg-2026-2026-06-13",
@@ -2912,7 +3099,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csdmiltenberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-merseburg-2026-2026-06-13",
@@ -2927,7 +3115,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-merseburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "csd-herzberg-am-harz-2026-2026-06-13",
@@ -2942,7 +3131,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-herzberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-murnau-am-staffelsee-2026-2026-06-13",
@@ -2957,7 +3147,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csdmurnau.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-eggenfelden-2026-2026-06-13",
@@ -2972,7 +3163,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csdeggenfelden.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-waren-mueritz-2026-2026-06-13",
@@ -2987,7 +3179,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-waren.de",
-    "venues": null
+    "venues": null,
+    "region": "Mecklenburg-Vorpommern"
   },
   {
     "id": "q-pride-cuneo-2026-06-13",
@@ -3003,7 +3196,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/qpiu_pride/",
-    "venues": null
+    "venues": null,
+    "region": "Piemonte"
   },
   {
     "id": "lecco-pride-2026-06-13",
@@ -3019,7 +3213,8 @@
     "languages": null,
     "website": "https://www.leccopride.it/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Lombardia"
   },
   {
     "id": "umbria-pride-perugia-2026-06-13",
@@ -3035,7 +3230,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/umbriapride/",
-    "venues": null
+    "venues": null,
+    "region": "Umbria"
   },
   {
     "id": "tuscany-pride-grosseto-2026-06-13",
@@ -3051,7 +3247,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/toscanapride/",
-    "venues": null
+    "venues": null,
+    "region": "Toscana"
   },
   {
     "id": "bari-pride-2026-06-13",
@@ -3067,7 +3264,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/baripride/",
-    "venues": null
+    "venues": null,
+    "region": "Puglia"
   },
   {
     "id": "belluno-pride-2026-06-13",
@@ -3083,7 +3281,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/belluno.pride/",
-    "venues": null
+    "venues": null,
+    "region": "Veneto"
   },
   {
     "id": "vicenza-pride-2026-06-13",
@@ -3099,7 +3298,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/vicenzapride/",
-    "venues": null
+    "venues": null,
+    "region": "Veneto"
   },
   {
     "id": "ales-pride-2026-06-13",
@@ -3115,7 +3315,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "auxerre-pride-2026-06-13",
@@ -3131,7 +3332,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bourgogne-Franche-Comté"
   },
   {
     "id": "beziers-pride-2026-06-13",
@@ -3147,7 +3349,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "caen-pride-2026-06-13",
@@ -3163,7 +3366,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/centrelgbtinormandie_caen/",
-    "venues": null
+    "venues": null,
+    "region": "Normandie"
   },
   {
     "id": "compiegne-pride-2026-06-13",
@@ -3179,7 +3383,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "dijon-pride-2026-06-13",
@@ -3195,7 +3400,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/pride.dijon/",
-    "venues": null
+    "venues": null,
+    "region": "Bourgogne-Franche-Comté"
   },
   {
     "id": "lons-le-saunier-pride-2026-06-13",
@@ -3211,7 +3417,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bourgogne-Franche-Comté"
   },
   {
     "id": "metz-pride-2026-06-13",
@@ -3227,7 +3434,8 @@
     "languages": null,
     "website": "https://www.couleursgaies.fr/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Grand Est"
   },
   {
     "id": "montauban-pride-2026-06-13",
@@ -3243,7 +3451,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "nevers-pride-2026-06-13",
@@ -3259,7 +3468,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bourgogne-Franche-Comté"
   },
   {
     "id": "perigueux-pride-2026-06-13",
@@ -3275,7 +3485,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "perpignan-pride-2026-06-13",
@@ -3291,7 +3502,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "saint-brieuc-pride-2026-06-13",
@@ -3307,7 +3519,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bretagne"
   },
   {
     "id": "saintes-pride-2026-06-13",
@@ -3323,7 +3536,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "toulon-pride-2026-06-13",
@@ -3339,7 +3553,8 @@
     "languages": null,
     "website": "https://fiertes-toulon.fr/",
     "instagram": "https://www.instagram.com/collectif.fiertes.toulon/",
-    "venues": null
+    "venues": null,
+    "region": "Provence-Alpes-Côte d'Azur"
   },
   {
     "id": "tarragona-pride-2026-06-13",
@@ -3355,7 +3570,8 @@
     "languages": null,
     "website": "https://pridetarragona.com/",
     "instagram": "https://www.instagram.com/pridetarragona/",
-    "venues": null
+    "venues": null,
+    "region": "Catalunya"
   },
   {
     "id": "west-pride-gothenburg-2026-2026-06-13",
@@ -3370,7 +3586,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://www.westpride.se",
-    "venues": null
+    "venues": null,
+    "region": "Västra Götaland"
   },
   {
     "id": "chi-in-u-pride-csd-chi-in-u-2026-2026-06-14",
@@ -3385,7 +3602,8 @@
     "queerIndex": 38,
     "languages": null,
     "website": "https://www.chisinaupride.md",
-    "venues": null
+    "venues": null,
+    "region": "Municipiul Chișinău"
   },
   {
     "id": "sitges-pride-csd-sitges-2026-2026-06-14",
@@ -3400,7 +3618,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://sitgespride.com",
-    "venues": null
+    "venues": null,
+    "region": "Catalunya"
   },
   {
     "id": "lancaster-pride-2026-2026-06-14",
@@ -3415,7 +3634,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://lancasterpride.org",
-    "venues": null
+    "venues": null,
+    "region": "Lancashire"
   },
   {
     "id": "tampere-pride-tampere-pirkanmaan-pride-2026-2026-06-14",
@@ -3430,7 +3650,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://tampereenpride.fi",
-    "venues": null
+    "venues": null,
+    "region": "Pirkanmaa"
   },
   {
     "id": "irpinia-pride-atripalda-2026-06-14",
@@ -3446,7 +3667,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/applepie_arcigay_avellino/",
-    "venues": null
+    "venues": null,
+    "region": "Campania"
   },
   {
     "id": "riviera-pride-dolo-2026-06-14",
@@ -3462,7 +3684,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/collettivo_artemisia/",
-    "venues": null
+    "venues": null,
+    "region": "Veneto"
   },
   {
     "id": "lissabon-pride-csd-lissabon-2026-2026-06-20",
@@ -3477,7 +3700,8 @@
     "queerIndex": 67,
     "languages": null,
     "website": "https://www.marchalxbt.pt",
-    "venues": null
+    "venues": null,
+    "region": "Lisboa"
   },
   {
     "id": "edinburgh-pride-csd-edinburgh-2026-2026-06-20",
@@ -3492,7 +3716,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.edinburghpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Scotland"
   },
   {
     "id": "csd-zuerich-2026-2026-06-20",
@@ -3508,7 +3733,8 @@
     "languages": null,
     "website": "https://www.zurichpridefestival.ch",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_zureich/"
+    "instagram": "https://www.instagram.com/csd_zureich/",
+    "region": "Zürich"
   },
   {
     "id": "murcia-pride-csd-murcia-2026-2026-06-20",
@@ -3523,7 +3749,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://murciaorgullosa.es",
-    "venues": null
+    "venues": null,
+    "region": "Región de Murcia"
   },
   {
     "id": "bilbao-pride-csd-bilbao-2026-2026-06-20",
@@ -3538,7 +3765,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://bilbaopride.org",
-    "venues": null
+    "venues": null,
+    "region": "País Vasco"
   },
   {
     "id": "sheffield-pride-csd-sheffield-2026-2026-06-20",
@@ -3553,7 +3781,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://sheffieldpride.org",
-    "venues": null
+    "venues": null,
+    "region": "South Yorkshire"
   },
   {
     "id": "skopje-pride-csd-skopje-2026-2026-06-20",
@@ -3568,7 +3797,8 @@
     "queerIndex": 29,
     "languages": null,
     "website": "https://skopjepride.mk",
-    "venues": null
+    "venues": null,
+    "region": "Skopje"
   },
   {
     "id": "rouen-pride-csd-rouen-2026-2026-06-20",
@@ -3583,7 +3813,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.rouenpride.fr",
-    "venues": null
+    "venues": null,
+    "region": "Normandie"
   },
   {
     "id": "drogheda-pride-csd-drogheda-2026-2026-06-20",
@@ -3598,7 +3829,8 @@
     "queerIndex": 61,
     "languages": null,
     "website": "https://droghedapride.ie",
-    "venues": null
+    "venues": null,
+    "region": "Leinster"
   },
   {
     "id": "poznan-pride-csd-poznan-2026-2026-06-20",
@@ -3613,7 +3845,8 @@
     "queerIndex": 22,
     "languages": null,
     "website": "https://www.poznanpride.eu",
-    "venues": null
+    "venues": null,
+    "region": "Wielkopolskie"
   },
   {
     "id": "exmouth-pride-2026-2026-06-20",
@@ -3628,7 +3861,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.exmouthpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Devon"
   },
   {
     "id": "strasbourg-pride-csd-strasbourg-2026-2026-06-20",
@@ -3643,7 +3877,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.marche-des-fiertes-strasbourg.fr",
-    "venues": null
+    "venues": null,
+    "region": "Grand Est"
   },
   {
     "id": "montpellier-pride-csd-montpellier-2026-2026-06-20",
@@ -3658,7 +3893,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://montpellier-pride.com",
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "stoke-on-trent-pride-2026-2026-06-20",
@@ -3673,7 +3909,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.stokepride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Staffordshire"
   },
   {
     "id": "rome-pride-roma-pride-2026-2026-06-20",
@@ -3688,7 +3925,8 @@
     "queerIndex": 24,
     "languages": null,
     "website": "https://www.romapride.it",
-    "venues": null
+    "venues": null,
+    "region": "Lazio"
   },
   {
     "id": "grenoble-pride-csd-grenoble-2026-2026-06-20",
@@ -3703,7 +3941,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://grenoblepride.fr",
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "chelmsford-pride-essex-pride-in-chelmsford-2026-2026-06-20",
@@ -3718,7 +3957,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://chelmsfordpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Essex"
   },
   {
     "id": "palermo-pride-csd-palermo-2026-2026-06-20",
@@ -3734,7 +3974,8 @@
     "languages": null,
     "website": "https://palermopride.it",
     "venues": null,
-    "instagram": "https://www.instagram.com/palermopride/"
+    "instagram": "https://www.instagram.com/palermopride/",
+    "region": "Sicilia"
   },
   {
     "id": "csd-stubai-2026-2026-06-20",
@@ -3749,7 +3990,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://stubaitalpride.com",
-    "venues": null
+    "venues": null,
+    "region": "Tirol"
   },
   {
     "id": "varese-pride-csd-varese-2026-2026-06-20",
@@ -3765,7 +4007,8 @@
     "languages": null,
     "website": "https://varesepride.it",
     "venues": null,
-    "instagram": "https://www.instagram.com/vareseprideofficial/"
+    "instagram": "https://www.instagram.com/vareseprideofficial/",
+    "region": "Lombardia"
   },
   {
     "id": "gouda-pride-roze-zaterdag-gouda-2026-2026-06-20",
@@ -3780,7 +4023,8 @@
     "queerIndex": 64,
     "languages": null,
     "website": "https://goudapride.nl",
-    "venues": null
+    "venues": null,
+    "region": "Zuid-Holland"
   },
   {
     "id": "thessaloniki-pride-europride-2026-2026-06-20",
@@ -3795,7 +4039,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://www.thessalonikipride.gr",
-    "venues": null
+    "venues": null,
+    "region": "Kentriki Makedonia"
   },
   {
     "id": "csd-oldenburg-2026-2026-06-20",
@@ -3811,7 +4056,8 @@
     "languages": null,
     "website": "https://csd-oldenburg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdnordwest/"
+    "instagram": "https://www.instagram.com/csdnordwest/",
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-freiburg-2026-2026-06-20",
@@ -3827,7 +4073,8 @@
     "languages": null,
     "website": "https://csd-freiburg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdfreiburg/"
+    "instagram": "https://www.instagram.com/csdfreiburg/",
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-ulm-csd-neu-ulm-2026-2026-06-20",
@@ -3842,7 +4089,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-ulm.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-wetzlar-csd-mittelhessen-2026-2026-06-20",
@@ -3857,7 +4105,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-lahn.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-jena-2026-2026-06-20",
@@ -3872,7 +4121,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-jena.de",
-    "venues": null
+    "venues": null,
+    "region": "Thüringen"
   },
   {
     "id": "csd-goettingen-2026-2026-06-20",
@@ -3887,7 +4137,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-goettingen.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-bochum-2026-2026-06-20",
@@ -3902,7 +4153,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-bochum.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-berlin-marzahn-2026-2026-06-20",
@@ -3917,7 +4169,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-marzahn.de",
-    "venues": null
+    "venues": null,
+    "region": "Berlin"
   },
   {
     "id": "csd-coburg-2026-2026-06-20",
@@ -3932,7 +4185,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-coburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-schwandorf-2026-2026-06-20",
@@ -3947,7 +4201,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-schwandorf.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-heidelberg-2026-2026-06-20",
@@ -3962,7 +4217,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-heidelberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-rendsburg-2026-2026-06-20",
@@ -3977,7 +4233,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-rendsburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-herrenberg-2026-2026-06-20",
@@ -3993,7 +4250,8 @@
     "languages": null,
     "website": "https://www.csd-herrenberg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_herrenberg/"
+    "instagram": "https://www.instagram.com/csd_herrenberg/",
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-lutherstadt-wittenberg-2026-2026-06-20",
@@ -4008,7 +4266,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-wittenberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "csd-karlsfeld-2026-2026-06-20",
@@ -4023,7 +4282,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-karlsfeld.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-hohenlockstedt-2026-2026-06-20",
@@ -4038,7 +4298,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-hohenlockstedt.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-golssen-2026-2026-06-20",
@@ -4053,7 +4314,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-golssen.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-juelich-2026-2026-06-20",
@@ -4068,7 +4330,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-juelich.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "modena-pride-2026-06-20",
@@ -4084,7 +4347,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/modenapride/",
-    "venues": null
+    "venues": null,
+    "region": "Emilia-Romagna"
   },
   {
     "id": "treviso-pride-2026-06-20",
@@ -4100,7 +4364,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/trevisopride/",
-    "venues": null
+    "venues": null,
+    "region": "Veneto"
   },
   {
     "id": "rovigo-pride-2026-06-20",
@@ -4116,7 +4381,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/rovigopride/",
-    "venues": null
+    "venues": null,
+    "region": "Veneto"
   },
   {
     "id": "brest-pride-2026-06-20",
@@ -4132,7 +4398,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/pridebrest/",
-    "venues": null
+    "venues": null,
+    "region": "Bretagne"
   },
   {
     "id": "gueret-pride-2026-06-20",
@@ -4148,7 +4415,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "rennes-pride-2026-06-20",
@@ -4164,7 +4432,8 @@
     "languages": null,
     "website": "https://www.iskis-rbx.fr/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bretagne"
   },
   {
     "id": "saint-martin-en-haut-pride-2026-06-20",
@@ -4180,7 +4449,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "vesoul-pride-2026-06-20",
@@ -4196,7 +4466,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bourgogne-Franche-Comté"
   },
   {
     "id": "csd-tuebingen-2026-2026-06-21",
@@ -4211,7 +4482,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-tuebingen.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-leverkusen-2026-2026-06-21",
@@ -4226,7 +4498,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-leverkusen.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "bor-s-pride-2026-2026-06-22",
@@ -4241,7 +4514,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://boraspride.se",
-    "venues": null
+    "venues": null,
+    "region": "Västra Götaland"
   },
   {
     "id": "vaester-s-pride-csd-vaester-s-2026-2026-06-25",
@@ -4256,7 +4530,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://vasteraspride.se",
-    "venues": null
+    "venues": null,
+    "region": "Västmanland"
   },
   {
     "id": "castrovillari-pride-2026-06-26",
@@ -4272,7 +4547,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/emisbakery_castrovillari/",
-    "venues": null
+    "venues": null,
+    "region": "Calabria"
   },
   {
     "id": "csd-bregenz-csd-vorarlberg-2026-2026-06-27",
@@ -4288,7 +4564,8 @@
     "languages": null,
     "website": "https://www.bregenzpride.at",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdvorarlberg/"
+    "instagram": "https://www.instagram.com/csdvorarlberg/",
+    "region": "Vorarlberg"
   },
   {
     "id": "paris-pride-csd-paris-2026-2026-06-27",
@@ -4303,7 +4580,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.inter-lgbt.org",
-    "venues": null
+    "venues": null,
+    "region": "Île-de-France"
   },
   {
     "id": "dublin-pride-csd-dublin-2026-2026-06-27",
@@ -4318,7 +4596,8 @@
     "queerIndex": 61,
     "languages": null,
     "website": "https://dublinpride.ie",
-    "venues": null
+    "venues": null,
+    "region": "Leinster"
   },
   {
     "id": "milan-pride-csd-milan-2026-2026-06-27",
@@ -4333,7 +4612,8 @@
     "queerIndex": 24,
     "languages": null,
     "website": "https://www.milanopride.it",
-    "venues": null
+    "venues": null,
+    "region": "Lombardia"
   },
   {
     "id": "helsinki-pride-csd-helsinki-2026-2026-06-27",
@@ -4348,7 +4628,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://helsinkipride.fi",
-    "venues": null
+    "venues": null,
+    "region": "Uusimaa"
   },
   {
     "id": "oslo-pride-csd-oslo-2026-2026-06-27",
@@ -4363,7 +4644,8 @@
     "queerIndex": 69,
     "languages": null,
     "website": "https://www.oslopride.no",
-    "venues": null
+    "venues": null,
+    "region": "Oslo"
   },
   {
     "id": "sevilla-pride-orgullo-lgtb-de-andaluc-a-2026-2026-06-27",
@@ -4378,7 +4660,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://sevillapride.com",
-    "venues": null
+    "venues": null,
+    "region": "Andalucía"
   },
   {
     "id": "valencia-pride-csd-valencia-2026-2026-06-27",
@@ -4393,7 +4676,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://lambdavalencia.org",
-    "venues": null
+    "venues": null,
+    "region": "Comunitat Valenciana"
   },
   {
     "id": "malaga-pride-csd-malaga-2026-2026-06-27",
@@ -4408,7 +4692,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://malagapride.es",
-    "venues": null
+    "venues": null,
+    "region": "Andalucía"
   },
   {
     "id": "palma-de-mallorca-pride-csd-palma-de-mallorca-2026-2026-06-27",
@@ -4423,7 +4708,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://www.palmapride.es",
-    "venues": null
+    "venues": null,
+    "region": "Illes Balears"
   },
   {
     "id": "c-rdoba-pride-csd-c-rdoba-2026-2026-06-27",
@@ -4438,7 +4724,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://www.cordobapride.es",
-    "venues": null
+    "venues": null,
+    "region": "Andalucía"
   },
   {
     "id": "coventry-pride-csd-coventry-2026-2026-06-27",
@@ -4453,7 +4740,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://www.coventrypride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "West Midlands"
   },
   {
     "id": "budapest-pride-csd-budapest-2026-2026-06-27",
@@ -4468,7 +4756,8 @@
     "queerIndex": 23,
     "languages": null,
     "website": "https://budapestpride.com",
-    "venues": null
+    "venues": null,
+    "region": "Budapest"
   },
   {
     "id": "bucharest-pride-csd-bucharest-2026-2026-06-27",
@@ -4483,7 +4772,8 @@
     "queerIndex": 19,
     "languages": null,
     "website": "https://bucharestpride.ro",
-    "venues": null
+    "venues": null,
+    "region": "Ilfov"
   },
   {
     "id": "sarajevo-pride-csd-sarajevo-2026-2026-06-27",
@@ -4498,7 +4788,8 @@
     "queerIndex": 37,
     "languages": null,
     "website": "https://sarajevopride.ba",
-    "venues": null
+    "venues": null,
+    "region": "Kanton Sarajevo"
   },
   {
     "id": "csd-basel-2026-2026-06-27",
@@ -4513,7 +4804,8 @@
     "queerIndex": 50,
     "languages": null,
     "website": "https://baselpride.ch",
-    "venues": null
+    "venues": null,
+    "region": "Basel-Stadt"
   },
   {
     "id": "neapel-pride-napoli-pride-2026-2026-06-27",
@@ -4529,7 +4821,8 @@
     "languages": null,
     "website": "https://napolipride.it",
     "venues": null,
-    "instagram": "https://www.instagram.com/napoli.pride/"
+    "instagram": "https://www.instagram.com/napoli.pride/",
+    "region": "Campania"
   },
   {
     "id": "csd-graz-2026-2026-06-27",
@@ -4544,7 +4837,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://www.pride-graz.at",
-    "venues": null
+    "venues": null,
+    "region": "Steiermark"
   },
   {
     "id": "trollhaettan-pride-csd-trollhaettan-2026-2026-06-27",
@@ -4559,7 +4853,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://trollhattanpride.se",
-    "venues": null
+    "venues": null,
+    "region": "Västra Götaland"
   },
   {
     "id": "csd-linz-2026-2026-06-27",
@@ -4574,7 +4869,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://www.linzpride.at",
-    "venues": null
+    "venues": null,
+    "region": "Oberösterreich"
   },
   {
     "id": "catania-pride-csd-catania-2026-2026-06-27",
@@ -4590,7 +4886,8 @@
     "languages": null,
     "website": "https://www.cataniapride.it",
     "venues": null,
-    "instagram": "https://www.instagram.com/cataniaprideofficial/"
+    "instagram": "https://www.instagram.com/cataniaprideofficial/",
+    "region": "Sicilia"
   },
   {
     "id": "silloth-pride-2026-2026-06-27",
@@ -4605,7 +4902,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Cumbria"
   },
   {
     "id": "maastricht-pride-csd-maastricht-2026-2026-06-27",
@@ -4620,7 +4918,8 @@
     "queerIndex": 64,
     "languages": null,
     "website": "https://maastrichtpride.nl",
-    "venues": null
+    "venues": null,
+    "region": "Limburg"
   },
   {
     "id": "csd-lausanne-2026-2026-06-27",
@@ -4636,7 +4935,8 @@
     "languages": null,
     "website": "https://lausannepride.ch",
     "venues": null,
-    "instagram": "https://www.instagram.com/lausannepride/"
+    "instagram": "https://www.instagram.com/lausannepride/",
+    "region": "Vaud"
   },
   {
     "id": "csd-muenchen-2026-2026-06-27",
@@ -4652,7 +4952,8 @@
     "languages": null,
     "website": "https://www.csd-muenchen.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdmuenchen/"
+    "instagram": "https://www.instagram.com/csdmuenchen/",
+    "region": "Bayern"
   },
   {
     "id": "csd-greifswald-2026-2026-06-27",
@@ -4667,7 +4968,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-greifswald.de",
-    "venues": null
+    "venues": null,
+    "region": "Mecklenburg-Vorpommern"
   },
   {
     "id": "csd-wendland-csd-luechow-2026-2026-06-27",
@@ -4682,7 +4984,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-luechow.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-weimar-2026-2026-06-27",
@@ -4697,7 +5000,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-weimar.de",
-    "venues": null
+    "venues": null,
+    "region": "Thüringen"
   },
   {
     "id": "csd-wuerzburg-2026-2026-06-27",
@@ -4713,7 +5017,8 @@
     "languages": null,
     "website": "https://csd-wuerzburg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/queerpridewue/"
+    "instagram": "https://www.instagram.com/queerpridewue/",
+    "region": "Bayern"
   },
   {
     "id": "csd-hanau-2026-2026-06-27",
@@ -4728,7 +5033,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-hanau.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-heide-csd-westkueste-2026-2026-06-27",
@@ -4743,7 +5049,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-heide.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-stade-2026-2026-06-27",
@@ -4758,7 +5065,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-stade.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-marburg-2026-2026-06-27",
@@ -4773,7 +5081,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-marburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-nordenham-2026-2026-06-27",
@@ -4788,7 +5097,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-nordenham.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-hildesheim-2026-2026-06-27",
@@ -4803,7 +5113,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-hildesheim.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-bernau-bei-berlin-2026-2026-06-27",
@@ -4819,7 +5130,8 @@
     "languages": null,
     "website": "https://csd-bernau.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_bernau/"
+    "instagram": "https://www.instagram.com/csd_bernau/",
+    "region": "Brandenburg"
   },
   {
     "id": "csd-torgau-2026-2026-06-27",
@@ -4835,7 +5147,8 @@
     "languages": null,
     "website": "https://csd-torgau.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_torgau/"
+    "instagram": "https://www.instagram.com/csd_torgau/",
+    "region": "Sachsen"
   },
   {
     "id": "csd-winsen-luhe-2026-2026-06-27",
@@ -4850,7 +5163,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-winsen.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-offenburg-2026-2026-06-27",
@@ -4865,7 +5179,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-offenburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-nuertingen-2026-2026-06-27",
@@ -4880,7 +5195,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-nuertingen.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-soest-2026-2026-06-27",
@@ -4895,7 +5211,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-soest.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-erkrath-2026-2026-06-27",
@@ -4910,7 +5227,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-erkrath.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-bramsche-2026-2026-06-27",
@@ -4925,7 +5243,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bramsche.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-siegburg-2026-2026-06-27",
@@ -4940,7 +5259,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-siegburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-schleswig-2026-2026-06-27",
@@ -4955,7 +5275,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-schleswig.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-dueren-2026-2026-06-27",
@@ -4970,7 +5291,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-dueren.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-ahrensburg-2026-2026-06-27",
@@ -4985,7 +5307,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-ahrensburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-sangerhausen-2026-2026-06-27",
@@ -5000,7 +5323,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-sangerhausen.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "csd-gummersbach-2026-2026-06-27",
@@ -5015,7 +5339,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-gummersbach.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-quickborn-2026-2026-06-27",
@@ -5030,7 +5355,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-quickborn.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-meldorf-2026-2026-06-27",
@@ -5045,7 +5371,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-meldorf.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-rastatt-2026-2026-06-27",
@@ -5060,7 +5387,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-rastatt.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "verona-pride-riot-2026-06-27",
@@ -5076,7 +5404,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/tumultopride_vr/",
-    "venues": null
+    "venues": null,
+    "region": "Veneto"
   },
   {
     "id": "sardinia-pride-cagliari-2026-06-27",
@@ -5092,7 +5421,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/sardegna.pride/",
-    "venues": null
+    "venues": null,
+    "region": "Sardegna"
   },
   {
     "id": "abruzzo-pride-giulianova-2026-06-27",
@@ -5108,7 +5438,8 @@
     "languages": null,
     "website": "https://www.abruzzopride.it/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Abruzzo"
   },
   {
     "id": "amiens-pride-2026-06-27",
@@ -5124,7 +5455,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/fiertesamiens/",
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "carcassonne-pride-2026-06-27",
@@ -5140,7 +5472,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "lisieux-pride-2026-06-27",
@@ -5156,7 +5489,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Normandie"
   },
   {
     "id": "lorient-pride-2026-06-27",
@@ -5172,7 +5506,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bretagne"
   },
   {
     "id": "lyon-pride-2026-06-27",
@@ -5188,7 +5523,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/cfl.lyon/",
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "nimes-pride-2026-06-27",
@@ -5204,7 +5540,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/larenedesfiertes/",
-    "venues": null
+    "venues": null,
+    "region": "Occitanie"
   },
   {
     "id": "sallanches-pride-2026-06-27",
@@ -5220,7 +5557,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "tourcoing-pride-2026-06-27",
@@ -5236,7 +5574,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Hauts-de-France"
   },
   {
     "id": "cartagena-pride-2026-06-27",
@@ -5252,7 +5591,8 @@
     "languages": null,
     "website": "https://www.enorgullect.es/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Región de Murcia"
   },
   {
     "id": "split-pride-2026-06-27",
@@ -5268,7 +5608,8 @@
     "languages": null,
     "website": "https://lgbtcentarsplit.org/",
     "instagram": "https://www.instagram.com/splitpride/",
-    "venues": null
+    "venues": null,
+    "region": "Splitsko-dalmatinska"
   },
   {
     "id": "barcelona-pride-csd-barcelona-2026-2026-06-28",
@@ -5283,7 +5624,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://www.pridebarcelona.org",
-    "venues": null
+    "venues": null,
+    "region": "Catalunya"
   },
   {
     "id": "zaragoza-pride-csd-zaragoza-2026-2026-06-28",
@@ -5298,7 +5640,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://zaragozapride.es",
-    "venues": null
+    "venues": null,
+    "region": "Aragón"
   },
   {
     "id": "gijon-pride-csd-gijon-2026-2026-06-28",
@@ -5313,7 +5656,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://gijonpride.com",
-    "venues": null
+    "venues": null,
+    "region": "Principado de Asturias"
   },
   {
     "id": "kiew-pride-csd-kiew-2026-2026-06-28",
@@ -5328,7 +5672,8 @@
     "queerIndex": 19,
     "languages": null,
     "website": "https://kyivpride.org",
-    "venues": null
+    "venues": null,
+    "region": "Oblast Kiew"
   },
   {
     "id": "csd-muelheim-an-der-ruhr-2026-2026-06-28",
@@ -5343,7 +5688,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-muelheim.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-ilmenau-2026-2026-06-28",
@@ -5358,7 +5704,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-ilmenau.de",
-    "venues": null
+    "venues": null,
+    "region": "Thüringen"
   },
   {
     "id": "csd-muencheberg-2026-2026-07-03",
@@ -5373,7 +5720,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "palagianello-pride-2026-07-03",
@@ -5389,7 +5737,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/arcigay_queertown_taranto/",
-    "venues": null
+    "venues": null,
+    "region": "Puglia"
   },
   {
     "id": "london-pride-csd-london-2026-2026-07-04",
@@ -5404,7 +5753,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://prideinlondon.org",
-    "venues": null
+    "venues": null,
+    "region": "Greater London"
   },
   {
     "id": "madrid-pride-csd-madrid-2026-2026-07-04",
@@ -5419,7 +5769,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://www.madridorgullo.com",
-    "venues": null
+    "venues": null,
+    "region": "Comunidad de Madrid"
   },
   {
     "id": "macclesfield-pride-2026-2026-07-04",
@@ -5434,7 +5785,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Cheshire"
   },
   {
     "id": "marseille-pride-pride-marseille-2026-2026-07-04",
@@ -5449,7 +5801,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.marseillepride.fr",
-    "venues": null
+    "venues": null,
+    "region": "Provence-Alpes-Côte d'Azur"
   },
   {
     "id": "malmoe-pride-csd-malmoe-2026-2026-07-04",
@@ -5464,7 +5817,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://malmopride.se",
-    "venues": null
+    "venues": null,
+    "region": "Skåne"
   },
   {
     "id": "salerno-pride-csd-salerno-2026-2026-07-04",
@@ -5480,7 +5834,8 @@
     "languages": null,
     "website": "https://salernopride.it",
     "venues": null,
-    "instagram": "https://www.instagram.com/salernopride/"
+    "instagram": "https://www.instagram.com/salernopride/",
+    "region": "Campania"
   },
   {
     "id": "le-mans-pride-csd-le-mans-2026-2026-07-04",
@@ -5495,7 +5850,8 @@
     "queerIndex": 59,
     "languages": null,
     "website": "https://www.lemanspride.fr",
-    "venues": null
+    "venues": null,
+    "region": "Pays de la Loire"
   },
   {
     "id": "csd-steyr-2026-2026-07-04",
@@ -5510,7 +5866,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://steyrpride.at",
-    "venues": null
+    "venues": null,
+    "region": "Oberösterreich"
   },
   {
     "id": "worthing-pride-2026-2026-07-04",
@@ -5525,7 +5882,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://worthingpride.org",
-    "venues": null
+    "venues": null,
+    "region": "West Sussex"
   },
   {
     "id": "csd-villach-2026-2026-07-04",
@@ -5540,7 +5898,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://villachpride.at",
-    "venues": null
+    "venues": null,
+    "region": "Kärnten"
   },
   {
     "id": "kirkcaldy-pride-kirkcaldy-fife-pride-2026-2026-07-04",
@@ -5555,7 +5914,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://kirkcaldypride.com",
-    "venues": null
+    "venues": null,
+    "region": "Scotland"
   },
   {
     "id": "csd-schwerin-2026-2026-07-04",
@@ -5571,7 +5931,8 @@
     "languages": null,
     "website": "https://csd-schwerin.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_schwerin/"
+    "instagram": "https://www.instagram.com/csd_schwerin/",
+    "region": "Mecklenburg-Vorpommern"
   },
   {
     "id": "csd-regensburg-2026-2026-07-04",
@@ -5587,7 +5948,8 @@
     "languages": null,
     "website": "https://csd-regensburg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_regensburg/"
+    "instagram": "https://www.instagram.com/csd_regensburg/",
+    "region": "Bayern"
   },
   {
     "id": "csd-chemnitz-2026-2026-07-04",
@@ -5602,7 +5964,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-chemnitz.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen"
   },
   {
     "id": "csd-schwaebisch-hall-2026-2026-07-04",
@@ -5617,7 +5980,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-sha.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-wasserburg-2026-2026-07-04",
@@ -5632,7 +5996,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-wasserburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-neuruppin-2026-2026-07-04",
@@ -5647,7 +6012,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-neuruppin.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-neumuenster-2026-2026-07-04",
@@ -5662,7 +6028,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-neumuenster.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "comacchio-pride-2026-07-04",
@@ -5678,7 +6045,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/comacchiopride/",
-    "venues": null
+    "venues": null,
+    "region": "Emilia-Romagna"
   },
   {
     "id": "ostuni-pride-2026-07-04",
@@ -5694,7 +6062,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/annavannaostuni/",
-    "venues": null
+    "venues": null,
+    "region": "Puglia"
   },
   {
     "id": "monviso-pride-ostana-2026-07-04",
@@ -5710,7 +6079,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/ostana_giovan3/",
-    "venues": null
+    "venues": null,
+    "region": "Piemonte"
   },
   {
     "id": "cluny-pride-2026-07-04",
@@ -5726,7 +6096,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bourgogne-Franche-Comté"
   },
   {
     "id": "quimper-pride-2026-07-04",
@@ -5742,7 +6113,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bretagne"
   },
   {
     "id": "roanne-pride-2026-07-04",
@@ -5758,7 +6130,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "sundsvall-pride-csd-sundsvall-2026-2026-07-05",
@@ -5773,7 +6146,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://sundsvallpride.se",
-    "venues": null
+    "venues": null,
+    "region": "Västernorrland"
   },
   {
     "id": "csd-koeln-2026-2026-07-05",
@@ -5789,7 +6163,8 @@
     "languages": null,
     "website": "https://www.csd-koeln.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/cologneprideofficial/"
+    "instagram": "https://www.instagram.com/cologneprideofficial/",
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "bristol-pride-csd-bristol-2026-2026-07-11",
@@ -5804,7 +6179,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://bristolpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Bristol"
   },
   {
     "id": "plymouth-pride-csd-plymouth-2026-2026-07-11",
@@ -5819,7 +6195,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://plymouthpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Devon"
   },
   {
     "id": "northampton-pride-csd-northampton-2026-2026-07-11",
@@ -5834,7 +6211,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://northamptonpride.com",
-    "venues": null
+    "venues": null,
+    "region": "Northamptonshire"
   },
   {
     "id": "limerick-pride-csd-limerick-2026-2026-07-11",
@@ -5849,7 +6227,8 @@
     "queerIndex": 61,
     "languages": null,
     "website": "https://limerickpride.ie",
-    "venues": null
+    "venues": null,
+    "region": "Munster"
   },
   {
     "id": "aalborg-pride-csd-aalborg-2026-2026-07-11",
@@ -5864,7 +6243,8 @@
     "queerIndex": 82,
     "languages": null,
     "website": "https://aalborgpride.dk",
-    "venues": null
+    "venues": null,
+    "region": "Nordjylland"
   },
   {
     "id": "esch-sur-alzette-pride-csd-esch-sur-alzette-2026-2026-07-11",
@@ -5879,7 +6259,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://eschpride.lu",
-    "venues": null
+    "venues": null,
+    "region": ""
   },
   {
     "id": "bourne-pride-2026-2026-07-11",
@@ -5894,7 +6275,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Lincolnshire"
   },
   {
     "id": "luxemburg-pride-csd-luxemburg-2026-2026-07-11",
@@ -5909,7 +6291,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://luxembourgpride.lu",
-    "venues": null
+    "venues": null,
+    "region": ""
   },
   {
     "id": "csd-pirna-2026-2026-07-11",
@@ -5925,7 +6308,8 @@
     "languages": null,
     "website": "https://csd-pirna.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdpirna/"
+    "instagram": "https://www.instagram.com/csdpirna/",
+    "region": "Sachsen"
   },
   {
     "id": "csd-mannheim-2026-2026-07-11",
@@ -5941,7 +6325,8 @@
     "languages": null,
     "website": "https://csd-mannheim.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/monnempride/"
+    "instagram": "https://www.instagram.com/monnempride/",
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-kiel-2026-2026-07-11",
@@ -5957,7 +6342,8 @@
     "languages": null,
     "website": "https://www.csd-kiel.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdkiel/"
+    "instagram": "https://www.instagram.com/csdkiel/",
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-cottbus-2026-2026-07-11",
@@ -5972,7 +6358,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-cottbus.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-herne-2026-2026-07-11",
@@ -5987,7 +6374,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-herne.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-bremerhaven-2026-2026-07-11",
@@ -6002,7 +6390,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bremerhaven.de",
-    "venues": null
+    "venues": null,
+    "region": "Bremen"
   },
   {
     "id": "csd-bamberg-2026-2026-07-11",
@@ -6018,7 +6407,8 @@
     "languages": null,
     "website": "https://csd-bamberg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_bamberg/"
+    "instagram": "https://www.instagram.com/csd_bamberg/",
+    "region": "Bayern"
   },
   {
     "id": "csd-ueberlingen-2026-2026-07-11",
@@ -6033,7 +6423,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-ueberlingen.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-schwabach-2026-2026-07-11",
@@ -6049,7 +6440,8 @@
     "languages": null,
     "website": "https://csd-schwabach.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdschwabach/"
+    "instagram": "https://www.instagram.com/csdschwabach/",
+    "region": "Bayern"
   },
   {
     "id": "csd-schongau-2026-2026-07-11",
@@ -6064,7 +6456,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-schongau.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-oberhausen-2026-2026-07-11",
@@ -6079,7 +6472,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-oberhausen.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-heilbronn-2026-2026-07-11",
@@ -6095,7 +6489,8 @@
     "languages": null,
     "website": "https://csd-heilbronn.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_heilbronn/"
+    "instagram": "https://www.instagram.com/csd_heilbronn/",
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-detmold-2026-2026-07-11",
@@ -6110,7 +6505,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-detmold.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-memmingen-2026-2026-07-11",
@@ -6126,7 +6522,8 @@
     "languages": null,
     "website": "https://csd-memmingen.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/pridememmingen/"
+    "instagram": "https://www.instagram.com/pridememmingen/",
+    "region": "Bayern"
   },
   {
     "id": "csd-gifhorn-2026-2026-07-11",
@@ -6141,7 +6538,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-gifhorn.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-esslingen-2026-2026-07-11",
@@ -6157,7 +6555,8 @@
     "languages": null,
     "website": "https://csd-esslingen.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd.esslingen/"
+    "instagram": "https://www.instagram.com/csd.esslingen/",
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-koethen-2026-2026-07-11",
@@ -6173,7 +6572,8 @@
     "languages": null,
     "website": "https://csd-koethen.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_koethen/"
+    "instagram": "https://www.instagram.com/csd_koethen/",
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "csd-freiberg-2026-2026-07-11",
@@ -6189,7 +6589,8 @@
     "languages": null,
     "website": "https://csd-freiberg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/junges_netzwerk_fg/"
+    "instagram": "https://www.instagram.com/junges_netzwerk_fg/",
+    "region": "Sachsen"
   },
   {
     "id": "csd-viersen-2026-2026-07-11",
@@ -6204,7 +6605,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-viersen.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-wuermtal-2026-2026-07-11",
@@ -6219,7 +6621,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-wuermtal.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-nettetal-2026-2026-07-11",
@@ -6234,7 +6637,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-nettetal.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-hattingen-ruhr-2026-2026-07-11",
@@ -6249,7 +6653,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-hattingen.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-wesel-2026-2026-07-11",
@@ -6264,7 +6669,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-wesel.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "lodi-pride-2026-07-11",
@@ -6280,7 +6686,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/lodi_arcobaleno/",
-    "venues": null
+    "venues": null,
+    "region": "Lombardia"
   },
   {
     "id": "ragusa-pride-2026-07-11",
@@ -6296,7 +6703,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/ragusaprideofficial/",
-    "venues": null
+    "venues": null,
+    "region": "Sicilia"
   },
   {
     "id": "egadi-pride-favignana-2026-07-11",
@@ -6312,7 +6720,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/egadipride/",
-    "venues": null
+    "venues": null,
+    "region": "Sicilia"
   },
   {
     "id": "asti-pride-2026-07-11",
@@ -6328,7 +6737,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/asti_pride/",
-    "venues": null
+    "venues": null,
+    "region": "Piemonte"
   },
   {
     "id": "nice-pride-2026-07-11",
@@ -6344,7 +6754,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/pinkparadnice/",
-    "venues": null
+    "venues": null,
+    "region": "Provence-Alpes-Côte d'Azur"
   },
   {
     "id": "csd-olpe-2026-2026-07-12",
@@ -6359,7 +6770,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-olpe.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-biberach-an-der-riss-2026-2026-07-12",
@@ -6374,7 +6786,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-biberach.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-rheine-2026-2026-07-15",
@@ -6389,7 +6802,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-rheine.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-unken-2026-2026-07-18",
@@ -6405,7 +6819,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "instagram": "https://www.instagram.com/unkenpride/"
+    "instagram": "https://www.instagram.com/unkenpride/",
+    "region": "Salzburg"
   },
   {
     "id": "alicante-pride-csd-alicante-2026-2026-07-18",
@@ -6420,7 +6835,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://alicantepride.com",
-    "venues": null
+    "venues": null,
+    "region": "Comunitat Valenciana"
   },
   {
     "id": "leeds-pride-csd-leeds-2026-2026-07-18",
@@ -6435,7 +6851,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://leedspride.com",
-    "venues": null
+    "venues": null,
+    "region": "West Yorkshire"
   },
   {
     "id": "bratislava-pride-csd-bratislava-2026-2026-07-18",
@@ -6450,7 +6867,8 @@
     "queerIndex": 25,
     "languages": null,
     "website": "https://bratislavapride.sk",
-    "venues": null
+    "venues": null,
+    "region": "Bratislavský kraj"
   },
   {
     "id": "ryde-pride-2026-2026-07-18",
@@ -6465,7 +6883,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Isle of Wight"
   },
   {
     "id": "syracuse-pride-csd-syracuse-2026-2026-07-18",
@@ -6481,7 +6900,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "instagram": "https://www.instagram.com/siracusapride/"
+    "instagram": "https://www.instagram.com/siracusapride/",
+    "region": "Sicilia"
   },
   {
     "id": "congleton-pride-2026-2026-07-18",
@@ -6496,7 +6916,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Cheshire"
   },
   {
     "id": "glasgow-pride-mardi-gla-2026-2026-07-18",
@@ -6511,7 +6932,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://glasgowpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Scotland"
   },
   {
     "id": "sankt-vith-pride-csd-sankt-vith-2026-2026-07-18",
@@ -6526,7 +6948,8 @@
     "queerIndex": 85,
     "languages": null,
     "website": "https://stvithpride.be",
-    "venues": null
+    "venues": null,
+    "region": "Wallonie"
   },
   {
     "id": "pompei-pride-pompei-campania-pride-2026-2026-07-18",
@@ -6541,7 +6964,8 @@
     "queerIndex": 24,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Campania"
   },
   {
     "id": "gallipoli-pride-gallipoli-salento-pride-2026-2026-07-18",
@@ -6556,7 +6980,8 @@
     "queerIndex": 24,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Puglia"
   },
   {
     "id": "lecce-pride-salento-pride-2026-2026-07-18",
@@ -6572,7 +6997,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "instagram": "https://www.instagram.com/salentopride/"
+    "instagram": "https://www.instagram.com/salentopride/",
+    "region": "Puglia"
   },
   {
     "id": "csd-leipzig-2026-2026-07-18",
@@ -6587,7 +7013,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-leipzig.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen"
   },
   {
     "id": "csd-frankfurt-2026-2026-07-18",
@@ -6603,7 +7030,8 @@
     "languages": null,
     "website": "https://www.csd-frankfurt.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdfrankfurt/"
+    "instagram": "https://www.instagram.com/csdfrankfurt/",
+    "region": "Hessen"
   },
   {
     "id": "csd-rostock-2026-2026-07-18",
@@ -6619,7 +7047,8 @@
     "languages": null,
     "website": "https://csd-rostock.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_rostock/"
+    "instagram": "https://www.instagram.com/csd_rostock/",
+    "region": "Mecklenburg-Vorpommern"
   },
   {
     "id": "csd-moenchengladbach-2026-2026-07-18",
@@ -6634,7 +7063,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-moenchengladbach.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-trier-2026-2026-07-18",
@@ -6650,7 +7080,8 @@
     "languages": null,
     "website": "https://csd-trier.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/pride_trier_/"
+    "instagram": "https://www.instagram.com/pride_trier_/",
+    "region": "Rheinland-Pfalz"
   },
   {
     "id": "csd-bonn-2026-2026-07-18",
@@ -6666,7 +7097,8 @@
     "languages": null,
     "website": "https://csd-bonn.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/rheinqueer/"
+    "instagram": "https://www.instagram.com/rheinqueer/",
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-weiden-2026-2026-07-18",
@@ -6681,7 +7113,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-weiden.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-landsberg-am-lech-2026-2026-07-18",
@@ -6697,7 +7130,8 @@
     "languages": null,
     "website": "https://csd-landsberg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd.landsberg/"
+    "instagram": "https://www.instagram.com/csd.landsberg/",
+    "region": "Bayern"
   },
   {
     "id": "csd-haltern-am-see-2026-2026-07-18",
@@ -6712,7 +7146,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-haltern.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-bad-mergentheim-2026-2026-07-18",
@@ -6727,7 +7162,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bad-mergentheim.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-brandenburg-an-der-havel-2026-2026-07-18",
@@ -6742,7 +7178,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-brandenburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-ronnenberg-2026-2026-07-18",
@@ -6757,7 +7194,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-ronnenberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-buchholz-in-der-nordheide-2026-2026-07-18",
@@ -6772,7 +7210,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-buchholz.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "vesuvius-pride-portici-2026-07-18",
@@ -6788,7 +7227,8 @@
     "languages": null,
     "website": "https://www.pridevesuvio.it/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Campania"
   },
   {
     "id": "caltapride-caltagirone-2026-07-18",
@@ -6804,7 +7244,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/caltaprideofficial/",
-    "venues": null
+    "venues": null,
+    "region": "Sicilia"
   },
   {
     "id": "annecy-pride-2026-07-18",
@@ -6820,7 +7261,8 @@
     "languages": null,
     "website": "https://www.helloasso.com/associations/annecypride",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "csd-waldshut-2026-2026-07-19",
@@ -6835,7 +7277,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-waldshut.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "tilburg-pride-roze-maandag-tilburg-2026-2026-07-20",
@@ -6850,7 +7293,8 @@
     "queerIndex": 64,
     "languages": null,
     "website": "https://tilburgpride.nl",
-    "venues": null
+    "venues": null,
+    "region": "Noord-Brabant"
   },
   {
     "id": "hebden-bridge-pride-happy-valley-pride-2026-2026-07-24",
@@ -6865,7 +7309,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "West Yorkshire"
   },
   {
     "id": "csd-bern-2026-2026-07-25",
@@ -6881,7 +7326,8 @@
     "languages": null,
     "website": "https://csd-bern.ch/",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd_bern/"
+    "instagram": "https://www.instagram.com/csd_bern/",
+    "region": "Bern"
   },
   {
     "id": "teneriffa-pride-csd-teneriffa-2026-2026-07-25",
@@ -6896,7 +7342,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Canarias"
   },
   {
     "id": "nottingham-pride-csd-nottingham-2026-2026-07-25",
@@ -6911,7 +7358,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://nottinghampride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Nottinghamshire"
   },
   {
     "id": "newcastle-pride-northern-pride-2026-2026-07-25",
@@ -6926,7 +7374,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://newcastlepride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Tyne and Wear"
   },
   {
     "id": "hull-pride-pride-in-hull-2026-2026-07-25",
@@ -6941,7 +7390,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://hullpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "East Yorkshire"
   },
   {
     "id": "csd-innsbruck-2026-2026-07-25",
@@ -6956,7 +7406,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://innsbruckpride.at",
-    "venues": null
+    "venues": null,
+    "region": "Tirol"
   },
   {
     "id": "great-malvern-pride-malvern-pride-2026-2026-07-25",
@@ -6971,7 +7422,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Worcestershire"
   },
   {
     "id": "rimini-pride-rimini-summer-pride-2026-2026-07-25",
@@ -6987,7 +7439,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "instagram": "https://www.instagram.com/riminisummerpride/"
+    "instagram": "https://www.instagram.com/riminisummerpride/",
+    "region": "Emilia-Romagna"
   },
   {
     "id": "campobasso-pride-csd-campobasso-2026-2026-07-25",
@@ -7003,7 +7456,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "instagram": "https://www.instagram.com/molisepride/"
+    "instagram": "https://www.instagram.com/molisepride/",
+    "region": "Molise"
   },
   {
     "id": "belfast-pride-csd-belfast-2026-2026-07-25",
@@ -7018,7 +7472,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://belfastpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Northern Ireland"
   },
   {
     "id": "livingston-pride-west-lothian-pride-2026-2026-07-25",
@@ -7033,7 +7488,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Scotland"
   },
   {
     "id": "norwich-pride-csd-norwich-2026-2026-07-25",
@@ -7048,7 +7504,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://norwichpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Norfolk"
   },
   {
     "id": "csd-st-poelten-2026-2026-07-25",
@@ -7064,7 +7521,8 @@
     "languages": null,
     "website": "https://stpoeltenpride.at",
     "venues": null,
-    "instagram": "https://www.instagram.com/stp.pride/"
+    "instagram": "https://www.instagram.com/stp.pride/",
+    "region": "Niederösterreich"
   },
   {
     "id": "folkestone-pride-csd-folkestone-2026-2026-07-25",
@@ -7079,7 +7537,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Kent"
   },
   {
     "id": "csd-berlin-2026-2026-07-25",
@@ -7095,7 +7554,8 @@
     "languages": null,
     "website": "https://www.csd-berlin.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csd.berlin.pride/"
+    "instagram": "https://www.instagram.com/csd.berlin.pride/",
+    "region": "Berlin"
   },
   {
     "id": "csd-stuttgart-2026-2026-07-25",
@@ -7110,7 +7570,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://www.csd-stuttgart.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-duisburg-2026-2026-07-25",
@@ -7126,7 +7587,8 @@
     "languages": null,
     "website": "https://csd-duisburg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdduisburg/"
+    "instagram": "https://www.instagram.com/csdduisburg/",
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-siegen-2026-2026-07-25",
@@ -7141,7 +7603,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-siegen.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-mainz-2026-2026-07-25",
@@ -7157,7 +7620,8 @@
     "languages": null,
     "website": "https://csd-mainz.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdmainz/"
+    "instagram": "https://www.instagram.com/csdmainz/",
+    "region": "Rheinland-Pfalz"
   },
   {
     "id": "csd-traunstein-2026-2026-07-25",
@@ -7172,7 +7636,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-traunstein.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-solingen-2026-2026-07-25",
@@ -7187,7 +7652,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-solingen.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-frankenberg-2026-2026-07-25",
@@ -7202,7 +7668,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-frankenberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-ebersberg-2026-2026-07-25",
@@ -7217,7 +7684,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-ebersberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "chenevelles-pride-2026-07-25",
@@ -7233,7 +7701,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Nouvelle-Aquitaine"
   },
   {
     "id": "stockport-pride-csd-stockport-2026-2026-07-26",
@@ -7248,7 +7717,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://stockportpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Greater Manchester"
   },
   {
     "id": "csd-muehldorf-am-inn-2026-2026-07-26",
@@ -7263,7 +7733,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-muehldorf.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "pontrieux-pride-2026-07-26",
@@ -7279,7 +7750,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Bretagne"
   },
   {
     "id": "t-rshavn-pride-csd-t-rshavn-2026-2026-07-27",
@@ -7294,7 +7766,8 @@
     "queerIndex": 82,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Færøerne"
   },
   {
     "id": "amsterdam-pride-europride-worldpride-2026-2026-08-01",
@@ -7309,7 +7782,8 @@
     "queerIndex": 64,
     "languages": null,
     "website": "https://www.pride.amsterdam",
-    "venues": null
+    "venues": null,
+    "region": "Noord-Holland"
   },
   {
     "id": "stockholm-pride-csd-stockholm-2026-2026-08-01",
@@ -7324,7 +7798,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://stockholmpride.org",
-    "venues": null
+    "venues": null,
+    "region": "Stockholm"
   },
   {
     "id": "brighton-pride-csd-brighton-2026-2026-08-01",
@@ -7339,7 +7814,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://brighton-pride.org",
-    "venues": null
+    "venues": null,
+    "region": "East Sussex"
   },
   {
     "id": "liverpool-pride-csd-liverpool-2026-2026-08-01",
@@ -7354,7 +7830,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://liverpoolpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Merseyside"
   },
   {
     "id": "csd-mittersill-2026-2026-08-01",
@@ -7369,7 +7846,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Salzburg"
   },
   {
     "id": "csd-hamburg-2026-2026-08-01",
@@ -7385,7 +7863,8 @@
     "languages": null,
     "website": "https://www.hamburg-pride.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/hamburgpride/"
+    "instagram": "https://www.instagram.com/hamburgpride/",
+    "region": "Hamburg"
   },
   {
     "id": "csd-amberg-2026-2026-08-01",
@@ -7400,7 +7879,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-amberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-fuerth-2026-2026-08-01",
@@ -7415,7 +7895,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-fuerth.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-moers-2026-2026-08-01",
@@ -7430,7 +7911,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-moers.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-naumburg-saale-2026-2026-08-01",
@@ -7445,7 +7927,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-naumburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "cork-pride-csd-cork-2026-2026-08-02",
@@ -7460,7 +7943,8 @@
     "queerIndex": 61,
     "languages": null,
     "website": "https://corkpride.ie",
-    "venues": null
+    "venues": null,
+    "region": "Munster"
   },
   {
     "id": "prag-pride-csd-prag-2026-2026-08-08",
@@ -7475,7 +7959,8 @@
     "queerIndex": 42,
     "languages": null,
     "website": "https://www.praguepride.cz",
-    "venues": null
+    "venues": null,
+    "region": "Praha"
   },
   {
     "id": "antwerpen-pride-csd-antwerpen-2026-2026-08-08",
@@ -7490,7 +7975,8 @@
     "queerIndex": 85,
     "languages": null,
     "website": "https://antwerppride.be",
-    "venues": null
+    "venues": null,
+    "region": "Vlaanderen"
   },
   {
     "id": "reykjavik-pride-csd-reykjavik-2026-2026-08-08",
@@ -7505,7 +7991,8 @@
     "queerIndex": 86,
     "languages": null,
     "website": "https://reykjavikpride.is",
-    "venues": null
+    "venues": null,
+    "region": ""
   },
   {
     "id": "doncaster-pride-2026-2026-08-08",
@@ -7520,7 +8007,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://doncasterpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "South Yorkshire"
   },
   {
     "id": "ely-pride-csd-ely-2026-2026-08-08",
@@ -7535,7 +8023,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Cambridgeshire"
   },
   {
     "id": "margate-pride-2026-2026-08-08",
@@ -7550,7 +8039,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Kent"
   },
   {
     "id": "csd-braunschweig-2026-2026-08-08",
@@ -7565,7 +8055,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-braunschweig.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-essen-2026-2026-08-08",
@@ -7580,7 +8071,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-essen.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-nuernberg-2026-2026-08-08",
@@ -7596,7 +8088,8 @@
     "languages": null,
     "website": "https://csd-nuernberg.de",
     "venues": null,
-    "instagram": "https://www.instagram.com/csdnuernberg/"
+    "instagram": "https://www.instagram.com/csdnuernberg/",
+    "region": "Bayern"
   },
   {
     "id": "csd-bingen-am-rhein-2026-2026-08-08",
@@ -7611,7 +8104,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Rheinland-Pfalz"
   },
   {
     "id": "csd-moelln-2026-2026-08-08",
@@ -7626,7 +8120,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "village-pride-cammarata-2026-08-08",
@@ -7642,7 +8137,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/cori.theproject/",
-    "venues": null
+    "venues": null,
+    "region": "Sicilia"
   },
   {
     "id": "wakefield-pride-2026-2026-08-09",
@@ -7657,7 +8153,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://wakefieldpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "West Yorkshire"
   },
   {
     "id": "kopenhagen-pride-csd-kopenhagen-2026-2026-08-15",
@@ -7672,7 +8169,8 @@
     "queerIndex": 82,
     "languages": null,
     "website": "https://copenhagenpride.dk",
-    "venues": null
+    "venues": null,
+    "region": "Hovedstaden"
   },
   {
     "id": "chester-pride-csd-chester-2026-2026-08-15",
@@ -7687,7 +8185,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Cheshire"
   },
   {
     "id": "norrtaelje-pride-roslagen-pride-2026-2026-08-15",
@@ -7702,7 +8201,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Stockholm"
   },
   {
     "id": "swindon-pride-csd-swindon-2026-2026-08-15",
@@ -7718,7 +8218,8 @@
     "languages": null,
     "website": "https://www.swindonwiltshirepride.org.uk/",
     "venues": null,
-    "instagram": "https://www.instagram.com/swinwiltspride/"
+    "instagram": "https://www.instagram.com/swinwiltspride/",
+    "region": "Wiltshire"
   },
   {
     "id": "lincoln-pride-2026-2026-08-15",
@@ -7734,7 +8235,8 @@
     "languages": null,
     "website": "https://lincolnpride.co.uk/",
     "venues": null,
-    "instagram": "https://www.instagram.com/lincolnprideuk/"
+    "instagram": "https://www.instagram.com/lincolnprideuk/",
+    "region": "Lincolnshire"
   },
   {
     "id": "croydon-pride-csd-croydon-2026-2026-08-15",
@@ -7750,7 +8252,8 @@
     "languages": null,
     "website": "https://www.croydonpride.org.uk/",
     "venues": null,
-    "instagram": "https://www.instagram.com/croydonpride/"
+    "instagram": "https://www.instagram.com/croydonpride/",
+    "region": "Greater London"
   },
   {
     "id": "csd-muenster-2026-2026-08-15",
@@ -7765,7 +8268,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-muenster.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-luebeck-2026-2026-08-15",
@@ -7780,7 +8284,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-luebeck.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-darmstadt-2026-2026-08-15",
@@ -7795,7 +8300,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-darmstadt.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-koblenz-2026-2026-08-15",
@@ -7810,7 +8316,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-koblenz.de",
-    "venues": null
+    "venues": null,
+    "region": "Rheinland-Pfalz"
   },
   {
     "id": "csd-neustrelitz-2026-2026-08-15",
@@ -7825,7 +8332,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Mecklenburg-Vorpommern"
   },
   {
     "id": "csd-neubrandenburg-2026-2026-08-15",
@@ -7840,7 +8348,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-neubrandenburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Mecklenburg-Vorpommern"
   },
   {
     "id": "csd-krefeld-2026-2026-08-15",
@@ -7855,7 +8364,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-krefeld.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-eschwege-2026-2026-08-15",
@@ -7870,7 +8380,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-plauen-2026-2026-08-15",
@@ -7885,7 +8396,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-plauen.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen"
   },
   {
     "id": "csd-leer-2026-2026-08-15",
@@ -7900,7 +8412,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-leer.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-bayreuth-2026-2026-08-15",
@@ -7915,7 +8428,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bayreuth.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-berchtesgaden-2026-2026-08-15",
@@ -7930,7 +8444,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-berchtesgaden.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-peine-2026-2026-08-15",
@@ -7945,7 +8460,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-peine.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "bath-pride-csd-bath-2026-2026-08-22",
@@ -7960,7 +8476,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://bathpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Somerset"
   },
   {
     "id": "herts-pride-2026-2026-08-22",
@@ -7975,7 +8492,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Hertfordshire"
   },
   {
     "id": "royal-leamington-spa-pride-warwickshire-pride-2026-2026-08-22",
@@ -7990,7 +8508,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://leamingtonpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Warwickshire"
   },
   {
     "id": "newry-pride-csd-newry-2026-2026-08-22",
@@ -8005,7 +8524,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://newrypride.com",
-    "venues": null
+    "venues": null,
+    "region": "Northern Ireland"
   },
   {
     "id": "gaevle-pride-csd-gaevle-2026-2026-08-22",
@@ -8020,7 +8540,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://gavlepride.se",
-    "venues": null
+    "venues": null,
+    "region": "Gävleborg"
   },
   {
     "id": "csd-magdeburg-2026-2026-08-22",
@@ -8035,7 +8556,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-magdeburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "csd-bremen-2026-2026-08-22",
@@ -8050,7 +8572,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bremen.de",
-    "venues": null
+    "venues": null,
+    "region": "Bremen"
   },
   {
     "id": "csd-riesa-2026-2026-08-22",
@@ -8065,7 +8588,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": null,
-    "venues": null
+    "venues": null,
+    "region": "Sachsen"
   },
   {
     "id": "csd-luedenscheid-2026-2026-08-22",
@@ -8080,7 +8604,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-luedenscheid.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-pfaffenhofen-2026-2026-08-22",
@@ -8095,7 +8620,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-pfaffenhofen.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-bocholt-2026-2026-08-22",
@@ -8110,7 +8636,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bocholt.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-burgdorf-2026-2026-08-22",
@@ -8125,7 +8652,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-burgdorf.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-muehlhausen-2026-2026-08-22",
@@ -8140,7 +8668,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-muehlhausen.de",
-    "venues": null
+    "venues": null,
+    "region": "Thüringen"
   },
   {
     "id": "csd-friedberg-hessen-2026-2026-08-22",
@@ -8155,7 +8684,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-friedberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-bensheim-2026-2026-08-22",
@@ -8170,7 +8700,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bensheim.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-arnsberg-2026-2026-08-22",
@@ -8185,7 +8716,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-arnsberg.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-husum-2026-2026-08-23",
@@ -8200,7 +8732,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-husum.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "oestersund-pride-csd-oestersund-2026-2026-08-24",
@@ -8215,7 +8748,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://ostersundpride.se",
-    "venues": null
+    "venues": null,
+    "region": "Jämtland"
   },
   {
     "id": "csd-aachen-2026-2026-08-28",
@@ -8230,7 +8764,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-aachen.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "manchester-pride-csd-manchester-2026-2026-08-29",
@@ -8245,7 +8780,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://manchesterpride.com",
-    "venues": null
+    "venues": null,
+    "region": "Greater Manchester"
   },
   {
     "id": "southampton-pride-csd-southampton-2026-2026-08-29",
@@ -8260,7 +8796,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://southamptonpride.org",
-    "venues": null
+    "venues": null,
+    "region": "Hampshire"
   },
   {
     "id": "csd-bad-ischl-salzkammerpride-2026-2026-08-29",
@@ -8275,7 +8812,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://badischlpride.at",
-    "venues": null
+    "venues": null,
+    "region": "Oberösterreich"
   },
   {
     "id": "walsall-pride-2026-2026-08-29",
@@ -8290,7 +8828,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://walsallpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "West Midlands"
   },
   {
     "id": "newquay-pride-newquay-cornwall-pride-2026-2026-08-29",
@@ -8305,7 +8844,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://newquaypride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Cornwall"
   },
   {
     "id": "kristiansand-pride-skeive-s-rlandsdager-2026-2026-08-29",
@@ -8320,7 +8860,8 @@
     "queerIndex": 69,
     "languages": null,
     "website": "https://kristiansandpride.no",
-    "venues": null
+    "venues": null,
+    "region": "Agder"
   },
   {
     "id": "derry-pride-foyle-pride-festival-2026-2026-08-29",
@@ -8335,7 +8876,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://derrypride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Northern Ireland"
   },
   {
     "id": "csd-aurich-2026-2026-08-29",
@@ -8350,7 +8892,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-aurich.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-bruehl-2026-2026-08-29",
@@ -8365,7 +8908,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bruehl.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-zwickau-2026-2026-08-29",
@@ -8380,7 +8924,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-zwickau.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen"
   },
   {
     "id": "csd-minden-2026-2026-08-29",
@@ -8395,7 +8940,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-minden.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-fulda-2026-2026-08-29",
@@ -8410,7 +8956,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-fulda.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-gotha-2026-2026-08-29",
@@ -8425,7 +8972,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-gotha.de",
-    "venues": null
+    "venues": null,
+    "region": "Thüringen"
   },
   {
     "id": "csd-gross-gerau-2026-2026-08-29",
@@ -8440,7 +8988,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-gross-gerau.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "csd-ludwigsfelde-2026-2026-08-29",
@@ -8455,7 +9004,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-ludwigsfelde.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-rotenburg-wuemme-2026-2026-08-29",
@@ -8470,7 +9020,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-rotenburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-koenigs-wusterhausen-2026-2026-08-29",
@@ -8485,7 +9036,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-koenigs-wusterhausen.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-berlin-reinickendorf-2026-2026-08-29",
@@ -8500,7 +9052,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-reinickendorf.de",
-    "venues": null
+    "venues": null,
+    "region": "Berlin"
   },
   {
     "id": "csd-bad-oldesloe-2026-2026-08-29",
@@ -8515,7 +9068,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bad-oldesloe.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-regen-2026-2026-08-30",
@@ -8530,7 +9084,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-regen.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "katrineholm-pride-csd-katrineholm-2026-2026-08-31",
@@ -8545,7 +9100,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://katrineholmpride.se",
-    "venues": null
+    "venues": null,
+    "region": "Södermanland"
   },
   {
     "id": "leicester-pride-csd-leicester-2026-2026-09-05",
@@ -8560,7 +9116,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://leicesterpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Leicestershire"
   },
   {
     "id": "csd-salzburg-2026-2026-09-05",
@@ -8575,7 +9132,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://salzburgpride.at",
-    "venues": null
+    "venues": null,
+    "region": "Salzburg"
   },
   {
     "id": "eastleigh-pride-2026-2026-09-05",
@@ -8590,7 +9148,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://eastleighpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Hampshire"
   },
   {
     "id": "reading-pride-csd-reading-2026-2026-09-05",
@@ -8605,7 +9164,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://readingpride.co.uk",
-    "venues": null
+    "venues": null,
+    "region": "Berkshire"
   },
   {
     "id": "benidorm-pride-csd-benidorm-2026-2026-09-05",
@@ -8620,7 +9180,8 @@
     "queerIndex": 89,
     "languages": null,
     "website": "https://benidormpride.com",
-    "venues": null
+    "venues": null,
+    "region": "Comunitat Valenciana"
   },
   {
     "id": "katowice-pride-csd-katowice-2026-2026-09-05",
@@ -8635,7 +9196,8 @@
     "queerIndex": 22,
     "languages": null,
     "website": "https://katowicepride.eu",
-    "venues": null
+    "venues": null,
+    "region": "Śląskie"
   },
   {
     "id": "csd-dortmund-2026-2026-09-05",
@@ -8650,7 +9212,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-dortmund.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-erfurt-2026-2026-09-05",
@@ -8665,7 +9228,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-erfurt.de",
-    "venues": null
+    "venues": null,
+    "region": "Thüringen"
   },
   {
     "id": "csd-bad-kreuznach-2026-2026-09-05",
@@ -8680,7 +9244,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-kreuznach.de",
-    "venues": null
+    "venues": null,
+    "region": "Rheinland-Pfalz"
   },
   {
     "id": "csd-ingolstadt-2026-2026-09-05",
@@ -8695,7 +9260,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-ingolstadt.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-goslar-2026-2026-09-05",
@@ -8710,7 +9276,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-goslar.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-lahr-2026-2026-09-05",
@@ -8725,7 +9292,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-lahr.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-michelstadt-2026-2026-09-05",
@@ -8740,7 +9308,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-michelstadt.de",
-    "venues": null
+    "venues": null,
+    "region": "Hessen"
   },
   {
     "id": "savona-pride-2026-09-05",
@@ -8756,7 +9325,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/savonapride/",
-    "venues": null
+    "venues": null,
+    "region": "Liguria"
   },
   {
     "id": "brescia-pride-2026-09-05",
@@ -8772,7 +9342,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/bresciapride/",
-    "venues": null
+    "venues": null,
+    "region": "Lombardia"
   },
   {
     "id": "bra-ov-pride-csd-bra-ov-2026-2026-09-06",
@@ -8787,7 +9358,8 @@
     "queerIndex": 19,
     "languages": null,
     "website": "https://brasovpride.ro",
-    "venues": null
+    "venues": null,
+    "region": "Brașov"
   },
   {
     "id": "falun-pride-dala-pride-2026-2026-09-07",
@@ -8802,7 +9374,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://falunpride.se",
-    "venues": null
+    "venues": null,
+    "region": "Dalarna"
   },
   {
     "id": "csd-albstadt-2026-2026-09-07",
@@ -8817,7 +9390,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-albstadt.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-luckenwalde-2026-2026-09-11",
@@ -8832,7 +9406,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-luckenwalde.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-st-johann-im-pongau-pongau-pride-2026-2026-09-12",
@@ -8847,7 +9422,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://stjohannpride.at",
-    "venues": null
+    "venues": null,
+    "region": "Salzburg"
   },
   {
     "id": "derby-pride-csd-derby-2026-2026-09-12",
@@ -8862,7 +9438,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://derbypride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Derbyshire"
   },
   {
     "id": "valletta-pride-malta-pride-2026-2026-09-12",
@@ -8877,7 +9454,8 @@
     "queerIndex": 88,
     "languages": null,
     "website": "https://vallettapride.org",
-    "venues": null
+    "venues": null,
+    "region": ""
   },
   {
     "id": "st-peter-port-pride-channel-islands-pride-2026-2026-09-12",
@@ -8892,7 +9470,8 @@
     "queerIndex": null,
     "languages": null,
     "website": "https://liberate.gg",
-    "venues": null
+    "venues": null,
+    "region": ""
   },
   {
     "id": "gloucester-pride-csd-gloucester-2026-2026-09-12",
@@ -8907,7 +9486,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://gloucesterpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Gloucestershire"
   },
   {
     "id": "lund-pride-lundapride-2026-2026-09-12",
@@ -8922,7 +9502,8 @@
     "queerIndex": 68,
     "languages": null,
     "website": "https://lundpride.se",
-    "venues": null
+    "venues": null,
+    "region": "Skåne"
   },
   {
     "id": "csd-wuppertal-2026-2026-09-12",
@@ -8937,7 +9518,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-wuppertal.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-halle-saale-2026-2026-09-12",
@@ -8952,7 +9534,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-halle.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "csd-papenburg-pride-papenburg-emsland-2026-2026-09-12",
@@ -8967,7 +9550,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-papenburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-kaufbeuren-2026-2026-09-12",
@@ -8982,7 +9566,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-kaufbeuren.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-zittau-2026-2026-09-12",
@@ -8997,7 +9582,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-zittau.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen"
   },
   {
     "id": "csd-vechta-2026-2026-09-12",
@@ -9012,7 +9598,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-vechta.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-elmshorn-2026-2026-09-12",
@@ -9027,7 +9614,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-elmshorn.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "csd-rathenow-2026-2026-09-12",
@@ -9042,7 +9630,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-rathenow.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-nordhausen-2026-2026-09-12",
@@ -9057,7 +9646,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-nordhausen.de",
-    "venues": null
+    "venues": null,
+    "region": "Thüringen"
   },
   {
     "id": "csd-ratingen-2026-2026-09-12",
@@ -9072,7 +9662,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-ratingen.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "brianza-pride-2026-09-12",
@@ -9088,7 +9679,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/retebrianzapride/",
-    "venues": null
+    "venues": null,
+    "region": "Lombardia"
   },
   {
     "id": "stretto-pride-messina-2026-09-12",
@@ -9104,7 +9696,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/strettopridemessina/",
-    "venues": null
+    "venues": null,
+    "region": "Sicilia"
   },
   {
     "id": "villa-castelli-pride-2026-09-12",
@@ -9120,7 +9713,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/villa_castelli_pride/",
-    "venues": null
+    "venues": null,
+    "region": "Puglia"
   },
   {
     "id": "clisson-pride-2026-09-12",
@@ -9136,7 +9730,8 @@
     "languages": null,
     "website": null,
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Pays de la Loire"
   },
   {
     "id": "belgrad-pride-csd-belgrad-2026-2026-09-19",
@@ -9151,7 +9746,8 @@
     "queerIndex": 34,
     "languages": null,
     "website": "https://belgradepride.rs",
-    "venues": null
+    "venues": null,
+    "region": "Beograd"
   },
   {
     "id": "csd-erlangen-2026-2026-09-19",
@@ -9166,7 +9762,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-erlangen.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-walsrode-2026-2026-09-19",
@@ -9181,7 +9778,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-walsrode.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-remscheid-2026-2026-09-19",
@@ -9196,7 +9794,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-remscheid.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-oberhavel-2026-2026-09-19",
@@ -9211,7 +9810,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-oranienburg.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-mosbach-2026-2026-09-19",
@@ -9226,7 +9826,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-mosbach.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-doebeln-2026-2026-09-19",
@@ -9241,7 +9842,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-doebeln.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen"
   },
   {
     "id": "csd-bad-belzig-2026-2026-09-19",
@@ -9256,7 +9858,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-bad-belzig.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-delmenhorst-2026-2026-09-19",
@@ -9271,7 +9874,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-delmenhorst.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-hennigsdorf-2026-2026-09-19",
@@ -9286,7 +9890,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-hennigsdorf.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-jueterbog-2026-2026-09-19",
@@ -9301,7 +9906,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-jueterbog.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "csd-alfter-2026-2026-09-19",
@@ -9316,7 +9922,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-alfter.de",
-    "venues": null
+    "venues": null,
+    "region": "Nordrhein-Westfalen"
   },
   {
     "id": "csd-wacken-2026-2026-09-19",
@@ -9331,7 +9938,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-wacken.de",
-    "venues": null
+    "venues": null,
+    "region": "Schleswig-Holstein"
   },
   {
     "id": "vercelli-pride-2026-09-19",
@@ -9347,7 +9955,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/vercellipride/",
-    "venues": null
+    "venues": null,
+    "region": "Piemonte"
   },
   {
     "id": "rotterdam-pride-csd-rotterdam-2026-2026-09-26",
@@ -9362,7 +9971,8 @@
     "queerIndex": 64,
     "languages": null,
     "website": "https://rotterdampride.nl",
-    "venues": null
+    "venues": null,
+    "region": "Zuid-Holland"
   },
   {
     "id": "csd-landshut-2026-2026-09-26",
@@ -9377,7 +9987,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-landshut.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-stendal-2026-2026-09-26",
@@ -9392,7 +10003,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-stendal.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen-Anhalt"
   },
   {
     "id": "csd-kaiserslautern-2026-2026-09-26",
@@ -9407,7 +10019,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-kaiserslautern.de",
-    "venues": null
+    "venues": null,
+    "region": "Rheinland-Pfalz"
   },
   {
     "id": "csd-goerlitz-2026-2026-09-26",
@@ -9422,7 +10035,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-goerlitz.de",
-    "venues": null
+    "venues": null,
+    "region": "Sachsen"
   },
   {
     "id": "csd-herzogenaurach-2026-2026-09-26",
@@ -9437,7 +10051,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-herzogenaurach.de",
-    "venues": null
+    "venues": null,
+    "region": "Bayern"
   },
   {
     "id": "csd-emmendingen-2026-2026-09-26",
@@ -9452,7 +10067,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-emmendingen.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "csd-schorndorf-2026-2026-09-26",
@@ -9467,7 +10083,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-schorndorf.de",
-    "venues": null
+    "venues": null,
+    "region": "Baden-Württemberg"
   },
   {
     "id": "aosta-pride-2026-09-26",
@@ -9483,7 +10100,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/aostapride/",
-    "venues": null
+    "venues": null,
+    "region": "Valle d'Aosta"
   },
   {
     "id": "fvg-pride-udine-2026-09-26",
@@ -9499,7 +10117,8 @@
     "languages": null,
     "website": null,
     "instagram": "https://www.instagram.com/fvgpride/",
-    "venues": null
+    "venues": null,
+    "region": "Friuli-Venezia Giulia"
   },
   {
     "id": "saltash-pride-cornwall-pride-2026-2026-09-27",
@@ -9514,7 +10133,8 @@
     "queerIndex": 44,
     "languages": null,
     "website": "https://saltashpride.org.uk",
-    "venues": null
+    "venues": null,
+    "region": "Cornwall"
   },
   {
     "id": "arco-pride-csd-arco-2026-2026-10-03",
@@ -9529,7 +10149,8 @@
     "queerIndex": 24,
     "languages": null,
     "website": "https://arcopride.it",
-    "venues": null
+    "venues": null,
+    "region": "Trentino-Alto Adige"
   },
   {
     "id": "csd-kufstein-2026-2026-10-10",
@@ -9544,7 +10165,8 @@
     "queerIndex": 55,
     "languages": null,
     "website": "https://kufsteinpride.at",
-    "venues": null
+    "venues": null,
+    "region": "Tirol"
   },
   {
     "id": "csd-norden-2026-2026-10-10",
@@ -9559,7 +10181,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-norden.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   },
   {
     "id": "csd-prenzlau-2026-2026-10-10",
@@ -9574,7 +10197,8 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-prenzlau.de",
-    "venues": null
+    "venues": null,
+    "region": "Brandenburg"
   },
   {
     "id": "chambery-pride-2026-10-10",
@@ -9590,7 +10214,8 @@
     "languages": null,
     "website": "https://www.chambery.fr/",
     "instagram": null,
-    "venues": null
+    "venues": null,
+    "region": "Auvergne-Rhône-Alpes"
   },
   {
     "id": "csd-northeim-2026-2026-11-07",
@@ -9605,6 +10230,7 @@
     "queerIndex": 70,
     "languages": null,
     "website": "https://csd-northeim.de",
-    "venues": null
+    "venues": null,
+    "region": "Niedersachsen"
   }
 ]

@@ -1,687 +1,136 @@
 [
-  {
-    "city": "Berlin",
-    "bucket": 500000,
-    "year": 2025,
-    "note": "govt. estimate"
-  },
-  {
-    "city": "Hamburg",
-    "bucket": 200000,
-    "year": 2024
-  },
-  {
-    "city": "Köln",
-    "bucket": 1000000,
-    "year": 2024,
-    "note": "incl. spectators"
-  },
-  {
-    "city": "München",
-    "bucket": 200000,
-    "year": 2024
-  },
-  {
-    "city": "Stuttgart",
-    "bucket": 300000,
-    "year": 2024
-  },
-  {
-    "city": "Bremen",
-    "bucket": 25000,
-    "year": 2025
-  },
-  {
-    "city": "Frankfurt am Main",
-    "bucket": 100000,
-    "year": 2024,
-    "note": "total visitors"
-  },
-  {
-    "city": "Dortmund",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "Budapest",
-    "bucket": 200000,
-    "year": 2025
-  },
-  {
-    "city": "Rom",
-    "bucket": 1000000,
-    "year": 2025
-  },
-  {
-    "city": "Madrid",
-    "bucket": 300000,
-    "year": 2024,
-    "note": "govt. estimate"
-  },
-  {
-    "city": "Paris",
-    "bucket": 500000,
-    "year": 2025
-  },
-  {
-    "city": "London",
-    "bucket": 1000000,
-    "year": 2024,
-    "note": "incl. spectators"
-  },
-  {
-    "city": "Wien",
-    "bucket": 300000,
-    "year": 2024
-  },
-  {
-    "city": "Brüssel",
-    "bucket": 200000,
-    "year": 2024
-  },
-  {
-    "city": "Prag",
-    "bucket": 50000,
-    "year": 2024
-  },
-  {
-    "city": "Warschau",
-    "bucket": 20000,
-    "year": 2024
-  },
-  {
-    "city": "Amsterdam",
-    "bucket": 500000,
-    "year": 2024,
-    "note": "canal spectators"
-  },
-  {
-    "city": "Stockholm",
-    "bucket": 500000,
-    "year": 2024,
-    "note": "incl. spectators"
-  },
-  {
-    "city": "Oslo",
-    "bucket": 400000,
-    "year": 2024,
-    "note": "festival visitors"
-  },
-  {
-    "city": "Helsinki",
-    "bucket": 100000,
-    "year": 2024
-  },
-  {
-    "city": "Lissabon",
-    "bucket": 50000,
-    "year": 2024
-  },
-  {
-    "city": "Athen",
-    "bucket": 100000,
-    "year": 2024,
-    "note": "total across events"
-  },
-  {
-    "city": "Sofia",
-    "bucket": 10000,
-    "year": 2024
-  },
-  {
-    "city": "Kopenhagen",
-    "bucket": 15000,
-    "year": 2024
-  },
-  {
-    "city": "Vilnius",
-    "bucket": 15000,
-    "year": 2024
-  },
-  {
-    "city": "Zagreb",
-    "bucket": 10000,
-    "year": 2024,
-    "note": "festival total"
-  },
-  {
-    "city": "Riga",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "Thessaloniki",
-    "bucket": 15000,
-    "year": 2024
-  },
-  {
-    "city": "Graz",
-    "bucket": 15000,
-    "year": 2024
-  },
-  {
-    "city": "Innsbruck",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "Linz",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "Lyon",
-    "bucket": 14000,
-    "year": 2025
-  },
-  {
-    "city": "Toulouse",
-    "bucket": 30000,
-    "year": 2025
-  },
-  {
-    "city": "Straßburg",
-    "bucket": 7000,
-    "year": 2025
-  },
-  {
-    "city": "Barcelona",
-    "bucket": 100000,
-    "year": 2024
-  },
-  {
-    "city": "Mailand",
-    "bucket": 350000,
-    "year": 2025
-  },
-  {
-    "city": "Bologna",
-    "bucket": 40000,
-    "year": 2025
-  },
-  {
-    "city": "Leeds",
-    "bucket": 50000,
-    "year": 2024
-  },
-  {
-    "city": "Edinburgh",
-    "bucket": 25000,
-    "year": 2024
-  },
-  {
-    "city": "Glasgow",
-    "bucket": 50000,
-    "year": 2024
-  },
-  {
-    "city": "Brighton",
-    "bucket": 300000,
-    "year": 2024,
-    "note": "parade spectators"
-  },
-  {
-    "city": "Cardiff",
-    "bucket": 50000,
-    "year": 2024,
-    "note": "weekend total"
-  },
-  {
-    "city": "Belfast",
-    "bucket": 75000,
-    "year": 2024
-  },
-  {
-    "city": "Birmingham",
-    "bucket": 75000,
-    "year": 2024
-  },
-  {
-    "city": "Dresden",
-    "bucket": 10000,
-    "year": 2024
-  },
-  {
-    "city": "Hannover",
-    "bucket": 10000,
-    "year": 2024
-  },
-  {
-    "city": "Essen",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "Mannheim",
-    "bucket": 15000,
-    "year": 2024
-  },
-  {
-    "city": "Freiburg im Breisgau",
-    "bucket": 15000,
-    "year": 2025
-  },
-  {
-    "city": "Kiel",
-    "bucket": 5000,
-    "year": 2025
-  },
-  {
-    "city": "Düsseldorf",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "Newcastle upon Tyne",
-    "bucket": 15000,
-    "year": 2024
-  },
-  {
-    "city": "Lille",
-    "bucket": 20000,
-    "year": 2025
-  },
-  {
-    "city": "Angermünde",
-    "bucket": 100,
-    "year": 2026
-  },
-  {
-    "city": "Maspalomas",
-    "bucket": 75000,
-    "year": 2024
-  },
-  {
-    "city": "Limburg an der Lahn",
-    "bucket": 1000,
-    "year": 2024
-  },
-  {
-    "city": "Bergamo",
-    "bucket": 5000,
-    "year": 2025
-  },
-  {
-    "city": "Stollberg",
-    "bucket": 200,
-    "year": 2023
-  },
-  {
-    "city": "Gelsenkirchen",
-    "bucket": 500,
-    "year": 2025,
-    "note": "registered"
-  },
-  {
-    "city": "Euskirchen",
-    "bucket": 500,
-    "year": 2024
-  },
-  {
-    "city": "Parchim",
-    "bucket": 200,
-    "year": 2024
-  },
-  {
-    "city": "Joensuu",
-    "bucket": 1000,
-    "year": 2024
-  },
-  {
-    "city": "Flensburg",
-    "bucket": 500,
-    "year": 2024
-  },
-  {
-    "city": "Witney",
-    "bucket": 3000,
-    "year": 2024
-  },
-  {
-    "city": "Norderstedt",
-    "bucket": 500,
-    "year": 2024
-  },
-  {
-    "city": "Eisenhüttenstadt",
-    "bucket": 50,
-    "year": 2024
-  },
-  {
-    "city": "Gütersloh",
-    "bucket": 500,
-    "year": 2026,
-    "note": "expected"
-  },
-  {
-    "city": "Bradford",
-    "bucket": 10000,
-    "year": null
-  },
-  {
-    "city": "Wrocław",
-    "bucket": 8000,
-    "year": 2025
-  },
-  {
-    "city": "Klagenfurt",
-    "bucket": 500,
-    "year": 2024
-  },
-  {
-    "city": "Aarhus",
-    "bucket": 10000,
-    "year": 2024
-  },
-  {
-    "city": "Mistelbach",
-    "bucket": 1000,
-    "year": 2024
-  },
-  {
-    "city": "Lugano",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "York",
-    "bucket": 15000,
-    "year": 2024
-  },
-  {
-    "city": "Wiesbaden",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "Gießen",
-    "bucket": 3000,
-    "year": 2024
-  },
-  {
-    "city": "Osnabrück",
-    "bucket": 3000,
-    "year": 2024
-  },
-  {
-    "city": "Hof (Saale)",
-    "bucket": 500,
-    "year": 2024
-  },
-  {
-    "city": "Rheinsberg",
-    "bucket": 800,
-    "year": 2024
-  },
-  {
-    "city": "Saarbrücken",
-    "bucket": 10000,
-    "year": 2024
-  },
-  {
-    "city": "Warendorf",
-    "bucket": 500,
-    "year": 2024,
-    "note": "expected"
-  },
-  {
-    "city": "Nikosia",
-    "bucket": 3000,
-    "year": 2024
-  },
-  {
-    "city": "Torremolinos",
-    "bucket": 50000,
-    "year": 2024
-  },
-  {
-    "city": "Turin",
-    "bucket": 150000,
-    "year": 2025
-  },
-  {
-    "city": "Utrecht",
-    "bucket": 100000,
-    "year": 2024
-  },
-  {
-    "city": "Paderborn",
-    "bucket": 300,
-    "year": 2024
-  },
-  {
-    "city": "Karlsruhe",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "Aschaffenburg",
-    "bucket": 500,
-    "year": 2024
-  },
-  {
-    "city": "Ravensburg",
-    "bucket": 500,
-    "year": 2023
-  },
-  {
-    "city": "Fritzlar",
-    "bucket": 50,
-    "year": 2024
-  },
-  {
-    "city": "Celle",
-    "bucket": 1000,
-    "year": 2024
-  },
-  {
-    "city": "Hameln",
-    "bucket": 500,
-    "year": 2024
-  },
-  {
-    "city": "Rennes",
-    "bucket": 8000,
-    "year": 2025
-  },
-  {
-    "city": "Ljubljana",
-    "bucket": 3000,
-    "year": 2024
-  },
-  {
-    "city": "Salford",
-    "bucket": 8000,
-    "year": 2024
-  },
-  {
-    "city": "Biarritz",
-    "bucket": 800,
-    "year": 2024
-  },
-  {
-    "city": "Chesterfield",
-    "bucket": 5000,
-    "year": 2024
-  },
-  {
-    "city": "Pavia",
-    "bucket": 1500,
-    "year": 2025
-  },
-  {
-    "city": "Spittal an der Drau",
-    "bucket": 100,
-    "year": 2024
-  },
-  {
-    "city": "Kassel",
-    "bucket": 3000,
-    "year": 2024
-  },
-  {
-    "city": "Recklinghausen",
-    "bucket": 500,
-    "year": 2024
-  },
-  {
-    "city": "Augsburg",
-    "bucket": 4000,
-    "year": 2024
-  },
-  {
-    "city": "Sanremo",
-    "bucket": 600,
-    "year": 2026
-  },
-  {
-    "city": "Alessandria",
-    "bucket": 7000,
-    "year": 2025
-  },
-  {
-    "city": "Padova",
-    "bucket": 10000,
-    "year": 2025
-  },
-  {
-    "city": "Ancona",
-    "bucket": 3000,
-    "year": 2024
-  },
-  {
-    "city": "La Spezia",
-    "bucket": 5000,
-    "year": 2025
-  },
-  {
-    "city": "Forlì",
-    "bucket": 1000,
-    "year": 2025
-  },
-  {
-    "city": "Genua",
-    "bucket": 40000,
-    "year": 2025
-  },
-  {
-    "city": "Cuneo",
-    "bucket": 700,
-    "year": 2025
-  },
-  {
-    "city": "Lecco",
-    "bucket": 3000,
-    "year": 2025
-  },
-  {
-    "city": "Perugia",
-    "bucket": 5000,
-    "year": 2025
-  },
-  {
-    "city": "Bari",
-    "bucket": 10000,
-    "year": 2025
-  },
-  {
-    "city": "Vicenza",
-    "bucket": 5000,
-    "year": 2025
-  },
-  {
-    "city": "Treviso",
-    "bucket": 1000,
-    "year": 2025
-  },
-  {
-    "city": "Verona",
-    "bucket": 1200,
-    "year": 2025
-  },
-  {
-    "city": "Neapel",
-    "bucket": 200000,
-    "year": 2025
-  },
-  {
-    "city": "Salerno",
-    "bucket": 1000,
-    "year": 2025
-  },
-  {
-    "city": "Rimini",
-    "bucket": 15000,
-    "year": 2025
-  },
-  {
-    "city": "Brescia",
-    "bucket": 15000,
-    "year": 2025
-  },
-  {
-    "city": "Cologno Monzese / Brugherio",
-    "bucket": 1000,
-    "year": 2025
-  },
-  {
-    "city": "Udine",
-    "bucket": 2500,
-    "year": 2024
-  },
-  {
-    "city": "Reims",
-    "bucket": 2000,
-    "year": 2025
-  },
-  {
-    "city": "Bordeaux",
-    "bucket": 10000,
-    "year": 2024
-  },
-  {
-    "city": "Dijon",
-    "bucket": 1500,
-    "year": 2025
-  },
-  {
-    "city": "Metz",
-    "bucket": 5000,
-    "year": 2025
-  },
-  {
-    "city": "Nantes",
-    "bucket": 12000,
-    "year": 2025
-  },
-  {
-    "city": "Grenoble",
-    "bucket": 4000,
-    "year": 2025
-  },
-  {
-    "city": "Montpellier",
-    "bucket": 20000,
-    "year": 2025
-  },
-  {
-    "city": "Rouen",
-    "bucket": 5000,
-    "year": 2025
-  },
-  {
-    "city": "Marseille",
-    "bucket": 40000,
-    "year": 2025
-  },
-  {
-    "city": "Annecy",
-    "bucket": 1300,
-    "year": 2025
-  },
-  {
-    "city": "Chambéry",
-    "bucket": 1000,
-    "year": 2024
-  }
+  { "city": "Berlin",                    "bucket": 500000,  "year": 2025, "source": "authorities" },
+  { "city": "Hamburg",                   "bucket": 200000,  "year": 2024 },
+  { "city": "Köln",                      "bucket": 1000000, "year": 2024 },
+  { "city": "München",                   "bucket": 200000,  "year": 2024 },
+  { "city": "Stuttgart",                 "bucket": 300000,  "year": 2024 },
+  { "city": "Bremen",                    "bucket": 25000,   "year": 2025 },
+  { "city": "Frankfurt am Main",         "bucket": 100000,  "year": 2024 },
+  { "city": "Dortmund",                  "bucket": 5000,    "year": 2024 },
+  { "city": "Budapest",                  "bucket": 200000,  "year": 2025 },
+  { "city": "Rom",                       "bucket": 1000000, "year": 2025 },
+  { "city": "Madrid",                    "bucket": 300000,  "year": 2024, "source": "authorities" },
+  { "city": "Paris",                     "bucket": 500000,  "year": 2025 },
+  { "city": "London",                    "bucket": 1000000, "year": 2024 },
+  { "city": "Wien",                      "bucket": 300000,  "year": 2024 },
+  { "city": "Brüssel",                   "bucket": 200000,  "year": 2024 },
+  { "city": "Prag",                      "bucket": 50000,   "year": 2024 },
+  { "city": "Warschau",                  "bucket": 20000,   "year": 2024 },
+  { "city": "Amsterdam",                 "bucket": 500000,  "year": 2024 },
+  { "city": "Stockholm",                 "bucket": 500000,  "year": 2024 },
+  { "city": "Oslo",                      "bucket": 400000,  "year": 2024 },
+  { "city": "Helsinki",                  "bucket": 100000,  "year": 2024 },
+  { "city": "Lissabon",                  "bucket": 50000,   "year": 2024 },
+  { "city": "Athen",                     "bucket": 100000,  "year": 2024 },
+  { "city": "Sofia",                     "bucket": 10000,   "year": 2024 },
+  { "city": "Kopenhagen",                "bucket": 15000,   "year": 2024 },
+  { "city": "Vilnius",                   "bucket": 15000,   "year": 2024 },
+  { "city": "Zagreb",                    "bucket": 10000,   "year": 2024 },
+  { "city": "Riga",                      "bucket": 5000,    "year": 2024 },
+  { "city": "Thessaloniki",              "bucket": 15000,   "year": 2024 },
+  { "city": "Graz",                      "bucket": 15000,   "year": 2024 },
+  { "city": "Innsbruck",                 "bucket": 5000,    "year": 2024 },
+  { "city": "Linz",                      "bucket": 5000,    "year": 2024 },
+  { "city": "Lyon",                      "bucket": 14000,   "year": 2025 },
+  { "city": "Toulouse",                  "bucket": 30000,   "year": 2025 },
+  { "city": "Straßburg",                 "bucket": 7000,    "year": 2025 },
+  { "city": "Barcelona",                 "bucket": 100000,  "year": 2024 },
+  { "city": "Mailand",                   "bucket": 350000,  "year": 2025 },
+  { "city": "Bologna",                   "bucket": 40000,   "year": 2025 },
+  { "city": "Leeds",                     "bucket": 50000,   "year": 2024 },
+  { "city": "Edinburgh",                 "bucket": 25000,   "year": 2024 },
+  { "city": "Glasgow",                   "bucket": 50000,   "year": 2024 },
+  { "city": "Brighton",                  "bucket": 300000,  "year": 2024 },
+  { "city": "Cardiff",                   "bucket": 50000,   "year": 2024 },
+  { "city": "Belfast",                   "bucket": 75000,   "year": 2024 },
+  { "city": "Birmingham",                "bucket": 75000,   "year": 2024 },
+  { "city": "Dresden",                   "bucket": 10000,   "year": 2024 },
+  { "city": "Hannover",                  "bucket": 10000,   "year": 2024 },
+  { "city": "Essen",                     "bucket": 5000,    "year": 2024 },
+  { "city": "Mannheim",                  "bucket": 15000,   "year": 2024 },
+  { "city": "Freiburg im Breisgau",      "bucket": 15000,   "year": 2025 },
+  { "city": "Kiel",                      "bucket": 5000,    "year": 2025 },
+  { "city": "Düsseldorf",                "bucket": 5000,    "year": 2024 },
+  { "city": "Newcastle upon Tyne",       "bucket": 15000,   "year": 2024 },
+  { "city": "Lille",                     "bucket": 20000,   "year": 2025 },
+  { "city": "Angermünde",                "bucket": 100,     "year": 2026, "source": "organizers" },
+  { "city": "Maspalomas",                "bucket": 75000,   "year": 2024 },
+  { "city": "Limburg an der Lahn",       "bucket": 1000,    "year": 2024 },
+  { "city": "Bergamo",                   "bucket": 5000,    "year": 2025 },
+  { "city": "Stollberg",                 "bucket": 200,     "year": 2023 },
+  { "city": "Gelsenkirchen",             "bucket": 500,     "year": 2025, "source": "organizers" },
+  { "city": "Euskirchen",                "bucket": 500,     "year": 2024 },
+  { "city": "Parchim",                   "bucket": 200,     "year": 2024 },
+  { "city": "Joensuu",                   "bucket": 1000,    "year": 2024 },
+  { "city": "Flensburg",                 "bucket": 500,     "year": 2024 },
+  { "city": "Witney",                    "bucket": 3000,    "year": 2024 },
+  { "city": "Norderstedt",               "bucket": 500,     "year": 2024 },
+  { "city": "Eisenhüttenstadt",          "bucket": 50,      "year": 2024 },
+  { "city": "Gütersloh",                 "bucket": 500,     "year": 2026, "source": "organizers" },
+  { "city": "Bradford",                  "bucket": 10000,   "year": null },
+  { "city": "Wrocław",                   "bucket": 8000,    "year": 2025 },
+  { "city": "Klagenfurt",                "bucket": 500,     "year": 2024 },
+  { "city": "Aarhus",                    "bucket": 10000,   "year": 2024 },
+  { "city": "Mistelbach",                "bucket": 1000,    "year": 2024 },
+  { "city": "Lugano",                    "bucket": 5000,    "year": 2024 },
+  { "city": "York",                      "bucket": 15000,   "year": 2024 },
+  { "city": "Wiesbaden",                 "bucket": 5000,    "year": 2024 },
+  { "city": "Gießen",                    "bucket": 3000,    "year": 2024 },
+  { "city": "Osnabrück",                 "bucket": 3000,    "year": 2024 },
+  { "city": "Hof (Saale)",               "bucket": 500,     "year": 2024 },
+  { "city": "Rheinsberg",                "bucket": 800,     "year": 2024 },
+  { "city": "Saarbrücken",               "bucket": 10000,   "year": 2024 },
+  { "city": "Warendorf",                 "bucket": 500,     "year": 2024, "source": "organizers" },
+  { "city": "Nikosia",                   "bucket": 3000,    "year": 2024 },
+  { "city": "Torremolinos",              "bucket": 50000,   "year": 2024 },
+  { "city": "Turin",                     "bucket": 150000,  "year": 2025 },
+  { "city": "Utrecht",                   "bucket": 100000,  "year": 2024 },
+  { "city": "Paderborn",                 "bucket": 300,     "year": 2024 },
+  { "city": "Karlsruhe",                 "bucket": 5000,    "year": 2024 },
+  { "city": "Aschaffenburg",             "bucket": 500,     "year": 2024 },
+  { "city": "Ravensburg",                "bucket": 500,     "year": 2023 },
+  { "city": "Fritzlar",                  "bucket": 50,      "year": 2024 },
+  { "city": "Celle",                     "bucket": 1000,    "year": 2024 },
+  { "city": "Hameln",                    "bucket": 500,     "year": 2024 },
+  { "city": "Rennes",                    "bucket": 8000,    "year": 2025 },
+  { "city": "Ljubljana",                 "bucket": 3000,    "year": 2024 },
+  { "city": "Salford",                   "bucket": 8000,    "year": 2024 },
+  { "city": "Biarritz",                  "bucket": 800,     "year": 2024 },
+  { "city": "Chesterfield",              "bucket": 5000,    "year": 2024 },
+  { "city": "Pavia",                     "bucket": 1500,    "year": 2025 },
+  { "city": "Spittal an der Drau",       "bucket": 100,     "year": 2024 },
+  { "city": "Kassel",                    "bucket": 3000,    "year": 2024 },
+  { "city": "Recklinghausen",            "bucket": 500,     "year": 2024 },
+  { "city": "Augsburg",                  "bucket": 4000,    "year": 2024 },
+  { "city": "Sanremo",                   "bucket": 600,     "year": 2026, "source": "organizers" },
+  { "city": "Alessandria",               "bucket": 7000,    "year": 2025 },
+  { "city": "Padova",                    "bucket": 10000,   "year": 2025 },
+  { "city": "Ancona",                    "bucket": 3000,    "year": 2024 },
+  { "city": "La Spezia",                 "bucket": 5000,    "year": 2025 },
+  { "city": "Forlì",                     "bucket": 1000,    "year": 2025 },
+  { "city": "Genua",                     "bucket": 40000,   "year": 2025 },
+  { "city": "Cuneo",                     "bucket": 700,     "year": 2025 },
+  { "city": "Lecco",                     "bucket": 3000,    "year": 2025 },
+  { "city": "Perugia",                   "bucket": 5000,    "year": 2025 },
+  { "city": "Bari",                      "bucket": 10000,   "year": 2025 },
+  { "city": "Vicenza",                   "bucket": 5000,    "year": 2025 },
+  { "city": "Treviso",                   "bucket": 1000,    "year": 2025 },
+  { "city": "Verona",                    "bucket": 1200,    "year": 2025 },
+  { "city": "Neapel",                    "bucket": 200000,  "year": 2025 },
+  { "city": "Salerno",                   "bucket": 1000,    "year": 2025 },
+  { "city": "Rimini",                    "bucket": 15000,   "year": 2025 },
+  { "city": "Brescia",                   "bucket": 15000,   "year": 2025 },
+  { "city": "Cologno Monzese / Brugherio", "bucket": 1000, "year": 2025 },
+  { "city": "Udine",                     "bucket": 2500,    "year": 2024 },
+  { "city": "Reims",                     "bucket": 2000,    "year": 2025 },
+  { "city": "Bordeaux",                  "bucket": 10000,   "year": 2024 },
+  { "city": "Dijon",                     "bucket": 1500,    "year": 2025 },
+  { "city": "Metz",                      "bucket": 5000,    "year": 2025 },
+  { "city": "Nantes",                    "bucket": 12000,   "year": 2025 },
+  { "city": "Grenoble",                  "bucket": 4000,    "year": 2025 },
+  { "city": "Montpellier",               "bucket": 20000,   "year": 2025 },
+  { "city": "Rouen",                     "bucket": 5000,    "year": 2025 },
+  { "city": "Marseille",                 "bucket": 40000,   "year": 2025 },
+  { "city": "Annecy",                    "bucket": 1300,    "year": 2025 },
+  { "city": "Chambéry",                  "bucket": 1000,    "year": 2024 }
 ]
