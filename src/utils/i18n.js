@@ -62,6 +62,7 @@ export const TRANSLATIONS = {
 
   // List view
   searchParades:     { en: 'Search city, region…',    de: 'Stadt, Region suchen…' },
+  sortBy:            { en: 'Sort:',                   de: 'Sortierung:' },
   sortDate:          { en: 'Date',                    de: 'Datum' },
   sortName:          { en: 'Name',                    de: 'Name' },
   noResults:         { en: 'No matching events',      de: 'Keine passenden Events' },

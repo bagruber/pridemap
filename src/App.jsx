@@ -113,6 +113,12 @@ export default function App() {
     setFilters(f => ({ ...f, sizes: VIEWS[v].defaultSizes }))
   }
 
+  function switchViewMode(mode) {
+    setViewMode(mode)
+    if (mode === 'list') setFilters(f => ({ ...f, sizes: [] }))
+    else setFilters(f => ({ ...f, sizes: VIEWS[view].defaultSizes }))
+  }
+
   function handleGeolocate() {
     navigator.geolocation.getCurrentPosition(
       pos => setFlyTo([pos.coords.longitude, pos.coords.latitude]),
@@ -177,6 +183,7 @@ export default function App() {
         <ListView
           parades={filteredParades}
           onSelect={setSelectedParade}
+          sidebarOffset={!isMobile && sidebarOpen ? 280 : 0}
         />
       )}
 
@@ -204,7 +211,7 @@ export default function App() {
               clusteringEnabled={clusteringEnabled}
               onClusteringChange={setClusteringEnabled}
               viewMode={viewMode}
-              onViewModeChange={setViewMode}
+              onViewModeChange={switchViewMode}
             />
           )}
         </>
@@ -294,7 +301,7 @@ export default function App() {
             clusteringEnabled={clusteringEnabled}
             onClusteringChange={setClusteringEnabled}
             viewMode={viewMode}
-            onViewModeChange={setViewMode}
+            onViewModeChange={switchViewMode}
           />
           {viewMode === 'map' && (
             <IsoFAB

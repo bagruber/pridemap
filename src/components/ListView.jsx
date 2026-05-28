@@ -55,7 +55,7 @@ function ListRow({ parade, onSelect, lang }) {
   )
 }
 
-export default function ListView({ parades, onSelect }) {
+export default function ListView({ parades, onSelect, sidebarOffset = 0 }) {
   const { lang } = useLang()
   const [query, setQuery] = useState('')
   const [sortBy, setSortBy] = useState('date')
@@ -83,7 +83,7 @@ export default function ListView({ parades, onSelect }) {
   }, [parades, query, sortBy, lang])
 
   return (
-    <div className="list-view">
+    <div className="list-view" style={{ left: sidebarOffset }}>
       <div className="list-toolbar">
         <input
           className="list-search"
@@ -91,15 +91,18 @@ export default function ListView({ parades, onSelect }) {
           value={query}
           onChange={e => setQuery(e.target.value)}
         />
-        <div className="toggle-group list-sort">
-          <button
-            className={`toggle-btn ${sortBy === 'date' ? 'active' : ''}`}
-            onClick={() => setSortBy('date')}
-          >{t('sortDate', lang)}</button>
-          <button
-            className={`toggle-btn ${sortBy === 'name' ? 'active' : ''}`}
-            onClick={() => setSortBy('name')}
-          >{t('sortName', lang)}</button>
+        <div className="list-sort-group">
+          <span className="list-sort-label">{t('sortBy', lang)}</span>
+          <div className="toggle-group">
+            <button
+              className={`toggle-btn ${sortBy === 'date' ? 'active' : ''}`}
+              onClick={() => setSortBy('date')}
+            >{t('sortDate', lang)}</button>
+            <button
+              className={`toggle-btn ${sortBy === 'name' ? 'active' : ''}`}
+              onClick={() => setSortBy('name')}
+            >{t('sortName', lang)}</button>
+          </div>
         </div>
       </div>
 
