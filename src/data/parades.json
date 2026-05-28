@@ -3930,7 +3930,7 @@
   },
   {
     "id": "grenoble-pride-csd-grenoble-2026-2026-06-20",
-    "name": "Grenoble Pride / CSD Grenoble 2026",
+    "name": "Grenoble Fiertés",
     "city": "Grenoble",
     "country": "FR",
     "lat": 45.188,
@@ -3940,7 +3940,8 @@
     "firstYear": null,
     "queerIndex": 59,
     "languages": null,
-    "website": "https://grenoblepride.fr",
+    "website": "https://grenoble-fiertes.com/",
+    "instagram": "https://www.instagram.com/grenoblepride/",
     "venues": null,
     "region": "Auvergne-Rhône-Alpes"
   },
