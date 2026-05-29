@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/inject-jsonld.mjs",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
-    "build:hostinger": "vite build --base=/",
+    "build:hostinger": "vite build --base=/ && node scripts/inject-jsonld.mjs",
     "deploy:hostinger": "npm run build:hostinger && gh-pages -d dist -b hostinger",
     "prepare-data": "node scripts/prepare-data.js"
   },
