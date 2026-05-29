@@ -1,7 +1,7 @@
 # Pride Map 2026
 
 Interactive map and calendar of LGBTQ+ Pride parades across Europe in 2026.
-Available at https://lavender-lobster-412344.hostingersite.com/
+Available at https://pridemap.net/
 
 ## What this site does
 
