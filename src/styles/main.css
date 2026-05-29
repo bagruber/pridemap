@@ -1,15 +1,3 @@
-@font-face {
-  font-family: 'Gilbert';
-  src: url('/pridemap/fonts/GilbertColorBold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'GilbertFallback';
-  src: url('/pridemap/fonts/GilbertBold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
 
 *, *::before, *::after {
   box-sizing: border-box;

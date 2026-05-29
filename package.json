@@ -8,6 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
+    "build:hostinger": "vite build --base=/",
+    "deploy:hostinger": "npm run build:hostinger && gh-pages -d dist -b hostinger",
     "prepare-data": "node scripts/prepare-data.js"
   },
   "dependencies": {
