@@ -1,0 +1,38 @@
+# Pride Map 2026
+
+Interactive map and calendar of LGBTQ+ Pride parades across Europe in 2026.
+Available at https://lavender-lobster-412344.hostingersite.com/
+
+## What this site does
+
+Pride Map 2026 shows 600+ Pride parade events across Europe on an interactive MapLibre map.
+Events are colour-coded by how many days until they take place.
+Users can filter by country, event size (small / medium / large relative to European prides),
+and time frame (upcoming, this weekend, next weekend, past, all).
+A list view with full-text search (including umlaut folding: u finds ü, s finds ß) is also available.
+The site supports English and German.
+
+## Data
+
+Each event has: city, country, date, size category, region (subnational entity in local language),
+website, Instagram, first year the event was held, ILGA-Europe rainbow index score for the country,
+and attendance figures where known (with source: authorities or organizers).
+
+Countries covered include DE, AT, CH, FR, IT, GB, ES, NL, BE, SE, NO, DK, FI, PL, CZ, HU,
+and many more across Europe.
+
+## Data sources
+
+- Event dates and details: manually researched from official event websites and local media
+- Attendance: from official sources (police/authorities) or organizer announcements
+- ILGA-Europe Rainbow Index scores: https://rainboweurope.ilga-europe.org/
+
+## Technology
+
+Vite + React 18, MapLibre GL JS, deployed to Hostinger and GitHub Pages.
+No user tracking for visitors with Do Not Track enabled.
+Privacy-respecting analytics via GoatCounter.
+
+## Contact / corrections
+
+Missing a parade or found an error? Use the suggestion form linked in the app sidebar.
