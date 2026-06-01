@@ -4,7 +4,7 @@ export const VIEWS = {
     center: [15, 52],
     zoom: 4,
     bounds: [[-35, 24], [55, 73]],
-    defaultSizes: ['medium', 'large'],
+    defaultSizes: [],
   },
   dach: {
     label: 'DACH',
