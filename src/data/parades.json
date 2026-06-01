@@ -6399,9 +6399,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://queerhaven.de/",
     "venues": null,
-    "region": "Bremen"
+    "region": "Bremen",
+    "instagram": "https://www.instagram.com/csdbremerhaven/"
   },
   {
     "id": "csd-bamberg-2026-2026-07-11",
@@ -7565,7 +7566,7 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://csd-berlin.de/",
     "venues": null,
     "instagram": "https://www.instagram.com/csd.berlin.pride/",
     "region": "Berlin"
@@ -8120,7 +8121,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "region": "Rheinland-Pfalz"
+    "region": "Rheinland-Pfalz",
+    "instagram": "https://www.instagram.com/csd.bingen/"
   },
   {
     "id": "csd-moelln-2026-2026-08-08",
@@ -8331,9 +8333,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://pride-koblenz.de/",
     "venues": null,
-    "region": "Rheinland-Pfalz"
+    "region": "Rheinland-Pfalz",
+    "instagram": "https://www.instagram.com/csdkoblenz/"
   },
   {
     "id": "csd-neustrelitz-2026-2026-08-15",
@@ -8589,9 +8592,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://www.csd-bremen.org/",
     "venues": null,
-    "region": "Bremen"
+    "region": "Bremen",
+    "instagram": "https://www.instagram.com/csdbremen/"
   },
   {
     "id": "csd-riesa-2026-2026-08-22",
@@ -9073,7 +9077,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "region": "Berlin"
+    "region": "Berlin",
+    "instagram": "https://www.instagram.com/csdreinickendorf/"
   },
   {
     "id": "csd-bad-oldesloe-2026-2026-08-29",
@@ -9267,7 +9272,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "region": "Rheinland-Pfalz"
+    "region": "Rheinland-Pfalz",
+    "instagram": "https://www.instagram.com/queertreffkh/"
   },
   {
     "id": "csd-ingolstadt-2026-2026-09-05",
@@ -10044,9 +10050,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://csd-lautre.de/",
     "venues": null,
-    "region": "Rheinland-Pfalz"
+    "region": "Rheinland-Pfalz",
+    "instagram": "https://www.instagram.com/csd_lautre/"
   },
   {
     "id": "csd-goerlitz-2026-2026-09-26",
