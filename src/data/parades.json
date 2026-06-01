@@ -5760,7 +5760,8 @@
     "languages": null,
     "website": "https://prideinlondon.org",
     "venues": null,
-    "region": "Greater London"
+    "region": "Greater London",
+    "instagram": "https://www.instagram.com/PrideInLondon/"
   },
   {
     "id": "madrid-pride-csd-madrid-2026-2026-07-04",
@@ -5873,7 +5874,8 @@
     "languages": null,
     "website": "https://steyrpride.at",
     "venues": null,
-    "region": "Oberösterreich"
+    "region": "Oberösterreich",
+    "instagram": "https://www.instagram.com/steyrpride/"
   },
   {
     "id": "worthing-pride-2026-2026-07-04",
@@ -5903,9 +5905,10 @@
     "firstYear": null,
     "queerIndex": 55,
     "languages": null,
-    "website": "https://villachpride.at",
+    "website": "https://www.villacher-pride.at/",
     "venues": null,
-    "region": "Kärnten"
+    "region": "Kärnten",
+    "instagram": "https://www.instagram.com/villacher.pride/"
   },
   {
     "id": "kirkcaldy-pride-kirkcaldy-fife-pride-2026-2026-07-04",
@@ -7411,9 +7414,10 @@
     "firstYear": null,
     "queerIndex": 55,
     "languages": null,
-    "website": "https://innsbruckpride.at",
+    "website": "https://pride.tirol",
     "venues": null,
-    "region": "Tirol"
+    "region": "Tirol",
+    "instagram": "https://www.instagram.com/pridetirol/"
   },
   {
     "id": "great-malvern-pride-malvern-pride-2026-2026-07-25",
@@ -7525,7 +7529,7 @@
     "firstYear": null,
     "queerIndex": 55,
     "languages": null,
-    "website": "https://stpoeltenpride.at",
+    "website": "https://stpride.at",
     "venues": null,
     "instagram": "https://www.instagram.com/stp.pride/",
     "region": "Niederösterreich"
@@ -8817,9 +8821,10 @@
     "firstYear": null,
     "queerIndex": 55,
     "languages": null,
-    "website": "https://badischlpride.at",
+    "website": "https://www.salzkammerqueer.at",
     "venues": null,
-    "region": "Oberösterreich"
+    "region": "Oberösterreich",
+    "instagram": "https://www.instagram.com/salzkammerpride/"
   },
   {
     "id": "walsall-pride-2026-2026-08-29",
@@ -9137,9 +9142,10 @@
     "firstYear": null,
     "queerIndex": 55,
     "languages": null,
-    "website": "https://salzburgpride.at",
+    "website": "https://www.hosi.or.at/pride",
     "venues": null,
-    "region": "Salzburg"
+    "region": "Salzburg",
+    "instagram": "https://www.instagram.com/pridefestivalsalzburg/"
   },
   {
     "id": "eastleigh-pride-2026-2026-09-05",
@@ -9203,7 +9209,8 @@
     "languages": null,
     "website": "https://katowicepride.eu",
     "venues": null,
-    "region": "Śląskie"
+    "region": "Śląskie",
+    "instagram": "https://www.instagram.com/katowicepride/"
   },
   {
     "id": "csd-dortmund-2026-2026-09-05",
@@ -9429,7 +9436,8 @@
     "languages": null,
     "website": "https://stjohannpride.at",
     "venues": null,
-    "region": "Salzburg"
+    "region": "Salzburg",
+    "instagram": "https://www.instagram.com/pongau.pride/"
   },
   {
     "id": "derby-pride-csd-derby-2026-2026-09-12",
@@ -10173,7 +10181,8 @@
     "languages": null,
     "website": "https://kufsteinpride.at",
     "venues": null,
-    "region": "Tirol"
+    "region": "Tirol",
+    "instagram": "https://www.instagram.com/perlen_pride_kufstein/"
   },
   {
     "id": "csd-norden-2026-2026-10-10",
@@ -10307,5 +10316,56 @@
     "instagram": "https://www.instagram.com/csd.cham/",
     "venues": null,
     "region": "Bayern"
+  },
+  {
+    "id": "regenbogenparade-wiener-neustadt-2026-07-11",
+    "name": "Regenbogenparade Wiener Neustadt",
+    "city": "Wiener Neustadt",
+    "country": "AT",
+    "lat": 47.809,
+    "lon": 16.247,
+    "date": "2026-07-11",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 72,
+    "languages": null,
+    "website": null,
+    "instagram": null,
+    "venues": null,
+    "region": "Niederösterreich"
+  },
+  {
+    "id": "innviertel-pride-2026-07-18",
+    "name": "Innviertel Pride",
+    "city": "Ried im Innkreis",
+    "country": "AT",
+    "lat": 48.21,
+    "lon": 13.49,
+    "date": "2026-07-18",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 72,
+    "languages": null,
+    "website": "https://www.innviertelpride.at/",
+    "instagram": "https://www.instagram.com/innviertelpride/",
+    "venues": null,
+    "region": "Oberösterreich"
+  },
+  {
+    "id": "pink-lake-woerthersee-2026-08-24",
+    "name": "Pink Lake (Wörthersee)",
+    "city": "Velden am Wörthersee",
+    "country": "AT",
+    "lat": 46.614,
+    "lon": 14.046,
+    "date": "2026-08-24",
+    "size": "small",
+    "firstYear": null,
+    "queerIndex": 72,
+    "languages": null,
+    "website": "https://www.pinklake.at",
+    "instagram": "https://www.instagram.com/pinklakewoerthersee/",
+    "venues": null,
+    "region": "Kärnten"
   }
 ]

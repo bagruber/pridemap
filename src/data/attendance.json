@@ -79,8 +79,9 @@
   },
   {
     "city": "Prag",
-    "bucket": 50000,
-    "year": 2024
+    "bucket": 45000,
+    "year": 2025,
+    "source": "organizers"
   },
   {
     "city": "Warschau",
@@ -90,7 +91,8 @@
   {
     "city": "Amsterdam",
     "bucket": 500000,
-    "year": 2024
+    "year": 2025,
+    "source": "organizers"
   },
   {
     "city": "Stockholm",
@@ -154,8 +156,9 @@
   },
   {
     "city": "Innsbruck",
-    "bucket": 5000,
-    "year": 2024
+    "bucket": 4000,
+    "year": 2025,
+    "source": "organizers"
   },
   {
     "city": "Linz",
@@ -825,5 +828,57 @@
     "city": "Cham",
     "bucket": 250,
     "year": 2024
+  },
+  {
+    "city": "Steyr",
+    "bucket": 600,
+    "year": 2024,
+    "source": "authorities"
+  },
+  {
+    "city": "Unken",
+    "bucket": 400,
+    "year": 2024
+  },
+  {
+    "city": "Bratislava",
+    "bucket": 16000,
+    "year": 2025,
+    "source": "organizers"
+  },
+  {
+    "city": "St. Pölten",
+    "bucket": 2000,
+    "year": 2025,
+    "source": "organizers"
+  },
+  {
+    "city": "Velden am Wörthersee",
+    "bucket": 2000,
+    "year": 2024
+  },
+  {
+    "city": "Bad Ischl",
+    "bucket": 2000,
+    "year": 2024,
+    "source": "authorities"
+  },
+  {
+    "city": "Salzburg",
+    "bucket": 5000,
+    "year": 2025,
+    "source": "authorities"
+  },
+  {
+    "city": "Katowice",
+    "bucket": 5000,
+    "year": 2022,
+    "source": "organizers"
+  },
+  {
+    "city": "St. Johann im Pongau",
+    "bucket": 600,
+    "year": 2025,
+    "source": "organizers"
   }
 ]
