@@ -126,8 +126,9 @@
   },
   {
     "city": "Kopenhagen",
-    "bucket": 15000,
-    "year": 2024
+    "bucket": 250000,
+    "year": 2025,
+    "source": "organizers"
   },
   {
     "city": "Vilnius",
