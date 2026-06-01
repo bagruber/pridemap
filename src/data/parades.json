@@ -1857,7 +1857,7 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": "https://www.aschaffenburg.de",
+    "website": null,
     "venues": null,
     "region": "Bayern"
   },
@@ -1890,7 +1890,7 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": "https://www.csd-termine.de",
+    "website": null,
     "venues": null,
     "region": "Bayern"
   },
@@ -3164,9 +3164,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://www.queer-niederbayern.de/csdAndNews",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/queer_niederbayern/"
   },
   {
     "id": "csd-waren-mueritz-2026-2026-06-13",
@@ -5872,7 +5873,7 @@
     "firstYear": null,
     "queerIndex": 55,
     "languages": null,
-    "website": null,
+    "website": "https://www.steyrpride.at",
     "venues": null,
     "region": "Oberösterreich",
     "instagram": "https://www.instagram.com/steyrpride/"
@@ -6466,7 +6467,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/csd_schongau/"
   },
   {
     "id": "csd-oberhausen-2026-2026-07-11",
@@ -6529,7 +6531,7 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://memmingen.lgbt/",
     "venues": null,
     "instagram": "https://www.instagram.com/pridememmingen/",
     "region": "Bayern"
@@ -6631,7 +6633,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/csd_wuermtal/"
   },
   {
     "id": "csd-nettetal-2026-2026-07-11",
@@ -7645,9 +7648,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://queer-traunstein.de/",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/csdtraunstein/"
   },
   {
     "id": "csd-solingen-2026-2026-07-25",
@@ -7695,7 +7699,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/csdebersberg/"
   },
   {
     "id": "chenevelles-pride-2026-07-25",
@@ -8440,7 +8445,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/queer_bayreuth/"
   },
   {
     "id": "csd-berchtesgaden-2026-2026-08-15",
@@ -8456,7 +8462,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/queersteiger_berchtesgaden/"
   },
   {
     "id": "csd-peine-2026-2026-08-15",
@@ -8630,9 +8637,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://queer-pfaffenhofen.de/",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/queerpfaffenhofen/"
   },
   {
     "id": "csd-bocholt-2026-2026-08-22",
@@ -9275,7 +9283,8 @@
     "languages": null,
     "website": null,
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/csdingolstadt/"
   },
   {
     "id": "csd-goslar-2026-2026-09-05",
@@ -10002,9 +10011,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://www.queer-niederbayern.de/csdAndNews",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/queer_niederbayern/"
   },
   {
     "id": "csd-stendal-2026-2026-09-26",
@@ -10066,9 +10076,10 @@
     "firstYear": null,
     "queerIndex": 70,
     "languages": null,
-    "website": null,
+    "website": "https://www.pride-herzo.de/",
     "venues": null,
-    "region": "Bayern"
+    "region": "Bayern",
+    "instagram": "https://www.instagram.com/pride_herzo/"
   },
   {
     "id": "csd-emmendingen-2026-2026-09-26",
@@ -10180,7 +10191,7 @@
     "firstYear": null,
     "queerIndex": 55,
     "languages": null,
-    "website": null,
+    "website": "https://www.perlenpride.at",
     "venues": null,
     "region": "Tirol",
     "instagram": "https://www.instagram.com/perlen_pride_kufstein/"
