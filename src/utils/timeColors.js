@@ -10,7 +10,7 @@ export const TIME_BUCKETS = [
   { label: '>6 months',   max: Infinity, color: '#7C3AED' },
 ]
 
-export const PAST_COLOR = '#3a3a3a'
+export const PAST_COLOR = import.meta.env.VITE_COLORFUL_PAST === 'true' ? '#7C3AED' : '#3a3a3a'
 
 export function daysUntil(dateStr, from = new Date()) {
   const target = new Date(dateStr)
