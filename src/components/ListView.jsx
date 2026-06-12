@@ -1,18 +1,12 @@
 import { useState, useMemo } from 'react'
 import { X, SearchX } from 'lucide-react'
-import { colorForDays, labelForDays } from '../utils/timeColors.js'
+import { colorForDays } from '../utils/timeColors.js'
 import { flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
-import { t, cityName } from '../utils/i18n.js'
+import { t, cityName, labelForDaysL10n, formatDate } from '../utils/i18n.js'
 import { toSelection } from '../utils/parade.js'
+import { norm } from '../utils/text.js'
 import MiniLegend from './MiniLegend.jsx'
-
-function norm(s) {
-  return (s ?? '').toLowerCase()
-    .replace(/ß/g, 'ss')
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-}
 
 function ListRow({ parade, onSelect, lang }) {
   const color = colorForDays(parade.daysUntil)
@@ -20,16 +14,9 @@ function ListRow({ parade, onSelect, lang }) {
   const hasCustomName = parade.name && norm(parade.name) !== norm(parade.city)
   const isPast = parade.daysUntil < 0
 
-  const dateStr = new Date(parade.date).toLocaleDateString(
-    lang === 'de' ? 'de-DE' : 'en-GB',
-    { day: 'numeric', month: 'short' }
-  )
+  const dateStr = formatDate(parade.date, lang, { day: 'numeric', month: 'short' })
 
-  const countdown = isPast
-    ? `${Math.abs(parade.daysUntil)}d`
-    : parade.daysUntil === 0 ? t('today', lang)
-    : parade.daysUntil === 1 ? t('tomorrow', lang)
-    : labelForDays(parade.daysUntil)
+  const countdown = labelForDaysL10n(parade.daysUntil, lang)
 
   const handleSelect = () => onSelect(toSelection({ ...parade, color }))
   const handleKey = e => {

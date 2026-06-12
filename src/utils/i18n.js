@@ -145,12 +145,42 @@ export function indexLabelL10n(score, lang = 'en') {
   return t('hostile', lang)
 }
 
+const COMPACT_UNITS = {
+  en: { d: n => `${n}d`,   w: n => `${n}w`,    mo: n => `${n}mo`,   y: n => `${n}y` },
+  de: { d: n => `${n} T`,  w: n => `${n} Wo`,  mo: n => `${n} Mon`, y: n => `${n} J` },
+}
+
 export function labelForDaysL10n(days, lang = 'en') {
-  if (days < 0) return `${Math.abs(days)}d`
+  const u = COMPACT_UNITS[lang] ?? COMPACT_UNITS.en
+  if (days < 0) return u.d(Math.abs(days))
   if (days === 0) return t('today', lang)
   if (days === 1) return t('tomorrow', lang)
-  if (days < 7) return `${days}d`
-  if (days < 30) return `${Math.round(days / 7)}w`
-  if (days < 365) return `${Math.round(days / 30.4)}mo`
-  return `${Math.round(days / 365)}y`
+  if (days < 7) return u.d(days)
+  if (days < 30) return u.w(Math.round(days / 7))
+  if (days < 365) return u.mo(Math.round(days / 30.4))
+  return u.y(Math.round(days / 365))
+}
+
+const LONG_UNITS = {
+  en:    { d: ['day', 'days'],   w: ['week', 'weeks'],    mo: ['month', 'months'],   y: ['year', 'years'] },
+  de:    { d: ['Tag', 'Tage'],   w: ['Woche', 'Wochen'],  mo: ['Monat', 'Monate'],   y: ['Jahr', 'Jahre'] },
+  // German dative for "in 3 Tagen / Monaten / Jahren"
+  deDat: { d: ['Tag', 'Tagen'],  w: ['Woche', 'Wochen'],  mo: ['Monat', 'Monaten'],  y: ['Jahr', 'Jahren'] },
+}
+
+export function labelForDaysLong(days, lang = 'en', { dative = false } = {}) {
+  const u = lang === 'de' ? (dative ? LONG_UNITS.deDat : LONG_UNITS.de) : LONG_UNITS.en
+  const fmt = (n, [sg, pl]) => `${n} ${n === 1 ? sg : pl}`
+  if (days < 7) return fmt(days, u.d)
+  if (days < 30) return fmt(Math.round(days / 7), u.w)
+  if (days < 365) return fmt(Math.round(days / 30.4), u.mo)
+  return fmt(Math.round(days / 365), u.y)
+}
+
+// TZ-safe: parses YYYY-MM-DD as local time so the day never shifts
+// (new Date('2026-06-13') would parse as UTC midnight)
+export function formatDate(dateStr, lang = 'en', options) {
+  const [y, m, d] = dateStr.split('-').map(Number)
+  const locale = lang === 'de' ? 'de-DE' : 'en-GB'
+  return new Date(y, m - 1, d).toLocaleDateString(locale, options)
 }

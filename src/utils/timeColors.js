@@ -28,16 +28,6 @@ export function colorForDays(days) {
   return TIME_BUCKETS[TIME_BUCKETS.length - 1].color
 }
 
-export function labelForDays(days) {
-  if (days < 0) return `${Math.abs(days)}d ago`
-  if (days === 0) return 'Today!'
-  if (days === 1) return 'Tomorrow!'
-  if (days < 7) return `${days} days`
-  if (days < 30) return `${Math.round(days / 7)}w`
-  if (days < 365) return `${Math.round(days / 30.4)}mo`
-  return `${Math.round(days / 365)}y`
-}
-
 export function indexColor(score) {
   if (score >= 70) return '#34C759'
   if (score >= 50) return '#FFD700'

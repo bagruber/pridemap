@@ -13,7 +13,7 @@ export function readHash() {
       countries: params.has('countries')
         ? params.get('countries').split(',').filter(c => c.length >= 2)
         : [],
-      selectedId: params.has('selected') ? Number(params.get('selected')) : null,
+      selectedId: params.get('selected'),
       viewMode: params.get('mode') === 'list' ? 'list' : 'map',
     }
   } catch { return null }

@@ -71,6 +71,7 @@ html, body, #root {
 }
 .sidebar-toggle:hover { background: var(--surface2); }
 .sidebar-toggle.open { left: calc(280px + 24px); }
+.toggle-icon { display: flex; align-items: center; justify-content: center; }
 
 .geo-btn {
   position: absolute;
@@ -1338,6 +1339,16 @@ html, body, #root {
   margin: 12px 0 0;
   font-size: 10px;
   color: var(--text-dim);
+}
+
+/* ── Keyboard focus ───────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.list-search:focus-visible {
+  outline: none;
+  border-color: var(--text-muted);
 }
 
 /* ── Mobile sheet: three stops ────────────────────────── */

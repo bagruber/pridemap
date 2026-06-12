@@ -1,9 +1,9 @@
 import { FaInstagram, FaGlobe } from 'react-icons/fa'
-import { Info } from 'lucide-react'
-import { labelForDays, indexColor } from '../utils/timeColors.js'
+import { Info, X } from 'lucide-react'
+import { indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
-import { t, cityName, indexLabelL10n } from '../utils/i18n.js'
+import { t, cityName, indexLabelL10n, labelForDaysLong, formatDate } from '../utils/i18n.js'
 import attendanceData from '../data/attendance.json'
 
 const attendanceLookup = Object.fromEntries(attendanceData.map(a => [a.city, a]))
@@ -14,12 +14,22 @@ function formatBucket(n) {
   return `≥${n.toLocaleString('en')}`
 }
 
+// RFC 5545: commas, semicolons and backslashes must be escaped in text values
+function icsEscape(s) {
+  return String(s)
+    .replace(/\\/g, '\\\\')
+    .replace(/;/g, '\\;')
+    .replace(/,/g, '\\,')
+    .replace(/\r?\n/g, '\\n')
+}
+
 function downloadICS(parade) {
   const pad = n => String(n).padStart(2, '0')
   const [yr, mo, da] = parade.date.split('-').map(Number)
   const start = `${yr}${pad(mo)}${pad(da)}`
   const endDate = new Date(yr, mo - 1, da + 1)
   const end = `${endDate.getFullYear()}${pad(endDate.getMonth() + 1)}${pad(endDate.getDate())}`
+  const dtstamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '')
 
   const lines = [
     'BEGIN:VCALENDAR',
@@ -28,10 +38,12 @@ function downloadICS(parade) {
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
+    `UID:${parade.id}@pridemap.net`,
+    `DTSTAMP:${dtstamp}`,
     `DTSTART;VALUE=DATE:${start}`,
     `DTEND;VALUE=DATE:${end}`,
-    `SUMMARY:${parade.name}`,
-    `LOCATION:${parade.city}`,
+    `SUMMARY:${icsEscape(parade.name)}`,
+    `LOCATION:${icsEscape(parade.city)}`,
     parade.website ? `URL:${parade.website}` : null,
     'END:VEVENT',
     'END:VCALENDAR',
@@ -50,8 +62,7 @@ export default function DetailPanel({ parade, onClose }) {
   const { name, city, country, date, size, daysUntil, color, queerIndex, website, instagram, firstYear } = parade
   const isPast = daysUntil < 0
 
-  const locale = lang === 'de' ? 'de-DE' : 'en-GB'
-  const formatted = new Date(date).toLocaleDateString(locale, {
+  const formatted = formatDate(date, lang, {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
   })
 
@@ -60,8 +71,8 @@ export default function DetailPanel({ parade, onClose }) {
     : daysUntil === 0 ? t('today', lang)
     : daysUntil === 1 ? t('tomorrow', lang)
     : lang === 'de'
-      ? `noch ${labelForDays(daysUntil)}`
-      : `${labelForDays(daysUntil)} ${t('away', lang)}`
+      ? `noch ${labelForDaysLong(daysUntil, 'de')}`
+      : `${labelForDaysLong(daysUntil, 'en')} ${t('away', lang)}`
 
   const sizeEventKey = { small: 'smallEvent', medium: 'mediumEvent', large: 'largeEvent' }[size]
   const sizeLabel = sizeEventKey ? t(sizeEventKey, lang) : size
@@ -76,7 +87,9 @@ export default function DetailPanel({ parade, onClose }) {
           <div className="detail-city-name" style={{ color }}>{displayCity}</div>
           <div className="detail-title">{name}</div>
         </div>
-        <button className="detail-close" onClick={onClose} aria-label="Close">✕</button>
+        <button className="detail-close" onClick={onClose} aria-label="Close">
+          <X size={15} />
+        </button>
       </div>
 
       <div className={`detail-countdown ${isPast ? 'past' : ''}`} style={{ color: isPast ? undefined : color }}>

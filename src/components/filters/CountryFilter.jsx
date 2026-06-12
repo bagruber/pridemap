@@ -14,18 +14,21 @@ export default function CountryFilter({ filters, onChange, allCountries, toggleC
         {t('filterCountry', lang)}
       </FilterLabel>
       <div className={`country-list ${listClassName}`}>
-        {allCountries.map(code => (
-          <div
-            key={code}
-            className={`country-item ${filters.countries.includes(code) ? 'selected' : ''}`}
-            onClick={() => toggleCountry(code)}
-          >
-            <input type="checkbox" readOnly checked={filters.countries.includes(code)} />
-            <span className={`${flag(code)} country-flag`} />
-            <span className="country-name">{COUNTRY_NAMES[code] ?? code}</span>
-            <span className="country-code">{code}</span>
-          </div>
-        ))}
+        {allCountries.map(code => {
+          const selected = filters.countries.includes(code)
+          return (
+            <label key={code} className={`country-item ${selected ? 'selected' : ''}`}>
+              <input
+                type="checkbox"
+                checked={selected}
+                onChange={() => toggleCountry(code)}
+              />
+              <span className={`${flag(code)} country-flag`} />
+              <span className="country-name">{COUNTRY_NAMES[code] ?? code}</span>
+              <span className="country-code">{code}</span>
+            </label>
+          )
+        })}
       </div>
     </>
   )

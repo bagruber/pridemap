@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
-import { LocateFixed } from 'lucide-react'
+import { LocateFixed, Menu, X } from 'lucide-react'
 import Map, { ISO_BANDS } from './components/Map.jsx'
 import FilterSidebar from './components/FilterSidebar.jsx'
 import MobileSheet from './components/MobileSheet.jsx'
@@ -19,21 +19,20 @@ import { useIsMobile } from './hooks/useIsMobile.js'
 import { VIEWS } from './config/views.js'
 import { readHash, writeHash } from './utils/urlState.js'
 
-const TODAY = new Date()
-TODAY.setHours(0, 0, 0, 0)
+function startOfToday() {
+  const d = new Date()
+  d.setHours(0, 0, 0, 0)
+  return d
+}
 
-const parades = paradesRaw.map(p => ({
-  ...p,
-  daysUntil: daysUntil(p.date, TODAY),
-}))
-
-const ALL_COUNTRIES = [...new Set(parades.map(p => p.country))].sort()
+const ALL_COUNTRIES = [...new Set(paradesRaw.map(p => p.country))].sort()
 
 const INITIAL_HASH = readHash()
 
 export default function App() {
   const { lang } = useLang()
   const isMobile = useIsMobile()
+  const [today, setToday] = useState(startOfToday)
   const [view, setView] = useState(INITIAL_HASH?.view ?? 'europe')
   const [viewMode, setViewMode] = useState(INITIAL_HASH?.viewMode ?? 'map')
   const [filters, setFilters] = useState({
@@ -43,9 +42,9 @@ export default function App() {
   })
   const [selectedParade, setSelectedParade] = useState(() => {
     if (!INITIAL_HASH?.selectedId) return null
-    const p = parades.find(p => p.id === INITIAL_HASH.selectedId)
+    const p = paradesRaw.find(p => p.id === INITIAL_HASH.selectedId)
     if (!p) return null
-    return toSelection(p)
+    return toSelection({ ...p, daysUntil: daysUntil(p.date, startOfToday()) })
   })
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [isoOrigin, setIsoOrigin] = useState(null)
@@ -58,17 +57,60 @@ export default function App() {
 
   const mapPositionRef = useRef(null)
 
+  const parades = useMemo(
+    () => paradesRaw.map(p => ({ ...p, daysUntil: daysUntil(p.date, today) })),
+    [today],
+  )
+
+  // Roll "today" over at midnight / when the tab wakes up, so countdowns stay live
+  useEffect(() => {
+    const check = () => {
+      const now = startOfToday()
+      setToday(prev => (prev.getTime() === now.getTime() ? prev : now))
+    }
+    const id = setInterval(check, 60_000)
+    document.addEventListener('visibilitychange', check)
+    return () => {
+      clearInterval(id)
+      document.removeEventListener('visibilitychange', check)
+    }
+  }, [])
+
   // Sync URL hash
   useEffect(() => {
     writeHash({ view, filters, selectedParade, viewMode })
   }, [view, filters, selectedParade, viewMode])
 
-  // Escape closes detail panel
+  // Apply hash edits made after load (writeHash uses replaceState, so no loop)
   useEffect(() => {
-    const onKey = e => { if (e.key === 'Escape') setSelectedParade(null) }
+    const onHashChange = () => {
+      const h = readHash()
+      if (!h) return
+      setView(h.view)
+      setViewMode(h.viewMode)
+      setFilters({
+        countries: h.countries,
+        sizes: h.sizes ?? VIEWS[h.view].defaultSizes,
+        timeframe: h.timeframe,
+      })
+      const p = h.selectedId ? parades.find(p => p.id === h.selectedId) : null
+      setSelectedParade(p ? toSelection(p) : null)
+    }
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [parades])
+
+  // Escape closes detail panel — unless a dialog is open or the user is typing
+  useEffect(() => {
+    const onKey = e => {
+      if (e.key !== 'Escape' || aboutOpen) return
+      const el = document.activeElement
+      if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable)) return
+      setSelectedParade(null)
+    }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [])
+  }, [aboutOpen])
 
   function switchView(v) {
     setView(v)
@@ -103,11 +145,11 @@ export default function App() {
   }
 
   const filteredParades = useMemo(() => {
-    const dow = TODAY.getDay()
+    const dow = today.getDay()
     let weekendSat
-    if (dow === 6) weekendSat = TODAY
-    else if (dow === 0) weekendSat = new Date(TODAY.getTime() - 86400000)
-    else weekendSat = new Date(TODAY.getTime() + (6 - dow) * 86400000)
+    if (dow === 6) weekendSat = today
+    else if (dow === 0) weekendSat = new Date(today.getTime() - 86400000)
+    else weekendSat = new Date(today.getTime() + (6 - dow) * 86400000)
     const weekendSun = new Date(weekendSat.getTime() + 86400000)
     const nextWeekendSat = new Date(weekendSat.getTime() + 7 * 86400000)
     const nextWeekendSun = new Date(weekendSun.getTime() + 7 * 86400000)
@@ -127,7 +169,7 @@ export default function App() {
       }
       return true
     }).sort((a, b) => a.city.localeCompare(b.city))
-  }, [filters])
+  }, [filters, parades, today])
 
   const activeFilterCount = filters.countries.length + filters.sizes.length +
     (filters.timeframe !== 'upcoming' ? 1 : 0)
@@ -179,7 +221,7 @@ export default function App() {
             onClick={() => setSidebarOpen(v => !v)}
             aria-label="Toggle filters"
           >
-            <span className="toggle-icon">{sidebarOpen ? '✕' : '☰'}</span>
+            <span className="toggle-icon">{sidebarOpen ? <X size={16} /> : <Menu size={16} />}</span>
             {!sidebarOpen && activeFilterCount > 0 && (
               <span className="filter-badge">{activeFilterCount}</span>
             )}
