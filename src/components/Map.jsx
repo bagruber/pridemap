@@ -21,6 +21,10 @@ const PARADE_SOURCES = ['parades', 'parades-cluster']
 const CIRCLE_LAYERS = ['parades-circles', 'parades-circles-cluster']
 const CLUSTER_LAYERS = ['parades-circles-cluster', 'clusters-circle', 'clusters-count']
 
+// Past events render at the very back; upcoming dots always sit on top.
+// Beyond that the order intentionally stays as-is (source order).
+const CIRCLE_SORT_KEY = ['case', ['<', ['get', 'daysUntil'], 0], 0, 1]
+
 const CIRCLE_PAINT = {
   'circle-radius': [
     'case',
@@ -185,7 +189,10 @@ export default function Map({
         id: 'parades-circles',
         type: 'circle',
         source: 'parades',
-        layout: { visibility: clustered ? 'none' : 'visible' },
+        layout: {
+          visibility: clustered ? 'none' : 'visible',
+          'circle-sort-key': CIRCLE_SORT_KEY,
+        },
         paint: CIRCLE_PAINT,
       })
       map.addLayer({
@@ -193,7 +200,10 @@ export default function Map({
         type: 'circle',
         source: 'parades-cluster',
         filter: ['!', ['has', 'point_count']],
-        layout: { visibility: clustered ? 'visible' : 'none' },
+        layout: {
+          visibility: clustered ? 'visible' : 'none',
+          'circle-sort-key': CIRCLE_SORT_KEY,
+        },
         paint: CIRCLE_PAINT,
       })
       map.addLayer({

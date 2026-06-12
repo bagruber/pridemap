@@ -10,7 +10,9 @@ export const TIME_BUCKETS = [
   { label: '>6 months',   max: Infinity, color: '#7C3AED' },
 ]
 
-export const PAST_COLOR = import.meta.env.VITE_COLORFUL_PAST === 'true' ? '#7C3AED' : '#3a3a3a'
+// Non-colorful builds: a dark, muted violet instead of plain gray, so past
+// events still contribute a hint of color without competing with upcoming ones
+export const PAST_COLOR = import.meta.env.VITE_COLORFUL_PAST === 'true' ? '#7C3AED' : '#4a3d63'
 
 export function daysUntil(dateStr, from = new Date()) {
   const target = new Date(dateStr)
