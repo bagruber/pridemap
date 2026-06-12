@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Route } from 'lucide-react'
-import { ISO_BANDS } from './Map.jsx'
+import { ISO_BANDS } from '../config/isoBands.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 

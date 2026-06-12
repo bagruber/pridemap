@@ -1,6 +1,5 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, lazy, Suspense } from 'react'
 import { LocateFixed, Menu, X } from 'lucide-react'
-import Map, { ISO_BANDS } from './components/Map.jsx'
 import FilterSidebar from './components/FilterSidebar.jsx'
 import MobileSheet from './components/MobileSheet.jsx'
 import IsoFAB from './components/IsoFAB.jsx'
@@ -17,7 +16,11 @@ import { useLang } from './contexts/LangContext.jsx'
 import { t } from './utils/i18n.js'
 import { useIsMobile } from './hooks/useIsMobile.js'
 import { VIEWS } from './config/views.js'
+import { ISO_BANDS } from './config/isoBands.js'
 import { readHash, writeHash } from './utils/urlState.js'
+
+// Lazy so maplibre-gl lands in its own chunk; only loaded once the map is shown
+const Map = lazy(() => import('./components/Map.jsx'))
 
 function startOfToday() {
   const d = new Date()
@@ -54,6 +57,8 @@ export default function App() {
   const [clusteringEnabled, setClusteringEnabled] = useState(false)
   const [toastMessage, setToastMessage] = useState(null)
   const [aboutOpen, setAboutOpen] = useState(false)
+  // Mount the map lazily, then keep it mounted to preserve position
+  const [mapMounted, setMapMounted] = useState((INITIAL_HASH?.viewMode ?? 'map') === 'map')
 
   const mapPositionRef = useRef(null)
 
@@ -99,6 +104,10 @@ export default function App() {
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [parades])
+
+  useEffect(() => {
+    if (viewMode === 'map' && !mapMounted) setMapMounted(true)
+  }, [viewMode, mapMounted])
 
   // Escape closes detail panel — unless a dialog is open or the user is typing
   useEffect(() => {
@@ -177,33 +186,37 @@ export default function App() {
   return (
     <div className="app">
       {/* Map — hidden in list mode but kept mounted to preserve position */}
-      <div className="map-wrap" style={{ display: viewMode === 'map' ? undefined : 'none' }}>
-        <Map
-          key={clusteringEnabled ? 'clustered' : 'plain'}
-          parades={filteredParades}
-          onSelect={setSelectedParade}
-          view={view}
-          isoOrigin={isoOrigin}
-          onIsoOriginSet={setIsoOrigin}
-          isoMode={isoMode}
-          isoPinning={isoPinning}
-          onPinningDone={() => setIsoPinning(false)}
-          flyTo={flyTo}
-          onFlyToDone={() => setFlyTo(null)}
-          clusteringEnabled={clusteringEnabled}
-          initialPosition={mapPositionRef.current}
-          onViewChange={pos => { mapPositionRef.current = pos }}
-        />
-        {viewMode === 'map' && filteredParades.length === 0 && (
-          <div className="map-empty-overlay">
-            <EmptyState
-              title={t('noEventsMatch', lang)}
-              action={clearFilters}
-              actionLabel={t('clearFilters', lang)}
+      {mapMounted && (
+        <div className="map-wrap" style={{ display: viewMode === 'map' ? undefined : 'none' }}>
+          <Suspense fallback={null}>
+            <Map
+              parades={filteredParades}
+              onSelect={setSelectedParade}
+              view={view}
+              selectedId={selectedParade?.id ?? null}
+              isoOrigin={isoOrigin}
+              onIsoOriginSet={setIsoOrigin}
+              isoMode={isoMode}
+              isoPinning={isoPinning}
+              onPinningDone={() => setIsoPinning(false)}
+              flyTo={flyTo}
+              onFlyToDone={() => setFlyTo(null)}
+              clusteringEnabled={clusteringEnabled}
+              initialPosition={mapPositionRef.current}
+              onViewChange={pos => { mapPositionRef.current = pos }}
             />
-          </div>
-        )}
-      </div>
+          </Suspense>
+          {viewMode === 'map' && filteredParades.length === 0 && (
+            <div className="map-empty-overlay">
+              <EmptyState
+                title={t('noEventsMatch', lang)}
+                action={clearFilters}
+                actionLabel={t('clearFilters', lang)}
+              />
+            </div>
+          )}
+        </div>
+      )}
 
       {/* List view */}
       {viewMode === 'list' && (

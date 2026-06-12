@@ -38,6 +38,15 @@ html, body, #root {
 }
 
 /* ── Map ──────────────────────────────────────────── */
+.map-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+/* Double selector: must outrank .maplibregl-map { position: relative }
+   from maplibre's stylesheet, which loads after this file now that the
+   map chunk is lazy-loaded */
+.map-wrap .map-container,
 .map-container {
   position: absolute;
   inset: 0;

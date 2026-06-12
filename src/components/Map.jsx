@@ -6,6 +6,7 @@ import Tooltip from './Tooltip.jsx'
 import { colorForDays } from '../utils/timeColors.js'
 import { toSelection } from '../utils/parade.js'
 import { VIEWS } from '../config/views.js'
+import { ISO_BANDS } from '../config/isoBands.js'
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'
 const HERE_KEY = import.meta.env.VITE_HERE_API_KEY
@@ -13,14 +14,32 @@ const HERE_KEY = import.meta.env.VITE_HERE_API_KEY
 const SIZE_RADIUS       = { small: 4, medium: 7, large: 11 }
 const SIZE_RADIUS_HOVER = { small: 6, medium: 10, large: 14 }
 
-// 30 / 60 / 90 / 120 / 150 min bands, outer → inner
-export const ISO_BANDS = [
-  { seconds: 9000, color: 'rgba(124,58,237,0.12)', stroke: 'rgba(124,58,237,0.5)' },
-  { seconds: 7200, color: 'rgba(10,132,255,0.12)',  stroke: 'rgba(10,132,255,0.5)' },
-  { seconds: 5400, color: 'rgba(52,199,89,0.12)',   stroke: 'rgba(52,199,89,0.5)'  },
-  { seconds: 3600, color: 'rgba(255,149,0,0.12)',   stroke: 'rgba(255,149,0,0.5)'  },
-  { seconds: 1800, color: 'rgba(255,45,120,0.12)',  stroke: 'rgba(255,45,120,0.5)' },
-]
+// Two sources for the same data: clustering can't be toggled on a live source,
+// so we keep a plain and a clustered copy and switch layer visibility instead
+// of rebuilding the map.
+const PARADE_SOURCES = ['parades', 'parades-cluster']
+const CIRCLE_LAYERS = ['parades-circles', 'parades-circles-cluster']
+const CLUSTER_LAYERS = ['parades-circles-cluster', 'clusters-circle', 'clusters-count']
+
+const CIRCLE_PAINT = {
+  'circle-radius': [
+    'case',
+    ['boolean', ['feature-state', 'hovered'], false],
+    ['get', 'radiusHover'],
+    ['get', 'radius'],
+  ],
+  'circle-color': ['get', 'color'],
+  'circle-opacity': 1,
+  'circle-stroke-width': [
+    'case',
+    ['boolean', ['feature-state', 'selected'], false], 2, 0.5,
+  ],
+  'circle-stroke-color': [
+    'case',
+    ['boolean', ['feature-state', 'selected'], false],
+    '#ffffff', 'rgba(255,255,255,0.15)',
+  ],
+}
 
 function paradesToGeoJSON(parades) {
   return {
@@ -29,13 +48,14 @@ function paradesToGeoJSON(parades) {
       .filter(p => p.lat != null && p.lon != null)
       .map(p => ({
         type: 'Feature',
-        id: p.id,
         geometry: { type: 'Point', coordinates: [p.lon, p.lat] },
         properties: {
           id: p.id,
           name: p.name,
           city: p.city,
           country: p.country,
+          lat: p.lat,
+          lon: p.lon,
           date: p.date,
           size: p.size,
           daysUntil: p.daysUntil,
@@ -91,6 +111,7 @@ function hereToGeoJSON(data) {
 
 export default function Map({
   parades, onSelect, view,
+  selectedId,
   isoOrigin, onIsoOriginSet,
   isoMode, isoPinning, onPinningDone,
   flyTo, onFlyToDone,
@@ -100,8 +121,11 @@ export default function Map({
   const containerRef = useRef(null)
   const mapRef = useRef(null)
   const [tooltip, setTooltip] = useState(null)
-  const hoveredId = useRef(null)
+  const hoveredRef = useRef(null) // { source, id }
+  const selectedIdRef = useRef(selectedId)
   const isoPinningRef = useRef(false)
+  const clusteringRef = useRef(clusteringEnabled)
+  const [mapLoaded, setMapLoaded] = useState(false)
   const [isoLoading, setIsoLoading] = useState(false)
   const [isoError, setIsoError] = useState(null)
 
@@ -126,68 +150,78 @@ export default function Map({
       onViewChange?.({ center: map.getCenter().toArray(), zoom: map.getZoom() })
     })
 
+    const clearHover = () => {
+      if (hoveredRef.current) {
+        map.setFeatureState({ source: hoveredRef.current.source, id: hoveredRef.current.id }, { hovered: false })
+        hoveredRef.current = null
+      }
+    }
+
+    const setHover = f => {
+      if (hoveredRef.current?.id !== f.properties.id || hoveredRef.current?.source !== f.source) {
+        clearHover()
+        hoveredRef.current = { source: f.source, id: f.properties.id }
+        map.setFeatureState({ source: f.source, id: f.properties.id }, { hovered: true })
+      }
+    }
+
     map.on('load', () => {
-      // ── Parade source ─────────────────────────────────────────────────────
-      map.addSource('parades', {
+      const data = paradesToGeoJSON(parades)
+      const clustered = clusteringRef.current
+
+      // ── Parade sources: plain + clustered twin ────────────────────────────
+      map.addSource('parades', { type: 'geojson', data, promoteId: 'id' })
+      map.addSource('parades-cluster', {
         type: 'geojson',
-        data: paradesToGeoJSON(parades),
-        generateId: false,
-        ...(clusteringEnabled ? { cluster: true, clusterMaxZoom: 7, clusterRadius: 35, clusterMinPoints: 4 } : {}),
+        data,
+        promoteId: 'id',
+        cluster: true,
+        clusterMaxZoom: 7,
+        clusterRadius: 35,
+        clusterMinPoints: 4,
       })
 
-      // Parade dots (filtered to unclustered only when clustering is on)
       map.addLayer({
         id: 'parades-circles',
         type: 'circle',
         source: 'parades',
-        ...(clusteringEnabled ? { filter: ['!', ['has', 'point_count']] } : {}),
+        layout: { visibility: clustered ? 'none' : 'visible' },
+        paint: CIRCLE_PAINT,
+      })
+      map.addLayer({
+        id: 'parades-circles-cluster',
+        type: 'circle',
+        source: 'parades-cluster',
+        filter: ['!', ['has', 'point_count']],
+        layout: { visibility: clustered ? 'visible' : 'none' },
+        paint: CIRCLE_PAINT,
+      })
+      map.addLayer({
+        id: 'clusters-circle',
+        type: 'circle',
+        source: 'parades-cluster',
+        filter: ['has', 'point_count'],
+        layout: { visibility: clustered ? 'visible' : 'none' },
         paint: {
-          'circle-radius': [
-            'case',
-            ['boolean', ['feature-state', 'hovered'], false],
-            ['get', 'radiusHover'],
-            ['get', 'radius'],
-          ],
-          'circle-color': ['get', 'color'],
-          'circle-opacity': 1,
-          'circle-stroke-width': [
-            'case',
-            ['boolean', ['feature-state', 'selected'], false], 2, 0.5,
-          ],
-          'circle-stroke-color': [
-            'case',
-            ['boolean', ['feature-state', 'selected'], false],
-            '#ffffff', 'rgba(255,255,255,0.15)',
-          ],
+          'circle-color': '#252525',
+          'circle-radius': ['step', ['get', 'point_count'], 14, 10, 18, 30, 22],
+          'circle-stroke-width': 1.5,
+          'circle-stroke-color': '#555',
         },
       })
-
-      if (clusteringEnabled) {
-        map.addLayer({
-          id: 'clusters-circle',
-          type: 'circle',
-          source: 'parades',
-          filter: ['has', 'point_count'],
-          paint: {
-            'circle-color': '#252525',
-            'circle-radius': ['step', ['get', 'point_count'], 14, 10, 18, 30, 22],
-            'circle-stroke-width': 1.5,
-            'circle-stroke-color': '#555',
-          },
-        })
-        map.addLayer({
-          id: 'clusters-count',
-          type: 'symbol',
-          source: 'parades',
-          filter: ['has', 'point_count'],
-          layout: {
-            'text-field': '{point_count_abbreviated}',
-            'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
-            'text-size': 11,
-          },
-          paint: { 'text-color': '#e8e8e8' },
-        })
-      }
+      map.addLayer({
+        id: 'clusters-count',
+        type: 'symbol',
+        source: 'parades-cluster',
+        filter: ['has', 'point_count'],
+        layout: {
+          'text-field': '{point_count_abbreviated}',
+          'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+          'text-size': 11,
+          visibility: clustered ? 'visible' : 'none',
+        },
+        paint: { 'text-color': '#e8e8e8' },
+      })
 
       // ── Isochrone sources + layers ────────────────────────────────────────
       map.addSource('isochrones', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } })
@@ -225,73 +259,95 @@ export default function Map({
       })
 
       // ── Cluster click → zoom in ───────────────────────────────────────────
-      if (clusteringEnabled) {
-        map.on('click', 'clusters-circle', async (e) => {
-          if (isoPinningRef.current) return
-          const feature = e.features[0]; if (!feature) return
-          const zoom = await map.getSource('parades').getClusterExpansionZoom(feature.properties.cluster_id)
-          map.easeTo({ center: feature.geometry.coordinates, zoom: zoom + 0.5 })
+      map.on('click', 'clusters-circle', async (e) => {
+        if (isoPinningRef.current) return
+        const feature = e.features[0]; if (!feature) return
+        const zoom = await map.getSource('parades-cluster').getClusterExpansionZoom(feature.properties.cluster_id)
+        map.easeTo({ center: feature.geometry.coordinates, zoom: zoom + 0.5 })
+      })
+      map.on('mouseenter', 'clusters-circle', () => { map.getCanvas().style.cursor = 'pointer' })
+      map.on('mouseleave', 'clusters-circle', () => { map.getCanvas().style.cursor = '' })
+
+      // ── Hover / click handlers (both circle layers) ───────────────────────
+      for (const layer of CIRCLE_LAYERS) {
+        map.on('mouseenter', layer, (e) => {
+          map.getCanvas().style.cursor = 'pointer'
+          const f = e.features[0]; if (!f) return
+          setHover(f)
+          const p = f.properties
+          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
         })
-        map.on('mouseenter', 'clusters-circle', () => { map.getCanvas().style.cursor = 'pointer' })
-        map.on('mouseleave', 'clusters-circle', () => { map.getCanvas().style.cursor = '' })
+
+        map.on('mousemove', layer, (e) => {
+          const f = e.features[0]; if (!f) return
+          setHover(f)
+          const p = f.properties
+          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
+        })
+
+        map.on('mouseleave', layer, () => {
+          map.getCanvas().style.cursor = ''
+          clearHover()
+          setTooltip(null)
+        })
+
+        map.on('click', layer, (e) => {
+          if (isoPinningRef.current) return
+          const f = e.features[0]; if (!f) return
+          onSelect(toSelection(f.properties))
+        })
       }
 
-      // ── Hover / click handlers ────────────────────────────────────────────
-      map.on('mouseenter', 'parades-circles', (e) => {
-        map.getCanvas().style.cursor = 'pointer'
-        const f = e.features[0]; if (!f) return
-        if (hoveredId.current !== null)
-          map.setFeatureState({ source: 'parades', id: hoveredId.current }, { hovered: false })
-        hoveredId.current = f.id
-        map.setFeatureState({ source: 'parades', id: f.id }, { hovered: true })
-        const p = f.properties
-        setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
-      })
-
-      map.on('mousemove', 'parades-circles', (e) => {
-        const f = e.features[0]; if (!f) return
-        if (hoveredId.current !== f.id) {
-          if (hoveredId.current !== null)
-            map.setFeatureState({ source: 'parades', id: hoveredId.current }, { hovered: false })
-          hoveredId.current = f.id
-          map.setFeatureState({ source: 'parades', id: f.id }, { hovered: true })
-        }
-        const p = f.properties
-        setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
-      })
-
-      map.on('mouseleave', 'parades-circles', () => {
-        map.getCanvas().style.cursor = ''
-        if (hoveredId.current !== null) {
-          map.setFeatureState({ source: 'parades', id: hoveredId.current }, { hovered: false })
-          hoveredId.current = null
-        }
-        setTooltip(null)
-      })
-
-      map.on('click', 'parades-circles', (e) => {
-        const f = e.features[0]; if (!f) return
-        onSelect(toSelection(f.properties))
-      })
-
+      // Click on empty map → deselect (hidden layers return no features)
       map.on('click', (e) => {
-        const queryLayers = clusteringEnabled
-          ? ['parades-circles', 'clusters-circle']
-          : ['parades-circles']
-        const hits = map.queryRenderedFeatures(e.point, { layers: queryLayers })
+        if (isoPinningRef.current) return
+        const hits = map.queryRenderedFeatures(e.point, {
+          layers: ['parades-circles', 'parades-circles-cluster', 'clusters-circle'],
+        })
         if (!hits.length) onSelect(null)
       })
+
+      // Apply selection that existed before the style finished loading
+      if (selectedIdRef.current != null) {
+        for (const src of PARADE_SOURCES)
+          map.setFeatureState({ source: src, id: selectedIdRef.current }, { selected: true })
+      }
+
+      setMapLoaded(true)
     })
 
     return () => map.remove()
   }, [])
 
+  // ── Toggle clustering via layer visibility (no map rebuild) ─────────────────
+  useEffect(() => {
+    clusteringRef.current = clusteringEnabled
+    const map = mapRef.current
+    if (!map || !mapLoaded || !map.getLayer('parades-circles')) return
+    map.setLayoutProperty('parades-circles', 'visibility', clusteringEnabled ? 'none' : 'visible')
+    for (const layer of CLUSTER_LAYERS)
+      map.setLayoutProperty(layer, 'visibility', clusteringEnabled ? 'visible' : 'none')
+  }, [clusteringEnabled, mapLoaded])
+
   // ── Sync parade data ────────────────────────────────────────────────────────
   useEffect(() => {
     const map = mapRef.current
-    if (!map || !map.getSource('parades')) return
-    map.getSource('parades').setData(paradesToGeoJSON(parades))
-  }, [parades])
+    if (!map || !mapLoaded) return
+    const data = paradesToGeoJSON(parades)
+    for (const src of PARADE_SOURCES) map.getSource(src)?.setData(data)
+  }, [parades, mapLoaded])
+
+  // ── Highlight selected parade ───────────────────────────────────────────────
+  useEffect(() => {
+    const prev = selectedIdRef.current
+    selectedIdRef.current = selectedId
+    const map = mapRef.current
+    if (!map || !mapLoaded || !map.getSource('parades')) return
+    for (const src of PARADE_SOURCES) {
+      if (prev != null) map.setFeatureState({ source: src, id: prev }, { selected: false })
+      if (selectedId != null) map.setFeatureState({ source: src, id: selectedId }, { selected: true })
+    }
+  }, [selectedId, mapLoaded])
 
   // ── Fly to view on switch ───────────────────────────────────────────────────
   useEffect(() => {
