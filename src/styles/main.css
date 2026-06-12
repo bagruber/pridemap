@@ -1453,6 +1453,18 @@ html, body, #root {
   }
 }
 
+/* ── Month filter grid ────────────────────────────────── */
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+.month-grid .toggle-btn {
+  padding: 4px 2px;
+  font-size: 11px;
+  text-align: center;
+}
+
 /* ── Detail panel action row ──────────────────────────── */
 .detail-btn-row {
   display: flex;

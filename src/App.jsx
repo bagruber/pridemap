@@ -43,6 +43,7 @@ export default function App() {
     countries: INITIAL_HASH?.countries ?? [],
     sizes: INITIAL_HASH?.sizes ?? VIEWS[INITIAL_HASH?.view ?? 'europe'].defaultSizes,
     timeframe: INITIAL_HASH?.timeframe ?? 'upcoming',
+    months: INITIAL_HASH?.months ?? [],
   })
   const [selectedParade, setSelectedParade] = useState(() => {
     if (!INITIAL_HASH?.selectedId) return null
@@ -98,6 +99,7 @@ export default function App() {
         countries: h.countries,
         sizes: h.sizes ?? VIEWS[h.view].defaultSizes,
         timeframe: h.timeframe,
+        months: h.months,
       })
       const p = h.selectedId ? parades.find(p => p.id === h.selectedId) : null
       setSelectedParade(p ? toSelection(p) : null)
@@ -162,6 +164,7 @@ export default function App() {
       countries: [],
       sizes: viewMode === 'list' ? [] : VIEWS[view].defaultSizes,
       timeframe: 'upcoming',
+      months: [],
     })
   }
 
@@ -178,6 +181,7 @@ export default function App() {
     return parades.filter(p => {
       if (filters.countries.length > 0 && !filters.countries.includes(p.country)) return false
       if (filters.sizes.length > 0 && !filters.sizes.includes(p.size)) return false
+      if (filters.months.length > 0 && !filters.months.includes(Number(p.date.slice(5, 7)))) return false
       if (filters.timeframe === 'upcoming' && p.daysUntil < 0) return false
       if (filters.timeframe === 'past' && p.daysUntil >= 0) return false
       if (filters.timeframe === 'weekend') {
@@ -193,7 +197,7 @@ export default function App() {
   }, [filters, parades, today])
 
   const activeFilterCount = filters.countries.length + filters.sizes.length +
-    (filters.timeframe !== 'upcoming' ? 1 : 0)
+    filters.months.length + (filters.timeframe !== 'upcoming' ? 1 : 0)
 
   return (
     <div className="app">

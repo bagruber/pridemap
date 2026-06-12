@@ -63,6 +63,9 @@ export const TRANSLATIONS = {
   // Detail panel actions
   viewOnMap:         { en: 'View on map',             de: 'Auf Karte zeigen' },
 
+  // Month filter
+  filterMonth:       { en: 'Month',                   de: 'Monat' },
+
   // List view
   searchParades:     { en: 'Search city, region…',    de: 'Stadt, Region suchen…' },
   sortBy:            { en: 'Sort:',                   de: 'Sortierung:' },

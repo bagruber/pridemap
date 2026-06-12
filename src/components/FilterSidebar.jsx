@@ -6,6 +6,7 @@ import { TIMEFRAMES, WEEKENDS } from '../utils/filterConstants.js'
 import { useFilterHandlers } from '../hooks/useFilterHandlers.js'
 import CountryFilter from './filters/CountryFilter.jsx'
 import SizeFilter from './filters/SizeFilter.jsx'
+import MonthFilter from './filters/MonthFilter.jsx'
 import LangToggle from './filters/LangToggle.jsx'
 import ViewModeToggle from './filters/ViewModeToggle.jsx'
 import RegionToggle from './filters/RegionToggle.jsx'
@@ -19,7 +20,7 @@ export default function FilterSidebar({
   onAboutClick,
 }) {
   const { lang } = useLang()
-  const { toggleCountry, toggleSize, setTimeframe } = useFilterHandlers(filters, onChange)
+  const { toggleCountry, toggleSize, toggleMonth, setTimeframe } = useFilterHandlers(filters, onChange)
 
   return (
     <div className="filter-sidebar">
@@ -62,6 +63,10 @@ export default function FilterSidebar({
               </button>
             ))}
           </div>
+        </div>
+
+        <div className="filter-group">
+          <MonthFilter filters={filters} onChange={onChange} toggleMonth={toggleMonth} />
         </div>
 
         <div className="filter-group">

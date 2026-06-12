@@ -8,6 +8,7 @@ import { WEEKENDS } from '../utils/filterConstants.js'
 import { useFilterHandlers } from '../hooks/useFilterHandlers.js'
 import CountryFilter from './filters/CountryFilter.jsx'
 import SizeFilter from './filters/SizeFilter.jsx'
+import MonthFilter from './filters/MonthFilter.jsx'
 import LangToggle from './filters/LangToggle.jsx'
 import ViewModeToggle from './filters/ViewModeToggle.jsx'
 import RegionToggle from './filters/RegionToggle.jsx'
@@ -24,7 +25,7 @@ export default function MobileSheet({
   const STOPS = ['min', 'peek', 'full']
   const [stop, setStop] = useState('peek')
   const dragStartY = useRef(null)
-  const { toggleCountry, toggleSize, setTimeframe } = useFilterHandlers(filters, onChange)
+  const { toggleCountry, toggleSize, toggleMonth, setTimeframe } = useFilterHandlers(filters, onChange)
 
   const cycle = dir => {
     const i = STOPS.indexOf(stop)
@@ -112,6 +113,10 @@ export default function MobileSheet({
               {t(WEEKENDS.find(w => w.value === 'next-weekend').key, lang)}
             </button>
           </div>
+        </div>
+
+        <div className="sheet-section">
+          <MonthFilter filters={filters} onChange={onChange} toggleMonth={toggleMonth} />
         </div>
 
         <div className="sheet-section">

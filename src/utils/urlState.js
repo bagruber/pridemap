@@ -13,6 +13,9 @@ export function readHash() {
       countries: params.has('countries')
         ? params.get('countries').split(',').filter(c => c.length >= 2)
         : [],
+      months: params.has('months')
+        ? params.get('months').split(',').map(Number).filter(m => Number.isInteger(m) && m >= 1 && m <= 12)
+        : [],
       selectedId: params.get('selected'),
       viewMode: params.get('mode') === 'list' ? 'list' : 'map',
     }
@@ -27,6 +30,7 @@ export function writeHash({ view, filters, selectedParade, viewMode }) {
   if (filters.sizes.length !== def.length || filters.sizes.some(s => !def.includes(s)))
     params.set('sizes', filters.sizes.join(','))
   if (filters.countries.length) params.set('countries', filters.countries.join(','))
+  if (filters.months.length) params.set('months', filters.months.join(','))
   if (selectedParade) params.set('selected', selectedParade.id)
   if (viewMode !== 'map') params.set('mode', viewMode)
   const qs = params.toString()

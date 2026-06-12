@@ -13,10 +13,17 @@ export function useFilterHandlers(filters, onChange) {
       : [...filters.sizes, size],
   })
 
+  const toggleMonth = month => onChange({
+    ...filters,
+    months: filters.months.includes(month)
+      ? filters.months.filter(m => m !== month)
+      : [...filters.months, month].sort((a, b) => a - b),
+  })
+
   const setTimeframe = value => onChange({
     ...filters,
     timeframe: filters.timeframe === value ? 'upcoming' : value,
   })
 
-  return { toggleCountry, toggleSize, setTimeframe }
+  return { toggleCountry, toggleSize, toggleMonth, setTimeframe }
 }
