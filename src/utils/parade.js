@@ -6,6 +6,8 @@ export function toSelection(p) {
     name: p.name,
     city: p.city,
     country: p.country,
+    lat: p.lat ?? null,
+    lon: p.lon ?? null,
     date: p.date,
     size: p.size,
     daysUntil: p.daysUntil,

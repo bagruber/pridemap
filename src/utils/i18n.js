@@ -60,6 +60,9 @@ export const TRANSLATIONS = {
   restrictive:       { en: 'Restrictive',             de: 'Restriktiv' },
   hostile:           { en: 'Hostile',                 de: 'Feindlich' },
 
+  // Detail panel actions
+  viewOnMap:         { en: 'View on map',             de: 'Auf Karte zeigen' },
+
   // List view
   searchParades:     { en: 'Search city, region…',    de: 'Stadt, Region suchen…' },
   sortBy:            { en: 'Sort:',                   de: 'Sortierung:' },

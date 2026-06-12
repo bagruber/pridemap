@@ -6,6 +6,7 @@ import IsoFAB from './components/IsoFAB.jsx'
 import DetailPanel from './components/DetailPanel.jsx'
 import Legend from './components/Legend.jsx'
 import ListView from './components/ListView.jsx'
+import MapSearch from './components/MapSearch.jsx'
 import Toast from './components/Toast.jsx'
 import EmptyState from './components/EmptyState.jsx'
 import AboutDialog from './components/AboutDialog.jsx'
@@ -145,6 +146,17 @@ export default function App() {
     )
   }
 
+  function handleSearchPick(p) {
+    setSelectedParade(toSelection(p))
+    setFlyTo([p.lon, p.lat])
+  }
+
+  function handleShowOnMap() {
+    if (selectedParade?.lat == null) return
+    if (viewMode !== 'map') switchViewMode('map')
+    setFlyTo([selectedParade.lon, selectedParade.lat])
+  }
+
   function clearFilters() {
     setFilters({
       countries: [],
@@ -258,20 +270,24 @@ export default function App() {
       )}
 
       {viewMode === 'map' && (
-        <button
-          className={`geo-btn ${!isMobile && sidebarOpen ? 'open' : ''}`}
-          onClick={handleGeolocate}
-          aria-label="Go to my location"
-          title="Near me"
-        >
-          <LocateFixed size={16} />
-        </button>
+        <>
+          <MapSearch parades={parades} onPick={handleSearchPick} />
+          <button
+            className={`geo-btn ${!isMobile && sidebarOpen ? 'open' : ''}`}
+            onClick={handleGeolocate}
+            aria-label="Go to my location"
+            title="Near me"
+          >
+            <LocateFixed size={16} />
+          </button>
+        </>
       )}
 
       {selectedParade && (
         <DetailPanel
           parade={selectedParade}
           onClose={() => setSelectedParade(null)}
+          onShowOnMap={selectedParade.lat != null ? handleShowOnMap : null}
         />
       )}
 

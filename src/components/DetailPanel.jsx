@@ -1,5 +1,5 @@
 import { FaInstagram, FaGlobe } from 'react-icons/fa'
-import { Info, X } from 'lucide-react'
+import { Info, MapPin, X } from 'lucide-react'
 import { indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
@@ -57,7 +57,7 @@ function downloadICS(parade) {
   URL.revokeObjectURL(a.href)
 }
 
-export default function DetailPanel({ parade, onClose }) {
+export default function DetailPanel({ parade, onClose, onShowOnMap }) {
   const { lang } = useLang()
   const { name, city, country, date, size, daysUntil, color, queerIndex, website, instagram, firstYear } = parade
   const isPast = daysUntil < 0
@@ -96,9 +96,17 @@ export default function DetailPanel({ parade, onClose }) {
         {countdownText}
       </div>
       <div className="detail-date">{formatted}</div>
-      {!isPast && (
-        <button className="cal-btn" onClick={() => downloadICS(parade)}>{t('addToCalendar', lang)}</button>
-      )}
+      <div className="detail-btn-row">
+        {!isPast && (
+          <button className="cal-btn" onClick={() => downloadICS(parade)}>{t('addToCalendar', lang)}</button>
+        )}
+        {onShowOnMap && (
+          <button className="cal-btn" onClick={onShowOnMap}>
+            <MapPin size={11} />
+            {t('viewOnMap', lang)}
+          </button>
+        )}
+      </div>
 
       <div className="detail-meta">
         <div className="detail-chip">
