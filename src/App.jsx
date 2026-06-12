@@ -112,6 +112,14 @@ export default function App() {
     if (viewMode === 'map' && !mapMounted) setMapMounted(true)
   }, [viewMode, mapMounted])
 
+  // Hidden demo driver for screen recordings: /?walkthrough plays a scripted tour
+  useEffect(() => {
+    if (!new URLSearchParams(window.location.search).has('walkthrough')) return
+    import('./demo/walkthrough.js')
+      .then(m => m.runWalkthrough())
+      .catch(err => console.error('[walkthrough]', err))
+  }, [])
+
   // Escape closes detail panel — unless a dialog is open or the user is typing
   useEffect(() => {
     const onKey = e => {

@@ -149,6 +149,8 @@ export default function Map({
       attributionControl: { compact: true },
     })
     mapRef.current = map
+    // Exposed only for the hidden /?walkthrough demo driver
+    if (new URLSearchParams(window.location.search).has('walkthrough')) window.__pridemapMap = map
 
     map.on('moveend', () => {
       onViewChange?.({ center: map.getCenter().toArray(), zoom: map.getZoom() })
