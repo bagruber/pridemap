@@ -23,7 +23,16 @@ import { readHash, writeHash } from './utils/urlState.js'
 // Lazy so maplibre-gl lands in its own chunk; only loaded once the map is shown
 const Map = lazy(() => import('./components/Map.jsx'))
 
+// Optional ?date=YYYY-MM-DD pins "today" to a fixed day for the whole session
+// (used by the walkthrough to record from a past date's perspective). It's a
+// query param, not a hash key, so it survives the app's hash rewriting.
 function startOfToday() {
+  const override = new URLSearchParams(window.location.search).get('date')
+  if (override && /^\d{4}-\d{2}-\d{2}$/.test(override)) {
+    const [y, m, d] = override.split('-').map(Number)
+    const dt = new Date(y, m - 1, d)
+    if (!Number.isNaN(dt.getTime())) { dt.setHours(0, 0, 0, 0); return dt }
+  }
   const d = new Date()
   d.setHours(0, 0, 0, 0)
   return d
