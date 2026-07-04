@@ -1465,6 +1465,49 @@ html, body, #root {
   text-align: center;
 }
 
+/* ── First-time / premiere badge ──────────────────────── */
+:root { --premiere: #ffd447; }
+
+.premiere-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--premiere);
+  background: rgba(255, 212, 71, 0.12);
+  border: 1px solid rgba(255, 212, 71, 0.45);
+}
+
+/* Compact pill in list rows */
+.list-premiere {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 1px 5px;
+  border-radius: 10px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--premiere);
+  background: rgba(255, 212, 71, 0.12);
+  border: 1px solid rgba(255, 212, 71, 0.4);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Gold-ringed dot in the legend, mirroring the map treatment */
+.legend-dot-premiere {
+  background: var(--text-dim);
+  box-shadow: 0 0 0 1.5px var(--premiere);
+}
+
 /* ── Detail panel action row ──────────────────────────── */
 .detail-btn-row {
   display: flex;

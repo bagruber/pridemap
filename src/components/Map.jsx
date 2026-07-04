@@ -4,7 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 import { decode } from '@here/flexpolyline'
 import Tooltip from './Tooltip.jsx'
 import { colorForDays } from '../utils/timeColors.js'
-import { toSelection } from '../utils/parade.js'
+import { toSelection, isFirstTime } from '../utils/parade.js'
 import { VIEWS } from '../config/views.js'
 import { ISO_BANDS } from '../config/isoBands.js'
 
@@ -34,14 +34,18 @@ const CIRCLE_PAINT = {
   ],
   'circle-color': ['get', 'color'],
   'circle-opacity': 1,
+  // First-time prides wear a gold ring as a "premiere sticker"; selection still wins
   'circle-stroke-width': [
     'case',
-    ['boolean', ['feature-state', 'selected'], false], 2, 0.5,
+    ['boolean', ['feature-state', 'selected'], false], 2,
+    ['boolean', ['get', 'firstTime'], false], 2,
+    0.5,
   ],
   'circle-stroke-color': [
     'case',
-    ['boolean', ['feature-state', 'selected'], false],
-    '#ffffff', 'rgba(255,255,255,0.15)',
+    ['boolean', ['feature-state', 'selected'], false], '#ffffff',
+    ['boolean', ['get', 'firstTime'], false], '#ffd447',
+    'rgba(255,255,255,0.15)',
   ],
 }
 
@@ -70,6 +74,7 @@ function paradesToGeoJSON(parades) {
           website: p.website ?? null,
           instagram: p.instagram ?? null,
           firstYear: p.firstYear ?? null,
+          firstTime: isFirstTime(p),
         },
       })),
   }

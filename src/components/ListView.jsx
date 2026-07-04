@@ -1,10 +1,10 @@
 import { useState, useMemo } from 'react'
-import { X, SearchX } from 'lucide-react'
+import { X, SearchX, Sparkles } from 'lucide-react'
 import { colorForDays } from '../utils/timeColors.js'
 import { flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t, cityName, labelForDaysL10n, formatDate } from '../utils/i18n.js'
-import { toSelection } from '../utils/parade.js'
+import { toSelection, isFirstTime } from '../utils/parade.js'
 import { norm } from '../utils/text.js'
 import MiniLegend from './MiniLegend.jsx'
 
@@ -38,6 +38,12 @@ function ListRow({ parade, onSelect, lang }) {
       <span className={`${flag(parade.country)} list-flag fi`} />
       <div className="list-main">
         <span className="list-city">{displayCity}</span>
+        {isFirstTime(parade) && (
+          <span className="list-premiere" title={t('firstTimeNote', lang)}>
+            <Sparkles size={9} aria-hidden="true" />
+            {t('firstTimeShort', lang)}
+          </span>
+        )}
         {parade.region && <span className="list-region">{parade.region}</span>}
         {hasCustomName && <span className="list-name">{parade.name}</span>}
       </div>

@@ -1,7 +1,8 @@
 import { FaInstagram, FaGlobe } from 'react-icons/fa'
-import { Info, MapPin, X } from 'lucide-react'
+import { Info, MapPin, Sparkles, X } from 'lucide-react'
 import { indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
+import { isFirstTime } from '../utils/parade.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t, cityName, indexLabelL10n, labelForDaysLong, formatDate } from '../utils/i18n.js'
 import attendanceData from '../data/attendance.json'
@@ -79,11 +80,18 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
   const countryName = COUNTRY_NAMES[country] ?? country
   const displayCity = cityName(city, lang)
   const att = attendanceLookup[city]
+  const firstTime = isFirstTime(parade)
 
   return (
     <div className="detail-panel">
       <div className="detail-header">
         <div>
+          {firstTime && (
+            <div className="premiere-badge" title={t('firstTimeNote', lang)}>
+              <Sparkles size={11} aria-hidden="true" />
+              {t('firstTime', lang)}
+            </div>
+          )}
           <div className="detail-city-name" style={{ color }}>{displayCity}</div>
           <div className="detail-title">{name}</div>
         </div>
@@ -117,7 +125,7 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
           · {sizeLabel}
           <Info size={11} className="detail-chip-info" aria-hidden="true" />
         </div>
-        {firstYear && (
+        {firstYear && !firstTime && (
           <div className="detail-chip">· {t('established', lang)} {firstYear}</div>
         )}
       </div>

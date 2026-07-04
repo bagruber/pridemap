@@ -36,6 +36,12 @@ export default function Legend() {
           <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>{t(s.key, lang)}</span>
         </div>
       ))}
+
+      <hr className="legend-divider" />
+      <div className="legend-item">
+        <div className="legend-dot legend-dot-premiere" />
+        <span>{t('firstTime', lang)}</span>
+      </div>
     </div>
   )
 }

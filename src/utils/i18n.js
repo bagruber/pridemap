@@ -60,6 +60,11 @@ export const TRANSLATIONS = {
   restrictive:       { en: 'Restrictive',             de: 'Restriktiv' },
   hostile:           { en: 'Hostile',                 de: 'Feindlich' },
 
+  // First-time / premiere badge
+  firstTime:         { en: 'First edition',           de: 'Premiere' },
+  firstTimeShort:    { en: '1st',                     de: 'Neu' },
+  firstTimeNote:     { en: 'Happening for the first time in 2026', de: 'Findet 2026 zum ersten Mal statt' },
+
   // Detail panel actions
   viewOnMap:         { en: 'View on map',             de: 'Auf Karte zeigen' },
 
