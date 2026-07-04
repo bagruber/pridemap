@@ -1,4 +1,4 @@
-import{p as C}from"./index-CBs1NnKJ.js";const f={lng:13.456,lat:48.574},e=t=>new Promise(a=>setTimeout(a,t*(.85+Math.random()*.3))),c=t=>console.log(`[walkthrough] ${t}`);async function g(t,a=15e3){const i=Date.now();for(;Date.now()-i<a;){const s=t();if(s)return s;await new Promise(w=>setTimeout(w,100))}throw new Error("walkthrough: timed out")}function E(){const t=document.createElement("style");t.textContent=`
+import{p as C}from"./index-DYxR5wiw.js";const f={lng:13.456,lat:48.574},e=t=>new Promise(a=>setTimeout(a,t*(.85+Math.random()*.3))),c=t=>console.log(`[walkthrough] ${t}`);async function g(t,a=15e3){const i=Date.now();for(;Date.now()-i<a;){const s=t();if(s)return s;await new Promise(w=>setTimeout(w,100))}throw new Error("walkthrough: timed out")}function E(){const t=document.createElement("style");t.textContent=`
 @keyframes demo-tap-pulse {
   0%   { transform: translate(-50%,-50%) scale(0.5); opacity: 0.85; }
   100% { transform: translate(-50%,-50%) scale(1.6); opacity: 0; }
