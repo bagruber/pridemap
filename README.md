@@ -19,6 +19,8 @@ Pride parades happen across hundreds of European cities every year, but informat
 - Geolocation button to fly the map to your current position.
 - German and English translations.
 - Shareable URLs: the active view, filters and selected event are encoded in the URL hash so a link reproduces exactly what you see.
+- A crawlable static page per event in both languages (`/de/<slug>/`, `/en/<slug>/`), plus country and month hub pages — generated at build time so search engines and link previews see real content, not an empty SPA shell.
+- A share image per event (map background with the event card), used as the OG/preview image and as the hero on its page. A 1080×1920 story version can be rendered on demand.
 
 ## Tech stack
 
@@ -59,6 +61,22 @@ npm run prepare-data
 ```
 
 For isochrones, create a `.env` with `VITE_HERE_API_KEY=<your key>`. Without it, the isochrone panel is visible but inactive.
+
+### Static pages and share images
+
+The canonical build (`npm run build:hostinger`) does three things beyond the SPA bundle:
+
+```
+npm run og            # render one 1200×630 share image per event
+vite build --base=/   # the app itself
+node scripts/prerender.mjs   # event + hub pages, sitemap, homepage JSON-LD
+```
+
+- **Share images** are rendered by `scripts/og-images.mjs`: a card drawn over a mosaic of CARTO raster tiles, screenshotted with headless Chromium. They land in `og-cache/` (gitignored) and are copied into `dist/og/` by the prerenderer. Generation is incremental — existing files are skipped, so only new events cost time. Use `npm run og:force` to redo everything, and `node scripts/og-images.mjs --story <slug>` for a 1080×1920 story version.
+- Chromium comes from the Playwright cache. If it is missing, run `npx playwright install chromium` or point `PLAYWRIGHT_CHROMIUM_PATH` at a binary.
+- **Pages** are written by `scripts/prerender.mjs`: `/de/<slug>/` and `/en/<slug>/` per event, country and month hubs, a language index each, and a sitemap with hreflang alternates. Slugs and localized vocabulary live in `scripts/lib/pages.mjs`.
+
+The GitHub Pages build stays SPA-only on purpose — its `index.html` canonicalises to `pridemap.net`, so the mirror does not compete with the canonical site for the same content.
 
 ## Forking and deploying
 

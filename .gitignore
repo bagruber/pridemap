@@ -3,3 +3,8 @@ dist/
 .env
 .env.local
 private/
+
+# Generated share images — rebuilt by `npm run og`, copied into dist/ by the
+# prerenderer. Kept out of the repo to avoid ~150 MB of binary bloat; the local
+# copy doubles as the incremental cache (regeneration skips existing files).
+og-cache/

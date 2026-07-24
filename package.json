@@ -9,7 +9,9 @@
     "build:colorful": "vite build --mode colorful && node scripts/inject-jsonld.mjs",
     "preview": "vite preview",
     "deploy": "npm run build:colorful && gh-pages -d dist",
-    "build:hostinger": "vite build --base=/ && node scripts/inject-jsonld.mjs",
+    "og": "node scripts/og-images.mjs",
+    "og:force": "node scripts/og-images.mjs --force",
+    "build:hostinger": "npm run og && vite build --base=/ && node scripts/prerender.mjs",
     "deploy:hostinger": "npm run build:hostinger && gh-pages -d dist -b hostinger",
     "prepare-data": "node scripts/prepare-data.js"
   },
@@ -26,6 +28,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
     "gh-pages": "^6.3.0",
+    "playwright-core": "^1.61.1",
     "vite": "^6.0.5"
   }
 }
