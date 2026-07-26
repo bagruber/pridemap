@@ -2,7 +2,7 @@
 
 An interactive map of Pride parades across Europe for 2026. Each event is plotted as a coloured dot whose hue encodes how soon the event is and whose size encodes how large it is. The intent is simple: make it easy to see, at a glance, which parades are coming up near you and how the calendar fills out across the continent over the year.
 
-Live site: https://decentbi.github.io/pridemap/
+Live site: https://pridemap.net/ — with a GitHub Pages mirror at https://bagruber.github.io/pridemap/ (SPA only; it canonicalises to the main domain).
 
 ## Purpose
 
@@ -83,8 +83,10 @@ The GitHub Pages build stays SPA-only on purpose — its `index.html` canonicali
 A few things to check if you fork the project or deploy it under a different name or host.
 
 - **Base path.** `vite.config.js` sets `base: '/pridemap/'`. This must match the path your site is served from. For a GitHub Pages project site at `https://<user>.github.io/<repo>/`, set this to `'/<repo>/'`. For a custom domain or root deployment, set it to `'/'`.
-- **Font paths are absolute.** `src/styles/main.css` references the Gilbert font at `/pridemap/fonts/...`. If you change the base path, update those `@font-face` URLs to match, or refactor them to use a relative path.
-- **GitHub Pages deploy target.** `npm run deploy` pushes the contents of `dist/` to the `gh-pages` branch via the `gh-pages` package. Make sure your repository has GitHub Pages enabled and pointed at the `gh-pages` branch.
+- **Font paths.** The Gilbert `@font-face` rules are injected at runtime in `src/main.jsx` using `import.meta.env.BASE_URL`, so they follow the base path automatically. The prerendered static pages, however, reference `/fonts/...` absolutely — they are only generated for the root-served canonical build, so change that in `scripts/prerender.mjs` if you serve them from a subpath.
+- **Deploy targets.** `npm run deploy` pushes `dist/` to the `gh-pages` branch; `npm run deploy:hostinger` builds with `--base=/`, prerenders the static pages and pushes to the `hostinger` branch. Both use the `gh-pages` package, so make sure the repository has Pages enabled and pointed at the right branch.
+- **`gh-pages` cache.** If a deploy fails with `fatal: a branch named '<branch>' already exists`, the package's clone cache is stale. Clear it with `rm -rf node_modules/.cache/gh-pages` (or `npx gh-pages-clean`) and deploy again.
+- **Canonical domain.** `index.html` and every prerendered page canonicalise to `https://pridemap.net`. If you fork this, change `ORIGIN` in `scripts/lib/pages.mjs` and the `canonical`/OG tags in `index.html`, otherwise you are pointing search engines at someone else's site.
 - **HERE API key.** The HERE key is read from `import.meta.env.VITE_HERE_API_KEY` at build time and ends up in the bundled JavaScript. This is unavoidable for a static site. Use a key with referrer or domain restrictions configured in the HERE developer portal, and rotate it if it leaks.
 - **Tile source attribution.** CartoDB requires attribution. MapLibre injects the attribution control automatically; do not remove it.
 - **Analytics.** The current build includes a GoatCounter snippet (look in `index.html`). Replace or remove it before deploying under your own name.
