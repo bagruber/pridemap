@@ -85,7 +85,7 @@ export default function ListView({ parades, onSelect }) {
   }, [parades, query, sortBy, lang])
 
   return (
-    <div className="list-view">
+    <main className="list-view">
       <div className="list-toolbar">
         <div className="list-search-wrap">
           <input
@@ -134,6 +134,6 @@ export default function ListView({ parades, onSelect }) {
             ))
         }
       </div>
-    </div>
+    </main>
   )
 }

@@ -23,7 +23,7 @@ export default function FilterSidebar({
   const { toggleCountry, toggleSize, toggleMonth, setTimeframe } = useFilterHandlers(filters, onChange)
 
   return (
-    <div className="filter-sidebar">
+    <aside className="filter-sidebar" aria-label="Filters">
       <div className="sidebar-header">
         <div className="sidebar-title-row">
           <ColoredTitle />
@@ -90,7 +90,7 @@ export default function FilterSidebar({
         </div>
       </div>
 
-      <div className="sidebar-footer">
+      <footer className="sidebar-footer">
         <div className="sidebar-footer-row">
           <span>{t('missingParade', lang)}</span>
           <a href="https://forms.gle/oo6vk3QfANXskXku8" className="suggest-link" target="_blank" rel="noopener noreferrer">
@@ -101,7 +101,7 @@ export default function FilterSidebar({
           <ShareButton />
           <button className="about-link" onClick={onAboutClick}>{t('about', lang)}</button>
         </div>
-      </div>
-    </div>
+      </footer>
+    </aside>
   )
 }

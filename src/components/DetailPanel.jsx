@@ -92,7 +92,7 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
               {t('firstTime', lang)}
             </div>
           )}
-          <div className="detail-city-name" style={{ color }}>{displayCity}</div>
+          <h2 className="detail-city-name" style={{ color }}>{displayCity}</h2>
           <div className="detail-title">{name}</div>
         </div>
         <button className="detail-close" onClick={onClose} aria-label="Close">
@@ -152,10 +152,17 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
               {queerIndex}% · {indexLabelL10n(queerIndex, lang)}
             </span>
           </div>
-          <div className="index-bar-track">
+          <div
+            className="index-bar-track"
+            role="meter"
+            aria-valuenow={queerIndex}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-label={t('ilgaIndex', lang)}
+          >
             <div
               className="index-bar-fill"
-              style={{ width: `${queerIndex}%`, background: indexColor(queerIndex) }}
+              style={{ transform: `scaleX(${queerIndex / 100})`, background: indexColor(queerIndex) }}
             />
           </div>
         </div>

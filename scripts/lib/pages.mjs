@@ -10,6 +10,27 @@ export const ORIGIN = 'https://pridemap.net'
 export const LANGS = ['de', 'en']
 export const YEAR = 2026
 
+// ── Design tokens ────────────────────────────────────────────────────────────
+// Single source for everything rendered outside the app (static pages, share
+// images). Values mirror :root in src/styles/main.css — keep them in step.
+// `dim` is deliberately absent: it failed WCAG AA as text, and the static
+// pages only ever used it for text.
+export const TOKENS = {
+  bg: '#0e0e0e',
+  surface: '#171717',
+  surface2: '#1f1f1f',
+  border: '#2a2a2a',
+  text: '#e8e8e8',
+  muted: '#888888',
+  // Non-text UI only (hover borders) — clears 3:1, not 4.5:1
+  dimUi: '#6e6e6e',
+  accent: '#ff2d78',
+  premiere: '#ffd447',
+}
+
+export const PRIDE_STOPS = ['#E40303', '#FF8C00', '#FFED00', '#008026', '#004DFF', '#750787']
+export const PRIDE_GRADIENT = `linear-gradient(90deg, ${PRIDE_STOPS.join(', ')})`
+
 // ── Slugs ────────────────────────────────────────────────────────────────────
 const TRANSLIT = {
   ä: 'ae', ö: 'oe', ü: 'ue', ß: 'ss',

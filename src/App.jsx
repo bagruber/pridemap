@@ -220,7 +220,7 @@ export default function App() {
     <div className="app">
       {/* Map — hidden in list mode but kept mounted to preserve position */}
       {mapMounted && (
-        <div className="map-wrap" style={{ display: viewMode === 'map' ? undefined : 'none' }}>
+        <main className="map-wrap" style={{ display: viewMode === 'map' ? undefined : 'none' }}>
           <Suspense fallback={null}>
             <Map
               parades={filteredParades}
@@ -248,7 +248,7 @@ export default function App() {
               />
             </div>
           )}
-        </div>
+        </main>
       )}
 
       {/* List view */}

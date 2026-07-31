@@ -13,6 +13,7 @@ import os from 'os'
 import { chromium } from 'playwright-core'
 import {
   buildSlugMap, cityName, countryName, formatDate, isFirstTime, escapeHtml, YEAR,
+  TOKENS, PRIDE_STOPS,
 } from './lib/pages.mjs'
 
 // Outside public/ on purpose: only the canonical build copies these into dist,
@@ -70,7 +71,7 @@ const FONT_CSS = `
 @font-face{font-family:'Sofia Sans';src:url(data:font/woff2;base64,${fontB64(400)}) format('woff2');font-weight:400;font-display:block}
 @font-face{font-family:'Sofia Sans';src:url(data:font/woff2;base64,${fontB64(700)}) format('woff2');font-weight:700;font-display:block}`
 
-const PRIDE = '#E40303,#FF8C00,#FFED00,#008026,#004DFF,#750787'
+const PRIDE = PRIDE_STOPS.join(',')
 
 // ── Template ─────────────────────────────────────────────────────────────────
 function template(p, { w, h, story }) {
@@ -92,7 +93,7 @@ function template(p, { w, h, story }) {
 ${FONT_CSS}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:${w}px;height:${h}px;overflow:hidden;background:#0e0e0e;
-  font-family:'Sofia Sans',system-ui,sans-serif;color:#e8e8e8;-webkit-font-smoothing:antialiased}
+  font-family:'Sofia Sans',system-ui,sans-serif;color:${TOKENS.text};-webkit-font-smoothing:antialiased}
 .map{position:absolute;inset:0;overflow:hidden;
   /* CARTO's dark basemap is near-black; lift it so it still reads behind the card */
   filter:brightness(1.75) saturate(1.15) contrast(1.05)}
@@ -102,14 +103,14 @@ html,body{width:${w}px;height:${h}px;overflow:hidden;background:#0e0e0e;
 .vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,transparent 45%,rgba(0,0,0,.4) 100%)}
 .pin{position:absolute;left:50%;top:${pinY * 100}%;transform:translate(-50%,-50%)}
 .pin i{display:block;width:${story ? 26 : 20}px;height:${story ? 26 : 20}px;border-radius:50%;
-  background:#ff2d78;border:${story ? 4 : 3}px solid #fff;box-shadow:0 0 0 ${story ? 10 : 8}px rgba(255,45,120,.22),0 6px 20px rgba(0,0,0,.6)}
+  background:${TOKENS.accent};border:${story ? 4 : 3}px solid #fff;box-shadow:0 0 0 ${story ? 10 : 8}px rgba(255,45,120,.22),0 6px 20px rgba(0,0,0,.6)}
 /* Stories: keep everything clear of Instagram's bottom reply UI */
 .card{position:absolute;left:0;right:0;bottom:0;padding:${S.pad}px;padding-bottom:${story ? 200 : S.pad}px}
 .bar{height:5px;border-radius:3px;width:${story ? 150 : 110}px;margin-bottom:${story ? 26 : 18}px;
   background:linear-gradient(90deg,${PRIDE})}
 .badge{display:inline-flex;align-items:center;gap:6px;padding:${story ? '6px 15px' : '4px 11px'};
   border-radius:24px;font-size:${S.badge}px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;
-  color:#ffd447;background:rgba(255,212,71,.14);border:1.5px solid rgba(255,212,71,.5);
+  color:${TOKENS.premiere};background:rgba(255,212,71,.14);border:1.5px solid rgba(255,212,71,.5);
   margin-bottom:${story ? 20 : 13}px}
 h1{font-size:${S.name}px;line-height:1.05;font-weight:700;letter-spacing:-1px;
   margin-bottom:${story ? 16 : 11}px;text-shadow:0 2px 24px rgba(0,0,0,.7)}
@@ -117,7 +118,7 @@ h1{font-size:${S.name}px;line-height:1.05;font-weight:700;letter-spacing:-1px;
 .date{font-size:${S.date}px;font-weight:700;color:#fff}
 .foot{position:absolute;left:${S.pad}px;right:${S.pad}px;bottom:${story ? 120 : 18}px;
   display:flex;justify-content:space-between;align-items:flex-end;
-  font-size:${story ? 17 : 12}px;color:#8a8a8a}
+  font-size:${story ? 17 : 12}px;color:${TOKENS.muted}}
 .brand{font-size:${S.brand}px;font-weight:700;background:linear-gradient(90deg,${PRIDE});
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .attr{font-size:${story ? 13 : 10}px;color:#6a6a6a}

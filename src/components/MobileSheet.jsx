@@ -88,72 +88,75 @@ export default function MobileSheet({
       </div>
 
       <div className="sheet-body">
-        <div className="sheet-section">
-          <ViewModeToggle viewMode={viewMode} onViewModeChange={onViewModeChange} />
-        </div>
-
-        <div className="sheet-top-row">
-          <RegionToggle view={view} onViewChange={onViewChange} withLabel />
-          <LangToggle />
-        </div>
-
-        <div className="sheet-section">
-          <div className="filter-label">{t('filterTime', lang)}</div>
-          <div className="toggle-group">
-            <button
-              className={`toggle-btn ${filters.timeframe === 'past' ? 'active' : ''}`}
-              onClick={() => onChange({ ...filters, timeframe: 'past' })}
-            >
-              {t('past', lang)}
-            </button>
-            <button
-              className={`toggle-btn ${filters.timeframe === 'next-weekend' ? 'active' : ''}`}
-              onClick={() => setTimeframe('next-weekend')}
-            >
-              {t(WEEKENDS.find(w => w.value === 'next-weekend').key, lang)}
-            </button>
+        {/* Inner wrapper is what the 0fr → 1fr grid track collapses */}
+        <div className="sheet-body-inner">
+          <div className="sheet-section">
+            <ViewModeToggle viewMode={viewMode} onViewModeChange={onViewModeChange} />
           </div>
-        </div>
 
-        <div className="sheet-section">
-          <MonthFilter filters={filters} onChange={onChange} toggleMonth={toggleMonth} />
-        </div>
+          <div className="sheet-top-row">
+            <RegionToggle view={view} onViewChange={onViewChange} withLabel />
+            <LangToggle />
+          </div>
 
-        <div className="sheet-section">
-          <SizeFilter filters={filters} onChange={onChange} toggleSize={toggleSize} />
-        </div>
+          <div className="sheet-section">
+            <div className="filter-label">{t('filterTime', lang)}</div>
+            <div className="toggle-group">
+              <button
+                className={`toggle-btn ${filters.timeframe === 'past' ? 'active' : ''}`}
+                onClick={() => onChange({ ...filters, timeframe: 'past' })}
+              >
+                {t('past', lang)}
+              </button>
+              <button
+                className={`toggle-btn ${filters.timeframe === 'next-weekend' ? 'active' : ''}`}
+                onClick={() => setTimeframe('next-weekend')}
+              >
+                {t(WEEKENDS.find(w => w.value === 'next-weekend').key, lang)}
+              </button>
+            </div>
+          </div>
 
-        <div className="sheet-section">
-          <CountryFilter
-            filters={filters}
-            onChange={onChange}
-            allCountries={allCountries}
-            toggleCountry={toggleCountry}
-            listClassName="mobile-country-list"
-          />
-        </div>
+          <div className="sheet-section">
+            <MonthFilter filters={filters} onChange={onChange} toggleMonth={toggleMonth} />
+          </div>
 
-        <div className="sheet-section">
-          <ClusterToggle
-            clusteringEnabled={clusteringEnabled}
-            onClusteringChange={onClusteringChange}
-          />
-        </div>
+          <div className="sheet-section">
+            <SizeFilter filters={filters} onChange={onChange} toggleSize={toggleSize} />
+          </div>
 
-        <div className="sheet-footer">
-          <span>{t('missingParade', lang)}</span>
-          <a
-            href="https://forms.gle/oo6vk3QfANXskXku8"
-            className="suggest-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t('suggestOne', lang)}
-          </a>
-        </div>
-        <div className="sheet-footer-actions">
-          <ShareButton />
-          <button className="about-link" onClick={onAboutClick}>{t('about', lang)}</button>
+          <div className="sheet-section">
+            <CountryFilter
+              filters={filters}
+              onChange={onChange}
+              allCountries={allCountries}
+              toggleCountry={toggleCountry}
+              listClassName="mobile-country-list"
+            />
+          </div>
+
+          <div className="sheet-section">
+            <ClusterToggle
+              clusteringEnabled={clusteringEnabled}
+              onClusteringChange={onClusteringChange}
+            />
+          </div>
+
+          <div className="sheet-footer">
+            <span>{t('missingParade', lang)}</span>
+            <a
+              href="https://forms.gle/oo6vk3QfANXskXku8"
+              className="suggest-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('suggestOne', lang)}
+            </a>
+          </div>
+          <div className="sheet-footer-actions">
+            <ShareButton />
+            <button className="about-link" onClick={onAboutClick}>{t('about', lang)}</button>
+          </div>
         </div>
       </div>
     </div>

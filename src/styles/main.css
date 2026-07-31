@@ -12,7 +12,10 @@
   --border: #2a2a2a;
   --text: #e8e8e8;
   --text-muted: #888;
-  --text-dim: #555;
+  /* Non-text UI only — hover borders, the sheet handle, legend dots. It clears
+     the 3:1 bar for graphical objects but not the 4.5:1 one for text, so text
+     that used to sit at the old #555 now uses --text-muted instead. */
+  --text-dim: #6e6e6e;
   --accent: #ff2d78;
   --radius: 4px;
   --font: 'Sofia Sans', 'Nunito', system-ui, sans-serif;
@@ -54,10 +57,10 @@ html, body, #root {
 
 .maplibregl-ctrl-attrib {
   background: rgba(14, 14, 14, 0.75) !important;
-  color: var(--text-dim) !important;
-  font-size: 10px !important;
+  color: var(--text-muted) !important;
+  font-size: 11px !important;
 }
-.maplibregl-ctrl-attrib a { color: var(--text-dim) !important; }
+.maplibregl-ctrl-attrib a { color: var(--text-muted) !important; }
 
 /* ── Sidebar toggle ───────────────────────────────── */
 .sidebar-toggle {
@@ -119,7 +122,7 @@ html, body, #root {
   right: -5px;
   background: var(--accent);
   color: #fff;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   width: 16px;
   height: 16px;
@@ -188,7 +191,7 @@ html, body, #root {
 .view-btn-label { display: none; }
 .mobile-sheet .view-btn { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 8px; }
 .mobile-sheet .view-flag { width: 22px; height: 14px; }
-.mobile-sheet .view-btn-label { display: block; font-size: 10px; }
+.mobile-sheet .view-btn-label { display: block; font-size: 11px; }
 .view-btn.active {
   background: var(--surface2);
   border-color: var(--text-muted);
@@ -197,7 +200,7 @@ html, body, #root {
 }
 
 .sidebar-count {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--text-muted);
 }
 .sidebar-count strong { color: var(--text); font-weight: 600; }
@@ -213,7 +216,7 @@ html, body, #root {
 .sidebar-footer {
   padding: 10px 16px;
   border-top: 1px solid var(--border);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--text-muted);
   display: flex;
   flex-direction: column;
@@ -227,14 +230,14 @@ html, body, #root {
 }
 .sidebar-disclaimer {
   margin: 0;
-  font-size: 10px;
-  color: var(--text-dim);
+  font-size: 12px;
+  color: var(--text-muted);
   line-height: 1.4;
 }
 .sidebar-credit {
   margin: 4px 0 0;
-  font-size: 10px;
-  color: var(--text-dim);
+  font-size: 12px;
+  color: var(--text-muted);
 }
 
 .suggest-link {
@@ -265,7 +268,7 @@ html, body, #root {
 }
 
 .filter-label {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -337,7 +340,7 @@ html, body, #root {
 .country-item input[type="checkbox"] { accent-color: var(--accent); width: 12px; height: 12px; flex-shrink: 0; }
 .country-flag { width: 18px; height: 13px; background-size: contain; flex-shrink: 0; }
 .country-name { font-size: 12px; color: var(--text); flex: 1; }
-.country-code { font-size: 10px; color: var(--text-dim); }
+.country-code { font-size: 11px; color: var(--text-muted); }
 
 .clear-btn {
   background: none;
@@ -364,7 +367,7 @@ html, body, #root {
 }
 
 .legend-title {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -475,7 +478,7 @@ html, body, #root {
   letter-spacing: -0.3px;
   margin-bottom: 3px;
 }
-.detail-countdown.past { color: var(--text-dim); }
+.detail-countdown.past { color: var(--text-muted); }
 
 .detail-date {
   font-size: 11px;
@@ -506,7 +509,7 @@ html, body, #root {
 }
 
 .detail-stat-label {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.7px;
@@ -532,7 +535,7 @@ html, body, #root {
 .detail-index { margin-top: 8px; }
 
 .index-label {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
@@ -549,7 +552,14 @@ html, body, #root {
   overflow: hidden;
 }
 
-.index-bar-fill { height: 100%; border-radius: 3px; transition: width 0.3s ease; }
+/* scaleX rather than width: animating width forces layout on every frame */
+.index-bar-fill {
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  transform-origin: left center;
+  transition: transform 0.3s ease;
+}
 
 .detail-links {
   display: flex;
@@ -612,7 +622,7 @@ html, body, #root {
 }
 
 .iso-title {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -624,7 +634,7 @@ html, body, #root {
 }
 
 .iso-beta {
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -692,8 +702,8 @@ html, body, #root {
 .iso-here-attr {
   display: block;
   margin-top: 8px;
-  font-size: 10px;
-  color: var(--text-dim);
+  font-size: 11px;
+  color: var(--text-muted);
   text-decoration: none;
   letter-spacing: 0.3px;
 }
@@ -815,7 +825,8 @@ html, body, #root {
     font-size: 11px;
     padding: 6px 8px;
     flex-shrink: 0;
-    min-height: 34px;
+    min-height: 44px;
+    min-width: 44px;
   }
 
   .sheet-count {
@@ -844,13 +855,24 @@ html, body, #root {
   .sheet-chevron:active { background: var(--surface); color: var(--text); }
 
   /* Expandable body */
+  /* 0fr → 1fr instead of max-height: the grid track resolves to the content's
+     own height, so the sheet no longer animates a layout property */
   .sheet-body {
-    max-height: 0;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .sheet-body-inner {
     overflow: hidden;
-    transition: max-height 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 0;
   }
 
   .mobile-sheet.expanded .sheet-body {
+    grid-template-rows: 1fr;
+  }
+
+  .mobile-sheet.expanded .sheet-body-inner {
     max-height: 50vh;
     overflow-y: auto;
     overscroll-behavior: contain;
@@ -988,8 +1010,8 @@ html, body, #root {
 
 /* ── Detail: size note ────────────────────────────────── */
 .detail-size-note {
-  font-size: 10px;
-  color: var(--text-dim);
+  font-size: 11px;
+  color: var(--text-muted);
   margin-bottom: 10px;
   font-style: italic;
 }
@@ -1034,7 +1056,7 @@ html, body, #root {
   outline: none;
   transition: border-color 0.12s;
 }
-.list-search::placeholder { color: var(--text-dim); }
+.list-search::placeholder { color: var(--text-muted); }
 .list-search:focus { border-color: var(--text-muted); }
 
 .list-sort-group {
@@ -1046,7 +1068,7 @@ html, body, #root {
 
 .list-sort-label {
   font-size: 11px;
-  color: var(--text-dim);
+  color: var(--text-muted);
   white-space: nowrap;
 }
 
@@ -1104,7 +1126,7 @@ html, body, #root {
 
 .list-region {
   font-size: 11px;
-  color: var(--text-dim);
+  color: var(--text-muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1142,7 +1164,7 @@ html, body, #root {
 .list-empty {
   padding: 40px 16px;
   text-align: center;
-  color: var(--text-dim);
+  color: var(--text-muted);
   font-size: 13px;
 }
 
@@ -1177,7 +1199,7 @@ html, body, #root {
   height: 22px;
   background: transparent;
   border: none;
-  color: var(--text-dim);
+  color: var(--text-muted);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1194,8 +1216,8 @@ html, body, #root {
   flex-shrink: 0;
 }
 .mini-legend-label {
-  font-size: 10px;
-  color: var(--text-dim);
+  font-size: 11px;
+  color: var(--text-muted);
   white-space: nowrap;
   letter-spacing: 0.3px;
 }
@@ -1219,7 +1241,7 @@ html, body, #root {
   justify-content: center;
   gap: 10px;
   padding: 40px 20px;
-  color: var(--text-dim);
+  color: var(--text-muted);
   text-align: center;
 }
 .empty-state-text {
@@ -1343,11 +1365,11 @@ html, body, #root {
   margin: 0 0 10px;
   line-height: 1.5;
 }
-.about-text-muted { color: var(--text-muted); font-size: 11px; }
+.about-text-muted { color: var(--text-muted); font-size: 12px; }
 .about-credit {
   margin: 12px 0 0;
-  font-size: 10px;
-  color: var(--text-dim);
+  font-size: 12px;
+  color: var(--text-muted);
 }
 
 /* ── Keyboard focus ───────────────────────────────────── */
@@ -1375,7 +1397,7 @@ html, body, #root {
 .map-search-icon {
   position: absolute;
   left: 9px;
-  color: var(--text-dim);
+  color: var(--text-muted);
   pointer-events: none;
 }
 .map-search-input {
@@ -1391,7 +1413,7 @@ html, body, #root {
   box-shadow: 0 2px 10px rgba(0,0,0,0.35);
   transition: border-color 0.12s;
 }
-.map-search-input::placeholder { color: var(--text-dim); }
+.map-search-input::placeholder { color: var(--text-muted); }
 .map-search-input:focus { border-color: var(--text-muted); }
 .map-search-clear {
   position: absolute;
@@ -1400,7 +1422,7 @@ html, body, #root {
   height: 22px;
   background: transparent;
   border: none;
-  color: var(--text-dim);
+  color: var(--text-muted);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1441,7 +1463,7 @@ html, body, #root {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.map-search-region { color: var(--text-dim); font-size: 11px; }
+.map-search-region { color: var(--text-muted); font-size: 11px; }
 .map-search-date { color: var(--text-muted); font-size: 11px; flex-shrink: 0; }
 
 @media (max-width: 767px) {
@@ -1461,7 +1483,6 @@ html, body, #root {
 }
 .month-grid .toggle-btn {
   padding: 4px 2px;
-  font-size: 11px;
   text-align: center;
 }
 
@@ -1475,7 +1496,7 @@ html, body, #root {
   margin-bottom: 6px;
   padding: 2px 8px;
   border-radius: 20px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
@@ -1491,7 +1512,7 @@ html, body, #root {
   gap: 3px;
   padding: 1px 5px;
   border-radius: 10px;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.4px;
@@ -1536,5 +1557,87 @@ html, body, #root {
     gap: 10px;
     padding: 12px 14px 24px;
     border-top: 1px solid var(--border);
+  }
+}
+
+/* ── Touch targets ────────────────────────────────────── */
+/* Pointer-coarse rather than a width query: the constraint is the finger,
+   not the viewport, so this also covers touch laptops and tablets. */
+@media (pointer: coarse) {
+  .toggle-btn,
+  .view-btn,
+  .iso-pin-btn,
+  .cal-btn,
+  .share-btn,
+  .clear-btn,
+  .about-link {
+    min-height: 44px;
+  }
+
+  .toggle-btn,
+  .view-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* The segmented DE/EN control keeps its compact look but gains real height */
+  .lang-segmented .toggle-btn {
+    min-width: 44px;
+    padding: 3px 10px;
+  }
+
+  /* Segmented map/list pair: 44px tall, and wide enough to hit */
+  .sidebar-mode-row .toggle-btn,
+  .sheet-section .toggle-group .toggle-btn {
+    min-width: 56px;
+  }
+
+  .sheet-chevron,
+  .geo-btn,
+  .iso-fab,
+  .sidebar-toggle,
+  .detail-close,
+  .list-search-clear,
+  .map-search-clear {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .country-item { padding: 10px 8px; }
+  .list-row { padding: 12px 12px; }
+}
+
+/* ── Reduced motion ───────────────────────────────────── */
+/* Not a blanket 0.01ms kill: panels still change state, they just arrive
+   without travel. Only the purely decorative loop is switched off. */
+@media (prefers-reduced-motion: reduce) {
+  .detail-panel,
+  .toast,
+  .about-backdrop {
+    animation: none;
+  }
+
+  .sheet-body,
+  .index-bar-fill,
+  .toggle-btn,
+  .view-btn,
+  .cal-btn,
+  .iso-pin-btn,
+  .share-btn,
+  .detail-link-btn,
+  .country-item,
+  .list-row,
+  .sidebar-toggle,
+  .geo-btn,
+  .sheet-chevron {
+    transition-duration: 0.01ms;
+  }
+
+  /* A pulsing border conveys "waiting for your click"; keep the meaning,
+     drop the motion by holding the accent border solid. */
+  .iso-pin-btn.pinning {
+    animation: none;
+    border-color: var(--accent);
   }
 }
