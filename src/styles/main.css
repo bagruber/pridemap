@@ -825,7 +825,7 @@ html, body, #root {
     font-size: 11px;
     padding: 6px 8px;
     flex-shrink: 0;
-    min-height: 44px;
+    min-height: 36px;
     min-width: 44px;
   }
 
@@ -1564,13 +1564,21 @@ html, body, #root {
 /* Pointer-coarse rather than a width query: the constraint is the finger,
    not the viewport, so this also covers touch laptops and tablets. */
 @media (pointer: coarse) {
+  /* Chips sit at 36px, not 44px: they come in rows of three to four, so 44
+     turns a filter row into a wall. 36 still clears the 24px WCAG 2.5.8
+     minimum with room to spare, and the gap between them does the rest. */
   .toggle-btn,
-  .view-btn,
-  .iso-pin-btn,
   .cal-btn,
   .share-btn,
   .clear-btn,
   .about-link {
+    min-height: 36px;
+  }
+
+  /* Standalone controls stay at the full 44px — they have no neighbours
+     to borrow slop from. */
+  .view-btn,
+  .iso-pin-btn {
     min-height: 44px;
   }
 

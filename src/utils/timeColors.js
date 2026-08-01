@@ -7,12 +7,16 @@ export const TIME_BUCKETS = [
   { label: '6–8 weeks',   max: 56,  color: '#00C7BE' },
   { label: '1–3 months',  max: 91,  color: '#0A84FF' },
   { label: '3–6 months',  max: 182, color: '#5856D6' },
-  { label: '>6 months',   max: Infinity, color: '#7C3AED' },
+  // Muted violet rather than #7C3AED: that value is Tailwind's violet-600,
+  // the single most recognisable "generated UI" purple. Same hue family,
+  // saturation down from 84% to 32%, and it reads slightly better on the
+  // dark basemap than the neon version did.
+  { label: '>6 months',   max: Infinity, color: '#8253a2' },
 ]
 
 // Non-colorful builds: a dark, muted violet instead of plain gray, so past
 // events still contribute a hint of color without competing with upcoming ones
-export const PAST_COLOR = import.meta.env.VITE_COLORFUL_PAST === 'true' ? '#7C3AED' : '#4a3d63'
+export const PAST_COLOR = import.meta.env.VITE_COLORFUL_PAST === 'true' ? '#8253a2' : '#4e3d61'
 
 export function daysUntil(dateStr, from = new Date()) {
   const target = new Date(dateStr)

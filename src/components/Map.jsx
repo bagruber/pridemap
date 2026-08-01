@@ -49,6 +49,33 @@ const CIRCLE_PAINT = {
   ],
 }
 
+// A small event renders as a 4px-radius dot: an easy target with a mouse and a
+// near-impossible one with a thumb. So the click is resolved against a padded
+// box rather than the exact pixel, and the feature nearest the tap wins.
+const HIT_PAD = typeof window !== 'undefined'
+  && window.matchMedia?.('(pointer: coarse)').matches ? 18 : 4
+
+function pickAt(map, point) {
+  const layers = ['parades-circles', 'parades-circles-cluster', 'clusters-circle']
+    .filter(l => map.getLayer(l))
+  const hits = map.queryRenderedFeatures(
+    [[point.x - HIT_PAD, point.y - HIT_PAD], [point.x + HIT_PAD, point.y + HIT_PAD]],
+    { layers },
+  )
+  if (!hits.length) return null
+
+  let best = hits[0]
+  let bestDistance = Infinity
+  for (const f of hits) {
+    const coords = f.geometry?.coordinates
+    if (!coords) continue
+    const p = map.project(coords)
+    const d = (p.x - point.x) ** 2 + (p.y - point.y) ** 2
+    if (d < bestDistance) { bestDistance = d; best = f }
+  }
+  return best
+}
+
 function paradesToGeoJSON(parades) {
   return {
     type: 'FeatureCollection',
@@ -155,7 +182,10 @@ export default function Map({
     })
     mapRef.current = map
     // Exposed only for the hidden /?walkthrough demo driver
-    if (new URLSearchParams(window.location.search).has('walkthrough')) window.__pridemapMap = map
+    // Debug handle: ?walkthrough needs it to drive the tour, ?maphandle exposes
+    // it on its own so UI tests can position the map without a tour running.
+    const flags = new URLSearchParams(window.location.search)
+    if (flags.has('walkthrough') || flags.has('maphandle')) window.__pridemapMap = map
 
     map.on('moveend', () => {
       onViewChange?.({ center: map.getCenter().toArray(), zoom: map.getZoom() })
@@ -275,13 +305,6 @@ export default function Map({
         paint: { 'circle-radius': 4, 'circle-color': '#ffffff' },
       })
 
-      // ── Cluster click → zoom in ───────────────────────────────────────────
-      map.on('click', 'clusters-circle', async (e) => {
-        if (isoPinningRef.current) return
-        const feature = e.features[0]; if (!feature) return
-        const zoom = await map.getSource('parades-cluster').getClusterExpansionZoom(feature.properties.cluster_id)
-        map.easeTo({ center: feature.geometry.coordinates, zoom: zoom + 0.5 })
-      })
       map.on('mouseenter', 'clusters-circle', () => { map.getCanvas().style.cursor = 'pointer' })
       map.on('mouseleave', 'clusters-circle', () => { map.getCanvas().style.cursor = '' })
 
@@ -308,20 +331,22 @@ export default function Map({
           setTooltip(null)
         })
 
-        map.on('click', layer, (e) => {
-          if (isoPinningRef.current) return
-          const f = e.features[0]; if (!f) return
-          onSelect(toSelection(f.properties))
-        })
       }
 
-      // Click on empty map → deselect (hidden layers return no features)
-      map.on('click', (e) => {
+      // One click handler for dots, clusters and empty map alike, so the
+      // pick box below is the only thing deciding what got hit.
+      map.on('click', async (e) => {
         if (isoPinningRef.current) return
-        const hits = map.queryRenderedFeatures(e.point, {
-          layers: ['parades-circles', 'parades-circles-cluster', 'clusters-circle'],
-        })
-        if (!hits.length) onSelect(null)
+        const f = pickAt(map, e.point)
+        if (!f) { onSelect(null); return }
+
+        if (f.properties.cluster_id != null) {
+          const zoom = await map.getSource('parades-cluster')
+            .getClusterExpansionZoom(f.properties.cluster_id)
+          map.easeTo({ center: f.geometry.coordinates, zoom: zoom + 0.5 })
+          return
+        }
+        onSelect(toSelection(f.properties))
       })
 
       // Apply selection that existed before the style finished loading
