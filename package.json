@@ -5,15 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/inject-jsonld.mjs",
-    "build:colorful": "vite build --mode colorful && node scripts/inject-jsonld.mjs",
+    "build": "npm run logo && vite build && node scripts/inject-jsonld.mjs",
+    "build:colorful": "npm run logo && vite build --mode colorful && node scripts/inject-jsonld.mjs",
     "preview": "vite preview",
     "deploy": "npm run build:colorful && node scripts/deploy.mjs gh-pages",
     "og": "node scripts/og-images.mjs",
     "og:force": "node scripts/og-images.mjs --force",
-    "build:hostinger": "npm run og && vite build --base=/ && node scripts/prerender.mjs",
+    "build:hostinger": "npm run logo && npm run og && vite build --base=/ && node scripts/prerender.mjs",
     "deploy:hostinger": "npm run build:hostinger && node scripts/deploy.mjs hostinger",
-    "prepare-data": "node scripts/prepare-data.js"
+    "prepare-data": "node scripts/prepare-data.js",
+    "logo": "node scripts/logo-svg.mjs"
   },
   "dependencies": {
     "@fontsource/sofia-sans": "^5.2.8",

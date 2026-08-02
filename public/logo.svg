@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Pride Map">
+  <defs>
+    <clipPath id="c-blue"><circle cx="70" cy="30" r="21"/></clipPath>
+    <clipPath id="c-indigo"><circle cx="68" cy="60" r="23"/></clipPath>
+    <clipPath id="c-orange"><circle cx="27" cy="34" r="14"/></clipPath>
+    <clipPath id="c-green"><circle cx="38" cy="53" r="16"/></clipPath>
+    <clipPath id="c-red"><circle cx="16" cy="22" r="9.5"/></clipPath>
+    <clipPath id="c-sky"><circle cx="79" cy="79" r="11"/></clipPath>
+  </defs>
+  <circle cx="70" cy="30" r="21" fill="#5880F8"/>
+  <circle cx="68" cy="60" r="23" fill="#6860F0"/>
+  <circle cx="27" cy="34" r="14" fill="#F8A028"/>
+  <circle cx="38" cy="53" r="16" fill="#68C068"/>
+  <circle cx="16" cy="22" r="9.5" fill="#E84868"/>
+  <circle cx="79" cy="79" r="11" fill="#68B8F0"/>
+  <g clip-path="url(#c-blue)"><circle cx="68" cy="60" r="23" fill="#5766F4"/></g>
+  <g clip-path="url(#c-indigo)"><circle cx="38" cy="53" r="16" fill="#56D4D8"/></g>
+  <g clip-path="url(#c-indigo)"><circle cx="79" cy="79" r="11" fill="#6086F0"/></g>
+  <g clip-path="url(#c-orange)"><circle cx="38" cy="53" r="16" fill="#A7DC23"/></g>
+  <g clip-path="url(#c-orange)"><circle cx="16" cy="22" r="9.5" fill="#F04D27"/></g>
+</svg>

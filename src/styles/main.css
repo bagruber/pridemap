@@ -1649,3 +1649,49 @@ html, body, #root {
     border-color: var(--accent);
   }
 }
+
+/* ── Logo ─────────────────────────────────────────────── */
+.logo { display: block; overflow: visible; }
+
+@keyframes logo-pop {
+  from { transform: scale(0.2); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+/* fill-box keeps each circle growing from its own centre rather than the
+   corner of the viewBox */
+.logo-animated .logo-piece {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: logo-pop 460ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+/* ── Loading screen ───────────────────────────────────── */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  transition: opacity 380ms ease, visibility 380ms;
+}
+
+.loading-screen.is-done {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* The mark still assembles, it just does not travel */
+  .logo-animated .logo-piece {
+    animation-name: logo-fade;
+    animation-duration: 200ms;
+  }
+  @keyframes logo-fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+}

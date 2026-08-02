@@ -152,7 +152,7 @@ export default function Map({
   isoMode, isoPinning, onPinningDone,
   flyTo, onFlyToDone,
   clusteringEnabled,
-  initialPosition, onViewChange,
+  initialPosition, onViewChange, onReady,
 }) {
   const containerRef = useRef(null)
   const mapRef = useRef(null)
@@ -181,7 +181,6 @@ export default function Map({
       attributionControl: { compact: true },
     })
     mapRef.current = map
-    // Exposed only for the hidden /?walkthrough demo driver
     // Debug handle: ?walkthrough needs it to drive the tour, ?maphandle exposes
     // it on its own so UI tests can position the map without a tour running.
     const flags = new URLSearchParams(window.location.search)
@@ -356,6 +355,7 @@ export default function Map({
       }
 
       setMapLoaded(true)
+      onReady?.()
     })
 
     return () => map.remove()

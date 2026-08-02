@@ -10,6 +10,7 @@ import MapSearch from './components/MapSearch.jsx'
 import Toast from './components/Toast.jsx'
 import EmptyState from './components/EmptyState.jsx'
 import AboutDialog from './components/AboutDialog.jsx'
+import LoadingScreen from './components/LoadingScreen.jsx'
 import paradesRaw from './data/parades.json'
 import { daysUntil } from './utils/timeColors.js'
 import { toSelection } from './utils/parade.js'
@@ -70,6 +71,7 @@ export default function App() {
   const [aboutOpen, setAboutOpen] = useState(false)
   // Mount the map lazily, then keep it mounted to preserve position
   const [mapMounted, setMapMounted] = useState((INITIAL_HASH?.viewMode ?? 'map') === 'map')
+  const [booted, setBooted] = useState(false)
 
   const mapPositionRef = useRef(null)
 
@@ -120,6 +122,16 @@ export default function App() {
   useEffect(() => {
     if (viewMode === 'map' && !mapMounted) setMapMounted(true)
   }, [viewMode, mapMounted])
+
+  // The splash clears on whichever comes first: the map reporting ready, list
+  // mode having nothing to wait for, or a ceiling — a stalled tile fetch must
+  // never leave someone stuck behind it.
+  useEffect(() => {
+    if (booted) return
+    if (viewMode === 'list') { setBooted(true); return }
+    const id = setTimeout(() => setBooted(true), 4000)
+    return () => clearTimeout(id)
+  }, [booted, viewMode])
 
   // Hidden demo driver for screen recordings: /?walkthrough plays a scripted tour
   useEffect(() => {
@@ -237,6 +249,7 @@ export default function App() {
               clusteringEnabled={clusteringEnabled}
               initialPosition={mapPositionRef.current}
               onViewChange={pos => { mapPositionRef.current = pos }}
+              onReady={() => setBooted(true)}
             />
           </Suspense>
           {viewMode === 'map' && filteredParades.length === 0 && (
@@ -394,6 +407,7 @@ export default function App() {
         </>
       )}
 
+      <LoadingScreen done={booted} />
       <Toast message={toastMessage} onDismiss={() => setToastMessage(null)} />
       <AboutDialog open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </div>
