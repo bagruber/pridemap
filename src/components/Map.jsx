@@ -34,17 +34,22 @@ const CIRCLE_PAINT = {
   ],
   'circle-color': ['get', 'color'],
   'circle-opacity': 1,
-  // First-time prides wear a gold ring as a "premiere sticker"; selection still wins
+  // First-time prides wear a gold ring as a "premiere sticker", rescheduled ones
+  // a pink one. Pink also appears in the time scale, but only ever as a fill —
+  // no dot carries it as a stroke — so the two readings never collide.
+  // Selection still wins over both.
   'circle-stroke-width': [
     'case',
     ['boolean', ['feature-state', 'selected'], false], 2,
     ['boolean', ['get', 'firstTime'], false], 2,
+    ['to-boolean', ['get', 'movedFrom']], 2,
     0.5,
   ],
   'circle-stroke-color': [
     'case',
     ['boolean', ['feature-state', 'selected'], false], '#ffffff',
     ['boolean', ['get', 'firstTime'], false], '#ffd447',
+    ['to-boolean', ['get', 'movedFrom']], '#ff2d78',
     'rgba(255,255,255,0.15)',
   ],
 }
@@ -102,6 +107,7 @@ function paradesToGeoJSON(parades) {
           instagram: p.instagram ?? null,
           firstYear: p.firstYear ?? null,
           firstTime: isFirstTime(p),
+          movedFrom: p.movedFrom ?? null,
         },
       })),
   }

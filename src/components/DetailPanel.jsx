@@ -1,5 +1,5 @@
 import { FaInstagram, FaGlobe } from 'react-icons/fa'
-import { Info, MapPin, Sparkles, X } from 'lucide-react'
+import { CalendarClock, Info, MapPin, Sparkles, X } from 'lucide-react'
 import { indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { isFirstTime } from '../utils/parade.js'
@@ -60,7 +60,7 @@ function downloadICS(parade) {
 
 export default function DetailPanel({ parade, onClose, onShowOnMap }) {
   const { lang } = useLang()
-  const { name, city, country, date, size, daysUntil, color, queerIndex, website, instagram, firstYear } = parade
+  const { name, city, country, date, size, daysUntil, color, queerIndex, website, instagram, firstYear, movedFrom } = parade
   const isPast = daysUntil < 0
 
   const formatted = formatDate(date, lang, {
@@ -92,6 +92,12 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
               {t('firstTime', lang)}
             </div>
           )}
+          {movedFrom && (
+            <div className="moved-badge">
+              <CalendarClock size={11} aria-hidden="true" />
+              {t('rescheduled', lang)}
+            </div>
+          )}
           <h2 className="detail-city-name" style={{ color }}>{displayCity}</h2>
           <div className="detail-title">{name}</div>
         </div>
@@ -104,6 +110,11 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
         {countdownText}
       </div>
       <div className="detail-date">{formatted}</div>
+      {movedFrom && (
+        <div className="detail-moved-from">
+          {t('insteadOf', lang)} <s>{formatDate(movedFrom, lang, { day: 'numeric', month: 'long', year: 'numeric' })}</s>
+        </div>
+      )}
       <div className="detail-btn-row">
         {!isPast && (
           <button className="cal-btn" onClick={() => downloadICS(parade)}>{t('addToCalendar', lang)}</button>

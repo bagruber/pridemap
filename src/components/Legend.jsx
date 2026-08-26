@@ -42,6 +42,10 @@ export default function Legend() {
         <div className="legend-dot legend-dot-premiere" />
         <span>{t('firstTime', lang)}</span>
       </div>
+      <div className="legend-item">
+        <div className="legend-dot legend-dot-moved" />
+        <span>{t('rescheduled', lang)}</span>
+      </div>
     </div>
   )
 }

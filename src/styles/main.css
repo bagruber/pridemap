@@ -1529,6 +1529,54 @@ html, body, #root {
   box-shadow: 0 0 0 1.5px var(--premiere);
 }
 
+/* ── Rescheduled events ───────────────────────────────── */
+.legend-dot-moved {
+  background: var(--text-dim);
+  box-shadow: 0 0 0 1.5px var(--accent);
+}
+
+.moved-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--accent);
+  background: rgba(255, 45, 120, 0.12);
+  border: 1px solid rgba(255, 45, 120, 0.45);
+}
+
+/* Sits directly under the new date, so the strike-through reads as a swap */
+.detail-moved-from {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.detail-moved-from s {
+  text-decoration-thickness: 1px;
+}
+
+/* Compact pill in list rows — no icon: "Verlegt" needs no decoding */
+.list-moved {
+  padding: 1px 5px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--accent);
+  background: rgba(255, 45, 120, 0.12);
+  border: 1px solid rgba(255, 45, 120, 0.4);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* ── Detail panel action row ──────────────────────────── */
 .detail-btn-row {
   display: flex;

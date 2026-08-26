@@ -65,6 +65,12 @@ export const TRANSLATIONS = {
   firstTimeShort:    { en: '1st',                     de: 'Neu' },
   firstTimeNote:     { en: 'Happening for the first time in 2026', de: 'Findet 2026 zum ersten Mal statt' },
 
+  // Rescheduled events
+  rescheduled:       { en: 'Rescheduled',             de: 'Verlegt' },
+  rescheduledShort:  { en: 'Moved',                   de: 'Verlegt' },
+  movedFrom:         { en: 'Moved from',              de: 'Verlegt vom' },
+  insteadOf:         { en: 'instead of',              de: 'statt' },
+
   // Detail panel actions
   viewOnMap:         { en: 'View on map',             de: 'Auf Karte zeigen' },
 

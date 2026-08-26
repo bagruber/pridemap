@@ -19,5 +19,6 @@ export function toSelection(p) {
     website: p.website ?? null,
     instagram: p.instagram ?? null,
     firstYear: p.firstYear ?? null,
+    movedFrom: p.movedFrom ?? null,
   }
 }

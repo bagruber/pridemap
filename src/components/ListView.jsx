@@ -18,6 +18,10 @@ function ListRow({ parade, onSelect, lang }) {
 
   const countdown = labelForDaysL10n(parade.daysUntil, lang)
 
+  const movedTitle = parade.movedFrom
+    ? `${t('movedFrom', lang)} ${formatDate(parade.movedFrom, lang, { day: 'numeric', month: 'long', year: 'numeric' })}`
+    : undefined
+
   const handleSelect = () => onSelect(toSelection({ ...parade, color }))
   const handleKey = e => {
     if (e.key === 'Enter' || e.key === ' ') {
@@ -42,6 +46,11 @@ function ListRow({ parade, onSelect, lang }) {
           <span className="list-premiere" title={t('firstTimeNote', lang)}>
             <Sparkles size={9} aria-hidden="true" />
             {t('firstTimeShort', lang)}
+          </span>
+        )}
+        {parade.movedFrom && (
+          <span className="list-moved" title={movedTitle}>
+            {t('rescheduledShort', lang)}
           </span>
         )}
         {parade.region && <span className="list-region">{parade.region}</span>}
