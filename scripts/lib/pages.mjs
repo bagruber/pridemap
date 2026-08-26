@@ -3,8 +3,14 @@
 import { COUNTRY_NAMES } from '../../src/utils/countryInfo.js'
 import { CITY_NAMES } from '../../src/utils/i18n.js'
 import { isFirstTime } from '../../src/utils/firstTime.js'
+import { localPride, displayAka } from '../../src/utils/prideTerms.js'
 
-export { COUNTRY_NAMES, CITY_NAMES, isFirstTime }
+export { COUNTRY_NAMES, CITY_NAMES, isFirstTime, localPride, displayAka }
+
+// "a, b oder c" — the last separator is the only part that differs
+export const joinOr = (lang, arr) => arr.length < 2
+  ? (arr[0] ?? '')
+  : `${arr.slice(0, -1).join(', ')} ${lang === 'de' ? 'oder' : 'or'} ${arr[arr.length - 1]}`
 
 export const ORIGIN = 'https://pridemap.net'
 export const LANGS = ['de', 'en']
@@ -150,6 +156,7 @@ export const T = {
     firstEdition: 'Premiere',
     firstEditionNote: `Findet ${YEAR} zum ersten Mal statt`,
     rescheduled: 'Verlegt',
+    alsoCalled: (terms, country) => `In ${country} heißt eine Pride auch ${terms}.`,
     movedFrom: d => `Verlegt vom ${d}`,
     officialSite: 'Offizielle Website',
     instagram: 'Instagram',
@@ -176,6 +183,7 @@ export const T = {
     firstEdition: 'First edition',
     firstEditionNote: `Happening for the first time in ${YEAR}`,
     rescheduled: 'Rescheduled',
+    alsoCalled: (terms, country) => `In ${country}, a Pride is also called ${terms}.`,
     movedFrom: d => `Moved from ${d}`,
     officialSite: 'Official website',
     instagram: 'Instagram',

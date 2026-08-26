@@ -10,6 +10,7 @@ import {
   ogImagePath, countryHubSlug, monthHubSlug, hubPath, MONTHS, countryName,
   TOKENS, PRIDE_GRADIENT,
   cityName, formatDate, SIZE_LABEL, T, escapeHtml, isFirstTime,
+  localPride, displayAka, joinOr,
 } from './lib/pages.mjs'
 
 const DIST = './dist'
@@ -63,6 +64,7 @@ a{color:inherit}
 .badge-moved{color:var(--accent);background:rgba(255,45,120,.12);border-color:rgba(255,45,120,.45)}
 h1{font-size:34px;line-height:1.15;letter-spacing:-.5px;margin-bottom:8px;font-weight:700}
 .lede{color:var(--muted);font-size:17px;margin-bottom:24px}
+.aka{color:var(--muted);font-size:14px;margin:-14px 0 24px}
 dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin-bottom:24px;font-size:15px}
 dt{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.6px;padding-top:3px}
 dd{font-weight:600}
@@ -171,6 +173,7 @@ function eventPage(p, lang) {
   // The badge and the meta description get the weekday-less form: both are
   // length-constrained, and the full date already sits in the definition list.
   const movedShort = p.movedFrom ? formatDate(lang, p.movedFrom, { weekday: false }) : null
+  const aka = displayAka(p.country)
   const att = attendanceBy[p.city]
   const image = absolute(ogImagePath(slug))
   const alternates = [
@@ -264,6 +267,7 @@ function eventPage(p, lang) {
       ${movedShort ? `<div class="badge badge-moved">↻ ${escapeHtml(t.movedFrom(movedShort))}</div>` : ''}
       <h1>${escapeHtml(p.name)}</h1>
       <p class="lede">${escapeHtml(description)}</p>
+      ${aka.length ? `<p class="aka">${escapeHtml(t.alsoCalled(joinOr(lang, aka), country))}</p>` : ''}
       <dl>${rows.join('')}</dl>
       <div class="btns">${btns.join('')}</div>
       ${sameCountry.length ? `<section><h2>${escapeHtml(t.moreIn(country))}</h2><ul class="list">\n${rowsFor(lang, sameCountry)}\n      </ul></section>` : ''}
@@ -335,18 +339,20 @@ for (const code of countries) {
   const altSlugs = Object.fromEntries(LANGS.map(l => [l, countryHubSlug(l, code)]))
   for (const lang of LANGS) {
     const cn = countryName(lang, code)
+    const label = localPride(code)?.label
+    const aka = displayAka(code)
     const heading = lang === 'de'
-      ? `Pride & CSD Termine ${cn} ${YEAR}`
+      ? `Pride${label ? ` & ${label}` : ''} Termine ${cn} ${YEAR}`
       : `Pride parades in ${cn} ${YEAR}`
     write(hubPath(lang, altSlugs[lang]), hubPage({
       lang, slug: altSlugs[lang], altSlugs,
       title: `${heading} – alle ${list.length} Termine | Pride Map`.replace('alle', lang === 'de' ? 'alle' : 'all'),
       description: lang === 'de'
-        ? `Alle ${list.length} Pride-Paraden und CSD-Termine in ${cn} ${YEAR} — mit Datum, Ort und Karte.`
-        : `All ${list.length} Pride parades in ${cn} in ${YEAR} — with dates, locations and a map.`,
+        ? `Alle ${list.length} Pride-Paraden in ${cn} ${YEAR}${label ? `, auch ${label} genannt` : ''} — mit Datum, Ort und Karte.`
+        : `All ${list.length} Pride parades in ${cn} in ${YEAR}${label ? `, also known as ${label}` : ''} — with dates, locations and a map.`,
       heading, intro: lang === 'de'
-        ? `${list.length} Termine in ${cn}. Sortiert nach Datum.`
-        : `${list.length} dates in ${cn}, sorted by date.`,
+        ? `${list.length} Termine in ${cn}. Sortiert nach Datum.${aka.length ? ` ${T.de.alsoCalled(joinOr('de', aka), cn)}` : ''}`
+        : `${list.length} dates in ${cn}, sorted by date.${aka.length ? ` ${T.en.alsoCalled(joinOr('en', aka), cn)}` : ''}`,
       list, chips: monthChips(lang),
     }))
   }
