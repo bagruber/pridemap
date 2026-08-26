@@ -60,6 +60,7 @@ a{color:inherit}
 .langs a[aria-current]{background:#fff;border-color:#fff;color:#111;font-weight:600}
 .hero{width:100%;height:auto;aspect-ratio:1200/630;border-radius:8px;border:1px solid var(--border);margin-bottom:22px;display:block;background:var(--surface)}
 .badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--premiere);background:rgba(255,212,71,.12);border:1px solid rgba(255,212,71,.45);margin-bottom:10px}
+.badge-moved{color:var(--accent);background:rgba(255,45,120,.12);border-color:rgba(255,45,120,.45)}
 h1{font-size:34px;line-height:1.15;letter-spacing:-.5px;margin-bottom:8px;font-weight:700}
 .lede{color:var(--muted);font-size:17px;margin-bottom:24px}
 dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin-bottom:24px;font-size:15px}
@@ -82,6 +83,7 @@ ul.list .c{flex:1;font-weight:600}
 ul.list .r{color:var(--muted);font-size:12px;font-weight:400}
 ul.list .d{color:var(--muted);font-size:13px;white-space:nowrap}
 .pill{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--premiere);background:rgba(255,212,71,.12);border:1px solid rgba(255,212,71,.4);border-radius:10px;padding:1px 6px}
+.pill-moved{color:var(--accent);background:rgba(255,45,120,.12);border-color:rgba(255,45,120,.4)}
 .chips{display:flex;flex-wrap:wrap;gap:7px}
 .chips a{padding:6px 12px;border:1px solid var(--border);border-radius:20px;font-size:13px;color:var(--muted);text-decoration:none}
 .chips a:hover{border-color:var(--dim);color:var(--text)}
@@ -152,7 +154,7 @@ const rowsFor = (lang, list) => list.map(p => {
   const s = slugs.get(p.id)
   const first = isFirstTime(p)
   return `        <li><a href="${eventPath(lang, s)}">
-          <span class="c">${escapeHtml(cityName(lang, p.city))}${first ? ` <span class="pill">${escapeHtml(T[lang].firstEdition)}</span>` : ''}${p.region ? ` <span class="r">${escapeHtml(p.region)}</span>` : ''}</span>
+          <span class="c">${escapeHtml(cityName(lang, p.city))}${first ? ` <span class="pill">${escapeHtml(T[lang].firstEdition)}</span>` : ''}${p.movedFrom ? ` <span class="pill pill-moved">${escapeHtml(T[lang].rescheduled)}</span>` : ''}${p.region ? ` <span class="r">${escapeHtml(p.region)}</span>` : ''}</span>
           <span class="d">${escapeHtml(formatDate(lang, p.date, { weekday: false }))}</span>
         </a></li>`
 }).join('\n')
@@ -165,6 +167,10 @@ function eventPage(p, lang) {
   const country = countryName(lang, p.country)
   const first = isFirstTime(p)
   const dateLong = formatDate(lang, p.date)
+  const movedLong = p.movedFrom ? formatDate(lang, p.movedFrom) : null
+  // The badge and the meta description get the weekday-less form: both are
+  // length-constrained, and the full date already sits in the definition list.
+  const movedShort = p.movedFrom ? formatDate(lang, p.movedFrom, { weekday: false }) : null
   const att = attendanceBy[p.city]
   const image = absolute(ogImagePath(slug))
   const alternates = [
@@ -176,8 +182,8 @@ function eventPage(p, lang) {
     ? `${p.name} – Termin, Ort & Infos | Pride Map`
     : `${p.name} – Date, Location & Info | Pride Map`
   const description = lang === 'de'
-    ? `${p.name} findet am ${dateLong} in ${city}${p.region ? ` (${p.region})` : ''}, ${country} statt.${first ? ' Premiere – der erste CSD in dieser Stadt.' : ''} Termin, Karte und alle Infos.`
-    : `${p.name} takes place on ${dateLong} in ${city}${p.region ? ` (${p.region})` : ''}, ${country}.${first ? ' First edition – this city’s debut Pride.' : ''} Date, map and all the details.`
+    ? `${p.name} findet am ${dateLong} in ${city}${p.region ? ` (${p.region})` : ''}, ${country} statt.${movedShort ? ` ${t.movedFrom(movedShort)}.` : ''}${first ? ' Premiere – der erste CSD in dieser Stadt.' : ''} Termin, Karte und alle Infos.`
+    : `${p.name} takes place on ${dateLong} in ${city}${p.region ? ` (${p.region})` : ''}, ${country}.${movedShort ? ` ${t.movedFrom(movedShort)}.` : ''}${first ? ' First edition – this city’s debut Pride.' : ''} Date, map and all the details.`
 
   const jsonld = {
     '@context': 'https://schema.org',
@@ -187,7 +193,12 @@ function eventPage(p, lang) {
         name: p.name,
         startDate: p.date,
         endDate: p.date,
-        eventStatus: 'https://schema.org/EventScheduled',
+        // Google reads EventRescheduled + previousStartDate to update a date it
+        // has already indexed, instead of treating the new one as a second event.
+        eventStatus: p.movedFrom
+          ? 'https://schema.org/EventRescheduled'
+          : 'https://schema.org/EventScheduled',
+        ...(p.movedFrom ? { previousStartDate: p.movedFrom } : {}),
         eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
         url: eventUrl(lang, slug),
         image,
@@ -229,7 +240,7 @@ function eventPage(p, lang) {
     .sort((a, b) => a.date.localeCompare(b.date)).slice(0, 10)
 
   const rows = []
-  rows.push(`<dt>${escapeHtml(t.dateLabel)}</dt><dd>${escapeHtml(dateLong)}</dd>`)
+  rows.push(`<dt>${escapeHtml(t.dateLabel)}</dt><dd>${escapeHtml(dateLong)}${movedLong ? `<span class="sub"> · <s>${escapeHtml(movedLong)}</s></span>` : ''}</dd>`)
   rows.push(`<dt>${escapeHtml(t.whereLabel)}</dt><dd>${escapeHtml(city)}${p.region ? `, ${escapeHtml(p.region)}` : ''}<span class="sub"> · ${escapeHtml(country)}</span></dd>`)
   rows.push(`<dt>${escapeHtml(t.sizeLabel)}</dt><dd>${escapeHtml(SIZE_LABEL[lang][p.size] ?? p.size)}</dd>`)
   if (att) {
@@ -250,6 +261,7 @@ function eventPage(p, lang) {
     <main>
       <img class="hero" src="${ogImagePath(slug)}" alt="${escapeHtml(p.name)} — ${escapeHtml(city)}, ${escapeHtml(country)}" width="1200" height="630" loading="eager">
       ${first ? `<div class="badge">✨ ${escapeHtml(t.firstEdition)}</div>` : ''}
+      ${movedShort ? `<div class="badge badge-moved">↻ ${escapeHtml(t.movedFrom(movedShort))}</div>` : ''}
       <h1>${escapeHtml(p.name)}</h1>
       <p class="lede">${escapeHtml(description)}</p>
       <dl>${rows.join('')}</dl>

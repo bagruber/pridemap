@@ -13,7 +13,7 @@ import os from 'os'
 import { chromium } from 'playwright-core'
 import {
   buildSlugMap, cityName, countryName, formatDate, isFirstTime, escapeHtml, YEAR,
-  TOKENS, PRIDE_STOPS,
+  TOKENS, PRIDE_STOPS, T,
 } from './lib/pages.mjs'
 
 // Outside public/ on purpose: only the canonical build copies these into dist,
@@ -80,6 +80,7 @@ function template(p, { w, h, story }) {
   const country = countryName(lang, p.country)
   const first = isFirstTime(p)
   const date = formatDate(lang, p.date)
+  const wasDate = p.movedFrom ? formatDate(lang, p.movedFrom) : null
   const pinY = story ? 0.26 : 0.29           // shared by the map anchor and the pin
   const tiles = mosaic(p.lon, p.lat, w, h, story ? ZOOM + 1 : ZOOM, pinY)
   const imgs = tiles.map(t =>
@@ -112,6 +113,12 @@ html,body{width:${w}px;height:${h}px;overflow:hidden;background:#0e0e0e;
   border-radius:24px;font-size:${S.badge}px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;
   color:${TOKENS.premiere};background:rgba(255,212,71,.14);border:1.5px solid rgba(255,212,71,.5);
   margin-bottom:${story ? 20 : 13}px}
+.badge-moved{color:${TOKENS.accent};background:rgba(255,45,120,.14);border-color:rgba(255,45,120,.5)}
+/* The old date rides along struck through: the card is the only place someone
+   who bookmarked the June date will ever see the correction. */
+.was{font-weight:400;color:#9a9a9a;font-size:${Math.round(S.date * 0.72)}px;
+  /* Story dates wrap, so the strike-through gets its own line there */
+  ${story ? 'display:block;margin-top:8px' : 'margin-left:10px'}}
 h1{font-size:${S.name}px;line-height:1.05;font-weight:700;letter-spacing:-1px;
   margin-bottom:${story ? 16 : 11}px;text-shadow:0 2px 24px rgba(0,0,0,.7)}
 .where{font-size:${S.city}px;color:#c8c8c8;margin-bottom:${story ? 10 : 6}px}
@@ -129,9 +136,10 @@ h1{font-size:${S.name}px;line-height:1.05;font-weight:700;letter-spacing:-1px;
 <div class="card">
   <div class="bar"></div>
   ${first ? `<div class="badge">✦ Premiere ${YEAR}</div>` : ''}
+  ${wasDate ? `<div class="badge badge-moved">↻ ${escapeHtml(T[lang].rescheduled)}</div>` : ''}
   <h1>${escapeHtml(p.name)}</h1>
   <div class="where">${escapeHtml(city)}${p.region ? ` · ${escapeHtml(p.region)}` : ''} · ${escapeHtml(country)}</div>
-  <div class="date">${escapeHtml(date)}</div>
+  <div class="date">${escapeHtml(date)}${wasDate ? `<s class="was">${escapeHtml(wasDate)}</s>` : ''}</div>
 </div>
 <div class="foot"><span class="brand">pridemap.net</span><span class="attr">© CARTO · © OpenStreetMap</span></div>
 </body></html>`
