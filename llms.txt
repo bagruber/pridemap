@@ -10,6 +10,8 @@ Events are colour-coded by how many days until they take place.
 Users can filter by country, event size (small / medium / large relative to European prides),
 and time frame (upcoming, this weekend, next weekend, past, all).
 A list view with full-text search (including umlaut folding: u finds ü, s finds ß) is also available.
+Search understands the national word for a Pride — CSD, Marche des Fiertés, Orgullo, Parada Równości
+and so on — so "Orgullo Madrid", "CSD Berlin" and "Pride Berlin" all reach the same event.
 The site supports English and German.
 
 ## Data
