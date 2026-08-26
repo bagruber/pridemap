@@ -51,8 +51,10 @@ Google Chrome. Und `vite preview` antwortet auf `/` mit einem 302 auf
 
 ## Nichts davon ist gepusht
 
-Alle Aenderungen vom 26.08.2026 liegen als lokale Commits. Dieses Repo hat keinen CI-Workflow, es gibt also nichts, was beim Push
-umschalten koennte — die Commits liegen aber trotzdem nur lokal.
+Alle Aenderungen vom 26.08.2026 liegen als lokale Commits. Dieses Repo hat
+keinen CI-Workflow, es gibt also nichts, was beim Push umschalten koennte — die
+Commits liegen aber trotzdem nur lokal. Deployed wird hier von Hand ueber
+`pnpm run deploy` (gh-pages) bzw. `deploy:hostinger`.
 
 ## Beim naechsten Paket-Update
 
