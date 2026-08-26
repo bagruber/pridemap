@@ -6,6 +6,7 @@ import { useLang } from '../contexts/LangContext.jsx'
 import { t, cityName, labelForDaysL10n, formatDate } from '../utils/i18n.js'
 import { toSelection, isFirstTime } from '../utils/parade.js'
 import { norm } from '../utils/text.js'
+import { parsePrideQuery } from '../utils/prideTerms.js'
 import MiniLegend from './MiniLegend.jsx'
 
 function ListRow({ parade, onSelect, lang }) {
@@ -72,8 +73,11 @@ export default function ListView({ parades, onSelect }) {
   const [sortBy, setSortBy] = useState('date')
 
   const displayed = useMemo(() => {
-    const q = norm(query)
-    const filtered = q
+    // Pride vocabulary is pulled out of the query first, so "pride berlin",
+    // "csd berlin" and "berlin" all reach the same row. What's left has to
+    // match token by token — a single substring pass made word order matter.
+    const { tokens, countries } = parsePrideQuery(norm(query))
+    const filtered = tokens.length
       ? parades.filter(p => {
           const haystack = [
             p.city,
@@ -82,9 +86,11 @@ export default function ListView({ parades, onSelect }) {
             p.name ?? '',
             p.region ?? '',
           ].map(norm).join(' ')
-          return haystack.includes(q)
+          return tokens.every(tk => haystack.includes(tk))
         })
-      : parades
+      : countries
+        ? parades.filter(p => countries.includes(p.country))
+        : parades
 
     return [...filtered].sort((a, b) =>
       sortBy === 'date'
