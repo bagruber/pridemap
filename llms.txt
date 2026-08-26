@@ -17,6 +17,8 @@ The site supports English and German.
 Each event has: city, country, date, size category, region (subnational entity in local language),
 website, Instagram, first year the event was held, ILGA-Europe rainbow index score for the country,
 and attendance figures where known (with source: authorities or organizers).
+Events whose date was moved after being announced also carry the previous date and are marked
+as rescheduled (schema.org EventRescheduled) on their page.
 
 Countries covered include DE, AT, CH, FR, IT, GB, ES, NL, BE, SE, NO, DK, FI, PL, CZ, HU,
 and many more across Europe.
