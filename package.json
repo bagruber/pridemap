@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run logo && vite build && node scripts/inject-jsonld.mjs",
-    "build:colorful": "npm run logo && vite build --mode colorful && node scripts/inject-jsonld.mjs",
+    "build": "pnpm run logo && vite build && node scripts/inject-jsonld.mjs",
+    "build:colorful": "pnpm run logo && vite build --mode colorful && node scripts/inject-jsonld.mjs",
     "preview": "vite preview",
-    "deploy": "npm run build:colorful && node scripts/deploy.mjs gh-pages",
+    "deploy": "pnpm run build:colorful && node scripts/deploy.mjs gh-pages",
     "og": "node scripts/og-images.mjs",
     "og:force": "node scripts/og-images.mjs --force",
-    "build:hostinger": "npm run logo && npm run og && vite build --base=/ && node scripts/prerender.mjs",
-    "deploy:hostinger": "npm run build:hostinger && node scripts/deploy.mjs hostinger",
+    "build:hostinger": "pnpm run logo && pnpm run og && vite build --base=/ && node scripts/prerender.mjs",
+    "deploy:hostinger": "pnpm run build:hostinger && node scripts/deploy.mjs hostinger",
     "prepare-data": "node scripts/prepare-data.js",
     "logo": "node scripts/logo-svg.mjs"
   },
@@ -22,14 +22,14 @@
     "flag-icons": "^7.5.0",
     "lucide-react": "^1.16.0",
     "maplibre-gl": "^5.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "react-icons": "^5.6.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^6.1.0",
     "gh-pages": "^6.3.0",
     "playwright-core": "^1.61.1",
-    "vite": "^6.0.5"
+    "vite": "^8.2.2"
   }
 }
