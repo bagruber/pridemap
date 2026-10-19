@@ -1923,7 +1923,14 @@ html, body, #root {
     margin: 14px 0 0;
     font-size: 14px;
   }
-  .detail-links-row a { color: var(--text); text-decoration: underline; }
+  .detail-links-row a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 
   .detail-rows { margin: 20px 0 0; font-size: 14px; }
   .detail-rows > div {

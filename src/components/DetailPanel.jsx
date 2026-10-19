@@ -1,5 +1,5 @@
-import { FaInstagram, FaGlobe } from 'react-icons/fa'
-import { CalendarClock, MapPin, X } from 'lucide-react'
+import { CalendarClock, Globe, MapPin, X } from 'lucide-react'
+import InstagramIcon from './InstagramIcon.jsx'
 import { colorForDays, indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { isFirstTime } from '../utils/firstTime.js'
@@ -152,7 +152,7 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGlobe size={12} />
+              <Globe size={12} />
               <span>{website.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}</span>
             </a>
           )}
@@ -163,7 +163,7 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram size={13} />
+              <InstagramIcon size={13} />
               <span>{'@' + instagram.replace(/^https?:\/\/(www\.)?instagram\.com\//, '').replace(/\/$/, '')}</span>
             </a>
           )}

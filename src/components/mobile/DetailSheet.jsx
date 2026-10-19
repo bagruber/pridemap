@@ -1,5 +1,6 @@
 import { useEffect, useMemo } from 'react'
-import { X, CalendarPlus, Navigation, Share2 } from 'lucide-react'
+import { X, CalendarPlus, Globe, Navigation, Share2 } from 'lucide-react'
+import InstagramIcon from '../InstagramIcon.jsx'
 import { colorForDays, indexColor } from '../../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../../utils/countryInfo.js'
 import { isFirstTime } from '../../utils/firstTime.js'
@@ -145,11 +146,13 @@ export default function DetailSheet({ parade: p, onClose, onHeightChange }) {
           <p className="detail-links-row">
             {p.website && (
               <a href={p.website} target="_blank" rel="noopener noreferrer">
+                <Globe size={13} aria-hidden="true" />
                 {p.website.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]} ↗
               </a>
             )}
             {p.instagram && (
               <a href={p.instagram} target="_blank" rel="noopener noreferrer">
+                <InstagramIcon size={13} />
                 @{p.instagram.replace(/^https?:\/\/(www\.)?instagram\.com\//, '').replace(/\/$/, '')} ↗
               </a>
             )}
