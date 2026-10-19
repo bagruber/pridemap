@@ -5,7 +5,7 @@
 // the build strips it down and keeps the bundle to what is actually drawn.
 //
 //   node scripts/data/build.mjs [--strict] [--warnings]
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs'
 import { validate } from './validate.mjs'
 import { rainbowIndex } from './rainbowIndex.mjs'
 
@@ -48,6 +48,8 @@ const out = prides
   }))
   .sort((a, b) => a.id.localeCompare(b.id))
 
+// src/data/ holds nothing but this generated file, so a fresh clone has no such folder
+mkdirSync('src/data', { recursive: true })
 writeFileSync('src/data/prides.json', JSON.stringify(out) + '\n', 'utf8')
 
 const kb = n => `${(n / 1024).toFixed(0)} kB`
