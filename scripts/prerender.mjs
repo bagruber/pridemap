@@ -609,6 +609,17 @@ fs.writeFileSync(indexPath, fs.readFileSync(indexPath, 'utf8')
 
 const imageCount = copyShareImages()
 
+// Every page points at /og/<slug>.jpg for its hero and its preview. When the
+// slugs changed, the cache still held the old names and every page would have
+// shipped a broken image — with nothing failing. So: check.
+const missingImages = [...slugs.values()]
+  .filter(slug => !fs.existsSync(path.join(DIST, 'og', `${slug}.jpg`)))
+if (missingImages.length) {
+  console.warn(`Share images: ${missingImages.length} von ${slugs.size} fehlen` +
+    ` — ${missingImages.slice(0, 3).join(', ')}${missingImages.length > 3 ? ' …' : ''}` +
+    `  (pnpm run og)`)
+}
+
 const pageCount = urls.length * LANGS.length
 console.log(`Prerender: ${parades.length} events × ${LANGS.length} langs, ${countries.length} country hubs, ${months.length} month hubs`)
 console.log(`Share images: ${imageCount} copied to dist/og/`)
