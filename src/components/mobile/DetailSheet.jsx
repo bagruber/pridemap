@@ -1,6 +1,7 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { X, CalendarPlus, Globe, Navigation, Share2 } from 'lucide-react'
 import InstagramIcon from '../InstagramIcon.jsx'
+import DetailMedia from './DetailMedia.jsx'
 import { colorForDays, indexColor } from '../../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../../utils/countryInfo.js'
 import { isFirstTime } from '../../utils/firstTime.js'
@@ -10,6 +11,8 @@ import { useSheetDrag } from '../../hooks/useSheetDrag.js'
 import { downloadICS } from '../../utils/ics.js'
 import { track } from '../../utils/track.js'
 
+// The handle strip above the content; the air below it belongs to .detail-peek
+const CHROME = 36
 const EXPANDED = 776
 
 // iOS opens Apple Maps for its own scheme and nothing for Google's deep link
@@ -37,10 +40,27 @@ export default function DetailSheet({ parade: p, onClose, onHeightChange }) {
     [p.attendance],
   )
 
-  // Collapsed height follows the content: a sheet that reserves room for a
-  // photo it does not have is just a sheet with a hole in it.
-  const collapsed = 150 + (p.website || p.instagram ? 44 : 0)
-  const sheet = useSheetDrag([collapsed, EXPANDED], 0)
+  // The collapsed height is measured, not guessed. It used to be 150 px plus
+  // 44 if there were links — numbers that fit the mock and nothing else: a
+  // Pride with a two-line name was cut off, one without links kept a gap, and
+  // a photo would have needed a third number. Measuring the block means the
+  // sheet is exactly as tall as what it has to show, whatever that is.
+  const peekRef = useRef(null)
+  const [peekHeight, setPeekHeight] = useState(null)
+  useLayoutEffect(() => {
+    const el = peekRef.current
+    if (!el) return
+    const measure = () => setPeekHeight(el.getBoundingClientRect().height)
+    measure()
+    if (typeof ResizeObserver === 'undefined') return
+    const ro = new ResizeObserver(measure)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [p.id, lang])
+
+  const viewportCap = typeof window !== 'undefined' ? window.innerHeight - 68 : EXPANDED
+  const collapsed = Math.round(Math.min((peekHeight ?? 150) + CHROME, viewportCap))
+  const sheet = useSheetDrag([collapsed, Math.min(EXPANDED, viewportCap)], 0)
   const expanded = sheet.index === 1
 
   useEffect(() => { onHeightChange?.(sheet.height) }, [sheet.height, onHeightChange])
@@ -108,6 +128,7 @@ export default function DetailSheet({ parade: p, onClose, onHeightChange }) {
       </button>
 
       <div className="sheet-scroll detail-scroll">
+        <div ref={peekRef} className="detail-peek">
         <h2 className="detail-head">
           {isFirstTime(p) && <span className="detail-premiere">{t('firstTime', lang)} {p.year}</span>}
           <span className="detail-city" style={{ color }}>{city}</span>
@@ -119,6 +140,11 @@ export default function DetailSheet({ parade: p, onClose, onHeightChange }) {
           <span style={{ color: p.open || isPast ? undefined : color }}>{countdown}</span>
           {when && <span className="detail-date"> · {when}</span>}
         </p>
+
+        {/* Either there is a photo or short video for this Pride, or the
+            block is simply not there — no reserved space, no placeholder. The
+            measurement above picks up whichever case applies. */}
+        {p.media && <DetailMedia media={p.media} name={p.name} />}
 
         <div className="detail-actions">
           {p.lat != null && (
@@ -158,9 +184,10 @@ export default function DetailSheet({ parade: p, onClose, onHeightChange }) {
             )}
           </p>
         )}
+        </div>
 
         {expanded && (
-          <>
+          <div className="detail-extra">
             <dl className="detail-rows">
               {rows.map(([k, v]) => (
                 <div key={k}>
@@ -209,7 +236,7 @@ export default function DetailSheet({ parade: p, onClose, onHeightChange }) {
                 {t('reportError', lang)} ↗
               </a>
             </p>
-          </>
+          </div>
         )}
       </div>
     </section>
