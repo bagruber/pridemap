@@ -112,6 +112,17 @@
         "year": 2026,
         "date": "2026-05-23",
         "status": "unverified"
+      },
+      {
+        "year": 2027,
+        "date": "2027-05-29",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-birmingham.html",
+            "checked": "2026-10-20"
+          }
+        ]
       }
     ],
     "sources": [],
@@ -1677,6 +1688,17 @@
         "year": 2026,
         "date": "2026-07-25",
         "status": "unverified"
+      },
+      {
+        "year": 2027,
+        "date": "2027-07-31",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-nottingham.html",
+            "checked": "2026-10-20"
+          }
+        ]
       }
     ],
     "sources": [],
@@ -2159,6 +2181,17 @@
         "year": 2026,
         "date": "2026-05-16",
         "status": "unverified"
+      },
+      {
+        "year": 2027,
+        "date": "2027-05-15",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-swansea.html",
+            "checked": "2026-10-20"
+          }
+        ]
       }
     ],
     "sources": [],

@@ -170,6 +170,17 @@
         "year": 2026,
         "date": "2026-07-25",
         "status": "unverified"
+      },
+      {
+        "year": 2027,
+        "date": "2027-07-31",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-innsbruck.html",
+            "checked": "2026-10-20"
+          }
+        ]
       }
     ],
     "sources": [],

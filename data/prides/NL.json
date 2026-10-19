@@ -22,6 +22,17 @@
         "year": 2026,
         "date": "2026-05-23",
         "status": "unverified"
+      },
+      {
+        "year": 2027,
+        "date": "2027-05-22",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-alkmaar.html",
+            "checked": "2026-10-20"
+          }
+        ]
       }
     ],
     "sources": [],
@@ -63,6 +74,17 @@
         "year": 2026,
         "date": "2026-08-01",
         "status": "unverified"
+      },
+      {
+        "year": 2027,
+        "date": "2027-08-07",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-amsterdam.html",
+            "checked": "2026-10-20"
+          }
+        ]
       }
     ],
     "sources": [],
@@ -233,6 +255,17 @@
         "year": 2026,
         "date": "2026-06-06",
         "status": "unverified"
+      },
+      {
+        "year": 2027,
+        "date": "2027-06-05",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-utrecht.html",
+            "checked": "2026-10-20"
+          }
+        ]
       }
     ],
     "sources": [],

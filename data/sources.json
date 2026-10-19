@@ -3,13 +3,13 @@
   "_aufbau": "Ein Eintrag je Land. 'overview' sind Uebersichtsseiten mit Terminlisten, 'outlets' Szenemedien und Lokalpresse, 'terms' die Suchbegriffe der Landessprachen, 'announceWindow' wann die Termine des Folgejahres ueblicherweise erscheinen, 'lastSweep' das Datum der letzten Recherche-Sitzung. Traegt eine Uebersicht 'abgleich', gibt es dafuer einen Parser: 'pnpm run data:abgleich <abgleich>'. '_uebergreifend' sind Uebersichten ueber viele Laender.",
 
   "_uebergreifend": [
-    { "url": "https://www.csd-termine.de/europa", "name": "csd-termine.de, Europa", "covers": "Europa ohne DE, eher die groesseren Prides", "checked": "2026-10-19", "abgleich": "csd-europa", "note": "Ganze Saison inklusive vergangener Termine (19.10.2026: 266 Eintraege, 10 fuer 2027, darunter EuroPride 2027 in Turin am 26.06.2027). Die Laender stehen auf Deutsch hinter dem Ort, Englands und Wales' Prides als 'England'/'Wales'. Gepflegte, werbefinanzierte Datenbank: als Hinweisliste nutzen, nicht spiegeln." }
+    { "url": "https://www.csd-termine.de/europa", "name": "csd-termine.de, Europa", "covers": "Europa ohne DE, eher die groesseren Prides", "checked": "2026-10-20", "abgleich": "csd-europa", "note": "Ganze Saison inklusive vergangener Termine (19.10.2026: 266 Eintraege, 10 fuer 2027, darunter EuroPride 2027 in Turin am 26.06.2027). Die Laender stehen auf Deutsch hinter dem Ort, Englands und Wales' Prides als 'England'/'Wales'. Gepflegte, werbefinanzierte Datenbank: als Hinweisliste nutzen, nicht spiegeln." }
   ],
 
   "DE": {
     "languages": ["de"],
     "overview": [
-      { "url": "https://www.csd-termine.de/deutschland", "name": "csd-termine.de", "covers": "ganz DE", "checked": "2026-10-19", "abgleich": "csd-de", "note": "Ganze Saison inklusive vergangener Termine (19.10.2026: 323 Eintraege, 34 fuer 2027). robots.txt sperrt Query-Strings und PDFs, die Laenderseiten sind frei. Gepflegte, werbefinanzierte Datenbank: als Hinweisliste nutzen, nicht spiegeln. Aus der Recherche Mai/Juni 2026 belegt." }
+      { "url": "https://www.csd-termine.de/deutschland", "name": "csd-termine.de", "covers": "ganz DE", "checked": "2026-10-20", "abgleich": "csd-de", "note": "Ganze Saison inklusive vergangener Termine (19.10.2026: 323 Eintraege, 34 fuer 2027). robots.txt sperrt Query-Strings und PDFs, die Laenderseiten sind frei. Gepflegte, werbefinanzierte Datenbank: als Hinweisliste nutzen, nicht spiegeln. Aus der Recherche Mai/Juni 2026 belegt." }
     ],
     "outlets": [],
     "terms": {

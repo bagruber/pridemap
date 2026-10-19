@@ -38,6 +38,17 @@
         "year": 2026,
         "date": "2026-06-13",
         "status": "unverified"
+      },
+      {
+        "year": 2027,
+        "date": "2027-06-17",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-riga.html",
+            "checked": "2026-10-20"
+          }
+        ]
       }
     ],
     "sources": [],

@@ -299,3 +299,28 @@ fand zu keinem eine Veranstalter-Seite mit Datum.
 - `pl-srem`: Weder Benedict noch die Websuche auf Polnisch haben etwas gefunden
   (Sprachbarriere). Der Status bleibt `announced` auf Basis von csd-termine.de und dem
   Facebook-Event.
+
+---
+
+## 2026-10-20 — Termine 2027 aus csd-termine.de uebernommen
+
+Beide Seiten heute noch einmal abgerufen (`/deutschland`, `/europa`), jeder Termin mit
+seiner Detailseite als Quelle und Status `announced`. Bestaetigt ist davon noch keiner;
+das ist die Arbeit der Landeswellen.
+
+- **36 Ausgaben 2027 fuer bekannte Prides:** 26 in DE (Angermuende bis Walsrode, darunter
+  Koeln 04.07., Berlin 24.07., Hamburg 07.08.), dazu gb-swansea, nl-alkmaar,
+  gb-birmingham, nl-utrecht, ch-zurich, lv-riga, it-torino (EuroPride, 26.06.),
+  at-innsbruck, gb-nottingham und nl-amsterdam.
+- **8 neue CSDs mit Termin 2027:** de-templin, de-burgstadt, de-niebull, de-buhl,
+  de-cuxhaven, de-freital, de-iserlohn, de-waltrop. Koordinaten und Bundesland per
+  Nominatim, Groesse geschaetzt, je `todo: link`. Die IDs folgen der bestehenden
+  Konvention (Umlaut weggelassen, nicht ausgeschrieben).
+- Auffaellig weit vom Vorjahr und deshalb beim Veranstalter zuerst zu bestaetigen:
+  de-eschwege (2026 im August, 2027 am 29.05.), de-plauen (August → 04.07.),
+  de-neubrandenburg (August → 19.06.).
+- Stand danach: 44 von 650 Prides haben einen Termin fuer 2027.
+
+Noch offen aus dem ersten Abgleich: die 31 deutschen CSDs, die 2026 liefen und bei uns
+fehlen, die neuen Prides aus /europa und der UK-Liste, und die Frage nach den Trans
+Prides (E9).
