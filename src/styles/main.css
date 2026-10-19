@@ -255,8 +255,6 @@ html, body, #root {
 
 .filter-group { margin-bottom: 18px; }
 
-.weekend-group { margin-top: 4px; }
-
 .display-toggle-row {
   display: flex;
   align-items: center;
@@ -324,29 +322,6 @@ html, body, #root {
 .lang-segmented .toggle-btn:last-child  { border-radius: 0 var(--radius) var(--radius) 0; border-right-width: 1px; }
 
 /* Country list */
-.country-list {
-  max-height: 200px;
-  overflow-y: auto;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
-}
-
-.country-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 8px;
-  cursor: pointer;
-  transition: background 0.1s;
-}
-.country-item:hover { background: var(--surface2); }
-.country-item.selected { background: rgba(255,255,255,0.05); }
-.country-item input[type="checkbox"] { accent-color: var(--accent); width: 12px; height: 12px; flex-shrink: 0; }
-.country-flag { width: 18px; height: 13px; background-size: contain; flex-shrink: 0; }
-.country-name { font-size: 12px; color: var(--text); flex: 1; }
-.country-code { font-size: 11px; color: var(--text-muted); }
 
 .clear-btn {
   background: none;
@@ -1423,7 +1398,6 @@ html, body, #root {
     min-height: 44px;
   }
 
-  .country-item { padding: 10px 8px; }
   .list-row { padding: 12px 12px; }
 }
 
@@ -1444,7 +1418,6 @@ html, body, #root {
   .iso-pin-btn,
   .share-btn,
   .detail-link-btn,
-  .country-item,
   .list-row,
   .sidebar-toggle,
   .geo-btn,
@@ -1981,3 +1954,129 @@ html, body, #root {
 /* Premiere and "moved" on the list dot, same signs as on the map */
 .list-dot.is-premiere { box-shadow: 0 0 0 2px var(--premiere); }
 .list-dot.is-moved { box-shadow: 0 0 0 2px var(--accent); }
+
+/* ═══ Desktop: detail as a column, legend and travel time in the sidebar ══ */
+@media (min-width: 768px) {
+  /* The detail used to sit at the bottom centre, over the map — which put it
+     on top of the place it was describing more often than not. As a column it
+     covers a strip the map can be panned out of instead. */
+  .detail-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    width: 380px;
+    max-width: 380px;
+    min-width: 0;
+    transform: none;
+    border: 0;
+    border-left: 1px solid var(--border);
+    border-radius: 0;
+    padding: 18px 22px 28px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    animation: detail-slide 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  @keyframes detail-slide {
+    from { transform: translateX(16px); opacity: 0; }
+    to   { transform: none; opacity: 1; }
+  }
+
+  /* Collapsible blocks at the foot of the sidebar */
+  .side-section { border-top: 1px solid var(--border); }
+  .side-section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 11px 14px;
+    background: none;
+    border: 0;
+    color: var(--text);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .side-section-head:hover { color: var(--text); background: var(--surface2); }
+  .side-section.is-open .side-section-head svg { transform: rotate(180deg); }
+  .side-section-head svg { color: var(--text-muted); transition: transform 0.15s; }
+  .side-section-body { padding: 0 14px 14px; }
+
+  /* Inside the sidebar these are plain blocks, not floating panels */
+  .side-section-body .legend,
+  .side-section-body .iso-controls {
+    position: static;
+    width: auto;
+    min-width: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+  }
+  .side-section-body .iso-title { display: none; }
+
+  /* The country list loses its fixed seven-row window: with 38 countries in
+     it, that was a scrollbar inside a scrollbar. */
+  .filter-sidebar .country-picker { display: block; }
+  .filter-sidebar .country-search {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    height: 34px;
+    padding: 0 9px;
+    margin-bottom: 7px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-muted);
+  }
+  .filter-sidebar .country-search input {
+    flex: 1;
+    min-width: 0;
+    background: none;
+    border: 0;
+    outline: none;
+    color: var(--text);
+    font: inherit;
+    font-size: 13px;
+  }
+  .filter-sidebar .country-rows { display: flex; flex-direction: column; }
+  .filter-sidebar .country-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 2px;
+    cursor: pointer;
+  }
+  .filter-sidebar .country-row input { width: 14px; height: 14px; accent-color: var(--accent); }
+  .filter-sidebar .country-row-flag { width: 17px; flex: none; border-radius: 2px; }
+  .filter-sidebar .country-row-name { flex: 1; font-size: 13px; color: var(--text); }
+  .filter-sidebar .country-row-count { font-size: 12px; color: var(--text-muted); }
+  .filter-sidebar .country-row.is-on .country-row-name { font-weight: 600; }
+
+  /* Timeframe as one group here too */
+  .filter-sidebar .option-pills { display: flex; flex-wrap: wrap; gap: 4px; }
+  .filter-sidebar .option-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 14px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .filter-sidebar .option-pill:hover { border-color: var(--text-dim); color: var(--text); }
+  .filter-sidebar .option-pill.is-on {
+    background: var(--text);
+    border-color: var(--text);
+    color: var(--bg);
+  }
+  .filter-sidebar .option-pill-dot { border-radius: 50%; background: currentColor; flex: none; }
+}

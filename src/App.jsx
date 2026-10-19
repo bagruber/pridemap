@@ -5,7 +5,6 @@ import ResultSheet from './components/mobile/ResultSheet.jsx'
 import IsoControls from './components/IsoControls.jsx'
 import DetailSheet from './components/mobile/DetailSheet.jsx'
 import DetailPanel from './components/DetailPanel.jsx'
-import Legend from './components/Legend.jsx'
 import ListView from './components/ListView.jsx'
 import MapSearch from './components/MapSearch.jsx'
 import Toast from './components/Toast.jsx'
@@ -205,9 +204,10 @@ export default function App() {
     return () => window.removeEventListener('popstate', onPop)
   }, [])
 
+  // No flyTo here any more: opening the detail moves the map itself, and two
+  // camera moves at once fought each other.
   function handleSearchPick(p) {
     openDetail(p.id)
-    setFlyTo([p.lon, p.lat])
   }
 
   function handleShowOnMap() {
@@ -276,6 +276,7 @@ export default function App() {
               onSelect={openDetail}
               view={view}
               detailPadding={isMobile && selectedParade ? sheetHeight : 0}
+              detailColumn={!isMobile && selectedParade ? 380 : 0}
               selectedId={selectedParade?.id ?? null}
               isoOrigin={isoOrigin}
               onIsoOriginSet={setIsoOrigin}
@@ -332,6 +333,7 @@ export default function App() {
               filters={filters}
               onChange={setFilters}
               allCountries={ALL_COUNTRIES}
+              countryCounts={countryCounts}
               totalCount={filteredParades.length}
               openCount={openCount}
               today={today}
@@ -342,6 +344,7 @@ export default function App() {
               viewMode={viewMode}
               onViewModeChange={switchViewMode}
               onAboutClick={() => setAboutOpen(true)}
+              isoSlot={viewMode === 'map' ? isoControls : null}
             />
           )}
         </>
@@ -368,14 +371,6 @@ export default function App() {
           onClose={() => setSelectedId(null)}
           onShowOnMap={selectedParade.lat != null ? handleShowOnMap : null}
         />
-      )}
-
-      {/* Desktop-only: isochrones, legend — map mode only */}
-      {!isMobile && viewMode === 'map' && (
-        <>
-          <div className="isochrone-controls">{isoControls}</div>
-          <Legend />
-        </>
       )}
 
       {/* Mobile: one sheet for results, filters and legend; a second for the detail */}

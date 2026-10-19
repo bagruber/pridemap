@@ -2,25 +2,28 @@ import { useLang } from '../contexts/LangContext.jsx'
 import { t, tf } from '../utils/i18n.js'
 import ColoredTitle from './ColoredTitle.jsx'
 import ShareButton from './ShareButton.jsx'
-import { TIMEFRAMES, WEEKENDS } from '../utils/filterConstants.js'
 import { useFilterHandlers } from '../hooks/useFilterHandlers.js'
-import CountryFilter from './filters/CountryFilter.jsx'
+import CountryPicker from './filters/CountryPicker.jsx'
 import SizeFilter from './filters/SizeFilter.jsx'
 import MonthFilter from './filters/MonthFilter.jsx'
+import TimeFilter from './filters/TimeFilter.jsx'
+import FilterLabel from './filters/FilterLabel.jsx'
+import SidebarSection from './SidebarSection.jsx'
+import Legend from './Legend.jsx'
 import LangToggle from './filters/LangToggle.jsx'
 import ViewModeToggle from './filters/ViewModeToggle.jsx'
 import RegionToggle from './filters/RegionToggle.jsx'
 import ClusterToggle from './filters/ClusterToggle.jsx'
 
 export default function FilterSidebar({
-  filters, onChange, allCountries, totalCount, openCount, today,
+  filters, onChange, allCountries, countryCounts, totalCount, openCount, today,
   view, onViewChange,
   clusteringEnabled, onClusteringChange,
   viewMode, onViewModeChange,
-  onAboutClick,
+  onAboutClick, isoSlot,
 }) {
   const { lang } = useLang()
-  const { toggleCountry, toggleSize, toggleMonth, setTimeframe } = useFilterHandlers(filters, onChange)
+  const { toggleCountry, toggleSize, toggleMonth } = useFilterHandlers(filters, onChange)
 
   return (
     <aside className="filter-sidebar" aria-label="Filters">
@@ -41,29 +44,8 @@ export default function FilterSidebar({
 
       <div className="sidebar-body">
         <div className="filter-group">
-          <div className="filter-label">{t('filterTime', lang)}</div>
-          <div className="toggle-group">
-            {TIMEFRAMES.map(tf => (
-              <button
-                key={tf.value}
-                className={`toggle-btn ${filters.timeframe === tf.value ? 'active' : ''}`}
-                onClick={() => onChange({ ...filters, timeframe: tf.value })}
-              >
-                {t(tf.key, lang)}
-              </button>
-            ))}
-          </div>
-          <div className="toggle-group weekend-group">
-            {WEEKENDS.map(w => (
-              <button
-                key={w.value}
-                className={`toggle-btn ${filters.timeframe === w.value ? 'active' : ''}`}
-                onClick={() => setTimeframe(w.value)}
-              >
-                {t(w.key, lang)}
-              </button>
-            ))}
-          </div>
+          <FilterLabel>{t('filterTime', lang)}</FilterLabel>
+          <TimeFilter filters={filters} onChange={onChange} />
         </div>
 
         <div className="filter-group">
@@ -75,10 +57,17 @@ export default function FilterSidebar({
         </div>
 
         <div className="filter-group">
-          <CountryFilter
+          <FilterLabel
+            onClear={filters.countries.length > 0 ? () => onChange({ ...filters, countries: [] }) : null}
+            clearCount={filters.countries.length}
+          >
+            {t('filterCountry', lang)}
+          </FilterLabel>
+          <CountryPicker
             filters={filters}
             onChange={onChange}
             allCountries={allCountries}
+            counts={countryCounts}
             toggleCountry={toggleCountry}
           />
         </div>
@@ -89,6 +78,15 @@ export default function FilterSidebar({
             onClusteringChange={onClusteringChange}
           />
         </div>
+
+        {/* The right edge belongs to the detail column now, so what used to
+            float there folds in here. */}
+        <SidebarSection title={t('legendEventSize', lang)} defaultOpen>
+          <Legend />
+        </SidebarSection>
+        {isoSlot && (
+          <SidebarSection title={t('isoTravelTime', lang)}>{isoSlot}</SidebarSection>
+        )}
       </div>
 
       <footer className="sidebar-footer">

@@ -221,7 +221,7 @@ export default function Map({
   flyTo, onFlyToDone,
   clusteringEnabled,
   initialPosition, onViewChange, onReady,
-  detailPadding = 0,
+  detailPadding = 0, detailColumn = 0,
 }) {
   const containerRef = useRef(null)
   const mapRef = useRef(null)
@@ -234,6 +234,8 @@ export default function Map({
   paradesRef.current = parades
   const detailPaddingRef = useRef(detailPadding)
   detailPaddingRef.current = detailPadding
+  const detailColumnRef = useRef(detailColumn)
+  detailColumnRef.current = detailColumn
   const isoPinningRef = useRef(false)
   const clusteringRef = useRef(clusteringEnabled)
   const [mapLoaded, setMapLoaded] = useState(false)
@@ -475,13 +477,20 @@ export default function Map({
     // On a phone the sheet covers the lower half, and the dot that was just
     // tapped was usually under it. Move it into the strip that stays free and
     // come closer, because at the continental zoom "there" says very little.
-    if (selectedId != null && detailPaddingRef.current > 0 && selectedId !== prev) {
+    const bottom = detailPaddingRef.current
+    const right = detailColumnRef.current
+    if (selectedId != null && (bottom > 0 || right > 0) && selectedId !== prev) {
       const p = paradesRef.current.find(x => x.id === selectedId)
       if (p?.lat != null) {
         map.easeTo({
           center: [p.lon, p.lat],
-          zoom: Math.min(map.getMaxZoom(), map.getZoom() * 2),
-          padding: { top: 0, right: 0, bottom: detailPaddingRef.current, left: 0 },
+          // On a phone the sheet hides most of the map, so come closer. On a
+          // desktop the column takes a strip, not the view, so only close in
+          // when the map is still showing half a continent.
+          zoom: bottom > 0
+            ? Math.min(map.getMaxZoom(), map.getZoom() * 2)
+            : Math.max(map.getZoom(), 6),
+          padding: { top: 0, right, bottom, left: 0 },
           duration: 500,
         })
       }
@@ -493,10 +502,17 @@ export default function Map({
   // this effect fires in the same commit.
   useEffect(() => {
     const map = mapRef.current
-    if (!map || !mapLoaded || !selectedId || detailPadding <= 0) return
+    if (!map || !mapLoaded || !selectedId) return
+    if (detailPadding <= 0 && detailColumn <= 0) return
     if (map.isEasing()) return
-    map.setPadding({ top: 0, right: 0, bottom: detailPadding, left: 0 })
-  }, [detailPadding, selectedId, mapLoaded])
+    map.setPadding({ top: 0, right: detailColumn, bottom: detailPadding, left: 0 })
+  }, [detailPadding, detailColumn, selectedId, mapLoaded])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !mapLoaded || selectedId) return
+    map.setPadding({ top: 0, right: 0, bottom: 0, left: 0 })
+  }, [selectedId, mapLoaded])
 
   // ── Fly to view on switch ───────────────────────────────────────────────────
   useEffect(() => {
