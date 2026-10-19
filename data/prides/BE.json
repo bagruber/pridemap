@@ -1,0 +1,136 @@
+[
+  {
+    "id": "be-antwerpen",
+    "legacyIds": [
+      "antwerpen-pride-csd-antwerpen-2026-2026-08-08"
+    ],
+    "name": "Antwerpen Pride",
+    "aka": [],
+    "city": "Antwerpen",
+    "cityNames": {
+      "en": "Antwerp"
+    },
+    "country": "BE",
+    "region": "Vlaanderen",
+    "lat": 51.221,
+    "lon": 4.399,
+    "website": "https://antwerppride.be",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "be-bruxelles",
+    "legacyIds": [
+      "bruessel-pride-csd-bruessel-2026-2026-05-16"
+    ],
+    "name": "Bruxelles Pride",
+    "aka": [
+      "Brüssel Pride",
+      "Brussel"
+    ],
+    "city": "Bruxelles",
+    "cityNames": {
+      "de": "Brüssel",
+      "en": "Brussels"
+    },
+    "country": "BE",
+    "region": "Bruxelles-Capitale",
+    "lat": 50.85,
+    "lon": 4.349,
+    "website": "https://www.brusselspride.eu/en",
+    "instagram": "https://www.instagram.com/thebrusselspride/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 200000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "be-namur",
+    "legacyIds": [
+      "namur-pride-fiert-s-namuroises-2026-2026-05-30"
+    ],
+    "name": "Namur Pride",
+    "aka": [
+      "Fiertés Namuroises"
+    ],
+    "city": "Namur",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.465,
+    "lon": 4.867,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "be-sankt-vith",
+    "legacyIds": [
+      "sankt-vith-pride-csd-sankt-vith-2026-2026-07-18"
+    ],
+    "name": "Sankt Vith Pride",
+    "aka": [],
+    "city": "Sankt Vith",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.282,
+    "lon": 6.134,
+    "website": "https://stvithpride.be",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

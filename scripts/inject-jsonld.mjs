@@ -21,7 +21,9 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 fs.writeFileSync('./dist/sitemap.xml', sitemap)
 console.log(`Sitemap: written with lastmod ${lastmod}`)
 
-const parades = JSON.parse(fs.readFileSync('./src/data/parades.json', 'utf8'))
+import { loadEvents } from './lib/data.mjs'
+
+const parades = loadEvents()
 
 const events = parades
   .filter(p => new Date(p.date) >= today)

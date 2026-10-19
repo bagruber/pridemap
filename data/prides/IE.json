@@ -1,0 +1,144 @@
+[
+  {
+    "id": "ie-castlebar",
+    "legacyIds": [
+      "castlebar-pride-castlebar-mayo-pride-2026-2026-05-30"
+    ],
+    "name": "Castlebar Pride",
+    "aka": [
+      "Castlebar Mayo Pride"
+    ],
+    "city": "Castlebar",
+    "country": "IE",
+    "region": "Connacht",
+    "lat": 53.855,
+    "lon": -9.299,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "ie-cork",
+    "legacyIds": [
+      "cork-pride-csd-cork-2026-2026-08-02"
+    ],
+    "name": "Cork Pride",
+    "aka": [],
+    "city": "Cork",
+    "country": "IE",
+    "region": "Munster",
+    "lat": 51.898,
+    "lon": -8.474,
+    "website": "https://corkpride.ie",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-02",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "ie-drogheda",
+    "legacyIds": [
+      "drogheda-pride-csd-drogheda-2026-2026-06-20"
+    ],
+    "name": "Drogheda Pride",
+    "aka": [],
+    "city": "Drogheda",
+    "country": "IE",
+    "region": "Leinster",
+    "lat": 53.718,
+    "lon": -6.348,
+    "website": "https://droghedapride.ie",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "ie-dublin",
+    "legacyIds": [
+      "dublin-pride-csd-dublin-2026-2026-06-27"
+    ],
+    "name": "Dublin Pride",
+    "aka": [],
+    "city": "Dublin",
+    "country": "IE",
+    "region": "Leinster",
+    "lat": 53.333,
+    "lon": -6.249,
+    "website": "https://dublinpride.ie",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "ie-limerick",
+    "legacyIds": [
+      "limerick-pride-csd-limerick-2026-2026-07-11"
+    ],
+    "name": "Limerick Pride",
+    "aka": [],
+    "city": "Limerick",
+    "country": "IE",
+    "region": "Munster",
+    "lat": 52.668,
+    "lon": -8.63,
+    "website": "https://limerickpride.ie",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

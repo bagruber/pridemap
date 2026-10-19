@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ro-brasov",
+    "legacyIds": [
+      "bra-ov-pride-csd-bra-ov-2026-2026-09-06"
+    ],
+    "name": "Brașov Pride",
+    "aka": [],
+    "city": "Brașov",
+    "country": "RO",
+    "region": "Brașov",
+    "lat": 45.6525105,
+    "lon": 25.6105654,
+    "website": "https://brasovpride.ro",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "ro-bucuresti",
+    "legacyIds": [
+      "bucharest-pride-csd-bucharest-2026-2026-06-27"
+    ],
+    "name": "Bucharest Pride",
+    "aka": [],
+    "city": "București",
+    "cityNames": {
+      "de": "Bukarest",
+      "en": "Bucharest"
+    },
+    "country": "RO",
+    "region": "Ilfov",
+    "lat": 44.432,
+    "lon": 26.106,
+    "website": "https://bucharestpride.ro",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

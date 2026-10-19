@@ -8,3 +8,7 @@ private/
 # prerenderer. Kept out of the repo to avoid ~150 MB of binary bloat; the local
 # copy doubles as the incremental cache (regeneration skips existing files).
 og-cache/
+
+# Built by `pnpm run data` from data/prides/*.json — the source of truth is
+# the per-country files, this is only the slim runtime copy.
+src/data/prides.json

@@ -14,9 +14,9 @@ import {
 } from './lib/pages.mjs'
 
 const DIST = './dist'
-const parades = JSON.parse(fs.readFileSync('./src/data/parades.json', 'utf8'))
-const attendance = JSON.parse(fs.readFileSync('./src/data/attendance.json', 'utf8'))
-const attendanceBy = Object.fromEntries(attendance.map(a => [a.city, a]))
+import { loadEvents, newestAttendance } from './lib/data.mjs'
+
+const parades = loadEvents()
 const slugs = buildSlugMap(parades)
 
 const write = (rel, html) => {
@@ -156,7 +156,7 @@ const rowsFor = (lang, list) => list.map(p => {
   const s = slugs.get(p.id)
   const first = isFirstTime(p)
   return `        <li><a href="${eventPath(lang, s)}">
-          <span class="c">${escapeHtml(cityName(lang, p.city))}${first ? ` <span class="pill">${escapeHtml(T[lang].firstEdition)}</span>` : ''}${p.movedFrom ? ` <span class="pill pill-moved">${escapeHtml(T[lang].rescheduled)}</span>` : ''}${p.region ? ` <span class="r">${escapeHtml(p.region)}</span>` : ''}</span>
+          <span class="c">${escapeHtml(cityName(lang, p))}${first ? ` <span class="pill">${escapeHtml(T[lang].firstEdition)}</span>` : ''}${p.movedFrom ? ` <span class="pill pill-moved">${escapeHtml(T[lang].rescheduled)}</span>` : ''}${p.region ? ` <span class="r">${escapeHtml(p.region)}</span>` : ''}</span>
           <span class="d">${escapeHtml(formatDate(lang, p.date, { weekday: false }))}</span>
         </a></li>`
 }).join('\n')
@@ -165,7 +165,7 @@ const rowsFor = (lang, list) => list.map(p => {
 function eventPage(p, lang) {
   const t = T[lang]
   const slug = slugs.get(p.id)
-  const city = cityName(lang, p.city)
+  const city = cityName(lang, p)
   const country = countryName(lang, p.country)
   const first = isFirstTime(p)
   const dateLong = formatDate(lang, p.date)
@@ -174,7 +174,7 @@ function eventPage(p, lang) {
   // length-constrained, and the full date already sits in the definition list.
   const movedShort = p.movedFrom ? formatDate(lang, p.movedFrom, { weekday: false }) : null
   const aka = displayAka(p.country)
-  const att = attendanceBy[p.city]
+  const att = newestAttendance(p)
   const image = absolute(ogImagePath(slug))
   const alternates = [
     ...LANGS.map(l => ({ lang: l, href: eventUrl(l, slug) })),
@@ -247,9 +247,9 @@ function eventPage(p, lang) {
   rows.push(`<dt>${escapeHtml(t.whereLabel)}</dt><dd>${escapeHtml(city)}${p.region ? `, ${escapeHtml(p.region)}` : ''}<span class="sub"> · ${escapeHtml(country)}</span></dd>`)
   rows.push(`<dt>${escapeHtml(t.sizeLabel)}</dt><dd>${escapeHtml(SIZE_LABEL[lang][p.size] ?? p.size)}</dd>`)
   if (att) {
-    const src = att.source === 'authorities' ? t.sourceAuthorities
-      : att.source === 'organizers' ? t.sourceOrganizers : ''
-    rows.push(`<dt>${escapeHtml(t.attendanceLabel)}</dt><dd>${fmtBucket(att.bucket)} ${escapeHtml(t.visitorsSuffix)}<span class="sub"> (${att.year ?? '?'}${src ? ` · ${escapeHtml(src)}` : ''})</span></dd>`)
+    const src = att.by === 'authorities' ? t.sourceAuthorities
+      : att.by === 'organizers' ? t.sourceOrganizers : ''
+    rows.push(`<dt>${escapeHtml(t.attendanceLabel)}</dt><dd>${fmtBucket(att.count)} ${escapeHtml(t.visitorsSuffix)}<span class="sub"> (${att.year ?? '?'}${src ? ` · ${escapeHtml(src)}` : ''})</span></dd>`)
   }
   if (p.queerIndex != null) {
     const col = p.queerIndex >= 70 ? '#34C759' : p.queerIndex >= 50 ? '#FFD700' : p.queerIndex >= 30 ? '#FF9500' : '#FF2D78'

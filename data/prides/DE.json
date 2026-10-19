@@ -1,0 +1,8230 @@
+[
+  {
+    "id": "de-aachen",
+    "legacyIds": [
+      "csd-aachen-2026-2026-08-28"
+    ],
+    "name": "CSD Aachen",
+    "aka": [],
+    "city": "Aachen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.776,
+    "lon": 6.083,
+    "website": "https://csd-aachen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-28",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ahrensburg",
+    "legacyIds": [
+      "csd-ahrensburg-2026-2026-06-27"
+    ],
+    "name": "CSD Ahrensburg",
+    "aka": [],
+    "city": "Ahrensburg",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.675,
+    "lon": 10.241,
+    "website": "https://csd-ahrensburg.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-albstadt",
+    "legacyIds": [
+      "csd-albstadt-2026-2026-09-07"
+    ],
+    "name": "CSD Albstadt",
+    "aka": [],
+    "city": "Albstadt",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.213,
+    "lon": 9.021,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-07",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-alfter",
+    "legacyIds": [
+      "csd-alfter-2026-2026-09-19"
+    ],
+    "name": "CSD Alfter",
+    "aka": [],
+    "city": "Alfter",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.746,
+    "lon": 7.004,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-amberg",
+    "legacyIds": [
+      "csd-amberg-2026-2026-08-01"
+    ],
+    "name": "CSD Amberg",
+    "aka": [],
+    "city": "Amberg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.4543662,
+    "lon": 11.8474021,
+    "website": "https://csd-amberg.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 250,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-angermunde",
+    "legacyIds": [
+      "csd-angermuende-2026-2026-04-11"
+    ],
+    "name": "CSD Angermünde",
+    "aka": [],
+    "city": "Angermünde",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 53.019,
+    "lon": 13.997,
+    "website": "https://aktionsbuendnis-brandenburg.de",
+    "instagram": "https://www.instagram.com/pride.angermuende.official/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2026,
+        "count": 100,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-04-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-arnsberg",
+    "legacyIds": [
+      "csd-arnsberg-2026-2026-08-22"
+    ],
+    "name": "CSD Arnsberg",
+    "aka": [],
+    "city": "Arnsberg",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.395,
+    "lon": 8.067,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-aschaffenburg",
+    "legacyIds": [
+      "csd-aschaffenburg-2026-2026-06-06"
+    ],
+    "name": "CSD Aschaffenburg",
+    "aka": [],
+    "city": "Aschaffenburg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.978,
+    "lon": 9.147,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2023,
+        "count": 750,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-augsburg",
+    "legacyIds": [
+      "csd-augsburg-2026-2026-06-13"
+    ],
+    "name": "CSD Augsburg",
+    "aka": [],
+    "city": "Augsburg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.366,
+    "lon": 10.898,
+    "website": "https://www.csd-augsburg.de",
+    "instagram": "https://www.instagram.com/csdaugsburg/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 4000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-aurich",
+    "legacyIds": [
+      "csd-aurich-2026-2026-08-29"
+    ],
+    "name": "CSD Aurich",
+    "aka": [],
+    "city": "Aurich",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.472,
+    "lon": 7.483,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bad-belzig",
+    "legacyIds": [
+      "csd-bad-belzig-2026-2026-09-19"
+    ],
+    "name": "CSD Bad Belzig",
+    "aka": [],
+    "city": "Bad Belzig",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.14,
+    "lon": 12.588,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bad-kreuznach",
+    "legacyIds": [
+      "csd-bad-kreuznach-2026-2026-09-05"
+    ],
+    "name": "CSD Bad Kreuznach",
+    "aka": [],
+    "city": "Bad Kreuznach",
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "lat": 49.847,
+    "lon": 7.865,
+    "website": null,
+    "instagram": "https://www.instagram.com/queertreffkh/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bad-mergentheim",
+    "legacyIds": [
+      "csd-bad-mergentheim-2026-2026-07-18"
+    ],
+    "name": "CSD Bad Mergentheim",
+    "aka": [],
+    "city": "Bad Mergentheim",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 49.492,
+    "lon": 9.777,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bad-oldesloe",
+    "legacyIds": [
+      "csd-bad-oldesloe-2026-2026-08-29"
+    ],
+    "name": "CSD Bad Oldesloe",
+    "aka": [],
+    "city": "Bad Oldesloe",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.809,
+    "lon": 10.376,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bad-segeberg",
+    "legacyIds": [
+      "csd-bad-segeberg-2026-2026-06-06"
+    ],
+    "name": "CSD Bad Segeberg",
+    "aka": [],
+    "city": "Bad Segeberg",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.938,
+    "lon": 10.309,
+    "website": "https://csd-schleswig-holstein.de/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bamberg",
+    "legacyIds": [
+      "csd-bamberg-2026-2026-07-11"
+    ],
+    "name": "CSD Bamberg",
+    "aka": [],
+    "city": "Bamberg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.899,
+    "lon": 10.9,
+    "website": "https://csd-bamberg.de",
+    "instagram": "https://www.instagram.com/csd_bamberg/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bayreuth",
+    "legacyIds": [
+      "csd-bayreuth-2026-2026-08-15"
+    ],
+    "name": "CSD Bayreuth",
+    "aka": [],
+    "city": "Bayreuth",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.945,
+    "lon": 11.571,
+    "website": null,
+    "instagram": "https://www.instagram.com/queer_bayreuth/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bensheim",
+    "legacyIds": [
+      "csd-bensheim-2026-2026-08-22"
+    ],
+    "name": "CSD Bensheim",
+    "aka": [],
+    "city": "Bensheim",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 49.681,
+    "lon": 8.617,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-berchtesgaden",
+    "legacyIds": [
+      "csd-berchtesgaden-2026-2026-08-15"
+    ],
+    "name": "CSD Berchtesgaden",
+    "aka": [],
+    "city": "Berchtesgaden",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 47.633,
+    "lon": 13.001,
+    "website": null,
+    "instagram": "https://www.instagram.com/queersteiger_berchtesgaden/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 400,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-berlin",
+    "legacyIds": [
+      "csd-berlin-2026-2026-07-25"
+    ],
+    "name": "CSD Berlin",
+    "aka": [],
+    "city": "Berlin",
+    "country": "DE",
+    "region": "Berlin",
+    "lat": 52.52,
+    "lon": 13.405,
+    "website": "https://csd-berlin.de/",
+    "instagram": "https://www.instagram.com/csd.berlin.pride/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 500000,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-berlin-marzahn",
+    "legacyIds": [
+      "csd-berlin-marzahn-2026-2026-06-20"
+    ],
+    "name": "CSD Berlin-Marzahn",
+    "aka": [],
+    "city": "Berlin-Marzahn",
+    "country": "DE",
+    "region": "Berlin",
+    "lat": 52.54,
+    "lon": 13.56,
+    "website": "https://www.csd-marzahn.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-berlin-reinickendorf",
+    "legacyIds": [
+      "csd-berlin-reinickendorf-2026-2026-08-29"
+    ],
+    "name": "CSD Berlin Reinickendorf",
+    "aka": [],
+    "city": "Berlin-Reinickendorf",
+    "country": "DE",
+    "region": "Berlin",
+    "lat": 52.587,
+    "lon": 13.345,
+    "website": null,
+    "instagram": "https://www.instagram.com/csdreinickendorf/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bernau-bei-berlin",
+    "legacyIds": [
+      "csd-bernau-bei-berlin-2026-2026-06-27"
+    ],
+    "name": "CSD Bernau bei Berlin",
+    "aka": [],
+    "city": "Bernau bei Berlin",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.68,
+    "lon": 13.589,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_bernau/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-biberach-an-der-riss",
+    "legacyIds": [
+      "csd-biberach-an-der-riss-2026-2026-07-12"
+    ],
+    "name": "CSD Biberach an der Riß",
+    "aka": [],
+    "city": "Biberach an der Riß",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.1,
+    "lon": 9.785,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bielefeld",
+    "legacyIds": [
+      "csd-bielefeld-2026-2026-06-13"
+    ],
+    "name": "CSD Bielefeld",
+    "aka": [],
+    "city": "Bielefeld",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 52.02,
+    "lon": 8.532,
+    "website": "https://csd-bielefeld.de",
+    "instagram": "https://www.instagram.com/csdbielefeld/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bingen-am-rhein",
+    "legacyIds": [
+      "csd-bingen-am-rhein-2026-2026-08-08"
+    ],
+    "name": "CSD Bingen am Rhein",
+    "aka": [],
+    "city": "Bingen am Rhein",
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "lat": 49.9675456,
+    "lon": 7.8944,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd.bingen/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bocholt",
+    "legacyIds": [
+      "csd-bocholt-2026-2026-08-22"
+    ],
+    "name": "CSD Bocholt",
+    "aka": [],
+    "city": "Bocholt",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.836,
+    "lon": 6.617,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bochum",
+    "legacyIds": [
+      "csd-bochum-2026-2026-06-20"
+    ],
+    "name": "CSD Bochum",
+    "aka": [],
+    "city": "Bochum",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.481,
+    "lon": 7.216,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bonn",
+    "legacyIds": [
+      "csd-bonn-2026-2026-07-18"
+    ],
+    "name": "CSD Bonn",
+    "aka": [],
+    "city": "Bonn",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.734,
+    "lon": 7.098,
+    "website": null,
+    "instagram": "https://www.instagram.com/rheinqueer/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bramsche",
+    "legacyIds": [
+      "csd-bramsche-2026-2026-06-27"
+    ],
+    "name": "CSD Bramsche",
+    "aka": [],
+    "city": "Bramsche",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.399,
+    "lon": 7.974,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-brandenburg-an-der-havel",
+    "legacyIds": [
+      "csd-brandenburg-an-der-havel-2026-2026-07-18"
+    ],
+    "name": "CSD Brandenburg an der Havel",
+    "aka": [],
+    "city": "Brandenburg an der Havel",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.408,
+    "lon": 12.558,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-braunschweig",
+    "legacyIds": [
+      "csd-braunschweig-2026-2026-08-08"
+    ],
+    "name": "CSD Braunschweig",
+    "aka": [],
+    "city": "Braunschweig",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.269,
+    "lon": 10.522,
+    "website": "https://csd-braunschweig.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bremen",
+    "legacyIds": [
+      "csd-bremen-2026-2026-08-22"
+    ],
+    "name": "CSD Bremen",
+    "aka": [],
+    "city": "Bremen",
+    "country": "DE",
+    "region": "Bremen",
+    "lat": 53.075,
+    "lon": 8.808,
+    "website": "https://www.csd-bremen.org/",
+    "instagram": "https://www.instagram.com/csdbremen/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 25000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bremerhaven",
+    "legacyIds": [
+      "csd-bremerhaven-2026-2026-07-11"
+    ],
+    "name": "CSD Bremerhaven",
+    "aka": [],
+    "city": "Bremerhaven",
+    "country": "DE",
+    "region": "Bremen",
+    "lat": 53.55,
+    "lon": 8.577,
+    "website": "https://queerhaven.de/",
+    "instagram": "https://www.instagram.com/csdbremerhaven/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-bruhl",
+    "legacyIds": [
+      "csd-bruehl-2026-2026-08-29"
+    ],
+    "name": "CSD Brühl",
+    "aka": [],
+    "city": "Brühl",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.826,
+    "lon": 6.9,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-buchholz-in-der-nordheide",
+    "legacyIds": [
+      "csd-buchholz-in-der-nordheide-2026-2026-07-18"
+    ],
+    "name": "CSD Buchholz (in der Nordheide)",
+    "aka": [],
+    "city": "Buchholz in der Nordheide",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.33,
+    "lon": 9.872,
+    "website": "https://csd-buchholz.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-burgdorf",
+    "legacyIds": [
+      "csd-burgdorf-2026-2026-08-22"
+    ],
+    "name": "CSD Burgdorf",
+    "aka": [],
+    "city": "Burgdorf",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.447,
+    "lon": 10.006,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-celle",
+    "legacyIds": [
+      "csd-celle-2026-2026-06-06"
+    ],
+    "name": "CSD Celle",
+    "aka": [],
+    "city": "Celle",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.624,
+    "lon": 10.082,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_celle/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 1000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-cham",
+    "legacyIds": [
+      "csd-cham-2026-09-05"
+    ],
+    "name": "CSD Cham",
+    "aka": [],
+    "city": "Cham",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.224,
+    "lon": 12.663,
+    "website": "https://csd-cham.de/",
+    "instagram": "https://www.instagram.com/csd.cham/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 250,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-chemnitz",
+    "legacyIds": [
+      "csd-chemnitz-2026-2026-07-04"
+    ],
+    "name": "CSD Chemnitz",
+    "aka": [],
+    "city": "Chemnitz",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 50.832,
+    "lon": 12.922,
+    "website": "https://csd-chemnitz.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-cloppenburg",
+    "legacyIds": [
+      "csd-cloppenburg-2026-06-27"
+    ],
+    "name": "CSD Cloppenburg",
+    "aka": [],
+    "city": "Cloppenburg",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.844,
+    "lon": 8.046,
+    "website": "https://www.csd-clp.de/",
+    "instagram": "https://www.instagram.com/csdcloppenburg/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-coburg",
+    "legacyIds": [
+      "csd-coburg-2026-2026-06-20"
+    ],
+    "name": "CSD Coburg",
+    "aka": [],
+    "city": "Coburg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 50.2582226,
+    "lon": 10.964561,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd.coburg/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2023,
+        "count": 500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-cottbus",
+    "legacyIds": [
+      "csd-cottbus-2026-2026-07-11"
+    ],
+    "name": "CSD Cottbus",
+    "aka": [],
+    "city": "Cottbus",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 51.757,
+    "lon": 14.333,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-dachau",
+    "legacyIds": [
+      "csd-dachau-2026-07-05"
+    ],
+    "name": "CSD Dachau",
+    "aka": [],
+    "city": "Dachau",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.26,
+    "lon": 11.434,
+    "website": "https://dachau-queer.de/index.php/event/csd-dachau-2026/",
+    "instagram": "https://www.instagram.com/csd.dachau/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 200,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-darmstadt",
+    "legacyIds": [
+      "csd-darmstadt-2026-2026-08-15"
+    ],
+    "name": "CSD Darmstadt",
+    "aka": [],
+    "city": "Darmstadt",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 49.872,
+    "lon": 8.651,
+    "website": "https://csd-darmstadt.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-delmenhorst",
+    "legacyIds": [
+      "csd-delmenhorst-2026-2026-09-19"
+    ],
+    "name": "CSD Delmenhorst",
+    "aka": [],
+    "city": "Delmenhorst",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.05,
+    "lon": 8.634,
+    "website": "https://csd-delmenhorst.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-dessau-rosslau",
+    "legacyIds": [
+      "csd-dessau-rosslau-2026-2026-05-02"
+    ],
+    "name": "CSD Dessau-Rosslau",
+    "aka": [],
+    "city": "Dessau-Rosslau",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 51.832,
+    "lon": 12.243,
+    "website": "https://www.csd-dessau-rosslau.de",
+    "instagram": "https://www.instagram.com/csddessaurosslau/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-02",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-detmold",
+    "legacyIds": [
+      "csd-detmold-2026-2026-07-11"
+    ],
+    "name": "CSD Detmold",
+    "aka": [],
+    "city": "Detmold",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.934,
+    "lon": 8.882,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-dobeln",
+    "legacyIds": [
+      "csd-doebeln-2026-2026-09-19"
+    ],
+    "name": "CSD Döbeln",
+    "aka": [],
+    "city": "Döbeln",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 51.119,
+    "lon": 13.113,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-dortmund",
+    "legacyIds": [
+      "csd-dortmund-2026-2026-09-05"
+    ],
+    "name": "CSD Dortmund",
+    "aka": [],
+    "city": "Dortmund",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.514,
+    "lon": 7.466,
+    "website": "https://csd-dortmund.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-dresden",
+    "legacyIds": [
+      "csd-dresden-2026-2026-06-06"
+    ],
+    "name": "CSD Dresden",
+    "aka": [],
+    "city": "Dresden",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 51.05,
+    "lon": 13.738,
+    "website": "https://csd-dresden.de",
+    "instagram": "https://www.instagram.com/csddresden/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 10000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-duisburg",
+    "legacyIds": [
+      "csd-duisburg-2026-2026-07-25"
+    ],
+    "name": "CSD Duisburg",
+    "aka": [],
+    "city": "Duisburg",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.432,
+    "lon": 6.762,
+    "website": "https://csd-duisburg.de",
+    "instagram": "https://www.instagram.com/csdduisburg/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-duren",
+    "legacyIds": [
+      "csd-dueren-2026-2026-06-27"
+    ],
+    "name": "CSD Düren",
+    "aka": [],
+    "city": "Düren",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.805,
+    "lon": 6.492,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-dusseldorf",
+    "legacyIds": [
+      "csd-duesseldorf-2026-2026-06-06"
+    ],
+    "name": "CSD Düsseldorf",
+    "aka": [],
+    "city": "Düsseldorf",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.225,
+    "lon": 6.776,
+    "website": "https://www.csd-d.de",
+    "instagram": "https://www.instagram.com/csdduesseldorf/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ebersberg",
+    "legacyIds": [
+      "csd-ebersberg-2026-2026-07-25"
+    ],
+    "name": "CSD Ebersberg",
+    "aka": [],
+    "city": "Ebersberg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.077,
+    "lon": 11.968,
+    "website": null,
+    "instagram": "https://www.instagram.com/csdebersberg/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 500,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-eberswalde",
+    "legacyIds": [
+      "csd-eberswalde-2026-2026-06-13"
+    ],
+    "name": "CSD Eberswalde",
+    "aka": [],
+    "city": "Eberswalde",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.836,
+    "lon": 13.826,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-eggenfelden",
+    "legacyIds": [
+      "csd-eggenfelden-2026-2026-06-13"
+    ],
+    "name": "CSD Eggenfelden",
+    "aka": [],
+    "city": "Eggenfelden",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.401,
+    "lon": 12.764,
+    "website": "https://www.queer-niederbayern.de/csdAndNews",
+    "instagram": "https://www.instagram.com/queer_niederbayern/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-eisenhuttenstadt",
+    "legacyIds": [
+      "csd-eisenhuettenstadt-2026-2026-05-23"
+    ],
+    "name": "CSD Eisenhüttenstadt",
+    "aka": [],
+    "city": "Eisenhüttenstadt",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.148,
+    "lon": 14.665,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 50,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-elmshorn",
+    "legacyIds": [
+      "csd-elmshorn-2026-2026-09-12"
+    ],
+    "name": "CSD Elmshorn",
+    "aka": [],
+    "city": "Elmshorn",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.754,
+    "lon": 9.654,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-emden",
+    "legacyIds": [
+      "csd-emden-2026-2026-06-13"
+    ],
+    "name": "CSD Emden",
+    "aka": [],
+    "city": "Emden",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.3670541,
+    "lon": 7.2058304,
+    "website": "https://www.csd-emden.de",
+    "instagram": "https://www.instagram.com/csdemden/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-emmendingen",
+    "legacyIds": [
+      "csd-emmendingen-2026-2026-09-26"
+    ],
+    "name": "CSD Emmendingen",
+    "aka": [],
+    "city": "Emmendingen",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.118,
+    "lon": 7.85,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-eppelheim",
+    "legacyIds": [
+      "csd-eppelheim-2026-dorfpride-2026-2026-05-16"
+    ],
+    "name": "CSD Eppelheim",
+    "aka": [
+      "Dorfpride"
+    ],
+    "city": "Eppelheim",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 49.404,
+    "lon": 8.628,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-erfurt",
+    "legacyIds": [
+      "csd-erfurt-2026-2026-09-05"
+    ],
+    "name": "CSD Erfurt",
+    "aka": [],
+    "city": "Erfurt",
+    "country": "DE",
+    "region": "Thüringen",
+    "lat": 50.977,
+    "lon": 11.029,
+    "website": "https://csd-erfurt.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-erkrath",
+    "legacyIds": [
+      "csd-erkrath-2026-2026-06-27"
+    ],
+    "name": "CSD Erkrath",
+    "aka": [],
+    "city": "Erkrath",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.223,
+    "lon": 6.908,
+    "website": "https://csd-erkrath.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-erlangen",
+    "legacyIds": [
+      "csd-erlangen-2026-2026-09-19"
+    ],
+    "name": "CSD Erlangen",
+    "aka": [],
+    "city": "Erlangen",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.598,
+    "lon": 11.003,
+    "website": "https://makeyourtownqueer.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-eschwege",
+    "legacyIds": [
+      "csd-eschwege-2026-2026-08-15"
+    ],
+    "name": "CSD Eschwege",
+    "aka": [],
+    "city": "Eschwege",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 51.185,
+    "lon": 10.052,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-essen",
+    "legacyIds": [
+      "csd-essen-2026-2026-08-08"
+    ],
+    "name": "CSD Essen",
+    "aka": [],
+    "city": "Essen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.455,
+    "lon": 7.011,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-esslingen-am-neckar",
+    "legacyIds": [
+      "csd-esslingen-2026-2026-07-11"
+    ],
+    "name": "CSD Esslingen",
+    "aka": [],
+    "city": "Esslingen am Neckar",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.741,
+    "lon": 9.308,
+    "website": "https://csd-esslingen.de",
+    "instagram": "https://www.instagram.com/csd.esslingen/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-euskirchen",
+    "legacyIds": [
+      "csd-euskirchen-2026-2026-05-16"
+    ],
+    "name": "CSD Euskirchen",
+    "aka": [],
+    "city": "Euskirchen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.66,
+    "lon": 6.788,
+    "website": null,
+    "instagram": "https://www.instagram.com/queer.eu/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-flensburg",
+    "legacyIds": [
+      "csd-flensburg-2026-2026-05-17"
+    ],
+    "name": "CSD Flensburg",
+    "aka": [],
+    "city": "Flensburg",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 54.794,
+    "lon": 9.435,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-17",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-frankenberg-eder",
+    "legacyIds": [
+      "csd-frankenberg-2026-2026-07-25"
+    ],
+    "name": "CSD Frankenberg",
+    "aka": [],
+    "city": "Frankenberg (Eder)",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 51.062,
+    "lon": 8.796,
+    "website": "https://csd-frankenberg.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-frankfurt-am-main",
+    "legacyIds": [
+      "csd-frankfurt-2026-2026-07-18"
+    ],
+    "name": "CSD Frankfurt",
+    "aka": [],
+    "city": "Frankfurt am Main",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.11,
+    "lon": 8.682,
+    "website": "https://www.csd-frankfurt.de",
+    "instagram": "https://www.instagram.com/csdfrankfurt/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 100000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-frankfurt-oder",
+    "legacyIds": [
+      "csd-frankfurt-oder-2026-2026-05-30"
+    ],
+    "name": "CSD Frankfurt (Oder)",
+    "aka": [],
+    "city": "Frankfurt (Oder)",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.348,
+    "lon": 14.551,
+    "website": "https://csd-frankfurt.de",
+    "instagram": "https://www.instagram.com/slubice.frankfurt.pride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-freiberg",
+    "legacyIds": [
+      "csd-freiberg-2026-2026-07-11"
+    ],
+    "name": "CSD Freiberg",
+    "aka": [],
+    "city": "Freiberg",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 50.92,
+    "lon": 13.342,
+    "website": null,
+    "instagram": "https://www.instagram.com/junges_netzwerk_fg/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-freiburg-im-breisgau",
+    "legacyIds": [
+      "csd-freiburg-2026-2026-06-20"
+    ],
+    "name": "CSD Freiburg",
+    "aka": [],
+    "city": "Freiburg im Breisgau",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 47.996,
+    "lon": 7.849,
+    "website": null,
+    "instagram": "https://www.instagram.com/csdfreiburg/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 15000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-freilassing",
+    "legacyIds": [
+      "csd-freilassing-2026-09-12"
+    ],
+    "name": "CSD Freilassing",
+    "aka": [],
+    "city": "Freilassing",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 47.837,
+    "lon": 12.972,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_freilassing/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 100,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-freising",
+    "legacyIds": [
+      "csd-freising-2026-2026-07-11"
+    ],
+    "name": "CSD Freising",
+    "aka": [],
+    "city": "Freising",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.403,
+    "lon": 11.741,
+    "website": "https://www.csd-freising.de/",
+    "instagram": "https://www.instagram.com/csd.freising/",
+    "firstYear": 2026,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-friedberg",
+    "legacyIds": [
+      "csd-friedberg-hessen-2026-2026-08-22"
+    ],
+    "name": "CSD Friedberg (Hessen)",
+    "aka": [],
+    "city": "Friedberg",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.335,
+    "lon": 8.756,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-friedrichshafen",
+    "legacyIds": [
+      "csd-friedrichshafen-2026-2026-06-13"
+    ],
+    "name": "CSD Friedrichshafen",
+    "aka": [],
+    "city": "Friedrichshafen",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 47.6500279,
+    "lon": 9.4800858,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-fritzlar",
+    "legacyIds": [
+      "csd-fritzlar-2026-2026-06-06"
+    ],
+    "name": "CSD Fritzlar",
+    "aka": [],
+    "city": "Fritzlar",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 51.133,
+    "lon": 9.274,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 50,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-fulda",
+    "legacyIds": [
+      "csd-fulda-2026-2026-08-29"
+    ],
+    "name": "CSD Fulda",
+    "aka": [],
+    "city": "Fulda",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.556,
+    "lon": 9.676,
+    "website": "https://csd-fulda.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-furth",
+    "legacyIds": [
+      "csd-fuerth-2026-2026-08-01"
+    ],
+    "name": "CSD Fürth",
+    "aka": [],
+    "city": "Fürth",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.478,
+    "lon": 10.989,
+    "website": "https://csd-fuerth.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-geilenkirchen",
+    "legacyIds": [
+      "csd-geilenkirchen-2026-2026-06-06"
+    ],
+    "name": "CSD Geilenkirchen",
+    "aka": [],
+    "city": "Geilenkirchen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.966,
+    "lon": 6.119,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-gelsenkirchen",
+    "legacyIds": [
+      "csd-gelsenkirchen-2026-2026-05-16"
+    ],
+    "name": "CSD Gelsenkirchen",
+    "aka": [],
+    "city": "Gelsenkirchen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.508,
+    "lon": 7.1,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 500,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-giessen",
+    "legacyIds": [
+      "csd-giessen-2026-2026-05-30"
+    ],
+    "name": "CSD Gießen",
+    "aka": [],
+    "city": "Gießen",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.584,
+    "lon": 8.678,
+    "website": "https://csdmittelhessen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 3000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-gifhorn",
+    "legacyIds": [
+      "csd-gifhorn-2026-2026-07-11"
+    ],
+    "name": "CSD Gifhorn",
+    "aka": [],
+    "city": "Gifhorn",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.488,
+    "lon": 10.545,
+    "website": "https://csd-gifhorn.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-golssen",
+    "legacyIds": [
+      "csd-golssen-2026-2026-06-20"
+    ],
+    "name": "CSD Golßen",
+    "aka": [],
+    "city": "Golßen",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 51.994,
+    "lon": 13.585,
+    "website": "https://csd-golssen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-gorlitz",
+    "legacyIds": [
+      "csd-goerlitz-2026-2026-09-26"
+    ],
+    "name": "CSD Görlitz",
+    "aka": [],
+    "city": "Görlitz",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 51.154,
+    "lon": 14.987,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-goslar",
+    "legacyIds": [
+      "csd-goslar-2026-2026-09-05"
+    ],
+    "name": "CSD Goslar",
+    "aka": [],
+    "city": "Goslar",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 51.905,
+    "lon": 10.428,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-gotha",
+    "legacyIds": [
+      "csd-gotha-2026-2026-08-29"
+    ],
+    "name": "CSD Gotha",
+    "aka": [],
+    "city": "Gotha",
+    "country": "DE",
+    "region": "Thüringen",
+    "lat": 50.949,
+    "lon": 10.705,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-gottingen",
+    "legacyIds": [
+      "csd-goettingen-2026-2026-06-20"
+    ],
+    "name": "CSD Göttingen",
+    "aka": [],
+    "city": "Göttingen",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 51.534,
+    "lon": 9.933,
+    "website": "https://csd-goettingen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-greifswald",
+    "legacyIds": [
+      "csd-greifswald-2026-2026-06-27"
+    ],
+    "name": "CSD Greifswald",
+    "aka": [],
+    "city": "Greifswald",
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "lat": 54.094,
+    "lon": 13.388,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-gross-gerau",
+    "legacyIds": [
+      "csd-gross-gerau-2026-2026-08-29"
+    ],
+    "name": "CSD Groß-Gerau",
+    "aka": [],
+    "city": "Groß-Gerau",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 49.919,
+    "lon": 8.483,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-gummersbach",
+    "legacyIds": [
+      "csd-gummersbach-2026-2026-06-27"
+    ],
+    "name": "CSD Gummersbach",
+    "aka": [],
+    "city": "Gummersbach",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.027,
+    "lon": 7.565,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-gutersloh",
+    "legacyIds": [
+      "csd-guetersloh-2026-2026-05-23"
+    ],
+    "name": "CSD Gütersloh",
+    "aka": [],
+    "city": "Gütersloh",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.906,
+    "lon": 8.384,
+    "website": "https://www.guetersloh.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2026,
+        "count": 500,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-halle-saale",
+    "legacyIds": [
+      "csd-halle-saale-2026-2026-09-12"
+    ],
+    "name": "CSD Halle (Saale)",
+    "aka": [],
+    "city": "Halle (Saale)",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 51.482,
+    "lon": 11.97,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-haltern-am-see",
+    "legacyIds": [
+      "csd-haltern-am-see-2026-2026-07-18"
+    ],
+    "name": "CSD Haltern am See",
+    "aka": [],
+    "city": "Haltern am See",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.742,
+    "lon": 7.183,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hamburg",
+    "legacyIds": [
+      "csd-hamburg-2026-2026-08-01"
+    ],
+    "name": "CSD Hamburg",
+    "aka": [],
+    "city": "Hamburg",
+    "country": "DE",
+    "region": "Hamburg",
+    "lat": 53.55,
+    "lon": 10,
+    "website": "https://www.hamburg-pride.de",
+    "instagram": "https://www.instagram.com/hamburgpride/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 200000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hameln",
+    "legacyIds": [
+      "csd-hameln-2026-2026-06-06"
+    ],
+    "name": "CSD Hameln",
+    "aka": [],
+    "city": "Hameln",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.104,
+    "lon": 9.361,
+    "website": "https://www.qnwb.de/csd-hameln",
+    "instagram": "https://www.instagram.com/csd_weserbergland/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hanau",
+    "legacyIds": [
+      "csd-hanau-2026-2026-06-27"
+    ],
+    "name": "CSD Hanau",
+    "aka": [],
+    "city": "Hanau",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.134,
+    "lon": 8.916,
+    "website": "https://csd-hanau.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hannover",
+    "legacyIds": [
+      "csd-hannover-2026-2026-05-23"
+    ],
+    "name": "CSD Hannover",
+    "aka": [],
+    "city": "Hannover",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.374,
+    "lon": 9.738,
+    "website": "https://www.hannovercsd.de",
+    "instagram": "https://www.instagram.com/csd_hannover/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 10000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hattingen",
+    "legacyIds": [
+      "csd-hattingen-ruhr-2026-2026-07-11"
+    ],
+    "name": "CSD Hattingen (Ruhr)",
+    "aka": [],
+    "city": "Hattingen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.403,
+    "lon": 7.185,
+    "website": "https://csd-hattingen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-heide",
+    "legacyIds": [
+      "csd-heide-csd-westkueste-2026-2026-06-27"
+    ],
+    "name": "CSD Heide",
+    "aka": [
+      "CSD Westküste"
+    ],
+    "city": "Heide",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 54.193,
+    "lon": 9.098,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-heidelberg",
+    "legacyIds": [
+      "csd-heidelberg-2026-2026-06-20"
+    ],
+    "name": "CSD Heidelberg",
+    "aka": [],
+    "city": "Heidelberg",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 49.399,
+    "lon": 8.675,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-heilbronn",
+    "legacyIds": [
+      "csd-heilbronn-2026-2026-07-11"
+    ],
+    "name": "CSD Heilbronn",
+    "aka": [],
+    "city": "Heilbronn",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 49.14,
+    "lon": 9.22,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_heilbronn/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hennigsdorf",
+    "legacyIds": [
+      "csd-hennigsdorf-2026-2026-09-19"
+    ],
+    "name": "CSD Hennigsdorf",
+    "aka": [],
+    "city": "Hennigsdorf",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.637,
+    "lon": 13.205,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-herne",
+    "legacyIds": [
+      "csd-herne-2026-2026-07-11"
+    ],
+    "name": "CSD Herne",
+    "aka": [],
+    "city": "Herne",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.538,
+    "lon": 7.225,
+    "website": "https://csd-herne.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-herrenberg",
+    "legacyIds": [
+      "csd-herrenberg-2026-2026-06-20"
+    ],
+    "name": "CSD Herrenberg",
+    "aka": [],
+    "city": "Herrenberg",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.594,
+    "lon": 8.874,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_herrenberg/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-herzberg-am-harz",
+    "legacyIds": [
+      "csd-herzberg-am-harz-2026-2026-06-13"
+    ],
+    "name": "CSD Herzberg am Harz",
+    "aka": [],
+    "city": "Herzberg am Harz",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 51.685,
+    "lon": 10.341,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-herzogenaurach",
+    "legacyIds": [
+      "csd-herzogenaurach-2026-2026-09-26"
+    ],
+    "name": "CSD Herzogenaurach",
+    "aka": [],
+    "city": "Herzogenaurach",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.572,
+    "lon": 10.886,
+    "website": "https://www.pride-herzo.de/",
+    "instagram": "https://www.instagram.com/pride_herzo/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hildesheim",
+    "legacyIds": [
+      "csd-hildesheim-2026-2026-06-27"
+    ],
+    "name": "CSD Hildesheim",
+    "aka": [],
+    "city": "Hildesheim",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.154,
+    "lon": 9.957,
+    "website": "https://csd-hildesheim.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hof-saale",
+    "legacyIds": [
+      "csd-hof-2026-2026-05-30"
+    ],
+    "name": "CSD Hof",
+    "aka": [],
+    "city": "Hof (Saale)",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 50.314,
+    "lon": 11.917,
+    "website": "https://queerlife-hof.de",
+    "instagram": "https://www.instagram.com/queerlifehof/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hofheim-am-taunus",
+    "legacyIds": [
+      "csd-hofheim-2026-2026-06-13"
+    ],
+    "name": "CSD Hofheim",
+    "aka": [],
+    "city": "Hofheim am Taunus",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.088,
+    "lon": 8.447,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-hohenlockstedt",
+    "legacyIds": [
+      "csd-hohenlockstedt-2026-2026-06-20"
+    ],
+    "name": "CSD Hohenlockstedt",
+    "aka": [],
+    "city": "Hohenlockstedt",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.972,
+    "lon": 9.661,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-husum",
+    "legacyIds": [
+      "csd-husum-2026-2026-08-23"
+    ],
+    "name": "CSD Husum",
+    "aka": [],
+    "city": "Husum",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 54.474,
+    "lon": 9.051,
+    "website": "https://csd-husum.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ilmenau",
+    "legacyIds": [
+      "csd-ilmenau-2026-2026-06-28"
+    ],
+    "name": "CSD Ilmenau",
+    "aka": [],
+    "city": "Ilmenau",
+    "country": "DE",
+    "region": "Thüringen",
+    "lat": 50.683,
+    "lon": 10.914,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-28",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ingolstadt",
+    "legacyIds": [
+      "csd-ingolstadt-2026-2026-09-05"
+    ],
+    "name": "CSD Ingolstadt",
+    "aka": [],
+    "city": "Ingolstadt",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.764,
+    "lon": 11.424,
+    "website": null,
+    "instagram": "https://www.instagram.com/csdingolstadt/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-jena",
+    "legacyIds": [
+      "csd-jena-2026-2026-06-20"
+    ],
+    "name": "CSD Jena",
+    "aka": [],
+    "city": "Jena",
+    "country": "DE",
+    "region": "Thüringen",
+    "lat": 50.927,
+    "lon": 11.586,
+    "website": "https://csd-jena.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-julich",
+    "legacyIds": [
+      "csd-juelich-2026-2026-06-20"
+    ],
+    "name": "CSD Jülich",
+    "aka": [],
+    "city": "Jülich",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.922,
+    "lon": 6.362,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-juterbog",
+    "legacyIds": [
+      "csd-jueterbog-2026-2026-09-19"
+    ],
+    "name": "CSD Jüterbog",
+    "aka": [],
+    "city": "Jüterbog",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 51.996,
+    "lon": 13.073,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-kaiserslautern",
+    "legacyIds": [
+      "csd-kaiserslautern-2026-2026-09-26"
+    ],
+    "name": "CSD Kaiserslautern",
+    "aka": [],
+    "city": "Kaiserslautern",
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "lat": 49.444,
+    "lon": 7.769,
+    "website": "https://csd-lautre.de/",
+    "instagram": "https://www.instagram.com/csd_lautre/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-karlsfeld",
+    "legacyIds": [
+      "csd-karlsfeld-2026-2026-06-20"
+    ],
+    "name": "CSD Karlsfeld",
+    "aka": [],
+    "city": "Karlsfeld",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.222,
+    "lon": 11.463,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_karlsfeld/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 150,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-karlsruhe",
+    "legacyIds": [
+      "csd-karlsruhe-2026-2026-06-06"
+    ],
+    "name": "CSD Karlsruhe",
+    "aka": [],
+    "city": "Karlsruhe",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 49.006,
+    "lon": 8.404,
+    "website": "https://www.csd-karlsruhe.de",
+    "instagram": "https://www.instagram.com/csdkarlsruhe/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-kassel",
+    "legacyIds": [
+      "csd-kassel-2026-2026-06-13"
+    ],
+    "name": "CSD Kassel",
+    "aka": [],
+    "city": "Kassel",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 51.314,
+    "lon": 9.495,
+    "website": null,
+    "instagram": "https://www.instagram.com/csdkassel/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 3000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-kaufbeuren",
+    "legacyIds": [
+      "csd-kaufbeuren-2026-2026-09-12"
+    ],
+    "name": "Kaufbeuren",
+    "aka": [
+      "Allgäu Pride"
+    ],
+    "city": "Kaufbeuren",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 47.881,
+    "lon": 10.623,
+    "website": "https://www.allgaeu-pride.de/",
+    "instagram": "https://www.instagram.com/allgaeupride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 600,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-kelheim",
+    "legacyIds": [
+      "csd-kelheim-2026-2026-06-06"
+    ],
+    "name": "CSD Kelheim",
+    "aka": [],
+    "city": "Kelheim",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.916,
+    "lon": 11.873,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-kempten",
+    "legacyIds": [
+      "allgaeu-pride-kempten-2026-08-01"
+    ],
+    "name": "Kempten",
+    "aka": [
+      "Allgäu Pride"
+    ],
+    "city": "Kempten",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 47.726,
+    "lon": 10.316,
+    "website": "https://www.allgaeu-pride.de/",
+    "instagram": "https://www.instagram.com/allgaeupride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 1400,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-kiel",
+    "legacyIds": [
+      "csd-kiel-2026-2026-07-11"
+    ],
+    "name": "CSD Kiel",
+    "aka": [],
+    "city": "Kiel",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 54.323,
+    "lon": 10.135,
+    "website": "https://www.csd-kiel.de",
+    "instagram": "https://www.instagram.com/csdkiel/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-koblenz",
+    "legacyIds": [
+      "csd-koblenz-2026-2026-08-15"
+    ],
+    "name": "CSD Koblenz",
+    "aka": [],
+    "city": "Koblenz",
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "lat": 50.357,
+    "lon": 7.588,
+    "website": "https://pride-koblenz.de/",
+    "instagram": "https://www.instagram.com/csdkoblenz/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-koln",
+    "legacyIds": [
+      "csd-koeln-2026-2026-07-05"
+    ],
+    "name": "CSD Köln",
+    "aka": [],
+    "city": "Köln",
+    "cityNames": {
+      "en": "Cologne"
+    },
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.938,
+    "lon": 6.96,
+    "website": null,
+    "instagram": "https://www.instagram.com/cologneprideofficial/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 1000000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-konigs-wusterhausen",
+    "legacyIds": [
+      "csd-koenigs-wusterhausen-2026-2026-08-29"
+    ],
+    "name": "CSD Königs Wusterhausen",
+    "aka": [],
+    "city": "Königs Wusterhausen",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.3,
+    "lon": 13.633,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-kothen",
+    "legacyIds": [
+      "csd-koethen-2026-2026-07-11"
+    ],
+    "name": "CSD Köthen",
+    "aka": [],
+    "city": "Köthen",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 51.751,
+    "lon": 11.971,
+    "website": "https://csd-koethen.de",
+    "instagram": "https://www.instagram.com/csd_koethen/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-krefeld",
+    "legacyIds": [
+      "csd-krefeld-2026-2026-08-15"
+    ],
+    "name": "CSD Krefeld",
+    "aka": [],
+    "city": "Krefeld",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.335,
+    "lon": 6.556,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-lahr-schwarzwald",
+    "legacyIds": [
+      "csd-lahr-2026-2026-09-05"
+    ],
+    "name": "CSD Lahr",
+    "aka": [],
+    "city": "Lahr/Schwarzwald",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.34,
+    "lon": 7.872,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-landsberg-am-lech",
+    "legacyIds": [
+      "csd-landsberg-am-lech-2026-2026-07-18"
+    ],
+    "name": "CSD Landsberg am Lech",
+    "aka": [],
+    "city": "Landsberg am Lech",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.047,
+    "lon": 10.871,
+    "website": "https://csd-landsberg.de",
+    "instagram": "https://www.instagram.com/csd.landsberg/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 500,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-landshut",
+    "legacyIds": [
+      "csd-landshut-2026-2026-09-26"
+    ],
+    "name": "CSD Landshut",
+    "aka": [],
+    "city": "Landshut",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.544,
+    "lon": 12.152,
+    "website": "https://www.queer-niederbayern.de/csdAndNews",
+    "instagram": "https://www.instagram.com/queer_niederbayern/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-langenfeld",
+    "legacyIds": [
+      "csd-langenfeld-2026-07-11"
+    ],
+    "name": "CSD Langenfeld",
+    "aka": [],
+    "city": "Langenfeld",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.107,
+    "lon": 6.948,
+    "website": "https://www.queerinlangenfeld.de/veranstaltungen",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-leer",
+    "legacyIds": [
+      "csd-leer-2026-2026-08-15"
+    ],
+    "name": "CSD Leer",
+    "aka": [],
+    "city": "Leer",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.228,
+    "lon": 7.452,
+    "website": "https://csd-leer.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-leipzig",
+    "legacyIds": [
+      "csd-leipzig-2026-2026-07-18"
+    ],
+    "name": "CSD Leipzig",
+    "aka": [],
+    "city": "Leipzig",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 51.34,
+    "lon": 12.374,
+    "website": "https://www.csd-leipzig.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-leverkusen",
+    "legacyIds": [
+      "csd-leverkusen-2026-2026-06-21"
+    ],
+    "name": "CSD Leverkusen",
+    "aka": [],
+    "city": "Leverkusen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.045,
+    "lon": 6.984,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-21",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-limburg-an-der-lahn",
+    "legacyIds": [
+      "csd-limburg-2026-2026-05-09"
+    ],
+    "name": "CSD Limburg",
+    "aka": [],
+    "city": "Limburg an der Lahn",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.3880447,
+    "lon": 8.063531,
+    "website": null,
+    "instagram": "https://www.instagram.com/csdlimburg/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 1000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-09",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-lubeck",
+    "legacyIds": [
+      "csd-luebeck-2026-2026-08-15"
+    ],
+    "name": "CSD Lübeck",
+    "aka": [],
+    "city": "Lübeck",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.869,
+    "lon": 10.686,
+    "website": "https://www.luebeck-pride.de/",
+    "instagram": "https://www.instagram.com/luebeck.pride/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-luchow",
+    "legacyIds": [
+      "csd-wendland-csd-luechow-2026-2026-06-27"
+    ],
+    "name": "CSD Wendland",
+    "aka": [
+      "CSD Lüchow"
+    ],
+    "city": "Lüchow",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.6893717,
+    "lon": 10.5322354,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-luckenwalde",
+    "legacyIds": [
+      "csd-luckenwalde-2026-2026-09-11"
+    ],
+    "name": "CSD Luckenwalde",
+    "aka": [],
+    "city": "Luckenwalde",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.085,
+    "lon": 13.165,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ludenscheid",
+    "legacyIds": [
+      "csd-luedenscheid-2026-2026-08-22"
+    ],
+    "name": "CSD Lüdenscheid",
+    "aka": [],
+    "city": "Lüdenscheid",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.219,
+    "lon": 7.628,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ludwigsfelde",
+    "legacyIds": [
+      "csd-ludwigsfelde-2026-2026-08-29"
+    ],
+    "name": "CSD Ludwigsfelde",
+    "aka": [],
+    "city": "Ludwigsfelde",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.303,
+    "lon": 13.254,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-luneburg",
+    "legacyIds": [
+      "csd-lueneburg-2026-2026-05-30"
+    ],
+    "name": "CSD Lüneburg",
+    "aka": [],
+    "city": "Lüneburg",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.251,
+    "lon": 10.41,
+    "website": "https://www.luenepedia.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-lunen",
+    "legacyIds": [
+      "csd-luenen-2026-2026-07-18"
+    ],
+    "name": "CSD Lünen",
+    "aka": [],
+    "city": "Lünen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.6166,
+    "lon": 7.5283,
+    "website": "https://csd-luenen.de/",
+    "instagram": "https://www.instagram.com/csd_luenen/",
+    "firstYear": 2026,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-lutherstadt-wittenberg",
+    "legacyIds": [
+      "csd-lutherstadt-wittenberg-2026-2026-06-20"
+    ],
+    "name": "CSD Lutherstadt Wittenberg",
+    "aka": [],
+    "city": "Lutherstadt Wittenberg",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 51.866,
+    "lon": 12.649,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-magdeburg",
+    "legacyIds": [
+      "csd-magdeburg-2026-2026-08-22"
+    ],
+    "name": "CSD Magdeburg",
+    "aka": [],
+    "city": "Magdeburg",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 52.131,
+    "lon": 11.636,
+    "website": "https://csd-magdeburg.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-mainz",
+    "legacyIds": [
+      "csd-mainz-2026-2026-07-25"
+    ],
+    "name": "CSD Mainz",
+    "aka": [],
+    "city": "Mainz",
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "lat": 49.999,
+    "lon": 8.274,
+    "website": "https://csd-mainz.de",
+    "instagram": "https://www.instagram.com/csdmainz/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-mannheim",
+    "legacyIds": [
+      "csd-mannheim-2026-2026-07-11"
+    ],
+    "name": "CSD Mannheim",
+    "aka": [],
+    "city": "Mannheim",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 49.487,
+    "lon": 8.466,
+    "website": null,
+    "instagram": "https://www.instagram.com/monnempride/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 15000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-marburg",
+    "legacyIds": [
+      "csd-marburg-2026-2026-06-27"
+    ],
+    "name": "CSD Marburg",
+    "aka": [],
+    "city": "Marburg",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.802,
+    "lon": 8.771,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-meldorf",
+    "legacyIds": [
+      "csd-meldorf-2026-2026-06-27"
+    ],
+    "name": "CSD Meldorf",
+    "aka": [],
+    "city": "Meldorf",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 54.093,
+    "lon": 9.077,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-memmingen",
+    "legacyIds": [
+      "csd-memmingen-2026-2026-07-11"
+    ],
+    "name": "CSD Memmingen",
+    "aka": [],
+    "city": "Memmingen",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 47.988,
+    "lon": 10.182,
+    "website": "https://memmingen.lgbt/",
+    "instagram": "https://www.instagram.com/pridememmingen/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 1000,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-merseburg",
+    "legacyIds": [
+      "csd-merseburg-2026-2026-06-13"
+    ],
+    "name": "CSD Merseburg",
+    "aka": [],
+    "city": "Merseburg",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 51.354,
+    "lon": 11.993,
+    "website": "https://www.csd-merseburg.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-michelstadt",
+    "legacyIds": [
+      "csd-michelstadt-2026-2026-09-05"
+    ],
+    "name": "CSD Michelstadt",
+    "aka": [],
+    "city": "Michelstadt",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 49.677,
+    "lon": 9.01,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-miltenberg",
+    "legacyIds": [
+      "csd-miltenberg-2026-2026-06-13"
+    ],
+    "name": "CSD Miltenberg",
+    "aka": [],
+    "city": "Miltenberg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.704,
+    "lon": 9.265,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 200,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-minden",
+    "legacyIds": [
+      "csd-minden-2026-2026-08-29"
+    ],
+    "name": "CSD Minden",
+    "aka": [],
+    "city": "Minden",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 52.289,
+    "lon": 8.914,
+    "website": "https://csd-minden.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-moers",
+    "legacyIds": [
+      "csd-moers-2026-2026-08-01"
+    ],
+    "name": "CSD Moers",
+    "aka": [],
+    "city": "Moers",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.453,
+    "lon": 6.626,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-molln",
+    "legacyIds": [
+      "csd-moelln-2026-2026-08-08"
+    ],
+    "name": "CSD Mölln",
+    "aka": [],
+    "city": "Mölln",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.62892,
+    "lon": 10.6880174,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-monchengladbach",
+    "legacyIds": [
+      "csd-moenchengladbach-2026-2026-07-18"
+    ],
+    "name": "CSD Mönchengladbach",
+    "aka": [],
+    "city": "Mönchengladbach",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.196,
+    "lon": 6.435,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-mosbach",
+    "legacyIds": [
+      "csd-mosbach-2026-2026-09-19"
+    ],
+    "name": "CSD Mosbach",
+    "aka": [],
+    "city": "Mosbach",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 49.354,
+    "lon": 9.148,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-muhldorf-am-inn",
+    "legacyIds": [
+      "csd-muehldorf-am-inn-2026-2026-07-26"
+    ],
+    "name": "CSD Mühldorf am Inn",
+    "aka": [],
+    "city": "Mühldorf am Inn",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.243,
+    "lon": 12.522,
+    "website": "https://csd-muehldorf.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 600,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-muhlhausen-thuringen",
+    "legacyIds": [
+      "csd-muehlhausen-2026-2026-08-22"
+    ],
+    "name": "CSD Mühlhausen",
+    "aka": [],
+    "city": "Mühlhausen/Thüringen",
+    "country": "DE",
+    "region": "Thüringen",
+    "lat": 51.2094255,
+    "lon": 10.4589044,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-mulheim-an-der-ruhr",
+    "legacyIds": [
+      "csd-muelheim-an-der-ruhr-2026-2026-06-28"
+    ],
+    "name": "CSD Mülheim an der Ruhr",
+    "aka": [],
+    "city": "Mülheim an der Ruhr",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.427,
+    "lon": 6.885,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-28",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-muncheberg",
+    "legacyIds": [
+      "csd-muencheberg-2026-2026-07-03"
+    ],
+    "name": "CSD Müncheberg",
+    "aka": [],
+    "city": "Müncheberg",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.516,
+    "lon": 14.124,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-03",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-munchen",
+    "legacyIds": [
+      "csd-muenchen-2026-2026-06-27"
+    ],
+    "name": "CSD München",
+    "aka": [],
+    "city": "München",
+    "cityNames": {
+      "en": "Munich"
+    },
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.137,
+    "lon": 11.576,
+    "website": "https://www.csd-muenchen.de",
+    "instagram": "https://www.instagram.com/csdmuenchen/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 250000,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-munster",
+    "legacyIds": [
+      "csd-muenster-2026-2026-08-15"
+    ],
+    "name": "CSD Münster",
+    "aka": [],
+    "city": "Münster",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.962,
+    "lon": 7.626,
+    "website": "https://csd-muenster.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-murnau-am-staffelsee",
+    "legacyIds": [
+      "csd-murnau-am-staffelsee-2026-2026-06-13"
+    ],
+    "name": "CSD Murnau am Staffelsee",
+    "aka": [],
+    "city": "Murnau am Staffelsee",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 47.679,
+    "lon": 11.2,
+    "website": null,
+    "instagram": "https://www.instagram.com/queer.im.oberland/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-naumburg-saale",
+    "legacyIds": [
+      "csd-naumburg-saale-2026-2026-08-01"
+    ],
+    "name": "CSD Naumburg (Saale)",
+    "aka": [],
+    "city": "Naumburg (Saale)",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 51.149,
+    "lon": 11.812,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-nettetal",
+    "legacyIds": [
+      "csd-nettetal-2026-2026-07-11"
+    ],
+    "name": "CSD Nettetal",
+    "aka": [],
+    "city": "Nettetal",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.321,
+    "lon": 6.275,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-neubrandenburg",
+    "legacyIds": [
+      "csd-neubrandenburg-2026-2026-08-15"
+    ],
+    "name": "CSD Neubrandenburg",
+    "aka": [],
+    "city": "Neubrandenburg",
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "lat": 53.558,
+    "lon": 13.262,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-neumunster",
+    "legacyIds": [
+      "csd-neumuenster-2026-2026-07-04"
+    ],
+    "name": "CSD Neumünster",
+    "aka": [],
+    "city": "Neumünster",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 54.074,
+    "lon": 9.981,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-neuruppin",
+    "legacyIds": [
+      "csd-neuruppin-2026-2026-07-04"
+    ],
+    "name": "CSD Neuruppin",
+    "aka": [],
+    "city": "Neuruppin",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.924,
+    "lon": 12.8,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-neustadt-an-der-orla",
+    "legacyIds": [
+      "csd-neustadt-an-der-orla-2026-2026-05-23"
+    ],
+    "name": "CSD Neustadt an der Orla",
+    "aka": [],
+    "city": "Neustadt an der Orla",
+    "country": "DE",
+    "region": "Thüringen",
+    "lat": 50.737,
+    "lon": 11.761,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-neustrelitz",
+    "legacyIds": [
+      "csd-neustrelitz-2026-2026-08-15"
+    ],
+    "name": "CSD Neustrelitz",
+    "aka": [],
+    "city": "Neustrelitz",
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "lat": 53.359,
+    "lon": 13.062,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-norden",
+    "legacyIds": [
+      "csd-norden-2026-2026-10-10"
+    ],
+    "name": "CSD Norden",
+    "aka": [],
+    "city": "Norden",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.596,
+    "lon": 7.206,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-10-10",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-nordenham",
+    "legacyIds": [
+      "csd-nordenham-2026-2026-06-27"
+    ],
+    "name": "CSD Nordenham",
+    "aka": [],
+    "city": "Nordenham",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.494,
+    "lon": 8.474,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-norderstedt",
+    "legacyIds": [
+      "csd-norderstedt-2026-2026-05-23"
+    ],
+    "name": "CSD Norderstedt",
+    "aka": [],
+    "city": "Norderstedt",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.696,
+    "lon": 9.981,
+    "website": "https://csd-norderstedt.de",
+    "instagram": "https://www.instagram.com/csd_norderstedt/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-nordhausen",
+    "legacyIds": [
+      "csd-nordhausen-2026-2026-09-12"
+    ],
+    "name": "CSD Nordhausen",
+    "aka": [],
+    "city": "Nordhausen",
+    "country": "DE",
+    "region": "Thüringen",
+    "lat": 51.505,
+    "lon": 10.793,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-northeim",
+    "legacyIds": [
+      "csd-northeim-2026-2026-11-07"
+    ],
+    "name": "CSD Northeim",
+    "aka": [],
+    "city": "Northeim",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 51.703,
+    "lon": 9.999,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-11-07",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-nurnberg",
+    "legacyIds": [
+      "csd-nuernberg-2026-2026-08-08"
+    ],
+    "name": "CSD Nürnberg",
+    "aka": [],
+    "city": "Nürnberg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.452,
+    "lon": 11.078,
+    "website": "https://csd-nuernberg.de",
+    "instagram": "https://www.instagram.com/csdnuernberg/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 12000,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-nurtingen",
+    "legacyIds": [
+      "csd-nuertingen-2026-2026-06-27"
+    ],
+    "name": "CSD Nürtingen",
+    "aka": [],
+    "city": "Nürtingen",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.627,
+    "lon": 9.337,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-oberhausen",
+    "legacyIds": [
+      "csd-oberhausen-2026-2026-07-11"
+    ],
+    "name": "CSD Oberhausen",
+    "aka": [],
+    "city": "Oberhausen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.47,
+    "lon": 6.852,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-offenburg",
+    "legacyIds": [
+      "csd-offenburg-2026-2026-06-27"
+    ],
+    "name": "CSD Offenburg",
+    "aka": [],
+    "city": "Offenburg",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.472,
+    "lon": 7.944,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-oldenburg",
+    "legacyIds": [
+      "csd-oldenburg-2026-2026-06-20"
+    ],
+    "name": "CSD Oldenburg",
+    "aka": [],
+    "city": "Oldenburg",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.143,
+    "lon": 8.214,
+    "website": null,
+    "instagram": "https://www.instagram.com/csdnordwest/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-olpe",
+    "legacyIds": [
+      "csd-olpe-2026-2026-07-12"
+    ],
+    "name": "CSD Olpe",
+    "aka": [],
+    "city": "Olpe",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.028,
+    "lon": 7.852,
+    "website": "https://csd-olpe.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-oranienburg",
+    "legacyIds": [
+      "csd-oberhavel-2026-2026-09-19"
+    ],
+    "name": "CSD Oberhavel",
+    "aka": [],
+    "city": "Oranienburg",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.754,
+    "lon": 13.238,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-osnabruck",
+    "legacyIds": [
+      "csd-osnabrueck-2026-2026-05-30"
+    ],
+    "name": "CSD Osnabrück",
+    "aka": [],
+    "city": "Osnabrück",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.279,
+    "lon": 8.047,
+    "website": "https://csd-osnabrueck.de",
+    "instagram": "https://www.instagram.com/csd_osnabrueck/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 3000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-paderborn",
+    "legacyIds": [
+      "csd-paderborn-2026-2026-06-06"
+    ],
+    "name": "CSD Paderborn",
+    "aka": [],
+    "city": "Paderborn",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.719,
+    "lon": 8.754,
+    "website": "https://paderborn.aidshilfe.de/paderpride",
+    "instagram": "https://www.instagram.com/paderpride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 300,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-papenburg",
+    "legacyIds": [
+      "csd-papenburg-pride-papenburg-emsland-2026-2026-09-12"
+    ],
+    "name": "CSD Papenburg",
+    "aka": [
+      "Pride Papenburg Emsland"
+    ],
+    "city": "Papenburg",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.077,
+    "lon": 7.411,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": "Koordinaten fehlten im Grunddatensatz, am 19.10.2026 ueber Nominatim ergaenzt (Papenburg, Landkreis Emsland)."
+  },
+  {
+    "id": "de-parchim",
+    "legacyIds": [
+      "csd-parchim-2026-2026-05-16"
+    ],
+    "name": "CSD Parchim",
+    "aka": [],
+    "city": "Parchim",
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "lat": 53.426,
+    "lon": 11.849,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 200,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-peine",
+    "legacyIds": [
+      "csd-peine-2026-2026-08-15"
+    ],
+    "name": "CSD Peine",
+    "aka": [],
+    "city": "Peine",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.32,
+    "lon": 10.233,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-pfaffenhofen-an-der-ilm",
+    "legacyIds": [
+      "csd-pfaffenhofen-2026-2026-08-22"
+    ],
+    "name": "CSD Pfaffenhofen",
+    "aka": [],
+    "city": "Pfaffenhofen an der Ilm",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.532,
+    "lon": 11.506,
+    "website": "https://queer-pfaffenhofen.de/",
+    "instagram": "https://www.instagram.com/queerpfaffenhofen/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-pforzheim",
+    "legacyIds": [
+      "csd-pforzheim-2026-2026-06-13"
+    ],
+    "name": "CSD Pforzheim",
+    "aka": [],
+    "city": "Pforzheim",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.893,
+    "lon": 8.7,
+    "website": null,
+    "instagram": "https://www.instagram.com/queer.space.pf/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-pinneberg",
+    "legacyIds": [
+      "csd-pinneberg-2026-2026-06-13"
+    ],
+    "name": "CSD Pinneberg",
+    "aka": [],
+    "city": "Pinneberg",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.655,
+    "lon": 9.801,
+    "website": "https://csd-pinneberg.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-pirna",
+    "legacyIds": [
+      "csd-pirna-2026-2026-07-11"
+    ],
+    "name": "CSD Pirna",
+    "aka": [],
+    "city": "Pirna",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 50.96,
+    "lon": 13.936,
+    "website": "https://csd-pirna.de",
+    "instagram": "https://www.instagram.com/csdpirna/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-plauen",
+    "legacyIds": [
+      "csd-plauen-2026-2026-08-15"
+    ],
+    "name": "CSD Plauen",
+    "aka": [],
+    "city": "Plauen",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 50.496,
+    "lon": 12.135,
+    "website": "https://csd-plauen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-potsdam",
+    "legacyIds": [
+      "csd-potsdam-2026-2026-05-09"
+    ],
+    "name": "CSD Potsdam",
+    "aka": [],
+    "city": "Potsdam",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.397,
+    "lon": 13.059,
+    "website": "https://csd-deutschland.de",
+    "instagram": "https://www.instagram.com/csdpotsdam/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-09",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-prenzlau",
+    "legacyIds": [
+      "csd-prenzlau-2026-2026-10-10"
+    ],
+    "name": "CSD Prenzlau",
+    "aka": [],
+    "city": "Prenzlau",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 53.317,
+    "lon": 13.863,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-10-10",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-quickborn",
+    "legacyIds": [
+      "csd-quickborn-2026-2026-06-27"
+    ],
+    "name": "CSD Quickborn",
+    "aka": [],
+    "city": "Quickborn",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 53.727,
+    "lon": 9.907,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-rastatt",
+    "legacyIds": [
+      "csd-rastatt-2026-2026-06-27"
+    ],
+    "name": "CSD Rastatt",
+    "aka": [],
+    "city": "Rastatt",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.858,
+    "lon": 8.204,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-rathenow",
+    "legacyIds": [
+      "csd-rathenow-2026-2026-09-12"
+    ],
+    "name": "CSD Rathenow",
+    "aka": [],
+    "city": "Rathenow",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.607,
+    "lon": 12.337,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ratingen",
+    "legacyIds": [
+      "csd-ratingen-2026-2026-09-12"
+    ],
+    "name": "CSD Ratingen",
+    "aka": [],
+    "city": "Ratingen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.297,
+    "lon": 6.849,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ravensburg",
+    "legacyIds": [
+      "csd-ravensburg-2026-2026-06-06"
+    ],
+    "name": "CSD Ravensburg",
+    "aka": [],
+    "city": "Ravensburg",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 47.782,
+    "lon": 9.612,
+    "website": "https://www.ravensburg.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2023,
+        "count": 500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-recklinghausen",
+    "legacyIds": [
+      "csd-recklinghausen-2026-2026-06-13"
+    ],
+    "name": "CSD Recklinghausen",
+    "aka": [],
+    "city": "Recklinghausen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.614,
+    "lon": 7.197,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-regen",
+    "legacyIds": [
+      "csd-regen-2026-2026-08-30"
+    ],
+    "name": "CSD Regen",
+    "aka": [],
+    "city": "Regen",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.971,
+    "lon": 13.129,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 400,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-regensburg",
+    "legacyIds": [
+      "csd-regensburg-2026-2026-07-04"
+    ],
+    "name": "CSD Regensburg",
+    "aka": [],
+    "city": "Regensburg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.015,
+    "lon": 12.1,
+    "website": "https://csd-regensburg.de",
+    "instagram": "https://www.instagram.com/csd_regensburg/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 4000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-remscheid",
+    "legacyIds": [
+      "csd-remscheid-2026-2026-09-19"
+    ],
+    "name": "CSD Remscheid",
+    "aka": [],
+    "city": "Remscheid",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.179,
+    "lon": 7.193,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-rendsburg",
+    "legacyIds": [
+      "csd-rendsburg-2026-2026-06-20"
+    ],
+    "name": "CSD Rendsburg",
+    "aka": [],
+    "city": "Rendsburg",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 54.300292,
+    "lon": 9.6650076,
+    "website": "https://www.csd-rendsburg.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-reutlingen",
+    "legacyIds": [
+      "csd-reutlingen-2026-2026-06-13"
+    ],
+    "name": "CSD Reutlingen",
+    "aka": [],
+    "city": "Reutlingen",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.492,
+    "lon": 9.21,
+    "website": "https://www.csd-reutlingen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-rheine",
+    "legacyIds": [
+      "csd-rheine-2026-2026-07-15"
+    ],
+    "name": "CSD Rheine",
+    "aka": [],
+    "city": "Rheine",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 52.285,
+    "lon": 7.435,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-rheinsberg",
+    "legacyIds": [
+      "csd-rheinsberg-2026-2026-05-30"
+    ],
+    "name": "CSD Rheinsberg",
+    "aka": [],
+    "city": "Rheinsberg",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 53.101,
+    "lon": 12.876,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 800,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-riesa",
+    "legacyIds": [
+      "csd-riesa-2026-2026-08-22"
+    ],
+    "name": "CSD Riesa",
+    "aka": [],
+    "city": "Riesa",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 51.305,
+    "lon": 13.296,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ronnenberg",
+    "legacyIds": [
+      "csd-ronnenberg-2026-2026-07-18"
+    ],
+    "name": "CSD Ronnenberg",
+    "aka": [],
+    "city": "Ronnenberg",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.32,
+    "lon": 9.665,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-rosenheim",
+    "legacyIds": [
+      "csd-rosenheim-2026-2026-06-06"
+    ],
+    "name": "CSD Rosenheim",
+    "aka": [],
+    "city": "Rosenheim",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 47.857,
+    "lon": 12.129,
+    "website": "https://lgbtq-rosenheim.de",
+    "instagram": "https://www.instagram.com/csd_rosenheim/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 1000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-rostock",
+    "legacyIds": [
+      "csd-rostock-2026-2026-07-18"
+    ],
+    "name": "CSD Rostock",
+    "aka": [],
+    "city": "Rostock",
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "lat": 54.09,
+    "lon": 12.099,
+    "website": "https://csd-rostock.de",
+    "instagram": "https://www.instagram.com/csd_rostock/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-rotenburg-wumme",
+    "legacyIds": [
+      "csd-rotenburg-wuemme-2026-2026-08-29"
+    ],
+    "name": "CSD Rotenburg (Wümme)",
+    "aka": [],
+    "city": "Rotenburg (Wümme)",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.107,
+    "lon": 9.41,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-saarbrucken",
+    "legacyIds": [
+      "csd-saarbruecken-2026-2026-05-31"
+    ],
+    "name": "CSD Saarbrücken",
+    "aka": [],
+    "city": "Saarbrücken",
+    "country": "DE",
+    "region": "Saarland",
+    "lat": 49.234,
+    "lon": 6.997,
+    "website": null,
+    "instagram": "https://www.instagram.com/lsvdsaar/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 10000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-31",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-sangerhausen",
+    "legacyIds": [
+      "csd-sangerhausen-2026-2026-06-27"
+    ],
+    "name": "CSD Sangerhausen",
+    "aka": [],
+    "city": "Sangerhausen",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 51.47,
+    "lon": 11.301,
+    "website": null,
+    "instagram": null,
+    "firstYear": 2026,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-schleswig",
+    "legacyIds": [
+      "csd-schleswig-2026-2026-06-27"
+    ],
+    "name": "CSD Schleswig",
+    "aka": [],
+    "city": "Schleswig",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 54.518,
+    "lon": 9.564,
+    "website": "https://csd-schleswig.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-schonebeck",
+    "legacyIds": [
+      "csd-schoenebeck-2026-2026-04-25"
+    ],
+    "name": "CSD Schönebeck",
+    "aka": [],
+    "city": "Schönebeck",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 52.0205998,
+    "lon": 11.7383277,
+    "website": "https://www.csd-schoenebeck.de",
+    "instagram": "https://www.instagram.com/csdschoenebeck/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-04-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-schongau",
+    "legacyIds": [
+      "csd-schongau-2026-2026-07-11"
+    ],
+    "name": "CSD Schongau",
+    "aka": [],
+    "city": "Schongau",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 47.8118973,
+    "lon": 10.8972133,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_schongau/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 200,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-schorndorf",
+    "legacyIds": [
+      "csd-schorndorf-2026-2026-09-26"
+    ],
+    "name": "CSD Schorndorf",
+    "aka": [],
+    "city": "Schorndorf",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.805,
+    "lon": 9.527,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-schwabach",
+    "legacyIds": [
+      "csd-schwabach-2026-2026-07-11"
+    ],
+    "name": "CSD Schwabach",
+    "aka": [],
+    "city": "Schwabach",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.3290521,
+    "lon": 11.0207677,
+    "website": "https://csd-schwabach.de",
+    "instagram": "https://www.instagram.com/csdschwabach/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 350,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-schwabisch-hall",
+    "legacyIds": [
+      "csd-schwaebisch-hall-2026-2026-07-04"
+    ],
+    "name": "CSD Schwäbisch Hall",
+    "aka": [],
+    "city": "Schwäbisch Hall",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 49.113,
+    "lon": 9.739,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-schwandorf",
+    "legacyIds": [
+      "csd-schwandorf-2026-2026-06-20"
+    ],
+    "name": "CSD Schwandorf",
+    "aka": [],
+    "city": "Schwandorf",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.327,
+    "lon": 12.11,
+    "website": "https://www.csd-schwandorf.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 200,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-schwedt-oder",
+    "legacyIds": [
+      "csd-schwedt-oder-2026-2026-04-25"
+    ],
+    "name": "CSD Schwedt/Oder",
+    "aka": [],
+    "city": "Schwedt/Oder",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 53.058,
+    "lon": 14.278,
+    "website": null,
+    "instagram": "https://www.instagram.com/csdangermuende_csdschwedt_oder/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-04-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-schwerin",
+    "legacyIds": [
+      "csd-schwerin-2026-2026-07-04"
+    ],
+    "name": "CSD Schwerin",
+    "aka": [],
+    "city": "Schwerin",
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "lat": 53.635,
+    "lon": 11.401,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_schwerin/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-siegburg",
+    "legacyIds": [
+      "csd-siegburg-2026-2026-06-27"
+    ],
+    "name": "CSD Siegburg",
+    "aka": [],
+    "city": "Siegburg",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.797,
+    "lon": 7.203,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-siegen",
+    "legacyIds": [
+      "csd-siegen-2026-2026-07-25"
+    ],
+    "name": "CSD Siegen",
+    "aka": [],
+    "city": "Siegen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 50.875,
+    "lon": 8.024,
+    "website": "https://csd-siegen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-soest",
+    "legacyIds": [
+      "csd-soest-2026-2026-06-27"
+    ],
+    "name": "CSD Soest",
+    "aka": [],
+    "city": "Soest",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.569,
+    "lon": 8.107,
+    "website": "https://csd-soest.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-solingen",
+    "legacyIds": [
+      "csd-solingen-2026-2026-07-25"
+    ],
+    "name": "CSD Solingen",
+    "aka": [],
+    "city": "Solingen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.166,
+    "lon": 7.083,
+    "website": "https://csd-solingen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-stade",
+    "legacyIds": [
+      "csd-stade-2026-2026-06-27"
+    ],
+    "name": "CSD Stade",
+    "aka": [],
+    "city": "Stade",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.596,
+    "lon": 9.476,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-stendal",
+    "legacyIds": [
+      "csd-stendal-2026-2026-09-26"
+    ],
+    "name": "CSD Stendal",
+    "aka": [],
+    "city": "Stendal",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 52.606,
+    "lon": 11.858,
+    "website": "https://csd-stendal.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-stollberg",
+    "legacyIds": [
+      "csd-stollberg-2026-2026-05-16"
+    ],
+    "name": "CSD Stollberg",
+    "aka": [],
+    "city": "Stollberg",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 50.711,
+    "lon": 12.778,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2023,
+        "count": 200,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-storkow-mark",
+    "legacyIds": [
+      "csd-storkow-mark-2026-2026-06-06"
+    ],
+    "name": "CSD Storkow (Mark)",
+    "aka": [],
+    "city": "Storkow (Mark)",
+    "country": "DE",
+    "region": "Brandenburg",
+    "lat": 52.264,
+    "lon": 13.934,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-stuttgart",
+    "legacyIds": [
+      "csd-stuttgart-2026-2026-07-25"
+    ],
+    "name": "CSD Stuttgart",
+    "aka": [],
+    "city": "Stuttgart",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.775,
+    "lon": 9.18,
+    "website": "https://www.csd-stuttgart.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 300000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-torgau",
+    "legacyIds": [
+      "csd-torgau-2026-2026-06-27"
+    ],
+    "name": "CSD Torgau",
+    "aka": [],
+    "city": "Torgau",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 51.561,
+    "lon": 13.004,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_torgau/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-traunstein",
+    "legacyIds": [
+      "csd-traunstein-2026-2026-07-25"
+    ],
+    "name": "CSD Traunstein",
+    "aka": [],
+    "city": "Traunstein",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 47.868,
+    "lon": 12.644,
+    "website": "https://queer-traunstein.de/",
+    "instagram": "https://www.instagram.com/csdtraunstein/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 350,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-trier",
+    "legacyIds": [
+      "csd-trier-2026-2026-07-18"
+    ],
+    "name": "CSD Trier",
+    "aka": [],
+    "city": "Trier",
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "lat": 49.754,
+    "lon": 6.638,
+    "website": "https://csd-trier.de",
+    "instagram": "https://www.instagram.com/pride_trier_/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-tubingen",
+    "legacyIds": [
+      "csd-tuebingen-2026-2026-06-21"
+    ],
+    "name": "CSD Tübingen",
+    "aka": [],
+    "city": "Tübingen",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.521,
+    "lon": 9.056,
+    "website": "https://www.csd-tuebingen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-21",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-uberlingen",
+    "legacyIds": [
+      "csd-ueberlingen-2026-2026-07-11"
+    ],
+    "name": "CSD Überlingen",
+    "aka": [],
+    "city": "Überlingen",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 47.7664456,
+    "lon": 9.1605106,
+    "website": "https://csd-ueberlingen.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-ulm",
+    "legacyIds": [
+      "csd-ulm-csd-neu-ulm-2026-2026-06-20"
+    ],
+    "name": "CSD Ulm",
+    "aka": [
+      "CSD Neu-Ulm"
+    ],
+    "city": "Ulm",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 48.401,
+    "lon": 9.993,
+    "website": "https://www.csd-ulm.de",
+    "instagram": "https://www.instagram.com/pride.ulm.nu/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 6000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-vechta",
+    "legacyIds": [
+      "csd-vechta-2026-2026-09-12"
+    ],
+    "name": "CSD Vechta",
+    "aka": [],
+    "city": "Vechta",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.726,
+    "lon": 8.284,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-viersen",
+    "legacyIds": [
+      "csd-viersen-2026-2026-07-11"
+    ],
+    "name": "CSD Viersen",
+    "aka": [],
+    "city": "Viersen",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.255,
+    "lon": 6.393,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wacken",
+    "legacyIds": [
+      "csd-wacken-2026-2026-09-19"
+    ],
+    "name": "CSD Wacken",
+    "aka": [],
+    "city": "Wacken",
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "lat": 54.085,
+    "lon": 9.403,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-waldshut-tiengen",
+    "legacyIds": [
+      "csd-waldshut-2026-2026-07-19"
+    ],
+    "name": "CSD Waldshut",
+    "aka": [],
+    "city": "Waldshut-Tiengen",
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "lat": 47.624,
+    "lon": 8.215,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-walsrode",
+    "legacyIds": [
+      "csd-walsrode-2026-2026-09-19"
+    ],
+    "name": "CSD Walsrode",
+    "aka": [],
+    "city": "Walsrode",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 52.863,
+    "lon": 9.584,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-waren-muritz",
+    "legacyIds": [
+      "csd-waren-mueritz-2026-2026-06-13"
+    ],
+    "name": "CSD Waren (Müritz)",
+    "aka": [],
+    "city": "Waren (Müritz)",
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "lat": 53.521,
+    "lon": 12.673,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-warendorf",
+    "legacyIds": [
+      "csd-warendorf-2026-2026-05-31"
+    ],
+    "name": "CSD Warendorf",
+    "aka": [],
+    "city": "Warendorf",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.952,
+    "lon": 7.993,
+    "website": "https://www.warendorf.de",
+    "instagram": "https://www.instagram.com/csd_warendorf/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-31",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wasserburg-am-inn",
+    "legacyIds": [
+      "csd-wasserburg-2026-2026-07-04"
+    ],
+    "name": "CSD Wasserburg",
+    "aka": [],
+    "city": "Wasserburg am Inn",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.059,
+    "lon": 12.23,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 100,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wegberg",
+    "legacyIds": [
+      "csd-wegberg-csd-kreis-heinsberg-2026-2026-06-06"
+    ],
+    "name": "CSD Wegberg",
+    "aka": [
+      "CSD Kreis Heinsberg"
+    ],
+    "city": "Wegberg",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.143,
+    "lon": 6.279,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-weiden-in-der-oberpfalz",
+    "legacyIds": [
+      "csd-weiden-2026-2026-07-18"
+    ],
+    "name": "CSD Weiden",
+    "aka": [],
+    "city": "Weiden in der Oberpfalz",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.676,
+    "lon": 12.16,
+    "website": "https://csd-weiden.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 300,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-weimar",
+    "legacyIds": [
+      "csd-weimar-2026-2026-06-27"
+    ],
+    "name": "CSD Weimar",
+    "aka": [],
+    "city": "Weimar",
+    "country": "DE",
+    "region": "Thüringen",
+    "lat": 50.979,
+    "lon": 11.328,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wernigerode",
+    "legacyIds": [
+      "csd-wernigerode-2026-2026-05-30"
+    ],
+    "name": "CSD Wernigerode",
+    "aka": [],
+    "city": "Wernigerode",
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "lat": 51.833,
+    "lon": 10.784,
+    "website": "https://csd-harz.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wesel",
+    "legacyIds": [
+      "csd-wesel-2026-2026-07-11"
+    ],
+    "name": "CSD Wesel",
+    "aka": [],
+    "city": "Wesel",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.659,
+    "lon": 6.62,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wetzlar",
+    "legacyIds": [
+      "csd-wetzlar-csd-mittelhessen-2026-2026-06-20"
+    ],
+    "name": "CSD Wetzlar",
+    "aka": [
+      "CSD Mittelhessen"
+    ],
+    "city": "Wetzlar",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.570561,
+    "lon": 8.531245,
+    "website": "https://csd-lahn.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wiesbaden",
+    "legacyIds": [
+      "csd-wiesbaden-2026-2026-05-30"
+    ],
+    "name": "CSD Wiesbaden",
+    "aka": [],
+    "city": "Wiesbaden",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 50.078,
+    "lon": 8.24,
+    "website": "https://www.wiesbaden.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wilhelmshaven",
+    "legacyIds": [
+      "csd-wilhelmshaven-2026-06-06"
+    ],
+    "name": "CSD Wilhelmshaven",
+    "aka": [],
+    "city": "Wilhelmshaven",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.529,
+    "lon": 8.104,
+    "website": "https://csd-whv.de/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-winsen-luhe",
+    "legacyIds": [
+      "csd-winsen-luhe-2026-2026-06-27"
+    ],
+    "name": "CSD Winsen (Luhe)",
+    "aka": [],
+    "city": "Winsen (Luhe)",
+    "country": "DE",
+    "region": "Niedersachsen",
+    "lat": 53.358,
+    "lon": 10.211,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-witzenhausen",
+    "legacyIds": [
+      "csd-witzenhausen-2026-2026-05-30"
+    ],
+    "name": "CSD Witzenhausen",
+    "aka": [],
+    "city": "Witzenhausen",
+    "country": "DE",
+    "region": "Hessen",
+    "lat": 51.338,
+    "lon": 9.86,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wuppertal",
+    "legacyIds": [
+      "csd-wuppertal-2026-2026-09-12"
+    ],
+    "name": "CSD Wuppertal",
+    "aka": [],
+    "city": "Wuppertal",
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "lat": 51.256,
+    "lon": 7.149,
+    "website": "https://csd-wuppertal.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wurmtal",
+    "legacyIds": [
+      "csd-wuermtal-2026-2026-07-11"
+    ],
+    "name": "CSD Würmtal",
+    "aka": [],
+    "city": "Würmtal",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 48.1,
+    "lon": 11.35,
+    "website": null,
+    "instagram": "https://www.instagram.com/csd_wuermtal/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-wurzburg",
+    "legacyIds": [
+      "csd-wuerzburg-2026-2026-06-27"
+    ],
+    "name": "CSD Würzburg",
+    "aka": [],
+    "city": "Würzburg",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.793,
+    "lon": 9.93,
+    "website": "https://www.queerpridewue.de",
+    "instagram": "https://www.instagram.com/queerpridewue/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 2500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-zittau",
+    "legacyIds": [
+      "csd-zittau-2026-2026-09-12"
+    ],
+    "name": "CSD Zittau",
+    "aka": [],
+    "city": "Zittau",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 50.896,
+    "lon": 14.806,
+    "website": "https://csd-zittau.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "de-zwickau",
+    "legacyIds": [
+      "csd-zwickau-2026-2026-08-29"
+    ],
+    "name": "CSD Zwickau",
+    "aka": [],
+    "city": "Zwickau",
+    "country": "DE",
+    "region": "Sachsen",
+    "lat": 50.72,
+    "lon": 12.496,
+    "website": "https://csd-zwickau.de",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

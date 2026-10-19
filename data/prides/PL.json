@@ -1,0 +1,218 @@
+[
+  {
+    "id": "pl-gdansk",
+    "legacyIds": [
+      "danzig-pride-csd-danzig-2026-2026-06-06"
+    ],
+    "name": "Gdańsk Pride",
+    "aka": [
+      "Danzig Pride"
+    ],
+    "city": "Gdańsk",
+    "cityNames": {
+      "de": "Danzig"
+    },
+    "country": "PL",
+    "region": "Pomorskie",
+    "lat": 54.352,
+    "lon": 18.646,
+    "website": "https://tolerado.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "pl-katowice",
+    "legacyIds": [
+      "katowice-pride-csd-katowice-2026-2026-09-05"
+    ],
+    "name": "Katowice Pride",
+    "aka": [],
+    "city": "Katowice",
+    "country": "PL",
+    "region": "Śląskie",
+    "lat": 50.264,
+    "lon": 19.024,
+    "website": "https://katowicepride.eu",
+    "instagram": "https://www.instagram.com/katowicepride/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2022,
+        "count": 5000,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "pl-krakow",
+    "legacyIds": [
+      "krakau-pride-csd-krakau-2026-2026-05-23"
+    ],
+    "name": "Kraków Pride",
+    "aka": [
+      "Krakau Pride"
+    ],
+    "city": "Kraków",
+    "cityNames": {
+      "de": "Krakau"
+    },
+    "country": "PL",
+    "region": "Małopolskie",
+    "lat": 50.061,
+    "lon": 19.938,
+    "website": "https://www.queerowymaj.pl",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "pl-poznan",
+    "legacyIds": [
+      "poznan-pride-csd-poznan-2026-2026-06-20"
+    ],
+    "name": "Poznan Pride",
+    "aka": [],
+    "city": "Poznań",
+    "country": "PL",
+    "region": "Wielkopolskie",
+    "lat": 52.41,
+    "lon": 16.925,
+    "website": "https://www.poznanpride.eu",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "pl-warszawa",
+    "legacyIds": [
+      "warschau-pride-csd-warschau-2026-2026-06-13"
+    ],
+    "name": "Warszawa Pride",
+    "aka": [
+      "Warschau Pride"
+    ],
+    "city": "Warszawa",
+    "cityNames": {
+      "de": "Warschau",
+      "en": "Warsaw"
+    },
+    "country": "PL",
+    "region": "Mazowieckie",
+    "lat": 52.23,
+    "lon": 21.01,
+    "website": "https://www.paradarownosci.pl",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 20000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "pl-wroclaw",
+    "legacyIds": [
+      "wroc-aw-pride-wroc-awski-marsz-r-wno-ci-2026-2026-05-30"
+    ],
+    "name": "Wrocław Pride",
+    "aka": [
+      "Wrocławski Marsz Równości"
+    ],
+    "city": "Wrocław",
+    "country": "PL",
+    "region": "Dolnośląskie",
+    "lat": 51.107,
+    "lon": 17.039,
+    "website": "https://www.wroclawguide.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 8000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

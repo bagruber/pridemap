@@ -1,0 +1,68 @@
+{
+  "_herkunft": "Der Grunddatensatz stammt aus einem DeepSeek-Export vom 27.05.2026 (504 Eintraege, ohne Quell-URLs) und wurde danach von Hand und mit Einmal-Scripts erweitert. Die Ausgaben 2026 tragen deshalb den Status 'unverified': welche Termine bestaetigt waren, ist nicht mehr nachvollziehbar. Angelegt am 19.10.2026 mit Phase C aus PLAN-2027.md.",
+  "_aufbau": "Ein Eintrag je Land. 'overview' sind Uebersichtsseiten mit Terminlisten, 'outlets' Szenemedien und Lokalpresse, 'terms' die Suchbegriffe der Landessprachen, 'announceWindow' wann die Termine des Folgejahres ueblicherweise erscheinen, 'lastSweep' das Datum der letzten Recherche-Sitzung.",
+
+  "DE": {
+    "languages": ["de"],
+    "overview": [
+      { "url": "https://www.csd-termine.de/", "name": "csd-termine.de", "covers": "ganz DE", "checked": null, "note": "aus der Recherche Mai/Juni 2026 belegt, seither nicht geprueft" }
+    ],
+    "outlets": [],
+    "terms": {
+      "event": ["CSD", "Christopher Street Day", "Pride"],
+      "date": ["CSD 2027", "CSD Termine 2027"],
+      "first": ["erster CSD", "zum ersten Mal CSD"],
+      "attendance": ["Teilnehmende CSD", "Menschen beim CSD", "Zuschauer CSD"]
+    },
+    "announceWindow": null,
+    "lastSweep": null
+  },
+
+  "FR": {
+    "languages": ["fr"],
+    "overview": [
+      { "url": "https://www.lechni.info/", "name": "Le Chni", "covers": "Franche-Comte", "checked": null, "note": "nur regional, aus der Recherche Mai/Juni 2026 belegt" }
+    ],
+    "outlets": [],
+    "terms": {
+      "event": ["Marche des Fiertes", "Fiertes", "Pride"],
+      "date": ["marche des fiertes 2027"],
+      "first": ["premiere marche des fiertes"],
+      "attendance": ["participants marche des fiertes", "spectateurs"]
+    },
+    "announceWindow": null,
+    "lastSweep": null
+  },
+
+  "IT": {
+    "languages": ["it"],
+    "overview": [
+      { "url": "https://ondapride.it/pride/", "name": "Onda Pride", "covers": "ganz IT", "checked": null, "note": "Gesamtkalender nach Monat, je mit Social-Link, Vorjahre als Archiv. Luecken bei Prides ohne Arcigay-Bezug moeglich." }
+    ],
+    "outlets": [],
+    "terms": {
+      "event": ["Pride", "Onda Pride", "Parata del Pride"],
+      "date": ["Pride 2027 data"],
+      "first": ["primo Pride"],
+      "attendance": ["partecipanti Pride", "spettatori"]
+    },
+    "announceWindow": null,
+    "lastSweep": null
+  },
+
+  "PL": {
+    "languages": ["pl"],
+    "overview": [
+      { "url": "https://polishprides.org/", "name": "Polish Prides Alliance", "covers": "ganz PL", "checked": null, "note": "Koalicja Miast Maszerujacych. 29 Maersche fuer 2025, 31 fuer 2024 — bei uns stehen 6. Das TLS-Zertifikat der Domain ist auf nazwa.pl ausgestellt, die Seite ist deshalb nur mit 'curl -k' lesbar, mit WebFetch nicht. Termine des laufenden Jahres hinken nach, die muessen bei den Gruppen selbst gesucht werden." }
+    ],
+    "outlets": [],
+    "terms": {
+      "event": ["Marsz Rownosci", "Parada Rownosci"],
+      "date": ["Marsz Rownosci 2027"],
+      "first": ["pierwszy Marsz Rownosci"],
+      "attendance": ["uczestnikow Marszu", "widzowie"]
+    },
+    "announceWindow": null,
+    "lastSweep": null
+  }
+}

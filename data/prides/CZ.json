@@ -1,0 +1,102 @@
+[
+  {
+    "id": "cz-brno",
+    "legacyIds": [
+      "brno-pride-2026-06-06"
+    ],
+    "name": "Brno Pride",
+    "aka": [],
+    "city": "Brno",
+    "country": "CZ",
+    "region": "Jihomoravský kraj",
+    "lat": 49.195,
+    "lon": 16.608,
+    "website": "https://www.brnopride.cz/en/",
+    "instagram": "https://www.instagram.com/brnoprideweek/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "cz-most",
+    "legacyIds": [
+      "most-pride-2026-2026-08-22"
+    ],
+    "name": "Most Pride",
+    "aka": [],
+    "city": "Most",
+    "country": "CZ",
+    "region": "Ústecký kraj",
+    "lat": 50.503,
+    "lon": 13.636,
+    "website": "https://festival.mostpride.cz/",
+    "instagram": "https://www.instagram.com/most_pride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "cz-praha",
+    "legacyIds": [
+      "prag-pride-csd-prag-2026-2026-08-08"
+    ],
+    "name": "Praha Pride",
+    "aka": [
+      "Prag Pride"
+    ],
+    "city": "Praha",
+    "cityNames": {
+      "de": "Prag",
+      "en": "Prague"
+    },
+    "country": "CZ",
+    "region": "Praha",
+    "lat": 50.088,
+    "lon": 14.421,
+    "website": "https://www.praguepride.cz",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 45000,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

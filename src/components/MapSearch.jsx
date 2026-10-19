@@ -86,7 +86,7 @@ export default function MapSearch({ parades, onPick }) {
             >
               <span className={`${flag(p.country)} map-search-flag`} />
               <span className="map-search-city">
-                {cityName(p.city, lang)}
+                {cityName(p, lang)}
                 {p.region && <span className="map-search-region"> · {p.region}</span>}
               </span>
               <span className="map-search-date">

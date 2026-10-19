@@ -4,7 +4,7 @@ import { COUNTRY_NAMES } from './countryInfo.js'
 import { cityName } from './i18n.js'
 
 /**
- * Ranked free-text search over the parades — one implementation for the map's
+ * Ranked free-text search over the Prides — one implementation for the map's
  * search box and the list, so "pride berlin", "csd berlin" and "berlin" reach
  * the same row in both.
  *
@@ -24,7 +24,7 @@ export function searchParades(parades, query) {
   const { tokens, countries } = parsePrideQuery(q)
   const scored = []
   for (const p of parades) {
-    const cities = [p.city, cityName(p.city, 'en'), cityName(p.city, 'de')].map(norm)
+    const cities = [p.city, cityName(p, 'en'), cityName(p, 'de'), ...(p.aka ?? [])].map(norm)
     const name = norm(p.name ?? '')
     let tier
     if (!tokens.length) {

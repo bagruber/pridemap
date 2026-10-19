@@ -1,7 +1,7 @@
 // Hidden scripted tour for screen recordings, triggered via /?walkthrough.
 // Designed for the mobile layout (<768px). Drives the real UI through DOM
 // clicks and map gestures with human-ish, jittered pacing. Target: ~35-40s.
-import parades from '../data/parades.json'
+import prides from '../data/prides.json'
 
 const PASSAU = { lng: 13.456, lat: 48.574 }
 
@@ -237,7 +237,7 @@ export async function runWalkthrough() {
     map.panBy([165, 18], { duration: 500 })
     await sleep(640)
   }
-  const wien = parades.find(p => p.city === 'Wien')
+  const wien = prides.find(p => p.id === 'at-wien')
   map.easeTo({ center: [wien.lon, wien.lat], zoom: 8.6, duration: 650 })
   await sleep(850)
 

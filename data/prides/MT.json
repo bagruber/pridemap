@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mt-valletta",
+    "legacyIds": [
+      "valletta-pride-malta-pride-2026-2026-09-12"
+    ],
+    "name": "Valletta Pride",
+    "aka": [
+      "Malta Pride"
+    ],
+    "city": "Valletta",
+    "country": "MT",
+    "region": "",
+    "lat": 35.9,
+    "lon": 14.514,
+    "website": "https://vallettapride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

@@ -1,13 +1,10 @@
 import { FaInstagram, FaGlobe } from 'react-icons/fa'
 import { CalendarClock, Info, MapPin, Sparkles, X } from 'lucide-react'
-import { indexColor } from '../utils/timeColors.js'
+import { colorForDays, indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
-import { isFirstTime } from '../utils/parade.js'
+import { isFirstTime } from '../utils/firstTime.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t, cityName, indexLabelL10n, labelForDaysLong, formatDate } from '../utils/i18n.js'
-import attendanceData from '../data/attendance.json'
-
-const attendanceLookup = Object.fromEntries(attendanceData.map(a => [a.city, a]))
 
 function formatBucket(n) {
   if (n >= 1000000) return `≥${(n / 1000000).toLocaleString('en')}M`
@@ -60,8 +57,9 @@ function downloadICS(parade) {
 
 export default function DetailPanel({ parade, onClose, onShowOnMap }) {
   const { lang } = useLang()
-  const { name, city, country, date, size, daysUntil, color, queerIndex, website, instagram, firstYear, movedFrom } = parade
+  const { name, country, date, size, daysUntil, queerIndex, website, instagram, firstYear, movedFrom } = parade
   const isPast = daysUntil < 0
+  const color = colorForDays(daysUntil)
 
   const formatted = formatDate(date, lang, {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
@@ -78,8 +76,9 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
   const sizeEventKey = { small: 'smallEvent', medium: 'mediumEvent', large: 'largeEvent' }[size]
   const sizeLabel = sizeEventKey ? t(sizeEventKey, lang) : size
   const countryName = COUNTRY_NAMES[country] ?? country
-  const displayCity = cityName(city, lang)
-  const att = attendanceLookup[city]
+  const displayCity = cityName(parade, lang)
+  // The newest number the Pride has, whichever year it is from
+  const att = [...(parade.attendance ?? [])].sort((a, b) => (b.year ?? 0) - (a.year ?? 0))[0]
   const firstTime = isFirstTime(parade)
 
   return (
@@ -145,11 +144,11 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
         <div className="detail-attendance">
           <div className="detail-stat-label">{t('attendance', lang)}</div>
           <div className="detail-stat-value">
-            {formatBucket(att.bucket)} {t('visitors', lang)}
+            {formatBucket(att.count)} {t('visitors', lang)}
             <span className="detail-stat-sub">
               {' '}({att.year ?? '?'})
-              {att.source === 'authorities' && ` · ${t('sourceAuthorities', lang)}`}
-              {att.source === 'organizers' && ` · ${t('sourceOrganizers', lang)}`}
+              {att.by === 'authorities' && ` · ${t('sourceAuthorities', lang)}`}
+              {att.by === 'organizers' && ` · ${t('sourceOrganizers', lang)}`}
             </span>
           </div>
         </div>

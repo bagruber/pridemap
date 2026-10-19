@@ -1,0 +1,36 @@
+[
+  {
+    "id": "md-chisinau",
+    "legacyIds": [
+      "chi-in-u-pride-csd-chi-in-u-2026-2026-06-14"
+    ],
+    "name": "Chișinău Pride",
+    "aka": [
+      "Chişinău Pride"
+    ],
+    "city": "Chișinău",
+    "cityNames": {
+      "de": "Chisinau",
+      "en": "Chisinau"
+    },
+    "country": "MD",
+    "region": "Municipiul Chișinău",
+    "lat": 47.005,
+    "lon": 28.858,
+    "website": "https://www.chisinaupride.md",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-14",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

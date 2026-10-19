@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ua-kyiv",
+    "legacyIds": [
+      "kiew-pride-csd-kiew-2026-2026-06-28"
+    ],
+    "name": "Kyiv Pride",
+    "aka": [
+      "Kiew Pride",
+      "Київ"
+    ],
+    "city": "Kyiv",
+    "cityNames": {
+      "de": "Kiew"
+    },
+    "country": "UA",
+    "region": "Oblast Kiew",
+    "lat": 50.45,
+    "lon": 30.524,
+    "website": "https://kyivpride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-28",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

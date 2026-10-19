@@ -1,0 +1,64 @@
+[
+  {
+    "id": "lu-esch-sur-alzette",
+    "legacyIds": [
+      "esch-sur-alzette-pride-csd-esch-sur-alzette-2026-2026-07-11"
+    ],
+    "name": "Esch-sur-Alzette Pride",
+    "aka": [],
+    "city": "Esch-sur-Alzette",
+    "country": "LU",
+    "region": "",
+    "lat": 49.495,
+    "lon": 5.979,
+    "website": "https://eschpride.lu",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "lu-luxembourg",
+    "legacyIds": [
+      "luxemburg-pride-csd-luxemburg-2026-2026-07-11"
+    ],
+    "name": "Luxemburg Pride",
+    "aka": [
+      "Lëtzebuerg"
+    ],
+    "city": "Luxembourg",
+    "cityNames": {
+      "de": "Luxemburg-Stadt",
+      "en": "Luxembourg City"
+    },
+    "country": "LU",
+    "region": "",
+    "lat": 49.611,
+    "lon": 6.131,
+    "website": "https://luxembourgpride.lu",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

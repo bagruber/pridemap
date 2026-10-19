@@ -1,11 +1,10 @@
 // Shared vocabulary for the build-time prerenderer: slugs, URLs and the
 // localized strings the static pages need. Kept free of any Vite-only imports.
 import { COUNTRY_NAMES } from '../../src/utils/countryInfo.js'
-import { CITY_NAMES } from '../../src/utils/i18n.js'
 import { isFirstTime } from '../../src/utils/firstTime.js'
 import { localPride, displayAka } from '../../src/utils/prideTerms.js'
 
-export { COUNTRY_NAMES, CITY_NAMES, isFirstTime, localPride, displayAka }
+export { COUNTRY_NAMES, isFirstTime, localPride, displayAka }
 
 // "a, b oder c" — the last separator is the only part that differs
 export const joinOr = (lang, arr) => arr.length < 2
@@ -129,7 +128,9 @@ export const COUNTRY_NAMES_DE = {
 export const countryName = (lang, code) =>
   (lang === 'de' ? COUNTRY_NAMES_DE[code] : COUNTRY_NAMES[code]) ?? COUNTRY_NAMES[code] ?? code
 
-export const cityName = (lang, city) => CITY_NAMES[city]?.[lang] ?? city
+// Takes a Pride record: the city under its own name, German or English
+// where they differ.
+export const cityName = (lang, p) => p?.cityNames?.[lang] ?? p?.city ?? ''
 
 // Date-only formatting, timezone-proof (no Date parsing of the ISO string)
 export function formatDate(lang, dateStr, { weekday = true } = {}) {

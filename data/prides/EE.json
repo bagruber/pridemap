@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ee-tallinn",
+    "legacyIds": [
+      "tallinn-pride-csd-tallinn-2026-2026-06-13"
+    ],
+    "name": "Tallinn Pride",
+    "aka": [],
+    "city": "Tallinn",
+    "country": "EE",
+    "region": "Harju maakond",
+    "lat": 59.437,
+    "lon": 24.754,
+    "website": "https://www.balticpride.ee/en",
+    "instagram": "https://www.instagram.com/tallinnpride/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

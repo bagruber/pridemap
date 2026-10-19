@@ -1,0 +1,37 @@
+[
+  {
+    "id": "rs-beograd",
+    "legacyIds": [
+      "belgrad-pride-csd-belgrad-2026-2026-09-19"
+    ],
+    "name": "Beograd Pride",
+    "aka": [
+      "Belgrad Pride",
+      "Београд"
+    ],
+    "city": "Beograd",
+    "cityNames": {
+      "de": "Belgrad",
+      "en": "Belgrade"
+    },
+    "country": "RS",
+    "region": "Beograd",
+    "lat": 44.802,
+    "lon": 20.466,
+    "website": "https://belgradepride.rs",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-19",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

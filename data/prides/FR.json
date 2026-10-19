@@ -1,0 +1,3059 @@
+[
+  {
+    "id": "fr-agen",
+    "legacyIds": [
+      "agen-pride-2026-05-09"
+    ],
+    "name": "Agen Pride",
+    "aka": [],
+    "city": "Agen",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 44.204,
+    "lon": 0.621,
+    "website": "https://www.agen.fr/en-ce-moment/agenda/evenement/4-eme-marche-des-fiertes-du-lot-et-garonne",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-09",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.agen.fr/en-ce-moment/agenda/evenement/4-eme-marche-des-fiertes-du-lot-et-garonne",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-aix-en-provence",
+    "legacyIds": [
+      "aix-en-provence-pride-2026-06-06"
+    ],
+    "name": "Aix-en-Provence Pride",
+    "aka": [],
+    "city": "Aix-en-Provence",
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "lat": 43.53,
+    "lon": 5.447,
+    "website": null,
+    "instagram": "https://www.instagram.com/aix_vanguard/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-alencon",
+    "legacyIds": [
+      "alencon-pride-2026-05-30"
+    ],
+    "name": "Alençon Pride",
+    "aka": [],
+    "city": "Alençon",
+    "country": "FR",
+    "region": "Normandie",
+    "lat": 48.43,
+    "lon": 0.094,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-ales",
+    "legacyIds": [
+      "ales-pride-2026-06-13"
+    ],
+    "name": "Alès Pride",
+    "aka": [],
+    "city": "Alès",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 44.127,
+    "lon": 4.082,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-amiens",
+    "legacyIds": [
+      "amiens-pride-2026-06-27"
+    ],
+    "name": "Amiens Pride",
+    "aka": [],
+    "city": "Amiens",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 49.895,
+    "lon": 2.302,
+    "website": null,
+    "instagram": "https://www.instagram.com/fiertesamiens/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-angers",
+    "legacyIds": [
+      "angers-pride-pride-d-angers-2026-2026-05-30"
+    ],
+    "name": "Angers Pride",
+    "aka": [
+      "Pride d'Angers"
+    ],
+    "city": "Angers",
+    "country": "FR",
+    "region": "Pays de la Loire",
+    "lat": 47.473,
+    "lon": -0.563,
+    "website": "https://quazar.fr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-angouleme",
+    "legacyIds": [
+      "angouleme-pride-2026-06-06"
+    ],
+    "name": "Angoulême Pride",
+    "aka": [],
+    "city": "Angoulême",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 45.649,
+    "lon": 0.157,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-annecy",
+    "legacyIds": [
+      "annecy-pride-2026-07-18"
+    ],
+    "name": "Annecy Pride",
+    "aka": [],
+    "city": "Annecy",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.899,
+    "lon": 6.13,
+    "website": "https://www.helloasso.com/associations/annecypride",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 1300,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.helloasso.com/associations/annecypride",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-arles",
+    "legacyIds": [
+      "arles-pride-2026-06-06"
+    ],
+    "name": "Arles Pride",
+    "aka": [],
+    "city": "Arles",
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "lat": 43.677,
+    "lon": 4.63,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-arras",
+    "legacyIds": [
+      "arras-pride-csd-arras-2026-2026-06-13"
+    ],
+    "name": "Arras Pride",
+    "aka": [],
+    "city": "Arras",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 50.291,
+    "lon": 2.78,
+    "website": "https://www.arraspride.fr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-auxerre",
+    "legacyIds": [
+      "auxerre-pride-2026-06-13"
+    ],
+    "name": "Auxerre Pride",
+    "aka": [],
+    "city": "Auxerre",
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "lat": 47.798,
+    "lon": 3.569,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-avallon",
+    "legacyIds": [
+      "avallon-pride-2026-06-06"
+    ],
+    "name": "Avallon Pride",
+    "aka": [],
+    "city": "Avallon",
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "lat": 47.486,
+    "lon": 3.908,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-avignon",
+    "legacyIds": [
+      "avignon-pride-2026-05-30"
+    ],
+    "name": "Avignon Pride",
+    "aka": [],
+    "city": "Avignon",
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "lat": 43.949,
+    "lon": 4.806,
+    "website": null,
+    "instagram": "https://www.instagram.com/pride.avignon/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-belfort",
+    "legacyIds": [
+      "belfort-pride-2026-05-30"
+    ],
+    "name": "Belfort Pride",
+    "aka": [],
+    "city": "Belfort",
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "lat": 47.637,
+    "lon": 6.863,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-besancon",
+    "legacyIds": [
+      "besancon-pride-2026-05-16"
+    ],
+    "name": "Besançon Pride",
+    "aka": [],
+    "city": "Besançon",
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "lat": 47.238,
+    "lon": 6.024,
+    "website": "https://www.lechni.info/20260414/en-franche-comte-plusieurs-marches-des-fiertes-prevues-pour-2026/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.lechni.info/20260414/en-franche-comte-plusieurs-marches-des-fiertes-prevues-pour-2026/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-beziers",
+    "legacyIds": [
+      "beziers-pride-2026-06-13"
+    ],
+    "name": "Béziers Pride",
+    "aka": [],
+    "city": "Béziers",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 43.344,
+    "lon": 3.216,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-biarritz",
+    "legacyIds": [
+      "biarritz-pride-csd-biarritz-2026-2026-06-13"
+    ],
+    "name": "Biarritz Pride",
+    "aka": [],
+    "city": "Biarritz",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 43.483,
+    "lon": -1.559,
+    "website": "https://www.biarritz.fr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 800,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-blois",
+    "legacyIds": [
+      "blois-pride-2026-05-16"
+    ],
+    "name": "Blois Pride",
+    "aka": [],
+    "city": "Blois",
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "lat": 47.594,
+    "lon": 1.332,
+    "website": "https://www.blois.fr/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.blois.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-bordeaux",
+    "legacyIds": [
+      "bordeaux-pride-2026-05-30"
+    ],
+    "name": "Bordeaux Pride",
+    "aka": [],
+    "city": "Bordeaux",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 44.837,
+    "lon": -0.579,
+    "website": "https://www.bordeaux-tourisme.com/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 10000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.bordeaux-tourisme.com/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-bourg-en-bresse",
+    "legacyIds": [
+      "bourg-en-bresse-pride-2026-03-28"
+    ],
+    "name": "Bourg-en-Bresse Pride",
+    "aka": [],
+    "city": "Bourg-en-Bresse",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 46.205,
+    "lon": 5.228,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-03-28",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-bourges",
+    "legacyIds": [
+      "bourges-pride-2026-06-06"
+    ],
+    "name": "Bourges Pride",
+    "aka": [],
+    "city": "Bourges",
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "lat": 47.081,
+    "lon": 2.398,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-bourgoin-jallieu",
+    "legacyIds": [
+      "bourgoin-jallieu-pride-2026-05-23"
+    ],
+    "name": "Bourgoin-Jallieu Pride",
+    "aka": [],
+    "city": "Bourgoin-Jallieu",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.589,
+    "lon": 5.271,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-brest",
+    "legacyIds": [
+      "brest-pride-2026-06-20"
+    ],
+    "name": "Brest Pride",
+    "aka": [],
+    "city": "Brest",
+    "country": "FR",
+    "region": "Bretagne",
+    "lat": 48.39,
+    "lon": -4.486,
+    "website": null,
+    "instagram": "https://www.instagram.com/pridebrest/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-caen",
+    "legacyIds": [
+      "caen-pride-2026-06-13"
+    ],
+    "name": "Caen Pride",
+    "aka": [],
+    "city": "Caen",
+    "country": "FR",
+    "region": "Normandie",
+    "lat": 49.182,
+    "lon": -0.371,
+    "website": null,
+    "instagram": "https://www.instagram.com/centrelgbtinormandie_caen/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-calais",
+    "legacyIds": [
+      "calais-pride-2026-06-06"
+    ],
+    "name": "Calais Pride",
+    "aka": [],
+    "city": "Calais",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 50.951,
+    "lon": 1.858,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-carcassonne",
+    "legacyIds": [
+      "carcassonne-pride-2026-06-27"
+    ],
+    "name": "Carcassonne Pride",
+    "aka": [],
+    "city": "Carcassonne",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 43.213,
+    "lon": 2.354,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-chambery",
+    "legacyIds": [
+      "chambery-pride-2026-10-10"
+    ],
+    "name": "Chambéry Pride",
+    "aka": [],
+    "city": "Chambéry",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.564,
+    "lon": 5.917,
+    "website": "https://www.chambery.fr/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 1000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-10-10",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.chambery.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-chartres",
+    "legacyIds": [
+      "chartres-pride-2026-06-06"
+    ],
+    "name": "Chartres Pride",
+    "aka": [],
+    "city": "Chartres",
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "lat": 48.448,
+    "lon": 1.488,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-chenevelles",
+    "legacyIds": [
+      "chenevelles-pride-2026-07-25"
+    ],
+    "name": "Chenevelles Pride",
+    "aka": [],
+    "city": "Chenevelles",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 46.558,
+    "lon": 0.559,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-clermont-ferrand",
+    "legacyIds": [
+      "clermont-ferrand-pride-2026-05-30"
+    ],
+    "name": "Clermont-Ferrand Pride",
+    "aka": [],
+    "city": "Clermont-Ferrand",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.776,
+    "lon": 3.087,
+    "website": "https://pommesdelune.fr/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://pommesdelune.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-clisson",
+    "legacyIds": [
+      "clisson-pride-2026-09-12"
+    ],
+    "name": "Clisson Pride",
+    "aka": [],
+    "city": "Clisson",
+    "country": "FR",
+    "region": "Pays de la Loire",
+    "lat": 47.087,
+    "lon": -1.279,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-cluny",
+    "legacyIds": [
+      "cluny-pride-2026-07-04"
+    ],
+    "name": "Cluny Pride",
+    "aka": [],
+    "city": "Cluny",
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "lat": 46.434,
+    "lon": 4.658,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-compiegne",
+    "legacyIds": [
+      "compiegne-pride-2026-06-13"
+    ],
+    "name": "Compiègne Pride",
+    "aka": [],
+    "city": "Compiègne",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 49.418,
+    "lon": 2.823,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-dijon",
+    "legacyIds": [
+      "dijon-pride-2026-06-13"
+    ],
+    "name": "Dijon Pride",
+    "aka": [],
+    "city": "Dijon",
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "lat": 47.322,
+    "lon": 5.041,
+    "website": null,
+    "instagram": "https://www.instagram.com/pride.dijon/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 1500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-douai",
+    "legacyIds": [
+      "douai-pride-2026-06-06"
+    ],
+    "name": "Douai Pride",
+    "aka": [],
+    "city": "Douai",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 50.371,
+    "lon": 3.08,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-douarnenez",
+    "legacyIds": [
+      "douarnenez-pride-2026-06-06"
+    ],
+    "name": "Douarnenez Pride",
+    "aka": [],
+    "city": "Douarnenez",
+    "country": "FR",
+    "region": "Bretagne",
+    "lat": 48.097,
+    "lon": -4.327,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-fougeres",
+    "legacyIds": [
+      "fougeres-pride-2026-06-06"
+    ],
+    "name": "Fougères Pride",
+    "aka": [],
+    "city": "Fougères",
+    "country": "FR",
+    "region": "Bretagne",
+    "lat": 48.352,
+    "lon": -1.199,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-grenoble",
+    "legacyIds": [
+      "grenoble-pride-csd-grenoble-2026-2026-06-20"
+    ],
+    "name": "Grenoble Fiertés",
+    "aka": [],
+    "city": "Grenoble",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.188,
+    "lon": 5.724,
+    "website": "https://grenoble-fiertes.com/",
+    "instagram": "https://www.instagram.com/grenoblepride/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 4000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://grenoble-fiertes.com/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-gueret",
+    "legacyIds": [
+      "gueret-pride-2026-06-20"
+    ],
+    "name": "Guéret Pride",
+    "aka": [],
+    "city": "Guéret",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 46.17,
+    "lon": 1.873,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-l-arbresle",
+    "legacyIds": [
+      "l-arbresle-pride-2026-05-30"
+    ],
+    "name": "L'Arbresle Pride",
+    "aka": [],
+    "city": "L'Arbresle",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.836,
+    "lon": 4.607,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-la-ciotat",
+    "legacyIds": [
+      "la-ciotat-pride-2026-06-06"
+    ],
+    "name": "La Ciotat Pride",
+    "aka": [],
+    "city": "La Ciotat",
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "lat": 43.174,
+    "lon": 5.606,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-la-roche-sur-yon",
+    "legacyIds": [
+      "la-roche-sur-yon-pride-2026-05-16"
+    ],
+    "name": "La Roche-sur-Yon Pride",
+    "aka": [],
+    "city": "La Roche-sur-Yon",
+    "country": "FR",
+    "region": "Pays de la Loire",
+    "lat": 46.67,
+    "lon": -1.426,
+    "website": "https://centre-lgbt-de-vendee.org/pride-2026/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://centre-lgbt-de-vendee.org/pride-2026/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-la-rochelle",
+    "legacyIds": [
+      "la-rochelle-pride-2026-06-06"
+    ],
+    "name": "La Rochelle Pride",
+    "aka": [],
+    "city": "La Rochelle",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 46.16,
+    "lon": -1.152,
+    "website": "https://larochellepride.fr/",
+    "instagram": "https://www.instagram.com/larochellepride/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-laval",
+    "legacyIds": [
+      "laval-pride-2026-05-30"
+    ],
+    "name": "Laval Pride",
+    "aka": [],
+    "city": "Laval",
+    "country": "FR",
+    "region": "Pays de la Loire",
+    "lat": 48.073,
+    "lon": -0.771,
+    "website": null,
+    "instagram": "https://www.instagram.com/gom53/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.instagram.com/gom53/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-le-mans",
+    "legacyIds": [
+      "le-mans-pride-csd-le-mans-2026-2026-07-04"
+    ],
+    "name": "Le Mans Pride",
+    "aka": [],
+    "city": "Le Mans",
+    "country": "FR",
+    "region": "Pays de la Loire",
+    "lat": 48.008,
+    "lon": 0.199,
+    "website": "https://www.lemanspride.fr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-lens",
+    "legacyIds": [
+      "lens-pride-2026-05-24"
+    ],
+    "name": "Lens Pride",
+    "aka": [],
+    "city": "Lens",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 50.432,
+    "lon": 2.83,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-24",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-libourne",
+    "legacyIds": [
+      "libourne-pride-2026-05-09"
+    ],
+    "name": "Libourne Pride",
+    "aka": [],
+    "city": "Libourne",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 44.92,
+    "lon": -0.24,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-09",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-lille",
+    "legacyIds": [
+      "lille-pride-2026-05-30"
+    ],
+    "name": "Lille Pride",
+    "aka": [],
+    "city": "Lille",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 50.629,
+    "lon": 3.057,
+    "website": "https://www.lillepride.fr/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 20000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.lillepride.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-lisieux",
+    "legacyIds": [
+      "lisieux-pride-2026-06-27"
+    ],
+    "name": "Lisieux Pride",
+    "aka": [],
+    "city": "Lisieux",
+    "country": "FR",
+    "region": "Normandie",
+    "lat": 49.144,
+    "lon": 0.228,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-lons-le-saunier",
+    "legacyIds": [
+      "lons-le-saunier-pride-2026-06-13"
+    ],
+    "name": "Lons-le-Saunier Pride",
+    "aka": [],
+    "city": "Lons-le-Saunier",
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "lat": 46.674,
+    "lon": 5.554,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-lorient",
+    "legacyIds": [
+      "lorient-pride-2026-06-27"
+    ],
+    "name": "Lorient Pride",
+    "aka": [],
+    "city": "Lorient",
+    "country": "FR",
+    "region": "Bretagne",
+    "lat": 47.749,
+    "lon": -3.368,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-lyon",
+    "legacyIds": [
+      "lyon-pride-2026-06-27"
+    ],
+    "name": "Lyon Pride",
+    "aka": [],
+    "city": "Lyon",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.75,
+    "lon": 4.845,
+    "website": null,
+    "instagram": "https://www.instagram.com/cfl.lyon/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 14000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.instagram.com/cfl.lyon/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-marseille",
+    "legacyIds": [
+      "marseille-pride-pride-marseille-2026-2026-07-04"
+    ],
+    "name": "Marseille Pride",
+    "aka": [
+      "Pride Marseille"
+    ],
+    "city": "Marseille",
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "lat": 43.296,
+    "lon": 5.381,
+    "website": "https://www.marseillepride.fr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 40000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.pride-marseille.com/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-metz",
+    "legacyIds": [
+      "metz-pride-2026-06-13"
+    ],
+    "name": "Metz Pride",
+    "aka": [],
+    "city": "Metz",
+    "country": "FR",
+    "region": "Grand Est",
+    "lat": 49.12,
+    "lon": 6.177,
+    "website": "https://www.couleursgaies.fr/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.couleursgaies.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-molines-en-queyras",
+    "legacyIds": [
+      "molines-en-queyras-pride-2026-01-31"
+    ],
+    "name": "Molines-en-Queyras Pride",
+    "aka": [],
+    "city": "Molines-en-Queyras",
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "lat": 44.74,
+    "lon": 6.893,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-01-31",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-montauban",
+    "legacyIds": [
+      "montauban-pride-2026-06-13"
+    ],
+    "name": "Montauban Pride",
+    "aka": [],
+    "city": "Montauban",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 44.017,
+    "lon": 1.353,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-montpellier",
+    "legacyIds": [
+      "montpellier-pride-csd-montpellier-2026-2026-06-20"
+    ],
+    "name": "Montpellier Pride",
+    "aka": [],
+    "city": "Montpellier",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 43.611,
+    "lon": 3.877,
+    "website": "https://montpellier-pride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 20000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.montpellier.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-mulhouse",
+    "legacyIds": [
+      "mulhouse-pride-2026-06-06"
+    ],
+    "name": "Mulhouse Pride",
+    "aka": [],
+    "city": "Mulhouse",
+    "country": "FR",
+    "region": "Grand Est",
+    "lat": 47.75,
+    "lon": 7.336,
+    "website": null,
+    "instagram": "https://www.instagram.com/pridemulhouse/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-nancy",
+    "legacyIds": [
+      "nancy-pride-2026-06-06"
+    ],
+    "name": "Nancy Pride",
+    "aka": [],
+    "city": "Nancy",
+    "country": "FR",
+    "region": "Grand Est",
+    "lat": 48.692,
+    "lon": 6.184,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-nantes",
+    "legacyIds": [
+      "nantes-pride-csd-nantes-2026-2026-06-13"
+    ],
+    "name": "Nantes Pride",
+    "aka": [],
+    "city": "Nantes",
+    "country": "FR",
+    "region": "Pays de la Loire",
+    "lat": 47.218,
+    "lon": -1.554,
+    "website": "https://www.nantespride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 12000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.nosig.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-narbonne",
+    "legacyIds": [
+      "narbonne-pride-2026-05-30"
+    ],
+    "name": "Narbonne Pride",
+    "aka": [],
+    "city": "Narbonne",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 43.184,
+    "lon": 3.003,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-nevers",
+    "legacyIds": [
+      "nevers-pride-2026-06-13"
+    ],
+    "name": "Nevers Pride",
+    "aka": [],
+    "city": "Nevers",
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "lat": 46.989,
+    "lon": 3.159,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-nice",
+    "legacyIds": [
+      "nice-pride-2026-07-11"
+    ],
+    "name": "Nice Pride",
+    "aka": [],
+    "city": "Nice",
+    "cityNames": {
+      "de": "Nizza"
+    },
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "lat": 43.711,
+    "lon": 7.262,
+    "website": null,
+    "instagram": "https://www.instagram.com/pinkparadnice/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.instagram.com/pinkparadnice/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-nimes",
+    "legacyIds": [
+      "nimes-pride-2026-06-27"
+    ],
+    "name": "Nîmes Pride",
+    "aka": [],
+    "city": "Nîmes",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 43.837,
+    "lon": 4.361,
+    "website": null,
+    "instagram": "https://www.instagram.com/larenedesfiertes/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-niort",
+    "legacyIds": [
+      "niort-pride-2026-05-30"
+    ],
+    "name": "Niort Pride",
+    "aka": [],
+    "city": "Niort",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 46.323,
+    "lon": -0.462,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-orleans",
+    "legacyIds": [
+      "orl-ans-pride-csd-orl-ans-2026-2026-05-30"
+    ],
+    "name": "Orléans Pride",
+    "aka": [],
+    "city": "Orléans",
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "lat": 47.903,
+    "lon": 1.904,
+    "website": "https://www.gaypride.fr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-paris",
+    "legacyIds": [
+      "paris-pride-csd-paris-2026-2026-06-27"
+    ],
+    "name": "Paris Pride",
+    "aka": [],
+    "city": "Paris",
+    "country": "FR",
+    "region": "Île-de-France",
+    "lat": 48.853,
+    "lon": 2.35,
+    "website": "https://www.marchedesfiertes.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 500000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-10-03",
+        "status": "rescheduled",
+        "movedFrom": "2026-06-27"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-perigueux",
+    "legacyIds": [
+      "perigueux-pride-2026-06-13"
+    ],
+    "name": "Périgueux Pride",
+    "aka": [],
+    "city": "Périgueux",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 45.185,
+    "lon": 0.721,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-perpignan",
+    "legacyIds": [
+      "perpignan-pride-2026-06-13"
+    ],
+    "name": "Perpignan Pride",
+    "aka": [],
+    "city": "Perpignan",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 42.699,
+    "lon": 2.895,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-poitiers",
+    "legacyIds": [
+      "poitiers-pride-csd-poitiers-2026-2026-05-23"
+    ],
+    "name": "Poitiers Pride",
+    "aka": [],
+    "city": "Poitiers",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 46.58,
+    "lon": 0.34,
+    "website": "https://www.gaypride.fr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-pontrieux",
+    "legacyIds": [
+      "pontrieux-pride-2026-07-26"
+    ],
+    "name": "Pontrieux Pride",
+    "aka": [],
+    "city": "Pontrieux",
+    "country": "FR",
+    "region": "Bretagne",
+    "lat": 48.702,
+    "lon": -3.148,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-quimper",
+    "legacyIds": [
+      "quimper-pride-2026-07-04"
+    ],
+    "name": "Quimper Pride",
+    "aka": [],
+    "city": "Quimper",
+    "country": "FR",
+    "region": "Bretagne",
+    "lat": 47.996,
+    "lon": -4.098,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-reims",
+    "legacyIds": [
+      "reims-pride-2026-05-23"
+    ],
+    "name": "Reims Pride",
+    "aka": [],
+    "city": "Reims",
+    "country": "FR",
+    "region": "Grand Est",
+    "lat": 49.258,
+    "lon": 4.032,
+    "website": "https://www.reims.fr/a-la-une/une/la-marche-des-fiertes-de-reims",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 2000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.reims.fr/a-la-une/une/la-marche-des-fiertes-de-reims",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-rennes",
+    "legacyIds": [
+      "rennes-pride-2026-06-20"
+    ],
+    "name": "Rennes Pride",
+    "aka": [],
+    "city": "Rennes",
+    "country": "FR",
+    "region": "Bretagne",
+    "lat": 48.117,
+    "lon": -1.678,
+    "website": "https://www.iskis-rbx.fr/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 8000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.iskis-rbx.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-roanne",
+    "legacyIds": [
+      "roanne-pride-2026-07-04"
+    ],
+    "name": "Roanne Pride",
+    "aka": [],
+    "city": "Roanne",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 46.037,
+    "lon": 4.07,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-rodez",
+    "legacyIds": [
+      "rodez-pride-2026-05-30"
+    ],
+    "name": "Rodez Pride",
+    "aka": [],
+    "city": "Rodez",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 44.35,
+    "lon": 2.575,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-roubaix",
+    "legacyIds": [
+      "roubaix-pride-2026-06-06"
+    ],
+    "name": "Roubaix Pride",
+    "aka": [],
+    "city": "Roubaix",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 50.694,
+    "lon": 3.181,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-rouen",
+    "legacyIds": [
+      "rouen-pride-csd-rouen-2026-2026-06-20"
+    ],
+    "name": "Rouen Pride",
+    "aka": [],
+    "city": "Rouen",
+    "country": "FR",
+    "region": "Normandie",
+    "lat": 49.443,
+    "lon": 1.1,
+    "website": "https://www.rouenpride.fr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.normandie-pride.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-saint-brieuc",
+    "legacyIds": [
+      "saint-brieuc-pride-2026-06-13"
+    ],
+    "name": "Saint-Brieuc Pride",
+    "aka": [],
+    "city": "Saint-Brieuc",
+    "country": "FR",
+    "region": "Bretagne",
+    "lat": 48.514,
+    "lon": -2.765,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-saint-gaudens",
+    "legacyIds": [
+      "saint-gaudens-pride-2026-06-06"
+    ],
+    "name": "Saint-Gaudens Pride",
+    "aka": [],
+    "city": "Saint-Gaudens",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 43.107,
+    "lon": 0.724,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-saint-jean-de-maurienne",
+    "legacyIds": [
+      "saint-jean-de-maurienne-pride-2026-05-16"
+    ],
+    "name": "Saint-Jean-de-Maurienne Pride",
+    "aka": [],
+    "city": "Saint-Jean-de-Maurienne",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.275,
+    "lon": 6.344,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-saint-martin-en-haut",
+    "legacyIds": [
+      "saint-martin-en-haut-pride-2026-06-20"
+    ],
+    "name": "Saint-Martin-en-Haut Pride",
+    "aka": [],
+    "city": "Saint-Martin-en-Haut",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.662,
+    "lon": 4.523,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-saint-nazaire",
+    "legacyIds": [
+      "saint-nazaire-pride-2026-05-30"
+    ],
+    "name": "Saint-Nazaire Pride",
+    "aka": [],
+    "city": "Saint-Nazaire",
+    "country": "FR",
+    "region": "Pays de la Loire",
+    "lat": 47.273,
+    "lon": -2.213,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-saint-paul-les-dax",
+    "legacyIds": [
+      "saint-paul-les-dax-pride-2026-05-16"
+    ],
+    "name": "Saint-Paul-lès-Dax Pride",
+    "aka": [],
+    "city": "Saint-Paul-lès-Dax",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 43.731,
+    "lon": -1.055,
+    "website": "https://www.pride40.org/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.pride40.org/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-saint-quentin",
+    "legacyIds": [
+      "saint-quentin-pride-2026-06-06"
+    ],
+    "name": "Saint-Quentin Pride",
+    "aka": [],
+    "city": "Saint-Quentin",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 49.847,
+    "lon": 3.288,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-saintes",
+    "legacyIds": [
+      "saintes-pride-2026-06-13"
+    ],
+    "name": "Saintes Pride",
+    "aka": [],
+    "city": "Saintes",
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "lat": 45.747,
+    "lon": -0.64,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-sallanches",
+    "legacyIds": [
+      "sallanches-pride-2026-06-27"
+    ],
+    "name": "Sallanches Pride",
+    "aka": [],
+    "city": "Sallanches",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 45.936,
+    "lon": 6.632,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-strasbourg",
+    "legacyIds": [
+      "strasbourg-pride-csd-strasbourg-2026-2026-06-20"
+    ],
+    "name": "Strasbourg Pride",
+    "aka": [],
+    "city": "Strasbourg",
+    "cityNames": {
+      "de": "Straßburg"
+    },
+    "country": "FR",
+    "region": "Grand Est",
+    "lat": 48.574,
+    "lon": 7.751,
+    "website": "https://www.marche-des-fiertes-strasbourg.fr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 7000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.festigays.net/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-tarbes",
+    "legacyIds": [
+      "tarbes-pride-2026-05-30"
+    ],
+    "name": "Tarbes Pride",
+    "aka": [],
+    "city": "Tarbes",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 43.233,
+    "lon": 0.078,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-thionville",
+    "legacyIds": [
+      "thionville-pride-2026-06-06"
+    ],
+    "name": "Thionville Pride",
+    "aka": [],
+    "city": "Thionville",
+    "country": "FR",
+    "region": "Grand Est",
+    "lat": 49.358,
+    "lon": 6.167,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-toulon",
+    "legacyIds": [
+      "toulon-pride-2026-06-13"
+    ],
+    "name": "Toulon Pride",
+    "aka": [],
+    "city": "Toulon",
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "lat": 43.124,
+    "lon": 5.928,
+    "website": "https://fiertes-toulon.fr/",
+    "instagram": "https://www.instagram.com/collectif.fiertes.toulon/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-toulouse",
+    "legacyIds": [
+      "toulouse-pride-csd-toulouse-2026-2026-06-06"
+    ],
+    "name": "Toulouse Pride",
+    "aka": [],
+    "city": "Toulouse",
+    "country": "FR",
+    "region": "Occitanie",
+    "lat": 43.604,
+    "lon": 1.444,
+    "website": "https://pridetoulouse.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 30000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.pridetoulouse.com/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-tourcoing",
+    "legacyIds": [
+      "tourcoing-pride-2026-06-27"
+    ],
+    "name": "Tourcoing Pride",
+    "aka": [],
+    "city": "Tourcoing",
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "lat": 50.724,
+    "lon": 3.161,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-tours",
+    "legacyIds": [
+      "tours-pride-2026-06-06"
+    ],
+    "name": "Tours Pride",
+    "aka": [],
+    "city": "Tours",
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "lat": 47.394,
+    "lon": 0.688,
+    "website": null,
+    "instagram": "https://www.instagram.com/fiertes_tours/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-valence",
+    "legacyIds": [
+      "valence-pride-2026-05-16"
+    ],
+    "name": "Valence Pride",
+    "aka": [],
+    "city": "Valence",
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "lat": 44.933,
+    "lon": 4.892,
+    "website": "https://www.valencediversite.fr/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.valencediversite.fr/",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-vannes",
+    "legacyIds": [
+      "vannes-pride-2026-05-16"
+    ],
+    "name": "Vannes Pride",
+    "aka": [],
+    "city": "Vannes",
+    "country": "FR",
+    "region": "Bretagne",
+    "lat": 47.658,
+    "lon": -2.76,
+    "website": "https://www.helloasso.com/associations/liberty-max-vannes/collectes/pride-lgbtqia-de-vannes-2026-1",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.helloasso.com/associations/liberty-max-vannes/collectes/pride-lgbtqia-de-vannes-2026-1",
+            "checked": "2026-05-27"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "fr-vesoul",
+    "legacyIds": [
+      "vesoul-pride-2026-06-20"
+    ],
+    "name": "Vesoul Pride",
+    "aka": [],
+    "city": "Vesoul",
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "lat": 47.622,
+    "lon": 6.157,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

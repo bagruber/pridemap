@@ -1,0 +1,642 @@
+[
+  {
+    "id": "es-alicante",
+    "legacyIds": [
+      "alicante-pride-csd-alicante-2026-2026-07-18"
+    ],
+    "name": "Alicante Pride",
+    "aka": [],
+    "city": "Alicante",
+    "country": "ES",
+    "region": "Comunitat Valenciana",
+    "lat": 38.345,
+    "lon": -0.482,
+    "website": "https://alicantepride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-barcelona",
+    "legacyIds": [
+      "barcelona-pride-csd-barcelona-2026-2026-06-28"
+    ],
+    "name": "Barcelona Pride",
+    "aka": [],
+    "city": "Barcelona",
+    "country": "ES",
+    "region": "Catalunya",
+    "lat": 41.387,
+    "lon": 2.168,
+    "website": "https://www.pridebarcelona.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 100000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-28",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-benidorm",
+    "legacyIds": [
+      "benidorm-pride-csd-benidorm-2026-2026-09-05"
+    ],
+    "name": "Benidorm Pride",
+    "aka": [],
+    "city": "Benidorm",
+    "country": "ES",
+    "region": "Comunitat Valenciana",
+    "lat": 38.535,
+    "lon": -0.133,
+    "website": "https://benidormpride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-bilbao",
+    "legacyIds": [
+      "bilbao-pride-csd-bilbao-2026-2026-06-20"
+    ],
+    "name": "Bilbao Pride",
+    "aka": [],
+    "city": "Bilbao",
+    "country": "ES",
+    "region": "País Vasco",
+    "lat": 43.263,
+    "lon": -2.935,
+    "website": "https://bilbaopride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-cartagena",
+    "legacyIds": [
+      "cartagena-pride-2026-06-27"
+    ],
+    "name": "Cartagena Pride",
+    "aka": [],
+    "city": "Cartagena",
+    "country": "ES",
+    "region": "Región de Murcia",
+    "lat": 37.604,
+    "lon": -0.986,
+    "website": "https://www.enorgullect.es/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-cordoba",
+    "legacyIds": [
+      "c-rdoba-pride-csd-c-rdoba-2026-2026-06-27"
+    ],
+    "name": "Córdoba Pride",
+    "aka": [],
+    "city": "Córdoba",
+    "country": "ES",
+    "region": "Andalucía",
+    "lat": 37.888,
+    "lon": -4.779,
+    "website": "https://www.cordobapride.es",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-eivissa",
+    "legacyIds": [
+      "ibiza-pride-ibiza-gay-pride-2026-2026-06-13"
+    ],
+    "name": "Ibiza Pride",
+    "aka": [
+      "Ibiza Gay Pride",
+      "Ibiza"
+    ],
+    "city": "Eivissa",
+    "cityNames": {
+      "de": "Ibiza-Stadt",
+      "en": "Ibiza Town"
+    },
+    "country": "ES",
+    "region": "Illes Balears",
+    "lat": 38.907,
+    "lon": 1.433,
+    "website": "https://www.ibizapride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-gijon",
+    "legacyIds": [
+      "gijon-pride-csd-gijon-2026-2026-06-28"
+    ],
+    "name": "Gijon Pride",
+    "aka": [],
+    "city": "Gijón",
+    "country": "ES",
+    "region": "Principado de Asturias",
+    "lat": 43.545,
+    "lon": -5.662,
+    "website": "https://gijonpride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-28",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-las-palmas-de-gran-canaria",
+    "legacyIds": [
+      "gran-canaria-pride-csd-gran-canaria-2026-2026-05-09"
+    ],
+    "name": "Gran Canaria Pride",
+    "aka": [],
+    "city": "Las Palmas de Gran Canaria",
+    "country": "ES",
+    "region": "Canarias",
+    "lat": 28.124,
+    "lon": -15.432,
+    "website": "https://www.laspalmasgc.es",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-09",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-madrid",
+    "legacyIds": [
+      "madrid-pride-csd-madrid-2026-2026-07-04"
+    ],
+    "name": "Madrid Pride",
+    "aka": [],
+    "city": "Madrid",
+    "country": "ES",
+    "region": "Comunidad de Madrid",
+    "lat": 40.416,
+    "lon": -3.703,
+    "website": "https://www.madridorgullo.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 300000,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-malaga",
+    "legacyIds": [
+      "malaga-pride-csd-malaga-2026-2026-06-27"
+    ],
+    "name": "Malaga Pride",
+    "aka": [],
+    "city": "Málaga",
+    "country": "ES",
+    "region": "Andalucía",
+    "lat": 36.72,
+    "lon": -4.42,
+    "website": "https://malagapride.es",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-maspalomas",
+    "legacyIds": [
+      "maspalomas-pride-csd-maspalomas-2026-2026-05-09"
+    ],
+    "name": "Maspalomas Pride",
+    "aka": [],
+    "city": "Maspalomas",
+    "country": "ES",
+    "region": "Canarias",
+    "lat": 27.76,
+    "lon": -15.586,
+    "website": "https://www.maspalomaspride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 75000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-09",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-murcia",
+    "legacyIds": [
+      "murcia-pride-csd-murcia-2026-2026-06-20"
+    ],
+    "name": "Murcia Pride",
+    "aka": [],
+    "city": "Murcia",
+    "country": "ES",
+    "region": "Región de Murcia",
+    "lat": 37.984,
+    "lon": -1.13,
+    "website": "https://murciaorgullosa.es",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-palma-de-mallorca",
+    "legacyIds": [
+      "palma-de-mallorca-pride-csd-palma-de-mallorca-2026-2026-06-27"
+    ],
+    "name": "Palma de Mallorca Pride",
+    "aka": [],
+    "city": "Palma de Mallorca",
+    "country": "ES",
+    "region": "Illes Balears",
+    "lat": 39.569,
+    "lon": 2.65,
+    "website": "https://www.palmapride.es",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-santa-cruz-de-tenerife",
+    "legacyIds": [
+      "teneriffa-pride-csd-teneriffa-2026-2026-07-25"
+    ],
+    "name": "Teneriffa Pride",
+    "aka": [],
+    "city": "Santa Cruz de Tenerife",
+    "country": "ES",
+    "region": "Canarias",
+    "lat": 28.466,
+    "lon": -16.252,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-sevilla",
+    "legacyIds": [
+      "sevilla-pride-orgullo-lgtb-de-andaluc-a-2026-2026-06-27"
+    ],
+    "name": "Sevilla Pride",
+    "aka": [
+      "Orgullo LGTB de Andalucía"
+    ],
+    "city": "Sevilla",
+    "cityNames": {
+      "en": "Seville"
+    },
+    "country": "ES",
+    "region": "Andalucía",
+    "lat": 37.389,
+    "lon": -5.984,
+    "website": "https://sevillapride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-sitges",
+    "legacyIds": [
+      "sitges-pride-csd-sitges-2026-2026-06-14"
+    ],
+    "name": "Sitges Pride",
+    "aka": [],
+    "city": "Sitges",
+    "country": "ES",
+    "region": "Catalunya",
+    "lat": 41.236,
+    "lon": 1.808,
+    "website": "https://sitgespride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-14",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-tarragona",
+    "legacyIds": [
+      "tarragona-pride-2026-06-13"
+    ],
+    "name": "Tarragona Pride",
+    "aka": [],
+    "city": "Tarragona",
+    "country": "ES",
+    "region": "Catalunya",
+    "lat": 41.119,
+    "lon": 1.245,
+    "website": "https://pridetarragona.com/",
+    "instagram": "https://www.instagram.com/pridetarragona/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-torremolinos",
+    "legacyIds": [
+      "torremolinos-pride-csd-torremolinos-2026-2026-06-06"
+    ],
+    "name": "Torremolinos Pride",
+    "aka": [],
+    "city": "Torremolinos",
+    "country": "ES",
+    "region": "Andalucía",
+    "lat": 36.621,
+    "lon": -4.5,
+    "website": "https://pridetorremolinos.es",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 50000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-valencia",
+    "legacyIds": [
+      "valencia-pride-csd-valencia-2026-2026-06-27"
+    ],
+    "name": "Valencia Pride",
+    "aka": [],
+    "city": "Valencia",
+    "country": "ES",
+    "region": "Comunitat Valenciana",
+    "lat": 39.47,
+    "lon": -0.377,
+    "website": "https://lambdavalencia.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "es-zaragoza",
+    "legacyIds": [
+      "zaragoza-pride-csd-zaragoza-2026-2026-06-28"
+    ],
+    "name": "Zaragoza Pride",
+    "aka": [],
+    "city": "Zaragoza",
+    "country": "ES",
+    "region": "Aragón",
+    "lat": 41.656,
+    "lon": -0.877,
+    "website": "https://zaragozapride.es",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-28",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "al-tirana",
+    "legacyIds": [
+      "tirana-pride-csd-tirana-2026-2026-05-23"
+    ],
+    "name": "Tirana Pride",
+    "aka": [],
+    "city": "Tirana",
+    "country": "AL",
+    "region": "Qarku i Tiranës",
+    "lat": 41.327,
+    "lon": 19.82,
+    "website": "https://www.gayout.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

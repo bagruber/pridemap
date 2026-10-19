@@ -1,0 +1,32 @@
+[
+  {
+    "id": "gg-st-peter-port",
+    "legacyIds": [
+      "st-peter-port-pride-channel-islands-pride-2026-2026-09-12"
+    ],
+    "name": "St. Peter Port Pride",
+    "aka": [
+      "Channel Islands Pride"
+    ],
+    "city": "St. Peter Port",
+    "country": "GG",
+    "region": "",
+    "lat": 49.456,
+    "lon": -2.536,
+    "website": "https://liberate.gg",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

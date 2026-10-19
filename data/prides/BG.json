@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bg-sofia",
+    "legacyIds": [
+      "sofia-pride-csd-sofia-2026-2026-06-13"
+    ],
+    "name": "Sofia Pride",
+    "aka": [
+      "София"
+    ],
+    "city": "Sofia",
+    "country": "BG",
+    "region": "Oblast Sofija-Grad",
+    "lat": 42.698,
+    "lon": 23.322,
+    "website": "https://sofiapride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 10000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

@@ -32,7 +32,9 @@ const FORCE = has('--force')
 const ONLY = valOf('--only')
 const STORY = valOf('--story')
 
-const parades = JSON.parse(fs.readFileSync('./src/data/parades.json', 'utf8'))
+import { loadEvents } from './lib/data.mjs'
+
+const parades = loadEvents()
 const slugs = buildSlugMap(parades)
 
 // ── Web Mercator tile math ───────────────────────────────────────────────────
@@ -76,7 +78,7 @@ const PRIDE = PRIDE_STOPS.join(',')
 // ── Template ─────────────────────────────────────────────────────────────────
 function template(p, { w, h, story }) {
   const lang = 'de'
-  const city = cityName(lang, p.city)
+  const city = cityName(lang, p)
   const country = countryName(lang, p.country)
   const first = isFirstTime(p)
   const date = formatDate(lang, p.date)

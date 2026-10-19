@@ -1,0 +1,227 @@
+[
+  {
+    "id": "nl-alkmaar",
+    "legacyIds": [
+      "alkmaar-pride-2026-2026-05-23"
+    ],
+    "name": "Alkmaar Pride",
+    "aka": [],
+    "city": "Alkmaar",
+    "country": "NL",
+    "region": "Noord-Holland",
+    "lat": 52.631,
+    "lon": 4.745,
+    "website": "https://alkmaarpride.nl",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "nl-amsterdam",
+    "legacyIds": [
+      "amsterdam-pride-europride-worldpride-2026-2026-08-01"
+    ],
+    "name": "Amsterdam Pride",
+    "aka": [
+      "EuroPride",
+      "WorldPride"
+    ],
+    "city": "Amsterdam",
+    "country": "NL",
+    "region": "Noord-Holland",
+    "lat": 52.374,
+    "lon": 4.898,
+    "website": "https://www.pride.amsterdam",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 500000,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "nl-gouda",
+    "legacyIds": [
+      "gouda-pride-roze-zaterdag-gouda-2026-2026-06-20"
+    ],
+    "name": "Gouda Pride",
+    "aka": [
+      "Roze Zaterdag Gouda"
+    ],
+    "city": "Gouda",
+    "country": "NL",
+    "region": "Zuid-Holland",
+    "lat": 52.017,
+    "lon": 4.707,
+    "website": "https://goudapride.nl",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "nl-maastricht",
+    "legacyIds": [
+      "maastricht-pride-csd-maastricht-2026-2026-06-27"
+    ],
+    "name": "Maastricht Pride",
+    "aka": [],
+    "city": "Maastricht",
+    "country": "NL",
+    "region": "Limburg",
+    "lat": 50.851,
+    "lon": 5.692,
+    "website": "https://maastrichtpride.nl",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "nl-rotterdam",
+    "legacyIds": [
+      "rotterdam-pride-csd-rotterdam-2026-2026-09-26"
+    ],
+    "name": "Rotterdam Pride",
+    "aka": [],
+    "city": "Rotterdam",
+    "country": "NL",
+    "region": "Zuid-Holland",
+    "lat": 51.924,
+    "lon": 4.478,
+    "website": "https://rotterdampride.nl",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "nl-tilburg",
+    "legacyIds": [
+      "tilburg-pride-roze-maandag-tilburg-2026-2026-07-20"
+    ],
+    "name": "Tilburg Pride",
+    "aka": [
+      "Roze Maandag Tilburg"
+    ],
+    "city": "Tilburg",
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "lat": 51.559,
+    "lon": 5.091,
+    "website": "https://tilburgpride.nl",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "nl-utrecht",
+    "legacyIds": [
+      "utrecht-pride-utrecht-canal-pride-2026-2026-06-06"
+    ],
+    "name": "Utrecht Pride",
+    "aka": [
+      "Utrecht Canal Pride"
+    ],
+    "city": "Utrecht",
+    "country": "NL",
+    "region": "Utrecht",
+    "lat": 52.092,
+    "lon": 5.104,
+    "website": "https://www.utrechtcanalpride.nl",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 100000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

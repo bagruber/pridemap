@@ -1,0 +1,76 @@
+[
+  {
+    "id": "pt-coimbra",
+    "legacyIds": [
+      "coimbra-pride-marcha-de-coimbra-2026-2026-05-17"
+    ],
+    "name": "Coimbra Pride",
+    "aka": [
+      "Marcha de Coimbra"
+    ],
+    "city": "Coimbra",
+    "country": "PT",
+    "region": "Centro",
+    "lat": 40.2111931,
+    "lon": -8.4294632,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-17",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "pt-lisboa",
+    "legacyIds": [
+      "lissabon-pride-csd-lissabon-2026-2026-06-20"
+    ],
+    "name": "Lisboa Pride",
+    "aka": [
+      "Lissabon Pride"
+    ],
+    "city": "Lisboa",
+    "cityNames": {
+      "de": "Lissabon",
+      "en": "Lisbon"
+    },
+    "country": "PT",
+    "region": "Lisboa",
+    "lat": 38.717,
+    "lon": -9.133,
+    "website": "https://www.marchalxbt.pt",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 50000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

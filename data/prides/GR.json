@@ -1,0 +1,87 @@
+[
+  {
+    "id": "gr-athina",
+    "legacyIds": [
+      "athen-pride-csd-athen-2026-2026-06-13"
+    ],
+    "name": "Athina Pride",
+    "aka": [
+      "Athen Pride",
+      "Αθήνα"
+    ],
+    "city": "Athina",
+    "cityNames": {
+      "de": "Athen",
+      "en": "Athens"
+    },
+    "country": "GR",
+    "region": "Attiki",
+    "lat": 37.976,
+    "lon": 23.735,
+    "website": "https://athenspride.eu",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 100000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gr-thessaloniki",
+    "legacyIds": [
+      "thessaloniki-pride-europride-2026-2026-06-20"
+    ],
+    "name": "Thessaloniki Pride",
+    "aka": [
+      "EuroPride"
+    ],
+    "city": "Thessaloniki",
+    "country": "GR",
+    "region": "Kentriki Makedonia",
+    "lat": 40.6403167,
+    "lon": 22.9352716,
+    "website": "https://www.thessalonikipride.gr",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 15000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

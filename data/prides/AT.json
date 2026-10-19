@@ -1,0 +1,769 @@
+[
+  {
+    "id": "at-bad-ischl",
+    "legacyIds": [
+      "csd-bad-ischl-salzkammerpride-2026-2026-08-29"
+    ],
+    "name": "CSD Bad Ischl",
+    "aka": [
+      "Salzkammerpride"
+    ],
+    "city": "Bad Ischl",
+    "country": "AT",
+    "region": "Oberösterreich",
+    "lat": 47.714,
+    "lon": 13.624,
+    "website": "https://www.salzkammerqueer.at",
+    "instagram": "https://www.instagram.com/salzkammerpride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 2000,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-bregenz",
+    "legacyIds": [
+      "csd-bregenz-csd-vorarlberg-2026-2026-06-27"
+    ],
+    "name": "CSD Bregenz",
+    "aka": [
+      "CSD Vorarlberg"
+    ],
+    "city": "Bregenz",
+    "country": "AT",
+    "region": "Vorarlberg",
+    "lat": 47.503,
+    "lon": 9.748,
+    "website": null,
+    "instagram": "https://www.instagram.com/csdvorarlberg/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-deutschlandsberg",
+    "legacyIds": [
+      "csd-deutschlandsberg-landsberg-pride-2026-2026-05-30"
+    ],
+    "name": "CSD Deutschlandsberg",
+    "aka": [
+      "Landsberg Pride"
+    ],
+    "city": "Deutschlandsberg",
+    "country": "AT",
+    "region": "Steiermark",
+    "lat": 46.814,
+    "lon": 15.22,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-graz",
+    "legacyIds": [
+      "csd-graz-2026-2026-06-27"
+    ],
+    "name": "CSD Graz",
+    "aka": [],
+    "city": "Graz",
+    "country": "AT",
+    "region": "Steiermark",
+    "lat": 47.07,
+    "lon": 15.439,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 15000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-innsbruck",
+    "legacyIds": [
+      "csd-innsbruck-2026-2026-07-25"
+    ],
+    "name": "CSD Innsbruck",
+    "aka": [],
+    "city": "Innsbruck",
+    "country": "AT",
+    "region": "Tirol",
+    "lat": 47.269,
+    "lon": 11.394,
+    "website": "https://pride.tirol",
+    "instagram": "https://www.instagram.com/pridetirol/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 4000,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-klagenfurt",
+    "legacyIds": [
+      "csd-klagenfurt-2026-2026-05-30"
+    ],
+    "name": "CSD Klagenfurt",
+    "aka": [],
+    "city": "Klagenfurt",
+    "country": "AT",
+    "region": "Kärnten",
+    "lat": 46.624,
+    "lon": 14.308,
+    "website": "https://www.klagenfurt.at",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-kufstein",
+    "legacyIds": [
+      "csd-kufstein-2026-2026-10-10"
+    ],
+    "name": "Perlenpride Kufstein",
+    "aka": [],
+    "city": "Kufstein",
+    "country": "AT",
+    "region": "Tirol",
+    "lat": 47.581,
+    "lon": 12.168,
+    "website": "https://www.perlenpride.at",
+    "instagram": "https://www.instagram.com/perlen_pride_kufstein/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-10-10",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-linz",
+    "legacyIds": [
+      "csd-linz-2026-2026-06-27"
+    ],
+    "name": "CSD Linz",
+    "aka": [],
+    "city": "Linz",
+    "country": "AT",
+    "region": "Oberösterreich",
+    "lat": 48.306,
+    "lon": 14.286,
+    "website": "https://www.linzpride.at",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-mistelbach",
+    "legacyIds": [
+      "csd-mistelbach-2026-2026-05-30"
+    ],
+    "name": "CSD Mistelbach",
+    "aka": [],
+    "city": "Mistelbach",
+    "country": "AT",
+    "region": "Niederösterreich",
+    "lat": 48.573,
+    "lon": 16.573,
+    "website": "https://www.mistelbach-pride.at",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 1000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-mittersill",
+    "legacyIds": [
+      "csd-mittersill-2026-2026-08-01"
+    ],
+    "name": "CSD Mittersill",
+    "aka": [],
+    "city": "Mittersill",
+    "country": "AT",
+    "region": "Salzburg",
+    "lat": 47.283,
+    "lon": 12.476,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-neustift-im-stubaital",
+    "legacyIds": [
+      "csd-stubai-2026-2026-06-20"
+    ],
+    "name": "CSD Stubai",
+    "aka": [],
+    "city": "Neustift im Stubaital",
+    "country": "AT",
+    "region": "Tirol",
+    "lat": 47.114,
+    "lon": 11.315,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-ried-im-innkreis",
+    "legacyIds": [
+      "innviertel-pride-2026-07-18"
+    ],
+    "name": "Innviertel Pride",
+    "aka": [],
+    "city": "Ried im Innkreis",
+    "country": "AT",
+    "region": "Oberösterreich",
+    "lat": 48.21,
+    "lon": 13.49,
+    "website": "https://www.innviertelpride.at/",
+    "instagram": "https://www.instagram.com/innviertelpride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-salzburg",
+    "legacyIds": [
+      "csd-salzburg-2026-2026-09-05"
+    ],
+    "name": "CSD Salzburg",
+    "aka": [],
+    "city": "Salzburg",
+    "country": "AT",
+    "region": "Salzburg",
+    "lat": 47.8,
+    "lon": 13.045,
+    "website": "https://www.hosi.or.at/pride",
+    "instagram": "https://www.instagram.com/pridefestivalsalzburg/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 5000,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-spittal-an-der-drau",
+    "legacyIds": [
+      "csd-spittal-an-der-drau-2026-2026-06-13"
+    ],
+    "name": "CSD Spittal an der Drau",
+    "aka": [],
+    "city": "Spittal an der Drau",
+    "country": "AT",
+    "region": "Kärnten",
+    "lat": 46.8,
+    "lon": 13.496,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 100,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-st-johann-im-pongau",
+    "legacyIds": [
+      "csd-st-johann-im-pongau-pongau-pride-2026-2026-09-12"
+    ],
+    "name": "CSD St. Johann im Pongau",
+    "aka": [
+      "Pongau Pride"
+    ],
+    "city": "St. Johann im Pongau",
+    "country": "AT",
+    "region": "Salzburg",
+    "lat": 47.352,
+    "lon": 13.2,
+    "website": null,
+    "instagram": "https://www.instagram.com/pongau.pride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 600,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-st-polten",
+    "legacyIds": [
+      "csd-st-poelten-2026-2026-07-25"
+    ],
+    "name": "CSD St. Pölten",
+    "aka": [],
+    "city": "St. Pölten",
+    "country": "AT",
+    "region": "Niederösterreich",
+    "lat": 48.204,
+    "lon": 15.624,
+    "website": "https://stpride.at",
+    "instagram": "https://www.instagram.com/stp.pride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2025,
+        "count": 2000,
+        "kind": "unclear",
+        "by": "organizers",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-steyr",
+    "legacyIds": [
+      "csd-steyr-2026-2026-07-04"
+    ],
+    "name": "CSD Steyr",
+    "aka": [],
+    "city": "Steyr",
+    "country": "AT",
+    "region": "Oberösterreich",
+    "lat": 48.042,
+    "lon": 14.421,
+    "website": "https://www.steyrpride.at",
+    "instagram": "https://www.instagram.com/steyrpride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 600,
+        "kind": "unclear",
+        "by": "authorities",
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-unken",
+    "legacyIds": [
+      "csd-unken-2026-2026-07-18"
+    ],
+    "name": "CSD Unken",
+    "aka": [],
+    "city": "Unken",
+    "country": "AT",
+    "region": "Salzburg",
+    "lat": 47.636,
+    "lon": 12.7,
+    "website": null,
+    "instagram": "https://www.instagram.com/unkenpride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 400,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-velden-am-worthersee",
+    "legacyIds": [
+      "pink-lake-woerthersee-2026-08-24"
+    ],
+    "name": "Pink Lake (Wörthersee)",
+    "aka": [],
+    "city": "Velden am Wörthersee",
+    "country": "AT",
+    "region": "Kärnten",
+    "lat": 46.614,
+    "lon": 14.046,
+    "website": "https://www.pinklake.at",
+    "instagram": "https://www.instagram.com/pinklakewoerthersee/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 2000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-24",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-villach",
+    "legacyIds": [
+      "csd-villach-2026-2026-07-04"
+    ],
+    "name": "CSD Villach",
+    "aka": [],
+    "city": "Villach",
+    "country": "AT",
+    "region": "Kärnten",
+    "lat": 46.612,
+    "lon": 13.851,
+    "website": "https://www.villacher-pride.at/",
+    "instagram": "https://www.instagram.com/villacher.pride/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-wien",
+    "legacyIds": [
+      "csd-wien-2026-2026-06-13"
+    ],
+    "name": "CSD Wien",
+    "aka": [],
+    "city": "Wien",
+    "cityNames": {
+      "en": "Vienna"
+    },
+    "country": "AT",
+    "region": "Wien",
+    "lat": 48.21,
+    "lon": 16.37,
+    "website": "https://www.viennapride.at",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 300000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "at-wiener-neustadt",
+    "legacyIds": [
+      "regenbogenparade-wiener-neustadt-2026-07-11"
+    ],
+    "name": "Regenbogenparade Wiener Neustadt",
+    "aka": [],
+    "city": "Wiener Neustadt",
+    "country": "AT",
+    "region": "Niederösterreich",
+    "lat": 47.809,
+    "lon": 16.247,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

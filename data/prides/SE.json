@@ -1,0 +1,557 @@
+[
+  {
+    "id": "se-boden",
+    "legacyIds": [
+      "boden-pride-csd-boden-2026-2026-04-25"
+    ],
+    "name": "Boden Pride",
+    "aka": [],
+    "city": "Boden",
+    "country": "SE",
+    "region": "Norrbotten",
+    "lat": 65.824,
+    "lon": 21.688,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-04-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-boraas",
+    "legacyIds": [
+      "bor-s-pride-2026-2026-06-22"
+    ],
+    "name": "Borås Pride",
+    "aka": [],
+    "city": "Borås",
+    "country": "SE",
+    "region": "Västra Götaland",
+    "lat": 57.721,
+    "lon": 12.94,
+    "website": "https://boraspride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-eskilstuna",
+    "legacyIds": [
+      "eskilstuna-pride-eskilstuna-spring-pride-2026-2026-05-16"
+    ],
+    "name": "Eskilstuna Pride",
+    "aka": [
+      "Eskilstuna Spring Pride"
+    ],
+    "city": "Eskilstuna",
+    "country": "SE",
+    "region": "Södermanland",
+    "lat": 59.369,
+    "lon": 16.509,
+    "website": "https://eskilstuna.rfsl.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-falun",
+    "legacyIds": [
+      "falun-pride-dala-pride-2026-2026-09-07"
+    ],
+    "name": "Falun Pride",
+    "aka": [
+      "Dala Pride"
+    ],
+    "city": "Falun",
+    "country": "SE",
+    "region": "Dalarna",
+    "lat": 60.606,
+    "lon": 15.633,
+    "website": "https://falunpride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-07",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-gavle",
+    "legacyIds": [
+      "gaevle-pride-csd-gaevle-2026-2026-08-22"
+    ],
+    "name": "Gävle Pride",
+    "aka": [],
+    "city": "Gävle",
+    "country": "SE",
+    "region": "Gävleborg",
+    "lat": 60.676,
+    "lon": 17.14,
+    "website": "https://gavlepride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-goteborg",
+    "legacyIds": [
+      "west-pride-gothenburg-2026-2026-06-13"
+    ],
+    "name": "West Pride - Gothenburg",
+    "aka": [],
+    "city": "Göteborg",
+    "cityNames": {
+      "en": "Gothenburg"
+    },
+    "country": "SE",
+    "region": "Västra Götaland",
+    "lat": 57.707,
+    "lon": 11.967,
+    "website": "https://www.westpride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-14",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-katrineholm",
+    "legacyIds": [
+      "katrineholm-pride-csd-katrineholm-2026-2026-08-31"
+    ],
+    "name": "Katrineholm Pride",
+    "aka": [],
+    "city": "Katrineholm",
+    "country": "SE",
+    "region": "Södermanland",
+    "lat": 59,
+    "lon": 16.204,
+    "website": "https://katrineholmpride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-31",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-kristianstad",
+    "legacyIds": [
+      "kristianstad-pride-csd-kristianstad-2026-2026-05-30"
+    ],
+    "name": "Kristianstad Pride",
+    "aka": [],
+    "city": "Kristianstad",
+    "country": "SE",
+    "region": "Skåne",
+    "lat": 56.031,
+    "lon": 14.154,
+    "website": "https://www.qx.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-lund",
+    "legacyIds": [
+      "lund-pride-lundapride-2026-2026-09-12"
+    ],
+    "name": "Lund Pride",
+    "aka": [
+      "LundaPride"
+    ],
+    "city": "Lund",
+    "country": "SE",
+    "region": "Skåne",
+    "lat": 55.703,
+    "lon": 13.191,
+    "website": "https://lundpride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-malmo",
+    "legacyIds": [
+      "malmoe-pride-csd-malmoe-2026-2026-07-04"
+    ],
+    "name": "Malmö Pride",
+    "aka": [],
+    "city": "Malmö",
+    "country": "SE",
+    "region": "Skåne",
+    "lat": 55.605,
+    "lon": 13,
+    "website": "https://malmopride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-norrkoping",
+    "legacyIds": [
+      "norrkoeping-pride-east-pride-2026-2026-05-24"
+    ],
+    "name": "Norrköping Pride",
+    "aka": [
+      "East Pride"
+    ],
+    "city": "Norrköping",
+    "country": "SE",
+    "region": "Östergötland",
+    "lat": 58.587,
+    "lon": 16.179,
+    "website": "https://beta.qx.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-24",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-norrtalje",
+    "legacyIds": [
+      "norrtaelje-pride-roslagen-pride-2026-2026-08-15"
+    ],
+    "name": "Norrtälje Pride",
+    "aka": [
+      "Roslagen Pride"
+    ],
+    "city": "Norrtälje",
+    "country": "SE",
+    "region": "Stockholm",
+    "lat": 59.758,
+    "lon": 18.705,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-ostersund",
+    "legacyIds": [
+      "oestersund-pride-csd-oestersund-2026-2026-08-24"
+    ],
+    "name": "Östersund Pride",
+    "aka": [],
+    "city": "Östersund",
+    "country": "SE",
+    "region": "Jämtland",
+    "lat": 63.179,
+    "lon": 14.636,
+    "website": "https://ostersundpride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-24",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-soderhamn",
+    "legacyIds": [
+      "soederhamn-pride-csd-soederhamn-2026-2026-05-30"
+    ],
+    "name": "Söderhamn Pride",
+    "aka": [],
+    "city": "Söderhamn",
+    "country": "SE",
+    "region": "Gävleborg",
+    "lat": 61.302,
+    "lon": 17.064,
+    "website": "https://www.soderhamnpride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-stockholm",
+    "legacyIds": [
+      "stockholm-pride-csd-stockholm-2026-2026-08-01"
+    ],
+    "name": "Stockholm Pride",
+    "aka": [],
+    "city": "Stockholm",
+    "country": "SE",
+    "region": "Stockholm",
+    "lat": 59.333,
+    "lon": 18.065,
+    "website": "https://stockholmpride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 500000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-sundsvall",
+    "legacyIds": [
+      "sundsvall-pride-csd-sundsvall-2026-2026-07-05"
+    ],
+    "name": "Sundsvall Pride",
+    "aka": [],
+    "city": "Sundsvall",
+    "country": "SE",
+    "region": "Västernorrland",
+    "lat": 62.392,
+    "lon": 17.308,
+    "website": "https://sundsvallpride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-trollhattan",
+    "legacyIds": [
+      "trollhaettan-pride-csd-trollhaettan-2026-2026-06-27"
+    ],
+    "name": "Trollhättan Pride",
+    "aka": [],
+    "city": "Trollhättan",
+    "country": "SE",
+    "region": "Västra Götaland",
+    "lat": 58.284,
+    "lon": 12.289,
+    "website": "https://trollhattanpride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-vasteraas",
+    "legacyIds": [
+      "vaester-s-pride-csd-vaester-s-2026-2026-06-25"
+    ],
+    "name": "Västerås Pride",
+    "aka": [],
+    "city": "Västerås",
+    "country": "SE",
+    "region": "Västmanland",
+    "lat": 59.609,
+    "lon": 16.544,
+    "website": "https://vasteraspride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "se-vaxjo",
+    "legacyIds": [
+      "vaexjoe-pride-csd-vaexjoe-2026-2026-05-09"
+    ],
+    "name": "Växjö Pride",
+    "aka": [],
+    "city": "Växjö",
+    "country": "SE",
+    "region": "Kronoberg",
+    "lat": 56.878,
+    "lon": 14.809,
+    "website": "https://vaxjopride.se",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-09",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

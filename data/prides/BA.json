@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ba-sarajevo",
+    "legacyIds": [
+      "sarajevo-pride-csd-sarajevo-2026-2026-06-27"
+    ],
+    "name": "Sarajevo Pride",
+    "aka": [],
+    "city": "Sarajevo",
+    "country": "BA",
+    "region": "Kanton Sarajevo",
+    "lat": 43.848,
+    "lon": 18.356,
+    "website": "https://sarajevopride.ba",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

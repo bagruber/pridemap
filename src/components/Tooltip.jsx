@@ -2,13 +2,13 @@ import { flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t, cityName, labelForDaysLong, formatDate } from '../utils/i18n.js'
 
-export default function Tooltip({ x, y, name, city, country, date, daysUntil, color }) {
+export default function Tooltip({ x, y, name, city, cityDe, cityEn, country, date, daysUntil, color }) {
   const { lang } = useLang()
   const formatted = formatDate(date, lang, {
     day: 'numeric', month: 'short', year: 'numeric',
   })
   const isPast = daysUntil < 0
-  const displayCity = cityName(city, lang)
+  const displayCity = cityName({ city, cityDe, cityEn }, lang)
 
   const daysText = isPast
     ? `${Math.abs(daysUntil)} ${t('daysAgo', lang)}`

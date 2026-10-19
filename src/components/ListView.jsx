@@ -4,14 +4,14 @@ import { colorForDays } from '../utils/timeColors.js'
 import { flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t, cityName, labelForDaysL10n, formatDate } from '../utils/i18n.js'
-import { toSelection, isFirstTime } from '../utils/parade.js'
+import { isFirstTime } from '../utils/firstTime.js'
 import { norm } from '../utils/text.js'
 import { searchParades } from '../utils/search.js'
 import MiniLegend from './MiniLegend.jsx'
 
 function ListRow({ parade, onSelect, lang }) {
   const color = colorForDays(parade.daysUntil)
-  const displayCity = cityName(parade.city, lang)
+  const displayCity = cityName(parade, lang)
   const hasCustomName = parade.name && norm(parade.name) !== norm(parade.city)
   const isPast = parade.daysUntil < 0
 
@@ -23,7 +23,7 @@ function ListRow({ parade, onSelect, lang }) {
     ? `${t('movedFrom', lang)} ${formatDate(parade.movedFrom, lang, { day: 'numeric', month: 'long', year: 'numeric' })}`
     : undefined
 
-  const handleSelect = () => onSelect(toSelection({ ...parade, color }))
+  const handleSelect = () => onSelect(parade.id)
   const handleKey = e => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault()
@@ -78,7 +78,7 @@ export default function ListView({ parades, onSelect }) {
     searchParades(parades, query).sort((a, b) =>
       sortBy === 'date'
         ? a.daysUntil - b.daysUntil
-        : norm(cityName(a.city, lang)).localeCompare(norm(cityName(b.city, lang)))
+        : norm(cityName(a, lang)).localeCompare(norm(cityName(b, lang)))
     ), [parades, query, sortBy, lang])
 
   return (

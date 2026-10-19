@@ -1,0 +1,36 @@
+[
+  {
+    "id": "is-reykjavik",
+    "legacyIds": [
+      "reykjavik-pride-csd-reykjavik-2026-2026-08-08"
+    ],
+    "name": "Reykjavík Pride",
+    "aka": [
+      "Reykjavik Pride"
+    ],
+    "city": "Reykjavík",
+    "cityNames": {
+      "de": "Reykjavik",
+      "en": "Reykjavik"
+    },
+    "country": "IS",
+    "region": "",
+    "lat": 64.135,
+    "lon": -21.895,
+    "website": "https://reykjavikpride.is",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

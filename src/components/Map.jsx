@@ -4,7 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 import { decode } from '@here/flexpolyline'
 import Tooltip from './Tooltip.jsx'
 import { colorForDays } from '../utils/timeColors.js'
-import { toSelection, isFirstTime } from '../utils/parade.js'
+import { isFirstTime } from '../utils/firstTime.js'
 import { VIEWS } from '../config/views.js'
 import { ISO_BANDS } from '../config/isoBands.js'
 
@@ -93,6 +93,9 @@ function paradesToGeoJSON(parades) {
           id: p.id,
           name: p.name,
           city: p.city,
+          // Flattened, because a map feature's properties hold no objects
+          cityDe: p.cityNames?.de ?? p.city,
+          cityEn: p.cityNames?.en ?? p.city,
           country: p.country,
           lat: p.lat,
           lon: p.lon,
@@ -320,14 +323,14 @@ export default function Map({
           const f = e.features[0]; if (!f) return
           setHover(f)
           const p = f.properties
-          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
+          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, cityDe: p.cityDe, cityEn: p.cityEn, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
         })
 
         map.on('mousemove', layer, (e) => {
           const f = e.features[0]; if (!f) return
           setHover(f)
           const p = f.properties
-          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
+          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, cityDe: p.cityDe, cityEn: p.cityEn, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
         })
 
         map.on('mouseleave', layer, () => {
@@ -351,7 +354,7 @@ export default function Map({
           map.easeTo({ center: f.geometry.coordinates, zoom: zoom + 0.5 })
           return
         }
-        onSelect(toSelection(f.properties))
+        onSelect(f.properties.id)
       })
 
       // Apply selection that existed before the style finished loading

@@ -128,29 +128,6 @@ export const TRANSLATIONS = {
   close:             { en: 'Close',                                 de: 'Schließen' },
 }
 
-export const CITY_NAMES = {
-  Wien:              { en: 'Vienna',          de: 'Wien' },
-  Köln:              { en: 'Cologne',         de: 'Köln' },
-  München:           { en: 'Munich',          de: 'München' },
-  Rom:               { en: 'Rome',            de: 'Rom' },
-  Athen:             { en: 'Athens',          de: 'Athen' },
-  Lissabon:          { en: 'Lisbon',          de: 'Lissabon' },
-  Warschau:          { en: 'Warsaw',          de: 'Warschau' },
-  Prag:              { en: 'Prague',          de: 'Prag' },
-  Brüssel:           { en: 'Brussels',        de: 'Brüssel' },
-  Kopenhagen:        { en: 'Copenhagen',      de: 'Kopenhagen' },
-  Mailand:           { en: 'Milan',           de: 'Mailand' },
-  Genua:             { en: 'Genoa',           de: 'Genua' },
-  Neapel:            { en: 'Naples',          de: 'Neapel' },
-  Straßburg:         { en: 'Strasbourg',      de: 'Straßburg' },
-  Belgrad:           { en: 'Belgrade',        de: 'Belgrad' },
-  Bukarest:          { en: 'Bucharest',       de: 'Bukarest' },
-  Kiew:              { en: 'Kyiv',            de: 'Kiew' },
-  Danzig:            { en: 'Gdańsk',          de: 'Danzig' },
-  Krakau:            { en: 'Kraków',          de: 'Krakau' },
-  'Luxemburg-Stadt': { en: 'Luxembourg City', de: 'Luxemburg-Stadt' },
-  Nizza:             { en: 'Nice',            de: 'Nizza' },
-}
 
 export function t(key, lang = 'en') {
   return TRANSLATIONS[key]?.[lang] ?? TRANSLATIONS[key]?.en ?? key
@@ -161,8 +138,11 @@ export function tf(key, lang, vars) {
   return t(key, lang).replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? `{${k}}`)
 }
 
-export function cityName(city, lang = 'en') {
-  return CITY_NAMES[city]?.[lang] ?? city
+// The city under the name its own language uses, with the German and English
+// form alongside when they differ. Takes a Pride record, or a map feature's
+// flattened properties, which carry the same two names as `cityDe` / `cityEn`.
+export function cityName(p, lang = 'en') {
+  return p?.cityNames?.[lang] ?? p?.[lang === 'de' ? 'cityDe' : 'cityEn'] ?? p?.city ?? ''
 }
 
 export function indexLabelL10n(score, lang = 'en') {

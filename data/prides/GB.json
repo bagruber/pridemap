@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "gb-bath",
+    "legacyIds": [
+      "bath-pride-csd-bath-2026-2026-08-22"
+    ],
+    "name": "Bath Pride",
+    "aka": [],
+    "city": "Bath",
+    "country": "GB",
+    "region": "Somerset",
+    "lat": 51.379,
+    "lon": -2.362,
+    "website": "https://bathpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-belfast",
+    "legacyIds": [
+      "belfast-pride-csd-belfast-2026-2026-07-25"
+    ],
+    "name": "Belfast Pride",
+    "aka": [],
+    "city": "Belfast",
+    "country": "GB",
+    "region": "Northern Ireland",
+    "lat": 54.597,
+    "lon": -5.93,
+    "website": "https://belfastpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 75000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-birmingham",
+    "legacyIds": [
+      "birmingham-pride-csd-birmingham-2026-2026-05-23"
+    ],
+    "name": "Birmingham Pride",
+    "aka": [],
+    "city": "Birmingham",
+    "country": "GB",
+    "region": "West Midlands",
+    "lat": 52.486,
+    "lon": -1.888,
+    "website": "https://birminghampride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 75000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-blackpool",
+    "legacyIds": [
+      "blackpool-pride-winter-pride-blackpool-2026-2026-06-07"
+    ],
+    "name": "Blackpool Pride",
+    "aka": [
+      "Winter Pride Blackpool"
+    ],
+    "city": "Blackpool",
+    "country": "GB",
+    "region": "Lancashire",
+    "lat": 53.817,
+    "lon": -3.036,
+    "website": "https://www.prideblackpool.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-07",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-bourne",
+    "legacyIds": [
+      "bourne-pride-2026-2026-07-11"
+    ],
+    "name": "Bourne Pride",
+    "aka": [],
+    "city": "Bourne",
+    "country": "GB",
+    "region": "Lincolnshire",
+    "lat": 52.77,
+    "lon": -0.378,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-bradford",
+    "legacyIds": [
+      "bradford-pride-csd-bradford-2026-2026-05-24"
+    ],
+    "name": "Bradford Pride",
+    "aka": [],
+    "city": "Bradford",
+    "country": "GB",
+    "region": "West Yorkshire",
+    "lat": 53.793,
+    "lon": -1.752,
+    "website": "https://www.bradfordpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": null,
+        "count": 10000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-24",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-brighton",
+    "legacyIds": [
+      "brighton-pride-csd-brighton-2026-2026-08-01"
+    ],
+    "name": "Brighton Pride",
+    "aka": [],
+    "city": "Brighton",
+    "country": "GB",
+    "region": "East Sussex",
+    "lat": 50.827,
+    "lon": -0.141,
+    "website": "https://brighton-pride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 300000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-bristol",
+    "legacyIds": [
+      "bristol-pride-csd-bristol-2026-2026-07-11"
+    ],
+    "name": "Bristol Pride",
+    "aka": [],
+    "city": "Bristol",
+    "country": "GB",
+    "region": "Bristol",
+    "lat": 51.455,
+    "lon": -2.595,
+    "website": "https://bristolpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-bury",
+    "legacyIds": [
+      "bury-pride-2026-2026-05-30"
+    ],
+    "name": "Bury Pride",
+    "aka": [],
+    "city": "Bury",
+    "country": "GB",
+    "region": "Greater Manchester",
+    "lat": 52.2460367,
+    "lon": 0.7125173,
+    "website": "https://www.burypride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-canterbury",
+    "legacyIds": [
+      "canterbury-pride-pride-canterbury-2026-2026-06-06"
+    ],
+    "name": "Canterbury Pride",
+    "aka": [
+      "Pride Canterbury"
+    ],
+    "city": "Canterbury",
+    "country": "GB",
+    "region": "Kent",
+    "lat": 51.28,
+    "lon": 1.083,
+    "website": "https://pridecanterbury.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-cardiff",
+    "legacyIds": [
+      "cardiff-pride-pride-cymru-2026-2026-06-13"
+    ],
+    "name": "Cardiff Pride",
+    "aka": [
+      "Pride Cymru"
+    ],
+    "city": "Cardiff",
+    "country": "GB",
+    "region": "Wales",
+    "lat": 51.481,
+    "lon": -3.18,
+    "website": "https://www.cardiffpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 50000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-chelmsford",
+    "legacyIds": [
+      "chelmsford-pride-essex-pride-in-chelmsford-2026-2026-06-20"
+    ],
+    "name": "Chelmsford Pride",
+    "aka": [
+      "Essex Pride in Chelmsford"
+    ],
+    "city": "Chelmsford",
+    "country": "GB",
+    "region": "Essex",
+    "lat": 51.736,
+    "lon": 0.47,
+    "website": "https://chelmsfordpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-chester",
+    "legacyIds": [
+      "chester-pride-csd-chester-2026-2026-08-15"
+    ],
+    "name": "Chester Pride",
+    "aka": [],
+    "city": "Chester",
+    "country": "GB",
+    "region": "Cheshire",
+    "lat": 53.19,
+    "lon": -2.89,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-chesterfield",
+    "legacyIds": [
+      "chesterfield-pride-2026-2026-06-13"
+    ],
+    "name": "Chesterfield Pride",
+    "aka": [],
+    "city": "Chesterfield",
+    "country": "GB",
+    "region": "Derbyshire",
+    "lat": 53.235,
+    "lon": -1.421,
+    "website": "https://www.chesterfieldpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 5000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-congleton",
+    "legacyIds": [
+      "congleton-pride-2026-2026-07-18"
+    ],
+    "name": "Congleton Pride",
+    "aka": [],
+    "city": "Congleton",
+    "country": "GB",
+    "region": "Cheshire",
+    "lat": 53.16,
+    "lon": -2.216,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-coventry",
+    "legacyIds": [
+      "coventry-pride-csd-coventry-2026-2026-06-27"
+    ],
+    "name": "Coventry Pride",
+    "aka": [],
+    "city": "Coventry",
+    "country": "GB",
+    "region": "West Midlands",
+    "lat": 52.408,
+    "lon": -1.508,
+    "website": "https://www.coventrypride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-croydon",
+    "legacyIds": [
+      "croydon-pride-csd-croydon-2026-2026-08-15"
+    ],
+    "name": "Croydon Pride",
+    "aka": [],
+    "city": "Croydon",
+    "country": "GB",
+    "region": "Greater London",
+    "lat": 51.374,
+    "lon": -0.099,
+    "website": "https://www.croydonpride.org.uk/",
+    "instagram": "https://www.instagram.com/croydonpride/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-derby",
+    "legacyIds": [
+      "derby-pride-csd-derby-2026-2026-09-12"
+    ],
+    "name": "Derby Pride",
+    "aka": [],
+    "city": "Derby",
+    "country": "GB",
+    "region": "Derbyshire",
+    "lat": 52.921,
+    "lon": -1.476,
+    "website": "https://derbypride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-derry",
+    "legacyIds": [
+      "derry-pride-foyle-pride-festival-2026-2026-08-29"
+    ],
+    "name": "Derry Pride",
+    "aka": [
+      "Foyle Pride Festival"
+    ],
+    "city": "Derry",
+    "country": "GB",
+    "region": "Northern Ireland",
+    "lat": 55.006,
+    "lon": -7.32,
+    "website": "https://derrypride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-doncaster",
+    "legacyIds": [
+      "doncaster-pride-2026-2026-08-08"
+    ],
+    "name": "Doncaster Pride",
+    "aka": [],
+    "city": "Doncaster",
+    "country": "GB",
+    "region": "South Yorkshire",
+    "lat": 53.523,
+    "lon": -1.129,
+    "website": "https://doncasterpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-durham",
+    "legacyIds": [
+      "durham-pride-2026-2026-05-30"
+    ],
+    "name": "Durham Pride",
+    "aka": [],
+    "city": "Durham",
+    "country": "GB",
+    "region": "County Durham",
+    "lat": 54.777,
+    "lon": -1.574,
+    "website": "https://durhamprideuk.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-eastbourne",
+    "legacyIds": [
+      "eastbourne-pride-csd-eastbourne-2026-2026-06-13"
+    ],
+    "name": "Eastbourne Pride",
+    "aka": [],
+    "city": "Eastbourne",
+    "country": "GB",
+    "region": "East Sussex",
+    "lat": 50.77,
+    "lon": 0.28,
+    "website": "https://www.eastbournepride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-eastleigh",
+    "legacyIds": [
+      "eastleigh-pride-2026-2026-09-05"
+    ],
+    "name": "Eastleigh Pride",
+    "aka": [],
+    "city": "Eastleigh",
+    "country": "GB",
+    "region": "Hampshire",
+    "lat": 50.972,
+    "lon": -1.349,
+    "website": "https://eastleighpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-edinburgh",
+    "legacyIds": [
+      "edinburgh-pride-csd-edinburgh-2026-2026-06-20"
+    ],
+    "name": "Edinburgh Pride",
+    "aka": [],
+    "city": "Edinburgh",
+    "country": "GB",
+    "region": "Scotland",
+    "lat": 55.953,
+    "lon": -3.188,
+    "website": "https://www.edinburghpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 25000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-ely",
+    "legacyIds": [
+      "ely-pride-csd-ely-2026-2026-08-08"
+    ],
+    "name": "Ely Pride",
+    "aka": [],
+    "city": "Ely",
+    "country": "GB",
+    "region": "Cambridgeshire",
+    "lat": 52.397,
+    "lon": 0.263,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-exeter",
+    "legacyIds": [
+      "exeter-pride-2026-2026-05-09"
+    ],
+    "name": "Exeter Pride",
+    "aka": [],
+    "city": "Exeter",
+    "country": "GB",
+    "region": "Devon",
+    "lat": 50.726,
+    "lon": -3.527,
+    "website": "https://www.exeterpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-09",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-exmouth",
+    "legacyIds": [
+      "exmouth-pride-2026-2026-06-20"
+    ],
+    "name": "Exmouth Pride",
+    "aka": [],
+    "city": "Exmouth",
+    "country": "GB",
+    "region": "Devon",
+    "lat": 50.6190962,
+    "lon": -3.4146801,
+    "website": "https://www.exmouthpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-folkestone",
+    "legacyIds": [
+      "folkestone-pride-csd-folkestone-2026-2026-07-25"
+    ],
+    "name": "Folkestone Pride",
+    "aka": [],
+    "city": "Folkestone",
+    "country": "GB",
+    "region": "Kent",
+    "lat": 51.079,
+    "lon": 1.176,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-glasgow",
+    "legacyIds": [
+      "glasgow-pride-mardi-gla-2026-2026-07-18"
+    ],
+    "name": "Glasgow Pride",
+    "aka": [
+      "Mardi Gla"
+    ],
+    "city": "Glasgow",
+    "country": "GB",
+    "region": "Scotland",
+    "lat": 55.864,
+    "lon": -4.252,
+    "website": "https://glasgowpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 50000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-gloucester",
+    "legacyIds": [
+      "gloucester-pride-csd-gloucester-2026-2026-09-12"
+    ],
+    "name": "Gloucester Pride",
+    "aka": [],
+    "city": "Gloucester",
+    "country": "GB",
+    "region": "Gloucestershire",
+    "lat": 51.865,
+    "lon": -2.244,
+    "website": "https://gloucesterpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-12",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-great-malvern",
+    "legacyIds": [
+      "great-malvern-pride-malvern-pride-2026-2026-07-25"
+    ],
+    "name": "Great Malvern Pride",
+    "aka": [
+      "Malvern Pride"
+    ],
+    "city": "Great Malvern",
+    "country": "GB",
+    "region": "Worcestershire",
+    "lat": 52.115,
+    "lon": -2.318,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-hebden-bridge",
+    "legacyIds": [
+      "hebden-bridge-pride-happy-valley-pride-2026-2026-07-24"
+    ],
+    "name": "Hebden Bridge Pride",
+    "aka": [
+      "Happy Valley Pride"
+    ],
+    "city": "Hebden Bridge",
+    "country": "GB",
+    "region": "West Yorkshire",
+    "lat": 53.741,
+    "lon": -2.01,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-24",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-hertford",
+    "legacyIds": [
+      "herts-pride-2026-2026-08-22"
+    ],
+    "name": "Herts Pride",
+    "aka": [],
+    "city": "Hertford",
+    "country": "GB",
+    "region": "Hertfordshire",
+    "lat": 51.796,
+    "lon": -0.079,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-hull",
+    "legacyIds": [
+      "hull-pride-pride-in-hull-2026-2026-07-25"
+    ],
+    "name": "Hull Pride",
+    "aka": [
+      "Pride in Hull"
+    ],
+    "city": "Hull",
+    "country": "GB",
+    "region": "East Yorkshire",
+    "lat": 53.745,
+    "lon": -0.333,
+    "website": "https://hullpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-kirkcaldy",
+    "legacyIds": [
+      "kirkcaldy-pride-kirkcaldy-fife-pride-2026-2026-07-04"
+    ],
+    "name": "Kirkcaldy Pride",
+    "aka": [
+      "Kirkcaldy Fife Pride"
+    ],
+    "city": "Kirkcaldy",
+    "country": "GB",
+    "region": "Scotland",
+    "lat": 56.113,
+    "lon": -3.162,
+    "website": "https://kirkcaldypride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-lancaster",
+    "legacyIds": [
+      "lancaster-pride-2026-2026-06-14"
+    ],
+    "name": "Lancaster Pride",
+    "aka": [],
+    "city": "Lancaster",
+    "country": "GB",
+    "region": "Lancashire",
+    "lat": 54.048,
+    "lon": -2.799,
+    "website": "https://lancasterpride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-14",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-leeds",
+    "legacyIds": [
+      "leeds-pride-csd-leeds-2026-2026-07-18"
+    ],
+    "name": "Leeds Pride",
+    "aka": [],
+    "city": "Leeds",
+    "country": "GB",
+    "region": "West Yorkshire",
+    "lat": 53.8,
+    "lon": -1.549,
+    "website": "https://leedspride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 50000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-leicester",
+    "legacyIds": [
+      "leicester-pride-csd-leicester-2026-2026-09-05"
+    ],
+    "name": "Leicester Pride",
+    "aka": [],
+    "city": "Leicester",
+    "country": "GB",
+    "region": "Leicestershire",
+    "lat": 52.637,
+    "lon": -1.133,
+    "website": "https://leicesterpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-lincoln",
+    "legacyIds": [
+      "lincoln-pride-2026-2026-08-15"
+    ],
+    "name": "Lincoln Pride",
+    "aka": [],
+    "city": "Lincoln",
+    "country": "GB",
+    "region": "Lincolnshire",
+    "lat": 53.234,
+    "lon": -0.538,
+    "website": "https://lincolnpride.co.uk/",
+    "instagram": "https://www.instagram.com/lincolnprideuk/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-liverpool",
+    "legacyIds": [
+      "liverpool-pride-csd-liverpool-2026-2026-08-01"
+    ],
+    "name": "Liverpool Pride",
+    "aka": [],
+    "city": "Liverpool",
+    "country": "GB",
+    "region": "Merseyside",
+    "lat": 53.41,
+    "lon": -2.978,
+    "website": "https://liverpoolpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-01",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-livingston",
+    "legacyIds": [
+      "livingston-pride-west-lothian-pride-2026-2026-07-25"
+    ],
+    "name": "Livingston Pride",
+    "aka": [
+      "West Lothian Pride"
+    ],
+    "city": "Livingston",
+    "country": "GB",
+    "region": "Scotland",
+    "lat": 55.883,
+    "lon": -3.523,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-london",
+    "legacyIds": [
+      "london-pride-csd-london-2026-2026-07-04"
+    ],
+    "name": "London Pride",
+    "aka": [],
+    "city": "London",
+    "country": "GB",
+    "region": "Greater London",
+    "lat": 51.507,
+    "lon": -0.128,
+    "website": "https://prideinlondon.org",
+    "instagram": "https://www.instagram.com/PrideInLondon/",
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 1000000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-macclesfield",
+    "legacyIds": [
+      "macclesfield-pride-2026-2026-07-04"
+    ],
+    "name": "Macclesfield Pride",
+    "aka": [],
+    "city": "Macclesfield",
+    "country": "GB",
+    "region": "Cheshire",
+    "lat": 53.258,
+    "lon": -2.124,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-manchester",
+    "legacyIds": [
+      "manchester-pride-csd-manchester-2026-2026-08-29"
+    ],
+    "name": "Manchester Pride",
+    "aka": [],
+    "city": "Manchester",
+    "country": "GB",
+    "region": "Greater Manchester",
+    "lat": 53.48,
+    "lon": -2.242,
+    "website": "https://manchesterpride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-margate",
+    "legacyIds": [
+      "margate-pride-2026-2026-08-08"
+    ],
+    "name": "Margate Pride",
+    "aka": [],
+    "city": "Margate",
+    "country": "GB",
+    "region": "Kent",
+    "lat": 51.389,
+    "lon": 1.384,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-08",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-newcastle-upon-tyne",
+    "legacyIds": [
+      "newcastle-pride-northern-pride-2026-2026-07-25"
+    ],
+    "name": "Newcastle Pride",
+    "aka": [
+      "Northern Pride"
+    ],
+    "city": "Newcastle upon Tyne",
+    "country": "GB",
+    "region": "Tyne and Wear",
+    "lat": 54.978,
+    "lon": -1.618,
+    "website": "https://newcastlepride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 15000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-newquay",
+    "legacyIds": [
+      "newquay-pride-newquay-cornwall-pride-2026-2026-08-29"
+    ],
+    "name": "Newquay Pride",
+    "aka": [
+      "Newquay Cornwall Pride"
+    ],
+    "city": "Newquay",
+    "country": "GB",
+    "region": "Cornwall",
+    "lat": 50.413,
+    "lon": -5.075,
+    "website": "https://newquaypride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-newry",
+    "legacyIds": [
+      "newry-pride-csd-newry-2026-2026-08-22"
+    ],
+    "name": "Newry Pride",
+    "aka": [],
+    "city": "Newry",
+    "country": "GB",
+    "region": "Northern Ireland",
+    "lat": 54.175,
+    "lon": -6.34,
+    "website": "https://newrypride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-northampton",
+    "legacyIds": [
+      "northampton-pride-csd-northampton-2026-2026-07-11"
+    ],
+    "name": "Northampton Pride",
+    "aka": [],
+    "city": "Northampton",
+    "country": "GB",
+    "region": "Northamptonshire",
+    "lat": 52.24,
+    "lon": -0.903,
+    "website": "https://northamptonpride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-norwich",
+    "legacyIds": [
+      "norwich-pride-csd-norwich-2026-2026-07-25"
+    ],
+    "name": "Norwich Pride",
+    "aka": [],
+    "city": "Norwich",
+    "country": "GB",
+    "region": "Norfolk",
+    "lat": 52.628,
+    "lon": 1.298,
+    "website": "https://norwichpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-nottingham",
+    "legacyIds": [
+      "nottingham-pride-csd-nottingham-2026-2026-07-25"
+    ],
+    "name": "Nottingham Pride",
+    "aka": [],
+    "city": "Nottingham",
+    "country": "GB",
+    "region": "Nottinghamshire",
+    "lat": 52.954,
+    "lon": -1.158,
+    "website": "https://nottinghampride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-25",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-oxford",
+    "legacyIds": [
+      "oxford-pride-2026-2026-06-06"
+    ],
+    "name": "Oxford Pride",
+    "aka": [],
+    "city": "Oxford",
+    "country": "GB",
+    "region": "Oxfordshire",
+    "lat": 51.752,
+    "lon": -1.258,
+    "website": "https://www.oxfordpride.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-plymouth",
+    "legacyIds": [
+      "plymouth-pride-csd-plymouth-2026-2026-07-11"
+    ],
+    "name": "Plymouth Pride",
+    "aka": [],
+    "city": "Plymouth",
+    "country": "GB",
+    "region": "Devon",
+    "lat": 50.375,
+    "lon": -4.143,
+    "website": "https://plymouthpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-11",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-portsmouth",
+    "legacyIds": [
+      "portsmouth-pride-2026-2026-06-06"
+    ],
+    "name": "Portsmouth Pride",
+    "aka": [],
+    "city": "Portsmouth",
+    "country": "GB",
+    "region": "Hampshire",
+    "lat": 50.8,
+    "lon": -1.091,
+    "website": "https://www.portsmouthpride.org.uk/",
+    "instagram": "https://www.instagram.com/portsmouthprideuk/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-reading",
+    "legacyIds": [
+      "reading-pride-csd-reading-2026-2026-09-05"
+    ],
+    "name": "Reading Pride",
+    "aka": [],
+    "city": "Reading",
+    "country": "GB",
+    "region": "Berkshire",
+    "lat": 51.454,
+    "lon": -0.972,
+    "website": "https://readingpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-05",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-royal-leamington-spa",
+    "legacyIds": [
+      "royal-leamington-spa-pride-warwickshire-pride-2026-2026-08-22"
+    ],
+    "name": "Royal Leamington Spa Pride",
+    "aka": [
+      "Warwickshire Pride"
+    ],
+    "city": "Royal Leamington Spa",
+    "country": "GB",
+    "region": "Warwickshire",
+    "lat": 52.289,
+    "lon": -1.536,
+    "website": "https://leamingtonpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-ryde",
+    "legacyIds": [
+      "ryde-pride-2026-2026-07-18"
+    ],
+    "name": "Ryde Pride",
+    "aka": [],
+    "city": "Ryde",
+    "country": "GB",
+    "region": "Isle of Wight",
+    "lat": 50.73,
+    "lon": -1.162,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-18",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-salford",
+    "legacyIds": [
+      "salford-pride-pink-picnic-salford-pride-2026-2026-06-13"
+    ],
+    "name": "Salford Pride",
+    "aka": [
+      "Pink Picnic Salford Pride"
+    ],
+    "city": "Salford",
+    "country": "GB",
+    "region": "Greater Manchester",
+    "lat": 53.484,
+    "lon": -2.291,
+    "website": "https://salfordpride.com",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 8000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-saltash",
+    "legacyIds": [
+      "saltash-pride-cornwall-pride-2026-2026-09-27"
+    ],
+    "name": "Saltash Pride",
+    "aka": [
+      "Cornwall Pride"
+    ],
+    "city": "Saltash",
+    "country": "GB",
+    "region": "Cornwall",
+    "lat": 50.407,
+    "lon": -4.214,
+    "website": "https://saltashpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-09-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-sheffield",
+    "legacyIds": [
+      "sheffield-pride-csd-sheffield-2026-2026-06-20"
+    ],
+    "name": "Sheffield Pride",
+    "aka": [],
+    "city": "Sheffield",
+    "country": "GB",
+    "region": "South Yorkshire",
+    "lat": 53.381,
+    "lon": -1.47,
+    "website": "https://sheffieldpride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-shetland-inseln",
+    "legacyIds": [
+      "shetland-islands-pride-shetland-pride-2026-2026-06-13"
+    ],
+    "name": "Shetland Islands Pride",
+    "aka": [
+      "Shetland Pride"
+    ],
+    "city": "Shetland-Inseln",
+    "country": "GB",
+    "region": "Scotland",
+    "lat": 60.154,
+    "lon": -1.149,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-silloth",
+    "legacyIds": [
+      "silloth-pride-2026-2026-06-27"
+    ],
+    "name": "Silloth Pride",
+    "aka": [],
+    "city": "Silloth",
+    "country": "GB",
+    "region": "Cumbria",
+    "lat": 54.872,
+    "lon": -3.388,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-southampton",
+    "legacyIds": [
+      "southampton-pride-csd-southampton-2026-2026-08-29"
+    ],
+    "name": "Southampton Pride",
+    "aka": [],
+    "city": "Southampton",
+    "country": "GB",
+    "region": "Hampshire",
+    "lat": 50.9,
+    "lon": -1.404,
+    "website": "https://southamptonpride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-stockport",
+    "legacyIds": [
+      "stockport-pride-csd-stockport-2026-2026-07-26"
+    ],
+    "name": "Stockport Pride",
+    "aka": [],
+    "city": "Stockport",
+    "country": "GB",
+    "region": "Greater Manchester",
+    "lat": 53.406,
+    "lon": -2.158,
+    "website": "https://stockportpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-26",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-stoke-on-trent",
+    "legacyIds": [
+      "stoke-on-trent-pride-2026-2026-06-20"
+    ],
+    "name": "Stoke-on-Trent Pride",
+    "aka": [],
+    "city": "Stoke-on-Trent",
+    "country": "GB",
+    "region": "Staffordshire",
+    "lat": 52.999,
+    "lon": -2.181,
+    "website": "https://www.stokepride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-swansea",
+    "legacyIds": [
+      "swansea-pride-swansea-pride-wales-2026-2026-05-16"
+    ],
+    "name": "Swansea Pride",
+    "aka": [
+      "Swansea Pride Wales"
+    ],
+    "city": "Swansea",
+    "country": "GB",
+    "region": "Wales",
+    "lat": 51.624,
+    "lon": -3.944,
+    "website": "https://www.swanseapride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-16",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-swindon",
+    "legacyIds": [
+      "swindon-pride-csd-swindon-2026-2026-08-15"
+    ],
+    "name": "Swindon Pride",
+    "aka": [],
+    "city": "Swindon",
+    "country": "GB",
+    "region": "Wiltshire",
+    "lat": 51.558,
+    "lon": -1.779,
+    "website": "https://www.swindonwiltshirepride.org.uk/",
+    "instagram": "https://www.instagram.com/swinwiltspride/",
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-15",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-torquay",
+    "legacyIds": [
+      "torquay-pride-torbay-pride-2026-2026-06-13"
+    ],
+    "name": "Torquay Pride",
+    "aka": [
+      "Torbay Pride"
+    ],
+    "city": "Torquay",
+    "country": "GB",
+    "region": "Devon",
+    "lat": 50.463,
+    "lon": -3.525,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-13",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-wakefield",
+    "legacyIds": [
+      "wakefield-pride-2026-2026-08-09"
+    ],
+    "name": "Wakefield Pride",
+    "aka": [],
+    "city": "Wakefield",
+    "country": "GB",
+    "region": "West Yorkshire",
+    "lat": 53.683,
+    "lon": -1.505,
+    "website": "https://wakefieldpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-09",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-walsall",
+    "legacyIds": [
+      "walsall-pride-2026-2026-08-29"
+    ],
+    "name": "Walsall Pride",
+    "aka": [],
+    "city": "Walsall",
+    "country": "GB",
+    "region": "West Midlands",
+    "lat": 52.586,
+    "lon": -1.983,
+    "website": "https://walsallpride.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-08-29",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-witney",
+    "legacyIds": [
+      "witney-pride-2026-2026-05-23"
+    ],
+    "name": "Witney Pride",
+    "aka": [],
+    "city": "Witney",
+    "country": "GB",
+    "region": "Oxfordshire",
+    "lat": 51.785,
+    "lon": -1.485,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 3000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-23",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-wolverhampton",
+    "legacyIds": [
+      "wolverhampton-pride-csd-wolverhampton-2026-2026-06-06"
+    ],
+    "name": "Wolverhampton Pride",
+    "aka": [],
+    "city": "Wolverhampton",
+    "country": "GB",
+    "region": "West Midlands",
+    "lat": 52.588,
+    "lon": -2.13,
+    "website": "https://pridewton.co.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-06",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-worthing",
+    "legacyIds": [
+      "worthing-pride-2026-2026-07-04"
+    ],
+    "name": "Worthing Pride",
+    "aka": [],
+    "city": "Worthing",
+    "country": "GB",
+    "region": "West Sussex",
+    "lat": 50.818,
+    "lon": -0.372,
+    "website": "https://worthingpride.org",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-07-04",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "id": "gb-york",
+    "legacyIds": [
+      "york-pride-2026-2026-05-30"
+    ],
+    "name": "York Pride",
+    "aka": [],
+    "city": "York",
+    "country": "GB",
+    "region": "North Yorkshire",
+    "lat": 53.96,
+    "lon": -1.087,
+    "website": "https://www.yorkpride.org.uk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "medium",
+    "sizeEstimated": false,
+    "attendance": [
+      {
+        "year": 2024,
+        "count": 15000,
+        "kind": "unclear",
+        "by": null,
+        "url": null,
+        "quote": null,
+        "approx": true
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

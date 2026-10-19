@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mk-skopje",
+    "legacyIds": [
+      "skopje-pride-csd-skopje-2026-2026-06-20"
+    ],
+    "name": "Skopje Pride",
+    "aka": [
+      "Скопје"
+    ],
+    "city": "Skopje",
+    "country": "MK",
+    "region": "Skopje",
+    "lat": 41.997,
+    "lon": 21.425,
+    "website": "https://skopjepride.mk",
+    "instagram": null,
+    "firstYear": null,
+    "size": "large",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-06-20",
+        "status": "unverified"
+      }
+    ],
+    "sources": [],
+    "notes": ""
+  }
+]

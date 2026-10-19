@@ -11,9 +11,8 @@ import Toast from './components/Toast.jsx'
 import EmptyState from './components/EmptyState.jsx'
 import AboutDialog from './components/AboutDialog.jsx'
 import LoadingScreen from './components/LoadingScreen.jsx'
-import paradesRaw from './data/parades.json'
-import { daysUntil } from './utils/timeColors.js'
-import { toSelection } from './utils/parade.js'
+import pridesRaw from './data/prides.json'
+import { editionsFor } from './utils/edition.js'
 import { filterParades } from './utils/filter.js'
 import { useLang } from './contexts/LangContext.jsx'
 import { t, tf } from './utils/i18n.js'
@@ -40,7 +39,14 @@ function startOfToday() {
   return d
 }
 
-const ALL_COUNTRIES = [...new Set(paradesRaw.map(p => p.country))].sort()
+const ALL_COUNTRIES = [...new Set(pridesRaw.map(p => p.country))].sort()
+
+// Links shared before the ids became stable still carry the old event id.
+// A plain object, not a Map — `Map` is the lazy map component up there.
+const BY_LEGACY_ID = Object.fromEntries(
+  pridesRaw.flatMap(p => (p.legacyIds ?? []).map(old => [old, p.id])),
+)
+const resolveId = id => (id == null ? null : BY_LEGACY_ID[id] ?? id)
 
 const INITIAL_HASH = readHash()
 
@@ -56,12 +62,7 @@ export default function App() {
     timeframe: INITIAL_HASH?.timeframe ?? 'upcoming',
     months: INITIAL_HASH?.months ?? [],
   })
-  const [selectedParade, setSelectedParade] = useState(() => {
-    if (!INITIAL_HASH?.selectedId) return null
-    const p = paradesRaw.find(p => p.id === INITIAL_HASH.selectedId)
-    if (!p) return null
-    return toSelection({ ...p, daysUntil: daysUntil(p.date, startOfToday()) })
-  })
+  const [selectedId, setSelectedId] = useState(() => resolveId(INITIAL_HASH?.selectedId))
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [isoOrigin, setIsoOrigin] = useState(null)
   const [isoMode, setIsoMode] = useState('driving-car')
@@ -76,9 +77,11 @@ export default function App() {
 
   const mapPositionRef = useRef(null)
 
-  const parades = useMemo(
-    () => paradesRaw.map(p => ({ ...p, daysUntil: daysUntil(p.date, today) })),
-    [today],
+  // Each Pride seen through the edition that matters today
+  const parades = useMemo(() => editionsFor(pridesRaw, today), [today])
+  const selectedParade = useMemo(
+    () => (selectedId ? parades.find(p => p.id === selectedId) ?? null : null),
+    [parades, selectedId],
   )
 
   // Roll "today" over at midnight / when the tab wakes up, so countdowns stay live
@@ -113,12 +116,11 @@ export default function App() {
         timeframe: h.timeframe,
         months: h.months,
       })
-      const p = h.selectedId ? parades.find(p => p.id === h.selectedId) : null
-      setSelectedParade(p ? toSelection(p) : null)
+      setSelectedId(resolveId(h.selectedId))
     }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
-  }, [parades])
+  }, [])
 
   useEffect(() => {
     if (viewMode === 'map' && !mapMounted) setMapMounted(true)
@@ -148,7 +150,7 @@ export default function App() {
       if (e.key !== 'Escape' || aboutOpen) return
       const el = document.activeElement
       if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable)) return
-      setSelectedParade(null)
+      setSelectedId(null)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -179,7 +181,7 @@ export default function App() {
   }
 
   function handleSearchPick(p) {
-    setSelectedParade(toSelection(p))
+    setSelectedId(p.id)
     setFlyTo([p.lon, p.lat])
   }
 
@@ -220,7 +222,7 @@ export default function App() {
           <Suspense fallback={null}>
             <Map
               parades={filteredParades}
-              onSelect={setSelectedParade}
+              onSelect={setSelectedId}
               view={view}
               selectedId={selectedParade?.id ?? null}
               isoOrigin={isoOrigin}
@@ -269,7 +271,7 @@ export default function App() {
       {viewMode === 'list' && (
         <ListView
           parades={filteredParades}
-          onSelect={setSelectedParade}
+          onSelect={setSelectedId}
         />
       )}
 
@@ -321,7 +323,7 @@ export default function App() {
       {selectedParade && (
         <DetailPanel
           parade={selectedParade}
-          onClose={() => setSelectedParade(null)}
+          onClose={() => setSelectedId(null)}
           onShowOnMap={selectedParade.lat != null ? handleShowOnMap : null}
         />
       )}
