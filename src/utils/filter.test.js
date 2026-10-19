@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { filterParades } from './filter.js'
+import { filterParades, relaxations } from './filter.js'
 import { daysUntil } from './days.js'
 
 const DEFAULTS = { countries: [], sizes: [], months: [], timeframe: 'all' }
@@ -144,5 +144,46 @@ describe('open dates', () => {
   it('still answer to country and size', () => {
     expect(filterParades([open], { ...DEFAULTS, countries: ['DE'] }, today)).toHaveLength(1)
     expect(filterParades([open], { ...DEFAULTS, sizes: ['large'] }, today)).toHaveLength(0)
+  })
+})
+
+describe('relaxations', () => {
+  const today = day(DATES.fri)
+  // The app's own default: upcoming, no other filter
+  const BASE = { ...DEFAULTS, timeframe: 'upcoming' }
+  const list = fixture(today).map((p, i) => ({ ...p, country: i < 2 ? 'IS' : 'DE' }))
+
+  it('offers nothing when no filter is set', () => {
+    expect(relaxations(list, BASE, today)).toEqual([])
+  })
+
+  it('names the filter in the way, and what dropping it would give', () => {
+    // July in Iceland: nothing. Without the month there are two Icelandic
+    // dates, without the country one July date.
+    const filters = { ...BASE, countries: ['IS'], months: [7] }
+    expect(filterParades(list, filters, today)).toHaveLength(0)
+    const got = relaxations(list, filters, today)
+    expect(got.map(r => r.key).sort()).toEqual(['countries', 'months'])
+    expect(got.find(r => r.key === 'months').count).toBe(2)
+    expect(got.find(r => r.key === 'countries').count).toBe(1)
+  })
+
+  it('leaves out a filter whose removal still finds nothing', () => {
+    // December has no dates at all, so dropping the country changes nothing
+    const filters = { ...BASE, countries: ['IS'], months: [12] }
+    expect(relaxations(list, filters, today).map(r => r.key)).toEqual(['months'])
+  })
+
+  it('counts a non-default timeframe as a filter', () => {
+    // Nothing is in the past yet on this Friday, so the timeframe is the only
+    // thing worth loosening
+    const filters = { ...BASE, timeframe: 'past', months: [7] }
+    expect(relaxations(list, filters, today).map(r => r.key)).toEqual(['timeframe'])
+  })
+
+  it('sorts the most productive first', () => {
+    const filters = { ...BASE, countries: ['IS'], months: [7] }
+    const got = relaxations(list, filters, today)
+    expect(got[0].count).toBeGreaterThanOrEqual(got[1].count)
   })
 })

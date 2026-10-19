@@ -10,18 +10,17 @@ import 'flag-icons/css/flag-icons.min.css'
 import './styles/main.css'
 
 // Inject @font-face using the runtime base URL so fonts resolve correctly
-// regardless of whether the app is served from /pridemap/ or /
+// regardless of whether the app is served from /pridemap/ or /.
+//
+// The outline cut, not the colour one: the wordmark's colours come from the
+// per-letter spans in ColoredTitle, and the two render pixel for pixel the
+// same. GilbertColorBold was 626 kB against 87 kB for this.
 ;(function () {
   const base = import.meta.env.BASE_URL
   const s = document.createElement('style')
   s.textContent = `
 @font-face {
   font-family: 'Gilbert';
-  src: url('${base}fonts/GilbertColorBold.otf') format('opentype');
-  font-weight: 700; font-style: normal;
-}
-@font-face {
-  font-family: 'GilbertFallback';
   src: url('${base}fonts/GilbertBold.otf') format('opentype');
   font-weight: 700; font-style: normal;
 }`

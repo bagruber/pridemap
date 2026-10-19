@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { X, SearchX, Sparkles } from 'lucide-react'
+import { X } from 'lucide-react'
 import { colorForDays } from '../utils/timeColors.js'
 import { flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
@@ -46,8 +46,11 @@ function ListRow({ parade, onSelect, lang }) {
       role="button"
       tabIndex={0}
     >
+      {/* Premiere and "moved" ride on the dot, the way they do on the map,
+          instead of repeating themselves as text chips beside the name */}
       <div
-        className="list-dot"
+        className={`list-dot ${isFirstTime(parade) ? 'is-premiere' : ''} ${parade.movedFrom ? 'is-moved' : ''}`}
+        title={isFirstTime(parade) ? tf('firstTimeNote', lang, { year: parade.year }) : movedTitle}
         style={open
           ? { background: 'transparent', boxShadow: `inset 0 0 0 1.5px ${color}` }
           : { background: color }}
@@ -55,17 +58,6 @@ function ListRow({ parade, onSelect, lang }) {
       <span className={`${flag(parade.country)} list-flag fi`} />
       <div className="list-main">
         <span className="list-city">{displayCity}</span>
-        {isFirstTime(parade) && (
-          <span className="list-premiere" title={tf('firstTimeNote', lang, { year: parade.year })}>
-            <Sparkles size={9} aria-hidden="true" />
-            {t('firstTimeShort', lang)}
-          </span>
-        )}
-        {parade.movedFrom && (
-          <span className="list-moved" title={movedTitle}>
-            {t('rescheduledShort', lang)}
-          </span>
-        )}
         {parade.region && <span className="list-region">{parade.region}</span>}
         {hasCustomName && <span className="list-name">{parade.name}</span>}
       </div>
@@ -144,7 +136,6 @@ export default function ListView({ parades, onSelect }) {
         {displayed.length === 0
           ? (
             <div className="empty-state">
-              <SearchX size={32} strokeWidth={1.5} />
               <div className="empty-state-text">{t('noResults', lang)}</div>
             </div>
           )

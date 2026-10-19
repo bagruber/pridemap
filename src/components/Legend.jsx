@@ -12,7 +12,6 @@ export default function Legend() {
 
   return (
     <div className="legend">
-      <div className="legend-title">{t('legendDaysUntil', lang)}</div>
       {TIME_BUCKETS.map((b, i) => (
         <div key={b.label} className="legend-item">
           <div className="legend-dot" style={{ background: b.color }} />

@@ -43,3 +43,26 @@ export function filterParades(parades, filters, today) {
     return true
   }).sort((a, b) => a.city.localeCompare(b.city))
 }
+
+const EMPTY = { countries: [], sizes: [], months: [], timeframe: 'upcoming' }
+
+/**
+ * For each active filter, how many results you would get without it.
+ *
+ * A dead end is more useful when it says which way out is worth taking. The
+ * caller shows the two most productive, so "nothing in Iceland in July" comes
+ * with "without the month: 1 date" rather than only "clear all filters".
+ */
+export function relaxations(parades, filters, today) {
+  const out = []
+  for (const key of ['months', 'countries', 'sizes', 'timeframe']) {
+    const isDefault = key === 'timeframe'
+      ? filters.timeframe === EMPTY.timeframe
+      : filters[key].length === 0
+    if (isDefault) continue
+    const relaxed = { ...filters, [key]: EMPTY[key] }
+    const count = filterParades(parades, relaxed, today).length
+    if (count > 0) out.push({ key, count, filters: relaxed })
+  }
+  return out.sort((a, b) => b.count - a.count)
+}

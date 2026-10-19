@@ -1,59 +1,16 @@
 import { FaInstagram, FaGlobe } from 'react-icons/fa'
-import { CalendarClock, Info, MapPin, Sparkles, X } from 'lucide-react'
+import { CalendarClock, MapPin, X } from 'lucide-react'
 import { colorForDays, indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { isFirstTime } from '../utils/firstTime.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t, tf, cityName, indexLabelL10n, labelForDaysLong, formatDate } from '../utils/i18n.js'
-import { slugify } from '../utils/slug.js'
+import { downloadICS } from '../utils/ics.js'
 
 function formatBucket(n) {
   if (n >= 1000000) return `≥${(n / 1000000).toLocaleString('en')}M`
   if (n >= 1000) return `≥${(n / 1000).toLocaleString('en')}k`
   return `≥${n.toLocaleString('en')}`
-}
-
-// RFC 5545: commas, semicolons and backslashes must be escaped in text values
-function icsEscape(s) {
-  return String(s)
-    .replace(/\\/g, '\\\\')
-    .replace(/;/g, '\\;')
-    .replace(/,/g, '\\,')
-    .replace(/\r?\n/g, '\\n')
-}
-
-function downloadICS(parade) {
-  const pad = n => String(n).padStart(2, '0')
-  const [yr, mo, da] = parade.date.split('-').map(Number)
-  const start = `${yr}${pad(mo)}${pad(da)}`
-  const endDate = new Date(yr, mo - 1, da + 1)
-  const end = `${endDate.getFullYear()}${pad(endDate.getMonth() + 1)}${pad(endDate.getDate())}`
-  const dtstamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '')
-
-  const lines = [
-    'BEGIN:VCALENDAR',
-    'VERSION:2.0',
-    'PRODID:-//pridemap//EN',
-    'CALSCALE:GREGORIAN',
-    'METHOD:PUBLISH',
-    'BEGIN:VEVENT',
-    `UID:${parade.id}-${yr}@pridemap.net`,
-    `DTSTAMP:${dtstamp}`,
-    `DTSTART;VALUE=DATE:${start}`,
-    `DTEND;VALUE=DATE:${end}`,
-    `SUMMARY:${icsEscape(parade.name)}`,
-    `LOCATION:${icsEscape(parade.city)}`,
-    parade.website ? `URL:${parade.website}` : null,
-    'END:VEVENT',
-    'END:VCALENDAR',
-  ].filter(Boolean).join('\r\n')
-
-  const a = Object.assign(document.createElement('a'), {
-    href: URL.createObjectURL(new Blob([lines], { type: 'text/calendar;charset=utf-8' })),
-    download: `${slugify(parade.name || parade.city)}-${yr}.ics`,
-  })
-  a.click()
-  URL.revokeObjectURL(a.href)
 }
 
 export default function DetailPanel({ parade, onClose, onShowOnMap }) {
@@ -97,8 +54,7 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
         <div>
           {firstTime && (
             <div className="premiere-badge" title={tf('firstTimeNote', lang, { year })}>
-              <Sparkles size={11} aria-hidden="true" />
-              {t('firstTime', lang)}
+              {t('firstTime', lang)} {year}
             </div>
           )}
           {movedFrom && (
@@ -141,28 +97,16 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
           <span className={`${flag(country)} chip-flag`} />
           {countryName}
         </div>
-        <div className="detail-chip" title={t('sizeNote', lang)}>
-          · {sizeLabel}
-          <Info size={11} className="detail-chip-info" aria-hidden="true" />
+        <div className="detail-chip">
+          {'· '}{sizeLabel}
+          {att && ` · ${formatBucket(att.count)} ${t('visitors', lang)}`}
+          {att?.year && ` (${att.year}${att.by === 'authorities' ? `, ${t('sourceAuthorities', lang)}`
+            : att.by === 'organizers' ? `, ${t('sourceOrganizers', lang)}` : ''})`}
         </div>
         {firstYear && !firstTime && (
           <div className="detail-chip">· {t('established', lang)} {firstYear}</div>
         )}
       </div>
-
-      {att && (
-        <div className="detail-attendance">
-          <div className="detail-stat-label">{t('attendance', lang)}</div>
-          <div className="detail-stat-value">
-            {formatBucket(att.count)} {t('visitors', lang)}
-            <span className="detail-stat-sub">
-              {' '}({att.year ?? '?'})
-              {att.by === 'authorities' && ` · ${t('sourceAuthorities', lang)}`}
-              {att.by === 'organizers' && ` · ${t('sourceOrganizers', lang)}`}
-            </span>
-          </div>
-        </div>
-      )}
 
       {queerIndex != null && (
         <div className="detail-index">

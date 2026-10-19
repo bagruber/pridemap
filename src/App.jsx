@@ -1,8 +1,9 @@
 import { useState, useMemo, useEffect, useRef, lazy, Suspense } from 'react'
 import { LocateFixed, Menu, X } from 'lucide-react'
 import FilterSidebar from './components/FilterSidebar.jsx'
-import MobileSheet from './components/MobileSheet.jsx'
-import IsoFAB from './components/IsoFAB.jsx'
+import ResultSheet from './components/mobile/ResultSheet.jsx'
+import IsoControls from './components/IsoControls.jsx'
+import DetailSheet from './components/mobile/DetailSheet.jsx'
 import DetailPanel from './components/DetailPanel.jsx'
 import Legend from './components/Legend.jsx'
 import ListView from './components/ListView.jsx'
@@ -13,13 +14,13 @@ import AboutDialog from './components/AboutDialog.jsx'
 import LoadingScreen from './components/LoadingScreen.jsx'
 import pridesRaw from './data/prides.json'
 import { editionsFor } from './utils/edition.js'
-import { filterParades } from './utils/filter.js'
+import { filterParades, relaxations } from './utils/filter.js'
 import { useLang } from './contexts/LangContext.jsx'
 import { t } from './utils/i18n.js'
 import { useIsMobile } from './hooks/useIsMobile.js'
 import { VIEWS } from './config/views.js'
-import { ISO_BANDS } from './config/isoBands.js'
 import { readHash, writeHash } from './utils/urlState.js'
+import { track } from './utils/track.js'
 
 // Lazy so maplibre-gl lands in its own chunk; only loaded once the map is shown
 const Map = lazy(() => import('./components/Map.jsx'))
@@ -74,6 +75,10 @@ export default function App() {
   // Mount the map lazily, then keep it mounted to preserve position
   const [mapMounted, setMapMounted] = useState((INITIAL_HASH?.viewMode ?? 'map') === 'map')
   const [booted, setBooted] = useState(false)
+  // Mobile: which filter chip is open, and how tall the sheet currently is —
+  // the map needs the second so the chosen dot stays above it
+  const [panel, setPanel] = useState(null)
+  const [sheetHeight, setSheetHeight] = useState(180)
 
   const mapPositionRef = useRef(null)
 
@@ -150,7 +155,7 @@ export default function App() {
       if (e.key !== 'Escape' || aboutOpen) return
       const el = document.activeElement
       if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable)) return
-      setSelectedId(null)
+      closeDetail()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -180,8 +185,28 @@ export default function App() {
     )
   }
 
+  // Opening a detail is a step the back button should undo. Filter changes stay
+  // on replaceState — nobody wants to press back eleven times through them.
+  function openDetail(id) {
+    if (!id) return
+    setPanel(null)
+    setSelectedId(id)
+    if (isMobile) history.pushState({ detail: id }, '')
+  }
+
+  function closeDetail() {
+    if (isMobile && history.state?.detail) history.back()
+    else setSelectedId(null)
+  }
+
+  useEffect(() => {
+    const onPop = () => setSelectedId(null)
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
+
   function handleSearchPick(p) {
-    setSelectedId(p.id)
+    openDetail(p.id)
     setFlyTo([p.lon, p.lat])
   }
 
@@ -210,8 +235,35 @@ export default function App() {
     [filteredParades],
   )
 
+  // Counts per country for the picker: everything the other filters allow,
+  // so the number next to a country answers "how many would I get".
+  const countryCounts = useMemo(() => {
+    const out = {}
+    for (const p of filterParades(parades, { ...filters, countries: [] }, today)) {
+      out[p.country] = (out[p.country] ?? 0) + 1
+    }
+    return out
+  }, [parades, filters, today])
+
+  // Only worth computing when there is nothing to show
+  const ways = useMemo(
+    () => (filteredParades.length === 0 ? relaxations(parades, filters, today) : []),
+    [filteredParades.length, parades, filters, today],
+  )
+
   const activeFilterCount = filters.countries.length + filters.sizes.length +
     filters.months.length + (filters.timeframe !== 'upcoming' ? 1 : 0)
+
+  const isoControls = (
+    <IsoControls
+      isoOrigin={isoOrigin}
+      onOriginSet={setIsoOrigin}
+      isoMode={isoMode}
+      onModeChange={setIsoMode}
+      isoPinning={isoPinning}
+      onPinningChange={setIsoPinning}
+    />
+  )
 
   return (
     <div className="app">
@@ -221,8 +273,9 @@ export default function App() {
           <Suspense fallback={null}>
             <Map
               parades={filteredParades}
-              onSelect={setSelectedId}
+              onSelect={openDetail}
               view={view}
+              detailPadding={isMobile && selectedParade ? sheetHeight : 0}
               selectedId={selectedParade?.id ?? null}
               isoOrigin={isoOrigin}
               onIsoOriginSet={setIsoOrigin}
@@ -240,7 +293,9 @@ export default function App() {
           {viewMode === 'map' && filteredParades.length === 0 && (
             <div className="map-empty-overlay">
               <EmptyState
-                title={t('noEventsMatch', lang)}
+                filters={filters}
+                relaxations={ways}
+                onRelax={setFilters}
                 action={clearFilters}
                 actionLabel={t('clearFilters', lang)}
                 linkHref="https://forms.gle/oo6vk3QfANXskXku8"
@@ -300,13 +355,14 @@ export default function App() {
             onClick={handleGeolocate}
             aria-label="Go to my location"
             title="Near me"
+            style={isMobile ? { bottom: sheetHeight + 12 } : undefined}
           >
             <LocateFixed size={16} />
           </button>
         </>
       )}
 
-      {selectedParade && (
+      {!isMobile && selectedParade && (
         <DetailPanel
           parade={selectedParade}
           onClose={() => setSelectedId(null)}
@@ -317,86 +373,42 @@ export default function App() {
       {/* Desktop-only: isochrones, legend — map mode only */}
       {!isMobile && viewMode === 'map' && (
         <>
-          <div className="isochrone-controls">
-            <div className="iso-title">{t('isoTravelTime', lang)} <span className="iso-beta">beta</span></div>
-            <div className="iso-mode-row">
-              {[
-                { value: 'driving-car', labelKey: 'isoCar' },
-                { value: 'cycling-regular', labelKey: 'isoCycling' },
-              ].map(m => (
-                <button
-                  key={m.value}
-                  className={`toggle-btn ${isoMode === m.value ? 'active' : ''}`}
-                  onClick={() => setIsoMode(m.value)}
-                >
-                  {t(m.labelKey, lang)}
-                </button>
-              ))}
-            </div>
-            <button
-              className={`iso-pin-btn ${isoPinning ? 'pinning' : ''}`}
-              onClick={() => {
-                if (isoOrigin) {
-                  setIsoOrigin(null)
-                } else {
-                  setIsoPinning(v => !v)
-                }
-              }}
-            >
-              {isoOrigin ? t('isoClearOrigin', lang) : isoPinning ? t('isoClickMap', lang) : t('isoSetOrigin', lang)}
-            </button>
-            {isoOrigin && (
-              <div className="iso-legend">
-                {[...ISO_BANDS].reverse().map(b => (
-                  <div key={b.seconds} className="iso-legend-item">
-                    <div className="iso-legend-swatch" style={{ background: b.stroke.replace('0.5)', '0.55)') }} />
-                    <span>{b.seconds / 60} {t('isoMin', lang)}</span>
-                  </div>
-                ))}
-              </div>
-            )}
-            <a
-              className="iso-here-attr"
-              href="https://www.here.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Powered by HERE</a>
-          </div>
-
+          <div className="isochrone-controls">{isoControls}</div>
           <Legend />
         </>
       )}
 
-      {/* Mobile bottom sheet + isochrone FAB */}
-      {isMobile && !selectedParade && (
-        <>
-          <MobileSheet
-            filters={filters}
-            onChange={setFilters}
-            allCountries={ALL_COUNTRIES}
-            totalCount={filteredParades.length}
-            openCount={openCount}
-            today={today}
-            view={view}
-            onViewChange={switchView}
-            clusteringEnabled={clusteringEnabled}
-            onClusteringChange={setClusteringEnabled}
-            viewMode={viewMode}
-            onViewModeChange={switchViewMode}
-            onAboutClick={() => setAboutOpen(true)}
-          />
-          {viewMode === 'map' && (
-            <IsoFAB
-              isoOrigin={isoOrigin}
-              onOriginSet={setIsoOrigin}
-              isoMode={isoMode}
-              onModeChange={setIsoMode}
-              isoPinning={isoPinning}
-              onPinningChange={setIsoPinning}
-            />
-          )}
-        </>
-      )}
+      {/* Mobile: one sheet for results, filters and legend; a second for the detail */}
+      {isMobile && (selectedParade ? (
+        <DetailSheet
+          key={selectedParade.id}
+          parade={selectedParade}
+          onClose={closeDetail}
+          onHeightChange={setSheetHeight}
+        />
+      ) : (
+        <ResultSheet
+          parades={filteredParades}
+          filters={filters}
+          onChange={setFilters}
+          allCountries={ALL_COUNTRIES}
+          countryCounts={countryCounts}
+          totalCount={filteredParades.length}
+          openCount={openCount}
+          today={today}
+          view={view}
+          onViewChange={switchView}
+          clusteringEnabled={clusteringEnabled}
+          onClusteringChange={setClusteringEnabled}
+          onSelect={openDetail}
+          onAboutClick={() => setAboutOpen(true)}
+          onReset={clearFilters}
+          isoSlot={isoControls}
+          panel={panel}
+          onPanel={setPanel}
+          onHeightChange={setSheetHeight}
+        />
+      ))}
 
       <LoadingScreen done={booted} />
       <Toast message={toastMessage} onDismiss={() => setToastMessage(null)} />

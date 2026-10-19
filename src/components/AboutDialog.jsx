@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { X } from 'lucide-react'
 import { useLang } from '../contexts/LangContext.jsx'
+import ColoredTitle from './ColoredTitle.jsx'
 import { t } from '../utils/i18n.js'
 
 export default function AboutDialog({ open, onClose }) {
@@ -50,7 +51,7 @@ export default function AboutDialog({ open, onClose }) {
         <button className="about-close" onClick={onClose} aria-label={t('close', lang)}>
           <X size={16} />
         </button>
-        <h2 className="about-title">{t('about', lang)}</h2>
+        <ColoredTitle className="about-title" />
         <p className="about-text">{t('aboutText', lang)}</p>
         <p className="about-text about-text-muted">{t('disclaimer', lang)}</p>
         <p className="about-credit">By Benedict Arya Gruber</p>

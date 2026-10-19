@@ -7,7 +7,7 @@ const GRADIENT = `linear-gradient(90deg, ${TIME_BUCKETS.map(b => b.color).join('
 export default function MiniLegend({ className = '' }) {
   const { lang } = useLang()
   return (
-    <div className={`mini-legend ${className}`} title={t('legendDaysUntil', lang)}>
+    <div className={`mini-legend ${className}`}>
       <span className="mini-legend-label">{t('legendNow', lang)}</span>
       <div className="mini-legend-bar" style={{ background: GRADIENT }} />
       <span className="mini-legend-label">{t('legendLater', lang)}</span>

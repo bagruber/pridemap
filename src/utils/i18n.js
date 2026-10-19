@@ -32,7 +32,7 @@ export const TRANSLATIONS = {
   // Footer
   missingParade:     { en: 'Missing a parade?',       de: 'Parade fehlt?' },
   suggestOne:        { en: 'Suggest one',             de: 'Vorschlagen' },
-  disclaimer:        { en: 'Data sourced from various online resources. May be incomplete or contain inaccuracies.', de: 'Daten aus verschiedenen Online-Quellen. Können unvollständig oder fehlerhaft sein.' },
+  disclaimer:        { en: 'Every date names its source and when it was last checked. If something is wrong, use “Report an error” on the Pride itself.', de: 'Jeder Termin nennt seine Quelle und das Datum der letzten Prüfung. Stimmt etwas nicht, hilft ‚Fehler melden‘ direkt am Pride.' },
 
   // Share
   share:             { en: 'Share',                   de: 'Teilen' },
@@ -81,10 +81,9 @@ export const TRANSLATIONS = {
   sortBy:            { en: 'Sort:',                   de: 'Sortierung:' },
   sortDate:          { en: 'Date',                    de: 'Datum' },
   sortName:          { en: 'Name',                    de: 'Name' },
-  noResults:         { en: 'No matching events',      de: 'Keine passenden Events' },
+  noResults:         { en: 'Nothing matches that search.', de: 'Dazu passt nichts.' },
 
   // Legend
-  legendDaysUntil:   { en: 'Days until',              de: 'Tage bis' },
   legendEventSize:   { en: 'Event size',              de: 'Eventgröße' },
   legendPast:        { en: 'Past',                    de: 'Vergangen' },
   legendThisWeek:    { en: 'This week',               de: 'Diese Woche' },
@@ -112,9 +111,16 @@ export const TRANSLATIONS = {
   geoUnavailable:    { en: 'Location unavailable',                  de: 'Standort nicht verfügbar' },
   geoDenied:         { en: 'Location blocked — enable in settings', de: 'Standort blockiert — in Einstellungen erlauben' },
 
-  // Empty state
-  noEventsMatch:     { en: 'No events match your filters',          de: 'Keine Events passen zu den Filtern' },
-  clearFilters:      { en: 'Clear filters',                         de: 'Filter zurücksetzen' },
+  // Empty state. "Nothing in {where} in {when}" — either half may be missing.
+  nothingIn:         { en: 'Nothing {where}{when}.',                de: '{when}{where} nichts.' },
+  whereIn:           { en: ' in {place}',                           de: ' in {place}' },
+  whenIn:            { en: ' in {month}',                           de: 'Im {month} ' },
+  noEventsMatch:     { en: 'Nothing matches these filters.',        de: 'Dazu passt nichts.' },
+  clearFilters:      { en: 'Clear all filters',                     de: 'Alle Filter zurücksetzen' },
+  relaxMonths:       { en: 'Any month: {n}',                        de: 'Ohne Monat: {n}' },
+  relaxCountries:    { en: 'Any country: {n}',                      de: 'Ohne Land: {n}' },
+  relaxSizes:        { en: 'Any size: {n}',                         de: 'Ohne Größe: {n}' },
+  relaxTimeframe:    { en: 'Any date: {n}',                         de: 'Ohne Zeitraum: {n}' },
 
   // Season and open dates
   seasonLabel:       { en: 'Season {year}',                         de: 'Saison {year}' },
@@ -125,6 +131,34 @@ export const TRANSLATIONS = {
   countDates:        { en: '{dated} dates · {open} open',           de: '{dated} Termine · {open} offen' },
   countDatesOne:     { en: '1 date · {open} open',                  de: '1 Termin · {open} offen' },
   reportPride:       { en: 'Report a Pride',                        de: 'Pride melden' },
+
+  // Mobile: filter chips and their panels
+  more:              { en: 'More',                                  de: 'Mehr' },
+  reset:             { en: 'Reset',                                 de: 'Zurücksetzen' },
+  showN:             { en: 'Show {n}',                              de: '{n} anzeigen' },
+  searchCountry:     { en: 'Search country',                        de: 'Land suchen' },
+  nCountries:        { en: '{n} countries',                         de: '{n} Länder' },
+  monthPlus:         { en: '{month} +{n}',                          de: '{month} +{n}' },
+  sizeScale:         { en: 'small under 3,000 · medium up to 30,000 · large above, counting spectators',
+                       de: 'klein unter 3.000 · mittel bis 30.000 · groß darüber, gezählt werden Zuschauende' },
+
+  // Mobile: legend colour bar
+  legendPastShort:   { en: 'past',                                  de: 'vorbei' },
+  legendSoon:        { en: 'this week',                             de: 'diese Woche' },
+  legendFar:         { en: '6+ months',                             de: '6+ Monate' },
+
+  // Detail actions
+  route:             { en: 'Route',                                 de: 'Route' },
+  calendar:          { en: 'Calendar',                              de: 'Kalender' },
+  reportError:       { en: 'Report an error',                       de: 'Fehler melden' },
+  startTime:         { en: 'Start',                                 de: 'Beginn' },
+  meetingPoint:      { en: 'Meeting point',                         de: 'Treffpunkt' },
+  place:             { en: 'Place',                                 de: 'Ort' },
+  countUnclear:      { en: 'counting method unclear',               de: 'Zählart offen' },
+  statusAnnounced:   { en: 'announced, not confirmed',              de: 'angekündigt, nicht bestätigt' },
+  statusConfirmed:   { en: 'confirmed by the organisers',           de: 'vom Veranstalter bestätigt' },
+  statusCancelled:   { en: 'cancelled',                             de: 'abgesagt' },
+  statusUnverified:  { en: 'from the 2026 data, unverified',        de: 'aus den Daten von 2026, ungeprüft' },
 
   // Source of a date
   sourceLabel:       { en: 'Source',                                de: 'Quelle' },

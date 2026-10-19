@@ -129,10 +129,14 @@ function dataBounds(parades) {
   return [[at(lons, 0.05), at(lats, 0.05)], [at(lons, 0.95), at(lats, 0.95)]]
 }
 
+// The fit covers the middle 90 % of the Prides. On a phone that is the whole
+// screen minus the search and the sheet; on a desktop the generous padding
+// brings Iberia, Scandinavia and Greece back into view around it, which is
+// what makes the map legible as Europe rather than as a cloud of dots.
 const fitPadding = () =>
   (typeof window !== 'undefined' && window.innerWidth < 768)
     ? { top: 72, right: 24, bottom: 196, left: 24 }
-    : 60
+    : { top: 80, right: 120, bottom: 80, left: 400 }
 
 function paradesToGeoJSON(parades) {
   return {
@@ -217,6 +221,7 @@ export default function Map({
   flyTo, onFlyToDone,
   clusteringEnabled,
   initialPosition, onViewChange, onReady,
+  detailPadding = 0,
 }) {
   const containerRef = useRef(null)
   const mapRef = useRef(null)
@@ -227,6 +232,8 @@ export default function Map({
   // current list without re-running the effect when a filter changes.
   const paradesRef = useRef(parades)
   paradesRef.current = parades
+  const detailPaddingRef = useRef(detailPadding)
+  detailPaddingRef.current = detailPadding
   const isoPinningRef = useRef(false)
   const clusteringRef = useRef(clusteringEnabled)
   const [mapLoaded, setMapLoaded] = useState(false)
@@ -464,7 +471,32 @@ export default function Map({
       if (prev != null) map.setFeatureState({ source: src, id: prev }, { selected: false })
       if (selectedId != null) map.setFeatureState({ source: src, id: selectedId }, { selected: true })
     }
+
+    // On a phone the sheet covers the lower half, and the dot that was just
+    // tapped was usually under it. Move it into the strip that stays free and
+    // come closer, because at the continental zoom "there" says very little.
+    if (selectedId != null && detailPaddingRef.current > 0 && selectedId !== prev) {
+      const p = paradesRef.current.find(x => x.id === selectedId)
+      if (p?.lat != null) {
+        map.easeTo({
+          center: [p.lon, p.lat],
+          zoom: Math.min(map.getMaxZoom(), map.getZoom() * 2),
+          padding: { top: 0, right: 0, bottom: detailPaddingRef.current, left: 0 },
+          duration: 500,
+        })
+      }
+    }
   }, [selectedId, mapLoaded])
+
+  // Keep the chosen dot above the sheet while the sheet is dragged. Not while
+  // the move above is still running: any camera change cancels an easeTo, and
+  // this effect fires in the same commit.
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !mapLoaded || !selectedId || detailPadding <= 0) return
+    if (map.isEasing()) return
+    map.setPadding({ top: 0, right: 0, bottom: detailPadding, left: 0 })
+  }, [detailPadding, selectedId, mapLoaded])
 
   // ── Fly to view on switch ───────────────────────────────────────────────────
   useEffect(() => {
