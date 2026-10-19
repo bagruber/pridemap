@@ -72,7 +72,14 @@ das Vektor-Ergebnis ist schaerfer.
 Dieses Repo hat keinen CI-Workflow. Gebaut und veroeffentlicht wird ueber
 `pnpm run deploy` (GitHub-Pages-Spiegel, nur SPA) und `pnpm run deploy:hostinger`
 (kanonische Seite mit statischen Seiten, Weiterleitungen und Share-Bildern).
-Der Stand vom 19.10.2026 ist auf beiden Branches und auf `main`.
+Zuletzt deployt am 20.10.2026 von `a4513061`, auf beide Branches.
+
+Liegen im Arbeitsverzeichnis uncommittete Aenderungen, etwa eine laufende
+Upgrade-Welle in `package.json`, baut der Deploy sie sonst ungeprueft mit ein.
+Dann aus einem sauberen Worktree deployen: `git worktree add <ordner> <commit>`,
+dort `pnpm install --frozen-lockfile`, `.env` und `og-cache/` hineinkopieren, bauen
+und `node scripts/deploy.mjs <branch>`. Unter Git Bash schreibt MSYS `--base=/`
+in einen Windows-Pfad um; fuer `vite preview --base=/` deshalb PowerShell nehmen.
 
 ## Beim naechsten Paket-Update
 
