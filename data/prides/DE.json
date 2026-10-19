@@ -197,8 +197,8 @@
     "region": "Bayern",
     "lat": 49.301,
     "lon": 10.572,
-    "website": null,
-    "instagram": null,
+    "website": "https://frankenpride.de/csd-ansbach/",
+    "instagram": "https://www.instagram.com/frankenpride/",
     "firstYear": null,
     "size": "small",
     "sizeEstimated": true,
@@ -207,24 +207,23 @@
       {
         "year": 2026,
         "date": "2026-11-07",
-        "status": "announced",
+        "status": "confirmed",
         "sources": [
+          {
+            "url": "https://frankenpride.de/csd-ansbach/",
+            "checked": "2026-10-19"
+          },
           {
             "url": "https://www.csd-termine.de/deutschland/csd-pride-ansbach.html",
             "checked": "2026-10-19"
           }
-        ]
+        ],
+        "startTime": "14:00",
+        "meetingPoint": "Martin-Luther-Platz"
       }
     ],
     "sources": [],
-    "todo": [
-      {
-        "task": "link",
-        "since": "2026-10-19",
-        "note": "Veranstaltet laut csd-termine.de vom Jugendrat Ansbach und dem Bunten Buendnis Ansbach. Eigene Website oder Instagram noch nicht gefunden."
-      }
-    ],
-    "notes": "Findet laut csd-termine.de traditionell im Spaetherbst statt, nicht im Sommer."
+    "notes": "Kundgebung ab 14:00 am Martin-Luther-Platz, danach Demonstrationszug durch die Innenstadt (frankenpride.de). Entstanden aus einer Initiative des Ansbacher Jugendrats, 2025 mit Franken Pride e.V. neu belebt. Findet bewusst im Spaetherbst statt. Instagram ist das von Franken Pride."
   },
   {
     "id": "de-arnsberg",
@@ -5614,9 +5613,13 @@
       {
         "year": 2026,
         "date": "2026-08-29",
-        "status": "announced",
+        "status": "confirmed",
         "meetingPoint": "Bahnhofsvorplatz Northeim",
         "sources": [
+          {
+            "url": "https://www.instagram.com/csdnortheim/",
+            "checked": "2026-10-19"
+          },
           {
             "url": "https://www.csd-termine.de/deutschland/csd-pride-northeim.html",
             "checked": "2026-10-19"
@@ -5625,7 +5628,7 @@
       }
     ],
     "sources": [],
-    "notes": "Bis 19.10.2026 stand hier der 07.11.2026, vermutlich verwechselt mit dem CSD Ansbach am selben Tag. Laut csd-termine.de lief der CSD Northeim am 29.08.2026 ab dem Bahnhofsvorplatz."
+    "notes": "Bis 19.10.2026 stand hier der 07.11.2026, vermutlich verwechselt mit dem CSD Ansbach am selben Tag. Laut csd-termine.de lief der CSD Northeim am 29.08.2026 ab dem Bahnhofsvorplatz. Datum von Benedict am 19.10.2026 auf Instagram bestaetigt."
   },
   {
     "id": "de-nurnberg",

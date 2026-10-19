@@ -109,8 +109,8 @@
     "region": "Troms",
     "lat": 69.649,
     "lon": 18.956,
-    "website": "https://arcticpride.no/",
-    "instagram": null,
+    "website": "https://www.arcticpride.no/",
+    "instagram": "https://www.instagram.com/arcticpride_/",
     "firstYear": null,
     "size": "small",
     "sizeEstimated": true,
@@ -126,13 +126,13 @@
             "checked": "2026-10-19"
           },
           {
-            "url": "https://arcticpride.no/",
+            "url": "https://www.arcticpride.no/",
             "checked": "2026-10-19"
           }
         ]
       }
     ],
     "sources": [],
-    "notes": "arcticpride.no nennt das Festival vom 09. bis 16.11.2026, aber noch keinen Paradetag. Den 14.11. (Samstag der Festivalwoche) nennt csd-termine.de. Bestaetigen, sobald arcticpride.no die Parade ankuendigt."
+    "notes": "arcticpride.no nennt das Festival vom 09. bis 16.11.2026 mit Veranstaltungen ueber die ganze Woche, aber keinen eigenen Paradetag. Den 14.11. (Samstag der Festivalwoche) nennt csd-termine.de; Benedict hat ihn am 19.10.2026 so uebernommen. Bestaetigen, sobald arcticpride.no die Parade ankuendigt."
   }
 ]

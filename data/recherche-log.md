@@ -283,3 +283,19 @@ Termin 2027 erscheint einfach weit in der Zukunft):
 
 Alle vier tragen `announced`, weil die Termine nur aus Uebersichten stammen. Die Websuche
 fand zu keinem eine Veranstalter-Seite mit Datum.
+
+---
+
+## 2026-10-19 — Bestaetigungen von Benedict
+
+- `de-ansbach` **confirmed**: frankenpride.de/csd-ansbach nennt den 07.11.2026, Kundgebung
+  ab 14:00 am Martin-Luther-Platz, danach Demonstrationszug durch die Innenstadt.
+  Veranstalter Franken Pride e.V. (Instagram @frankenpride). `todo: link` erledigt.
+- `de-northeim` **confirmed**: 29.08.2026, von Benedict auf Instagram (@csdnortheim)
+  bestaetigt.
+- `no-tromso`: Website www.arcticpride.no und Instagram @arcticpride_ ergaenzt. Die Seite
+  zeigt Veranstaltungen ueber die ganze Festivalwoche, aber keinen Paradetag. Benedict
+  uebernimmt den 14.11. von csd-termine.de, der Status bleibt `announced`.
+- `pl-srem`: Weder Benedict noch die Websuche auf Polnisch haben etwas gefunden
+  (Sprachbarriere). Der Status bleibt `announced` auf Basis von csd-termine.de und dem
+  Facebook-Event.
