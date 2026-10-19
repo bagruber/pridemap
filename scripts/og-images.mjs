@@ -20,10 +20,22 @@ import {
 // so the GitHub Pages mirror isn't carrying ~150 MB it never serves.
 const OUT = './og-cache'
 const STORY_OUT = './og-cache/story'
-const TILE_URL = (z, x, y) => `https://basemaps.cartocdn.com/dark_all/${z}/${x}/${y}@2x.png`
+// CARTO's raster basemap started answering every request with an "API KEY
+// REQUIRED" tile — HTTP 200, so nothing errored, the cards just came out
+// stamped. The app has always drawn the vector style instead, which needs no
+// key, so the card draws the same map the app does.
+const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'
 const ZOOM = 9
 const TS = 256                       // CSS px per tile (@2x asset = 512 physical)
-const CONCURRENCY = 4
+// Each page now loads a vector style instead of fetching four raster tiles,
+// so the work is less network and more waiting on one map to settle.
+const CONCURRENCY = 8
+
+// The bundled copy, not a CDN: the build should not depend on one more host.
+// Added with addScriptTag rather than inlined — a 1.3 MB data URI inside
+// setContent pushed single pages past the 30 s timeout.
+const MAPLIBRE_JS = './node_modules/maplibre-gl/dist/maplibre-gl.js'
+const MAPLIBRE_CSS = fs.readFileSync('./node_modules/maplibre-gl/dist/maplibre-gl.css', 'utf8')
 
 const args = process.argv.slice(2)
 const has = f => args.includes(f)
@@ -34,37 +46,12 @@ const STORY = valOf('--story')
 
 import { loadPrides } from './lib/data.mjs'
 
-// Only Prides with a date get a share image; the card is built around one.
-const parades = loadPrides().filter(p => !p.open)
+// Every Pride gets a card, with a date or without. Leaving the ones without
+// one out would mean 638 of 639 pages shipping a broken hero image through
+// the whole off-season.
+const parades = loadPrides()
 const slugs = buildSlugMap(parades)
 
-// ── Web Mercator tile math ───────────────────────────────────────────────────
-function project(lon, lat, z) {
-  const n = 2 ** z
-  const latRad = (lat * Math.PI) / 180
-  return {
-    x: ((lon + 180) / 360) * n,
-    y: ((1 - Math.log(Math.tan(latRad) + 1 / Math.cos(latRad)) / Math.PI) / 2) * n,
-  }
-}
-
-// Tiles covering a W×H CSS-pixel viewport with (lat, lon) placed at
-// (0.5, anchorY) — the anchor must match the pin so it marks the real spot.
-function mosaic(lon, lat, w, h, z, anchorY = 0.5) {
-  const c = project(lon, lat, z)
-  const originX = c.x * TS - w / 2
-  const originY = c.y * TS - h * anchorY
-  const max = 2 ** z
-  const tiles = []
-  for (let tx = Math.floor(originX / TS); tx <= Math.floor((originX + w) / TS); tx++) {
-    for (let ty = Math.floor(originY / TS); ty <= Math.floor((originY + h) / TS); ty++) {
-      if (ty < 0 || ty >= max) continue
-      const wrapped = ((tx % max) + max) % max
-      tiles.push({ src: TILE_URL(z, wrapped, ty), left: tx * TS - originX, top: ty * TS - originY })
-    }
-  }
-  return tiles
-}
 
 // ── Assets ───────────────────────────────────────────────────────────────────
 const fontB64 = kind => fs.readFileSync(
@@ -82,12 +69,14 @@ function template(p, { w, h, story }) {
   const city = cityName(lang, p)
   const country = countryName(lang, p.country)
   const first = isFirstTime(p)
-  const date = formatDate(lang, p.date)
+  // No date yet: say so, and let last year's stand in as the only hint there
+  // is. A guessed date on a card that gets shared is the worst place for one.
+  const date = p.open
+    ? `Termin ${p.year} noch offen`
+    : formatDate(lang, p.date)
+  const sub = p.open && p.lastDate ? `${p.lastYear} war am ${formatDate(lang, p.lastDate)}` : null
   const wasDate = p.movedFrom ? formatDate(lang, p.movedFrom) : null
   const pinY = story ? 0.26 : 0.29           // shared by the map anchor and the pin
-  const tiles = mosaic(p.lon, p.lat, w, h, story ? ZOOM + 1 : ZOOM, pinY)
-  const imgs = tiles.map(t =>
-    `<img class="t" src="${t.src}" style="left:${t.left}px;top:${t.top}px">`).join('')
 
   const S = story
     ? { name: 74, city: 34, date: 30, pad: 64, badge: 17, brand: 24 }
@@ -95,13 +84,14 @@ function template(p, { w, h, story }) {
 
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 ${FONT_CSS}
+${MAPLIBRE_CSS}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:${w}px;height:${h}px;overflow:hidden;background:#0e0e0e;
   font-family:'Sofia Sans',system-ui,sans-serif;color:${TOKENS.text};-webkit-font-smoothing:antialiased}
 .map{position:absolute;inset:0;overflow:hidden;
   /* CARTO's dark basemap is near-black; lift it so it still reads behind the card */
   filter:brightness(1.75) saturate(1.15) contrast(1.05)}
-.t{position:absolute;width:${TS}px;height:${TS}px;display:block}
+.maplibregl-ctrl-attrib,.maplibregl-ctrl-logo{display:none !important}
 .scrim{position:absolute;inset:0;background:
   linear-gradient(to top,rgba(8,8,8,.96) 0%,rgba(8,8,8,.88) ${story ? 34 : 40}%,rgba(8,8,8,.2) ${story ? 58 : 68}%,rgba(8,8,8,0) 100%)}
 .vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,transparent 45%,rgba(0,0,0,.4) 100%)}
@@ -126,6 +116,8 @@ h1{font-size:${S.name}px;line-height:1.05;font-weight:700;letter-spacing:-1px;
   margin-bottom:${story ? 16 : 11}px;text-shadow:0 2px 24px rgba(0,0,0,.7)}
 .where{font-size:${S.city}px;color:#c8c8c8;margin-bottom:${story ? 10 : 6}px}
 .date{font-size:${S.date}px;font-weight:700;color:#fff}
+.date-open{color:#c8c8c8}
+.sub{font-size:${Math.round(S.date * 0.78)}px;color:#9a9a9a;margin-top:${story ? 10 : 5}px}
 .foot{position:absolute;left:${S.pad}px;right:${S.pad}px;bottom:${story ? 120 : 18}px;
   display:flex;justify-content:space-between;align-items:flex-end;
   font-size:${story ? 17 : 12}px;color:${TOKENS.muted}}
@@ -133,7 +125,7 @@ h1{font-size:${S.name}px;line-height:1.05;font-weight:700;letter-spacing:-1px;
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .attr{font-size:${story ? 13 : 10}px;color:#6a6a6a}
 </style></head><body>
-<div class="map">${imgs}</div>
+<div class="map" id="map"></div>
 <div class="vig"></div><div class="scrim"></div>
 <div class="pin"><i></i></div>
 <div class="card">
@@ -142,9 +134,14 @@ h1{font-size:${S.name}px;line-height:1.05;font-weight:700;letter-spacing:-1px;
   ${wasDate ? `<div class="badge badge-moved">↻ ${escapeHtml(T[lang].rescheduled)}</div>` : ''}
   <h1>${escapeHtml(p.name)}</h1>
   <div class="where">${escapeHtml(city)}${p.region ? ` · ${escapeHtml(p.region)}` : ''} · ${escapeHtml(country)}</div>
-  <div class="date">${escapeHtml(date)}${wasDate ? `<s class="was">${escapeHtml(wasDate)}</s>` : ''}</div>
+  <div class="date${p.open ? ' date-open' : ''}">${escapeHtml(date)}${wasDate ? `<s class="was">${escapeHtml(wasDate)}</s>` : ''}</div>
+  ${sub ? `<div class="sub">${escapeHtml(sub)}</div>` : ''}
 </div>
 <div class="foot"><span class="brand">pridemap.net</span><span class="attr">© CARTO · © OpenStreetMap</span></div>
+<script id="mapcfg" type="application/json">${JSON.stringify({
+    style: MAP_STYLE, center: [p.lon, p.lat], zoom: story ? ZOOM + 1 : ZOOM,
+    padBottom: (0.5 - pinY) * 2 * h,
+  })}</script>
 </body></html>`
 }
 
@@ -189,7 +186,7 @@ async function run() {
 
   // The card shows the date, so the date belongs in the cache key — otherwise
   // a Pride that moves keeps last season's picture forever.
-  const stamp = p => path.join(outDir, `.${slugs.get(p.id)}.${p.date}`)
+  const stamp = p => path.join(outDir, `.${slugs.get(p.id)}.${p.date ?? `open-${p.year}`}`)
   const todo = targets.filter(p => {
     if (FORCE || STORY) return true
     return !fs.existsSync(path.join(outDir, `${slugs.get(p.id)}.jpg`)) || !fs.existsSync(stamp(p))
@@ -208,7 +205,12 @@ async function run() {
   }
 
   const size = STORY ? { w: 540, h: 960 } : { w: 600, h: 315 }
-  const browser = await chromium.launch({ executablePath: exe, headless: true })
+  // Without the ANGLE/SwiftShader flags the map canvas stays black in headless
+  const browser = await chromium.launch({
+    executablePath: exe,
+    headless: true,
+    args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'],
+  })
   const ctx = await browser.newContext({
     viewport: { width: size.w, height: size.h },
     deviceScaleFactor: 2,          // → 1200×630 / 1080×1920
@@ -223,10 +225,22 @@ async function run() {
       const slug = slugs.get(p.id)
       try {
         await page.setContent(template(p, { ...size, story: !!STORY }), { waitUntil: 'load' })
-        await page.evaluate(async () => {
-          await document.fonts.ready
-          await Promise.all([...document.images].map(i => i.complete ? null : i.decode().catch(() => {})))
-        })
+        await page.addScriptTag({ path: MAPLIBRE_JS })
+        await page.evaluate(() => new Promise(resolve => {
+          // Put the Pride where the pin is, not in the middle of the frame
+          const cfg = JSON.parse(document.getElementById('mapcfg').textContent)
+          const m = new maplibregl.Map({
+            container: 'map', style: cfg.style, center: cfg.center, zoom: cfg.zoom,
+            interactive: false, attributionControl: false, fadeDuration: 0,
+          })
+          m.on('load', () => {
+            m.setPadding({ top: 0, right: 0, bottom: cfg.padBottom, left: 0 })
+            m.once('idle', resolve)
+          })
+          // A missing tile must not hold the whole build hostage
+          setTimeout(resolve, 20000)
+        }))
+        await page.evaluate(async () => { await document.fonts.ready })
         await page.screenshot({ path: path.join(outDir, `${slug}.jpg`), type: "jpeg", quality: 80 })
         if (!STORY) {
           for (const old of fs.readdirSync(outDir)) {
