@@ -46,12 +46,33 @@ Chromium-Build (der Cache unter `AppData/Local/ms-playwright` passte nicht) —
 Google Chrome. Und `vite preview` antwortet auf `/` mit einem 302 auf
 `/pridemap/`; die Probe muss die Ziel-URL laden.
 
-## Nichts davon ist gepusht
+## Share-Bilder brauchen WebGL und Geduld
 
-Alle Aenderungen vom 26.08.2026 liegen als lokale Commits. Dieses Repo hat
-keinen CI-Workflow, es gibt also nichts, was beim Push umschalten koennte — die
-Commits liegen aber trotzdem nur lokal. Deployed wird hier von Hand ueber
-`pnpm run deploy` (gh-pages) bzw. `deploy:hostinger`.
+`pnpm run og` zeichnet die Karte auf jeder Share-Karte seit dem 19.10.2026 mit
+MapLibre statt mit Raster-Kacheln: CARTOs Raster-Basemap verlangt inzwischen
+einen API-Key und liefert sonst eine Kachel mit "API KEY REQUIRED" — mit
+HTTP 200, es schlaegt also nichts fehl, die Bilder kommen nur gestempelt
+heraus.
+
+Zwei Folgen davon:
+
+- Der Renderer braucht dieselben Flags wie die Screenshot-Skripte
+  (`--use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader`), und
+  er laeuft eins nach dem anderen. Vier parallele WebGL-Kontexte haben sich
+  gegenseitig ausgehungert.
+- Ein voller Lauf (639 Bilder) dauert rund 25 bis 30 Minuten. Das ist normal,
+  nicht haengengeblieben. Im Alltag ist der Lauf inkrementell und betrifft nur
+  neue oder verschobene Termine.
+
+Sollte jemand doch einen CARTO-Key besorgen: der Raster-Weg war schneller, aber
+das Vektor-Ergebnis ist schaerfer.
+
+## Deployt wird von Hand
+
+Dieses Repo hat keinen CI-Workflow. Gebaut und veroeffentlicht wird ueber
+`pnpm run deploy` (GitHub-Pages-Spiegel, nur SPA) und `pnpm run deploy:hostinger`
+(kanonische Seite mit statischen Seiten, Weiterleitungen und Share-Bildern).
+Der Stand vom 19.10.2026 ist auf beiden Branches und auf `main`.
 
 ## Beim naechsten Paket-Update
 
