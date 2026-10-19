@@ -22,7 +22,7 @@ export default function MonthFilter({ filters, onChange, toggleMonth }) {
             className={`toggle-btn ${filters.months.includes(m) ? 'active' : ''}`}
             onClick={() => toggleMonth(m)}
           >
-            {new Date(2026, m - 1, 1).toLocaleDateString(locale, { month: 'short' }).replace(/\.$/, '')}
+            {new Date(2000, m - 1, 1).toLocaleDateString(locale, { month: 'short' }).replace(/\.$/, '')}
           </button>
         ))}
       </div>

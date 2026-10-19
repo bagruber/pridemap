@@ -1,4 +1,4 @@
-import { TIME_BUCKETS, PAST_COLOR } from '../utils/timeColors.js'
+import { TIME_BUCKETS, PAST_COLOR, OPEN_COLOR } from '../utils/timeColors.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
 
@@ -22,6 +22,13 @@ export default function Legend() {
       <div className="legend-item">
         <div className="legend-dot" style={{ background: PAST_COLOR }} />
         <span>{t('legendPast', lang)}</span>
+      </div>
+      <div className="legend-item">
+        <div
+          className="legend-dot"
+          style={{ background: 'transparent', boxShadow: `inset 0 0 0 1.5px ${OPEN_COLOR}` }}
+        />
+        <span>{t('dateOpen', lang)}</span>
       </div>
 
       <hr className="legend-divider" />

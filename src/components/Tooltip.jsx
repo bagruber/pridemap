@@ -1,17 +1,23 @@
 import { flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
-import { t, cityName, labelForDaysLong, formatDate } from '../utils/i18n.js'
+import { t, tf, cityName, labelForDaysLong, formatDate } from '../utils/i18n.js'
 
-export default function Tooltip({ x, y, name, city, cityDe, cityEn, country, date, daysUntil, color }) {
+export default function Tooltip({ x, y, name, city, cityDe, cityEn, country, date, daysUntil, open, lastDate, color }) {
   const { lang } = useLang()
-  const formatted = formatDate(date, lang, {
-    day: 'numeric', month: 'short', year: 'numeric',
-  })
   const isPast = daysUntil < 0
   const displayCity = cityName({ city, cityDe, cityEn }, lang)
 
-  const daysText = isPast
-    ? `${Math.abs(daysUntil)} ${t('daysAgo', lang)}`
+  const formatted = open
+    ? (lastDate
+        ? tf('lastHeld', lang, {
+            year: lastDate.slice(0, 4),
+            date: formatDate(lastDate, lang, { day: 'numeric', month: 'short' }),
+          })
+        : t('dateOpen', lang))
+    : formatDate(date, lang, { day: 'numeric', month: 'short', year: 'numeric' })
+
+  const daysText = open ? t('dateOpen', lang)
+    : isPast ? `${Math.abs(daysUntil)} ${t('daysAgo', lang)}`
     : daysUntil === 0 ? t('today', lang)
     : daysUntil === 1 ? t('tomorrow', lang)
     : `in ${labelForDaysLong(daysUntil, lang, { dative: true })}`

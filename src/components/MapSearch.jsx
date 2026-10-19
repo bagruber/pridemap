@@ -3,7 +3,7 @@ import { Search, X } from 'lucide-react'
 import { flag } from '../utils/countryInfo.js'
 import { searchParades } from '../utils/search.js'
 import { useLang } from '../contexts/LangContext.jsx'
-import { t, cityName, formatDate } from '../utils/i18n.js'
+import { t, tf, cityName, formatDate } from '../utils/i18n.js'
 
 const MAX_RESULTS = 8
 
@@ -89,8 +89,15 @@ export default function MapSearch({ parades, onPick }) {
                 {cityName(p, lang)}
                 {p.region && <span className="map-search-region"> · {p.region}</span>}
               </span>
-              <span className="map-search-date">
-                {formatDate(p.date, lang, { day: 'numeric', month: 'short' })}
+              <span className={`map-search-date${p.open ? ' is-open' : ''}`}>
+                {p.open
+                  ? (p.lastDate
+                      ? tf('lastHeld', lang, {
+                          year: p.lastDate.slice(0, 4),
+                          date: formatDate(p.lastDate, lang, { day: 'numeric', month: 'short' }),
+                        })
+                      : t('dateOpen', lang))
+                  : formatDate(p.date, lang, { day: 'numeric', month: 'short' })}
               </span>
             </button>
           ))}

@@ -3,8 +3,10 @@
 import { COUNTRY_NAMES } from '../../src/utils/countryInfo.js'
 import { isFirstTime } from '../../src/utils/firstTime.js'
 import { localPride, displayAka } from '../../src/utils/prideTerms.js'
+import { slugify } from '../../src/utils/slug.js'
+import { season } from '../../src/utils/season.js'
 
-export { COUNTRY_NAMES, isFirstTime, localPride, displayAka }
+export { COUNTRY_NAMES, isFirstTime, localPride, displayAka, slugify }
 
 // "a, b oder c" — the last separator is the only part that differs
 export const joinOr = (lang, arr) => arr.length < 2
@@ -13,7 +15,9 @@ export const joinOr = (lang, arr) => arr.length < 2
 
 export const ORIGIN = 'https://pridemap.net'
 export const LANGS = ['de', 'en']
-export const YEAR = 2026
+// The season the static pages are about. An October build is what turns the
+// site over to the next year.
+export const YEAR = season()
 
 // ── Design tokens ────────────────────────────────────────────────────────────
 // Single source for everything rendered outside the app (static pages, share
@@ -37,33 +41,20 @@ export const PRIDE_STOPS = ['#E40303', '#FF8C00', '#FFED00', '#008026', '#004DFF
 export const PRIDE_GRADIENT = `linear-gradient(90deg, ${PRIDE_STOPS.join(', ')})`
 
 // ── Slugs ────────────────────────────────────────────────────────────────────
-const TRANSLIT = {
-  ä: 'ae', ö: 'oe', ü: 'ue', ß: 'ss',
-  å: 'a', ø: 'o', æ: 'ae', ð: 'd', þ: 'th',
-  ł: 'l', đ: 'd', ħ: 'h', ı: 'i',
-}
+// slugify lives in src/utils so the app can build the same ICS file names.
 
-export function slugify(s) {
-  return String(s ?? '')
-    .toLowerCase()
-    .replace(/[äöüßåøæðþłđħı]/g, m => TRANSLIT[m] ?? m)
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-}
-
-// Stable, unique slug per event. Prefers the event name; falls back to the
-// city, and disambiguates collisions with the date.
-export function buildSlugMap(parades) {
-  const bySlug = new Map()
+// A permanent slug per Pride: the name carries no year any more, so the URL
+// does not either. Collisions fall back to the city and then to the id, which
+// is unique by construction.
+export function buildSlugMap(prides) {
+  const taken = new Set()
   const out = new Map()
-  for (const p of parades) {
-    const base = slugify(p.name || `${p.city} pride ${YEAR}`) || slugify(p.id)
+  for (const p of prides) {
+    const base = slugify(p.name) || slugify(`${p.city} pride`) || slugify(p.id)
     let slug = base
-    if (bySlug.has(slug)) slug = `${base}-${p.date.slice(5)}`      // +MM-DD
-    if (bySlug.has(slug)) slug = `${base}-${slugify(p.id)}`         // last resort
-    bySlug.set(slug, p)
+    if (taken.has(slug)) slug = `${base}-${slugify(p.city)}`
+    if (taken.has(slug)) slug = slugify(p.id)
+    taken.add(slug)
     out.set(p.id, slug)
   }
   return out
@@ -80,19 +71,20 @@ export const appLink     = id => `${ORIGIN}/#selected=${encodeURIComponent(id)}`
 export const ogImagePath = slug => `/og/${slug}.jpg`
 
 // Hub slugs are localized — that's where the search keywords live
+// No year in the path: a hub is about the country, not about one season. The
+// season lives in the title, the h1 and the description, where it can change
+// without breaking a link.
 export function countryHubSlug(lang, code) {
   const en = COUNTRY_NAMES[code] ?? code
   const de = COUNTRY_NAMES_DE[code] ?? en
   return lang === 'de'
-    ? `csd-pride-${slugify(de)}-${YEAR}`
-    : `pride-${slugify(en)}-${YEAR}`
+    ? `csd-pride-${slugify(de)}`
+    : `pride-${slugify(en)}`
 }
 
 export function monthHubSlug(lang, month) {
   const name = slugify(MONTHS[lang][month - 1])
-  return lang === 'de'
-    ? `csd-termine-${name}-${YEAR}`
-    : `pride-${name}-${YEAR}`
+  return lang === 'de' ? `csd-termine-${name}` : `pride-${name}`
 }
 
 export const hubPath = (lang, slug) => `/${lang}/${slug}/`
@@ -148,8 +140,8 @@ export const SIZE_LABEL = {
 
 export const T = {
   de: {
-    siteName: 'Pride Map 2026',
-    tagline: 'Alle Pride-Paraden & CSD-Termine in Europa 2026',
+    siteName: `Pride Map ${YEAR}`,
+    tagline: `Alle Pride-Paraden & CSD-Termine in Europa ${YEAR}`,
     dateLabel: 'Datum',
     whereLabel: 'Ort',
     sizeLabel: 'Größe',
@@ -168,15 +160,20 @@ export const T = {
     sameMonth: m => `Weitere CSD-Termine im ${m} ${YEAR}`,
     allEvents: 'Alle Termine auf der Karte',
     eventsIn: n => `${n} Termine`,
-    disclaimer: 'Angaben ohne Gewähr — Termine können sich ändern. Bitte prüfe vor der Anreise die offizielle Seite der Veranstaltenden.',
-    aboutMap: 'Pride Map 2026 ist eine interaktive Karte aller Pride-Paraden und CSD-Termine in Europa — filterbar nach Land, Monat und Größe.',
+    disclaimer: 'Jeder Termin nennt seine Quelle und das Datum der letzten Prüfung. Stimmt etwas nicht, hilft „Fehler melden“ direkt am Pride.',
+    aboutMap: `Pride Map ${YEAR} ist eine interaktive Karte aller Pride-Paraden und CSD-Termine in Europa — filterbar nach Land, Monat und Größe.`,
+    dateOpen: y => `Termin ${y} noch nicht bekannt`,
+    dateOpenShort: 'offen',
+    lastHeld: (y, d) => `${y} war am ${d}`,
+    earlierEditions: 'Frühere Ausgaben',
+    openSection: 'Termin noch offen',
     visitorsSuffix: 'Besucher',
     sourceAuthorities: 'laut Behörden',
     sourceOrganizers: 'laut Veranstaltern',
   },
   en: {
-    siteName: 'Pride Map 2026',
-    tagline: 'Every Pride parade across Europe in 2026',
+    siteName: `Pride Map ${YEAR}`,
+    tagline: `Every Pride parade across Europe in ${YEAR}`,
     dateLabel: 'Date',
     whereLabel: 'Location',
     sizeLabel: 'Size',
@@ -195,8 +192,13 @@ export const T = {
     sameMonth: m => `More Pride dates in ${m} ${YEAR}`,
     allEvents: 'All dates on the map',
     eventsIn: n => `${n} dates`,
-    disclaimer: 'All information without guarantee — dates can change. Please check the organisers’ official page before travelling.',
-    aboutMap: 'Pride Map 2026 is an interactive map of every Pride parade across Europe — filterable by country, month and size.',
+    disclaimer: 'Every date names its source and when it was last checked. If something is wrong, use “Report an error” on the Pride itself.',
+    aboutMap: `Pride Map ${YEAR} is an interactive map of every Pride parade across Europe — filterable by country, month and size.`,
+    dateOpen: y => `No ${y} date yet`,
+    dateOpenShort: 'open',
+    lastHeld: (y, d) => `${y} was on ${d}`,
+    earlierEditions: 'Earlier editions',
+    openSection: 'Date still open',
     visitorsSuffix: 'visitors',
     sourceAuthorities: 'according to authorities',
     sourceOrganizers: 'according to organizers',

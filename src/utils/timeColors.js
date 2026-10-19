@@ -18,15 +18,12 @@ export const TIME_BUCKETS = [
 // events still contribute a hint of color without competing with upcoming ones
 export const PAST_COLOR = import.meta.env.VITE_COLORFUL_PAST === 'true' ? '#8253a2' : '#4e3d61'
 
-export function daysUntil(dateStr, from = new Date()) {
-  const target = new Date(dateStr)
-  target.setHours(0, 0, 0, 0)
-  const today = new Date(from)
-  today.setHours(0, 0, 0, 0)
-  return Math.round((target - today) / 86400000)
-}
+// A date nobody has announced yet. Drawn as an unfilled ring, so this is the
+// stroke colour, never a fill.
+export const OPEN_COLOR = '#9a9a9a'
 
 export function colorForDays(days) {
+  if (days == null) return OPEN_COLOR
   if (days < 0) return PAST_COLOR
   for (const b of TIME_BUCKETS) {
     if (days <= b.max) return b.color

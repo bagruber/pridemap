@@ -4,7 +4,8 @@ import { colorForDays, indexColor } from '../utils/timeColors.js'
 import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
 import { isFirstTime } from '../utils/firstTime.js'
 import { useLang } from '../contexts/LangContext.jsx'
-import { t, cityName, indexLabelL10n, labelForDaysLong, formatDate } from '../utils/i18n.js'
+import { t, tf, cityName, indexLabelL10n, labelForDaysLong, formatDate } from '../utils/i18n.js'
+import { slugify } from '../utils/slug.js'
 
 function formatBucket(n) {
   if (n >= 1000000) return `≥${(n / 1000000).toLocaleString('en')}M`
@@ -32,11 +33,11 @@ function downloadICS(parade) {
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//PrideMap 2026//EN',
+    'PRODID:-//pridemap//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
-    `UID:${parade.id}@pridemap.net`,
+    `UID:${parade.id}-${yr}@pridemap.net`,
     `DTSTAMP:${dtstamp}`,
     `DTSTART;VALUE=DATE:${start}`,
     `DTEND;VALUE=DATE:${end}`,
@@ -49,7 +50,7 @@ function downloadICS(parade) {
 
   const a = Object.assign(document.createElement('a'), {
     href: URL.createObjectURL(new Blob([lines], { type: 'text/calendar;charset=utf-8' })),
-    download: `${parade.city.toLowerCase().replace(/\s+/g, '-')}-pride-2026.ics`,
+    download: `${slugify(parade.name || parade.city)}-${yr}.ics`,
   })
   a.click()
   URL.revokeObjectURL(a.href)
@@ -57,21 +58,30 @@ function downloadICS(parade) {
 
 export default function DetailPanel({ parade, onClose, onShowOnMap }) {
   const { lang } = useLang()
-  const { name, country, date, size, daysUntil, queerIndex, website, instagram, firstYear, movedFrom } = parade
+  const { name, country, date, size, daysUntil, queerIndex, website, instagram,
+    firstYear, movedFrom, open, lastDate, year, status, source } = parade
   const isPast = daysUntil < 0
   const color = colorForDays(daysUntil)
 
-  const formatted = formatDate(date, lang, {
-    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
-  })
+  // An open date shows last year's instead — never a guess at this year's.
+  const formatted = open
+    ? (lastDate
+        ? tf('lastHeld', lang, {
+            year: lastDate.slice(0, 4),
+            date: formatDate(lastDate, lang, { weekday: 'short', day: 'numeric', month: 'long' }),
+          })
+        : '')
+    : formatDate(date, lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
 
-  const countdownText = isPast
-    ? `${Math.abs(daysUntil)} ${t('daysAgo', lang)}`
-    : daysUntil === 0 ? t('today', lang)
-    : daysUntil === 1 ? t('tomorrow', lang)
-    : lang === 'de'
-      ? `noch ${labelForDaysLong(daysUntil, 'de')}`
-      : `${labelForDaysLong(daysUntil, 'en')} ${t('away', lang)}`
+  const countdownText = open
+    ? tf('dateOpenYear', lang, { year })
+    : isPast
+      ? `${Math.abs(daysUntil)} ${t('daysAgo', lang)}`
+      : daysUntil === 0 ? t('today', lang)
+      : daysUntil === 1 ? t('tomorrow', lang)
+      : lang === 'de'
+        ? `noch ${labelForDaysLong(daysUntil, 'de')}`
+        : `${labelForDaysLong(daysUntil, 'en')} ${t('away', lang)}`
 
   const sizeEventKey = { small: 'smallEvent', medium: 'mediumEvent', large: 'largeEvent' }[size]
   const sizeLabel = sizeEventKey ? t(sizeEventKey, lang) : size
@@ -86,7 +96,7 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
       <div className="detail-header">
         <div>
           {firstTime && (
-            <div className="premiere-badge" title={t('firstTimeNote', lang)}>
+            <div className="premiere-badge" title={tf('firstTimeNote', lang, { year })}>
               <Sparkles size={11} aria-hidden="true" />
               {t('firstTime', lang)}
             </div>
@@ -105,7 +115,7 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
         </button>
       </div>
 
-      <div className={`detail-countdown ${isPast ? 'past' : ''}`} style={{ color: isPast ? undefined : color }}>
+      <div className={`detail-countdown ${isPast || open ? 'past' : ''}`} style={{ color: isPast || open ? undefined : color }}>
         {countdownText}
       </div>
       <div className="detail-date">{formatted}</div>
@@ -115,7 +125,7 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
         </div>
       )}
       <div className="detail-btn-row">
-        {!isPast && (
+        {!isPast && !open && (
           <button className="cal-btn" onClick={() => downloadICS(parade)}>{t('addToCalendar', lang)}</button>
         )}
         {onShowOnMap && (
@@ -175,6 +185,17 @@ export default function DetailPanel({ parade, onClose, onShowOnMap }) {
               style={{ transform: `scaleX(${queerIndex / 100})`, background: indexColor(queerIndex) }}
             />
           </div>
+        </div>
+      )}
+
+      {source?.url && (
+        <div className="detail-source">
+          {t('sourceLabel', lang)}:{' '}
+          <a href={source.url} target="_blank" rel="noopener noreferrer">
+            {source.url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}
+          </a>
+          {source.checked && ` · ${tf('checkedOn', lang, { date: formatDate(source.checked, lang) })}`}
+          {status === 'announced' && ` · ${t('notConfirmed', lang)}`}
         </div>
       )}
 

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { filterParades } from './filter.js'
-import { daysUntil } from './timeColors.js'
+import { daysUntil } from './days.js'
 
 const DEFAULTS = { countries: [], sizes: [], months: [], timeframe: 'all' }
 
@@ -118,5 +118,31 @@ describe('daysUntil', () => {
   it('is negative for past dates and zero for today', () => {
     expect(daysUntil('2026-06-13', day('2026-06-13'))).toBe(0)
     expect(daysUntil('2026-06-12', day('2026-06-13'))).toBe(-1)
+  })
+})
+
+describe('open dates', () => {
+  const today = day(DATES.fri)
+  const open = { id: 'open', city: 'Open', country: 'DE', size: 'medium', date: null, daysUntil: null }
+
+  it('count as upcoming', () => {
+    const got = filterParades([...fixture(today), open], { ...DEFAULTS, timeframe: 'upcoming' }, today)
+    expect(ids(got)).toContain('open')
+  })
+
+  it('are not past', () => {
+    const got = filterParades([...fixture(today), open], { ...DEFAULTS, timeframe: 'past' }, today)
+    expect(ids(got)).not.toContain('open')
+  })
+
+  it('belong to no month and to no weekend', () => {
+    for (const f of [{ months: [6] }, { timeframe: 'weekend' }, { timeframe: 'next-weekend' }]) {
+      expect(ids(filterParades([open], { ...DEFAULTS, ...f }, today))).toEqual([])
+    }
+  })
+
+  it('still answer to country and size', () => {
+    expect(filterParades([open], { ...DEFAULTS, countries: ['DE'] }, today)).toHaveLength(1)
+    expect(filterParades([open], { ...DEFAULTS, sizes: ['large'] }, today)).toHaveLength(0)
   })
 })

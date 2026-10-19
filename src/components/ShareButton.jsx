@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { season } from '../utils/season.js'
 import { Share2 } from 'lucide-react'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t } from '../utils/i18n.js'
@@ -10,7 +11,7 @@ export default function ShareButton({ className = '' }) {
   const handleShare = async () => {
     const url = window.location.href
     if (navigator.share) {
-      try { await navigator.share({ title: 'Pride Map 2026', url }); return } catch {}
+      try { await navigator.share({ title: `Pride Map ${season()}`, url }); return } catch {}
     }
     try {
       await navigator.clipboard.writeText(url)

@@ -1,5 +1,5 @@
 import { useLang } from '../contexts/LangContext.jsx'
-import { t } from '../utils/i18n.js'
+import { t, tf } from '../utils/i18n.js'
 import ColoredTitle from './ColoredTitle.jsx'
 import ShareButton from './ShareButton.jsx'
 import { TIMEFRAMES, WEEKENDS } from '../utils/filterConstants.js'
@@ -13,7 +13,7 @@ import RegionToggle from './filters/RegionToggle.jsx'
 import ClusterToggle from './filters/ClusterToggle.jsx'
 
 export default function FilterSidebar({
-  filters, onChange, allCountries, totalCount,
+  filters, onChange, allCountries, totalCount, openCount, today,
   view, onViewChange,
   clusteringEnabled, onClusteringChange,
   viewMode, onViewModeChange,
@@ -26,14 +26,15 @@ export default function FilterSidebar({
     <aside className="filter-sidebar" aria-label="Filters">
       <div className="sidebar-header">
         <div className="sidebar-title-row">
-          <ColoredTitle />
+          <ColoredTitle today={today} />
           <LangToggle />
         </div>
         <RegionToggle view={view} onViewChange={onViewChange} />
         <div className="sidebar-mode-row">
           <ViewModeToggle viewMode={viewMode} onViewModeChange={onViewModeChange} />
           <div className="sidebar-count">
-            {t('showingEvents', lang)} <strong>{totalCount}</strong> {t('events', lang)}
+            {tf(totalCount - openCount === 1 ? 'countDatesOne' : 'countDates', lang,
+            { dated: totalCount - openCount, open: openCount })}
           </div>
         </div>
       </div>

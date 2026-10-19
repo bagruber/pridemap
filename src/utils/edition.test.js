@@ -25,13 +25,21 @@ describe('pickEdition', () => {
     expect(pickEdition(p, day('2026-07-25')).year).toBe(2026)
   })
 
-  it('falls back to the last past edition when nothing is ahead', () => {
-    expect(pickEdition(pride(E(2026, '2026-07-25')), day('2026-10-19')).year).toBe(2026)
+  it('is open when last season ran but this one has no date yet', () => {
+    const got = pickEdition(pride(E(2026, '2026-07-25')), day('2026-10-19'))
+    expect(got).toMatchObject({ year: 2027, date: null, status: 'open', lastDate: '2026-07-25' })
   })
 
-  it('ignores editions without a date', () => {
-    const open = pride(E(2026, '2026-07-25'), { year: 2027, date: null, status: 'announced' })
-    expect(pickEdition(open, day('2026-10-19')).year).toBe(2026)
+  it('falls back to the last edition once the series has lapsed', () => {
+    // Season on 19.10.2026 is 2027; a Pride last held in 2024 is not "open",
+    // it is over.
+    const got = pickEdition(pride(E(2024, '2024-07-27')), day('2026-10-19'))
+    expect(got).toMatchObject({ year: 2024, date: '2024-07-27' })
+  })
+
+  it('ignores editions without a date when a dated one is ahead', () => {
+    const open = pride({ year: 2027, date: null, status: 'announced' }, E(2026, '2026-12-05'))
+    expect(pickEdition(open, day('2026-10-19')).date).toBe('2026-12-05')
   })
 
   it('is null for a Pride with no dated edition at all', () => {
@@ -50,6 +58,14 @@ describe('currentEdition', () => {
   it('counts days backwards for a past edition', () => {
     const got = currentEdition(pride(E(2026, '2026-07-25')), day('2026-07-26'))
     expect(got.daysUntil).toBe(-1)
+    expect(got.open).toBe(false)
+  })
+
+  it('leaves an open edition without a countdown', () => {
+    const got = currentEdition(pride(E(2026, '2026-07-25')), day('2026-10-19'))
+    expect(got.open).toBe(true)
+    expect(got.daysUntil).toBe(null)
+    expect(got.lastDate).toBe('2026-07-25')
   })
 })
 

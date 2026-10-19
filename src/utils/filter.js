@@ -25,14 +25,18 @@ export function filterParades(parades, filters, today) {
   return parades.filter(p => {
     if (filters.countries.length > 0 && !filters.countries.includes(p.country)) return false
     if (filters.sizes.length > 0 && !filters.sizes.includes(p.size)) return false
-    if (filters.months.length > 0 && !filters.months.includes(Number(p.date.slice(5, 7)))) return false
-    if (filters.timeframe === 'upcoming' && p.daysUntil < 0) return false
-    if (filters.timeframe === 'past' && p.daysUntil >= 0) return false
+    // A Pride whose date is still open belongs to no month and to no weekend,
+    // but it is very much upcoming.
+    if (filters.months.length > 0 && (!p.date || !filters.months.includes(Number(p.date.slice(5, 7))))) return false
+    if (filters.timeframe === 'upcoming' && p.daysUntil != null && p.daysUntil < 0) return false
+    if (filters.timeframe === 'past' && (p.daysUntil == null || p.daysUntil >= 0)) return false
     if (filters.timeframe === 'weekend') {
+      if (!p.date) return false
       const d = new Date(p.date); d.setHours(0, 0, 0, 0)
       if (d < weekendSat || d > weekendSun) return false
     }
     if (filters.timeframe === 'next-weekend') {
+      if (!p.date) return false
       const d = new Date(p.date); d.setHours(0, 0, 0, 0)
       if (d < nextWeekendSat || d > nextWeekendSun) return false
     }

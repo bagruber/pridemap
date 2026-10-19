@@ -32,9 +32,10 @@ const FORCE = has('--force')
 const ONLY = valOf('--only')
 const STORY = valOf('--story')
 
-import { loadEvents } from './lib/data.mjs'
+import { loadPrides } from './lib/data.mjs'
 
-const parades = loadEvents()
+// Only Prides with a date get a share image; the card is built around one.
+const parades = loadPrides().filter(p => !p.open)
 const slugs = buildSlugMap(parades)
 
 // ── Web Mercator tile math ───────────────────────────────────────────────────
@@ -186,9 +187,12 @@ async function run() {
   const outDir = STORY ? STORY_OUT : OUT
   fs.mkdirSync(outDir, { recursive: true })
 
+  // The card shows the date, so the date belongs in the cache key — otherwise
+  // a Pride that moves keeps last season's picture forever.
+  const stamp = p => path.join(outDir, `.${slugs.get(p.id)}.${p.date}`)
   const todo = targets.filter(p => {
     if (FORCE || STORY) return true
-    return !fs.existsSync(path.join(outDir, `${slugs.get(p.id)}.jpg`))
+    return !fs.existsSync(path.join(outDir, `${slugs.get(p.id)}.jpg`)) || !fs.existsSync(stamp(p))
   })
 
   if (!todo.length) {
@@ -224,6 +228,12 @@ async function run() {
           await Promise.all([...document.images].map(i => i.complete ? null : i.decode().catch(() => {})))
         })
         await page.screenshot({ path: path.join(outDir, `${slug}.jpg`), type: "jpeg", quality: 80 })
+        if (!STORY) {
+          for (const old of fs.readdirSync(outDir)) {
+            if (old.startsWith(`.${slug}.`)) fs.unlinkSync(path.join(outDir, old))
+          }
+          fs.writeFileSync(stamp(p), '')
+        }
       } catch (err) {
         console.warn(`  ! ${slug}: ${err.message}`)
       }

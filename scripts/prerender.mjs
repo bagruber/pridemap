@@ -8,15 +8,15 @@ import path from 'path'
 import {
   ORIGIN, LANGS, YEAR, buildSlugMap, eventPath, eventUrl, absolute, appLink,
   ogImagePath, countryHubSlug, monthHubSlug, hubPath, MONTHS, countryName,
-  TOKENS, PRIDE_GRADIENT,
+  TOKENS, PRIDE_GRADIENT, slugify,
   cityName, formatDate, SIZE_LABEL, T, escapeHtml, isFirstTime,
   localPride, displayAka, joinOr,
 } from './lib/pages.mjs'
 
 const DIST = './dist'
-import { loadEvents, newestAttendance } from './lib/data.mjs'
+import { loadPrides, newestAttendance } from './lib/data.mjs'
 
-const parades = loadEvents()
+const parades = loadPrides()
 const slugs = buildSlugMap(parades)
 
 const write = (rel, html) => {
@@ -109,7 +109,7 @@ function shell({ lang, title, description, canonical, alternates, image, jsonld,
   <link rel="canonical" href="${canonical}">
   ${alt}
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Pride Map 2026">
+  <meta property="og:site_name" content="Pride Map ${YEAR}">
   <meta property="og:locale" content="${lang === 'de' ? 'de_DE' : 'en_US'}">
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
@@ -157,7 +157,7 @@ const rowsFor = (lang, list) => list.map(p => {
   const first = isFirstTime(p)
   return `        <li><a href="${eventPath(lang, s)}">
           <span class="c">${escapeHtml(cityName(lang, p))}${first ? ` <span class="pill">${escapeHtml(T[lang].firstEdition)}</span>` : ''}${p.movedFrom ? ` <span class="pill pill-moved">${escapeHtml(T[lang].rescheduled)}</span>` : ''}${p.region ? ` <span class="r">${escapeHtml(p.region)}</span>` : ''}</span>
-          <span class="d">${escapeHtml(formatDate(lang, p.date, { weekday: false }))}</span>
+          <span class="d${p.open ? ' d-open' : ''}">${p.open ? escapeHtml(T[lang].dateOpenShort) : escapeHtml(formatDate(lang, p.date, { weekday: false }))}</span>
         </a></li>`
 }).join('\n')
 
@@ -168,7 +168,8 @@ function eventPage(p, lang) {
   const city = cityName(lang, p)
   const country = countryName(lang, p.country)
   const first = isFirstTime(p)
-  const dateLong = formatDate(lang, p.date)
+  const dateLong = p.open ? null : formatDate(lang, p.date)
+  const lastLong = p.lastDate ? formatDate(lang, p.lastDate) : null
   const movedLong = p.movedFrom ? formatDate(lang, p.movedFrom) : null
   // The badge and the meta description get the weekday-less form: both are
   // length-constrained, and the full date already sits in the definition list.
@@ -184,14 +185,18 @@ function eventPage(p, lang) {
   const title = lang === 'de'
     ? `${p.name} – Termin, Ort & Infos | Pride Map`
     : `${p.name} – Date, Location & Info | Pride Map`
-  const description = lang === 'de'
-    ? `${p.name} findet am ${dateLong} in ${city}${p.region ? ` (${p.region})` : ''}, ${country} statt.${movedShort ? ` ${t.movedFrom(movedShort)}.` : ''}${first ? ' Premiere – der erste CSD in dieser Stadt.' : ''} Termin, Karte und alle Infos.`
-    : `${p.name} takes place on ${dateLong} in ${city}${p.region ? ` (${p.region})` : ''}, ${country}.${movedShort ? ` ${t.movedFrom(movedShort)}.` : ''}${first ? ' First edition – this city’s debut Pride.' : ''} Date, map and all the details.`
+  const where = `${city}${p.region ? ` (${p.region})` : ''}, ${country}`
+  const description = p.open
+    ? (lang === 'de'
+      ? `${p.name} in ${where}. Der Termin ${p.year} steht noch nicht fest.${lastLong ? ` ${p.lastYear} war es der ${lastLong}.` : ''} Sobald er bekannt ist, steht er hier.`
+      : `${p.name} in ${where}. The ${p.year} date is not announced yet.${lastLong ? ` In ${p.lastYear} it was ${lastLong}.` : ''} It will appear here as soon as it is.`)
+    : (lang === 'de'
+      ? `${p.name} findet am ${dateLong} in ${where} statt.${movedShort ? ` ${t.movedFrom(movedShort)}.` : ''}${first ? ' Premiere – der erste CSD in dieser Stadt.' : ''} Termin, Karte und alle Infos.`
+      : `${p.name} takes place on ${dateLong} in ${where}.${movedShort ? ` ${t.movedFrom(movedShort)}.` : ''}${first ? ' First edition – this city’s debut Pride.' : ''} Date, map and all the details.`)
 
-  const jsonld = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
+  // schema.org Event needs a startDate. A Pride whose date is open gets only
+  // the breadcrumb — an invented date would be worse than none.
+  const eventNode = p.open ? null : {
         '@type': 'Event',
         name: p.name,
         startDate: p.date,
@@ -222,7 +227,12 @@ function eventPage(p, lang) {
             : {}),
         },
         ...(p.website ? { organizer: { '@type': 'Organization', name: p.name, url: p.website } } : {}),
-      },
+  }
+
+  const jsonld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      ...(eventNode ? [eventNode] : []),
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
@@ -234,16 +244,19 @@ function eventPage(p, lang) {
     ],
   }
 
+  // Dated neighbours first; a list of "date unknown" helps nobody browse
   const sameCountry = parades
-    .filter(x => x.country === p.country && x.id !== p.id)
+    .filter(x => x.country === p.country && x.id !== p.id && !x.open)
     .sort((a, b) => a.date.localeCompare(b.date)).slice(0, 10)
-  const month = Number(p.date.slice(5, 7))
-  const sameMonth = parades
-    .filter(x => Number(x.date.slice(5, 7)) === month && x.country !== p.country)
+  const month = p.open ? null : Number(p.date.slice(5, 7))
+  const sameMonth = month == null ? [] : parades
+    .filter(x => !x.open && Number(x.date.slice(5, 7)) === month && x.country !== p.country)
     .sort((a, b) => a.date.localeCompare(b.date)).slice(0, 10)
 
   const rows = []
-  rows.push(`<dt>${escapeHtml(t.dateLabel)}</dt><dd>${escapeHtml(dateLong)}${movedLong ? `<span class="sub"> · <s>${escapeHtml(movedLong)}</s></span>` : ''}</dd>`)
+  rows.push(p.open
+    ? `<dt>${escapeHtml(t.dateLabel)}</dt><dd>${escapeHtml(t.dateOpen(p.year))}${lastLong ? `<span class="sub"> · ${escapeHtml(t.lastHeld(p.lastYear, lastLong))}</span>` : ''}</dd>`
+    : `<dt>${escapeHtml(t.dateLabel)}</dt><dd>${escapeHtml(dateLong)}${movedLong ? `<span class="sub"> · <s>${escapeHtml(movedLong)}</s></span>` : ''}</dd>`)
   rows.push(`<dt>${escapeHtml(t.whereLabel)}</dt><dd>${escapeHtml(city)}${p.region ? `, ${escapeHtml(p.region)}` : ''}<span class="sub"> · ${escapeHtml(country)}</span></dd>`)
   rows.push(`<dt>${escapeHtml(t.sizeLabel)}</dt><dd>${escapeHtml(SIZE_LABEL[lang][p.size] ?? p.size)}</dd>`)
   if (att) {
@@ -255,6 +268,13 @@ function eventPage(p, lang) {
     const col = p.queerIndex >= 70 ? '#34C759' : p.queerIndex >= 50 ? '#FFD700' : p.queerIndex >= 30 ? '#FF9500' : '#FF2D78'
     rows.push(`<dt>${escapeHtml(t.ilga)}</dt><dd>${p.queerIndex}%<div class="bar"><i style="width:${p.queerIndex}%;background:${col}"></i></div></dd>`)
   }
+
+  // Everything this Pride has done before, newest first — the reason it has a
+  // permanent page at all.
+  const earlier = (p.editions ?? [])
+    .filter(e => e.date && e.date !== p.date)
+    .sort((a, b) => b.date.localeCompare(a.date))
+  const attByYear = Object.fromEntries((p.attendance ?? []).map(a => [a.year, a]))
 
   const btns = [`<a class="btn btn-primary" href="${appLink(p.id)}">${escapeHtml(t.openOnMap)}</a>`]
   if (p.website) btns.push(`<a class="btn" href="${escapeHtml(p.website)}" target="_blank" rel="noopener">${escapeHtml(t.officialSite)}</a>`)
@@ -270,6 +290,12 @@ function eventPage(p, lang) {
       ${aka.length ? `<p class="aka">${escapeHtml(t.alsoCalled(joinOr(lang, aka), country))}</p>` : ''}
       <dl>${rows.join('')}</dl>
       <div class="btns">${btns.join('')}</div>
+      ${earlier.length ? `<section><h2>${escapeHtml(t.earlierEditions)}</h2><ul class="list">
+${earlier.map(e => {
+  const a = attByYear[e.year]
+  return `        <li><span class="c">${e.year}</span><span class="d">${escapeHtml(formatDate(lang, e.date, { weekday: false }))}${a ? ` · ${fmtBucket(a.count)} ${escapeHtml(t.visitorsSuffix)}` : ''}</span></li>`
+}).join(String.fromCharCode(10))}
+      </ul></section>` : ''}
       ${sameCountry.length ? `<section><h2>${escapeHtml(t.moreIn(country))}</h2><ul class="list">\n${rowsFor(lang, sameCountry)}\n      </ul></section>` : ''}
       ${sameMonth.length ? `<section><h2>${escapeHtml(t.sameMonth(MONTHS[lang][month - 1]))}</h2><ul class="list">\n${rowsFor(lang, sameMonth)}\n      </ul></section>` : ''}
     </main>
@@ -326,7 +352,11 @@ for (const p of parades) {
 }
 
 const countries = [...new Set(parades.map(p => p.country))].sort()
-const months = [...new Set(parades.map(p => Number(p.date.slice(5, 7))))].sort((a, b) => a - b)
+// A Pride whose date is open counts towards the month it used last year, so
+// the twelve month hubs stay alive through the off-season instead of
+// disappearing and coming back.
+const monthOf = p => Number((p.open ? p.lastDate : p.date)?.slice(5, 7)) || null
+const months = [...new Set(parades.map(monthOf).filter(Boolean))].sort((a, b) => a - b)
 
 // chips linking the hubs together
 const monthChips = lang => months.map(m =>
@@ -335,7 +365,12 @@ const countryChips = lang => countries.map(c =>
   `<a href="${hubPath(lang, countryHubSlug(lang, c))}">${escapeHtml(countryName(lang, c))}</a>`).join('')
 
 for (const code of countries) {
-  const list = parades.filter(p => p.country === code).sort((a, b) => a.date.localeCompare(b.date))
+  const all = parades.filter(p => p.country === code)
+  const list = [
+    ...all.filter(p => !p.open).sort((a, b) => a.date.localeCompare(b.date)),
+    ...all.filter(p => p.open).sort((a, b) => (a.lastDate ?? '').slice(5).localeCompare((b.lastDate ?? '').slice(5))),
+  ]
+  const datedCount = all.filter(p => !p.open).length
   const altSlugs = Object.fromEntries(LANGS.map(l => [l, countryHubSlug(l, code)]))
   for (const lang of LANGS) {
     const cn = countryName(lang, code)
@@ -351,8 +386,8 @@ for (const code of countries) {
         ? `Alle ${list.length} Pride-Paraden in ${cn} ${YEAR}${label ? `, auch ${label} genannt` : ''} — mit Datum, Ort und Karte.`
         : `All ${list.length} Pride parades in ${cn} in ${YEAR}${label ? `, also known as ${label}` : ''} — with dates, locations and a map.`,
       heading, intro: lang === 'de'
-        ? `${list.length} Termine in ${cn}. Sortiert nach Datum.${aka.length ? ` ${T.de.alsoCalled(joinOr('de', aka), cn)}` : ''}`
-        : `${list.length} dates in ${cn}, sorted by date.${aka.length ? ` ${T.en.alsoCalled(joinOr('en', aka), cn)}` : ''}`,
+        ? `${datedCount} Termine in ${cn}${list.length > datedCount ? `, bei ${list.length - datedCount} steht der Termin noch nicht fest` : ''}.${aka.length ? ` ${T.de.alsoCalled(joinOr('de', aka), cn)}` : ''}`
+        : `${datedCount} dates in ${cn}${list.length > datedCount ? `, ${list.length - datedCount} still without one` : ''}.${aka.length ? ` ${T.en.alsoCalled(joinOr('en', aka), cn)}` : ''}`,
       list, chips: monthChips(lang),
     }))
   }
@@ -360,7 +395,12 @@ for (const code of countries) {
 }
 
 for (const m of months) {
-  const list = parades.filter(p => Number(p.date.slice(5, 7)) === m).sort((a, b) => a.date.localeCompare(b.date))
+  const inMonth = parades.filter(p => monthOf(p) === m)
+  const list = [
+    ...inMonth.filter(p => !p.open).sort((a, b) => a.date.localeCompare(b.date)),
+    ...inMonth.filter(p => p.open).sort((a, b) => (a.lastDate ?? '').localeCompare(b.lastDate ?? '')),
+  ]
+  const datedCount = inMonth.filter(p => !p.open).length
   const altSlugs = Object.fromEntries(LANGS.map(l => [l, monthHubSlug(l, m)]))
   for (const lang of LANGS) {
     const mn = MONTHS[lang][m - 1]
@@ -369,13 +409,13 @@ for (const m of months) {
       : `Pride parades in ${mn} ${YEAR}`
     write(hubPath(lang, altSlugs[lang]), hubPage({
       lang, slug: altSlugs[lang], altSlugs,
-      title: `${heading} – ${list.length} Termine in Europa | Pride Map`,
+      title: `${heading} – ${list.length} Prides in Europa | Pride Map`,
       description: lang === 'de'
-        ? `Alle ${list.length} CSD- und Pride-Termine im ${mn} ${YEAR} in Europa — mit Datum, Ort und Karte.`
-        : `All ${list.length} Pride parades across Europe in ${mn} ${YEAR} — with dates, locations and a map.`,
+        ? `Pride-Paraden und CSDs im ${mn} ${YEAR} in Europa — mit Datum, Ort und Karte.`
+        : `Pride parades across Europe in ${mn} ${YEAR} — with dates, locations and a map.`,
       heading, intro: lang === 'de'
-        ? `${list.length} Termine in ganz Europa im ${mn} ${YEAR}.`
-        : `${list.length} dates across Europe in ${mn} ${YEAR}.`,
+        ? `${datedCount} von ${list.length} Prides haben für den ${mn} ${YEAR} schon einen Termin.`
+        : `${datedCount} of ${list.length} Prides already have a date in ${mn} ${YEAR}.`,
       list, chips: countryChips(lang),
     }))
   }
@@ -402,7 +442,7 @@ for (const lang of LANGS) {
 ${footer(lang)}`
   write(`/${lang}/`, shell({
     lang,
-    title: `${heading} – ${parades.length} Termine | Pride Map`,
+    title: `${heading} – ${parades.length} Prides | Pride Map`,
     description: T[lang].aboutMap,
     canonical: `${ORIGIN}/${lang}/`,
     alternates, image: absolute('/og-image.png'),
@@ -414,6 +454,91 @@ ${footer(lang)}`
   }))
   addUrl(Object.fromEntries(LANGS.map(l => [l, `/${l}/`])), '0.9')
 }
+
+// ── Weiterleitungen ──────────────────────────────────────────
+// The URLs lost their year with this build. Every path that was live before
+// gets a page that forwards to its successor — meta refresh plus canonical,
+// because that works on any host and needs no .htaccess.
+const written = new Set(urls.flatMap(({ paths }) => LANGS.map(l => paths[l])))
+written.add('/')
+for (const lang of LANGS) written.add(`/${lang}/`)
+
+// The old event slug was the name of the day, so the old id carries it: strip
+// the trailing date off a legacy id and you have the path that was live.
+const legacySlugs = new Map()
+for (const p of parades) {
+  for (const old of p.legacyIds ?? []) {
+    legacySlugs.set(old.replace(/-(19|20)\d\d-\d\d-\d\d$/, ''), slugs.get(p.id))
+  }
+}
+
+// "/de/csd-termine-juni-2026/" → "/de/csd-termine-juni/" for the hubs
+const withoutYear = p => p.replace(/-(19|20)\d\d\/$/, '/')
+
+// Last resort for the handful the id does not reach: the old slug was built
+// from the old name, which transliterated umlauts where the id merely dropped
+// them ("bra-ov" vs "brasov"), and sometimes ordered the words differently.
+// The city survives both, so match on that — but only when exactly one Pride
+// of that city fits.
+const byCitySlug = new Map()
+for (const p of parades) {
+  const key = slugify(p.city)
+  if (!key) continue
+  byCitySlug.set(key, byCitySlug.has(key) ? null : p)
+}
+
+function successor(from) {
+  const m = from.match(/^\/(de|en)\/(.+)\/$/)
+  if (!m) return withoutYear(from)
+  const [, lang, slug] = m
+
+  const moved = legacySlugs.get(slug)
+  if (moved) return `/${lang}/${moved}/`
+
+  let best = null
+  for (const [key, pride] of byCitySlug) {
+    if (!pride || !slug.includes(key)) continue
+    if (!best || key.length > slugify(best.city).length) best = pride
+  }
+  if (best) return `/${lang}/${slugs.get(best.id)}/`
+
+  return withoutYear(from)
+}
+
+function redirectPage(from, to) {
+  const abs = absolute(to)
+  return `<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Pride Map</title>
+<link rel="canonical" href="${abs}">
+<meta name="robots" content="noindex,follow">
+<meta http-equiv="refresh" content="0; url=${abs}">
+<script>location.replace(${JSON.stringify(abs)})</script>
+</head>
+<body><p>Diese Seite ist umgezogen: <a href="${abs}">${escapeHtml(abs)}</a></p></body>
+</html>`
+}
+
+let redirects = 0, orphans = 0
+const legacy = fs.readFileSync('./data/legacy-urls.txt', 'utf8')
+  .split(/\r?\n/).map(l => l.trim()).filter(l => l && !l.startsWith('#'))
+for (const from of legacy) {
+  if (written.has(from)) continue
+  const to = successor(from)
+  if (to !== from && written.has(to)) {
+    write(from, redirectPage(from, to))
+    redirects++
+  } else {
+    // Nothing matches any more — send it to the language index rather than
+    // into a 404.
+    const lang = from.startsWith('/de/') ? 'de' : 'en'
+    write(from, redirectPage(from, `/${lang}/`))
+    orphans++
+  }
+}
+console.log(`Weiterleitungen: ${redirects} auf die neue URL, ${orphans} auf die Sprachstartseite`)
 
 // ── Sitemap ──────────────────────────────────────────────────────────────────
 const lastmod = new Date().toISOString().slice(0, 10)
@@ -449,16 +574,16 @@ ${entries}
 // ── Homepage JSON-LD: events now point at their own pages ────────────────────
 const today = new Date(); today.setHours(0, 0, 0, 0)
 const upcoming = parades
-  .filter(p => new Date(p.date) >= today)
+  .filter(p => !p.open && new Date(p.date) >= today)
   .sort((a, b) => a.date.localeCompare(b.date))
 const homeJsonld = JSON.stringify({
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'WebSite',
-      name: 'Pride Map 2026',
+      name: `Pride Map ${YEAR}`,
       url: `${ORIGIN}/`,
-      description: 'Interactive map and calendar of 600+ LGBTQ+ Pride parades across Europe in 2026.',
+      description: `Interactive map and calendar of 600+ LGBTQ+ Pride parades across Europe in ${YEAR}.`,
       inLanguage: ['en', 'de'],
     },
     ...upcoming.map(p => ({

@@ -3,7 +3,7 @@ import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { decode } from '@here/flexpolyline'
 import Tooltip from './Tooltip.jsx'
-import { colorForDays } from '../utils/timeColors.js'
+import { colorForDays, OPEN_COLOR } from '../utils/timeColors.js'
 import { isFirstTime } from '../utils/firstTime.js'
 import { VIEWS } from '../config/views.js'
 import { ISO_BANDS } from '../config/isoBands.js'
@@ -21,9 +21,14 @@ const PARADE_SOURCES = ['parades', 'parades-cluster']
 const CIRCLE_LAYERS = ['parades-circles', 'parades-circles-cluster']
 const CLUSTER_LAYERS = ['parades-circles-cluster', 'clusters-circle', 'clusters-count']
 
-// Past events render at the very back; upcoming dots always sit on top.
-// Beyond that the order intentionally stays as-is (source order).
-const CIRCLE_SORT_KEY = ['case', ['<', ['get', 'daysUntil'], 0], 0, 1]
+// Past events render at the very back, then the ones still waiting for a date,
+// then the dated ones. Beyond that the order stays as-is (source order).
+const CIRCLE_SORT_KEY = [
+  'case',
+  ['boolean', ['get', 'open'], false], 1,
+  ['<', ['get', 'daysUntil'], 0], 0,
+  2,
+]
 
 const CIRCLE_PAINT = {
   'circle-radius': [
@@ -32,7 +37,10 @@ const CIRCLE_PAINT = {
     ['get', 'radiusHover'],
     ['get', 'radius'],
   ],
-  'circle-color': ['get', 'color'],
+  // An open date is a ring with nothing in it: the Pride is there, the date
+  // is not. Transparent rather than background-coloured, so overlapping dots
+  // stay visible through it.
+  'circle-color': ['case', ['boolean', ['get', 'open'], false], 'rgba(0,0,0,0)', ['get', 'color']],
   'circle-opacity': 1,
   // First-time prides wear a gold ring as a "premiere sticker", rescheduled ones
   // a pink one. Pink also appears in the time scale, but only ever as a fill —
@@ -43,6 +51,7 @@ const CIRCLE_PAINT = {
     ['boolean', ['feature-state', 'selected'], false], 2,
     ['boolean', ['get', 'firstTime'], false], 2,
     ['to-boolean', ['get', 'movedFrom']], 2,
+    ['boolean', ['get', 'open'], false], 1.5,
     0.5,
   ],
   'circle-stroke-color': [
@@ -50,6 +59,7 @@ const CIRCLE_PAINT = {
     ['boolean', ['feature-state', 'selected'], false], '#ffffff',
     ['boolean', ['get', 'firstTime'], false], '#ffd447',
     ['to-boolean', ['get', 'movedFrom']], '#ff2d78',
+    ['boolean', ['get', 'open'], false], OPEN_COLOR,
     'rgba(255,255,255,0.15)',
   ],
 }
@@ -102,6 +112,8 @@ function paradesToGeoJSON(parades) {
           date: p.date,
           size: p.size,
           daysUntil: p.daysUntil,
+          open: !!p.open,
+          lastDate: p.lastDate ?? null,
           color: colorForDays(p.daysUntil),
           radius: SIZE_RADIUS[p.size] ?? 5,
           radiusHover: SIZE_RADIUS_HOVER[p.size] ?? 8,
@@ -323,14 +335,14 @@ export default function Map({
           const f = e.features[0]; if (!f) return
           setHover(f)
           const p = f.properties
-          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, cityDe: p.cityDe, cityEn: p.cityEn, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
+          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, cityDe: p.cityDe, cityEn: p.cityEn, country: p.country, date: p.date, daysUntil: p.daysUntil, open: p.open, lastDate: p.lastDate, color: p.color })
         })
 
         map.on('mousemove', layer, (e) => {
           const f = e.features[0]; if (!f) return
           setHover(f)
           const p = f.properties
-          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, cityDe: p.cityDe, cityEn: p.cityEn, country: p.country, date: p.date, daysUntil: p.daysUntil, color: p.color })
+          setTooltip({ x: e.point.x, y: e.point.y, name: p.name, city: p.city, cityDe: p.cityDe, cityEn: p.cityEn, country: p.country, date: p.date, daysUntil: p.daysUntil, open: p.open, lastDate: p.lastDate, color: p.color })
         })
 
         map.on('mouseleave', layer, () => {

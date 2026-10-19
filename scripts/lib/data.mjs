@@ -1,17 +1,19 @@
-// The build scripts want the flat shape the old parades.json had: one record
-// per event. The data is one record per Pride with a list of editions, so this
-// picks the edition of the season and folds it in.
+// The build scripts want one record per Pride, flat. The data is one record
+// per Pride with a list of editions, so this folds in the one that counts.
 import { readFileSync } from 'node:fs'
-import { YEAR } from './pages.mjs'
+import { currentEdition } from '../../src/utils/edition.js'
 
-export function loadEvents(year = YEAR) {
+// Every Pride, folded with the edition that matters today — dated ones and the
+// ones still waiting for a date. Open ones sort to the end: they have nothing
+// to sort by.
+export function loadPrides(today = new Date()) {
   const prides = JSON.parse(readFileSync('./src/data/prides.json', 'utf8'))
   const out = []
   for (const p of prides) {
-    const e = p.editions.find(x => x.year === year && x.date)
-    if (e) out.push({ ...p, ...e })
+    const e = currentEdition(p, today)
+    if (e) out.push(e)
   }
-  return out.sort((a, b) => a.date.localeCompare(b.date))
+  return out.sort((a, b) => (a.date ?? '9999').localeCompare(b.date ?? '9999'))
 }
 
 /** The newest attendance figure a Pride has, or null. */

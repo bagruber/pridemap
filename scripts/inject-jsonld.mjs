@@ -21,9 +21,9 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 fs.writeFileSync('./dist/sitemap.xml', sitemap)
 console.log(`Sitemap: written with lastmod ${lastmod}`)
 
-import { loadEvents } from './lib/data.mjs'
+import { loadPrides } from './lib/data.mjs'
 
-const parades = loadEvents()
+const parades = loadPrides().filter(p => !p.open)
 
 const events = parades
   .filter(p => new Date(p.date) >= today)

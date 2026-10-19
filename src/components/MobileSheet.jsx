@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import { ChevronUp, ChevronDown } from 'lucide-react'
 import { useLang } from '../contexts/LangContext.jsx'
-import { t } from '../utils/i18n.js'
+import { t, tf } from '../utils/i18n.js'
 import ColoredTitle from './ColoredTitle.jsx'
 import ShareButton from './ShareButton.jsx'
 import { WEEKENDS } from '../utils/filterConstants.js'
@@ -15,7 +15,7 @@ import RegionToggle from './filters/RegionToggle.jsx'
 import ClusterToggle from './filters/ClusterToggle.jsx'
 
 export default function MobileSheet({
-  filters, onChange, allCountries, totalCount,
+  filters, onChange, allCountries, totalCount, openCount, today,
   view, onViewChange,
   clusteringEnabled, onClusteringChange,
   viewMode, onViewModeChange,
@@ -51,7 +51,7 @@ export default function MobileSheet({
         onTouchEnd={onTouchEnd}
       >
         <div className="sheet-handle" />
-        <ColoredTitle className="app-title sheet-title" />
+        <ColoredTitle className="app-title sheet-title" today={today} />
       </div>
 
       <div className="sheet-peek">
@@ -76,7 +76,8 @@ export default function MobileSheet({
           </button>
         </div>
         <span className="sheet-count">
-          <strong>{totalCount}</strong>
+          {tf(totalCount - openCount === 1 ? 'countDatesOne' : 'countDates', lang,
+            { dated: totalCount - openCount, open: openCount })}
         </span>
         <button
           className="sheet-chevron"

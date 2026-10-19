@@ -43,9 +43,11 @@ export function searchParades(parades, query) {
     }
     scored.push([tier, p])
   }
+  // Within a tier: dated before open, upcoming before past, soonest first
+  const rank = p => (p.daysUntil == null ? 1 : p.daysUntil < 0 ? 2 : 0)
   scored.sort((a, b) =>
     a[0] - b[0] ||
-    (a[1].daysUntil < 0) - (b[1].daysUntil < 0) ||
-    a[1].daysUntil - b[1].daysUntil)
+    rank(a[1]) - rank(b[1]) ||
+    (a[1].daysUntil ?? 0) - (b[1].daysUntil ?? 0))
   return scored.map(s => s[1])
 }

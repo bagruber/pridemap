@@ -1,6 +1,5 @@
 export const TRANSLATIONS = {
   // Sidebar header
-  appTitle:          { en: 'pride map 2026',          de: 'pride map 2026' },
   viewEurope:        { en: 'Europe',                  de: 'Europa' },
   viewDACH:          { en: 'DACH',                    de: 'DACH' },
   showingEvents:     { en: 'Showing',                 de: 'Zeige' },
@@ -63,7 +62,7 @@ export const TRANSLATIONS = {
   // First-time / premiere badge
   firstTime:         { en: 'First edition',           de: 'Premiere' },
   firstTimeShort:    { en: '1st',                     de: 'Neu' },
-  firstTimeNote:     { en: 'Happening for the first time in 2026', de: 'Findet 2026 zum ersten Mal statt' },
+  firstTimeNote:     { en: 'Happening for the first time in {year}', de: 'Findet {year} zum ersten Mal statt' },
 
   // Rescheduled events
   rescheduled:       { en: 'Rescheduled',             de: 'Verlegt' },
@@ -117,14 +116,24 @@ export const TRANSLATIONS = {
   noEventsMatch:     { en: 'No events match your filters',          de: 'Keine Events passen zu den Filtern' },
   clearFilters:      { en: 'Clear filters',                         de: 'Filter zurücksetzen' },
 
-  // Off-season notice
-  seasonOver:        { en: 'The {year} season is over. We add {next} dates from November on.', de: 'Die Saison {year} ist vorbei. Termine für {next} tragen wir ab November ein.' },
-  showAllSeason:     { en: 'See all {count} Prides of {year}',       de: 'Alle {count} Prides von {year} ansehen' },
+  // Season and open dates
+  seasonLabel:       { en: 'Season {year}',                         de: 'Saison {year}' },
+  dateOpen:          { en: 'Date not announced yet',                de: 'Termin noch nicht bekannt' },
+  dateOpenYear:      { en: 'No {year} date yet',                    de: 'Termin {year} noch nicht bekannt' },
+  lastHeld:          { en: '{year} was on {date}',                  de: '{year} war am {date}' },
+  openSection:       { en: 'Date still open',                       de: 'Termin noch offen' },
+  countDates:        { en: '{dated} dates · {open} open',           de: '{dated} Termine · {open} offen' },
+  countDatesOne:     { en: '1 date · {open} open',                  de: '1 Termin · {open} offen' },
   reportPride:       { en: 'Report a Pride',                        de: 'Pride melden' },
+
+  // Source of a date
+  sourceLabel:       { en: 'Source',                                de: 'Quelle' },
+  checkedOn:         { en: 'checked {date}',                        de: 'geprüft am {date}' },
+  notConfirmed:      { en: 'not confirmed by the organisers yet',   de: 'noch nicht vom Veranstalter bestätigt' },
 
   // About
   about:             { en: 'About',                                 de: 'Über' },
-  aboutText:         { en: 'Pride Map 2026 maps European Pride parades by date and size. Marker color encodes time until the event; size encodes relative attendance.', de: 'Pride Map 2026 zeigt europäische Pride-Paraden nach Datum und Größe. Farbe codiert Zeit bis zum Event; Größe codiert relative Besucherzahl.' },
+  aboutText:         { en: 'Pride Map shows Pride parades across Europe. The warmer the colour, the sooner the date. The bigger the dot, the more people line the streets. An empty ring means the date isn’t announced yet.', de: 'Pride Map zeigt Pride-Paraden und CSDs in ganz Europa. Je wärmer die Farbe, desto näher der Termin. Je größer der Punkt, desto mehr Menschen stehen am Straßenrand. Ein leerer Ring heißt: noch nicht angekündigt.' },
   close:             { en: 'Close',                                 de: 'Schließen' },
 }
 

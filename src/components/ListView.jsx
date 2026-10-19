@@ -3,7 +3,7 @@ import { X, SearchX, Sparkles } from 'lucide-react'
 import { colorForDays } from '../utils/timeColors.js'
 import { flag } from '../utils/countryInfo.js'
 import { useLang } from '../contexts/LangContext.jsx'
-import { t, cityName, labelForDaysL10n, formatDate } from '../utils/i18n.js'
+import { t, tf, cityName, labelForDaysL10n, formatDate } from '../utils/i18n.js'
 import { isFirstTime } from '../utils/firstTime.js'
 import { norm } from '../utils/text.js'
 import { searchParades } from '../utils/search.js'
@@ -14,10 +14,17 @@ function ListRow({ parade, onSelect, lang }) {
   const displayCity = cityName(parade, lang)
   const hasCustomName = parade.name && norm(parade.name) !== norm(parade.city)
   const isPast = parade.daysUntil < 0
+  const { open, lastDate } = parade
 
-  const dateStr = formatDate(parade.date, lang, { day: 'numeric', month: 'short' })
+  // Without a date, last year's is the only anchor there is
+  const dateStr = open
+    ? (lastDate ? tf('lastHeld', lang, {
+        year: lastDate.slice(0, 4),
+        date: formatDate(lastDate, lang, { day: 'numeric', month: 'short' }),
+      }) : '')
+    : formatDate(parade.date, lang, { day: 'numeric', month: 'short' })
 
-  const countdown = labelForDaysL10n(parade.daysUntil, lang)
+  const countdown = open ? '' : labelForDaysL10n(parade.daysUntil, lang)
 
   const movedTitle = parade.movedFrom
     ? `${t('movedFrom', lang)} ${formatDate(parade.movedFrom, lang, { day: 'numeric', month: 'long', year: 'numeric' })}`
@@ -39,12 +46,17 @@ function ListRow({ parade, onSelect, lang }) {
       role="button"
       tabIndex={0}
     >
-      <div className="list-dot" style={{ background: color }} />
+      <div
+        className="list-dot"
+        style={open
+          ? { background: 'transparent', boxShadow: `inset 0 0 0 1.5px ${color}` }
+          : { background: color }}
+      />
       <span className={`${flag(parade.country)} list-flag fi`} />
       <div className="list-main">
         <span className="list-city">{displayCity}</span>
         {isFirstTime(parade) && (
-          <span className="list-premiere" title={t('firstTimeNote', lang)}>
+          <span className="list-premiere" title={tf('firstTimeNote', lang, { year: parade.year })}>
             <Sparkles size={9} aria-hidden="true" />
             {t('firstTimeShort', lang)}
           </span>
@@ -59,9 +71,11 @@ function ListRow({ parade, onSelect, lang }) {
       </div>
       <div className="list-date">
         <span className="list-date-str">{dateStr}</span>
-        <span className="list-countdown" style={{ color: isPast ? 'var(--text-dim)' : color }}>
-          {countdown}
-        </span>
+        {countdown && (
+          <span className="list-countdown" style={{ color: isPast ? 'var(--text-dim)' : color }}>
+            {countdown}
+          </span>
+        )}
       </div>
     </div>
   )
@@ -80,6 +94,14 @@ export default function ListView({ parades, onSelect }) {
         ? a.daysUntil - b.daysUntil
         : norm(cityName(a, lang)).localeCompare(norm(cityName(b, lang)))
     ), [parades, query, sortBy, lang])
+
+  // Prides still waiting for a date go in their own block at the end, ordered
+  // by last year's date — otherwise they would have to fake a position in a
+  // list that is sorted by something they do not have.
+  const dated = displayed.filter(p => !p.open)
+  const openList = displayed
+    .filter(p => p.open)
+    .sort((a, b) => (a.lastDate ?? '').slice(5).localeCompare((b.lastDate ?? '').slice(5)))
 
   return (
     <main className="list-view">
@@ -126,9 +148,21 @@ export default function ListView({ parades, onSelect }) {
               <div className="empty-state-text">{t('noResults', lang)}</div>
             </div>
           )
-          : displayed.map(p => (
-              <ListRow key={p.id} parade={p} onSelect={onSelect} lang={lang} />
-            ))
+          : (
+            <>
+              {dated.map(p => (
+                <ListRow key={p.id} parade={p} onSelect={onSelect} lang={lang} />
+              ))}
+              {openList.length > 0 && (
+                <div className="list-group-head">
+                  {t('openSection', lang)} <span>{openList.length}</span>
+                </div>
+              )}
+              {openList.map(p => (
+                <ListRow key={p.id} parade={p} onSelect={onSelect} lang={lang} />
+              ))}
+            </>
+          )
         }
       </div>
     </main>
