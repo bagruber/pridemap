@@ -11,8 +11,14 @@ import { ISO_BANDS } from '../config/isoBands.js'
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'
 const HERE_KEY = import.meta.env.VITE_HERE_API_KEY
 
-const SIZE_RADIUS       = { small: 4, medium: 7, large: 11 }
-const SIZE_RADIUS_HOVER = { small: 6, medium: 10, large: 14 }
+// Radii at the Europe zoom (4). Below that the dots shrink, above they grow,
+// so a zoomed-in city does not show the same 4-px speck as the whole continent.
+// Overlap at the continental zoom is wanted: it is what density looks like.
+const SIZE_RADIUS       = { small: 3.5, medium: 5.5, large: 8.5 }
+const SIZE_RADIUS_HOVER = { small: 5.5, medium: 8, large: 11.5 }
+
+// The factor the radius is multiplied by at each zoom level
+const ZOOM_SCALE = [[3, 0.72], [4, 1], [6, 1.5], [9, 2.4], [12, 3.2]]
 
 // Two sources for the same data: clustering can't be toggled on a live source,
 // so we keep a plain and a clustered copy and switch layer visibility instead
@@ -23,20 +29,34 @@ const CLUSTER_LAYERS = ['parades-circles-cluster', 'clusters-circle', 'clusters-
 
 // Past events render at the very back, then the ones still waiting for a date,
 // then the dated ones. Beyond that the order stays as-is (source order).
+// Past at the very back, then the ones still waiting for a date, then the
+// dated ones — and within each band the big dots below the small ones, so a
+// small town is never buried under a metropolis.
 const CIRCLE_SORT_KEY = [
-  'case',
-  ['boolean', ['get', 'open'], false], 1,
-  ['<', ['get', 'daysUntil'], 0], 0,
-  2,
+  '-',
+  ['*', 1000, ['case',
+    ['boolean', ['get', 'open'], false], 1,
+    ['<', ['get', 'daysUntil'], 0], 0,
+    2,
+  ]],
+  ['get', 'radius'],
+]
+
+// MapLibre wants the zoom expression on the outside, so the hover case has to
+// sit inside every stop rather than wrapping the interpolation.
+const CIRCLE_RADIUS = [
+  'interpolate', ['linear'], ['zoom'],
+  ...ZOOM_SCALE.flatMap(([z, f]) => [z, [
+    '*', f,
+    ['case',
+      ['boolean', ['feature-state', 'hovered'], false],
+      ['get', 'radiusHover'],
+      ['get', 'radius']],
+  ]]),
 ]
 
 const CIRCLE_PAINT = {
-  'circle-radius': [
-    'case',
-    ['boolean', ['feature-state', 'hovered'], false],
-    ['get', 'radiusHover'],
-    ['get', 'radius'],
-  ],
+  'circle-radius': CIRCLE_RADIUS,
   // An open date is a ring with nothing in it: the Pride is there, the date
   // is not. Transparent rather than background-coloured, so overlapping dots
   // stay visible through it.
@@ -60,7 +80,9 @@ const CIRCLE_PAINT = {
     ['boolean', ['get', 'firstTime'], false], '#ffd447',
     ['to-boolean', ['get', 'movedFrom']], '#ff2d78',
     ['boolean', ['get', 'open'], false], OPEN_COLOR,
-    'rgba(255,255,255,0.15)',
+    // Near-black rather than translucent white: on a dark basemap it is the
+    // gap between two overlapping dots that has to read, not a halo.
+    '#0e0e0e',
   ],
 }
 
@@ -90,6 +112,27 @@ function pickAt(map, point) {
   }
   return best
 }
+
+// The 5th to 95th percentile of the coordinates instead of fixed Europe
+// bounds. Portrait and landscape then both open on where the Prides actually
+// are, rather than fitting a wide rectangle into a tall screen and filling it
+// with Scandinavia.
+function dataBounds(parades) {
+  const lons = [], lats = []
+  for (const p of parades) {
+    if (p.lon == null || p.lat == null) continue
+    lons.push(p.lon); lats.push(p.lat)
+  }
+  if (lons.length < 10) return null
+  lons.sort((a, b) => a - b); lats.sort((a, b) => a - b)
+  const at = (arr, q) => arr[Math.floor((arr.length - 1) * q)]
+  return [[at(lons, 0.05), at(lats, 0.05)], [at(lons, 0.95), at(lats, 0.95)]]
+}
+
+const fitPadding = () =>
+  (typeof window !== 'undefined' && window.innerWidth < 768)
+    ? { top: 72, right: 24, bottom: 196, left: 24 }
+    : 60
 
 function paradesToGeoJSON(parades) {
   return {
@@ -180,6 +223,10 @@ export default function Map({
   const [tooltip, setTooltip] = useState(null)
   const hoveredRef = useRef(null) // { source, id }
   const selectedIdRef = useRef(selectedId)
+  // The initial fit runs once, inside the map's load handler, so it needs the
+  // current list without re-running the effect when a filter changes.
+  const paradesRef = useRef(parades)
+  paradesRef.current = parades
   const isoPinningRef = useRef(false)
   const clusteringRef = useRef(clusteringEnabled)
   const [mapLoaded, setMapLoaded] = useState(false)
@@ -375,6 +422,13 @@ export default function Map({
           map.setFeatureState({ source: src, id: selectedIdRef.current }, { selected: true })
       }
 
+      // Open on where the Prides are, fitted to this screen's shape — unless
+      // we are restoring a position the visitor already chose.
+      if (!initialPosition) {
+        const b = dataBounds(paradesRef.current)
+        if (b) map.fitBounds(b, { padding: fitPadding(), duration: 0 })
+      }
+
       setMapLoaded(true)
       onReady?.()
     })
@@ -417,7 +471,7 @@ export default function Map({
     const map = mapRef.current
     if (!map) return
     const cfg = VIEWS[view] ?? VIEWS.europe
-    map.fitBounds(cfg.bounds, { padding: 60, duration: 1000 })
+    map.fitBounds(dataBounds(paradesRef.current) ?? cfg.bounds, { padding: fitPadding(), duration: 1000 })
   }, [view])
 
   // ── Fly to geolocated position ──────────────────────────────────────────────
