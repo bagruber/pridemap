@@ -3,15 +3,24 @@
 //
 // `today` is a local midnight (see startOfToday in App.jsx); `parades` carry a
 // precomputed `daysUntil`.
+// Calendar days, not 24-hour blocks: on the night the clocks go back, adding
+// 86400000 ms lands at 23:00 the day before and shunts a whole weekend out of
+// range.
+const addDays = (d, n) => {
+  const r = new Date(d)
+  r.setDate(r.getDate() + n)
+  return r
+}
+
 export function filterParades(parades, filters, today) {
   const dow = today.getDay()
   let weekendSat
   if (dow === 6) weekendSat = today
-  else if (dow === 0) weekendSat = new Date(today.getTime() - 86400000)
-  else weekendSat = new Date(today.getTime() + (6 - dow) * 86400000)
-  const weekendSun = new Date(weekendSat.getTime() + 86400000)
-  const nextWeekendSat = new Date(weekendSat.getTime() + 7 * 86400000)
-  const nextWeekendSun = new Date(weekendSun.getTime() + 7 * 86400000)
+  else if (dow === 0) weekendSat = addDays(today, -1)
+  else weekendSat = addDays(today, 6 - dow)
+  const weekendSun = addDays(weekendSat, 1)
+  const nextWeekendSat = addDays(weekendSat, 7)
+  const nextWeekendSun = addDays(weekendSun, 7)
 
   return parades.filter(p => {
     if (filters.countries.length > 0 && !filters.countries.includes(p.country)) return false

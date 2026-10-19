@@ -43,6 +43,19 @@ describe('weekend filter', () => {
     expect(ids(got)).toEqual(['nextSat', 'nextSun'])
   })
 
+  // Europe/Berlin falls back on Sunday 25 October 2026. Counting the weekend
+  // in whole days of milliseconds pushed "next weekend" an hour back over that
+  // night and dropped Sunday 1 November out of its own weekend.
+  it('next weekend survives the clock change', () => {
+    const today = day('2026-10-24')
+    const around = ['2026-10-30', '2026-10-31', '2026-11-01', '2026-11-02'].map(date => ({
+      id: date, city: date, country: 'DE', size: 'medium', date,
+      daysUntil: daysUntil(date, today),
+    }))
+    const got = filterParades(around, { ...DEFAULTS, timeframe: 'next-weekend' }, today)
+    expect(ids(got)).toEqual(['2026-10-31', '2026-11-01'])
+  })
+
   it('next weekend is the one after this one', () => {
     const today = day(DATES.fri)
     const got = filterParades(fixture(today), { ...DEFAULTS, timeframe: 'next-weekend' }, today)
