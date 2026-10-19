@@ -6,7 +6,7 @@ import { useLang } from '../contexts/LangContext.jsx'
 import { t, cityName, labelForDaysL10n, formatDate } from '../utils/i18n.js'
 import { toSelection, isFirstTime } from '../utils/parade.js'
 import { norm } from '../utils/text.js'
-import { parsePrideQuery } from '../utils/prideTerms.js'
+import { searchParades } from '../utils/search.js'
 import MiniLegend from './MiniLegend.jsx'
 
 function ListRow({ parade, onSelect, lang }) {
@@ -72,32 +72,14 @@ export default function ListView({ parades, onSelect }) {
   const [query, setQuery] = useState('')
   const [sortBy, setSortBy] = useState('date')
 
-  const displayed = useMemo(() => {
-    // Pride vocabulary is pulled out of the query first, so "pride berlin",
-    // "csd berlin" and "berlin" all reach the same row. What's left has to
-    // match token by token — a single substring pass made word order matter.
-    const { tokens, countries } = parsePrideQuery(norm(query))
-    const filtered = tokens.length
-      ? parades.filter(p => {
-          const haystack = [
-            p.city,
-            cityName(p.city, 'en'),
-            cityName(p.city, 'de'),
-            p.name ?? '',
-            p.region ?? '',
-          ].map(norm).join(' ')
-          return tokens.every(tk => haystack.includes(tk))
-        })
-      : countries
-        ? parades.filter(p => countries.includes(p.country))
-        : parades
-
-    return [...filtered].sort((a, b) =>
+  // The search is shared with the map's search box; only the sort is the
+  // list's own, so the chosen order wins over the search ranking.
+  const displayed = useMemo(() =>
+    searchParades(parades, query).sort((a, b) =>
       sortBy === 'date'
         ? a.daysUntil - b.daysUntil
         : norm(cityName(a.city, lang)).localeCompare(norm(cityName(b.city, lang)))
-    )
-  }, [parades, query, sortBy, lang])
+    ), [parades, query, sortBy, lang])
 
   return (
     <main className="list-view">

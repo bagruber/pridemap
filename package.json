@@ -14,7 +14,8 @@
     "build:hostinger": "pnpm run logo && pnpm run og && vite build --base=/ && node scripts/prerender.mjs",
     "deploy:hostinger": "pnpm run build:hostinger && node scripts/deploy.mjs hostinger",
     "prepare-data": "node scripts/prepare-data.js",
-    "logo": "node scripts/logo-svg.mjs"
+    "logo": "node scripts/logo-svg.mjs",
+    "test": "vitest run"
   },
   "dependencies": {
     "@fontsource/sofia-sans": "^5.2.8",
@@ -30,6 +31,7 @@
     "@vitejs/plugin-react": "^6.1.0",
     "gh-pages": "^6.3.0",
     "playwright-core": "^1.61.1",
-    "vite": "^8.2.2"
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
   }
 }

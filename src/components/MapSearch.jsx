@@ -1,8 +1,7 @@
 import { useState, useRef } from 'react'
 import { Search, X } from 'lucide-react'
-import { COUNTRY_NAMES, flag } from '../utils/countryInfo.js'
-import { norm } from '../utils/text.js'
-import { parsePrideQuery } from '../utils/prideTerms.js'
+import { flag } from '../utils/countryInfo.js'
+import { searchParades } from '../utils/search.js'
 import { useLang } from '../contexts/LangContext.jsx'
 import { t, cityName, formatDate } from '../utils/i18n.js'
 
@@ -14,41 +13,9 @@ export default function MapSearch({ parades, onPick }) {
   const [highlight, setHighlight] = useState(0)
   const inputRef = useRef(null)
 
-  const q = norm(query.trim())
-  // Words that just mean "Pride" are lifted out of the query before matching,
-  // so the national term someone happens to use never costs them a hit
-  const { tokens, countries } = parsePrideQuery(q)
-  // Tiered match: city prefix > city substring > event name > region/country,
-  // so e.g. "ber" surfaces Berlin before Baden-Württemberg towns
-  const results = []
-  if (q.length >= 2) {
-    const scored = []
-    for (const p of parades) {
-      const cities = [p.city, cityName(p.city, 'en'), cityName(p.city, 'de')].map(norm)
-      const name = norm(p.name ?? '')
-      let tier
-      if (!tokens.length) {
-        // Nothing but Pride vocabulary was typed — the country it points at is
-        // the only signal left, and the sort below puts the soonest on top
-        if (countries && !countries.includes(p.country)) continue
-        tier = 0
-      } else {
-        const hay = [...cities, name, norm(p.region ?? ''), norm(COUNTRY_NAMES[p.country] ?? '')].join(' ')
-        if (!tokens.every(tk => hay.includes(tk))) continue
-        const head = tokens[0]
-        if (cities.some(c => c.startsWith(head))) tier = 0
-        else if (cities.some(c => c.includes(head))) tier = 1
-        else if (name.includes(head)) tier = 2
-        else tier = 3
-      }
-      scored.push([tier, p])
-    }
-    scored.sort((a, b) =>
-      a[0] - b[0] ||
-      (a[1].daysUntil < 0) - (b[1].daysUntil < 0) ||
-      a[1].daysUntil - b[1].daysUntil)
-    results.push(...scored.slice(0, MAX_RESULTS).map(s => s[1]))
-  }
+  // Below two characters the dropdown would just be a list of everything
+  const q = query.trim()
+  const results = q.length >= 2 ? searchParades(parades, q).slice(0, MAX_RESULTS) : []
 
   const pick = p => {
     setQuery('')
