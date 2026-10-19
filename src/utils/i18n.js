@@ -117,6 +117,11 @@ export const TRANSLATIONS = {
   noEventsMatch:     { en: 'No events match your filters',          de: 'Keine Events passen zu den Filtern' },
   clearFilters:      { en: 'Clear filters',                         de: 'Filter zurücksetzen' },
 
+  // Off-season notice
+  seasonOver:        { en: 'The {year} season is over. We add {next} dates from November on.', de: 'Die Saison {year} ist vorbei. Termine für {next} tragen wir ab November ein.' },
+  showAllSeason:     { en: 'See all {count} Prides of {year}',       de: 'Alle {count} Prides von {year} ansehen' },
+  reportPride:       { en: 'Report a Pride',                        de: 'Pride melden' },
+
   // About
   about:             { en: 'About',                                 de: 'Über' },
   aboutText:         { en: 'Pride Map 2026 maps European Pride parades by date and size. Marker color encodes time until the event; size encodes relative attendance.', de: 'Pride Map 2026 zeigt europäische Pride-Paraden nach Datum und Größe. Farbe codiert Zeit bis zum Event; Größe codiert relative Besucherzahl.' },
@@ -149,6 +154,11 @@ export const CITY_NAMES = {
 
 export function t(key, lang = 'en') {
   return TRANSLATIONS[key]?.[lang] ?? TRANSLATIONS[key]?.en ?? key
+}
+
+// Same as t(), but fills {placeholders} from vars
+export function tf(key, lang, vars) {
+  return t(key, lang).replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? `{${k}}`)
 }
 
 export function cityName(city, lang = 'en') {

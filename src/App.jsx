@@ -15,7 +15,7 @@ import paradesRaw from './data/parades.json'
 import { daysUntil } from './utils/timeColors.js'
 import { toSelection } from './utils/parade.js'
 import { useLang } from './contexts/LangContext.jsx'
-import { t } from './utils/i18n.js'
+import { t, tf } from './utils/i18n.js'
 import { useIsMobile } from './hooks/useIsMobile.js'
 import { VIEWS } from './config/views.js'
 import { ISO_BANDS } from './config/isoBands.js'
@@ -225,6 +225,12 @@ export default function App() {
     }).sort((a, b) => a.city.localeCompare(b.city))
   }, [filters, parades, today])
 
+  // Off-season: "Upcoming" finds next to nothing because the season has passed.
+  // Only without the other filters — a filtered miss is a filter problem.
+  const offSeason = filters.timeframe === 'upcoming' &&
+    filters.countries.length === 0 && filters.months.length === 0 &&
+    filteredParades.length < 5
+
   const activeFilterCount = filters.countries.length + filters.sizes.length +
     filters.months.length + (filters.timeframe !== 'upcoming' ? 1 : 0)
 
@@ -252,13 +258,30 @@ export default function App() {
               onReady={() => setBooted(true)}
             />
           </Suspense>
-          {viewMode === 'map' && filteredParades.length === 0 && (
+          {viewMode === 'map' && (offSeason || filteredParades.length === 0) && (
             <div className="map-empty-overlay">
-              <EmptyState
-                title={t('noEventsMatch', lang)}
-                action={clearFilters}
-                actionLabel={t('clearFilters', lang)}
-              />
+              {offSeason ? (
+                <EmptyState
+                  showIcon={false}
+                  title={tf('seasonOver', lang, {
+                    year: today.getFullYear(),
+                    next: today.getFullYear() + 1,
+                  })}
+                  action={() => setFilters(f => ({ ...f, timeframe: 'all' }))}
+                  actionLabel={tf('showAllSeason', lang, {
+                    count: paradesRaw.length,
+                    year: today.getFullYear(),
+                  })}
+                  linkHref="https://forms.gle/oo6vk3QfANXskXku8"
+                  linkLabel={t('reportPride', lang)}
+                />
+              ) : (
+                <EmptyState
+                  title={t('noEventsMatch', lang)}
+                  action={clearFilters}
+                  actionLabel={t('clearFilters', lang)}
+                />
+              )}
             </div>
           )}
         </main>
