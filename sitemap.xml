@@ -8,22 +8,58 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pridemap.net/de/csd-northeim/</loc>
+    <loc>https://pridemap.net/de/srem-pride/</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/csd-northeim/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/csd-northeim/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/csd-northeim/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/srem-pride/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/srem-pride/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/srem-pride/"/>
   </url>
   <url>
-    <loc>https://pridemap.net/en/csd-northeim/</loc>
+    <loc>https://pridemap.net/en/srem-pride/</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/csd-northeim/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/csd-northeim/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/csd-northeim/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/srem-pride/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/srem-pride/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/srem-pride/"/>
+  </url>
+  <url>
+    <loc>https://pridemap.net/de/csd-ansbach/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/csd-ansbach/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/csd-ansbach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/csd-ansbach/"/>
+  </url>
+  <url>
+    <loc>https://pridemap.net/en/csd-ansbach/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/csd-ansbach/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/csd-ansbach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/csd-ansbach/"/>
+  </url>
+  <url>
+    <loc>https://pridemap.net/de/arctic-pride/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/arctic-pride/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/arctic-pride/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/arctic-pride/"/>
+  </url>
+  <url>
+    <loc>https://pridemap.net/en/arctic-pride/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/arctic-pride/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/arctic-pride/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/arctic-pride/"/>
   </url>
   <url>
     <loc>https://pridemap.net/de/tirana-pride/</loc>
@@ -3966,6 +4002,24 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/csd-nordhausen/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/csd-nordhausen/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/csd-nordhausen/"/>
+  </url>
+  <url>
+    <loc>https://pridemap.net/de/csd-northeim/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/csd-northeim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/csd-northeim/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/csd-northeim/"/>
+  </url>
+  <url>
+    <loc>https://pridemap.net/en/csd-northeim/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pridemap.net/de/csd-northeim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pridemap.net/en/csd-northeim/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pridemap.net/en/csd-northeim/"/>
   </url>
   <url>
     <loc>https://pridemap.net/de/csd-nuernberg/</loc>
