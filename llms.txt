@@ -5,11 +5,11 @@ Available at https://pridemap.net/
 
 ## What this site does
 
-Pride Map shows 639 Prides across Europe on an interactive MapLibre map.
+Pride Map shows 642 Prides across Europe on an interactive MapLibre map.
 A Pride is a recurring event with one edition per year, and it keeps the same page
 and the same URL across seasons. Dots are coloured by how many days until the next
 date; an unfilled ring means the date for 2027 has not been announced yet
-(638 of 639 at the time of this build, 1 already have a date).
+(639 of 642 at the time of this build, 3 already have a date).
 Users can filter by country, event size (small under 3,000, medium up to 30,000,
 large above, counting spectators) and time frame (upcoming, this weekend, next
 weekend, past, all).
