@@ -44,6 +44,16 @@ The source of truth is one JSON file per country under `data/prides/`, each an a
 
 Finding and confirming dates is the ongoing work, and it runs on its own loop. `data/sources.json` holds the overview sources and the search terms per country, `data/recherche-log.md` is the append-only record of what each session covered. A session picks the country with the oldest sweep, works through its sources, writes the findings into that country's file and commits it on its own. Every date carries the URL it came from and the day it was last checked; a date that would only be a guess from last year's pattern is not entered at all. The waves and the search matrix are in [PLAN-2027.md](PLAN-2027.md), section 5.
 
+Three commands support a session. None of them writes to `data/prides/`:
+
+```
+pnpm run data:status                    # per country: dated, open, unswept - where to go next
+pnpm run data:abgleich csd-de           # compare an overview page with our data (csd-de, csd-europa, uk-ie)
+pnpm run data:links                     # check every website, report dead and moved ones
+```
+
+`data:abgleich` fetches the page once, honours its robots.txt, and sorts every entry into new, date for a known Pride, disagreeing, loosely matched or side event. Overview pages are leads: each date is confirmed with the organiser or taken over one by one with the page as its source, never mirrored wholesale.
+
 ## Caveats
 
 Read these before relying on the data.

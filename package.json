@@ -14,6 +14,9 @@
     "build:hostinger": "pnpm run data && pnpm run logo && pnpm run og && vite build --base=/ && node scripts/prerender.mjs",
     "deploy:hostinger": "pnpm run build:hostinger && node scripts/deploy.mjs hostinger",
     "data": "node scripts/data/build.mjs && node scripts/llms-txt.mjs",
+    "data:status": "node scripts/data/status.mjs",
+    "data:links": "node scripts/data/links.mjs",
+    "data:abgleich": "node scripts/research/diff.mjs",
     "logo": "node scripts/logo-svg.mjs",
     "test": "vitest run"
   },

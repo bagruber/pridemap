@@ -1,11 +1,15 @@
 {
-  "_herkunft": "Der Grunddatensatz stammt aus einem DeepSeek-Export vom 27.05.2026 (504 Eintraege, ohne Quell-URLs) und wurde danach von Hand und mit Einmal-Scripts erweitert. Die Ausgaben 2026 tragen deshalb den Status 'unverified': welche Termine bestaetigt waren, ist nicht mehr nachvollziehbar. Angelegt am 19.10.2026 mit Phase C aus PLAN-2027.md.",
-  "_aufbau": "Ein Eintrag je Land. 'overview' sind Uebersichtsseiten mit Terminlisten, 'outlets' Szenemedien und Lokalpresse, 'terms' die Suchbegriffe der Landessprachen, 'announceWindow' wann die Termine des Folgejahres ueblicherweise erscheinen, 'lastSweep' das Datum der letzten Recherche-Sitzung.",
+  "_herkunft": "Der Grunddatensatz stammt aus einem DeepSeek-Export vom 27.05.2026 (504 Eintraege, ohne Quell-URLs) und wurde danach von Hand und mit Einmal-Scripts erweitert. Die Ausgaben 2026 tragen deshalb den Status 'unverified': welche Termine bestaetigt waren, ist nicht mehr nachvollziehbar. Angelegt am 19.10.2026 mit Phase C aus PLAN-2027.md. Vermutung seit dem ersten Abgleich am 19.10.2026: Ein Grossteil stammt von csd-termine.de. 467 Termine 2026 stimmen exakt mit /deutschland und /europa ueberein, und die Namen haben dort dasselbe Muster 'X Pride 2026 / CSD X 2026'.",
+  "_aufbau": "Ein Eintrag je Land. 'overview' sind Uebersichtsseiten mit Terminlisten, 'outlets' Szenemedien und Lokalpresse, 'terms' die Suchbegriffe der Landessprachen, 'announceWindow' wann die Termine des Folgejahres ueblicherweise erscheinen, 'lastSweep' das Datum der letzten Recherche-Sitzung. Traegt eine Uebersicht 'abgleich', gibt es dafuer einen Parser: 'pnpm run data:abgleich <abgleich>'. '_uebergreifend' sind Uebersichten ueber viele Laender.",
+
+  "_uebergreifend": [
+    { "url": "https://www.csd-termine.de/europa", "name": "csd-termine.de, Europa", "covers": "Europa ohne DE, eher die groesseren Prides", "checked": "2026-10-19", "abgleich": "csd-europa", "note": "Ganze Saison inklusive vergangener Termine (19.10.2026: 266 Eintraege, 10 fuer 2027, darunter EuroPride 2027 in Turin am 26.06.2027). Die Laender stehen auf Deutsch hinter dem Ort, Englands und Wales' Prides als 'England'/'Wales'. Gepflegte, werbefinanzierte Datenbank: als Hinweisliste nutzen, nicht spiegeln." }
+  ],
 
   "DE": {
     "languages": ["de"],
     "overview": [
-      { "url": "https://www.csd-termine.de/", "name": "csd-termine.de", "covers": "ganz DE", "checked": null, "note": "aus der Recherche Mai/Juni 2026 belegt, seither nicht geprueft" }
+      { "url": "https://www.csd-termine.de/deutschland", "name": "csd-termine.de", "covers": "ganz DE", "checked": "2026-10-19", "abgleich": "csd-de", "note": "Ganze Saison inklusive vergangener Termine (19.10.2026: 323 Eintraege, 34 fuer 2027). robots.txt sperrt Query-Strings und PDFs, die Laenderseiten sind frei. Gepflegte, werbefinanzierte Datenbank: als Hinweisliste nutzen, nicht spiegeln. Aus der Recherche Mai/Juni 2026 belegt." }
     ],
     "outlets": [],
     "terms": {
@@ -61,6 +65,38 @@
       "date": ["Marsz Rownosci 2027"],
       "first": ["pierwszy Marsz Rownosci"],
       "attendance": ["uczestnikow Marszu", "widzowie"]
+    },
+    "announceWindow": null,
+    "lastSweep": null
+  },
+
+  "GB": {
+    "languages": ["en", "cy", "gd"],
+    "overview": [
+      { "url": "https://gayprideshop.co.uk/pages/uk-ireland-gay-pride-events-calendar-2026", "name": "Gay Pride Shop, UK & Ireland Pride Calendar", "covers": "UK, Irland, Kanalinseln", "checked": "2026-10-19", "abgleich": "uk-ie", "note": "Von Benedict als Uebersicht aus der Recherche Mai/Juni 2026 belegt. Eine Seite je Jahr (...-calendar-<jahr>); die fuer 2027 gab es am 19.10.2026 noch nicht (404). 2026: nach eigener Angabe ueber 270 Prides, geparst 360 Eintraege samt Neben-Events, bei uns stehen fuer GB und IE 79. Jede Zeile verlinkt den Veranstalter. Unten wiederholt sich alles alphabetisch." }
+    ],
+    "outlets": [],
+    "terms": {
+      "event": ["Pride", "Pride Parade", "Pride March", "Pride Festival"],
+      "date": ["Pride 2027 date"],
+      "first": ["first ever Pride"],
+      "attendance": ["attended Pride", "spectators", "marchers"]
+    },
+    "announceWindow": null,
+    "lastSweep": null
+  },
+
+  "IE": {
+    "languages": ["en", "ga"],
+    "overview": [
+      { "url": "https://gayprideshop.co.uk/pages/uk-ireland-gay-pride-events-calendar-2026", "name": "Gay Pride Shop, UK & Ireland Pride Calendar", "covers": "UK, Irland, Kanalinseln", "checked": "2026-10-19", "abgleich": "uk-ie", "note": "Siehe GB." }
+    ],
+    "outlets": [],
+    "terms": {
+      "event": ["Pride", "Pride Parade", "Pride March"],
+      "date": ["Pride 2027 date"],
+      "first": ["first ever Pride"],
+      "attendance": ["attended Pride"]
     },
     "announceWindow": null,
     "lastSweep": null
