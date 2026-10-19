@@ -287,7 +287,7 @@
     "region": "Hauts-de-France",
     "lat": 50.291,
     "lon": 2.78,
-    "website": "https://www.arraspride.fr",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -301,6 +301,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.arraspride.fr entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1365,7 +1372,7 @@
     "region": "Pays de la Loire",
     "lat": 48.008,
     "lon": 0.199,
-    "website": "https://www.lemanspride.fr",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1379,6 +1386,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.lemanspride.fr entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1623,7 +1637,7 @@
     "region": "Provence-Alpes-Côte d'Azur",
     "lat": 43.296,
     "lon": 5.381,
-    "website": "https://www.marseillepride.fr",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "large",
@@ -1653,6 +1667,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.marseillepride.fr entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1767,7 +1788,7 @@
     "region": "Occitanie",
     "lat": 43.611,
     "lon": 3.877,
-    "website": "https://montpellier-pride.com",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1797,6 +1818,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://montpellier-pride.com entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1867,7 +1895,7 @@
     "region": "Pays de la Loire",
     "lat": 47.218,
     "lon": -1.554,
-    "website": "https://www.nantespride.com",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1897,6 +1925,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.nantespride.com entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -2311,7 +2346,7 @@
     "region": "Bretagne",
     "lat": 48.117,
     "lon": -1.678,
-    "website": "https://www.iskis-rbx.fr/",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -2341,6 +2376,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.iskis-rbx.fr/ entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -2439,7 +2481,7 @@
     "region": "Normandie",
     "lat": 49.443,
     "lon": 1.1,
-    "website": "https://www.rouenpride.fr",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -2469,6 +2511,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.rouenpride.fr entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -2744,7 +2793,7 @@
     "region": "Grand Est",
     "lat": 48.574,
     "lon": 7.751,
-    "website": "https://www.marche-des-fiertes-strasbourg.fr",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -2774,6 +2823,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.marche-des-fiertes-strasbourg.fr entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {

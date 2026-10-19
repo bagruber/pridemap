@@ -188,6 +188,45 @@
     "notes": ""
   },
   {
+    "id": "de-ansbach",
+    "legacyIds": [],
+    "name": "CSD Ansbach",
+    "aka": [],
+    "city": "Ansbach",
+    "country": "DE",
+    "region": "Bayern",
+    "lat": 49.301,
+    "lon": 10.572,
+    "website": null,
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-11-07",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/deutschland/csd-pride-ansbach.html",
+            "checked": "2026-10-19"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Veranstaltet laut csd-termine.de vom Jugendrat Ansbach und dem Bunten Buendnis Ansbach. Eigene Website oder Instagram noch nicht gefunden."
+      }
+    ],
+    "notes": "Findet laut csd-termine.de traditionell im Spaetherbst statt, nicht im Sommer."
+  },
+  {
     "id": "de-arnsberg",
     "legacyIds": [
       "csd-arnsberg-2026-2026-08-22"
@@ -5566,7 +5605,7 @@
     "lat": 51.703,
     "lon": 9.999,
     "website": null,
-    "instagram": null,
+    "instagram": "https://www.instagram.com/csdnortheim/",
     "firstYear": null,
     "size": "small",
     "sizeEstimated": true,
@@ -5574,12 +5613,19 @@
     "editions": [
       {
         "year": 2026,
-        "date": "2026-11-07",
-        "status": "unverified"
+        "date": "2026-08-29",
+        "status": "announced",
+        "meetingPoint": "Bahnhofsvorplatz Northeim",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/deutschland/csd-pride-northeim.html",
+            "checked": "2026-10-19"
+          }
+        ]
       }
     ],
     "sources": [],
-    "notes": ""
+    "notes": "Bis 19.10.2026 stand hier der 07.11.2026, vermutlich verwechselt mit dem CSD Ansbach am selben Tag. Laut csd-termine.de lief der CSD Northeim am 29.08.2026 ab dem Bahnhofsvorplatz."
   },
   {
     "id": "de-nurnberg",

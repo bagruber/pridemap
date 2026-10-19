@@ -115,7 +115,7 @@
     "region": "Trentino-Alto Adige",
     "lat": 45.92,
     "lon": 10.883,
-    "website": "https://arcopride.it",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -129,6 +129,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://arcopride.it entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1495,7 +1502,7 @@
     "region": "Lombardia",
     "lat": 45.185,
     "lon": 9.157,
-    "website": "https://www.paviacsd.it",
+    "website": null,
     "instagram": "https://www.instagram.com/arcigaypavia/",
     "firstYear": null,
     "size": "small",
@@ -1519,6 +1526,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.paviacsd.it entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Instagram ist da; Website suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1774,7 +1788,7 @@
     "region": "Campania",
     "lat": 40.681,
     "lon": 14.765,
-    "website": "https://salernopride.it",
+    "website": null,
     "instagram": "https://www.instagram.com/salernopride/",
     "firstYear": null,
     "size": "small",
@@ -1798,6 +1812,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://salernopride.it entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Instagram ist da; Website suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {

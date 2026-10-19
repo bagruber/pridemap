@@ -11,7 +11,7 @@
     "region": "Somerset",
     "lat": 51.379,
     "lon": -2.362,
-    "website": "https://bathpride.co.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -25,6 +25,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://bathpride.co.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -39,7 +46,7 @@
     "region": "Northern Ireland",
     "lat": 54.597,
     "lon": -5.93,
-    "website": "https://belfastpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "large",
@@ -63,6 +70,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://belfastpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -173,7 +187,7 @@
     "region": "West Yorkshire",
     "lat": 53.793,
     "lon": -1.752,
-    "website": "https://www.bradfordpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -197,6 +211,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.bradfordpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -337,7 +358,7 @@
     "region": "Wales",
     "lat": 51.481,
     "lon": -3.18,
-    "website": "https://www.cardiffpride.co.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "large",
@@ -361,6 +382,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.cardiffpride.co.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -377,7 +405,7 @@
     "region": "Essex",
     "lat": 51.736,
     "lon": 0.47,
-    "website": "https://chelmsfordpride.co.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -391,6 +419,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://chelmsfordpride.co.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -585,7 +620,7 @@
     "region": "Northern Ireland",
     "lat": 55.006,
     "lon": -7.32,
-    "website": "https://derrypride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -599,6 +634,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://derrypride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -613,7 +655,7 @@
     "region": "South Yorkshire",
     "lat": 53.523,
     "lon": -1.129,
-    "website": "https://doncasterpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -627,6 +669,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://doncasterpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -725,7 +774,7 @@
     "region": "Scotland",
     "lat": 55.953,
     "lon": -3.188,
-    "website": "https://www.edinburghpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -749,6 +798,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.edinburghpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -877,7 +933,7 @@
     "region": "Scotland",
     "lat": 55.864,
     "lon": -4.252,
-    "website": "https://glasgowpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "large",
@@ -901,6 +957,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://glasgowpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -915,7 +978,7 @@
     "region": "Gloucestershire",
     "lat": 51.865,
     "lon": -2.244,
-    "website": "https://gloucesterpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -929,6 +992,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://gloucesterpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1033,7 +1103,7 @@
     "region": "East Yorkshire",
     "lat": 53.745,
     "lon": -0.333,
-    "website": "https://hullpride.co.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1047,6 +1117,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://hullpride.co.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1063,7 +1140,7 @@
     "region": "Scotland",
     "lat": 56.113,
     "lon": -3.162,
-    "website": "https://kirkcaldypride.com",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -1077,6 +1154,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://kirkcaldypride.com entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1157,7 +1241,7 @@
     "region": "Leicestershire",
     "lat": 52.637,
     "lon": -1.133,
-    "website": "https://leicesterpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1171,6 +1255,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://leicesterpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1395,7 +1486,7 @@
     "region": "Tyne and Wear",
     "lat": 54.978,
     "lon": -1.618,
-    "website": "https://newcastlepride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1419,6 +1510,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://newcastlepride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1435,7 +1533,7 @@
     "region": "Cornwall",
     "lat": 50.413,
     "lon": -5.075,
-    "website": "https://newquaypride.co.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -1449,6 +1547,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://newquaypride.co.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1463,7 +1568,7 @@
     "region": "Northern Ireland",
     "lat": 54.175,
     "lon": -6.34,
-    "website": "https://newrypride.com",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -1477,6 +1582,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://newrypride.com entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1491,7 +1603,7 @@
     "region": "Northamptonshire",
     "lat": 52.24,
     "lon": -0.903,
-    "website": "https://northamptonpride.com",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1505,6 +1617,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://northamptonpride.com entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1547,7 +1666,7 @@
     "region": "Nottinghamshire",
     "lat": 52.954,
     "lon": -1.158,
-    "website": "https://nottinghampride.co.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1561,6 +1680,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://nottinghampride.co.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1603,7 +1729,7 @@
     "region": "Devon",
     "lat": 50.375,
     "lon": -4.143,
-    "website": "https://plymouthpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1617,6 +1743,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://plymouthpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1631,7 +1764,7 @@
     "region": "Hampshire",
     "lat": 50.8,
     "lon": -1.091,
-    "website": "https://www.portsmouthpride.org.uk/",
+    "website": null,
     "instagram": "https://www.instagram.com/portsmouthprideuk/",
     "firstYear": null,
     "size": "medium",
@@ -1645,6 +1778,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.portsmouthpride.org.uk/ entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Instagram ist da; Website suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1689,7 +1829,7 @@
     "region": "Warwickshire",
     "lat": 52.289,
     "lon": -1.536,
-    "website": "https://leamingtonpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -1703,6 +1843,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://leamingtonpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1787,7 +1934,7 @@
     "region": "Cornwall",
     "lat": 50.407,
     "lon": -4.214,
-    "website": "https://saltashpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -1801,6 +1948,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://saltashpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -1957,7 +2111,7 @@
     "region": "Staffordshire",
     "lat": 52.999,
     "lon": -2.181,
-    "website": "https://www.stokepride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -1971,6 +2125,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.stokepride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -2073,7 +2234,7 @@
     "region": "West Yorkshire",
     "lat": 53.683,
     "lon": -1.505,
-    "website": "https://wakefieldpride.org.uk",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -2087,6 +2248,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://wakefieldpride.org.uk entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -2195,7 +2363,7 @@
     "region": "West Sussex",
     "lat": 50.818,
     "lon": -0.372,
-    "website": "https://worthingpride.org",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -2209,6 +2377,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://worthingpride.org entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {

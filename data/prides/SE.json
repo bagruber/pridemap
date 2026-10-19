@@ -99,7 +99,7 @@
     "region": "Dalarna",
     "lat": 60.606,
     "lon": 15.633,
-    "website": "https://falunpride.se",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -113,6 +113,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://falunpride.se entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -244,7 +251,7 @@
     "region": "Skåne",
     "lat": 55.703,
     "lon": 13.191,
-    "website": "https://lundpride.se",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -258,6 +265,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://lundpride.se entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {

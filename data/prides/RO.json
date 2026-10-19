@@ -11,7 +11,7 @@
     "region": "Brașov",
     "lat": 45.6525105,
     "lon": 25.6105654,
-    "website": "https://brasovpride.ro",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -25,6 +25,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://brasovpride.ro entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {

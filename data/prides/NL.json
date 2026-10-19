@@ -82,7 +82,7 @@
     "region": "Zuid-Holland",
     "lat": 52.017,
     "lon": 4.707,
-    "website": "https://goudapride.nl",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -96,6 +96,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://goudapride.nl entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -110,7 +117,7 @@
     "region": "Limburg",
     "lat": 50.851,
     "lon": 5.692,
-    "website": "https://maastrichtpride.nl",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -124,6 +131,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://maastrichtpride.nl entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {

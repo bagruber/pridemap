@@ -254,3 +254,32 @@ antwortet mit 404, von Hand pruefen.
 - `no-kristiansand` https://kristiansandpride.no — → https://www.skeivesorlandsdager.no/
 - `se-malmo` https://malmopride.se — → https://www.malmopride.com/
 
+
+---
+
+## 2026-10-19 — Erfundene Websites entfernt, kommende Termine 2026 nachgetragen
+
+**Websites:** 61 Websites zeigten auf Domains, die es nicht gibt. Vor dem Loeschen
+wurde jede ein zweites Mal per DNS geprueft, mit und ohne `www`. Alle 61 sind raus
+(`website: null`). Jeder betroffene Pride traegt jetzt `todo: [{ task: "link" }]` mit
+der alten Adresse in der Notiz: Website oder Instagram muss gesucht oder neu zugeordnet
+werden. 5 von ihnen haben wenigstens Instagram. `data:status` zaehlt sie in der Spalte
+„Link suchen“, in der App erscheint das Feld nicht.
+
+**Termine 2026, die noch bevorstehen** (Benedict am 19.10.2026: kein Schnitt zwischen
+2026 und 2027; was dieses Jahr noch stattfindet, bleibt auf der Karte, und ein neuer
+Termin 2027 erscheint einfach weit in der Zukunft):
+
+- `pl-srem` neu: Śrem Pride, 24.10.2026, Treffpunkt Plac 20 Października. Quellen:
+  csd-termine.de und das Facebook-Event der Gruppe. Ob es derselbe „Karnawał dla
+  Równości“ ist, den polishprides.org fuer 2025 nennt, ist offen.
+- `de-ansbach` neu: CSD Ansbach, 07.11.2026, laut csd-termine.de vom Jugendrat Ansbach
+  und dem Bunten Buendnis Ansbach. Keine eigene Seite gefunden, deshalb `todo: link`.
+- `no-tromso` neu: Arctic Pride, Festival 09.–16.11.2026 laut arcticpride.no. Den
+  Paradetag 14.11. nennt nur csd-termine.de, er ist noch zu bestaetigen.
+- `de-northeim` korrigiert: Der CSD war am 29.08.2026 (Bahnhofsvorplatz), nicht am
+  07.11.2026. Das alte Datum war vermutlich eine Verwechslung mit Ansbach. Instagram
+  ergaenzt. Northeim ist damit fuer 2027 offen.
+
+Alle vier tragen `announced`, weil die Termine nur aus Uebersichten stammen. Die Websuche
+fand zu keinem eine Veranstalter-Seite mit Datum.

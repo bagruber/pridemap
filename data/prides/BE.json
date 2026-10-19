@@ -117,7 +117,7 @@
     "region": "Wallonie",
     "lat": 50.282,
     "lon": 6.134,
-    "website": "https://stvithpride.be",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -131,6 +131,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://stvithpride.be entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   }
 ]

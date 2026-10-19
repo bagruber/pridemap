@@ -41,7 +41,7 @@ const trim = e => {
 }
 
 const out = prides
-  .map(({ sources, notes, ...p }) => ({
+  .map(({ sources, notes, todo, ...p }) => ({
     ...p,
     queerIndex: index[p.country] ?? null,
     editions: p.editions.map(trim),

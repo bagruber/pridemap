@@ -13,7 +13,7 @@
     "region": "",
     "lat": 35.9,
     "lon": 14.514,
-    "website": "https://vallettapride.org",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "small",
@@ -27,6 +27,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://vallettapride.org entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   }
 ]

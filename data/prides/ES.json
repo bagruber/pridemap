@@ -105,7 +105,7 @@
     "region": "País Vasco",
     "lat": 43.263,
     "lon": -2.935,
-    "website": "https://bilbaopride.org",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -119,6 +119,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://bilbaopride.org entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -161,7 +168,7 @@
     "region": "Andalucía",
     "lat": 37.888,
     "lon": -4.779,
-    "website": "https://www.cordobapride.es",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -175,6 +182,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.cordobapride.es entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -224,7 +238,7 @@
     "region": "Principado de Asturias",
     "lat": 43.545,
     "lon": -5.662,
-    "website": "https://gijonpride.com",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -238,6 +252,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://gijonpride.com entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -318,7 +339,7 @@
     "region": "Andalucía",
     "lat": 36.72,
     "lon": -4.42,
-    "website": "https://malagapride.es",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "large",
@@ -332,6 +353,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://malagapride.es entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -384,7 +412,7 @@
     "region": "Región de Murcia",
     "lat": 37.984,
     "lon": -1.13,
-    "website": "https://murciaorgullosa.es",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -398,6 +426,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://murciaorgullosa.es entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -412,7 +447,7 @@
     "region": "Illes Balears",
     "lat": 39.569,
     "lon": 2.65,
-    "website": "https://www.palmapride.es",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -426,6 +461,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.palmapride.es entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -473,7 +515,7 @@
     "region": "Andalucía",
     "lat": 37.389,
     "lon": -5.984,
-    "website": "https://sevillapride.com",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "large",
@@ -487,6 +529,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://sevillapride.com entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -623,7 +672,7 @@
     "region": "Aragón",
     "lat": 41.656,
     "lon": -0.877,
-    "website": "https://zaragozapride.es",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "large",
@@ -637,6 +686,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://zaragozapride.es entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   }
 ]

@@ -44,7 +44,7 @@
     "region": "Śląskie",
     "lat": 50.264,
     "lon": 19.024,
-    "website": "https://katowicepride.eu",
+    "website": null,
     "instagram": "https://www.instagram.com/katowicepride/",
     "firstYear": null,
     "size": "medium",
@@ -68,6 +68,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://katowicepride.eu entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Instagram ist da; Website suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -87,7 +94,7 @@
     "region": "Małopolskie",
     "lat": 50.061,
     "lon": 19.938,
-    "website": "https://www.queerowymaj.pl",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "large",
@@ -101,6 +108,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.queerowymaj.pl entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {
@@ -115,7 +129,7 @@
     "region": "Wielkopolskie",
     "lat": 52.41,
     "lon": 16.925,
-    "website": "https://www.poznanpride.eu",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "large",
@@ -129,7 +143,53 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.poznanpride.eu entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
+  },
+  {
+    "id": "pl-srem",
+    "legacyIds": [],
+    "name": "Śrem Pride",
+    "aka": [
+      "Karnawał dla Równości"
+    ],
+    "city": "Śrem",
+    "country": "PL",
+    "region": "Wielkopolskie",
+    "lat": 52.089,
+    "lon": 17.015,
+    "website": null,
+    "instagram": "https://www.instagram.com/dzialamyrazemdlasremu/",
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-10-24",
+        "status": "announced",
+        "meetingPoint": "Plac 20 Października",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-srem.html",
+            "checked": "2026-10-19"
+          },
+          {
+            "url": "https://www.facebook.com/events/1637199524696577",
+            "checked": "2026-10-19"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": "Instagram der Gruppe „Dzialamy razem dla Sremu“, verlinkt von csd-termine.de. polishprides.org fuehrt fuer 2025 den „2. Karnawal dla Rownosci w Sremie“ am 23.08.2025; ob der Termin im Oktober 2026 dieselbe Veranstaltung ist, ist nicht geprueft."
   },
   {
     "id": "pl-warszawa",

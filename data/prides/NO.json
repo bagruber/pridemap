@@ -96,5 +96,43 @@
     ],
     "sources": [],
     "notes": ""
+  },
+  {
+    "id": "no-tromso",
+    "legacyIds": [],
+    "name": "Arctic Pride",
+    "aka": [
+      "Tromsø Pride"
+    ],
+    "city": "Tromsø",
+    "country": "NO",
+    "region": "Troms",
+    "lat": 69.649,
+    "lon": 18.956,
+    "website": "https://arcticpride.no/",
+    "instagram": null,
+    "firstYear": null,
+    "size": "small",
+    "sizeEstimated": true,
+    "attendance": [],
+    "editions": [
+      {
+        "year": 2026,
+        "date": "2026-11-14",
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.csd-termine.de/europa/csd-pride-tromso.html",
+            "checked": "2026-10-19"
+          },
+          {
+            "url": "https://arcticpride.no/",
+            "checked": "2026-10-19"
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "notes": "arcticpride.no nennt das Festival vom 09. bis 16.11.2026, aber noch keinen Paradetag. Den 14.11. (Samstag der Festivalwoche) nennt csd-termine.de. Bestaetigen, sobald arcticpride.no die Parade ankuendigt."
   }
 ]

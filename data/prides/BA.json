@@ -11,7 +11,7 @@
     "region": "Kanton Sarajevo",
     "lat": 43.848,
     "lon": 18.356,
-    "website": "https://sarajevopride.ba",
+    "website": null,
     "instagram": null,
     "firstYear": null,
     "size": "medium",
@@ -25,6 +25,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://sarajevopride.ba entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Website oder Instagram suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   }
 ]

@@ -567,7 +567,7 @@
     "region": "Oberösterreich",
     "lat": 48.042,
     "lon": 14.421,
-    "website": "https://www.steyrpride.at",
+    "website": null,
     "instagram": "https://www.instagram.com/steyrpride/",
     "firstYear": null,
     "size": "small",
@@ -591,6 +591,13 @@
       }
     ],
     "sources": [],
+    "todo": [
+      {
+        "task": "link",
+        "since": "2026-10-19",
+        "note": "Website https://www.steyrpride.at entfernt: die Domain existiert nicht (DNS, mit und ohne www, data:links am 2026-10-19). Instagram ist da; Website suchen oder neu zuordnen."
+      }
+    ],
     "notes": ""
   },
   {

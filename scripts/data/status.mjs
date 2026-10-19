@@ -27,7 +27,7 @@ export function summarize(prides, sources, today) {
   for (const p of prides) {
     let row = byCountry.get(p.country)
     if (!row) {
-      row = { country: p.country, prides: 0, open: 0, ahead: 0, dormant: 0, noLink: 0 }
+      row = { country: p.country, prides: 0, open: 0, ahead: 0, dormant: 0, noLink: 0, findLink: 0 }
       for (const k of STATUSES) row[k] = 0
       byCountry.set(p.country, row)
     }
@@ -39,6 +39,7 @@ export function summarize(prides, sources, today) {
     else if (current?.date && current.date >= iso) row.ahead++
     else row.dormant++
     if (!p.website && !p.instagram) row.noLink++
+    if ((p.todo ?? []).some(t => t.task === 'link')) row.findLink++
   }
   for (const row of byCountry.values()) {
     const overview = sources[row.country]?.overview ?? []
@@ -65,12 +66,12 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const sum = k => rows.reduce((n, r) => n + r[k], 0)
   const dated = r => r.confirmed + r.announced + r.rescheduled
   const head = ['Land', 'Prides', 'bestaetigt', 'angekuendigt', 'verlegt', 'abgesagt', 'offen', `noch ${s - 1}`, 'ruht',
-    'ohne Link', 'Uebersichten', 'geprueft', 'letzter Sweep']
+    'ohne Link', 'Link suchen', 'Uebersichten', 'geprueft', 'letzter Sweep']
   console.log(`# Recherche-Stand, Saison ${s} · ${today.toLocaleDateString('de-DE')}\n`)
   console.log(`| ${head.join(' | ')} |\n|${head.map(() => '---').join('|')}|`)
   for (const r of rows) {
     console.log(`| ${[r.country, r.prides, r.confirmed, r.announced, r.rescheduled, r.cancelled, r.open, r.ahead, r.dormant,
-      r.noLink, r.overview || '—', r.checked ?? '—', r.lastSweep ?? '—'].join(' | ')} |`)
+      r.noLink, r.findLink, r.overview || '—', r.checked ?? '—', r.lastSweep ?? '—'].join(' | ')} |`)
   }
   const total = sum('prides')
   const withDate = rows.reduce((n, r) => n + dated(r), 0)

@@ -1,6 +1,9 @@
 import { COUNTRY_NAMES } from '../../src/utils/countryInfo.js'
 
 const STATUS = new Set(['confirmed', 'announced', 'rescheduled', 'cancelled', 'unverified'])
+// Open research tasks on a Pride. `link`: website or Instagram still to be found
+// or reassigned, e.g. after a guessed domain was removed.
+export const TODO_TASKS = new Set(['link'])
 const REQUIRED = ['id', 'name', 'city', 'country', 'lat', 'lon']
 // Europe, generously drawn: Canaries in the south-west, Nordkapp in the north,
 // Cyprus and the Caucasus in the east
@@ -27,6 +30,10 @@ export function validate(prides) {
     }
     for (const u of [p.website, p.instagram]) {
       if (u != null && !isUrl(u)) errors.push(`${at}: URL ohne http(s): ${u}`)
+    }
+    for (const t of p.todo ?? []) {
+      if (!TODO_TASKS.has(t.task)) errors.push(`${at}: todo "${t.task}" unbekannt`)
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(t.since ?? '')) errors.push(`${at}: todo "${t.task}" ohne Datum (since)`)
     }
 
     const years = new Set()
