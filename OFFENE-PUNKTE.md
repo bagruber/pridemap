@@ -72,7 +72,8 @@ das Vektor-Ergebnis ist schaerfer.
 Dieses Repo hat keinen CI-Workflow. Gebaut und veroeffentlicht wird ueber
 `pnpm run deploy` (GitHub-Pages-Spiegel, nur SPA) und `pnpm run deploy:hostinger`
 (kanonische Seite mit statischen Seiten, Weiterleitungen und Share-Bildern).
-Zuletzt deployt am 20.10.2026 von `a4513061`, auf beide Branches.
+Zuletzt deployt am 20.10.2026 von `c200acdb` (mit den ersten Terminen 2027), auf beide
+Branches.
 
 Liegen im Arbeitsverzeichnis uncommittete Aenderungen, etwa eine laufende
 Upgrade-Welle in `package.json`, baut der Deploy sie sonst ungeprueft mit ein.
